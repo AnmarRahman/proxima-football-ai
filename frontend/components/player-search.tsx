@@ -43,7 +43,7 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
     }, 1000);
 
     try {
-      const response = await fetch(`http://127.0.0.1:8000/predict?player_id=${selectedPlayerId}`);
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/predict?player_id=${selectedPlayerId}`);
       const data = await response.json();
       console.log(data)
 
@@ -63,6 +63,7 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
       setLoadingText("");
     }
   };
+
 
   return (
     <div className="max-w-4xl mx-auto p-4">
