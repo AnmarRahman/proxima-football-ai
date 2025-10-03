@@ -3,4 +3,5 @@ uvicorn
 numpy
 pandas
 scikit-learn
-tensorflow
+tensorflow-cpu
+joblib
