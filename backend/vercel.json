@@ -5,7 +5,9 @@
             "src": "python/main.py",
             "use": "@vercel/python",
             "config": {
-                "maxLambdaSize": "50mb"
+                "runtime": "python3.13",
+                "maxLambdaSize": "50mb",
+                "installCommand": "pip install -r requirements.txt"
             }
         }
     ],

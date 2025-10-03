@@ -1,7 +1,9 @@
-fastapi
-uvicorn
-numpy
-pandas
-scikit-learn
-tensorflow-cpu
-joblib
+--only-binary=:all:
+
+tensorflow-cpu==2.20.0
+fastapi==0.115.6
+uvicorn==0.32.0
+joblib==1.4.2
+pandas==2.2.3
+numpy==2.1.0
+typing-extensions==4.14
