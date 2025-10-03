@@ -1,0 +1,1398 @@
+{
+    "player": {
+        "id": "messi",
+        "name": "Lionel Andrés Messi",
+        "birth_date": "1987-06-24",
+        "nationality": "Argentina",
+        "height_cm": 170,
+        "weight_kg": 72,
+        "dominant_foot": "Left"
+    },
+    "teams": [
+        {
+            "id": "barcelona",
+            "name": "FC Barcelona",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/fc-barcelona-crest.svg",
+            "country": "Spain"
+        },
+        {
+            "id": "psg",
+            "name": "Paris Saint-Germain",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/psg-6.svg",
+            "country": "France"
+        },
+        {
+            "id": "intermiami",
+            "name": "Inter Miami",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/inter-miami-cf-logo.svg",
+            "country": "USA"
+        },
+        {
+            "id": "argentina",
+            "name": "Argentina National Team",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg",
+            "country": "Argentina"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 2004,
+            "team_id": "barcelona",
+            "league_id": "laliga-2004",
+            "appearances": 9,
+            "goals": 1,
+            "assists": 0,
+            "minutes": 240,
+            "position": "Right Wing",
+            "rating": 6.8,
+            "xG": 1.1,
+            "xA": 0.1,
+            "key_passes": 4,
+            "successful_dribbles": 11,
+            "duels_won": 7,
+            "shots_per_game": 0.7,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 2,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.5,
+                "acceleration": "High",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Right Wing",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Limited"
+            },
+            "psychological_factors": {
+                "consistency": "Emerging",
+                "pressure_handling": "Promising",
+                "clutch_performance": "Potential"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "4-3-3, early years",
+                "teammate_quality": "High",
+                "league_competitiveness": "La Liga (Top 5 European league)"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Argentina U20",
+                    "appearances": 5,
+                    "goals": 1,
+                    "assists": 0,
+                    "minutes": 315,
+                    "position": "Right Wing",
+                    "rating": 6.7
+                }
+            ]
+        },
+        {
+            "season": 2005,
+            "team_id": "barcelona",
+            "league_id": "laliga-2005",
+            "appearances": 25,
+            "goals": 8,
+            "assists": 3,
+            "minutes": 1416,
+            "position": "Right Wing",
+            "rating": 7.0,
+            "xG": 4.1,
+            "xA": 1.0,
+            "key_passes": 11,
+            "successful_dribbles": 19,
+            "duels_won": 12,
+            "shots_per_game": 1.1,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 5,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.8,
+                "acceleration": "High",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Right Wing",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Limited"
+            },
+            "psychological_factors": {
+                "consistency": "Improving",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "4-3-3",
+                "teammate_quality": "High",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "FIFA U20 World Cup",
+                    "appearances": 7,
+                    "goals": 6,
+                    "assists": 2,
+                    "minutes": 630,
+                    "position": "Forward",
+                    "rating": 8.5
+                },
+                {
+                    "team_id": "argentina",
+                    "competition": "Senior Team Friendlies",
+                    "appearances": 5,
+                    "goals": 1,
+                    "assists": 0,
+                    "minutes": 224,
+                    "position": "Forward",
+                    "rating": 6.9
+                }
+            ]
+        },
+        {
+            "season": 2006,
+            "team_id": "barcelona",
+            "league_id": "laliga-2006",
+            "appearances": 36,
+            "goals": 17,
+            "assists": 4,
+            "minutes": 2657,
+            "position": "Right Wing",
+            "rating": 7.6,
+            "xG": 12.9,
+            "xA": 3.1,
+            "key_passes": 38,
+            "successful_dribbles": 45,
+            "duels_won": 38,
+            "shots_per_game": 2.0,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 13,
+            "injuries": [
+                {
+                    "type": "Metatarsal fracture",
+                    "start_date": "2006-03-08",
+                    "end_date": "2006-05-01",
+                    "days_lost": 54
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.7,
+                "acceleration": "High",
+                "stamina": "Improving",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Right Wing",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Limited"
+            },
+            "psychological_factors": {
+                "consistency": "Improving",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "4-3-3",
+                "teammate_quality": "High",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "FIFA World Cup",
+                    "appearances": 3,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 121,
+                    "position": "Right Wing",
+                    "rating": 7.2
+                },
+                {
+                    "team_id": "argentina",
+                    "competition": "Friendlies",
+                    "appearances": 5,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 320,
+                    "position": "Right Wing",
+                    "rating": 7.1
+                }
+            ]
+        },
+        {
+            "season": 2007,
+            "team_id": "barcelona",
+            "league_id": "laliga-2007",
+            "appearances": 40,
+            "goals": 16,
+            "assists": 8,
+            "minutes": 3055,
+            "position": "Right Wing",
+            "rating": 7.8,
+            "xG": 14.3,
+            "xA": 4.1,
+            "key_passes": 41,
+            "successful_dribbles": 52,
+            "duels_won": 36,
+            "shots_per_game": 2.1,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 15,
+            "injuries": [
+                {
+                    "type": "Hamstring strain",
+                    "start_date": "2007-12-05",
+                    "end_date": "2008-01-20",
+                    "days_lost": 46
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.0,
+                "acceleration": "High",
+                "stamina": "Improving",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Right Wing",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Limited"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "4-3-3",
+                "teammate_quality": "High",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Copa America",
+                    "appearances": 6,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 430,
+                    "position": "Right Wing",
+                    "rating": 7.7
+                },
+                {
+                    "team_id": "argentina",
+                    "competition": "Friendlies",
+                    "appearances": 4,
+                    "goals": 1,
+                    "assists": 0,
+                    "minutes": 320,
+                    "position": "Right Wing",
+                    "rating": 7.0
+                }
+            ]
+        },
+        {
+            "season": 2008,
+            "team_id": "barcelona",
+            "league_id": "laliga-2008",
+            "appearances": 51,
+            "goals": 23,
+            "assists": 9,
+            "minutes": 4070,
+            "position": "Right Wing",
+            "rating": 8.2,
+            "xG": 18.2,
+            "xA": 6.1,
+            "key_passes": 52,
+            "successful_dribbles": 76,
+            "duels_won": 61,
+            "shots_per_game": 2.1,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 17,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.5,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "Right Wing",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Tiki-taka evolution",
+                "teammate_quality": "High",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Summer Olympics",
+                    "appearances": 6,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 480,
+                    "position": "Right Wing",
+                    "rating": 8.2
+                },
+                {
+                    "team_id": "argentina",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 9,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 710,
+                    "position": "Right Wing",
+                    "rating": 7.8
+                }
+            ]
+        },
+        {
+            "season": 2009,
+            "team_id": "barcelona",
+            "league_id": "laliga-2009",
+            "appearances": 51,
+            "goals": 47,
+            "assists": 11,
+            "minutes": 4217,
+            "position": "Right Wing/False 9",
+            "rating": 8.4,
+            "xG": 33.9,
+            "xA": 9.0,
+            "key_passes": 80,
+            "successful_dribbles": 123,
+            "duels_won": 83,
+            "shots_per_game": 4.2,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 41,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.6,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "RW/False 9",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Tiki-taka",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 10,
+                    "goals": 3,
+                    "assists": 1,
+                    "minutes": 810,
+                    "position": "Right Wing",
+                    "rating": 7.8
+                },
+                {
+                    "team_id": "argentina",
+                    "competition": "Friendlies",
+                    "appearances": 6,
+                    "goals": 8,
+                    "assists": 2,
+                    "minutes": 440,
+                    "position": "Right Wing",
+                    "rating": 8.2
+                }
+            ]
+        },
+        {
+            "season": 2010,
+            "team_id": "barcelona",
+            "league_id": "laliga-2010",
+            "appearances": 53,
+            "goals": 47,
+            "assists": 12,
+            "minutes": 4419,
+            "position": "RW/False 9",
+            "rating": 8.5,
+            "xG": 34.8,
+            "xA": 10.5,
+            "key_passes": 82,
+            "successful_dribbles": 135,
+            "duels_won": 94,
+            "shots_per_game": 4.7,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 39,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.8,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/CF",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Moderate"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Absolute tiki-taka",
+                "teammate_quality": "Elite (Xavi, Iniesta, Busquets)",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "FIFA World Cup",
+                    "appearances": 5,
+                    "goals": 0,
+                    "assists": 1,
+                    "minutes": 450,
+                    "position": "Right Wing",
+                    "rating": 7.7
+                },
+                {
+                    "team_id": "argentina",
+                    "competition": "Friendlies",
+                    "appearances": 8,
+                    "goals": 5,
+                    "assists": 2,
+                    "minutes": 720,
+                    "position": "Right Wing",
+                    "rating": 8.3
+                }
+            ]
+        },
+        {
+            "season": 2011,
+            "team_id": "barcelona",
+            "league_id": "laliga-2011",
+            "appearances": 60,
+            "goals": 53,
+            "assists": 30,
+            "minutes": 5202,
+            "position": "RW/False 9",
+            "rating": 8.8,
+            "xG": 40.3,
+            "xA": 14.0,
+            "key_passes": 114,
+            "successful_dribbles": 165,
+            "duels_won": 116,
+            "shots_per_game": 5.1,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 43,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.2,
+                "acceleration": "Elite",
+                "stamina": "Very High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "False 9/RW",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Tiki-taka",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Copa America",
+                    "appearances": 4,
+                    "goals": 0,
+                    "assists": 3,
+                    "minutes": 360,
+                    "position": "Right Wing",
+                    "rating": 7.6
+                },
+                {
+                    "team_id": "argentina",
+                    "competition": "Friendlies",
+                    "appearances": 8,
+                    "goals": 4,
+                    "assists": 2,
+                    "minutes": 800,
+                    "position": "Right Wing",
+                    "rating": 8.1
+                }
+            ]
+        },
+        {
+            "season": 2012,
+            "team_id": "barcelona",
+            "league_id": "laliga-2012",
+            "appearances": 69,
+            "goals": 73,
+            "assists": 30,
+            "minutes": 6006,
+            "position": "RW/False 9",
+            "rating": 9.0,
+            "xG": 49.9,
+            "xA": 16.2,
+            "key_passes": 130,
+            "successful_dribbles": 195,
+            "duels_won": 133,
+            "shots_per_game": 5.5,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 47,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.5,
+                "acceleration": "Elite",
+                "stamina": "Very High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "False 9/RW",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Tiki-taka",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 8,
+                    "goals": 7,
+                    "assists": 2,
+                    "minutes": 670,
+                    "position": "Right Wing",
+                    "rating": 8.9
+                },
+                {
+                    "team_id": "argentina",
+                    "competition": "Friendlies",
+                    "appearances": 7,
+                    "goals": 8,
+                    "assists": 3,
+                    "minutes": 590,
+                    "position": "Right Wing",
+                    "rating": 9.1
+                }
+            ]
+        },
+        {
+            "season": 2013,
+            "team_id": "barcelona",
+            "league_id": "laliga-2013",
+            "appearances": 46,
+            "goals": 45,
+            "assists": 15,
+            "minutes": 3904,
+            "position": "RW/False 9",
+            "rating": 8.7,
+            "xG": 35.8,
+            "xA": 11.8,
+            "key_passes": 102,
+            "successful_dribbles": 173,
+            "duels_won": 108,
+            "shots_per_game": 5.0,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 36,
+            "injuries": [
+                {
+                    "type": "Hamstring",
+                    "start_date": "2013-11-11",
+                    "end_date": "2014-01-06",
+                    "days_lost": 56
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.1,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "False 9/RW",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Tiki-taka",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 7,
+                    "goals": 5,
+                    "assists": 3,
+                    "minutes": 640,
+                    "position": "Right Wing",
+                    "rating": 8.6
+                },
+                {
+                    "team_id": "argentina",
+                    "competition": "Friendlies",
+                    "appearances": 6,
+                    "goals": 7,
+                    "assists": 1,
+                    "minutes": 510,
+                    "position": "Right Wing",
+                    "rating": 8.8
+                }
+            ]
+        },
+        {
+            "season": 2014,
+            "team_id": "barcelona",
+            "league_id": "laliga-2014",
+            "appearances": 46,
+            "goals": 41,
+            "assists": 18,
+            "minutes": 3748,
+            "position": "Right Wing/False 9",
+            "rating": 8.4,
+            "xG": 35.0,
+            "xA": 15.0,
+            "key_passes": 90,
+            "successful_dribbles": 170,
+            "duels_won": 122,
+            "shots_per_game": 4.6,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 60,
+            "injuries": [
+                {
+                    "type": "Hamstring",
+                    "start_date": "2013-11-11",
+                    "end_date": "2014-01-06",
+                    "days_lost": 56
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.5,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "Right/Center",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Moderate"
+            },
+            "psychological_factors": {
+                "consistency": "Very High",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Tiki-Taka",
+                "teammate_quality": "High (Xavi, Iniesta, Neymar, Suarez)",
+                "league_competitiveness": "La Liga (Top 5 European league)"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "FIFA World Cup",
+                    "appearances": 7,
+                    "goals": 4,
+                    "assists": 1,
+                    "minutes": 690,
+                    "position": "Right Wing",
+                    "rating": 8.5
+                }
+            ]
+        },
+        {
+            "season": 2015,
+            "team_id": "barcelona",
+            "league_id": "laliga-2015",
+            "appearances": 57,
+            "goals": 58,
+            "assists": 23,
+            "minutes": 5061,
+            "position": "Right Wing/False 9",
+            "rating": 8.7,
+            "xG": 40.2,
+            "xA": 17.1,
+            "key_passes": 98,
+            "successful_dribbles": 165,
+            "duels_won": 140,
+            "shots_per_game": 5.0,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 59,
+            "injuries": [
+                {
+                    "type": "Knee injury",
+                    "start_date": "2015-09-26",
+                    "end_date": "2015-11-21",
+                    "days_lost": 56
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.4,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Very fast"
+            },
+            "tactical_data": {
+                "average_position": "False 9/Right",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Moderate"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "MSN front three",
+                "teammate_quality": "Elite (Neymar, Suarez)",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Copa America",
+                    "appearances": 6,
+                    "goals": 1,
+                    "assists": 3,
+                    "minutes": 540,
+                    "position": "Forward",
+                    "rating": 7.9
+                }
+            ]
+        },
+        {
+            "season": 2016,
+            "team_id": "barcelona",
+            "league_id": "laliga-2016",
+            "appearances": 49,
+            "goals": 54,
+            "assists": 21,
+            "minutes": 4241,
+            "position": "RW/False 9",
+            "rating": 8.7,
+            "xG": 39.8,
+            "xA": 15.2,
+            "key_passes": 95,
+            "successful_dribbles": 155,
+            "duels_won": 134,
+            "shots_per_game": 4.9,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 54,
+            "injuries": [
+                {
+                    "type": "Groin injury",
+                    "start_date": "2016-09-21",
+                    "end_date": "2016-10-18",
+                    "days_lost": 27
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.1,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "RW/False 9",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "MSN front three",
+                "teammate_quality": "Elite (Neymar, Suarez)",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Copa America Centenario",
+                    "appearances": 5,
+                    "goals": 5,
+                    "assists": 4,
+                    "minutes": 374,
+                    "position": "Right Wing",
+                    "rating": 9.0
+                },
+                {
+                    "team_id": "argentina",
+                    "competition": "Friendlies & WCQ",
+                    "appearances": 7,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 650,
+                    "position": "Right Wing",
+                    "rating": 8.0
+                }
+            ]
+        },
+        {
+            "season": 2017,
+            "team_id": "barcelona",
+            "league_id": "laliga-2017",
+            "appearances": 54,
+            "goals": 45,
+            "assists": 18,
+            "minutes": 4816,
+            "position": "RW/False 9",
+            "rating": 8.6,
+            "xG": 36.7,
+            "xA": 13.6,
+            "key_passes": 99,
+            "successful_dribbles": 141,
+            "duels_won": 119,
+            "shots_per_game": 4.7,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 48,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.9,
+                "acceleration": "Elite",
+                "stamina": "Very High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "RW/False 9",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "MSN legacy, Valverde",
+                "teammate_quality": "Elite (Suarez)",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Friendlies & World Cup Qualifiers",
+                    "appearances": 10,
+                    "goals": 6,
+                    "assists": 2,
+                    "minutes": 780,
+                    "position": "Right Wing",
+                    "rating": 8.3
+                }
+            ]
+        },
+        {
+            "season": 2018,
+            "team_id": "barcelona",
+            "league_id": "laliga-2018",
+            "appearances": 51,
+            "goals": 51,
+            "assists": 22,
+            "minutes": 4425,
+            "position": "RW/False 9",
+            "rating": 8.8,
+            "xG": 37.2,
+            "xA": 14.7,
+            "key_passes": 110,
+            "successful_dribbles": 158,
+            "duels_won": 112,
+            "shots_per_game": 5.1,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 51,
+            "injuries": [
+                {
+                    "type": "Fractured arm",
+                    "start_date": "2018-10-21",
+                    "end_date": "2018-11-11",
+                    "days_lost": 21
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.3,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Very Fast"
+            },
+            "tactical_data": {
+                "average_position": "Right Wing/Playmaker",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Messi-centric attack",
+                "teammate_quality": "High (Suarez)",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "FIFA World Cup",
+                    "appearances": 4,
+                    "goals": 1,
+                    "assists": 2,
+                    "minutes": 360,
+                    "position": "Right Wing",
+                    "rating": 7.9
+                },
+                {
+                    "team_id": "argentina",
+                    "competition": "Friendlies & WCQ",
+                    "appearances": 5,
+                    "goals": 4,
+                    "assists": 2,
+                    "minutes": 381,
+                    "position": "Right Wing",
+                    "rating": 8.2
+                }
+            ]
+        },
+        {
+            "season": 2019,
+            "team_id": "barcelona",
+            "league_id": "laliga-2019",
+            "appearances": 50,
+            "goals": 51,
+            "assists": 19,
+            "minutes": 4024,
+            "position": "RW/False 9",
+            "rating": 8.5,
+            "xG": 37.1,
+            "xA": 13.4,
+            "key_passes": 102,
+            "successful_dribbles": 148,
+            "duels_won": 87,
+            "shots_per_game": 4.8,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 44,
+            "injuries": [
+                {
+                    "type": "Calf strain",
+                    "start_date": "2019-08-05",
+                    "end_date": "2019-09-14",
+                    "days_lost": 40
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.1,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "RW/False 9",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Moderate"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Messi-centric",
+                "teammate_quality": "High (Suarez, Griezmann)",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Copa America",
+                    "appearances": 6,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 539,
+                    "position": "RW",
+                    "rating": 7.8
+                },
+                {
+                    "team_id": "argentina",
+                    "competition": "Friendlies",
+                    "appearances": 5,
+                    "goals": 4,
+                    "assists": 3,
+                    "minutes": 400,
+                    "position": "RW",
+                    "rating": 8.2
+                }
+            ]
+        },
+        {
+            "season": 2020,
+            "team_id": "barcelona",
+            "league_id": "laliga-2020",
+            "appearances": 47,
+            "goals": 37,
+            "assists": 15,
+            "minutes": 4147,
+            "position": "RW/False 9",
+            "rating": 8.3,
+            "xG": 29.8,
+            "xA": 11.9,
+            "key_passes": 86,
+            "successful_dribbles": 143,
+            "duels_won": 71,
+            "shots_per_game": 3.7,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 41,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.9,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "False 9/RW",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Messi-centric",
+                "teammate_quality": "High",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Friendlies",
+                    "appearances": 4,
+                    "goals": 4,
+                    "assists": 2,
+                    "minutes": 320,
+                    "position": "RW",
+                    "rating": 8.4
+                }
+            ]
+        },
+        {
+            "season": 2021,
+            "team_id": "psg",
+            "league_id": "ligue1-2021",
+            "appearances": 34,
+            "goals": 11,
+            "assists": 15,
+            "minutes": 2835,
+            "position": "Right Wing",
+            "rating": 7.7,
+            "xG": 9.4,
+            "xA": 8.1,
+            "key_passes": 52,
+            "successful_dribbles": 86,
+            "duels_won": 60,
+            "shots_per_game": 3.3,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 20,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.0,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "Right Wing/False 9",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "barcelona",
+                    "to": "psg",
+                    "transfer_fee": "Free",
+                    "date": "2021-08-10"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Fluid 4-3-3",
+                "teammate_quality": "High (Mbappé, Neymar)",
+                "league_competitiveness": "Ligue 1 (Top 5 European league)"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Copa America 2021",
+                    "appearances": 7,
+                    "goals": 4,
+                    "assists": 5,
+                    "minutes": 620,
+                    "position": "Right Wing",
+                    "rating": 9.0
+                }
+            ]
+        },
+        {
+            "season": 2022,
+            "team_id": "psg",
+            "league_id": "ligue1-2022",
+            "appearances": 32,
+            "goals": 16,
+            "assists": 16,
+            "minutes": 2842,
+            "position": "Forward",
+            "rating": 7.9,
+            "xG": 14.3,
+            "xA": 9.7,
+            "key_passes": 61,
+            "successful_dribbles": 92,
+            "duels_won": 70,
+            "shots_per_game": 3.1,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 22,
+            "injuries": [
+                {
+                    "type": "Hamstring",
+                    "start_date": "2022-10-29",
+                    "end_date": "2022-11-10",
+                    "days_lost": 12
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.8,
+                "acceleration": "Excellent",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "Right Wing/False 9",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very High",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Fluid 4-3-3",
+                "teammate_quality": "High (Mbappé, Neymar)",
+                "league_competitiveness": "Ligue 1 (Top 5 European league)"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "FIFA World Cup",
+                    "appearances": 7,
+                    "goals": 7,
+                    "assists": 3,
+                    "minutes": 690,
+                    "position": "Right Wing",
+                    "rating": 9.2
+                }
+            ]
+        },
+        {
+            "season": 2023,
+            "team_id": "intermiami",
+            "league_id": "mls-2023",
+            "appearances": 22,
+            "goals": 20,
+            "assists": 15,
+            "minutes": 1800,
+            "position": "Forward",
+            "rating": 8.5,
+            "xG": 15.9,
+            "xA": 7.7,
+            "key_passes": 49,
+            "successful_dribbles": 63,
+            "duels_won": 38,
+            "shots_per_game": 3.1,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 12,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.9,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "Free role",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Limited"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "psg",
+                    "to": "intermiami",
+                    "transfer_fee": "Free",
+                    "date": "2023-07-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Messi-centric",
+                "teammate_quality": "Good (Busquets, Alba)",
+                "league_competitiveness": "MLS"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Friendlies",
+                    "appearances": 5,
+                    "goals": 8,
+                    "assists": 2,
+                    "minutes": 450,
+                    "position": "Forward",
+                    "rating": 9.1
+                }
+            ]
+        },
+        {
+            "season": 2024,
+            "team_id": "intermiami",
+            "league_id": "mls-2024",
+            "appearances": 25,
+            "goals": 24,
+            "assists": 11,
+            "minutes": 2149,
+            "position": "Forward",
+            "rating": 8.5,
+            "xG": 19.7,
+            "xA": 8.3,
+            "key_passes": 58,
+            "successful_dribbles": 75,
+            "duels_won": 48,
+            "shots_per_game": 3.5,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 17,
+            "injuries": [
+                {
+                    "type": "None reported",
+                    "start_date": null,
+                    "end_date": null,
+                    "days_lost": 0
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.5,
+                "acceleration": "Good",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "Free role",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Limited"
+            },
+            "psychological_factors": {
+                "consistency": "Very High",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking, Messi-focus",
+                "teammate_quality": "Good",
+                "league_competitiveness": "MLS"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Copa America 2024",
+                    "appearances": 7,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 630,
+                    "position": "Forward",
+                    "rating": 8.3
+                }
+            ]
+        }
+    ]
+}

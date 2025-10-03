@@ -1,0 +1,1022 @@
+{
+    "player": {
+        "id": "neymar",
+        "name": "Neymar da Silva Santos Júnior",
+        "birth_date": "1992-02-05",
+        "nationality": "Brazil",
+        "height_cm": 175,
+        "weight_kg": 68,
+        "dominant_foot": "Right"
+    },
+    "teams": [
+        {
+            "id": "santos",
+            "name": "Santos",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/santos-fc-1.svg",
+            "country": "Brazil"
+        },
+        {
+            "id": "barcelona",
+            "name": "FC Barcelona",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/fc-barcelona-crest.svg",
+            "country": "Spain"
+        },
+        {
+            "id": "psg",
+            "name": "Paris Saint-Germain",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/psg-6.svg",
+            "country": "France"
+        },
+        {
+            "id": "alhilal",
+            "name": "Al Hilal SFC",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/al-hilal-1.svg",
+            "country": "Saudi Arabia"
+        },
+        {
+            "id": "brazil",
+            "name": "Brazil National Team",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg",
+            "country": "Brazil"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 2009,
+            "team_id": "santos",
+            "league_id": "brazil-seriea-2009",
+            "appearances": 48,
+            "goals": 14,
+            "assists": 10,
+            "minutes": 3249,
+            "position": "Left Wing/Forward",
+            "rating": 7.6,
+            "xG": 8.1,
+            "xA": 5.9,
+            "key_passes": 46,
+            "successful_dribbles": 102,
+            "duels_won": 76,
+            "shots_per_game": 2.3,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 41,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.2,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Promising",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking 4-2-3-1",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Campeonato Brasileiro Série A"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "brazil",
+                    "competition": "Brazil U20 Friendlies",
+                    "appearances": 5,
+                    "goals": 3,
+                    "assists": 1,
+                    "minutes": 346,
+                    "position": "LW",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2010,
+            "team_id": "santos",
+            "league_id": "brazil-seriea-2010",
+            "appearances": 60,
+            "goals": 42,
+            "assists": 17,
+            "minutes": 4400,
+            "position": "Left Wing/Forward",
+            "rating": 8.3,
+            "xG": 28.9,
+            "xA": 13.2,
+            "key_passes": 70,
+            "successful_dribbles": 150,
+            "duels_won": 112,
+            "shots_per_game": 2.7,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 55,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.4,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Very Fast"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Improving",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking 4-2-3-1",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Brazil Serie A"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "brazil",
+                    "competition": "Brazil U20/First Friendlies",
+                    "appearances": 6,
+                    "goals": 4,
+                    "assists": 2,
+                    "minutes": 440,
+                    "position": "LW",
+                    "rating": 7.8
+                }
+            ]
+        },
+        {
+            "season": 2011,
+            "team_id": "santos",
+            "league_id": "brazil-seriea-2011",
+            "appearances": 54,
+            "goals": 24,
+            "assists": 13,
+            "minutes": 4180,
+            "position": "Left Wing/Forward",
+            "rating": 7.8,
+            "xG": 18.7,
+            "xA": 9.3,
+            "key_passes": 52,
+            "successful_dribbles": 111,
+            "duels_won": 80,
+            "shots_per_game": 2.4,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 45,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.7,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Strong",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "4-2-3-1",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Brazil Serie A"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "brazil",
+                    "competition": "Copa America",
+                    "appearances": 4,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 290,
+                    "position": "LW",
+                    "rating": 7.2
+                },
+                {
+                    "team_id": "brazil",
+                    "competition": "Friendlies",
+                    "appearances": 5,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 420,
+                    "position": "LW",
+                    "rating": 7.4
+                }
+            ]
+        },
+        {
+            "season": 2012,
+            "team_id": "santos",
+            "league_id": "brazil-seriea-2012",
+            "appearances": 54,
+            "goals": 35,
+            "assists": 14,
+            "minutes": 4342,
+            "position": "Left Wing/Forward",
+            "rating": 8.2,
+            "xG": 24.7,
+            "xA": 11.1,
+            "key_passes": 64,
+            "successful_dribbles": 120,
+            "duels_won": 79,
+            "shots_per_game": 2.7,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 38,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.9,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Very Fast"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking focus",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Brazil Serie A"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "brazil",
+                    "competition": "Olympics",
+                    "appearances": 6,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 470,
+                    "position": "LW",
+                    "rating": 8.2
+                }
+            ]
+        },
+        {
+            "season": 2013,
+            "team_id": "santos",
+            "league_id": "brazil-seriea-2013",
+            "appearances": 33,
+            "goals": 15,
+            "assists": 8,
+            "minutes": 2750,
+            "position": "Left Wing/Forward",
+            "rating": 7.7,
+            "xG": 10.8,
+            "xA": 6.7,
+            "key_passes": 41,
+            "successful_dribbles": 77,
+            "duels_won": 51,
+            "shots_per_game": 2.3,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 21,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.6,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "santos",
+                    "to": "barcelona",
+                    "transfer_fee": "€88M",
+                    "date": "2013-07-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking 4-3-3",
+                "teammate_quality": "Elite (Ganso, Montillo)",
+                "league_competitiveness": "Brazil Serie A"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "brazil",
+                    "competition": "Confederations Cup",
+                    "appearances": 5,
+                    "goals": 4,
+                    "assists": 2,
+                    "minutes": 460,
+                    "position": "LW",
+                    "rating": 8.8
+                }
+            ]
+        },
+        {
+            "season": 2014,
+            "team_id": "barcelona",
+            "league_id": "laliga-2014",
+            "appearances": 51,
+            "goals": 39,
+            "assists": 11,
+            "minutes": 4102,
+            "position": "Left Wing/Forward",
+            "rating": 8.1,
+            "xG": 28.3,
+            "xA": 8.7,
+            "key_passes": 62,
+            "successful_dribbles": 114,
+            "duels_won": 76,
+            "shots_per_game": 2.5,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 32,
+            "injuries": [
+                {
+                    "type": "Back injury",
+                    "start_date": "2014-07-04",
+                    "end_date": "2014-08-31",
+                    "days_lost": 58
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.4,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Very Fast"
+            },
+            "tactical_data": {
+                "average_position": "LW/Forward",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Very High",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "MSN front three",
+                "teammate_quality": "Elite (Messi, Suarez)",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "brazil",
+                    "competition": "FIFA World Cup",
+                    "appearances": 5,
+                    "goals": 4,
+                    "assists": 1,
+                    "minutes": 457,
+                    "position": "LW",
+                    "rating": 8.8
+                }
+            ]
+        },
+        {
+            "season": 2015,
+            "team_id": "barcelona",
+            "league_id": "laliga-2015",
+            "appearances": 49,
+            "goals": 31,
+            "assists": 20,
+            "minutes": 4241,
+            "position": "Left Wing/Forward",
+            "rating": 8.4,
+            "xG": 19.2,
+            "xA": 11.6,
+            "key_passes": 77,
+            "successful_dribbles": 115,
+            "duels_won": 80,
+            "shots_per_game": 2.3,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 34,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.1,
+                "acceleration": "Elite",
+                "stamina": "Very High",
+                "recovery_rate": "Very Fast"
+            },
+            "tactical_data": {
+                "average_position": "LW/Forward",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "MSN, attacking 4-3-3",
+                "teammate_quality": "Elite (Messi, Suarez)",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "brazil",
+                    "competition": "Copa America 2015",
+                    "appearances": 2,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 170,
+                    "position": "LW",
+                    "rating": 7.3
+                },
+                {
+                    "team_id": "brazil",
+                    "competition": "Friendlies",
+                    "appearances": 6,
+                    "goals": 4,
+                    "assists": 2,
+                    "minutes": 510,
+                    "position": "LW",
+                    "rating": 7.9
+                }
+            ]
+        },
+        {
+            "season": 2016,
+            "team_id": "barcelona",
+            "league_id": "laliga-2016",
+            "appearances": 45,
+            "goals": 20,
+            "assists": 18,
+            "minutes": 3936,
+            "position": "Left Wing/Forward",
+            "rating": 8.2,
+            "xG": 13.7,
+            "xA": 10.9,
+            "key_passes": 68,
+            "successful_dribbles": 98,
+            "duels_won": 73,
+            "shots_per_game": 2.3,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 35,
+            "injuries": [
+                {
+                    "type": "Thigh strain",
+                    "start_date": "2016-09-08",
+                    "end_date": "2016-09-21",
+                    "days_lost": 13
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.7,
+                "acceleration": "Elite",
+                "stamina": "Very High",
+                "recovery_rate": "Very Fast"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "MSN split transitions",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "brazil",
+                    "competition": "Olympics 2016",
+                    "appearances": 6,
+                    "goals": 4,
+                    "assists": 3,
+                    "minutes": 570,
+                    "position": "LW",
+                    "rating": 8.7
+                }
+            ]
+        },
+        {
+            "season": 2017,
+            "team_id": "barcelona",
+            "league_id": "laliga-2017",
+            "appearances": 45,
+            "goals": 28,
+            "assists": 19,
+            "minutes": 4040,
+            "position": "Left Wing/Forward",
+            "rating": 8.5,
+            "xG": 14.9,
+            "xA": 11.4,
+            "key_passes": 74,
+            "successful_dribbles": 103,
+            "duels_won": 71,
+            "shots_per_game": 2.3,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 34,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.6,
+                "acceleration": "Elite",
+                "stamina": "Very High",
+                "recovery_rate": "Very Fast"
+            },
+            "tactical_data": {
+                "average_position": "LW/Forward",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "barcelona",
+                    "to": "psg",
+                    "transfer_fee": "€222M",
+                    "date": "2017-08-03"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "MSN end, PSG debut",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga / Ligue 1"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "brazil",
+                    "competition": "Friendlies",
+                    "appearances": 7,
+                    "goals": 6,
+                    "assists": 4,
+                    "minutes": 520,
+                    "position": "LW",
+                    "rating": 8.1
+                }
+            ]
+        },
+        {
+            "season": 2018,
+            "team_id": "psg",
+            "league_id": "ligue1-2018",
+            "appearances": 30,
+            "goals": 28,
+            "assists": 16,
+            "minutes": 2457,
+            "position": "Left Wing/Forward",
+            "rating": 8.7,
+            "xG": 19.2,
+            "xA": 8.8,
+            "key_passes": 59,
+            "successful_dribbles": 98,
+            "duels_won": 65,
+            "shots_per_game": 2.8,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 29,
+            "injuries": [
+                {
+                    "type": "Metatarsal fracture",
+                    "start_date": "2018-02-26",
+                    "end_date": "2018-05-17",
+                    "days_lost": 80
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.2,
+                "acceleration": "Elite",
+                "stamina": "Very High",
+                "recovery_rate": "Elite"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Neymar focus",
+                "teammate_quality": "Elite (Mbappé, Cavani)",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "brazil",
+                    "competition": "FIFA World Cup 2018",
+                    "appearances": 5,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 480,
+                    "position": "LW",
+                    "rating": 7.8
+                }
+            ]
+        },
+        {
+            "season": 2019,
+            "team_id": "psg",
+            "league_id": "ligue1-2019",
+            "appearances": 27,
+            "goals": 19,
+            "assists": 12,
+            "minutes": 2172,
+            "position": "Left Wing/Forward",
+            "rating": 8.6,
+            "xG": 15.1,
+            "xA": 7.8,
+            "key_passes": 54,
+            "successful_dribbles": 103,
+            "duels_won": 77,
+            "shots_per_game": 2.5,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 26,
+            "injuries": [
+                {
+                    "type": "Hamstring",
+                    "start_date": "2019-10-14",
+                    "end_date": "2019-11-22",
+                    "days_lost": 39
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.2,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Neymar/PSG pivot",
+                "teammate_quality": "Elite (Mbappé)",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "brazil",
+                    "competition": "Copa America 2019 (missed injured)/Friendlies",
+                    "appearances": 5,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 362,
+                    "position": "LW",
+                    "rating": 7.9
+                }
+            ]
+        },
+        {
+            "season": 2020,
+            "team_id": "psg",
+            "league_id": "ligue1-2020",
+            "appearances": 27,
+            "goals": 17,
+            "assists": 9,
+            "minutes": 1830,
+            "position": "Left Wing/Forward",
+            "rating": 8.4,
+            "xG": 13.8,
+            "xA": 6.5,
+            "key_passes": 46,
+            "successful_dribbles": 84,
+            "duels_won": 62,
+            "shots_per_game": 2.3,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 22,
+            "injuries": [
+                {
+                    "type": "Ankle sprain",
+                    "start_date": "2020-12-13",
+                    "end_date": "2021-01-13",
+                    "days_lost": 31
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.8,
+                "acceleration": "Elite",
+                "stamina": "Very High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/10",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Very High",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "PSG, Neymar central",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "brazil",
+                    "competition": "Friendlies/World Cup Qualifiers",
+                    "appearances": 6,
+                    "goals": 4,
+                    "assists": 3,
+                    "minutes": 470,
+                    "position": "LW/10",
+                    "rating": 8.4
+                }
+            ]
+        },
+        {
+            "season": 2021,
+            "team_id": "psg",
+            "league_id": "ligue1-2021",
+            "appearances": 28,
+            "goals": 13,
+            "assists": 8,
+            "minutes": 1934,
+            "position": "Left Wing/Forward",
+            "rating": 8.0,
+            "xG": 10.2,
+            "xA": 5.9,
+            "key_passes": 42,
+            "successful_dribbles": 78,
+            "duels_won": 44,
+            "shots_per_game": 2.2,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 13,
+            "injuries": [
+                {
+                    "type": "Groin",
+                    "start_date": "2021-11-28",
+                    "end_date": "2022-02-12",
+                    "days_lost": 76
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.4,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "LW/10",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "High",
+                "pressure_handling": "High",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "PSG, Neymar link",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "brazil",
+                    "competition": "Copa America 2021",
+                    "appearances": 7,
+                    "goals": 2,
+                    "assists": 3,
+                    "minutes": 630,
+                    "position": "LW/10",
+                    "rating": 8.1
+                }
+            ]
+        },
+        {
+            "season": 2022,
+            "team_id": "psg",
+            "league_id": "ligue1-2022",
+            "appearances": 28,
+            "goals": 18,
+            "assists": 14,
+            "minutes": 2329,
+            "position": "Left Wing/Forward",
+            "rating": 8.1,
+            "xG": 12.1,
+            "xA": 8.0,
+            "key_passes": 57,
+            "successful_dribbles": 82,
+            "duels_won": 62,
+            "shots_per_game": 2.2,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 15,
+            "injuries": [
+                {
+                    "type": "Ankle injury",
+                    "start_date": "2022-11-28",
+                    "end_date": "2022-12-15",
+                    "days_lost": 17
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.2,
+                "acceleration": "Elite",
+                "stamina": "Very High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/10",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Neymar/Mbappé switch",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "brazil",
+                    "competition": "FIFA World Cup 2022",
+                    "appearances": 3,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 233,
+                    "position": "LW/10",
+                    "rating": 8.2
+                }
+            ]
+        },
+        {
+            "season": 2023,
+            "team_id": "alhilal",
+            "league_id": "spl-2023",
+            "appearances": 12,
+            "goals": 8,
+            "assists": 4,
+            "minutes": 792,
+            "position": "Left Wing/Forward",
+            "rating": 7.5,
+            "xG": 5.2,
+            "xA": 3.3,
+            "key_passes": 20,
+            "successful_dribbles": 28,
+            "duels_won": 17,
+            "shots_per_game": 2.0,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 5,
+            "injuries": [
+                {
+                    "type": "ACL tear",
+                    "start_date": "2023-10-17",
+                    "end_date": "2024-04-01",
+                    "days_lost": 168
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.7,
+                "acceleration": "High",
+                "stamina": "Average",
+                "recovery_rate": "So-so"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Variable (injury)",
+                "pressure_handling": "High",
+                "clutch_performance": "Good"
+            },
+            "transfer_history": [
+                {
+                    "from": "psg",
+                    "to": "alhilal",
+                    "transfer_fee": "€90M",
+                    "date": "2023-08-15"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Saudi Pro League attacking",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Saudi Pro League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "brazil",
+                    "competition": "Friendlies",
+                    "appearances": 2,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 110,
+                    "position": "LW",
+                    "rating": 7.0
+                }
+            ]
+        },
+        {
+            "season": 2024,
+            "team_id": "alhilal",
+            "league_id": "spl-2024",
+            "appearances": 16,
+            "goals": 11,
+            "assists": 5,
+            "minutes": 1100,
+            "position": "Left Wing/Forward",
+            "rating": 7.7,
+            "xG": 7.7,
+            "xA": 3.9,
+            "key_passes": 18,
+            "successful_dribbles": 18,
+            "duels_won": 10,
+            "shots_per_game": 2.1,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 2,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 28.9,
+                "acceleration": "Good",
+                "stamina": "Reduced",
+                "recovery_rate": "Questionable"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Good (limited minutes)",
+                "pressure_handling": "High",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Out wide",
+                "teammate_quality": "Mixed",
+                "league_competitiveness": "Saudi Pro League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "brazil",
+                    "competition": "Copa America 2024",
+                    "appearances": 3,
+                    "goals": 0,
+                    "assists": 0,
+                    "minutes": 74,
+                    "position": "LW",
+                    "rating": 6.5
+                }
+            ]
+        }
+    ]
+}

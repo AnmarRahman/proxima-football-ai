@@ -1,0 +1,542 @@
+{
+    "player": {
+        "id": "haaland",
+        "name": "Erling Braut Haaland",
+        "birth_date": "2000-07-21",
+        "nationality": "Norway",
+        "height_cm": 194,
+        "weight_kg": 88,
+        "dominant_foot": "Left"
+    },
+    "teams": [
+        {
+            "id": "bryne",
+            "name": "Bryne FK",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/bryne-fk.svg",
+            "country": "Norway"
+        },
+        {
+            "id": "molde",
+            "name": "Molde FK",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/molde-fk.svg",
+            "country": "Norway"
+        },
+        {
+            "id": "salzburg",
+            "name": "Red Bull Salzburg",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/fc-red-bull-salzburg.svg",
+            "country": "Austria"
+        },
+        {
+            "id": "dortmund",
+            "name": "Borussia Dortmund",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/borussia-dortmund-logo.svg",
+            "country": "Germany"
+        },
+        {
+            "id": "mancity",
+            "name": "Manchester City",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/manchester-city-fc-crest-logo.svg",
+            "country": "England"
+        },
+        {
+            "id": "norway",
+            "name": "Norway National Team",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_Norway.svg",
+            "country": "Norway"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 2016,
+            "team_id": "bryne",
+            "league_id": "norwegian-1div-2016",
+            "appearances": 16,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 336,
+            "position": "Forward",
+            "rating": 6.3,
+            "xG": 1.0,
+            "xA": 0.4,
+            "key_passes": 3,
+            "successful_dribbles": 4,
+            "duels_won": 11,
+            "shots_per_game": 0.7,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 3,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.0,
+                "acceleration": "Developing",
+                "stamina": "Improving",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Emerging",
+                "pressure_handling": "Promising",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "4-4-2 basic",
+                "teammate_quality": "Modest",
+                "league_competitiveness": "Moderate (Norwegian 1st Div)"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "norway",
+                    "competition": "Norway U17 European Champ Qualifiers",
+                    "appearances": 4,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 337,
+                    "position": "Forward",
+                    "rating": 6.9
+                }
+            ]
+        },
+        {
+            "season": 2018,
+            "team_id": "molde",
+            "league_id": "eliteserien-2018",
+            "appearances": 25,
+            "goals": 12,
+            "assists": 2,
+            "minutes": 1067,
+            "position": "Forward",
+            "rating": 7.1,
+            "xG": 7.6,
+            "xA": 2.2,
+            "key_passes": 11,
+            "successful_dribbles": 17,
+            "duels_won": 24,
+            "shots_per_game": 2.0,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 9,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.4,
+                "acceleration": "Strong",
+                "stamina": "Rising",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Solid",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "bryne",
+                    "to": "molde",
+                    "transfer_fee": "Unknown",
+                    "date": "2017-02-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "4-3-3, direct play",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Norwegian Eliteserien"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "norway",
+                    "competition": "UEFA U19 European Championship",
+                    "appearances": 6,
+                    "goals": 3,
+                    "assists": 1,
+                    "minutes": 447,
+                    "position": "Forward",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2019,
+            "team_id": "salzburg",
+            "league_id": "austria-bundesliga-2019",
+            "appearances": 16,
+            "goals": 17,
+            "assists": 2,
+            "minutes": 890,
+            "position": "Forward",
+            "rating": 8.0,
+            "xG": 12.8,
+            "xA": 3.2,
+            "key_passes": 21,
+            "successful_dribbles": 27,
+            "duels_won": 31,
+            "shots_per_game": 3.5,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 10,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 35.7,
+                "acceleration": "Powerful",
+                "stamina": "High",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Fast"
+            },
+            "psychological_factors": {
+                "consistency": "High",
+                "pressure_handling": "Excellent",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "molde",
+                    "to": "salzburg",
+                    "transfer_fee": "€8M",
+                    "date": "2019-01-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Pressing, fast transitions",
+                "teammate_quality": "Good (young squad)",
+                "league_competitiveness": "Austria Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "norway",
+                    "competition": "Norway U20 World Cup",
+                    "appearances": 3,
+                    "goals": 9,
+                    "assists": 0,
+                    "minutes": 270,
+                    "position": "Forward",
+                    "rating": 9.0
+                },
+                {
+                    "team_id": "norway",
+                    "competition": "Friendly & Euro Qualifiers",
+                    "appearances": 2,
+                    "goals": 0,
+                    "assists": 0,
+                    "minutes": 98,
+                    "position": "Forward",
+                    "rating": 6.5
+                }
+            ]
+        },
+        {
+            "season": 2020,
+            "team_id": "dortmund",
+            "league_id": "bundesliga-2020",
+            "appearances": 28,
+            "goals": 27,
+            "assists": 6,
+            "minutes": 2410,
+            "position": "Forward",
+            "rating": 8.3,
+            "xG": 20.6,
+            "xA": 4.1,
+            "key_passes": 31,
+            "successful_dribbles": 46,
+            "duels_won": 59,
+            "shots_per_game": 3.9,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 16,
+            "injuries": [
+                {
+                    "type": "Muscle Fatigue",
+                    "start_date": "2020-12-01",
+                    "end_date": "2020-12-14",
+                    "days_lost": 13
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 36.1,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Moderate"
+            },
+            "psychological_factors": {
+                "consistency": "High",
+                "pressure_handling": "Excellent",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "salzburg",
+                    "to": "dortmund",
+                    "transfer_fee": "€20M",
+                    "date": "2020-01-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking 4-2-3-1",
+                "teammate_quality": "High (Sancho, Reus)",
+                "league_competitiveness": "Bundesliga (Top 5 Euro league)"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "norway",
+                    "competition": "UEFA Nations League B",
+                    "appearances": 6,
+                    "goals": 6,
+                    "assists": 1,
+                    "minutes": 533,
+                    "position": "Forward",
+                    "rating": 8.2
+                },
+                {
+                    "team_id": "norway",
+                    "competition": "Friendlies & Euro 2021 Qualifiers",
+                    "appearances": 4,
+                    "goals": 1,
+                    "assists": 0,
+                    "minutes": 320,
+                    "position": "Forward",
+                    "rating": 7.4
+                }
+            ]
+        },
+        {
+            "season": 2022,
+            "team_id": "mancity",
+            "league_id": "premierleague-2022",
+            "appearances": 35,
+            "goals": 36,
+            "assists": 8,
+            "minutes": 2777,
+            "position": "Forward",
+            "rating": 8.6,
+            "xG": 30.9,
+            "xA": 7.6,
+            "key_passes": 42,
+            "successful_dribbles": 51,
+            "duels_won": 66,
+            "shots_per_game": 4.3,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 21,
+            "injuries": [
+                {
+                    "type": "Foot Injury",
+                    "start_date": "2022-10-25",
+                    "end_date": "2022-11-07",
+                    "days_lost": 13
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 36.6,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very High",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "dortmund",
+                    "to": "mancity",
+                    "transfer_fee": "€60M",
+                    "date": "2022-07-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Fluid 4-3-3",
+                "teammate_quality": "Elite (De Bruyne, Foden)",
+                "league_competitiveness": "Premier League (Top 5 European league)"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "norway",
+                    "competition": "UEFA Nations League B",
+                    "appearances": 6,
+                    "goals": 6,
+                    "assists": 1,
+                    "minutes": 450,
+                    "position": "Forward",
+                    "rating": 8.4
+                },
+                {
+                    "team_id": "norway",
+                    "competition": "Friendlies & World Cup Qualifiers",
+                    "appearances": 5,
+                    "goals": 7,
+                    "assists": 1,
+                    "minutes": 420,
+                    "position": "Forward",
+                    "rating": 8.7
+                }
+            ]
+        },
+        {
+            "season": 2023,
+            "team_id": "mancity",
+            "league_id": "premierleague-2023",
+            "appearances": 31,
+            "goals": 27,
+            "assists": 5,
+            "minutes": 2558,
+            "position": "Forward",
+            "rating": 8.4,
+            "xG": 24.5,
+            "xA": 6.3,
+            "key_passes": 44,
+            "successful_dribbles": 54,
+            "duels_won": 71,
+            "shots_per_game": 3.9,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 19,
+            "injuries": [
+                {
+                    "type": "Knock",
+                    "start_date": "2023-09-12",
+                    "end_date": "2023-09-17",
+                    "days_lost": 5
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 36.8,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "Excellent",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Pep Guardiola's 4-3-3",
+                "teammate_quality": "Elite (De Bruyne, Foden)",
+                "league_competitiveness": "Premier League (Top 5 European league)"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "norway",
+                    "competition": "EURO 2024 Qualifiers",
+                    "appearances": 8,
+                    "goals": 6,
+                    "assists": 2,
+                    "minutes": 705,
+                    "position": "Forward",
+                    "rating": 8.1
+                },
+                {
+                    "team_id": "norway",
+                    "competition": "Friendlies",
+                    "appearances": 4,
+                    "goals": 6,
+                    "assists": 2,
+                    "minutes": 360,
+                    "position": "Forward",
+                    "rating": 8.6
+                }
+            ]
+        },
+        {
+            "season": 2024,
+            "team_id": "mancity",
+            "league_id": "premierleague-2024",
+            "appearances": 31,
+            "goals": 22,
+            "assists": 3,
+            "minutes": 2742,
+            "position": "Forward",
+            "rating": 7.9,
+            "xG": 21.8,
+            "xA": 5.7,
+            "key_passes": 39,
+            "successful_dribbles": 48,
+            "duels_won": 63,
+            "shots_per_game": 3.5,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 17,
+            "injuries": [
+                {
+                    "type": "Minor strain",
+                    "start_date": "2024-03-04",
+                    "end_date": "2024-03-11",
+                    "days_lost": 7
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 36.6,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "Excellent",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Pep Guardiola's 4-3-3",
+                "teammate_quality": "Elite (De Bruyne, Foden)",
+                "league_competitiveness": "Premier League (Top 5 European league)"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "norway",
+                    "competition": "UEFA Nations League B",
+                    "appearances": 6,
+                    "goals": 7,
+                    "assists": 1,
+                    "minutes": 520,
+                    "position": "Forward",
+                    "rating": 8.4
+                },
+                {
+                    "team_id": "norway",
+                    "competition": "Friendlies & World Cup Qualifiers",
+                    "appearances": 7,
+                    "goals": 11,
+                    "assists": 2,
+                    "minutes": 660,
+                    "position": "Forward",
+                    "rating": 9.0
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1466 @@
+{
+    "player": {
+        "id": "ronaldo",
+        "name": "Cristiano Ronaldo",
+        "birth_date": "1985-02-05",
+        "nationality": "Portugal",
+        "height_cm": 187,
+        "weight_kg": 83,
+        "dominant_foot": "Right"
+    },
+    "teams": [
+        {
+            "id": "sportingcp",
+            "name": "Sporting CP",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/sporting-cp.svg",
+            "country": "Portugal"
+        },
+        {
+            "id": "manutd",
+            "name": "Manchester United",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/manchester-united-fc-logo.svg",
+            "country": "England"
+        },
+        {
+            "id": "realmadrid",
+            "name": "Real Madrid",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/real-madrid-c-f.svg",
+            "country": "Spain"
+        },
+        {
+            "id": "juventus",
+            "name": "Juventus",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/juventus-fc.svg",
+            "country": "Italy"
+        },
+        {
+            "id": "alnassr",
+            "name": "Al Nassr",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/al-nassr-fc-1.svg",
+            "country": "Saudi Arabia"
+        },
+        {
+            "id": "portugal",
+            "name": "Portugal National Team",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
+            "country": "Portugal"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 2002,
+            "team_id": "sportingcp",
+            "league_id": "primeira-liga-2002",
+            "appearances": 31,
+            "goals": 5,
+            "assists": 7,
+            "minutes": 1890,
+            "position": "Right Wing",
+            "rating": 6.7,
+            "xG": 4.4,
+            "xA": 3.5,
+            "key_passes": 21,
+            "successful_dribbles": 45,
+            "duels_won": 23,
+            "shots_per_game": 1.1,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 8,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.0,
+                "acceleration": "Very High",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW/Forward",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Limited"
+            },
+            "psychological_factors": {
+                "consistency": "Emerging",
+                "pressure_handling": "Promising",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wing play",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Primeira Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "Portugal U21",
+                    "appearances": 6,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 465,
+                    "position": "RW",
+                    "rating": 6.9
+                }
+            ]
+        },
+        {
+            "season": 2003,
+            "team_id": "sportingcp",
+            "league_id": "primeira-liga-2003",
+            "appearances": 31,
+            "goals": 5,
+            "assists": 7,
+            "minutes": 1751,
+            "position": "Right Wing",
+            "rating": 7.0,
+            "xG": 4.5,
+            "xA": 3.8,
+            "key_passes": 25,
+            "successful_dribbles": 52,
+            "duels_won": 28,
+            "shots_per_game": 1.3,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 8,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.6,
+                "acceleration": "Very High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW/Forward",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Limited"
+            },
+            "psychological_factors": {
+                "consistency": "Improving",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "sportingcp",
+                    "to": "manutd",
+                    "transfer_fee": "€19M",
+                    "date": "2003-08-12"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wing play",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Primeira Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "Portugal U21",
+                    "appearances": 7,
+                    "goals": 4,
+                    "assists": 2,
+                    "minutes": 520,
+                    "position": "RW",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2004,
+            "team_id": "manutd",
+            "league_id": "premierleague-2004",
+            "appearances": 40,
+            "goals": 6,
+            "assists": 8,
+            "minutes": 2563,
+            "position": "Right Wing",
+            "rating": 7.3,
+            "xG": 5.6,
+            "xA": 4.2,
+            "key_passes": 35,
+            "successful_dribbles": 65,
+            "duels_won": 36,
+            "shots_per_game": 1.6,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 11,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.0,
+                "acceleration": "Very High",
+                "stamina": "Improving",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW/Forward",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Limited"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wing play",
+                "teammate_quality": "High (Giggs, Scholes)",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "UEFA Euro 2004",
+                    "appearances": 6,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 515,
+                    "position": "RW",
+                    "rating": 7.7
+                }
+            ]
+        },
+        {
+            "season": 2005,
+            "team_id": "manutd",
+            "league_id": "premierleague-2005",
+            "appearances": 50,
+            "goals": 9,
+            "assists": 8,
+            "minutes": 3687,
+            "position": "Right Wing",
+            "rating": 7.5,
+            "xG": 7.1,
+            "xA": 5.6,
+            "key_passes": 41,
+            "successful_dribbles": 81,
+            "duels_won": 47,
+            "shots_per_game": 2.0,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 14,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.2,
+                "acceleration": "Elite",
+                "stamina": "Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/Forward",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wing play",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 10,
+                    "goals": 7,
+                    "assists": 3,
+                    "minutes": 840,
+                    "position": "RW",
+                    "rating": 8.1
+                }
+            ]
+        },
+        {
+            "season": 2006,
+            "team_id": "manutd",
+            "league_id": "premierleague-2006",
+            "appearances": 53,
+            "goals": 23,
+            "assists": 11,
+            "minutes": 4217,
+            "position": "RW/SS",
+            "rating": 8.0,
+            "xG": 15.2,
+            "xA": 6.8,
+            "key_passes": 64,
+            "successful_dribbles": 110,
+            "duels_won": 81,
+            "shots_per_game": 2.5,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 20,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.4,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "RW/SS",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wing play, more central",
+                "teammate_quality": "Elite (Rooney, Giggs)",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "FIFA World Cup",
+                    "appearances": 6,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 516,
+                    "position": "RW/SS",
+                    "rating": 7.8
+                }
+            ]
+        },
+        {
+            "season": 2007,
+            "team_id": "manutd",
+            "league_id": "premierleague-2007",
+            "appearances": 49,
+            "goals": 34,
+            "assists": 9,
+            "minutes": 4320,
+            "position": "RW/SS",
+            "rating": 8.3,
+            "xG": 23.9,
+            "xA": 7.1,
+            "key_passes": 69,
+            "successful_dribbles": 98,
+            "duels_won": 81,
+            "shots_per_game": 3.9,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 20,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.9,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "RW/SS",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Ferguson fluid",
+                "teammate_quality": "Elite (Rooney, Tevez)",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "Euro Qualifiers",
+                    "appearances": 10,
+                    "goals": 8,
+                    "assists": 2,
+                    "minutes": 880,
+                    "position": "RW/SS",
+                    "rating": 8.3
+                }
+            ]
+        },
+        {
+            "season": 2008,
+            "team_id": "manutd",
+            "league_id": "premierleague-2008",
+            "appearances": 53,
+            "goals": 31,
+            "assists": 10,
+            "minutes": 4271,
+            "position": "RW/SS",
+            "rating": 8.1,
+            "xG": 22.7,
+            "xA": 7.4,
+            "key_passes": 80,
+            "successful_dribbles": 103,
+            "duels_won": 91,
+            "shots_per_game": 4.1,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 22,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.2,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "RW/SS",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "manutd",
+                    "to": "realmadrid",
+                    "transfer_fee": "€94M",
+                    "date": "2009-07-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking focus",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "Euro 2008",
+                    "appearances": 4,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 360,
+                    "position": "RW/SS",
+                    "rating": 7.6
+                },
+                {
+                    "team_id": "portugal",
+                    "competition": "Friendlies",
+                    "appearances": 6,
+                    "goals": 3,
+                    "assists": 1,
+                    "minutes": 410,
+                    "position": "RW/SS",
+                    "rating": 7.7
+                }
+            ]
+        },
+        {
+            "season": 2009,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2009",
+            "appearances": 35,
+            "goals": 33,
+            "assists": 7,
+            "minutes": 2873,
+            "position": "LW/ST",
+            "rating": 8.4,
+            "xG": 23.1,
+            "xA": 5.9,
+            "key_passes": 62,
+            "successful_dribbles": 99,
+            "duels_won": 74,
+            "shots_per_game": 4.2,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 19,
+            "injuries": [
+                {
+                    "type": "Ankle injury",
+                    "start_date": "2009-09-30",
+                    "end_date": "2009-11-06",
+                    "days_lost": 37
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.1,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "LW/ST",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter-attack focus",
+                "teammate_quality": "Elite (Kaka, Benzema)",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 7,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 670,
+                    "position": "LW/ST",
+                    "rating": 7.7
+                }
+            ]
+        },
+        {
+            "season": 2010,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2010",
+            "appearances": 54,
+            "goals": 53,
+            "assists": 14,
+            "minutes": 4774,
+            "position": "LW/ST",
+            "rating": 8.8,
+            "xG": 35.1,
+            "xA": 7.3,
+            "key_passes": 86,
+            "successful_dribbles": 110,
+            "duels_won": 79,
+            "shots_per_game": 5.0,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 28,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.2,
+                "acceleration": "Elite",
+                "stamina": "Very High",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "LW/ST",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Marcelo overlap, counter attacks",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "FIFA World Cup",
+                    "appearances": 4,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 390,
+                    "position": "LW/ST",
+                    "rating": 7.4
+                },
+                {
+                    "team_id": "portugal",
+                    "competition": "Friendlies",
+                    "appearances": 7,
+                    "goals": 5,
+                    "assists": 3,
+                    "minutes": 480,
+                    "position": "LW/ST",
+                    "rating": 8.0
+                }
+            ]
+        },
+        {
+            "season": 2011,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2011",
+            "appearances": 55,
+            "goals": 60,
+            "assists": 15,
+            "minutes": 5020,
+            "position": "LW/ST",
+            "rating": 9.0,
+            "xG": 39.4,
+            "xA": 9.4,
+            "key_passes": 96,
+            "successful_dribbles": 135,
+            "duels_won": 89,
+            "shots_per_game": 5.3,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 31,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.1,
+                "acceleration": "Elite",
+                "stamina": "Elite",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "LW/ST",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Mourinho counter-attacks",
+                "teammate_quality": "Elite (Ozil, Benzema)",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "Euro Qualifiers",
+                    "appearances": 7,
+                    "goals": 7,
+                    "assists": 2,
+                    "minutes": 630,
+                    "position": "LW/ST",
+                    "rating": 8.9
+                }
+            ]
+        },
+        {
+            "season": 2012,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2012",
+            "appearances": 55,
+            "goals": 59,
+            "assists": 14,
+            "minutes": 4893,
+            "position": "LW/ST",
+            "rating": 8.9,
+            "xG": 40.0,
+            "xA": 10.0,
+            "key_passes": 94,
+            "successful_dribbles": 133,
+            "duels_won": 77,
+            "shots_per_game": 5.2,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 35,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.0,
+                "acceleration": "Elite",
+                "stamina": "Elite",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "LW/ST",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter-attack, Ronaldo focus",
+                "teammate_quality": "Elite (Benzema, Ozil)",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "Euro 2012",
+                    "appearances": 5,
+                    "goals": 3,
+                    "assists": 1,
+                    "minutes": 450,
+                    "position": "LW/ST",
+                    "rating": 8.7
+                },
+                {
+                    "team_id": "portugal",
+                    "competition": "Friendlies",
+                    "appearances": 7,
+                    "goals": 7,
+                    "assists": 2,
+                    "minutes": 500,
+                    "position": "LW/ST",
+                    "rating": 8.4
+                }
+            ]
+        },
+        {
+            "season": 2013,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2013",
+            "appearances": 59,
+            "goals": 55,
+            "assists": 17,
+            "minutes": 5296,
+            "position": "LW/ST",
+            "rating": 9.1,
+            "xG": 41.5,
+            "xA": 10.1,
+            "key_passes": 99,
+            "successful_dribbles": 117,
+            "duels_won": 84,
+            "shots_per_game": 5.4,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 33,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.9,
+                "acceleration": "Elite",
+                "stamina": "Elite",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "LW/ST",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter, Ancelotti",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 10,
+                    "goals": 8,
+                    "assists": 3,
+                    "minutes": 820,
+                    "position": "LW/ST",
+                    "rating": 8.7
+                },
+                {
+                    "team_id": "portugal",
+                    "competition": "Friendlies",
+                    "appearances": 6,
+                    "goals": 7,
+                    "assists": 1,
+                    "minutes": 480,
+                    "position": "LW/ST",
+                    "rating": 8.5
+                }
+            ]
+        },
+        {
+            "season": 2014,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2014",
+            "appearances": 54,
+            "goals": 61,
+            "assists": 22,
+            "minutes": 4721,
+            "position": "LW/ST",
+            "rating": 9.3,
+            "xG": 41.2,
+            "xA": 10.9,
+            "key_passes": 95,
+            "successful_dribbles": 110,
+            "duels_won": 72,
+            "shots_per_game": 5.4,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 32,
+            "injuries": [
+                {
+                    "type": "Muscle fatigue",
+                    "start_date": "2014-04-07",
+                    "end_date": "2014-04-28",
+                    "days_lost": 21
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.6,
+                "acceleration": "Elite",
+                "stamina": "Elite",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "LW/ST",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter, BBC combo",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "FIFA World Cup",
+                    "appearances": 3,
+                    "goals": 1,
+                    "assists": 0,
+                    "minutes": 270,
+                    "position": "LW/ST",
+                    "rating": 7.2
+                },
+                {
+                    "team_id": "portugal",
+                    "competition": "Friendlies",
+                    "appearances": 7,
+                    "goals": 5,
+                    "assists": 2,
+                    "minutes": 620,
+                    "position": "LW/ST",
+                    "rating": 8.1
+                }
+            ]
+        },
+        {
+            "season": 2015,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2015",
+            "appearances": 48,
+            "goals": 51,
+            "assists": 15,
+            "minutes": 4310,
+            "position": "LW/ST",
+            "rating": 8.7,
+            "xG": 36.4,
+            "xA": 9.1,
+            "key_passes": 87,
+            "successful_dribbles": 104,
+            "duels_won": 67,
+            "shots_per_game": 4.9,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 24,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.2,
+                "acceleration": "Elite",
+                "stamina": "Elite",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "LW/ST",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter, BBC trio",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "Euro Qualifiers",
+                    "appearances": 6,
+                    "goals": 5,
+                    "assists": 2,
+                    "minutes": 495,
+                    "position": "LW/ST",
+                    "rating": 8.5
+                }
+            ]
+        },
+        {
+            "season": 2016,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2016",
+            "appearances": 42,
+            "goals": 42,
+            "assists": 15,
+            "minutes": 3887,
+            "position": "LW/ST",
+            "rating": 8.4,
+            "xG": 30.7,
+            "xA": 7.1,
+            "key_passes": 81,
+            "successful_dribbles": 88,
+            "duels_won": 58,
+            "shots_per_game": 4.5,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 19,
+            "injuries": [
+                {
+                    "type": "Minor muscle strain",
+                    "start_date": "2016-12-01",
+                    "end_date": "2016-12-08",
+                    "days_lost": 7
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.7,
+                "acceleration": "Elite",
+                "stamina": "Elite",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "LW/ST",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Zidane era",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "UEFA Euro 2016",
+                    "appearances": 7,
+                    "goals": 3,
+                    "assists": 3,
+                    "minutes": 655,
+                    "position": "LW/ST",
+                    "rating": 8.4
+                }
+            ]
+        },
+        {
+            "season": 2017,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2017",
+            "appearances": 44,
+            "goals": 44,
+            "assists": 8,
+            "minutes": 3872,
+            "position": "LW/ST",
+            "rating": 8.5,
+            "xG": 31.1,
+            "xA": 8.2,
+            "key_passes": 76,
+            "successful_dribbles": 87,
+            "duels_won": 51,
+            "shots_per_game": 4.6,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 16,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.4,
+                "acceleration": "Elite",
+                "stamina": "Elite",
+                "recovery_rate": "Elite"
+            },
+            "tactical_data": {
+                "average_position": "LW/ST",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Masterful"
+            },
+            "transfer_history": [
+                {
+                    "from": "realmadrid",
+                    "to": "juventus",
+                    "transfer_fee": "€117M",
+                    "date": "2018-07-10"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Zidane - counter",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga/UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "FIFA World Cup Qualifiers & Friendlies",
+                    "appearances": 12,
+                    "goals": 11,
+                    "assists": 2,
+                    "minutes": 893,
+                    "position": "LW/ST",
+                    "rating": 8.6
+                }
+            ]
+        },
+        {
+            "season": 2018,
+            "team_id": "juventus",
+            "league_id": "seriea-2018",
+            "appearances": 43,
+            "goals": 28,
+            "assists": 10,
+            "minutes": 3861,
+            "position": "ST/LW",
+            "rating": 8.2,
+            "xG": 22.9,
+            "xA": 7.9,
+            "key_passes": 52,
+            "successful_dribbles": 67,
+            "duels_won": 38,
+            "shots_per_game": 4.4,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 14,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.1,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Elite"
+            },
+            "tactical_data": {
+                "average_position": "LW/ST",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Allegri 4-3-3",
+                "teammate_quality": "High (Dybala)",
+                "league_competitiveness": "Serie A"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "World Cup 2018",
+                    "appearances": 4,
+                    "goals": 4,
+                    "assists": 0,
+                    "minutes": 360,
+                    "position": "ST/LW",
+                    "rating": 8.2
+                }
+            ]
+        },
+        {
+            "season": 2019,
+            "team_id": "juventus",
+            "league_id": "seriea-2019",
+            "appearances": 46,
+            "goals": 37,
+            "assists": 7,
+            "minutes": 4098,
+            "position": "ST/LW",
+            "rating": 8.4,
+            "xG": 26.4,
+            "xA": 6.1,
+            "key_passes": 59,
+            "successful_dribbles": 62,
+            "duels_won": 40,
+            "shots_per_game": 4.2,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 12,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.7,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "Elite"
+            },
+            "tactical_data": {
+                "average_position": "LW/ST",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Sarri 4-3-3",
+                "teammate_quality": "High",
+                "league_competitiveness": "Serie A"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "UEFA Nations League & Friendlies",
+                    "appearances": 10,
+                    "goals": 12,
+                    "assists": 3,
+                    "minutes": 885,
+                    "position": "ST/LW",
+                    "rating": 8.7
+                }
+            ]
+        },
+        {
+            "season": 2020,
+            "team_id": "juventus",
+            "league_id": "seriea-2020",
+            "appearances": 44,
+            "goals": 36,
+            "assists": 7,
+            "minutes": 3857,
+            "position": "ST/LW",
+            "rating": 8.2,
+            "xG": 25.1,
+            "xA": 5.5,
+            "key_passes": 56,
+            "successful_dribbles": 53,
+            "duels_won": 32,
+            "shots_per_game": 4.2,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 13,
+            "injuries": [
+                {
+                    "type": "Covid-19",
+                    "start_date": "2020-10-13",
+                    "end_date": "2020-10-30",
+                    "days_lost": 17
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.3,
+                "acceleration": "Very High",
+                "stamina": "Very High",
+                "recovery_rate": "Elite"
+            },
+            "tactical_data": {
+                "average_position": "LW/ST",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Pirlo era",
+                "teammate_quality": "High",
+                "league_competitiveness": "Serie A"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "UEFA Nations League & Friendlies",
+                    "appearances": 8,
+                    "goals": 7,
+                    "assists": 3,
+                    "minutes": 692,
+                    "position": "ST/LW",
+                    "rating": 8.4
+                }
+            ]
+        },
+        {
+            "season": 2021,
+            "team_id": "manutd",
+            "league_id": "premierleague-2021",
+            "appearances": 38,
+            "goals": 24,
+            "assists": 3,
+            "minutes": 3150,
+            "position": "ST",
+            "rating": 7.5,
+            "xG": 16.5,
+            "xA": 3.6,
+            "key_passes": 40,
+            "successful_dribbles": 27,
+            "duels_won": 21,
+            "shots_per_game": 3.2,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 6,
+            "injuries": [
+                {
+                    "type": "Minor muscle fatigue",
+                    "start_date": "2022-01-10",
+                    "end_date": "2022-01-18",
+                    "days_lost": 8
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.2,
+                "acceleration": "High",
+                "stamina": "Very High",
+                "recovery_rate": "Elite"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "High",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "juventus",
+                    "to": "manutd",
+                    "transfer_fee": "€15M",
+                    "date": "2021-08-31"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Man Utd hybrid",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "UEFA Nations League & World Cup Qualifiers",
+                    "appearances": 10,
+                    "goals": 8,
+                    "assists": 1,
+                    "minutes": 850,
+                    "position": "ST",
+                    "rating": 8.1
+                }
+            ]
+        },
+        {
+            "season": 2022,
+            "team_id": "alnassr",
+            "league_id": "spl-2022",
+            "appearances": 28,
+            "goals": 21,
+            "assists": 6,
+            "minutes": 2330,
+            "position": "ST",
+            "rating": 7.6,
+            "xG": 13.9,
+            "xA": 4.1,
+            "key_passes": 31,
+            "successful_dribbles": 26,
+            "duels_won": 18,
+            "shots_per_game": 3.2,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 5,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.6,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "manutd",
+                    "to": "alnassr",
+                    "transfer_fee": "Free",
+                    "date": "2023-01-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Al-Nassr focus",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Saudi Pro League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "FIFA World Cup 2022",
+                    "appearances": 5,
+                    "goals": 1,
+                    "assists": 0,
+                    "minutes": 325,
+                    "position": "ST",
+                    "rating": 7.1
+                },
+                {
+                    "team_id": "portugal",
+                    "competition": "Friendlies",
+                    "appearances": 3,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 200,
+                    "position": "ST",
+                    "rating": 7.8
+                }
+            ]
+        },
+        {
+            "season": 2023,
+            "team_id": "alnassr",
+            "league_id": "spl-2023",
+            "appearances": 32,
+            "goals": 27,
+            "assists": 8,
+            "minutes": 2943,
+            "position": "ST",
+            "rating": 8.0,
+            "xG": 17.4,
+            "xA": 5.2,
+            "key_passes": 37,
+            "successful_dribbles": 30,
+            "duels_won": 19,
+            "shots_per_game": 3.6,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 5,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.2,
+                "acceleration": "Matched by age",
+                "stamina": "High",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Legend"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Al-Nassr focal point",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Saudi Pro League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "Euro Qualifiers",
+                    "appearances": 7,
+                    "goals": 9,
+                    "assists": 2,
+                    "minutes": 630,
+                    "position": "ST",
+                    "rating": 8.5
+                },
+                {
+                    "team_id": "portugal",
+                    "competition": "Friendlies",
+                    "appearances": 3,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 180,
+                    "position": "ST",
+                    "rating": 8.0
+                }
+            ]
+        },
+        {
+            "season": 2024,
+            "team_id": "alnassr",
+            "league_id": "spl-2024",
+            "appearances": 30,
+            "goals": 25,
+            "assists": 7,
+            "minutes": 2642,
+            "position": "ST",
+            "rating": 8.2,
+            "xG": 15.1,
+            "xA": 4.0,
+            "key_passes": 34,
+            "successful_dribbles": 27,
+            "duels_won": 15,
+            "shots_per_game": 3.5,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 4,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 28.9,
+                "acceleration": "Good",
+                "stamina": "High",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Legend",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Al-Nassr legend",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Saudi Pro League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "portugal",
+                    "competition": "Euro 2024",
+                    "appearances": 6,
+                    "goals": 5,
+                    "assists": 2,
+                    "minutes": 600,
+                    "position": "ST",
+                    "rating": 8.3
+                },
+                {
+                    "team_id": "portugal",
+                    "competition": "Friendlies",
+                    "appearances": 2,
+                    "goals": 1,
+                    "assists": 0,
+                    "minutes": 120,
+                    "position": "ST",
+                    "rating": 7.5
+                }
+            ]
+        }
+    ]
+}
