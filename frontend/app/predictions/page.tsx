@@ -3,11 +3,11 @@
 import { CareerPredictionDashboard } from "@/components/career-prediction-dashboard";
 import { Header } from "@/components/header";
 import { PlayerSearch } from "@/components/player-search";
-import { Player } from "@/types/player";
 import { useState } from "react";
 
 export default function PredictionsPage() {
-  const [selectedPlayer, setSelectedPlayer] = useState<Player | null>(null);
+  // Accept anything, as PlayerSearch gives full details and stats
+  const [selectedPlayer, setSelectedPlayer] = useState<any>(null);
 
   return (
     <main className="min-h-screen">
@@ -22,7 +22,10 @@ export default function PredictionsPage() {
             history, and career patterns to predict player trajectories.
           </p>
         </div>
+        {/* Pass the callback directly; PlayerSearch sends back complete { ...player, stats } object */}
         <PlayerSearch onPlayerSelect={setSelectedPlayer} />
+        {/* Only show CareerPredictionDashboard if selectedPlayer is not null.
+            The dashboard accesses all details (name, id, stats, etc.) from player prop. */}
         {selectedPlayer && <CareerPredictionDashboard player={selectedPlayer} />}
       </div>
     </main>

@@ -4,8 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Player } from "@/types/player";
-import { Activity, Award, Calendar, Target, TrendingUp, Trophy } from "lucide-react";
+import { Activity, Calendar, Target, TrendingUp } from "lucide-react";
 import { useState } from "react";
 import {
   CartesianGrid,
@@ -22,37 +21,77 @@ import {
   YAxis,
 } from "recharts";
 
+interface PlayerSeasonStats {
+  age?: number;
+  goals?: number;
+  assists?: number;
+  rating?: number;
+  sprintspeedkmh?: number;
+  shotspergame?: number;
+  keypasses?: number;
+  successfuldribbles?: number;
+  tacklespergame?: number;
+  stamina?: number;
+}
+
+interface Player {
+  id: string;
+  name: string;
+  stats: PlayerSeasonStats[];
+  [key: string]: any;
+}
+
 interface CareerPredictionDashboardProps {
   player: Player;
 }
 
 export function CareerPredictionDashboard({ player }: CareerPredictionDashboardProps) {
-  const [showCurrentRadar, setShowCurrentRadar] = useState(true);
-  const [showPeakRadar, setShowPeakRadar] = useState(true);
+  const [showCurrentRadar, setShowCurrentRadar] = useState<boolean>(true);
+  const [showPeakRadar, setShowPeakRadar] = useState<boolean>(true);
 
-  // Placeholder data
-  const careerData = [
-    { age: 21, goals: 12, assists: 8, rating: 87 },
-    { age: 22, goals: 18, assists: 12, rating: 89 },
-    { age: 23, goals: 25, assists: 15, rating: 91 },
-    { age: 24, goals: 32, assists: 18, rating: 93 },
-    { age: 25, goals: 38, assists: 22, rating: 95 },
-  ];
+  const stats: PlayerSeasonStats[] = player.stats || [];
+
+  const careerData = stats.map((season: PlayerSeasonStats, idx: number) => ({
+    age: season.age ?? 21 + idx,
+    goals: Math.round(season.goals ?? 0),
+    assists: Math.round(season.assists ?? 0),
+    rating: Math.round(season.rating ?? 0),
+  }));
+
+  const first: PlayerSeasonStats = stats[0] || {};
+  const last: PlayerSeasonStats = stats[stats.length - 1] || {};
 
   const attributeData = [
-    { attribute: "Pace", current: 95, predicted: 88 },
-    { attribute: "Shooting", current: 92, predicted: 96 },
-    { attribute: "Passing", current: 85, predicted: 90 },
-    { attribute: "Dribbling", current: 94, predicted: 92 },
-    { attribute: "Defending", current: 35, predicted: 40 },
-    { attribute: "Physical", current: 88, predicted: 85 },
-  ];
-
-  const trophyPredictions = [
-    { trophy: "Ballon d'Or", probability: 85, years: "2025, 2027" },
-    { trophy: "Champions League", probability: 75, years: "2025, 2026, 2028" },
-    { trophy: "World Cup", probability: 60, years: "2026" },
-    { trophy: "Golden Boot", probability: 90, years: "2024, 2025, 2026" },
+    {
+      attribute: "Pace",
+      current: Math.round(first.sprintspeedkmh ?? 90),
+      predicted: Math.round(last.sprintspeedkmh ?? 85),
+    },
+    {
+      attribute: "Shooting",
+      current: Math.round(first.shotspergame ?? 85),
+      predicted: Math.round(last.shotspergame ?? 90),
+    },
+    {
+      attribute: "Passing",
+      current: Math.round(first.keypasses ?? 80),
+      predicted: Math.round(last.keypasses ?? 85),
+    },
+    {
+      attribute: "Dribbling",
+      current: Math.round(first.successfuldribbles ?? 90),
+      predicted: Math.round(last.successfuldribbles ?? 95),
+    },
+    {
+      attribute: "Defending",
+      current: Math.round(first.tacklespergame ?? 40),
+      predicted: Math.round(last.tacklespergame ?? 45),
+    },
+    {
+      attribute: "Physical",
+      current: Math.round(first.stamina ?? 80),
+      predicted: Math.round(last.stamina ?? 85),
+    },
   ];
 
   return (
@@ -64,7 +103,15 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
             <Calendar className="h-4 w-4 text-primary" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-primary">27</div>
+            <div className="text-2xl font-bold text-primary">
+              {careerData.length > 0
+                ? careerData.reduce(
+                  (acc: { age: number; goals: number; assists: number; rating: number }, val: { age: number; goals: number; assists: number; rating: number }) =>
+                    val.goals > acc.goals ? val : acc,
+                  careerData[0]
+                ).age
+                : 27}
+            </div>
             <p className="text-xs text-muted-foreground">Expected peak performance</p>
           </CardContent>
         </Card>
@@ -75,7 +122,11 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
             <Target className="h-4 w-4 text-primary" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-primary">420+</div>
+            <div className="text-2xl font-bold text-primary">
+              {careerData.length > 0
+                ? careerData.reduce((acc: number, val: { goals: number }) => acc + val.goals, 0)
+                : "420+"}
+            </div>
             <p className="text-xs text-muted-foreground">Predicted career total</p>
           </CardContent>
         </Card>
@@ -90,24 +141,12 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
             <p className="text-xs text-muted-foreground">Retirement age prediction</p>
           </CardContent>
         </Card>
-
-        <Card className="border-border/50 bg-card/80">
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Trophy Count</CardTitle>
-            <Trophy className="h-4 w-4 text-primary" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold text-primary">25+</div>
-            <p className="text-xs text-muted-foreground">Major trophies predicted</p>
-          </CardContent>
-        </Card>
       </div>
 
       <Tabs defaultValue="timeline" className="space-y-6">
-        <TabsList className="grid w-full grid-cols-4 bg-secondary/20">
+        <TabsList className="grid w-full grid-cols-3 bg-secondary/20">
           <TabsTrigger value="timeline">Career Timeline</TabsTrigger>
           <TabsTrigger value="attributes">Attributes</TabsTrigger>
-          <TabsTrigger value="trophies">Trophy Predictions</TabsTrigger>
           <TabsTrigger value="analysis">AI Analysis</TabsTrigger>
         </TabsList>
 
@@ -124,7 +163,6 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
               <ResponsiveContainer width="100%" height={400}>
                 <LineChart data={careerData}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#ffffff33" />
-
                   <XAxis
                     dataKey="age"
                     stroke="#ffffff"
@@ -136,7 +174,6 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
                       style: { textAnchor: "middle", fill: "#ffffff" },
                     }}
                   />
-
                   <YAxis
                     stroke="#ffffff"
                     tick={{ fill: "#ffffff", fontSize: 12 }}
@@ -147,47 +184,42 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
                       style: { textAnchor: "middle", fill: "#ffffff" },
                     }}
                   />
-
                   <Tooltip
                     contentStyle={{
-                      backgroundColor: "rgba(0, 0, 0, 0.7)", // semi-transparent dark background
+                      backgroundColor: "rgba(0, 0, 0, 0.7)",
                       border: "1px solid hsl(var(--border))",
                       borderRadius: "8px",
-                      color: "#ffffff", // text color
+                      color: "#ffffff",
                       padding: "8px 12px",
                     }}
                     labelStyle={{ color: "#ffffff", fontWeight: 600 }}
                     itemStyle={{ color: "#ffffff" }}
                   />
-
-
                   <Line
                     type="monotone"
                     dataKey="goals"
-                    stroke="#fbbf24" // gold
-                    strokeWidth={3}
+                    stroke="#fbbf24"
+                    strokeWidth={5}
                     dot={{ fill: "#fbbf24", stroke: "#ffffff", strokeWidth: 2, r: 4 }}
                     connectNulls={true}
                     name="Goals"
                   />
-
                   <Line
                     type="monotone"
                     dataKey="assists"
-                    stroke="#10b981" // green
-                    strokeWidth={3}
+                    stroke="#10b981"
+                    strokeWidth={5}
                     dot={{ fill: "#10b981", stroke: "#ffffff", strokeWidth: 2, r: 4 }}
                     connectNulls={true}
                     name="Assists"
                   />
-
                   <Line
                     type="monotone"
                     dataKey="rating"
-                    stroke="#3b82f6" // blue
-                    strokeWidth={3}
-                    dot={{ fill: "#3b82f6", stroke: "#ffffff", strokeWidth: 2, r: 4 }}
-                    connectNulls={true}
+                    // stroke="#3b82f6"
+                    strokeWidth={0}
+                    dot={{ fill: "#3b82f6", stroke: "#ffffff", strokeWidth: 0, r: 0 }}
+                    // connectNulls={true}
                     name="Rating"
                   />
                 </LineChart>
@@ -195,7 +227,6 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
             </CardContent>
           </Card>
         </TabsContent>
-
 
         <TabsContent value="attributes" className="space-y-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -253,7 +284,6 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
                 </ResponsiveContainer>
               </CardContent>
             </Card>
-
             <Card className="border-border/50 bg-card/80">
               <CardHeader>
                 <CardTitle>Attribute Breakdown</CardTitle>
@@ -279,35 +309,6 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
           </div>
         </TabsContent>
 
-        <TabsContent value="trophies" className="space-y-6">
-          <Card className="border-border/50 bg-card/80">
-            <CardHeader>
-              <CardTitle className="flex items-center space-x-2">
-                <Award className="h-5 w-5 text-primary" />
-                <span>Trophy Predictions</span>
-              </CardTitle>
-              <CardDescription>Likelihood of winning major trophies and awards</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              {trophyPredictions.map((trophy, index) => (
-                <div key={index} className="flex items-center justify-between p-4 bg-secondary/20 rounded-lg">
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-foreground">{trophy.trophy}</h3>
-                    <p className="text-sm text-muted-foreground">Predicted years: {trophy.years}</p>
-                  </div>
-                  <div className="flex items-center space-x-4">
-                    <div className="text-right">
-                      <div className="text-2xl font-bold text-primary">{trophy.probability}%</div>
-                      <div className="text-xs text-muted-foreground">Probability</div>
-                    </div>
-                    <Progress value={trophy.probability} className="w-24" />
-                  </div>
-                </div>
-              ))}
-            </CardContent>
-          </Card>
-        </TabsContent>
-
         <TabsContent value="analysis" className="space-y-6">
           <Card className="border-border/50 bg-card/80">
             <CardHeader>
@@ -324,7 +325,6 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
                     and positioning will maintain elite goal-scoring output.
                   </p>
                 </div>
-
                 <div className="p-4 bg-secondary/20 rounded-lg">
                   <h3 className="font-semibold text-foreground mb-2">Career Longevity Factors</h3>
                   <p className="text-sm text-muted-foreground">
@@ -332,7 +332,6 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
                     to a more central role around age 30 will help maintain effectiveness as pace declines.
                   </p>
                 </div>
-
                 <div className="p-4 bg-secondary/20 rounded-lg">
                   <h3 className="font-semibold text-foreground mb-2">Trophy Potential</h3>
                   <p className="text-sm text-muted-foreground">
@@ -340,7 +339,6 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
                     team moves and squad quality. World Cup 2026 represents best opportunity for international glory.
                   </p>
                 </div>
-
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                   <div className="text-center p-4 bg-card/50 rounded-lg">
                     <div className="text-2xl font-bold text-primary">92%</div>
@@ -363,4 +361,3 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
     </div>
   );
 }
-
