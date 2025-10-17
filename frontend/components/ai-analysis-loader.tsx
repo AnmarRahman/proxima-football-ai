@@ -11,7 +11,6 @@ interface AnalysisStep {
   description: string;
   icon: React.ElementType;
   duration: number;
-  progressColor: string;
 }
 
 interface AIAnalysisLoaderProps {
@@ -31,7 +30,6 @@ export function AIAnalysisLoader({ playerName, onComplete }: AIAnalysisLoaderPro
       description: `Analyzing ${playerName}'s scoring patterns across 247 matches...`,
       icon: Target,
       duration: 2000,
-      progressColor: "bg-yellow-500",
     },
     {
       id: "injuries",
@@ -39,7 +37,6 @@ export function AIAnalysisLoader({ playerName, onComplete }: AIAnalysisLoaderPro
       description: "Evaluating injury history and physical durability factors...",
       icon: Activity,
       duration: 1800,
-      progressColor: "bg-red-500",
     },
     {
       id: "personality",
@@ -47,7 +44,6 @@ export function AIAnalysisLoader({ playerName, onComplete }: AIAnalysisLoaderPro
       description: "Processing leadership qualities, mentality, and career ambitions...",
       icon: Brain,
       duration: 2200,
-      progressColor: "bg-purple-500",
     },
     {
       id: "performance",
@@ -55,7 +51,6 @@ export function AIAnalysisLoader({ playerName, onComplete }: AIAnalysisLoaderPro
       description: "Examining seasonal patterns, peak periods, and consistency metrics...",
       icon: TrendingUp,
       duration: 2000,
-      progressColor: "bg-blue-500",
     },
     {
       id: "stats",
@@ -63,7 +58,6 @@ export function AIAnalysisLoader({ playerName, onComplete }: AIAnalysisLoaderPro
       description: "Processing xG, xA, defensive actions, and tactical contributions...",
       icon: BarChart3,
       duration: 1900,
-      progressColor: "bg-green-500",
     },
     {
       id: "prediction",
@@ -71,7 +65,6 @@ export function AIAnalysisLoader({ playerName, onComplete }: AIAnalysisLoaderPro
       description: "Combining 2.3M data points to predict career trajectory...",
       icon: Zap,
       duration: 2100,
-      progressColor: "bg-primary",
     },
   ];
 
@@ -128,7 +121,7 @@ export function AIAnalysisLoader({ playerName, onComplete }: AIAnalysisLoaderPro
             <span className="text-muted-foreground">Overall Progress</span>
             <span className="text-primary font-medium">{Math.round(progress)}%</span>
           </div>
-          <Progress value={progress} className="h-3" />
+          <Progress value={progress} className="h-3 bg-yellow-500" />
         </div>
       </div>
 
@@ -160,7 +153,7 @@ export function AIAnalysisLoader({ playerName, onComplete }: AIAnalysisLoaderPro
                   <span className="text-muted-foreground">Step Progress</span>
                   <span className="text-primary font-medium">{Math.round(stepProgress)}%</span>
                 </div>
-                <Progress value={stepProgress} className={`h-2 ${currentStepData.progressColor}`} />
+                <Progress value={stepProgress} className={`h-2 bg-yellow-500`} />
               </div>
             </div>
           )}
@@ -170,7 +163,6 @@ export function AIAnalysisLoader({ playerName, onComplete }: AIAnalysisLoaderPro
             {analysisSteps.map((step, index) => {
               const isCurrentStep = index === currentStep;
               const isCompletedStep = index < currentStep;
-              const isPendingStep = index > currentStep;
 
               return (
                 <div
