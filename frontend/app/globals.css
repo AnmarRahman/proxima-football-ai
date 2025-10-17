@@ -27,6 +27,7 @@
 }
 
 @theme inline {
+  --font-sans: var(--font-montserrat);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -49,8 +50,14 @@
 }
 
 @layer base {
-  *, :before, :after { @apply outline-ring/50; }
-  body { @apply bg-background text-foreground; }
+  *, :before, :after { outline-color: color-mix(in oklab, var(--ring) 50%, transparent); }
+  html, body { background-color: var(--background); color: var(--foreground); height: 100%; }
+  body {
+    font-family: var(--font-montserrat), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    /* Hide scrollbars but allow scrolling */
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+  body::-webkit-scrollbar { display: none; width: 0; height: 0; }
 }
-
-/* remove usage of border-border utility in base layer to avoid Tailwind v4 error */
