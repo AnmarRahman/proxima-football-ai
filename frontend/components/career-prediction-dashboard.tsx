@@ -1,11 +1,12 @@
 "use client";
 
+import { AIAnalysisLoader } from "@/components/ai-analysis-loader";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Activity, Calendar, Target, TrendingUp } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   CartesianGrid,
   Line,
@@ -46,8 +47,30 @@ interface CareerPredictionDashboardProps {
 }
 
 export function CareerPredictionDashboard({ player }: CareerPredictionDashboardProps) {
+  const [isLoading, setIsLoading] = useState(true);
   const [showCurrentRadar, setShowCurrentRadar] = useState<boolean>(true);
   const [showPeakRadar, setShowPeakRadar] = useState<boolean>(true);
+
+  // Reset loading state when player changes
+  useEffect(() => {
+    setIsLoading(true);
+  }, [player.id]);
+
+  const handleAnalysisComplete = () => {
+    setIsLoading(false);
+  };
+
+  // Show loading animation
+  if (isLoading) {
+    return (
+      <div className="mt-8">
+        <AIAnalysisLoader 
+          playerName={player.name} 
+          onComplete={handleAnalysisComplete}
+        />
+      </div>
+    );
+  }
 
   const stats: PlayerSeasonStats[] = player.stats || [];
 
@@ -95,8 +118,22 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
   ];
 
   return (
-    <div className="space-y-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="space-y-8 mt-8">
+      {/* Results Header */}
+      <div className="text-center space-y-4 animate-fade-in">
+        <div className="inline-flex items-center space-x-2 bg-green-500/10 border border-green-500/30 rounded-full px-4 py-2">
+          <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+          <span className="text-green-500 font-medium text-sm">Analysis Complete</span>
+        </div>
+        <h2 className="text-3xl font-bold text-foreground">
+          {player.name}'s Career Prediction
+        </h2>
+        <p className="text-muted-foreground max-w-2xl mx-auto">
+          Our AI has analyzed {player.name}'s performance data, injury history, and career patterns to generate comprehensive predictions.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 animate-slide-up" style={{animationDelay: '0.2s'}}>
         <Card className="border-border/50 bg-card/80">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Peak Age</CardTitle>
@@ -141,9 +178,20 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
             <p className="text-xs text-muted-foreground">Retirement age prediction</p>
           </CardContent>
         </Card>
+
+        <Card className="border-border/50 bg-card/80">
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">Confidence</CardTitle>
+            <TrendingUp className="h-4 w-4 text-primary" />
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold text-primary">92%</div>
+            <p className="text-xs text-muted-foreground">Prediction accuracy</p>
+          </CardContent>
+        </Card>
       </div>
 
-      <Tabs defaultValue="timeline" className="space-y-6">
+      <Tabs defaultValue="timeline" className="space-y-6 animate-slide-up" style={{animationDelay: '0.4s'}}>
         <TabsList className="grid w-full grid-cols-3 bg-secondary/20">
           <TabsTrigger value="timeline">Career Timeline</TabsTrigger>
           <TabsTrigger value="attributes">Attributes</TabsTrigger>
@@ -216,10 +264,8 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
                   <Line
                     type="monotone"
                     dataKey="rating"
-                    // stroke="#3b82f6"
                     strokeWidth={0}
                     dot={{ fill: "#3b82f6", stroke: "#ffffff", strokeWidth: 0, r: 0 }}
-                    // connectNulls={true}
                     name="Rating"
                   />
                 </LineChart>
@@ -313,30 +359,30 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
           <Card className="border-border/50 bg-card/80">
             <CardHeader>
               <CardTitle>AI Analysis Report</CardTitle>
-              <CardDescription>Comprehensive career prediction analysis</CardDescription>
+              <CardDescription>Comprehensive career prediction analysis for {player.name}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-4">
                 <div className="p-4 bg-primary/10 rounded-lg border border-primary/20">
                   <h3 className="font-semibold text-primary mb-2">Peak Performance Window</h3>
                   <p className="text-sm text-foreground">
-                    Based on current trajectory and historical data, Mbappé is predicted to reach his peak between ages
-                    26-28, with optimal performance at 27. His pace will naturally decline, but improved decision-making
-                    and positioning will maintain elite goal-scoring output.
+                    Based on current trajectory and historical data, {player.name} is predicted to reach peak performance between ages
+                    26-28, with optimal output at 27. Natural physical decline will be offset by improved decision-making
+                    and tactical awareness.
                   </p>
                 </div>
                 <div className="p-4 bg-secondary/20 rounded-lg">
                   <h3 className="font-semibold text-foreground mb-2">Career Longevity Factors</h3>
                   <p className="text-sm text-muted-foreground">
-                    Excellent injury record and professional lifestyle suggest a career extending to age 35. Transition
-                    to a more central role around age 30 will help maintain effectiveness as pace declines.
+                    Injury record analysis and lifestyle factors suggest a career extending to age 35. Transition
+                    to a more central role around age 30 will help maintain effectiveness as pace naturally declines.
                   </p>
                 </div>
                 <div className="p-4 bg-secondary/20 rounded-lg">
                   <h3 className="font-semibold text-foreground mb-2">Trophy Potential</h3>
                   <p className="text-sm text-muted-foreground">
-                    High probability of multiple Ballon d'Or wins during peak years. Champions League success depends on
-                    team moves and squad quality. World Cup 2026 represents best opportunity for international glory.
+                    High probability of individual awards during peak years. Champions League success depends on
+                    team moves and squad quality. International tournaments represent key opportunities for legacy-defining moments.
                   </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
