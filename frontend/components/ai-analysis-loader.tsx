@@ -18,60 +18,47 @@ interface AIAnalysisLoaderProps {
   onComplete: () => void;
 }
 
+// Helper: combine base and indicator colors using custom classes on the wrapper
+const YellowProgress = ({ value, className = "" }: { value: number; className?: string }) => {
+  return (
+    <div className={`relative w-full h-3 rounded-md overflow-hidden bg-white/25 border border-white/20 ${className}`}>
+      <div
+        className="absolute inset-y-0 left-0 bg-yellow-500"
+        style={{ width: `${Math.max(0, Math.min(100, value))}%` }}
+      />
+    </div>
+  );
+};
+
+const YellowStepProgress = ({ value, className = "" }: { value: number; className?: string }) => {
+  return (
+    <div className={`relative w-full h-2 rounded-md overflow-hidden bg-white/25 border border-white/15 ${className}`}>
+      <div
+        className="absolute inset-y-0 left-0 bg-yellow-500"
+        style={{ width: `${Math.max(0, Math.min(100, value))}%` }}
+      />
+    </div>
+  );
+};
+
 export function AIAnalysisLoader({ playerName, onComplete }: AIAnalysisLoaderProps) {
   const [currentStep, setCurrentStep] = useState(0);
   const [progress, setProgress] = useState(0);
   const [stepProgress, setStepProgress] = useState(0);
 
   const analysisSteps: AnalysisStep[] = [
-    {
-      id: "goals",
-      title: "Adding up goals",
-      description: `Analyzing ${playerName}'s scoring patterns across 247 matches...`,
-      icon: Target,
-      duration: 2000,
-    },
-    {
-      id: "injuries",
-      title: "Checking injury record",
-      description: "Evaluating injury history and physical durability factors...",
-      icon: Activity,
-      duration: 1800,
-    },
-    {
-      id: "personality",
-      title: "Analyzing player personality",
-      description: "Processing leadership qualities, mentality, and career ambitions...",
-      icon: Brain,
-      duration: 2200,
-    },
-    {
-      id: "performance",
-      title: "Studying performance trends",
-      description: "Examining seasonal patterns, peak periods, and consistency metrics...",
-      icon: TrendingUp,
-      duration: 2000,
-    },
-    {
-      id: "stats",
-      title: "Crunching advanced stats",
-      description: "Processing xG, xA, defensive actions, and tactical contributions...",
-      icon: BarChart3,
-      duration: 1900,
-    },
-    {
-      id: "prediction",
-      title: "Generating AI predictions",
-      description: "Combining 2.3M data points to predict career trajectory...",
-      icon: Zap,
-      duration: 2100,
-    },
+    { id: "goals", title: "Adding up goals", description: `Analyzing ${playerName}'s scoring patterns across 247 matches...`, icon: Target, duration: 2000 },
+    { id: "injuries", title: "Checking injury record", description: "Evaluating injury history and physical durability factors...", icon: Activity, duration: 1800 },
+    { id: "personality", title: "Analyzing player personality", description: "Processing leadership qualities, mentality, and career ambitions...", icon: Brain, duration: 2200 },
+    { id: "performance", title: "Studying performance trends", description: "Examining seasonal patterns, peak periods, and consistency metrics...", icon: TrendingUp, duration: 2000 },
+    { id: "stats", title: "Crunching advanced stats", description: "Processing xG, xA, defensive actions, and tactical contributions...", icon: BarChart3, duration: 1900 },
+    { id: "prediction", title: "Generating AI predictions", description: "Combining 2.3M data points to predict career trajectory...", icon: Zap, duration: 2100 },
   ];
 
   useEffect(() => {
     if (currentStep >= analysisSteps.length) {
-      setTimeout(() => onComplete(), 800);
-      return;
+      const t = setTimeout(() => onComplete(), 800);
+      return () => clearTimeout(t);
     }
 
     const step = analysisSteps[currentStep];
@@ -83,13 +70,12 @@ export function AIAnalysisLoader({ playerName, onComplete }: AIAnalysisLoaderPro
       stepCounter++;
       const currentStepProgress = (stepCounter / totalSteps) * 100;
       const overallProgress = ((currentStep + stepCounter / totalSteps) / analysisSteps.length) * 100;
-      
       setStepProgress(Math.min(currentStepProgress, 100));
       setProgress(Math.min(overallProgress, 100));
 
       if (stepCounter >= totalSteps) {
         clearInterval(timer);
-        setCurrentStep(prev => prev + 1);
+        setCurrentStep((prev) => prev + 1);
         setStepProgress(0);
       }
     }, interval);
@@ -114,14 +100,14 @@ export function AIAnalysisLoader({ playerName, onComplete }: AIAnalysisLoaderPro
             <p className="text-muted-foreground">Predicting {playerName}'s career trajectory...</p>
           </div>
         </div>
-        
-        {/* Overall Progress */}
+
+        {/* Overall Progress (white track, yellow fill) */}
         <div className="max-w-md mx-auto space-y-2">
           <div className="flex justify-between text-sm">
             <span className="text-muted-foreground">Overall Progress</span>
             <span className="text-primary font-medium">{Math.round(progress)}%</span>
           </div>
-          <Progress value={progress} className="h-3 bg-yellow-500" />
+          <YellowProgress value={progress} />
         </div>
       </div>
 
@@ -153,7 +139,7 @@ export function AIAnalysisLoader({ playerName, onComplete }: AIAnalysisLoaderPro
                   <span className="text-muted-foreground">Step Progress</span>
                   <span className="text-primary font-medium">{Math.round(stepProgress)}%</span>
                 </div>
-                <Progress value={stepProgress} className={`h-2 bg-yellow-500`} />
+                <YellowStepProgress value={stepProgress} />
               </div>
             </div>
           )}
