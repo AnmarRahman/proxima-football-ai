@@ -15,6 +15,10 @@ jobs:
     timeout-minutes: 120
     env:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      TF_ENABLE_ONEDNN_OPTS: "0"
+      OMP_NUM_THREADS: "1"
+      TF_NUM_INTRAOP_THREADS: "1"
+      TF_NUM_INTEROP_THREADS: "1"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
