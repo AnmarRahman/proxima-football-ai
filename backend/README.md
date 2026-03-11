@@ -69,3 +69,15 @@ It runs:
 Required GitHub secret:
 
 - `DATABASE_URL`
+
+## Retired Player Overrides
+
+To control which players appear as active in the website selector, edit:
+
+- `backend/python/data/players/player_status_overrides.json`
+
+After changing it, rerun:
+
+```bash
+python backend/python/import_players_to_db.py
+```

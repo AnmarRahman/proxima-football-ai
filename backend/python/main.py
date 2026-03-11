@@ -105,6 +105,7 @@ PREDICTIONS_DIR = PLAYERS_DIR / "predictions"
 FRONTEND_PREDICTIONS_DIR = BASE_DIR.parent.parent / "frontend" / "public" / "data" / "predictions"
 PREDICTIONS_DIR.mkdir(parents=True, exist_ok=True)
 PREDICTION_RUN_LOCK_KEY = 91827463
+STATUS_OVERRIDES_FILENAME = "player_status_overrides.json"
 
 
 def safe_float(value: object, default: float = 0.0) -> float:
@@ -127,6 +128,8 @@ def parse_retired_flag(player: Dict[str, object]) -> bool:
         raw = player.get("is_retired")
     elif "retired" in player:
         raw = player.get("retired")
+    elif player.get("retired_since"):
+        raw = True
     else:
         raw = False
 
@@ -275,6 +278,8 @@ def load_all_players_df_from_files() -> pd.DataFrame:
     rows: List[Dict[str, object]] = []
 
     for file_path in PLAYERS_DIR.glob("*.json"):
+        if file_path.name == STATUS_OVERRIDES_FILENAME or file_path.name.endswith("_predictions.json"):
+            continue
         with file_path.open(encoding="utf-8") as file:
             data = json.load(file)
 
