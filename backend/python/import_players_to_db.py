@@ -3,7 +3,7 @@ import json
 import os
 from datetime import date
 from pathlib import Path
-from typing import Any, Dict, Iterable, Optional, Set
+from typing import Any, Dict, Iterable, List, Optional, Set
 
 try:
     import psycopg
@@ -26,6 +26,12 @@ def parse_args() -> argparse.Namespace:
         "--players-dir",
         default=str(DEFAULT_PLAYERS_DIR),
         help="Directory containing player JSON files.",
+    )
+    parser.add_argument(
+        "--over-age-threshold",
+        type=int,
+        default=35,
+        help="Mark players as over_35 when their latest known season age is >= this value.",
     )
     return parser.parse_args()
 
@@ -59,6 +65,55 @@ def to_date(value: Any) -> Optional[date]:
         return None
 
 
+def parse_bool(value: Any, default: Optional[bool] = None) -> Optional[bool]:
+    if value is None:
+        return default
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, (int, float)):
+        return bool(value)
+
+    normalized = str(value).strip().lower()
+    if normalized in {"1", "true", "yes", "y", "retired"}:
+        return True
+    if normalized in {"0", "false", "no", "n", "active"}:
+        return False
+    return default
+
+
+def parse_birth_year(player: Dict[str, Any]) -> Optional[int]:
+    birth_date = player.get("birth_date")
+    if not birth_date:
+        return None
+
+    try:
+        return int(str(birth_date).split("-")[0])
+    except Exception:
+        return None
+
+
+def compute_over_age(player: Dict[str, Any], seasons: List[Dict[str, Any]], threshold: int) -> bool:
+    explicit = parse_bool(player.get("over_35", player.get("over35")), default=None)
+    if explicit is not None:
+        return explicit
+
+    birth_year = parse_birth_year(player)
+    if birth_year is None:
+        return False
+
+    season_years: List[int] = []
+    for season in seasons or []:
+        if not isinstance(season, dict):
+            continue
+        season_val = to_int(season.get("season"))
+        if season_val is not None:
+            season_years.append(season_val)
+
+    if not season_years:
+        return False
+
+    last_season_year = max(season_years)
+    return (last_season_year - birth_year) >= threshold
 
 
 def load_status_overrides(path: Path) -> Dict[str, Set[str]]:
@@ -116,7 +171,12 @@ def ensure_team(cur: psycopg.Cursor, team_id: Optional[str], name: Optional[str]
     )
 
 
-def upsert_player(cur: psycopg.Cursor, player: Dict[str, Any], is_retired: bool) -> None:
+def upsert_player(
+    cur: psycopg.Cursor,
+    player: Dict[str, Any],
+    is_retired: bool,
+    over_35: bool,
+) -> None:
     player_id = str(player.get("id", "")).strip().lower()
     if not player_id:
         raise ValueError("Player is missing id")
@@ -124,9 +184,9 @@ def upsert_player(cur: psycopg.Cursor, player: Dict[str, Any], is_retired: bool)
     cur.execute(
         """
         insert into players(
-          id, name, birth_date, nationality, height_cm, weight_kg, dominant_foot, is_retired, retired_since
+          id, name, birth_date, nationality, height_cm, weight_kg, dominant_foot, is_retired, over_35, retired_since
         )
-        values (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+        values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
         on conflict (id) do update set
           name = excluded.name,
           birth_date = excluded.birth_date,
@@ -135,6 +195,7 @@ def upsert_player(cur: psycopg.Cursor, player: Dict[str, Any], is_retired: bool)
           weight_kg = excluded.weight_kg,
           dominant_foot = excluded.dominant_foot,
           is_retired = excluded.is_retired,
+          over_35 = excluded.over_35,
           retired_since = excluded.retired_since,
           updated_at = now()
         """,
@@ -147,6 +208,7 @@ def upsert_player(cur: psycopg.Cursor, player: Dict[str, Any], is_retired: bool)
             to_int(player.get("weight_kg")),
             player.get("dominant_foot"),
             is_retired,
+            over_35,
             to_date(player.get("retired_since")),
         ),
     )
@@ -325,15 +387,18 @@ def import_file(
     file_path: Path,
     retired_ids: Set[str],
     active_ids: Set[str],
+    over_age_threshold: int,
 ) -> Dict[str, int]:
-    data = json.loads(file_path.read_text(encoding="utf-8"))
+    data = json.loads(file_path.read_text(encoding="utf-8-sig"))
     player = data.get("player") or {}
     player_id = str(player.get("id", "")).strip().lower()
+    seasons = [s for s in (data.get("seasons") or []) if isinstance(s, dict)]
 
     upsert_player(
         cur,
         player,
         is_retired=parse_retired(player, player_id, retired_ids=retired_ids, active_ids=active_ids),
+        over_35=compute_over_age(player, seasons=seasons, threshold=over_age_threshold),
     )
 
     for team in data.get("teams") or []:
@@ -351,7 +416,7 @@ def import_file(
 
     season_count = 0
 
-    for season in data.get("seasons") or []:
+    for season in seasons:
         season_id = upsert_player_season(cur, player_id, season)
         replace_season_children(cur, season_id, season)
         season_count += 1
@@ -388,7 +453,13 @@ def main() -> None:
         for file_path in iter_player_files(players_dir):
             try:
                 with conn.cursor() as cur:
-                    stats = import_file(cur, file_path, retired_ids=retired_ids, active_ids=active_ids)
+                    stats = import_file(
+                        cur,
+                        file_path,
+                        retired_ids=retired_ids,
+                        active_ids=active_ids,
+                        over_age_threshold=args.over_age_threshold,
+                    )
                 conn.commit()
                 imported += 1
                 total_seasons += stats["seasons"]
