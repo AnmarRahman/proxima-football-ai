@@ -1,0 +1,1159 @@
+{
+    "player": {
+        "id": "aguero",
+        "name": "Sergio Agüero",
+        "birth_date": "1988-06-02",
+        "nationality": "Argentina",
+        "height_cm": 173,
+        "weight_kg": 80,
+        "dominant_foot": "Right"
+    },
+    "teams": [
+        {
+            "id": "independiente",
+            "name": "CA Independiente",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/ca-independiente.svg",
+            "country": "Argentina"
+        },
+        {
+            "id": "atletico",
+            "name": "Atlético de Madrid",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/atletico-madrid.svg",
+            "country": "Spain"
+        },
+        {
+            "id": "manchester_city",
+            "name": "Manchester City",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/manchester-city-fc-logo.svg",
+            "country": "England"
+        },
+        {
+            "id": "barcelona",
+            "name": "FC Barcelona",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/fc-barcelona-crest.svg",
+            "country": "Spain"
+        },
+        {
+            "id": "argentina",
+            "name": "Argentina National Team",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/argentina.svg",
+            "country": "Argentina"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 2003,
+            "team_id": "independiente",
+            "league_id": "primera-division-argentina-2003",
+            "appearances": 11,
+            "goals": 1,
+            "assists": 1,
+            "minutes": 633,
+            "position": "Striker",
+            "rating": 6.2,
+            "xG": 0.7,
+            "xA": 0.3,
+            "key_passes": 3,
+            "successful_dribbles": 8,
+            "duels_won": 6,
+            "shots_per_game": 0.5,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 4,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.2,
+                "acceleration": "High",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Emerging",
+                "pressure_handling": "Promising",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Argentine attack",
+                "teammate_quality": "Developing",
+                "league_competitiveness": "Primera División"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2004,
+            "team_id": "independiente",
+            "league_id": "primera-division-argentina-2004",
+            "appearances": 36,
+            "goals": 7,
+            "assists": 4,
+            "minutes": 2376,
+            "position": "Striker",
+            "rating": 6.9,
+            "xG": 4.2,
+            "xA": 1.6,
+            "key_passes": 8,
+            "successful_dribbles": 16,
+            "duels_won": 11,
+            "shots_per_game": 1.1,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 8,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.7,
+                "acceleration": "High",
+                "stamina": "Growing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Developing",
+                "pressure_handling": "Improving",
+                "clutch_performance": "Emerging"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Direct attack",
+                "teammate_quality": "Developing",
+                "league_competitiveness": "Primera División"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "U17 South American",
+                    "appearances": 8,
+                    "goals": 3,
+                    "assists": 1,
+                    "minutes": 705,
+                    "position": "Striker",
+                    "rating": 6.6
+                }
+            ]
+        },
+        {
+            "season": 2005,
+            "team_id": "independiente",
+            "league_id": "primera-division-argentina-2005",
+            "appearances": 38,
+            "goals": 18,
+            "assists": 7,
+            "minutes": 3142,
+            "position": "Striker",
+            "rating": 7.3,
+            "xG": 10.7,
+            "xA": 3.4,
+            "key_passes": 17,
+            "successful_dribbles": 32,
+            "duels_won": 21,
+            "shots_per_game": 1.7,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 12,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.0,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "High",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "independiente",
+                    "to": "atletico",
+                    "transfer_fee": "€23M",
+                    "date": "2006-07-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Direct attack",
+                "teammate_quality": "Developing",
+                "league_competitiveness": "Primera División"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "U20 World Cup 2005",
+                    "appearances": 7,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 526,
+                    "position": "Striker/Winger",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2006,
+            "team_id": "atletico",
+            "league_id": "laliga-2006",
+            "appearances": 38,
+            "goals": 6,
+            "assists": 2,
+            "minutes": 2295,
+            "position": "Striker",
+            "rating": 6.8,
+            "xG": 4.5,
+            "xA": 1.9,
+            "key_passes": 5,
+            "successful_dribbles": 16,
+            "duels_won": 9,
+            "shots_per_game": 1.0,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 7,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.2,
+                "acceleration": "High",
+                "stamina": "Growing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Forward",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Developing",
+                "pressure_handling": "Good",
+                "clutch_performance": "Emerging"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Atleti direct play",
+                "teammate_quality": "Good",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2007,
+            "team_id": "atletico",
+            "league_id": "laliga-2007",
+            "appearances": 37,
+            "goals": 19,
+            "assists": 6,
+            "minutes": 3096,
+            "position": "Striker",
+            "rating": 7.4,
+            "xG": 8.8,
+            "xA": 4.7,
+            "key_passes": 14,
+            "successful_dribbles": 28,
+            "duels_won": 17,
+            "shots_per_game": 1.8,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 10,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.5,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Centre Forward",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "High",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter attack",
+                "teammate_quality": "Good",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Olympics 2008",
+                    "appearances": 5,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 450,
+                    "position": "Forward",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2008,
+            "team_id": "atletico",
+            "league_id": "laliga-2008",
+            "appearances": 36,
+            "goals": 17,
+            "assists": 5,
+            "minutes": 3072,
+            "position": "Striker",
+            "rating": 7.2,
+            "xG": 9.6,
+            "xA": 2.8,
+            "key_passes": 13,
+            "successful_dribbles": 31,
+            "duels_won": 14,
+            "shots_per_game": 1.6,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 9,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.8,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Central Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "High",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Atleti attack",
+                "teammate_quality": "Good",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2009,
+            "team_id": "atletico",
+            "league_id": "laliga-2009",
+            "appearances": 34,
+            "goals": 12,
+            "assists": 9,
+            "minutes": 2596,
+            "position": "Striker",
+            "rating": 7.2,
+            "xG": 7.8,
+            "xA": 4.1,
+            "key_passes": 15,
+            "successful_dribbles": 28,
+            "duels_won": 13,
+            "shots_per_game": 1.5,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 10,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.9,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Strong",
+                "pressure_handling": "High",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Atleti direct",
+                "teammate_quality": "Good",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2010,
+            "team_id": "atletico",
+            "league_id": "laliga-2010",
+            "appearances": 32,
+            "goals": 20,
+            "assists": 8,
+            "minutes": 2673,
+            "position": "Striker",
+            "rating": 7.7,
+            "xG": 9.4,
+            "xA": 4.5,
+            "key_passes": 18,
+            "successful_dribbles": 36,
+            "duels_won": 14,
+            "shots_per_game": 1.9,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 11,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.2,
+                "acceleration": "High",
+                "stamina": "Very Good",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "Centre Forward",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Atleti attack",
+                "teammate_quality": "Good",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "World Cup 2010",
+                    "appearances": 5,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 269,
+                    "position": "Striker",
+                    "rating": 7.4
+                }
+            ]
+        },
+        {
+            "season": 2011,
+            "team_id": "atletico",
+            "league_id": "laliga-2011",
+            "appearances": 36,
+            "goals": 20,
+            "assists": 7,
+            "minutes": 2791,
+            "position": "Striker",
+            "rating": 7.5,
+            "xG": 9.3,
+            "xA": 3.9,
+            "key_passes": 17,
+            "successful_dribbles": 30,
+            "duels_won": 14,
+            "shots_per_game": 1.8,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 11,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.0,
+                "acceleration": "High",
+                "stamina": "Very Good",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "Centre Forward",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "atletico",
+                    "to": "manchester_city",
+                    "transfer_fee": "€40M",
+                    "date": "2011-07-29"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Atleti attack",
+                "teammate_quality": "Good",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Copa América 2011",
+                    "appearances": 4,
+                    "goals": 3,
+                    "assists": 1,
+                    "minutes": 269,
+                    "position": "Striker",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2011,
+            "team_id": "manchester_city",
+            "league_id": "premierleague-2011",
+            "appearances": 34,
+            "goals": 23,
+            "assists": 8,
+            "minutes": 2637,
+            "position": "Striker",
+            "rating": 8.3,
+            "xG": 14.0,
+            "xA": 5.2,
+            "key_passes": 18,
+            "successful_dribbles": 32,
+            "duels_won": 18,
+            "shots_per_game": 2.6,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 13,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.6,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Legendary"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    {
+                        "team": "manchester_city",
+                        "from": "Roberto Mancini",
+                        "to": "Manuel Pellegrini",
+                        "date": "2013-06-01"
+                    }
+                ],
+                "team_tactics": "Rotation, attack",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2012,
+            "team_id": "manchester_city",
+            "league_id": "premierleague-2012",
+            "appearances": 30,
+            "goals": 12,
+            "assists": 6,
+            "minutes": 2154,
+            "position": "Striker",
+            "rating": 7.8,
+            "xG": 8.5,
+            "xA": 3.1,
+            "key_passes": 15,
+            "successful_dribbles": 26,
+            "duels_won": 12,
+            "shots_per_game": 2.1,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 7,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.4,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking, two strikers",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 12,
+                    "goals": 6,
+                    "assists": 3,
+                    "minutes": 879,
+                    "position": "Striker",
+                    "rating": 7.3
+                }
+            ]
+        },
+        {
+            "season": 2013,
+            "team_id": "manchester_city",
+            "league_id": "premierleague-2013",
+            "appearances": 23,
+            "goals": 17,
+            "assists": 6,
+            "minutes": 1816,
+            "position": "Striker",
+            "rating": 8.2,
+            "xG": 9.2,
+            "xA": 5.6,
+            "key_passes": 14,
+            "successful_dribbles": 21,
+            "duels_won": 7,
+            "shots_per_game": 2.8,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 8,
+            "injuries": [
+                {
+                    "type": "Calf injury",
+                    "start_date": "2013-12-15",
+                    "end_date": "2014-01-11",
+                    "days_lost": 27
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.2,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Rotation",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "World Cup 2014",
+                    "appearances": 5,
+                    "goals": 0,
+                    "assists": 0,
+                    "minutes": 177,
+                    "position": "Striker",
+                    "rating": 6.5
+                }
+            ]
+        },
+        {
+            "season": 2014,
+            "team_id": "manchester_city",
+            "league_id": "premierleague-2014",
+            "appearances": 33,
+            "goals": 26,
+            "assists": 8,
+            "minutes": 2488,
+            "position": "Striker",
+            "rating": 8.4,
+            "xG": 14.8,
+            "xA": 6.0,
+            "key_passes": 19,
+            "successful_dribbles": 28,
+            "duels_won": 17,
+            "shots_per_game": 3.1,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 8,
+            "injuries": [
+                {
+                    "type": "Knee injury",
+                    "start_date": "2014-12-06",
+                    "end_date": "2015-01-14",
+                    "days_lost": 39
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.1,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Copa América 2015",
+                    "appearances": 6,
+                    "goals": 3,
+                    "assists": 1,
+                    "minutes": 480,
+                    "position": "Striker",
+                    "rating": 7.4
+                }
+            ]
+        },
+        {
+            "season": 2015,
+            "team_id": "manchester_city",
+            "league_id": "premierleague-2015",
+            "appearances": 30,
+            "goals": 24,
+            "assists": 2,
+            "minutes": 2415,
+            "position": "Striker",
+            "rating": 8.0,
+            "xG": 15.1,
+            "xA": 2.7,
+            "key_passes": 18,
+            "successful_dribbles": 25,
+            "duels_won": 12,
+            "shots_per_game": 2.8,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 7,
+            "injuries": [
+                {
+                    "type": "Hamstring injury",
+                    "start_date": "2016-04-21",
+                    "end_date": "2016-05-05",
+                    "days_lost": 14
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.0,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    {
+                        "team": "manchester_city",
+                        "from": "Manuel Pellegrini",
+                        "to": "Pep Guardiola",
+                        "date": "2016-07-01"
+                    }
+                ],
+                "team_tactics": "Transition",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Copa América Centenario 2016",
+                    "appearances": 5,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 284,
+                    "position": "Striker",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2016,
+            "team_id": "manchester_city",
+            "league_id": "premierleague-2016",
+            "appearances": 31,
+            "goals": 20,
+            "assists": 3,
+            "minutes": 2476,
+            "position": "Striker",
+            "rating": 8.0,
+            "xG": 12.7,
+            "xA": 4.4,
+            "key_passes": 16,
+            "successful_dribbles": 21,
+            "duels_won": 9,
+            "shots_per_game": 2.6,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 6,
+            "injuries": [
+                {
+                    "type": "Minor knocks",
+                    "start_date": "2017-01-03",
+                    "end_date": "2017-01-12",
+                    "days_lost": 9
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.7,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Possession",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 7,
+                    "goals": 1,
+                    "assists": 0,
+                    "minutes": 317,
+                    "position": "Striker",
+                    "rating": 6.5
+                }
+            ]
+        },
+        {
+            "season": 2017,
+            "team_id": "manchester_city",
+            "league_id": "premierleague-2017",
+            "appearances": 25,
+            "goals": 21,
+            "assists": 6,
+            "minutes": 1865,
+            "position": "Striker",
+            "rating": 8.3,
+            "xG": 11.7,
+            "xA": 6.2,
+            "key_passes": 16,
+            "successful_dribbles": 18,
+            "duels_won": 8,
+            "shots_per_game": 2.4,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 5,
+            "injuries": [
+                {
+                    "type": "Knee injury",
+                    "start_date": "2018-03-12",
+                    "end_date": "2018-04-01",
+                    "days_lost": 20
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.3,
+                "acceleration": "Average",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "High",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Pep possession",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "World Cup 2018",
+                    "appearances": 4,
+                    "goals": 2,
+                    "assists": 0,
+                    "minutes": 195,
+                    "position": "Striker",
+                    "rating": 7.4
+                }
+            ]
+        },
+        {
+            "season": 2018,
+            "team_id": "manchester_city",
+            "league_id": "premierleague-2018",
+            "appearances": 33,
+            "goals": 21,
+            "assists": 7,
+            "minutes": 2273,
+            "position": "Striker",
+            "rating": 8.2,
+            "xG": 12.5,
+            "xA": 5.1,
+            "key_passes": 13,
+            "successful_dribbles": 16,
+            "duels_won": 7,
+            "shots_per_game": 2.0,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 4,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.5,
+                "acceleration": "Average",
+                "stamina": "Adequate",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Veteran",
+                "pressure_handling": "High",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Pep Guardiola",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Copa América 2019",
+                    "appearances": 6,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 496,
+                    "position": "Striker",
+                    "rating": 7.1
+                }
+            ]
+        },
+        {
+            "season": 2019,
+            "team_id": "manchester_city",
+            "league_id": "premierleague-2019",
+            "appearances": 24,
+            "goals": 16,
+            "assists": 3,
+            "minutes": 1456,
+            "position": "Striker",
+            "rating": 7.7,
+            "xG": 10.4,
+            "xA": 2.9,
+            "key_passes": 8,
+            "successful_dribbles": 9,
+            "duels_won": 3,
+            "shots_per_game": 1.7,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 3,
+            "injuries": [
+                {
+                    "type": "Knee surgery",
+                    "start_date": "2020-06-23",
+                    "end_date": "2020-09-10",
+                    "days_lost": 79
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.8,
+                "acceleration": "Low",
+                "stamina": "Low",
+                "recovery_rate": "Poor"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Reduced",
+                "pressure_handling": "Injured",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Guardiola system",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2020,
+            "team_id": "manchester_city",
+            "league_id": "premierleague-2020",
+            "appearances": 14,
+            "goals": 4,
+            "assists": 0,
+            "minutes": 536,
+            "position": "Striker",
+            "rating": 6.6,
+            "xG": 2.3,
+            "xA": 0.6,
+            "key_passes": 3,
+            "successful_dribbles": 2,
+            "duels_won": 2,
+            "shots_per_game": 0.9,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 1,
+            "injuries": [
+                {
+                    "type": "Knee problems",
+                    "start_date": "2020-12-25",
+                    "end_date": "2021-03-07",
+                    "days_lost": 72
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.6,
+                "acceleration": "Low",
+                "stamina": "Low",
+                "recovery_rate": "Poor"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Minimal",
+                "defensive_transitions": "Minimal"
+            },
+            "psychological_factors": {
+                "consistency": "Injured",
+                "pressure_handling": "Reduced",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [
+                {
+                    "from": "manchester_city",
+                    "to": "barcelona",
+                    "transfer_fee": "Free",
+                    "date": "2021-07-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Rotation",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2021,
+            "team_id": "barcelona",
+            "league_id": "laliga-2021",
+            "appearances": 4,
+            "goals": 1,
+            "assists": 0,
+            "minutes": 165,
+            "position": "Striker",
+            "rating": 6.5,
+            "xG": 0.7,
+            "xA": 0.2,
+            "key_passes": 2,
+            "successful_dribbles": 2,
+            "duels_won": 1,
+            "shots_per_game": 0.5,
+            "tackles_per_game": 0.1,
+            "fouls_drawn": 0,
+            "injuries": [
+                {
+                    "type": "Heart arrhythmia",
+                    "start_date": "2021-10-31",
+                    "end_date": "2021-12-15",
+                    "days_lost": 45
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 28.0,
+                "acceleration": "Very Low",
+                "stamina": "Very Low",
+                "recovery_rate": "Poor"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Minimal",
+                "defensive_transitions": "Minimal"
+            },
+            "psychological_factors": {
+                "consistency": "Retired",
+                "pressure_handling": "Poor",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Rotation",
+                "teammate_quality": "Good",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "argentina",
+                    "competition": "Copa América 2021",
+                    "appearances": 5,
+                    "goals": 0,
+                    "assists": 0,
+                    "minutes": 133,
+                    "position": "Striker",
+                    "rating": 6.5
+                }
+            ]
+        }
+    ]
+}

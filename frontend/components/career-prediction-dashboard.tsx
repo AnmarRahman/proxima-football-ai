@@ -27,11 +27,11 @@ interface PlayerSeasonStats {
   goals?: number;
   assists?: number;
   rating?: number;
-  sprintspeedkmh?: number;
-  shotspergame?: number;
-  keypasses?: number;
-  successfuldribbles?: number;
-  tacklespergame?: number;
+  sprint_speed_kmh?: number;
+  shots_per_game?: number;
+  key_passes?: number;
+  successful_dribbles?: number;
+  tackles_per_game?: number;
   stamina?: number;
 }
 
@@ -87,28 +87,28 @@ export function CareerPredictionDashboard({ player }: CareerPredictionDashboardP
   const attributeData = [
     {
       attribute: "Pace",
-      current: Math.round(first.sprintspeedkmh ?? 90),
-      predicted: Math.round(last.sprintspeedkmh ?? 85),
+      current: Math.round(first.sprint_speed_kmh ?? 90),
+      predicted: Math.round(last.sprint_speed_kmh ?? 85),
     },
     {
       attribute: "Shooting",
-      current: Math.round(first.shotspergame ?? 85),
-      predicted: Math.round(last.shotspergame ?? 90),
+      current: Math.round(first.shots_per_game ?? 85),
+      predicted: Math.round(last.shots_per_game ?? 90),
     },
     {
       attribute: "Passing",
-      current: Math.round(first.keypasses ?? 80),
-      predicted: Math.round(last.keypasses ?? 85),
+      current: Math.round(first.key_passes ?? 80),
+      predicted: Math.round(last.key_passes ?? 85),
     },
     {
       attribute: "Dribbling",
-      current: Math.round(first.successfuldribbles ?? 90),
-      predicted: Math.round(last.successfuldribbles ?? 95),
+      current: Math.round(first.successful_dribbles ?? 90),
+      predicted: Math.round(last.successful_dribbles ?? 95),
     },
     {
       attribute: "Defending",
-      current: Math.round(first.tacklespergame ?? 40),
-      predicted: Math.round(last.tacklespergame ?? 45),
+      current: Math.round(first.tackles_per_game ?? 40),
+      predicted: Math.round(last.tackles_per_game ?? 45),
     },
     {
       attribute: "Physical",

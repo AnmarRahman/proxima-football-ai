@@ -1,0 +1,1087 @@
+{
+    "player": {
+        "id": "salah",
+        "name": "Mohamed Salah",
+        "birth_date": "1992-06-15",
+        "nationality": "Egypt",
+        "height_cm": 175,
+        "weight_kg": 71,
+        "dominant_foot": "Left"
+    },
+    "teams": [
+        {
+            "id": "elmokawloon",
+            "name": "El Mokawloon SC",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/5/50/Al_Mokawloon_Al_Arab_SC_logo.png",
+            "country": "Egypt"
+        },
+        {
+            "id": "basel",
+            "name": "FC Basel 1893",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/8/8a/FC_Basel.png",
+            "country": "Switzerland"
+        },
+        {
+            "id": "chelsea",
+            "name": "Chelsea FC",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/chelsea-fc-logo.svg",
+            "country": "England"
+        },
+        {
+            "id": "fiorentina",
+            "name": "ACF Fiorentina",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/5/5a/ACF_Fiorentina_2.svg",
+            "country": "Italy"
+        },
+        {
+            "id": "roma",
+            "name": "AS Roma",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/f/f7/AS_Roma_logo_%282017%29.svg",
+            "country": "Italy"
+        },
+        {
+            "id": "liverpool",
+            "name": "Liverpool FC",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/liverpool-fc.svg",
+            "country": "England"
+        },
+        {
+            "id": "egypt",
+            "name": "Egypt National Team",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg",
+            "country": "Egypt"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 2010,
+            "team_id": "elmokawloon",
+            "league_id": "egyptian-premier-league-2010",
+            "appearances": 22,
+            "goals": 5,
+            "assists": 3,
+            "minutes": 1500,
+            "position": "Right Wing",
+            "rating": 6.7,
+            "xG": 4.2,
+            "xA": 2.5,
+            "key_passes": 18,
+            "successful_dribbles": 40,
+            "duels_won": 22,
+            "shots_per_game": 1.6,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 15,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.5,
+                "acceleration": "Very High",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Emerging",
+                "pressure_handling": "Promising",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Direct transitions, counter-attacks",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Egyptian Premier League"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2011,
+            "team_id": "elmokawloon",
+            "league_id": "egyptian-premier-league-2011",
+            "appearances": 23,
+            "goals": 7,
+            "assists": 3,
+            "minutes": 1650,
+            "position": "Right Wing",
+            "rating": 6.9,
+            "xG": 5.1,
+            "xA": 2.9,
+            "key_passes": 21,
+            "successful_dribbles": 48,
+            "duels_won": 26,
+            "shots_per_game": 1.8,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 18,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.0,
+                "acceleration": "Very High",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Improving",
+                "pressure_handling": "Promising",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "elmokawloon",
+                    "to": "basel",
+                    "transfer_fee": "€2.5M",
+                    "date": "2012-07-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Direct transitions",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Egyptian Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "egypt",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 5,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 300,
+                    "position": "RW",
+                    "rating": 6.8
+                }
+            ]
+        },
+        {
+            "season": 2012,
+            "team_id": "basel",
+            "league_id": "super-league-2012",
+            "appearances": 43,
+            "goals": 10,
+            "assists": 8,
+            "minutes": 2800,
+            "position": "Right Wing",
+            "rating": 7.2,
+            "xG": 8.1,
+            "xA": 6.5,
+            "key_passes": 40,
+            "successful_dribbles": 70,
+            "duels_won": 35,
+            "shots_per_game": 2.0,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 28,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.5,
+                "acceleration": "Very High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW/Inside Forward",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wing-focused, quick transitions",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Swiss Super League & Europe"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "egypt",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 9,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 650,
+                    "position": "RW",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2013,
+            "team_id": "basel",
+            "league_id": "super-league-2013",
+            "appearances": 50,
+            "goals": 14,
+            "assists": 10,
+            "minutes": 3200,
+            "position": "Right Wing",
+            "rating": 7.5,
+            "xG": 11.3,
+            "xA": 7.8,
+            "key_passes": 48,
+            "successful_dribbles": 82,
+            "duels_won": 42,
+            "shots_per_game": 2.3,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 32,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.0,
+                "acceleration": "Elite",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW/Inside Forward",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "basel",
+                    "to": "chelsea",
+                    "transfer_fee": "€13M",
+                    "date": "2014-01-26"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "High pressing, counter-attacks",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Swiss Super League & Europe"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "egypt",
+                    "competition": "World Cup Qualifiers & Friendlies",
+                    "appearances": 10,
+                    "goals": 6,
+                    "assists": 3,
+                    "minutes": 800,
+                    "position": "RW",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2014,
+            "team_id": "chelsea",
+            "league_id": "premierleague-2014",
+            "appearances": 18,
+            "goals": 3,
+            "assists": 2,
+            "minutes": 820,
+            "position": "Right Wing",
+            "rating": 6.6,
+            "xG": 2.5,
+            "xA": 2.0,
+            "key_passes": 14,
+            "successful_dribbles": 25,
+            "duels_won": 15,
+            "shots_per_game": 1.2,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 12,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.2,
+                "acceleration": "Elite",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Inconsistent",
+                "pressure_handling": "Mixed",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [
+                {
+                    "from": "chelsea",
+                    "to": "fiorentina",
+                    "transfer_fee": "Loan",
+                    "date": "2015-02-02"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Mourinho low block, counter-attacks",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League & UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "egypt",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 7,
+                    "goals": 4,
+                    "assists": 2,
+                    "minutes": 560,
+                    "position": "RW",
+                    "rating": 7.3
+                }
+            ]
+        },
+        {
+            "season": 2015,
+            "team_id": "fiorentina",
+            "league_id": "seriea-2015",
+            "appearances": 26,
+            "goals": 9,
+            "assists": 4,
+            "minutes": 1800,
+            "position": "Right Wing",
+            "rating": 7.3,
+            "xG": 7.6,
+            "xA": 3.4,
+            "key_passes": 30,
+            "successful_dribbles": 55,
+            "duels_won": 28,
+            "shots_per_game": 2.3,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 21,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.3,
+                "acceleration": "Elite",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW/Inside Forward",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "fiorentina",
+                    "to": "roma",
+                    "transfer_fee": "Loan",
+                    "date": "2015-08-06"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Possession with fast wide players",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Serie A & Europa League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "egypt",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 8,
+                    "goals": 4,
+                    "assists": 3,
+                    "minutes": 650,
+                    "position": "RW",
+                    "rating": 7.4
+                }
+            ]
+        },
+        {
+            "season": 2016,
+            "team_id": "roma",
+            "league_id": "seriea-2016",
+            "appearances": 42,
+            "goals": 15,
+            "assists": 11,
+            "minutes": 3300,
+            "position": "Right Wing",
+            "rating": 7.7,
+            "xG": 13.2,
+            "xA": 9.1,
+            "key_passes": 58,
+            "successful_dribbles": 85,
+            "duels_won": 40,
+            "shots_per_game": 2.6,
+            "tackles_per_game": 1.1,
+            "fouls_drawn": 30,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.5,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/Inside Forward",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "chelsea",
+                    "to": "roma",
+                    "transfer_fee": "€15M",
+                    "date": "2016-06-30"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "High line, quick breaks with Dzeko pivot",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Serie A & Europe"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "egypt",
+                    "competition": "AFCON 2017 Qualifiers",
+                    "appearances": 7,
+                    "goals": 4,
+                    "assists": 3,
+                    "minutes": 610,
+                    "position": "RW",
+                    "rating": 7.7
+                }
+            ]
+        },
+        {
+            "season": 2017,
+            "team_id": "roma",
+            "league_id": "seriea-2017",
+            "appearances": 41,
+            "goals": 19,
+            "assists": 15,
+            "minutes": 3450,
+            "position": "Right Wing",
+            "rating": 7.9,
+            "xG": 16.8,
+            "xA": 11.3,
+            "key_passes": 65,
+            "successful_dribbles": 92,
+            "duels_won": 46,
+            "shots_per_game": 2.9,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 32,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.7,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/Inside Forward",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "roma",
+                    "to": "liverpool",
+                    "transfer_fee": "€42M",
+                    "date": "2017-06-22"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking 4-2-3-1, transitions with Dzeko",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Serie A & UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "egypt",
+                    "competition": "AFCON 2017",
+                    "appearances": 6,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 540,
+                    "position": "RW",
+                    "rating": 7.8
+                },
+                {
+                    "team_id": "egypt",
+                    "competition": "World Cup 2018 Qualifiers",
+                    "appearances": 8,
+                    "goals": 5,
+                    "assists": 2,
+                    "minutes": 720,
+                    "position": "RW",
+                    "rating": 7.9
+                }
+            ]
+        },
+        {
+            "season": 2018,
+            "team_id": "liverpool",
+            "league_id": "premierleague-2018",
+            "appearances": 52,
+            "goals": 44,
+            "assists": 16,
+            "minutes": 4300,
+            "position": "Right Wing/Forward",
+            "rating": 8.5,
+            "xG": 34.0,
+            "xA": 11.5,
+            "key_passes": 90,
+            "successful_dribbles": 130,
+            "duels_won": 70,
+            "shots_per_game": 3.9,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 40,
+            "injuries": [
+                {
+                    "type": "Shoulder injury (UCL final)",
+                    "start_date": "2018-05-26",
+                    "end_date": "2018-06-15",
+                    "days_lost": 20
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 35.0,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/Inside Forward close to CF",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Klopp high press, fast front three",
+                "teammate_quality": "Elite (Firmino, Mane)",
+                "league_competitiveness": "Premier League & UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "egypt",
+                    "competition": "FIFA World Cup 2018",
+                    "appearances": 2,
+                    "goals": 2,
+                    "assists": 0,
+                    "minutes": 180,
+                    "position": "RW",
+                    "rating": 7.4
+                },
+                {
+                    "team_id": "egypt",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 6,
+                    "goals": 4,
+                    "assists": 1,
+                    "minutes": 480,
+                    "position": "RW",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2019,
+            "team_id": "liverpool",
+            "league_id": "premierleague-2019",
+            "appearances": 52,
+            "goals": 27,
+            "assists": 13,
+            "minutes": 4200,
+            "position": "Right Wing/Forward",
+            "rating": 8.1,
+            "xG": 22.5,
+            "xA": 10.0,
+            "key_passes": 84,
+            "successful_dribbles": 118,
+            "duels_won": 67,
+            "shots_per_game": 3.7,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 37,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.7,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/Inside Forward",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Same Klopp system, more control",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League & UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "egypt",
+                    "competition": "AFCON 2019",
+                    "appearances": 4,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 360,
+                    "position": "RW",
+                    "rating": 7.3
+                },
+                {
+                    "team_id": "egypt",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 5,
+                    "goals": 4,
+                    "assists": 2,
+                    "minutes": 430,
+                    "position": "RW",
+                    "rating": 7.7
+                }
+            ]
+        },
+        {
+            "season": 2020,
+            "team_id": "liverpool",
+            "league_id": "premierleague-2020",
+            "appearances": 48,
+            "goals": 23,
+            "assists": 10,
+            "minutes": 3900,
+            "position": "Right Wing/Forward",
+            "rating": 7.8,
+            "xG": 19.0,
+            "xA": 8.5,
+            "key_passes": 78,
+            "successful_dribbles": 105,
+            "duels_won": 60,
+            "shots_per_game": 3.5,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 34,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.3,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/Inside Forward",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "High pressing with occasional rotation",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League & UCL (Covid-affected)"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "egypt",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 6,
+                    "goals": 5,
+                    "assists": 2,
+                    "minutes": 540,
+                    "position": "RW",
+                    "rating": 7.8
+                }
+            ]
+        },
+        {
+            "season": 2021,
+            "team_id": "liverpool",
+            "league_id": "premierleague-2021",
+            "appearances": 51,
+            "goals": 31,
+            "assists": 16,
+            "minutes": 4100,
+            "position": "Right Wing/Forward",
+            "rating": 8.4,
+            "xG": 26.0,
+            "xA": 13.0,
+            "key_passes": 96,
+            "successful_dribbles": 115,
+            "duels_won": 64,
+            "shots_per_game": 3.9,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 38,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.0,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "RW/Inside Forward close to goal",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Title-challenging Liverpool with flexible front line",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League & UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "egypt",
+                    "competition": "AFCON 2021/22",
+                    "appearances": 7,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 660,
+                    "position": "RW",
+                    "rating": 7.9
+                },
+                {
+                    "team_id": "egypt",
+                    "competition": "World Cup 2022 Qualifiers",
+                    "appearances": 8,
+                    "goals": 7,
+                    "assists": 3,
+                    "minutes": 720,
+                    "position": "RW",
+                    "rating": 8.2
+                }
+            ]
+        },
+        {
+            "season": 2022,
+            "team_id": "liverpool",
+            "league_id": "premierleague-2022",
+            "appearances": 51,
+            "goals": 30,
+            "assists": 15,
+            "minutes": 4000,
+            "position": "Right Wing/Forward",
+            "rating": 8.0,
+            "xG": 24.0,
+            "xA": 11.5,
+            "key_passes": 88,
+            "successful_dribbles": 105,
+            "duels_won": 60,
+            "shots_per_game": 3.6,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 35,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.6,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "RW/Inside Forward",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Liverpool in transition (Diaz/Nunez added)",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League & UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "egypt",
+                    "competition": "AFCON 2023 Qualifiers & Friendlies",
+                    "appearances": 8,
+                    "goals": 6,
+                    "assists": 3,
+                    "minutes": 700,
+                    "position": "RW",
+                    "rating": 7.9
+                }
+            ]
+        },
+        {
+            "season": 2023,
+            "team_id": "liverpool",
+            "league_id": "premierleague-2023",
+            "appearances": 50,
+            "goals": 27,
+            "assists": 14,
+            "minutes": 3900,
+            "position": "Right Wing/Forward",
+            "rating": 7.9,
+            "xG": 22.0,
+            "xA": 11.0,
+            "key_passes": 86,
+            "successful_dribbles": 100,
+            "duels_won": 58,
+            "shots_per_game": 3.4,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 34,
+            "injuries": [
+                {
+                    "type": "Minor muscle strain",
+                    "start_date": "2024-01-01",
+                    "end_date": "2024-01-15",
+                    "days_lost": 14
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.0,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW closer to half-space",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "More controlled Liverpool with box midfield",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League & Europa League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "egypt",
+                    "competition": "AFCON 2025 Qualifiers & Friendlies",
+                    "appearances": 7,
+                    "goals": 5,
+                    "assists": 3,
+                    "minutes": 630,
+                    "position": "RW",
+                    "rating": 8.0
+                }
+            ]
+        },
+        {
+            "season": 2024,
+            "team_id": "liverpool",
+            "league_id": "premierleague-2024",
+            "appearances": 46,
+            "goals": 24,
+            "assists": 12,
+            "minutes": 3600,
+            "position": "Right Wing/Forward",
+            "rating": 7.8,
+            "xG": 20.0,
+            "xA": 10.0,
+            "key_passes": 80,
+            "successful_dribbles": 92,
+            "duels_won": 54,
+            "shots_per_game": 3.2,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 32,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.5,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/Inside Forward with more playmaking",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Post-Mane evolution, Salah as senior leader",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League & Europe"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "egypt",
+                    "competition": "AFCON 2025",
+                    "appearances": 7,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 630,
+                    "position": "RW",
+                    "rating": 7.7
+                },
+                {
+                    "team_id": "egypt",
+                    "competition": "World Cup 2026 Qualifiers",
+                    "appearances": 6,
+                    "goals": 7,
+                    "assists": 3,
+                    "minutes": 540,
+                    "position": "RW",
+                    "rating": 8.3
+                }
+            ]
+        },
+        {
+            "season": 2025,
+            "team_id": "liverpool",
+            "league_id": "premierleague-2025",
+            "appearances": 35,
+            "goals": 20,
+            "assists": 9,
+            "minutes": 2800,
+            "position": "Right Wing/Forward",
+            "rating": 7.7,
+            "xG": 16.5,
+            "xA": 7.5,
+            "key_passes": 60,
+            "successful_dribbles": 70,
+            "duels_won": 40,
+            "shots_per_game": 3.1,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 28,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.0,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/Inside Forward, more central occupation",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Liverpool balancing Salah usage with age",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League & Europe"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "egypt",
+                    "competition": "World Cup 2026 Qualifiers & Friendlies",
+                    "appearances": 8,
+                    "goals": 6,
+                    "assists": 4,
+                    "minutes": 700,
+                    "position": "RW",
+                    "rating": 8.1
+                }
+            ]
+        },
+        {
+            "season": 2026,
+            "team_id": "liverpool",
+            "league_id": "premierleague-2026",
+            "appearances": 10,
+            "goals": 6,
+            "assists": 5,
+            "minutes": 820,
+            "position": "Right Wing/Forward",
+            "rating": 7.9,
+            "xG": 4.8,
+            "xA": 3.9,
+            "key_passes": 22,
+            "successful_dribbles": 20,
+            "duels_won": 13,
+            "shots_per_game": 3.0,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 10,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.5,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/Inside Forward, selective pressing",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Liverpool managing minutes ahead of international tournaments",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "egypt",
+                    "competition": "World Cup 2026 Preparation (Qualifiers & Friendlies)",
+                    "appearances": 4,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 320,
+                    "position": "RW",
+                    "rating": 8.0
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1336 @@
+{
+    "player": {
+        "id": "ibrahimovic",
+        "name": "Zlatan Ibrahimović",
+        "birth_date": "1981-10-03",
+        "nationality": "Sweden",
+        "height_cm": 195,
+        "weight_kg": 95,
+        "dominant_foot": "Right"
+    },
+    "teams": [
+        {
+            "id": "malmo",
+            "name": "Malmö FF",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/malmo-ff.svg",
+            "country": "Sweden"
+        },
+        {
+            "id": "ajax",
+            "name": "Ajax",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/ajax.svg",
+            "country": "Netherlands"
+        },
+        {
+            "id": "juventus",
+            "name": "Juventus",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/juventus-fc.svg",
+            "country": "Italy"
+        },
+        {
+            "id": "inter",
+            "name": "Inter Milan",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/inter-milan.svg",
+            "country": "Italy"
+        },
+        {
+            "id": "barcelona",
+            "name": "FC Barcelona",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/fc-barcelona-crest.svg",
+            "country": "Spain"
+        },
+        {
+            "id": "milan",
+            "name": "AC Milan",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/ac-milan.svg",
+            "country": "Italy"
+        },
+        {
+            "id": "psg",
+            "name": "Paris Saint-Germain",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/psg-6.svg",
+            "country": "France"
+        },
+        {
+            "id": "manutd",
+            "name": "Manchester United",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/manchester-united-fc-logo.svg",
+            "country": "England"
+        },
+        {
+            "id": "galaxy",
+            "name": "LA Galaxy",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/la-galaxy-2.svg",
+            "country": "USA"
+        },
+        {
+            "id": "sweden",
+            "name": "Sweden National Team",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg",
+            "country": "Sweden"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 1999,
+            "team_id": "malmo",
+            "league_id": "allsvenskan-1999",
+            "appearances": 8,
+            "goals": 3,
+            "assists": 0,
+            "minutes": 688,
+            "position": "Striker",
+            "rating": 6.6,
+            "xG": 1.7,
+            "xA": 0.2,
+            "key_passes": 4,
+            "successful_dribbles": 13,
+            "duels_won": 7,
+            "shots_per_game": 1.0,
+            "tackles_per_game": 0.1,
+            "fouls_drawn": 5,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.5,
+                "acceleration": "High",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Emerging",
+                "pressure_handling": "Promising",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Basic Swedish league",
+                "teammate_quality": "Modest",
+                "league_competitiveness": "Swedish Allsvenskan"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2000,
+            "team_id": "malmo",
+            "league_id": "superettan-2000",
+            "appearances": 26,
+            "goals": 12,
+            "assists": 4,
+            "minutes": 2330,
+            "position": "Striker",
+            "rating": 7.2,
+            "xG": 6.1,
+            "xA": 2.1,
+            "key_passes": 10,
+            "successful_dribbles": 22,
+            "duels_won": 14,
+            "shots_per_game": 2.1,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 7,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.2,
+                "acceleration": "High",
+                "stamina": "Increasing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Solid",
+                "pressure_handling": "Promising",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "malmo",
+                    "to": "ajax",
+                    "transfer_fee": "€8.7M",
+                    "date": "2001-07-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Structured attack",
+                "teammate_quality": "Modest",
+                "league_competitiveness": "Swedish Superettan"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2001,
+            "team_id": "ajax",
+            "league_id": "eredivisie-2001",
+            "appearances": 24,
+            "goals": 6,
+            "assists": 2,
+            "minutes": 1790,
+            "position": "Striker",
+            "rating": 6.9,
+            "xG": 3.2,
+            "xA": 1.2,
+            "key_passes": 12,
+            "successful_dribbles": 29,
+            "duels_won": 18,
+            "shots_per_game": 1.7,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 7,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.0,
+                "acceleration": "High",
+                "stamina": "Improving",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Central Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Improving",
+                "pressure_handling": "Good",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "4-3-3 Dutch classic",
+                "teammate_quality": "Developing",
+                "league_competitiveness": "Eredivisie"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "sweden",
+                    "competition": "Sweden U21",
+                    "appearances": 5,
+                    "goals": 2,
+                    "assists": 0,
+                    "minutes": 440,
+                    "position": "Striker",
+                    "rating": 6.7
+                }
+            ]
+        },
+        {
+            "season": 2002,
+            "team_id": "ajax",
+            "league_id": "eredivisie-2002",
+            "appearances": 25,
+            "goals": 12,
+            "assists": 3,
+            "minutes": 2110,
+            "position": "Striker",
+            "rating": 7.1,
+            "xG": 5.4,
+            "xA": 2.3,
+            "key_passes": 14,
+            "successful_dribbles": 24,
+            "duels_won": 19,
+            "shots_per_game": 2.0,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 6,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.4,
+                "acceleration": "High",
+                "stamina": "Improving",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Solid",
+                "pressure_handling": "Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking Dutch 4-3-3",
+                "teammate_quality": "High",
+                "league_competitiveness": "Eredivisie"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "sweden",
+                    "competition": "Sweden Senior",
+                    "appearances": 6,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 476,
+                    "position": "Striker",
+                    "rating": 7.1
+                }
+            ]
+        },
+        {
+            "season": 2003,
+            "team_id": "ajax",
+            "league_id": "eredivisie-2003",
+            "appearances": 22,
+            "goals": 13,
+            "assists": 4,
+            "minutes": 1962,
+            "position": "Striker",
+            "rating": 7.4,
+            "xG": 6.1,
+            "xA": 2.5,
+            "key_passes": 13,
+            "successful_dribbles": 26,
+            "duels_won": 15,
+            "shots_per_game": 2.0,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 8,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.8,
+                "acceleration": "High",
+                "stamina": "Improving",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Ajax build-up",
+                "teammate_quality": "High",
+                "league_competitiveness": "Eredivisie"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "sweden",
+                    "competition": "Euro Qualifiers",
+                    "appearances": 7,
+                    "goals": 3,
+                    "assists": 1,
+                    "minutes": 589,
+                    "position": "Striker",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2004,
+            "team_id": "juventus",
+            "league_id": "seriea-2004",
+            "appearances": 35,
+            "goals": 16,
+            "assists": 7,
+            "minutes": 2760,
+            "position": "Striker",
+            "rating": 7.8,
+            "xG": 8.7,
+            "xA": 3.8,
+            "key_passes": 20,
+            "successful_dribbles": 30,
+            "duels_won": 26,
+            "shots_per_game": 2.7,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 12,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.3,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "ajax",
+                    "to": "juventus",
+                    "transfer_fee": "€16M",
+                    "date": "2004-08-31"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Capello's pragmatic 4-4-2",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Serie A"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "sweden",
+                    "competition": "Euro 2004",
+                    "appearances": 4,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 390,
+                    "position": "Striker",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2005,
+            "team_id": "juventus",
+            "league_id": "seriea-2005",
+            "appearances": 35,
+            "goals": 7,
+            "assists": 4,
+            "minutes": 2700,
+            "position": "Striker",
+            "rating": 7.2,
+            "xG": 5.1,
+            "xA": 2.2,
+            "key_passes": 12,
+            "successful_dribbles": 22,
+            "duels_won": 17,
+            "shots_per_game": 1.7,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 9,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.4,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Stable",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    {
+                        "team": "juventus",
+                        "from": "Marcello Lippi",
+                        "to": "Fabio Capello",
+                        "date": "2004-07-01"
+                    }
+                ],
+                "team_tactics": "Pragmatic",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Serie A"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "sweden",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 8,
+                    "goals": 4,
+                    "assists": 2,
+                    "minutes": 683,
+                    "position": "Striker",
+                    "rating": 7.1
+                }
+            ]
+        },
+        {
+            "season": 2006,
+            "team_id": "inter",
+            "league_id": "seriea-2006",
+            "appearances": 27,
+            "goals": 15,
+            "assists": 5,
+            "minutes": 2325,
+            "position": "Striker",
+            "rating": 7.7,
+            "xG": 7.8,
+            "xA": 3.7,
+            "key_passes": 15,
+            "successful_dribbles": 28,
+            "duels_won": 22,
+            "shots_per_game": 2.5,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 8,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.7,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Strong",
+                "pressure_handling": "Excellent",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "juventus",
+                    "to": "inter",
+                    "transfer_fee": "€24.8M",
+                    "date": "2006-08-10"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [
+                    {
+                        "team": "inter",
+                        "from": "Roberto Mancini",
+                        "to": "José Mourinho",
+                        "date": "2008-06-02"
+                    }
+                ],
+                "team_tactics": "Attacking 4-3-1-2",
+                "teammate_quality": "High",
+                "league_competitiveness": "Serie A"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "sweden",
+                    "competition": "World Cup 2006",
+                    "appearances": 3,
+                    "goals": 0,
+                    "assists": 0,
+                    "minutes": 270,
+                    "position": "Striker",
+                    "rating": 6.5
+                }
+            ]
+        },
+        {
+            "season": 2007,
+            "team_id": "inter",
+            "league_id": "seriea-2007",
+            "appearances": 26,
+            "goals": 17,
+            "assists": 6,
+            "minutes": 2300,
+            "position": "Striker",
+            "rating": 7.9,
+            "xG": 8.2,
+            "xA": 3.5,
+            "key_passes": 16,
+            "successful_dribbles": 31,
+            "duels_won": 23,
+            "shots_per_game": 2.8,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 9,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.9,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter, attacking",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Serie A"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "sweden",
+                    "competition": "Euro Qualifiers",
+                    "appearances": 9,
+                    "goals": 4,
+                    "assists": 1,
+                    "minutes": 710,
+                    "position": "Striker",
+                    "rating": 7.7
+                }
+            ]
+        },
+        {
+            "season": 2008,
+            "team_id": "inter",
+            "league_id": "seriea-2008",
+            "appearances": 35,
+            "goals": 25,
+            "assists": 7,
+            "minutes": 2675,
+            "position": "Striker",
+            "rating": 8.1,
+            "xG": 9.7,
+            "xA": 3.9,
+            "key_passes": 18,
+            "successful_dribbles": 35,
+            "duels_won": 27,
+            "shots_per_game": 2.9,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 11,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.2,
+                "acceleration": "High",
+                "stamina": "Elite",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter, Mourinho",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Serie A"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "sweden",
+                    "competition": "Euro 2008",
+                    "appearances": 3,
+                    "goals": 2,
+                    "assists": 0,
+                    "minutes": 270,
+                    "position": "Striker",
+                    "rating": 7.4
+                }
+            ]
+        },
+        {
+            "season": 2009,
+            "team_id": "barcelona",
+            "league_id": "laliga-2009",
+            "appearances": 29,
+            "goals": 16,
+            "assists": 5,
+            "minutes": 2150,
+            "position": "Striker/Forward",
+            "rating": 7.8,
+            "xG": 7.5,
+            "xA": 3.6,
+            "key_passes": 19,
+            "successful_dribbles": 21,
+            "duels_won": 14,
+            "shots_per_game": 2.3,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 8,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.1,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Fast"
+            },
+            "tactical_data": {
+                "average_position": "Striker/Left Forward",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "High",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Potential"
+            },
+            "transfer_history": [
+                {
+                    "from": "inter",
+                    "to": "barcelona",
+                    "transfer_fee": "€69M",
+                    "date": "2009-07-27"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Tiki-taka",
+                "teammate_quality": "Elite (Messi, Xavi)",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "sweden",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 7,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 670,
+                    "position": "Striker",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2010,
+            "team_id": "milan",
+            "league_id": "seriea-2010",
+            "appearances": 32,
+            "goals": 14,
+            "assists": 4,
+            "minutes": 2650,
+            "position": "Striker",
+            "rating": 7.6,
+            "xG": 6.9,
+            "xA": 2.5,
+            "key_passes": 11,
+            "successful_dribbles": 28,
+            "duels_won": 19,
+            "shots_per_game": 2.2,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 6,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.8,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "High",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "barcelona",
+                    "to": "milan",
+                    "transfer_fee": "Loan (€24M buy obligation)",
+                    "date": "2010-08-28"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Allegri's Milan 4-3-3",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Serie A"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "sweden",
+                    "competition": "Euro Qualifiers",
+                    "appearances": 9,
+                    "goals": 6,
+                    "assists": 2,
+                    "minutes": 830,
+                    "position": "Striker",
+                    "rating": 7.9
+                }
+            ]
+        },
+        {
+            "season": 2011,
+            "team_id": "milan",
+            "league_id": "seriea-2011",
+            "appearances": 32,
+            "goals": 28,
+            "assists": 6,
+            "minutes": 2900,
+            "position": "Striker",
+            "rating": 8.4,
+            "xG": 10.9,
+            "xA": 4.3,
+            "key_passes": 17,
+            "successful_dribbles": 35,
+            "duels_won": 29,
+            "shots_per_game": 3.2,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 11,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.6,
+                "acceleration": "High",
+                "stamina": "Very High",
+                "recovery_rate": "Very Good"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Milan, Allegri",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Serie A"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "sweden",
+                    "competition": "Euro 2012 Qualifiers",
+                    "appearances": 7,
+                    "goals": 5,
+                    "assists": 1,
+                    "minutes": 600,
+                    "position": "Striker",
+                    "rating": 7.8
+                }
+            ]
+        },
+        {
+            "season": 2012,
+            "team_id": "psg",
+            "league_id": "ligue1-2012",
+            "appearances": 34,
+            "goals": 30,
+            "assists": 8,
+            "minutes": 3150,
+            "position": "Striker",
+            "rating": 8.2,
+            "xG": 11.4,
+            "xA": 4.5,
+            "key_passes": 21,
+            "successful_dribbles": 38,
+            "duels_won": 30,
+            "shots_per_game": 3.5,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 13,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.1,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "milan",
+                    "to": "psg",
+                    "transfer_fee": "€20M",
+                    "date": "2012-07-18"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Carlo Ancelotti's PSG",
+                "teammate_quality": "High",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "sweden",
+                    "competition": "Euro 2012",
+                    "appearances": 3,
+                    "goals": 2,
+                    "assists": 0,
+                    "minutes": 270,
+                    "position": "Striker",
+                    "rating": 7.3
+                }
+            ]
+        },
+        {
+            "season": 2013,
+            "team_id": "psg",
+            "league_id": "ligue1-2013",
+            "appearances": 33,
+            "goals": 26,
+            "assists": 7,
+            "minutes": 2990,
+            "position": "Striker",
+            "rating": 7.9,
+            "xG": 10.7,
+            "xA": 3.9,
+            "key_passes": 19,
+            "successful_dribbles": 29,
+            "duels_won": 21,
+            "shots_per_game": 3.2,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 12,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.8,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "High",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Laurent Blanc's PSG",
+                "teammate_quality": "High",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "sweden",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 10,
+                    "goals": 6,
+                    "assists": 1,
+                    "minutes": 930,
+                    "position": "Striker",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2014,
+            "team_id": "psg",
+            "league_id": "ligue1-2014",
+            "appearances": 24,
+            "goals": 19,
+            "assists": 4,
+            "minutes": 2130,
+            "position": "Striker",
+            "rating": 8.2,
+            "xG": 8.5,
+            "xA": 3.2,
+            "key_passes": 15,
+            "successful_dribbles": 18,
+            "duels_won": 16,
+            "shots_per_game": 3.0,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 7,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.2,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "PSG build-up",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2015,
+            "team_id": "psg",
+            "league_id": "ligue1-2015",
+            "appearances": 31,
+            "goals": 38,
+            "assists": 7,
+            "minutes": 2790,
+            "position": "Striker",
+            "rating": 8.6,
+            "xG": 12.2,
+            "xA": 4.1,
+            "key_passes": 22,
+            "successful_dribbles": 25,
+            "duels_won": 18,
+            "shots_per_game": 3.7,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 13,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.0,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Elite"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Laurent Blanc, PSG possession",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "sweden",
+                    "competition": "EURO 2016 Qualifiers",
+                    "appearances": 9,
+                    "goals": 8,
+                    "assists": 2,
+                    "minutes": 790,
+                    "position": "Striker",
+                    "rating": 8.0
+                }
+            ]
+        },
+        {
+            "season": 2016,
+            "team_id": "manutd",
+            "league_id": "premierleague-2016",
+            "appearances": 28,
+            "goals": 17,
+            "assists": 5,
+            "minutes": 2432,
+            "position": "Striker",
+            "rating": 8.0,
+            "xG": 8.3,
+            "xA": 4.2,
+            "key_passes": 14,
+            "successful_dribbles": 19,
+            "duels_won": 18,
+            "shots_per_game": 2.8,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 8,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.1,
+                "acceleration": "Good",
+                "stamina": "Good",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "High",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "psg",
+                    "to": "manutd",
+                    "transfer_fee": "Free",
+                    "date": "2016-07-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "United rotation",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "sweden",
+                    "competition": "EURO 2016",
+                    "appearances": 3,
+                    "goals": 0,
+                    "assists": 0,
+                    "minutes": 270,
+                    "position": "Striker",
+                    "rating": 6.5
+                }
+            ]
+        },
+        {
+            "season": 2018,
+            "team_id": "galaxy",
+            "league_id": "mls-2018",
+            "appearances": 27,
+            "goals": 22,
+            "assists": 6,
+            "minutes": 2336,
+            "position": "Striker",
+            "rating": 7.7,
+            "xG": 9.2,
+            "xA": 4.0,
+            "key_passes": 15,
+            "successful_dribbles": 18,
+            "duels_won": 11,
+            "shots_per_game": 3.3,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 7,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.8,
+                "acceleration": "Good",
+                "stamina": "Good",
+                "recovery_rate": "Adequate"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "High",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Iconic"
+            },
+            "transfer_history": [
+                {
+                    "from": "manutd",
+                    "to": "galaxy",
+                    "transfer_fee": "Free",
+                    "date": "2018-03-23"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "MLS attack",
+                "teammate_quality": "Average",
+                "league_competitiveness": "MLS"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2019,
+            "team_id": "galaxy",
+            "league_id": "mls-2019",
+            "appearances": 29,
+            "goals": 30,
+            "assists": 7,
+            "minutes": 2608,
+            "position": "Striker",
+            "rating": 8.4,
+            "xG": 12.3,
+            "xA": 4.1,
+            "key_passes": 19,
+            "successful_dribbles": 22,
+            "duels_won": 13,
+            "shots_per_game": 3.9,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 9,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.7,
+                "acceleration": "Good",
+                "stamina": "Steady",
+                "recovery_rate": "Adequate"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "High",
+                "pressure_handling": "Iconic",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "MLS attack",
+                "teammate_quality": "Average",
+                "league_competitiveness": "MLS"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2020,
+            "team_id": "milan",
+            "league_id": "seriea-2020",
+            "appearances": 19,
+            "goals": 15,
+            "assists": 3,
+            "minutes": 1623,
+            "position": "Striker",
+            "rating": 8.0,
+            "xG": 7.1,
+            "xA": 2.8,
+            "key_passes": 10,
+            "successful_dribbles": 12,
+            "duels_won": 9,
+            "shots_per_game": 2.7,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 5,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 28.9,
+                "acceleration": "Average",
+                "stamina": "Steady",
+                "recovery_rate": "Adequate"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Reliable",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "galaxy",
+                    "to": "milan",
+                    "transfer_fee": "Free",
+                    "date": "2020-01-02"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Milan attack",
+                "teammate_quality": "High",
+                "league_competitiveness": "Serie A"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2021,
+            "team_id": "milan",
+            "league_id": "seriea-2021",
+            "appearances": 27,
+            "goals": 8,
+            "assists": 2,
+            "minutes": 1530,
+            "position": "Striker",
+            "rating": 7.2,
+            "xG": 3.4,
+            "xA": 1.3,
+            "key_passes": 7,
+            "successful_dribbles": 6,
+            "duels_won": 8,
+            "shots_per_game": 1.2,
+            "tackles_per_game": 0.1,
+            "fouls_drawn": 2,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 28.4,
+                "acceleration": "Average",
+                "stamina": "Low",
+                "recovery_rate": "Questionable"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Reduced",
+                "pressure_handling": "Experienced",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Support role",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Serie A"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2022,
+            "team_id": "milan",
+            "league_id": "seriea-2022",
+            "appearances": 4,
+            "goals": 1,
+            "assists": 0,
+            "minutes": 220,
+            "position": "Striker",
+            "rating": 6.8,
+            "xG": 0.3,
+            "xA": 0.1,
+            "key_passes": 2,
+            "successful_dribbles": 1,
+            "duels_won": 1,
+            "shots_per_game": 0.6,
+            "tackles_per_game": 0.1,
+            "fouls_drawn": 0,
+            "injuries": [
+                {
+                    "type": "Knee injury",
+                    "start_date": "2022-08-01",
+                    "end_date": "2023-02-16",
+                    "days_lost": 199
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 27.9,
+                "acceleration": "Low",
+                "stamina": "Low",
+                "recovery_rate": "Poor"
+            },
+            "tactical_data": {
+                "average_position": "Striker",
+                "contribution_to_build_up": "Support",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Very Reduced",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Bench role",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Serie A"
+            },
+            "national_team_stats": []
+        }
+    ]
+}

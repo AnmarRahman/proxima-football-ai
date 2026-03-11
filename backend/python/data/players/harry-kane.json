@@ -1,0 +1,1006 @@
+{
+    "player": {
+        "id": "harrykane",
+        "name": "Harry Kane",
+        "birth_date": "1993-07-28",
+        "nationality": "England",
+        "height_cm": 188,
+        "weight_kg": 86,
+        "dominant_foot": "Right"
+    },
+    "teams": [
+        {
+            "id": "tottenham",
+            "name": "Tottenham Hotspur",
+            "logo_url": "",
+            "country": "England"
+        },
+        {
+            "id": "leytonorient",
+            "name": "Leyton Orient",
+            "logo_url": "",
+            "country": "England"
+        },
+        {
+            "id": "millwall",
+            "name": "Millwall",
+            "logo_url": "",
+            "country": "England"
+        },
+        {
+            "id": "norwich",
+            "name": "Norwich City",
+            "logo_url": "",
+            "country": "England"
+        },
+        {
+            "id": "leicester",
+            "name": "Leicester City",
+            "logo_url": "",
+            "country": "England"
+        },
+        {
+            "id": "bayern",
+            "name": "Bayern Munich",
+            "logo_url": "",
+            "country": "Germany"
+        },
+        {
+            "id": "england",
+            "name": "England National Team",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/b/be/Flag_of_England.svg",
+            "country": "England"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 2010,
+            "team_id": "leytonorient",
+            "league_id": "leagueone-2010-11",
+            "appearances": 18,
+            "goals": 5,
+            "assists": 1,
+            "minutes": 1100,
+            "position": "ST",
+            "rating": 6.7,
+            "xG": 4.5,
+            "xA": 1.2,
+            "key_passes": 10,
+            "successful_dribbles": 8,
+            "duels_won": 45,
+            "shots_per_game": 2.0,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 12,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.0,
+                "acceleration": "Above Average",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Emerging",
+                "pressure_handling": "Promising",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "tottenham",
+                    "to": "leytonorient",
+                    "transfer_fee": "Loan",
+                    "date": "2011-01-07"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Direct, target man usage",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "League One"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "england",
+                    "competition": "England U19",
+                    "appearances": 4,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 260,
+                    "position": "ST",
+                    "rating": 6.9
+                }
+            ]
+        },
+        {
+            "season": 2011,
+            "team_id": "millwall",
+            "league_id": "championship-2011-12",
+            "appearances": 27,
+            "goals": 9,
+            "assists": 2,
+            "minutes": 1800,
+            "position": "ST",
+            "rating": 7.0,
+            "xG": 8.0,
+            "xA": 2.0,
+            "key_passes": 18,
+            "successful_dribbles": 10,
+            "duels_won": 60,
+            "shots_per_game": 2.3,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 16,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.2,
+                "acceleration": "Above Average",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Improving",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "tottenham",
+                    "to": "millwall",
+                    "transfer_fee": "Loan",
+                    "date": "2012-01-13"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Direct, crossing",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Championship"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "england",
+                    "competition": "England U20",
+                    "appearances": 5,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 320,
+                    "position": "ST",
+                    "rating": 6.8
+                }
+            ]
+        },
+        {
+            "season": 2012,
+            "team_id": "norwich",
+            "league_id": "premierleague-2012-13",
+            "appearances": 4,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 138,
+            "position": "ST",
+            "rating": 6.1,
+            "xG": 0.6,
+            "xA": 0.2,
+            "key_passes": 2,
+            "successful_dribbles": 1,
+            "duels_won": 6,
+            "shots_per_game": 0.8,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 2,
+            "injuries": [
+                {
+                    "type": "Ankle injury",
+                    "start_date": "2012-09-20",
+                    "end_date": "2012-11-15",
+                    "days_lost": 56
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.3,
+                "acceleration": "Above Average",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Inconsistent",
+                "pressure_handling": "Developing",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [
+                {
+                    "from": "tottenham",
+                    "to": "norwich",
+                    "transfer_fee": "Loan",
+                    "date": "2012-08-31"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Defensive, low block",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "england",
+                    "competition": "England U21",
+                    "appearances": 3,
+                    "goals": 1,
+                    "assists": 0,
+                    "minutes": 220,
+                    "position": "ST",
+                    "rating": 6.7
+                }
+            ]
+        },
+        {
+            "season": 2013,
+            "team_id": "leicester",
+            "league_id": "championship-2013-14",
+            "appearances": 13,
+            "goals": 2,
+            "assists": 0,
+            "minutes": 500,
+            "position": "ST",
+            "rating": 6.4,
+            "xG": 2.1,
+            "xA": 0.4,
+            "key_passes": 5,
+            "successful_dribbles": 3,
+            "duels_won": 20,
+            "shots_per_game": 1.3,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 6,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.4,
+                "acceleration": "Above Average",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Inconsistent",
+                "pressure_handling": "Developing",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "tottenham",
+                    "to": "leicester",
+                    "transfer_fee": "Loan",
+                    "date": "2013-02-21"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Direct, promotion push",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Championship"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "england",
+                    "competition": "England U21",
+                    "appearances": 5,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 340,
+                    "position": "ST",
+                    "rating": 6.9
+                }
+            ]
+        },
+        {
+            "season": 2014,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2014-15",
+            "appearances": 34,
+            "goals": 21,
+            "assists": 3,
+            "minutes": 2584,
+            "position": "ST",
+            "rating": 7.8,
+            "xG": 18.5,
+            "xA": 4.0,
+            "key_passes": 40,
+            "successful_dribbles": 25,
+            "duels_won": 130,
+            "shots_per_game": 3.3,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 34,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.8,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    "Pochettino arrival"
+                ],
+                "team_tactics": "High pressing, fast transitions",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "england",
+                    "competition": "Euro 2016 Qualifiers & Friendlies",
+                    "appearances": 6,
+                    "goals": 3,
+                    "assists": 0,
+                    "minutes": 360,
+                    "position": "ST",
+                    "rating": 7.1
+                }
+            ]
+        },
+        {
+            "season": 2015,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2015-16",
+            "appearances": 38,
+            "goals": 25,
+            "assists": 3,
+            "minutes": 3370,
+            "position": "ST",
+            "rating": 8.0,
+            "xG": 21.0,
+            "xA": 3.8,
+            "key_passes": 45,
+            "successful_dribbles": 22,
+            "duels_won": 150,
+            "shots_per_game": 3.7,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 32,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.9,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Pressing, vertical attacks",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "england",
+                    "competition": "Euro 2016",
+                    "appearances": 4,
+                    "goals": 0,
+                    "assists": 0,
+                    "minutes": 320,
+                    "position": "ST",
+                    "rating": 6.3
+                }
+            ]
+        },
+        {
+            "season": 2016,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2016-17",
+            "appearances": 30,
+            "goals": 29,
+            "assists": 7,
+            "minutes": 2536,
+            "position": "ST",
+            "rating": 8.4,
+            "xG": 24.5,
+            "xA": 5.5,
+            "key_passes": 48,
+            "successful_dribbles": 20,
+            "duels_won": 140,
+            "shots_per_game": 4.0,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 30,
+            "injuries": [
+                {
+                    "type": "Ankle injury",
+                    "start_date": "2016-09-18",
+                    "end_date": "2016-11-05",
+                    "days_lost": 48
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.9,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Aggressive press, overlaps",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "england",
+                    "competition": "World Cup 2018 Qualifiers",
+                    "appearances": 6,
+                    "goals": 5,
+                    "assists": 1,
+                    "minutes": 470,
+                    "position": "ST",
+                    "rating": 7.7
+                }
+            ]
+        },
+        {
+            "season": 2017,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2017-18",
+            "appearances": 37,
+            "goals": 30,
+            "assists": 2,
+            "minutes": 3083,
+            "position": "ST",
+            "rating": 8.5,
+            "xG": 28.0,
+            "xA": 3.0,
+            "key_passes": 42,
+            "successful_dribbles": 18,
+            "duels_won": 155,
+            "shots_per_game": 5.0,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 36,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.0,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "High press, central focus",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "england",
+                    "competition": "World Cup 2018",
+                    "appearances": 6,
+                    "goals": 6,
+                    "assists": 0,
+                    "minutes": 573,
+                    "position": "ST",
+                    "rating": 7.9
+                }
+            ]
+        },
+        {
+            "season": 2018,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2018-19",
+            "appearances": 28,
+            "goals": 17,
+            "assists": 4,
+            "minutes": 2427,
+            "position": "ST",
+            "rating": 7.7,
+            "xG": 15.0,
+            "xA": 4.0,
+            "key_passes": 38,
+            "successful_dribbles": 16,
+            "duels_won": 130,
+            "shots_per_game": 3.6,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 30,
+            "injuries": [
+                {
+                    "type": "Ankle injuries",
+                    "start_date": "2019-01-13",
+                    "end_date": "2019-03-23",
+                    "days_lost": 69
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.8,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "More counter-attacking",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Premier League/Europe"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "england",
+                    "competition": "Nations League & Qualifiers",
+                    "appearances": 8,
+                    "goals": 4,
+                    "assists": 2,
+                    "minutes": 650,
+                    "position": "ST",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2019,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2019-20",
+            "appearances": 29,
+            "goals": 18,
+            "assists": 2,
+            "minutes": 2590,
+            "position": "ST",
+            "rating": 7.6,
+            "xG": 16.0,
+            "xA": 2.8,
+            "key_passes": 32,
+            "successful_dribbles": 14,
+            "duels_won": 125,
+            "shots_per_game": 3.2,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 28,
+            "injuries": [
+                {
+                    "type": "Hamstring injury",
+                    "start_date": "2020-01-01",
+                    "end_date": "2020-06-19",
+                    "days_lost": 170
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.5,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    "Pochettino to Mourinho"
+                ],
+                "team_tactics": "More direct, cross-focused",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "england",
+                    "competition": "Euro 2020 Qualifiers",
+                    "appearances": 8,
+                    "goals": 12,
+                    "assists": 5,
+                    "minutes": 720,
+                    "position": "ST",
+                    "rating": 8.4
+                }
+            ]
+        },
+        {
+            "season": 2020,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2020-21",
+            "appearances": 35,
+            "goals": 23,
+            "assists": 14,
+            "minutes": 3086,
+            "position": "ST",
+            "rating": 8.4,
+            "xG": 21.0,
+            "xA": 11.0,
+            "key_passes": 70,
+            "successful_dribbles": 18,
+            "duels_won": 150,
+            "shots_per_game": 3.9,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 34,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.3,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "ST/False 9",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Deep striker, Son running beyond",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "england",
+                    "competition": "Euro 2020 (played 2021)",
+                    "appearances": 7,
+                    "goals": 4,
+                    "assists": 0,
+                    "minutes": 649,
+                    "position": "ST",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2021,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2021-22",
+            "appearances": 37,
+            "goals": 17,
+            "assists": 9,
+            "minutes": 3232,
+            "position": "ST",
+            "rating": 7.7,
+            "xG": 18.0,
+            "xA": 8.0,
+            "key_passes": 65,
+            "successful_dribbles": 16,
+            "duels_won": 145,
+            "shots_per_game": 3.6,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 32,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.1,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "ST/Second striker",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    "Nuno to Conte"
+                ],
+                "team_tactics": "Counter-attacking, wing-backs",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "england",
+                    "competition": "World Cup 2022 Qualifiers & Nations League",
+                    "appearances": 12,
+                    "goals": 12,
+                    "assists": 3,
+                    "minutes": 980,
+                    "position": "ST",
+                    "rating": 8.0
+                }
+            ]
+        },
+        {
+            "season": 2022,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2022-23",
+            "appearances": 38,
+            "goals": 30,
+            "assists": 3,
+            "minutes": 3408,
+            "position": "ST",
+            "rating": 8.3,
+            "xG": 25.5,
+            "xA": 4.0,
+            "key_passes": 50,
+            "successful_dribbles": 15,
+            "duels_won": 155,
+            "shots_per_game": 3.5,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 35,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.0,
+                "acceleration": "Above Average",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Transition-heavy, Kane focal point",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "england",
+                    "competition": "World Cup 2022",
+                    "appearances": 5,
+                    "goals": 2,
+                    "assists": 3,
+                    "minutes": 416,
+                    "position": "ST",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2023,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2023-24",
+            "appearances": 32,
+            "goals": 36,
+            "assists": 8,
+            "minutes": 2844,
+            "position": "ST",
+            "rating": 8.9,
+            "xG": 32.0,
+            "xA": 7.0,
+            "key_passes": 55,
+            "successful_dribbles": 14,
+            "duels_won": 140,
+            "shots_per_game": 4.6,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 30,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.8,
+                "acceleration": "Above Average",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "tottenham",
+                    "to": "bayern",
+                    "transfer_fee": "€100M",
+                    "date": "2023-08-12"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "High possession, box overloads",
+                "teammate_quality": "World Class",
+                "league_competitiveness": "Bundesliga/Europe"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "england",
+                    "competition": "Euro 2024 Qualifiers",
+                    "appearances": 8,
+                    "goals": 7,
+                    "assists": 2,
+                    "minutes": 650,
+                    "position": "ST",
+                    "rating": 7.9
+                }
+            ]
+        },
+        {
+            "season": 2024,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2024-25",
+            "appearances": 31,
+            "goals": 26,
+            "assists": 9,
+            "minutes": 2391,
+            "position": "ST",
+            "rating": 8.4,
+            "xG": 23.0,
+            "xA": 8.0,
+            "key_passes": 52,
+            "successful_dribbles": 13,
+            "duels_won": 135,
+            "shots_per_game": 4.0,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 28,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.5,
+                "acceleration": "Above Average",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "ST/False 9",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Interchanging front line",
+                "teammate_quality": "World Class",
+                "league_competitiveness": "Bundesliga/Europe"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "england",
+                    "competition": "Euro 2024",
+                    "appearances": 6,
+                    "goals": 4,
+                    "assists": 1,
+                    "minutes": 540,
+                    "position": "ST",
+                    "rating": 7.8
+                }
+            ]
+        },
+        {
+            "season": 2025,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2025-26",
+            "appearances": 6,
+            "goals": 11,
+            "assists": 3,
+            "minutes": 493,
+            "position": "ST",
+            "rating": 8.8,
+            "xG": 9.5,
+            "xA": 2.5,
+            "key_passes": 15,
+            "successful_dribbles": 5,
+            "duels_won": 30,
+            "shots_per_game": 3.5,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 8,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.3,
+                "acceleration": "Above Average",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "ST",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Stable attacking structure",
+                "teammate_quality": "World Class",
+                "league_competitiveness": "Bundesliga/Europe"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "england",
+                    "competition": "Nations League & Friendlies",
+                    "appearances": 4,
+                    "goals": 3,
+                    "assists": 1,
+                    "minutes": 320,
+                    "position": "ST",
+                    "rating": 7.6
+                }
+            ]
+        }
+    ]
+}

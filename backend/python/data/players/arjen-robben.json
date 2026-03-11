@@ -1,0 +1,1253 @@
+{
+    "player": {
+        "id": "robben",
+        "name": "Arjen Robben",
+        "birth_date": "1984-01-23",
+        "nationality": "Netherlands",
+        "height_cm": 180,
+        "weight_kg": 80,
+        "dominant_foot": "Left"
+    },
+    "teams": [
+        {
+            "id": "groningen",
+            "name": "FC Groningen",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/fc-groningen.svg",
+            "country": "Netherlands"
+        },
+        {
+            "id": "psv",
+            "name": "PSV Eindhoven",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/psv.svg",
+            "country": "Netherlands"
+        },
+        {
+            "id": "chelsea",
+            "name": "Chelsea FC",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/chelsea-fc-logo.svg",
+            "country": "England"
+        },
+        {
+            "id": "realmadrid",
+            "name": "Real Madrid",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/real-madrid-c-f-logo.svg",
+            "country": "Spain"
+        },
+        {
+            "id": "bayern",
+            "name": "Bayern Munich",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/bayern-munich-logo.svg",
+            "country": "Germany"
+        },
+        {
+            "id": "netherlands",
+            "name": "Netherlands National Team",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/netherlands.svg",
+            "country": "Netherlands"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 2000,
+            "team_id": "groningen",
+            "league_id": "eredivisie-2000",
+            "appearances": 18,
+            "goals": 2,
+            "assists": 3,
+            "minutes": 1140,
+            "position": "Winger",
+            "rating": 6.6,
+            "xG": 1.3,
+            "xA": 1.1,
+            "key_passes": 8,
+            "successful_dribbles": 19,
+            "duels_won": 9,
+            "shots_per_game": 0.4,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 2,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.8,
+                "acceleration": "High",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW/RW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Developing",
+                "pressure_handling": "Emerging",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Traditional Dutch build up",
+                "teammate_quality": "Modest",
+                "league_competitiveness": "Eredivisie"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "U17 UEFA",
+                    "appearances": 4,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 320,
+                    "position": "Winger",
+                    "rating": 6.7
+                }
+            ]
+        },
+        {
+            "season": 2001,
+            "team_id": "groningen",
+            "league_id": "eredivisie-2001",
+            "appearances": 22,
+            "goals": 6,
+            "assists": 4,
+            "minutes": 1620,
+            "position": "Winger",
+            "rating": 7.1,
+            "xG": 2.4,
+            "xA": 1.5,
+            "key_passes": 10,
+            "successful_dribbles": 25,
+            "duels_won": 14,
+            "shots_per_game": 0.6,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 4,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.2,
+                "acceleration": "High",
+                "stamina": "Youthful",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW/RW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Promising",
+                "pressure_handling": "Developing",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "groningen",
+                    "to": "psv",
+                    "transfer_fee": "€4.3M",
+                    "date": "2002-06-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Dutch build up",
+                "teammate_quality": "Modest",
+                "league_competitiveness": "Eredivisie"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2002,
+            "team_id": "psv",
+            "league_id": "eredivisie-2002",
+            "appearances": 33,
+            "goals": 12,
+            "assists": 6,
+            "minutes": 2405,
+            "position": "Winger",
+            "rating": 7.6,
+            "xG": 5.1,
+            "xA": 2.5,
+            "key_passes": 18,
+            "successful_dribbles": 30,
+            "duels_won": 16,
+            "shots_per_game": 0.8,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 6,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.7,
+                "acceleration": "Very High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Winger",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Promising",
+                "pressure_handling": "Developing",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Eredivisie"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "U21 Euro Qualifiers",
+                    "appearances": 6,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 465,
+                    "position": "Winger",
+                    "rating": 6.9
+                }
+            ]
+        },
+        {
+            "season": 2003,
+            "team_id": "psv",
+            "league_id": "eredivisie-2003",
+            "appearances": 30,
+            "goals": 6,
+            "assists": 6,
+            "minutes": 2120,
+            "position": "Winger",
+            "rating": 7.4,
+            "xG": 3.4,
+            "xA": 2.6,
+            "key_passes": 16,
+            "successful_dribbles": 19,
+            "duels_won": 13,
+            "shots_per_game": 0.5,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 7,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.5,
+                "acceleration": "Very High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Winger",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Consistent",
+                "pressure_handling": "Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Eredivisie"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "Senior Debut",
+                    "appearances": 5,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 312,
+                    "position": "Winger",
+                    "rating": 6.7
+                }
+            ]
+        },
+        {
+            "season": 2004,
+            "team_id": "psv",
+            "league_id": "eredivisie-2004",
+            "appearances": 33,
+            "goals": 12,
+            "assists": 7,
+            "minutes": 2652,
+            "position": "Winger",
+            "rating": 8.1,
+            "xG": 6.0,
+            "xA": 4.2,
+            "key_passes": 21,
+            "successful_dribbles": 36,
+            "duels_won": 21,
+            "shots_per_game": 1.1,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 9,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.2,
+                "acceleration": "Elite",
+                "stamina": "Very Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "Winger",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "psv",
+                    "to": "chelsea",
+                    "transfer_fee": "£12M",
+                    "date": "2004-07-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "High press",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Eredivisie"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "Euro 2004",
+                    "appearances": 6,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 477,
+                    "position": "Winger",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2004,
+            "team_id": "chelsea",
+            "league_id": "premierleague-2004",
+            "appearances": 18,
+            "goals": 6,
+            "assists": 5,
+            "minutes": 1177,
+            "position": "Winger",
+            "rating": 7.8,
+            "xG": 3.2,
+            "xA": 2.0,
+            "key_passes": 11,
+            "successful_dribbles": 23,
+            "duels_won": 12,
+            "shots_per_game": 0.9,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 6,
+            "injuries": [
+                {
+                    "type": "Ankle injury",
+                    "start_date": "2005-03-11",
+                    "end_date": "2005-04-04",
+                    "days_lost": 24
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.5,
+                "acceleration": "Elite",
+                "stamina": "Very Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "Winger",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter press",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "World Cup 2006 Qualifiers",
+                    "appearances": 7,
+                    "goals": 1,
+                    "assists": 3,
+                    "minutes": 524,
+                    "position": "Winger",
+                    "rating": 7.3
+                }
+            ]
+        },
+        {
+            "season": 2005,
+            "team_id": "chelsea",
+            "league_id": "premierleague-2005",
+            "appearances": 28,
+            "goals": 6,
+            "assists": 6,
+            "minutes": 2057,
+            "position": "Winger",
+            "rating": 7.9,
+            "xG": 3.7,
+            "xA": 2.2,
+            "key_passes": 15,
+            "successful_dribbles": 29,
+            "duels_won": 14,
+            "shots_per_game": 1.0,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 8,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.4,
+                "acceleration": "Elite",
+                "stamina": "Very Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "High press possession",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "World Cup 2006",
+                    "appearances": 4,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 329,
+                    "position": "Winger",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2006,
+            "team_id": "chelsea",
+            "league_id": "premierleague-2006",
+            "appearances": 21,
+            "goals": 2,
+            "assists": 1,
+            "minutes": 1317,
+            "position": "Winger",
+            "rating": 6.9,
+            "xG": 0.9,
+            "xA": 0.7,
+            "key_passes": 8,
+            "successful_dribbles": 12,
+            "duels_won": 7,
+            "shots_per_game": 0.4,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 3,
+            "injuries": [
+                {
+                    "type": "Ankle injury",
+                    "start_date": "2007-01-18",
+                    "end_date": "2007-02-19",
+                    "days_lost": 32
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.0,
+                "acceleration": "Elite",
+                "stamina": "Adequate",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Reduced",
+                "pressure_handling": "Experienced",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "chelsea",
+                    "to": "realmadrid",
+                    "transfer_fee": "€36M",
+                    "date": "2007-07-21"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Transition",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "Euro 2008 Qualifiers",
+                    "appearances": 8,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 585,
+                    "position": "Winger",
+                    "rating": 7.0
+                }
+            ]
+        },
+        {
+            "season": 2007,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2007",
+            "appearances": 21,
+            "goals": 4,
+            "assists": 6,
+            "minutes": 1359,
+            "position": "Winger",
+            "rating": 7.2,
+            "xG": 2.0,
+            "xA": 2.1,
+            "key_passes": 14,
+            "successful_dribbles": 15,
+            "duels_won": 8,
+            "shots_per_game": 0.5,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 5,
+            "injuries": [
+                {
+                    "type": "Muscle strain",
+                    "start_date": "2008-03-06",
+                    "end_date": "2008-03-23",
+                    "days_lost": 17
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.2,
+                "acceleration": "Elite",
+                "stamina": "Very Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Promising",
+                "pressure_handling": "Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attack transition",
+                "teammate_quality": "High",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "Euro 2008",
+                    "appearances": 4,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 311,
+                    "position": "Winger",
+                    "rating": 7.8
+                }
+            ]
+        },
+        {
+            "season": 2008,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2008",
+            "appearances": 28,
+            "goals": 8,
+            "assists": 7,
+            "minutes": 2382,
+            "position": "Winger",
+            "rating": 7.5,
+            "xG": 4.3,
+            "xA": 3.2,
+            "key_passes": 17,
+            "successful_dribbles": 22,
+            "duels_won": 10,
+            "shots_per_game": 0.7,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 7,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.0,
+                "acceleration": "Elite",
+                "stamina": "Very Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "realmadrid",
+                    "to": "bayern",
+                    "transfer_fee": "€25M",
+                    "date": "2009-08-28"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wide attack",
+                "teammate_quality": "High",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "World Cup 2010 Qualifiers",
+                    "appearances": 6,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 541,
+                    "position": "Winger",
+                    "rating": 7.1
+                }
+            ]
+        },
+        {
+            "season": 2009,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2009",
+            "appearances": 24,
+            "goals": 16,
+            "assists": 7,
+            "minutes": 1867,
+            "position": "Winger",
+            "rating": 8.3,
+            "xG": 10.5,
+            "xA": 3.9,
+            "key_passes": 22,
+            "successful_dribbles": 32,
+            "duels_won": 17,
+            "shots_per_game": 1.6,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 12,
+            "injuries": [
+                {
+                    "type": "Muscle",
+                    "start_date": "2010-04-10",
+                    "end_date": "2010-05-01",
+                    "days_lost": 21
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.4,
+                "acceleration": "Elite",
+                "stamina": "Very Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "Winger",
+                "contribution_to_build_up": "World Class",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wide attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "World Cup 2010",
+                    "appearances": 7,
+                    "goals": 4,
+                    "assists": 2,
+                    "minutes": 603,
+                    "position": "Winger",
+                    "rating": 8.0
+                }
+            ]
+        },
+        {
+            "season": 2010,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2010",
+            "appearances": 14,
+            "goals": 12,
+            "assists": 4,
+            "minutes": 1173,
+            "position": "Winger",
+            "rating": 8.4,
+            "xG": 8.7,
+            "xA": 3.2,
+            "key_passes": 15,
+            "successful_dribbles": 23,
+            "duels_won": 12,
+            "shots_per_game": 1.4,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 7,
+            "injuries": [
+                {
+                    "type": "Thigh",
+                    "start_date": "2011-03-18",
+                    "end_date": "2011-04-09",
+                    "days_lost": 22
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.0,
+                "acceleration": "Elite",
+                "stamina": "Very Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "World Class",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wide attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "Euro 2012 Qualifiers",
+                    "appearances": 6,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 449,
+                    "position": "Winger",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2011,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2011",
+            "appearances": 24,
+            "goals": 12,
+            "assists": 6,
+            "minutes": 1853,
+            "position": "Winger",
+            "rating": 8.2,
+            "xG": 7.9,
+            "xA": 3.7,
+            "key_passes": 19,
+            "successful_dribbles": 25,
+            "duels_won": 14,
+            "shots_per_game": 1.2,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 6,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.6,
+                "acceleration": "Elite",
+                "stamina": "Very Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "World Class",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wide attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "Euro 2012",
+                    "appearances": 3,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 229,
+                    "position": "Winger",
+                    "rating": 7.1
+                }
+            ]
+        },
+        {
+            "season": 2012,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2012",
+            "appearances": 28,
+            "goals": 14,
+            "assists": 8,
+            "minutes": 2064,
+            "position": "Winger",
+            "rating": 8.1,
+            "xG": 8.0,
+            "xA": 5.2,
+            "key_passes": 23,
+            "successful_dribbles": 27,
+            "duels_won": 11,
+            "shots_per_game": 1.1,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 7,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.9,
+                "acceleration": "Elite",
+                "stamina": "Very Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "World Class",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wide attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "World Cup 2014 Qualifiers",
+                    "appearances": 8,
+                    "goals": 2,
+                    "assists": 3,
+                    "minutes": 620,
+                    "position": "Winger",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2013,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2013",
+            "appearances": 28,
+            "goals": 11,
+            "assists": 9,
+            "minutes": 2078,
+            "position": "Winger",
+            "rating": 8.2,
+            "xG": 7.9,
+            "xA": 4.4,
+            "key_passes": 22,
+            "successful_dribbles": 29,
+            "duels_won": 13,
+            "shots_per_game": 1.3,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 8,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.7,
+                "acceleration": "Elite",
+                "stamina": "Very Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "World Class",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wide attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "World Cup 2014",
+                    "appearances": 7,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 635,
+                    "position": "Winger",
+                    "rating": 8.2
+                }
+            ]
+        },
+        {
+            "season": 2014,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2014",
+            "appearances": 21,
+            "goals": 17,
+            "assists": 8,
+            "minutes": 1584,
+            "position": "Winger",
+            "rating": 8.6,
+            "xG": 11.7,
+            "xA": 4.7,
+            "key_passes": 18,
+            "successful_dribbles": 23,
+            "duels_won": 10,
+            "shots_per_game": 1.4,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 5,
+            "injuries": [
+                {
+                    "type": "Muscle",
+                    "start_date": "2015-03-07",
+                    "end_date": "2015-04-10",
+                    "days_lost": 34
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.2,
+                "acceleration": "Elite",
+                "stamina": "Very Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "World Class",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wide attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2015,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2015",
+            "appearances": 15,
+            "goals": 7,
+            "assists": 2,
+            "minutes": 981,
+            "position": "Winger",
+            "rating": 7.9,
+            "xG": 5.1,
+            "xA": 1.7,
+            "key_passes": 11,
+            "successful_dribbles": 12,
+            "duels_won": 7,
+            "shots_per_game": 0.9,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 3,
+            "injuries": [
+                {
+                    "type": "Groin injury",
+                    "start_date": "2016-04-03",
+                    "end_date": "2016-05-15",
+                    "days_lost": 42
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.8,
+                "acceleration": "Veteran",
+                "stamina": "Reduced",
+                "recovery_rate": "Limited"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "Support",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Declining",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wide attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "Euro 2016 Qualifiers",
+                    "appearances": 5,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 394,
+                    "position": "Winger",
+                    "rating": 7.1
+                }
+            ]
+        },
+        {
+            "season": 2016,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2016",
+            "appearances": 14,
+            "goals": 5,
+            "assists": 7,
+            "minutes": 1131,
+            "position": "Winger",
+            "rating": 7.6,
+            "xG": 3.9,
+            "xA": 2.2,
+            "key_passes": 9,
+            "successful_dribbles": 11,
+            "duels_won": 6,
+            "shots_per_game": 0.7,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 2,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.3,
+                "acceleration": "Veteran",
+                "stamina": "Reduced",
+                "recovery_rate": "Limited"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "Support",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Declining",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wide attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2017,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2017",
+            "appearances": 19,
+            "goals": 6,
+            "assists": 4,
+            "minutes": 1322,
+            "position": "Winger",
+            "rating": 7.4,
+            "xG": 3.7,
+            "xA": 2.2,
+            "key_passes": 7,
+            "successful_dribbles": 10,
+            "duels_won": 5,
+            "shots_per_game": 0.7,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 1,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.7,
+                "acceleration": "Veteran",
+                "stamina": "Reduced",
+                "recovery_rate": "Limited"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "Support",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Veteran",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "bayern",
+                    "to": "groningen",
+                    "transfer_fee": "Free",
+                    "date": "2020-07-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wide attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "World Cup 2018 Qualifiers",
+                    "appearances": 4,
+                    "goals": 1,
+                    "assists": 2,
+                    "minutes": 298,
+                    "position": "Winger",
+                    "rating": 6.8
+                }
+            ]
+        },
+        {
+            "season": 2018,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2018",
+            "appearances": 12,
+            "goals": 4,
+            "assists": 0,
+            "minutes": 567,
+            "position": "Winger",
+            "rating": 6.9,
+            "xG": 1.6,
+            "xA": 0.8,
+            "key_passes": 5,
+            "successful_dribbles": 5,
+            "duels_won": 3,
+            "shots_per_game": 0.4,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 1,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.0,
+                "acceleration": "Low",
+                "stamina": "Low",
+                "recovery_rate": "Low"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "Minimal",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Retiring",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wide attack support",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2020,
+            "team_id": "groningen",
+            "league_id": "eredivisie-2020",
+            "appearances": 7,
+            "goals": 2,
+            "assists": 0,
+            "minutes": 406,
+            "position": "Winger",
+            "rating": 6.2,
+            "xG": 1.1,
+            "xA": 0.1,
+            "key_passes": 2,
+            "successful_dribbles": 3,
+            "duels_won": 1,
+            "shots_per_game": 0.3,
+            "tackles_per_game": 0.1,
+            "fouls_drawn": 0,
+            "injuries": [
+                {
+                    "type": "Hamstring",
+                    "start_date": "2020-11-17",
+                    "end_date": "2021-01-10",
+                    "days_lost": 54
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.8,
+                "acceleration": "Minimal",
+                "stamina": "Minimal",
+                "recovery_rate": "Minimal"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "Minimal",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Retiring",
+                "pressure_handling": "Retired",
+                "clutch_performance": "Minimal"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Support role",
+                "teammate_quality": "Average",
+                "league_competitiveness": "Eredivisie"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "netherlands",
+                    "competition": "Final Friendly",
+                    "appearances": 1,
+                    "goals": 0,
+                    "assists": 0,
+                    "minutes": 34,
+                    "position": "Winger",
+                    "rating": 5.9
+                }
+            ]
+        }
+    ]
+}

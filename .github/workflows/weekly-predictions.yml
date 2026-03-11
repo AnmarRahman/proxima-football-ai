@@ -1,0 +1,48 @@
+name: Weekly Predictions
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 4 * * 1"
+
+concurrency:
+  group: weekly-predictions
+  cancel-in-progress: false
+
+jobs:
+  run-predictions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r backend/requirements.txt
+
+      - name: Apply migrations
+        run: python backend/python/migrate_db.py
+
+      - name: Import player JSONs into DB
+        run: python backend/python/import_players_to_db.py
+
+      - name: Generate and store predictions
+        run: >-
+          python backend/python/main.py
+          --data-source db
+          --output-target db
+          --all-active
+          --epochs 120
+          --batch-size 16
+          --window-size 4
+          --retirement-age 35
+          --run-type scheduled
+          --triggered-by github-actions
+          --model-version gru-v2

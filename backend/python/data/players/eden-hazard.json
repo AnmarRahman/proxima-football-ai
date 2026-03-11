@@ -1,0 +1,1196 @@
+{
+    "player": {
+        "id": "hazard",
+        "name": "Eden Hazard",
+        "birth_date": "1991-01-07",
+        "nationality": "Belgium",
+        "height_cm": 175,
+        "weight_kg": 74,
+        "dominant_foot": "Right"
+    },
+    "teams": [
+        {
+            "id": "lille",
+            "name": "LOSC Lille",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/0/05/Lille_OSC_2018_logo.svg",
+            "country": "France"
+        },
+        {
+            "id": "chelsea",
+            "name": "Chelsea FC",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg",
+            "country": "England"
+        },
+        {
+            "id": "realmadrid",
+            "name": "Real Madrid",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/real-madrid-c-f.svg",
+            "country": "Spain"
+        },
+        {
+            "id": "belgium",
+            "name": "Belgium National Team",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Belgium.svg",
+            "country": "Belgium"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 2007,
+            "team_id": "lille",
+            "league_id": "ligue1-2007",
+            "appearances": 4,
+            "goals": 0,
+            "assists": 1,
+            "minutes": 120,
+            "position": "Left Wing",
+            "rating": 6.6,
+            "xG": 0.2,
+            "xA": 0.5,
+            "key_passes": 5,
+            "successful_dribbles": 12,
+            "duels_won": 8,
+            "shots_per_game": 0.5,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 4,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.0,
+                "acceleration": "Very High",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW/AM",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Limited"
+            },
+            "psychological_factors": {
+                "consistency": "Emerging",
+                "pressure_handling": "Promising",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Possession with wide creativity",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2008,
+            "team_id": "lille",
+            "league_id": "ligue1-2008",
+            "appearances": 30,
+            "goals": 6,
+            "assists": 4,
+            "minutes": 1800,
+            "position": "Left Wing",
+            "rating": 7.0,
+            "xG": 5.2,
+            "xA": 4.1,
+            "key_passes": 32,
+            "successful_dribbles": 78,
+            "duels_won": 40,
+            "shots_per_game": 1.6,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 25,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.0,
+                "acceleration": "Very High",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW/AM",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Limited"
+            },
+            "psychological_factors": {
+                "consistency": "Improving",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking 4-3-3 with wide wingers",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 4,
+                    "goals": 0,
+                    "assists": 0,
+                    "minutes": 150,
+                    "position": "LW/AM",
+                    "rating": 6.5
+                }
+            ]
+        },
+        {
+            "season": 2009,
+            "team_id": "lille",
+            "league_id": "ligue1-2009",
+            "appearances": 52,
+            "goals": 10,
+            "assists": 9,
+            "minutes": 3200,
+            "position": "Left Wing",
+            "rating": 7.3,
+            "xG": 8.4,
+            "xA": 8.1,
+            "key_passes": 60,
+            "successful_dribbles": 135,
+            "duels_won": 80,
+            "shots_per_game": 2.1,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 55,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.5,
+                "acceleration": "Very High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW/AM",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "High-tempo attacking football",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Ligue 1 / Europa League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 6,
+                    "goals": 0,
+                    "assists": 2,
+                    "minutes": 350,
+                    "position": "LW/AM",
+                    "rating": 6.9
+                }
+            ]
+        },
+        {
+            "season": 2010,
+            "team_id": "lille",
+            "league_id": "ligue1-2010",
+            "appearances": 54,
+            "goals": 9,
+            "assists": 12,
+            "minutes": 3400,
+            "position": "Left Wing/Attacking Midfield",
+            "rating": 7.5,
+            "xG": 7.8,
+            "xA": 10.9,
+            "key_passes": 75,
+            "successful_dribbles": 160,
+            "duels_won": 92,
+            "shots_per_game": 2.0,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 70,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.8,
+                "acceleration": "Very High",
+                "stamina": "Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/AM",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Fluid 4-2-3-1",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Ligue 1 / Europa League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 7,
+                    "goals": 0,
+                    "assists": 1,
+                    "minutes": 450,
+                    "position": "LW/AM",
+                    "rating": 7.0
+                }
+            ]
+        },
+        {
+            "season": 2011,
+            "team_id": "lille",
+            "league_id": "ligue1-2011",
+            "appearances": 49,
+            "goals": 20,
+            "assists": 16,
+            "minutes": 3600,
+            "position": "Left Wing/Attacking Midfield",
+            "rating": 7.9,
+            "xG": 17.4,
+            "xA": 13.8,
+            "key_passes": 90,
+            "successful_dribbles": 185,
+            "duels_won": 110,
+            "shots_per_game": 2.6,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 85,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.0,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/AM",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Championship-contending attacking side",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Ligue 1 / Champions League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 8,
+                    "goals": 1,
+                    "assists": 2,
+                    "minutes": 550,
+                    "position": "LW/AM",
+                    "rating": 7.3
+                }
+            ]
+        },
+        {
+            "season": 2012,
+            "team_id": "lille",
+            "league_id": "ligue1-2012",
+            "appearances": 52,
+            "goals": 22,
+            "assists": 16,
+            "minutes": 3700,
+            "position": "Left Wing/Attacking Midfield",
+            "rating": 8.0,
+            "xG": 19.1,
+            "xA": 14.0,
+            "key_passes": 95,
+            "successful_dribbles": 190,
+            "duels_won": 115,
+            "shots_per_game": 2.7,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 95,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.2,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/AM",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "lille",
+                    "to": "chelsea",
+                    "transfer_fee": "€35M",
+                    "date": "2012-06-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking with Hazard as primary creator",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Ligue 1 / Champions League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 9,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 650,
+                    "position": "LW/AM",
+                    "rating": 7.4
+                }
+            ]
+        },
+        {
+            "season": 2012,
+            "team_id": "chelsea",
+            "league_id": "premierleague-2012",
+            "appearances": 62,
+            "goals": 13,
+            "assists": 20,
+            "minutes": 4100,
+            "position": "Left Wing/Attacking Midfield",
+            "rating": 7.6,
+            "xG": 11.5,
+            "xA": 17.8,
+            "key_passes": 100,
+            "successful_dribbles": 180,
+            "duels_won": 120,
+            "shots_per_game": 2.1,
+            "tackles_per_game": 1.4,
+            "fouls_drawn": 100,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.3,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/AM",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    "Di Matteo",
+                    "Benitez"
+                ],
+                "team_tactics": "Transition from counter to more possession",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League / Europa League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 9,
+                    "goals": 3,
+                    "assists": 3,
+                    "minutes": 700,
+                    "position": "LW/AM",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2013,
+            "team_id": "chelsea",
+            "league_id": "premierleague-2013",
+            "appearances": 49,
+            "goals": 17,
+            "assists": 10,
+            "minutes": 3400,
+            "position": "Left Wing/Attacking Midfield",
+            "rating": 7.9,
+            "xG": 15.0,
+            "xA": 9.4,
+            "key_passes": 90,
+            "successful_dribbles": 170,
+            "duels_won": 115,
+            "shots_per_game": 2.6,
+            "tackles_per_game": 1.5,
+            "fouls_drawn": 105,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.4,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/AM",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    "Mourinho returns"
+                ],
+                "team_tactics": "Reactive, counter-attacking",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League / Champions League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 9,
+                    "goals": 3,
+                    "assists": 3,
+                    "minutes": 720,
+                    "position": "LW/AM",
+                    "rating": 7.7
+                }
+            ]
+        },
+        {
+            "season": 2014,
+            "team_id": "chelsea",
+            "league_id": "premierleague-2014",
+            "appearances": 52,
+            "goals": 19,
+            "assists": 11,
+            "minutes": 4100,
+            "position": "Left Wing/Attacking Midfield",
+            "rating": 8.1,
+            "xG": 17.1,
+            "xA": 10.0,
+            "key_passes": 100,
+            "successful_dribbles": 200,
+            "duels_won": 130,
+            "shots_per_game": 2.7,
+            "tackles_per_game": 1.6,
+            "fouls_drawn": 120,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.5,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/AM",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Mourinho structured 4-2-3-1",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League / Champions League / World Cup"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "FIFA World Cup 2014 & Friendlies",
+                    "appearances": 12,
+                    "goals": 2,
+                    "assists": 3,
+                    "minutes": 900,
+                    "position": "LW/AM",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2015,
+            "team_id": "chelsea",
+            "league_id": "premierleague-2015",
+            "appearances": 43,
+            "goals": 6,
+            "assists": 8,
+            "minutes": 3200,
+            "position": "Left Wing/Attacking Midfield",
+            "rating": 6.9,
+            "xG": 6.1,
+            "xA": 7.0,
+            "key_passes": 75,
+            "successful_dribbles": 160,
+            "duels_won": 95,
+            "shots_per_game": 2.0,
+            "tackles_per_game": 1.7,
+            "fouls_drawn": 110,
+            "injuries": [
+                {
+                    "type": "Hip injury",
+                    "start_date": "2015-12-10",
+                    "end_date": "2016-01-10",
+                    "days_lost": 31
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.0,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW/AM",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Inconsistent",
+                "pressure_handling": "Mixed",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    "Mourinho sacked",
+                    "Hiddink interim"
+                ],
+                "team_tactics": "Unstable season with tactical changes",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League / Champions League / Euro 2016"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "Euro 2016 Qualifiers & Friendlies",
+                    "appearances": 11,
+                    "goals": 5,
+                    "assists": 3,
+                    "minutes": 880,
+                    "position": "LW/AM",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2016,
+            "team_id": "chelsea",
+            "league_id": "premierleague-2016",
+            "appearances": 43,
+            "goals": 16,
+            "assists": 5,
+            "minutes": 3400,
+            "position": "Left Wing/Second Striker",
+            "rating": 7.8,
+            "xG": 14.5,
+            "xA": 5.5,
+            "key_passes": 70,
+            "successful_dribbles": 170,
+            "duels_won": 105,
+            "shots_per_game": 2.6,
+            "tackles_per_game": 1.4,
+            "fouls_drawn": 95,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.8,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/SS",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    "Conte appointed"
+                ],
+                "team_tactics": "3-4-3 with Hazard free on left",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League / Euro 2016"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "UEFA Euro 2016",
+                    "appearances": 5,
+                    "goals": 1,
+                    "assists": 4,
+                    "minutes": 430,
+                    "position": "LW/AM",
+                    "rating": 8.0
+                }
+            ]
+        },
+        {
+            "season": 2017,
+            "team_id": "chelsea",
+            "league_id": "premierleague-2017",
+            "appearances": 51,
+            "goals": 17,
+            "assists": 13,
+            "minutes": 3700,
+            "position": "Left Wing/Second Striker",
+            "rating": 8.0,
+            "xG": 15.1,
+            "xA": 11.2,
+            "key_passes": 95,
+            "successful_dribbles": 185,
+            "duels_won": 115,
+            "shots_per_game": 2.7,
+            "tackles_per_game": 1.3,
+            "fouls_drawn": 100,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.7,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/SS",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Conte 3-4-3 and 3-5-2 variations",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League / Champions League / World Cup Qualifiers"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "World Cup Qualifiers & Friendlies",
+                    "appearances": 10,
+                    "goals": 6,
+                    "assists": 4,
+                    "minutes": 800,
+                    "position": "LW/AM",
+                    "rating": 8.1
+                }
+            ]
+        },
+        {
+            "season": 2018,
+            "team_id": "chelsea",
+            "league_id": "premierleague-2018",
+            "appearances": 52,
+            "goals": 21,
+            "assists": 17,
+            "minutes": 3600,
+            "position": "Left Wing/False Nine",
+            "rating": 8.2,
+            "xG": 18.5,
+            "xA": 14.5,
+            "key_passes": 105,
+            "successful_dribbles": 200,
+            "duels_won": 125,
+            "shots_per_game": 2.9,
+            "tackles_per_game": 1.2,
+            "fouls_drawn": 105,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.5,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/False 9",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    "Sarri appointed"
+                ],
+                "team_tactics": "Sarri-ball possession system",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League / Europa League / World Cup 2018"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "FIFA World Cup 2018 & Friendlies",
+                    "appearances": 12,
+                    "goals": 5,
+                    "assists": 4,
+                    "minutes": 930,
+                    "position": "LW/AM",
+                    "rating": 8.3
+                }
+            ]
+        },
+        {
+            "season": 2019,
+            "team_id": "chelsea",
+            "league_id": "premierleague-2019",
+            "appearances": 52,
+            "goals": 21,
+            "assists": 17,
+            "minutes": 3800,
+            "position": "Left Wing/Attacking Midfield",
+            "rating": 8.3,
+            "xG": 18.2,
+            "xA": 14.8,
+            "key_passes": 110,
+            "successful_dribbles": 210,
+            "duels_won": 130,
+            "shots_per_game": 3.0,
+            "tackles_per_game": 1.1,
+            "fouls_drawn": 110,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.2,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/AM",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "chelsea",
+                    "to": "realmadrid",
+                    "transfer_fee": "€100M",
+                    "date": "2019-07-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Sarri-ball with Hazard central to attack",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League / Europa League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "Nations League & Friendlies",
+                    "appearances": 9,
+                    "goals": 3,
+                    "assists": 3,
+                    "minutes": 700,
+                    "position": "LW/AM",
+                    "rating": 7.9
+                }
+            ]
+        },
+        {
+            "season": 2019,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2019",
+            "appearances": 22,
+            "goals": 1,
+            "assists": 3,
+            "minutes": 1600,
+            "position": "Left Wing",
+            "rating": 6.7,
+            "xG": 3.0,
+            "xA": 4.5,
+            "key_passes": 35,
+            "successful_dribbles": 85,
+            "duels_won": 50,
+            "shots_per_game": 1.4,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 40,
+            "injuries": [
+                {
+                    "type": "Ankle fracture",
+                    "start_date": "2019-11-26",
+                    "end_date": "2020-02-15",
+                    "days_lost": 81
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.7,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High when fit",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Inconsistent (injuries)",
+                "pressure_handling": "Good",
+                "clutch_performance": "Limited"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Zidane 4-3-3 with Hazard as creative LW",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga / Champions League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "Euro 2020 Qualifiers & Friendlies",
+                    "appearances": 8,
+                    "goals": 5,
+                    "assists": 7,
+                    "minutes": 630,
+                    "position": "LW/AM",
+                    "rating": 8.3
+                }
+            ]
+        },
+        {
+            "season": 2020,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2020",
+            "appearances": 21,
+            "goals": 4,
+            "assists": 2,
+            "minutes": 1300,
+            "position": "Left Wing",
+            "rating": 6.8,
+            "xG": 4.2,
+            "xA": 2.5,
+            "key_passes": 25,
+            "successful_dribbles": 60,
+            "duels_won": 30,
+            "shots_per_game": 1.7,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 30,
+            "injuries": [
+                {
+                    "type": "Muscle injury",
+                    "start_date": "2020-11-28",
+                    "end_date": "2021-02-10",
+                    "days_lost": 74
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.0,
+                "acceleration": "High",
+                "stamina": "Normal",
+                "recovery_rate": "Below Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Medium (limited minutes)",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Low (injury disrupted)",
+                "pressure_handling": "Good",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Injury-affected, more reliance on Benzema",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga / Champions League / Nations League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "UEFA Nations League & Friendlies",
+                    "appearances": 6,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 350,
+                    "position": "LW/AM",
+                    "rating": 7.1
+                }
+            ]
+        },
+        {
+            "season": 2021,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2021",
+            "appearances": 25,
+            "goals": 1,
+            "assists": 2,
+            "minutes": 900,
+            "position": "Left Wing/Attacking Midfield",
+            "rating": 6.5,
+            "xG": 2.1,
+            "xA": 2.4,
+            "key_passes": 20,
+            "successful_dribbles": 40,
+            "duels_won": 20,
+            "shots_per_game": 1.0,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 20,
+            "injuries": [
+                {
+                    "type": "Muscle problems",
+                    "start_date": "2021-03-15",
+                    "end_date": "2021-05-15",
+                    "days_lost": 61
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.5,
+                "acceleration": "Normal",
+                "stamina": "Normal",
+                "recovery_rate": "Below Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW/AM (often substitute)",
+                "contribution_to_build_up": "Limited",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Low",
+                "pressure_handling": "Mixed",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Ancelotti 4-3-3 with Hazard peripheral",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga / Champions League / Euro 2020"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "UEFA Euro 2020 & Friendlies",
+                    "appearances": 7,
+                    "goals": 0,
+                    "assists": 2,
+                    "minutes": 430,
+                    "position": "LW/AM",
+                    "rating": 7.0
+                }
+            ]
+        },
+        {
+            "season": 2022,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2022",
+            "appearances": 9,
+            "goals": 1,
+            "assists": 1,
+            "minutes": 400,
+            "position": "Left Wing/Attacking Midfield",
+            "rating": 6.4,
+            "xG": 1.3,
+            "xA": 1.1,
+            "key_passes": 10,
+            "successful_dribbles": 18,
+            "duels_won": 8,
+            "shots_per_game": 1.1,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 10,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.0,
+                "acceleration": "Normal",
+                "stamina": "Normal",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW/AM (squad role)",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Low",
+                "pressure_handling": "Mixed",
+                "clutch_performance": "None"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Ancelotti 4-3-3 with reduced Hazard role",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga / Champions League / World Cup 2022"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "FIFA World Cup 2022 & Nations League",
+                    "appearances": 10,
+                    "goals": 0,
+                    "assists": 1,
+                    "minutes": 650,
+                    "position": "LW/AM",
+                    "rating": 6.8
+                }
+            ]
+        },
+        {
+            "season": 2023,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2023",
+            "appearances": 5,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 200,
+            "position": "Left Wing/Attacking Midfield",
+            "rating": 6.2,
+            "xG": 0.4,
+            "xA": 0.3,
+            "key_passes": 4,
+            "successful_dribbles": 8,
+            "duels_won": 4,
+            "shots_per_game": 0.8,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 4,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 28.5,
+                "acceleration": "Below Normal",
+                "stamina": "Normal",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW/AM (rarely used)",
+                "contribution_to_build_up": "Very Low",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Low",
+                "pressure_handling": "Mixed",
+                "clutch_performance": "None"
+            },
+            "transfer_history": [
+                {
+                    "from": "realmadrid",
+                    "to": "Free agent",
+                    "transfer_fee": "Free",
+                    "date": "2023-06-30"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Squad player status",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga / Champions League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 2,
+                    "goals": 0,
+                    "assists": 0,
+                    "minutes": 120,
+                    "position": "LW/AM",
+                    "rating": 6.5
+                }
+            ]
+        },
+        {
+            "season": 2024,
+            "team_id": "realmadrid",
+            "league_id": "retired-2024",
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "position": "Retired",
+            "rating": 0.0,
+            "xG": 0.0,
+            "xA": 0.0,
+            "key_passes": 0,
+            "successful_dribbles": 0,
+            "duels_won": 0,
+            "shots_per_game": 0.0,
+            "tackles_per_game": 0.0,
+            "fouls_drawn": 0,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 0.0,
+                "acceleration": "N/A",
+                "stamina": "N/A",
+                "recovery_rate": "N/A"
+            },
+            "tactical_data": {
+                "average_position": "N/A",
+                "contribution_to_build_up": "None",
+                "defensive_transitions": "None"
+            },
+            "psychological_factors": {
+                "consistency": "N/A",
+                "pressure_handling": "N/A",
+                "clutch_performance": "N/A"
+            },
+            "transfer_history": [
+                {
+                    "from": "Free agent",
+                    "to": "Retired",
+                    "transfer_fee": "N/A",
+                    "date": "2023-10-10"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Retired from professional football",
+                "teammate_quality": "N/A",
+                "league_competitiveness": "N/A"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "belgium",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 0,
+                    "goals": 0,
+                    "assists": 0,
+                    "minutes": 0,
+                    "position": "Retired",
+                    "rating": 0.0
+                }
+            ]
+        }
+    ]
+}

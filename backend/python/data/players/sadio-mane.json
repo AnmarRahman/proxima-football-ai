@@ -1,0 +1,999 @@
+{
+    "player": {
+        "id": "mane",
+        "name": "Sadio Mané",
+        "birth_date": "1992-04-10",
+        "nationality": "Senegal",
+        "height_cm": 175,
+        "weight_kg": 69,
+        "dominant_foot": "Right"
+    },
+    "teams": [
+        {
+            "id": "metz",
+            "name": "FC Metz",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/9/9c/FC_Metz_logo.svg",
+            "country": "France"
+        },
+        {
+            "id": "salzburg",
+            "name": "Red Bull Salzburg",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/9/9d/FC_Red_Bull_Salzburg_logo.svg",
+            "country": "Austria"
+        },
+        {
+            "id": "southampton",
+            "name": "Southampton FC",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/b/b2/Southampton_FC.svg",
+            "country": "England"
+        },
+        {
+            "id": "liverpool",
+            "name": "Liverpool FC",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/liverpool-fc.svg",
+            "country": "England"
+        },
+        {
+            "id": "bayern",
+            "name": "FC Bayern München",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/fc-bayern-munchen.svg",
+            "country": "Germany"
+        },
+        {
+            "id": "alnassr",
+            "name": "Al Nassr FC",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/al-nassr-fc-1.svg",
+            "country": "Saudi Arabia"
+        },
+        {
+            "id": "senegal",
+            "name": "Senegal National Team",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Senegal.svg",
+            "country": "Senegal"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 2012,
+            "team_id": "metz",
+            "league_id": "championnat-national-2012",
+            "appearances": 23,
+            "goals": 2,
+            "assists": 1,
+            "minutes": 1400,
+            "position": "Left Wing",
+            "rating": 6.6,
+            "xG": 1.8,
+            "xA": 1.2,
+            "key_passes": 15,
+            "successful_dribbles": 30,
+            "duels_won": 20,
+            "shots_per_game": 1.2,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 10,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.0,
+                "acceleration": "Very High",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Emerging",
+                "pressure_handling": "Promising",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "metz",
+                    "to": "salzburg",
+                    "transfer_fee": "€0.6M",
+                    "date": "2012-08-31"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Direct play, wing exploitation",
+                "teammate_quality": "Low",
+                "league_competitiveness": "Championnat National"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "senegal",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 6,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 400,
+                    "position": "LW",
+                    "rating": 6.9
+                }
+            ]
+        },
+        {
+            "season": 2013,
+            "team_id": "salzburg",
+            "league_id": "bundesliga-2013",
+            "appearances": 50,
+            "goals": 23,
+            "assists": 9,
+            "minutes": 3600,
+            "position": "Left Wing/Right Wing",
+            "rating": 7.6,
+            "xG": 18.5,
+            "xA": 7.0,
+            "key_passes": 45,
+            "successful_dribbles": 80,
+            "duels_won": 45,
+            "shots_per_game": 2.5,
+            "tackles_per_game": 1.2,
+            "fouls_drawn": 25,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.0,
+                "acceleration": "Elite",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW/RW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "High pressing, fast transitions",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Austrian Bundesliga & Europe"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "senegal",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 7,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 500,
+                    "position": "LW",
+                    "rating": 7.1
+                }
+            ]
+        },
+        {
+            "season": 2014,
+            "team_id": "salzburg",
+            "league_id": "bundesliga-2014",
+            "appearances": 33,
+            "goals": 13,
+            "assists": 6,
+            "minutes": 2450,
+            "position": "Left Wing/Right Wing",
+            "rating": 7.4,
+            "xG": 11.0,
+            "xA": 5.5,
+            "key_passes": 38,
+            "successful_dribbles": 65,
+            "duels_won": 40,
+            "shots_per_game": 2.2,
+            "tackles_per_game": 1.1,
+            "fouls_drawn": 22,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.5,
+                "acceleration": "Elite",
+                "stamina": "Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/RW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "salzburg",
+                    "to": "southampton",
+                    "transfer_fee": "€25M",
+                    "date": "2014-09-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Pressing gegenpressing",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Austrian Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "senegal",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 9,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 700,
+                    "position": "LW",
+                    "rating": 7.3
+                }
+            ]
+        },
+        {
+            "season": 2015,
+            "team_id": "southampton",
+            "league_id": "premierleague-2015",
+            "appearances": 37,
+            "goals": 11,
+            "assists": 7,
+            "minutes": 3100,
+            "position": "Left Wing",
+            "rating": 7.3,
+            "xG": 9.5,
+            "xA": 6.0,
+            "key_passes": 50,
+            "successful_dribbles": 75,
+            "duels_won": 50,
+            "shots_per_game": 2.1,
+            "tackles_per_game": 1.3,
+            "fouls_drawn": 28,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 35.0,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter-attacking, wide play",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Premier League & Europe"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "senegal",
+                    "competition": "AFCON 2015",
+                    "appearances": 6,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 480,
+                    "position": "LW",
+                    "rating": 7.2
+                },
+                {
+                    "team_id": "senegal",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 3,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 220,
+                    "position": "LW",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2016,
+            "team_id": "southampton",
+            "league_id": "premierleague-2016",
+            "appearances": 30,
+            "goals": 10,
+            "assists": 5,
+            "minutes": 2600,
+            "position": "Left Wing",
+            "rating": 7.2,
+            "xG": 8.8,
+            "xA": 4.5,
+            "key_passes": 42,
+            "successful_dribbles": 68,
+            "duels_won": 48,
+            "shots_per_game": 2.0,
+            "tackles_per_game": 1.4,
+            "fouls_drawn": 26,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 35.2,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "southampton",
+                    "to": "liverpool",
+                    "transfer_fee": "€41M",
+                    "date": "2016-06-28"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Puel possession, Mané key outlet",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "senegal",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 7,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 550,
+                    "position": "LW",
+                    "rating": 7.3
+                }
+            ]
+        },
+        {
+            "season": 2017,
+            "team_id": "liverpool",
+            "league_id": "premierleague-2017",
+            "appearances": 29,
+            "goals": 13,
+            "assists": 5,
+            "minutes": 2400,
+            "position": "Left Wing",
+            "rating": 7.5,
+            "xG": 11.0,
+            "xA": 4.5,
+            "key_passes": 45,
+            "successful_dribbles": 70,
+            "duels_won": 55,
+            "shots_per_game": 2.4,
+            "tackles_per_game": 1.1,
+            "fouls_drawn": 25,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 35.5,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Klopp gegenpress, Salah-Mane-Firmino",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League & UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "senegal",
+                    "competition": "AFCON 2017",
+                    "appearances": 5,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 420,
+                    "position": "LW",
+                    "rating": 7.6
+                },
+                {
+                    "team_id": "senegal",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 4,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 320,
+                    "position": "LW",
+                    "rating": 7.4
+                }
+            ]
+        },
+        {
+            "season": 2018,
+            "team_id": "liverpool",
+            "league_id": "premierleague-2018",
+            "appearances": 44,
+            "goals": 20,
+            "assists": 2,
+            "minutes": 3600,
+            "position": "Left Wing",
+            "rating": 7.8,
+            "xG": 17.5,
+            "xA": 3.5,
+            "key_passes": 55,
+            "successful_dribbles": 85,
+            "duels_won": 65,
+            "shots_per_game": 2.8,
+            "tackles_per_game": 1.2,
+            "fouls_drawn": 30,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 35.7,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Front three pressing machine",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League & UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "senegal",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 9,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 720,
+                    "position": "LW",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2019,
+            "team_id": "liverpool",
+            "league_id": "premierleague-2019",
+            "appearances": 50,
+            "goals": 26,
+            "assists": 0,
+            "minutes": 4100,
+            "position": "Left Wing",
+            "rating": 8.0,
+            "xG": 22.0,
+            "xA": 2.0,
+            "key_passes": 60,
+            "successful_dribbles": 95,
+            "duels_won": 70,
+            "shots_per_game": 3.0,
+            "tackles_per_game": 1.1,
+            "fouls_drawn": 32,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 35.6,
+                "acceleration": "Elite",
+                "stamina": "Elite",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Elite"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Champions League winners Liverpool",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League & UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "senegal",
+                    "competition": "AFCON 2019",
+                    "appearances": 5,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 420,
+                    "position": "LW",
+                    "rating": 7.7
+                },
+                {
+                    "team_id": "senegal",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 6,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 500,
+                    "position": "LW",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2020,
+            "team_id": "liverpool",
+            "league_id": "premierleague-2020",
+            "appearances": 47,
+            "goals": 22,
+            "assists": 7,
+            "minutes": 3800,
+            "position": "Left Wing",
+            "rating": 7.9,
+            "xG": 19.0,
+            "xA": 6.0,
+            "key_passes": 65,
+            "successful_dribbles": 90,
+            "duels_won": 68,
+            "shots_per_game": 2.9,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 30,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 35.2,
+                "acceleration": "Elite",
+                "stamina": "Elite",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Elite"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Premier League champions, rotation heavy",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League & UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "senegal",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 2,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 160,
+                    "position": "LW",
+                    "rating": 8.1
+                }
+            ]
+        },
+        {
+            "season": 2021,
+            "team_id": "liverpool",
+            "league_id": "premierleague-2021",
+            "appearances": 48,
+            "goals": 16,
+            "assists": 7,
+            "minutes": 3700,
+            "position": "Left Wing",
+            "rating": 7.7,
+            "xG": 14.0,
+            "xA": 6.5,
+            "key_passes": 62,
+            "successful_dribbles": 88,
+            "duels_won": 66,
+            "shots_per_game": 2.7,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 28,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.8,
+                "acceleration": "Elite",
+                "stamina": "Elite",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Elite"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Quadruple chasers, injury challenges",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League & UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "senegal",
+                    "competition": "AFCON 2021",
+                    "appearances": 7,
+                    "goals": 4,
+                    "assists": 2,
+                    "minutes": 600,
+                    "position": "LW",
+                    "rating": 8.2
+                },
+                {
+                    "team_id": "senegal",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 2,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 160,
+                    "position": "LW",
+                    "rating": 7.8
+                }
+            ]
+        },
+        {
+            "season": 2022,
+            "team_id": "liverpool",
+            "league_id": "premierleague-2022",
+            "appearances": 51,
+            "goals": 23,
+            "assists": 5,
+            "minutes": 3900,
+            "position": "Left Wing",
+            "rating": 7.8,
+            "xG": 20.0,
+            "xA": 4.5,
+            "key_passes": 68,
+            "successful_dribbles": 92,
+            "duels_won": 70,
+            "shots_per_game": 3.0,
+            "tackles_per_game": 1.1,
+            "fouls_drawn": 30,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.5,
+                "acceleration": "Elite",
+                "stamina": "High",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Elite"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "liverpool",
+                    "to": "bayern",
+                    "transfer_fee": "€41M",
+                    "date": "2022-06-22"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "High intensity Liverpool",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League & UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "senegal",
+                    "competition": "World Cup 2022",
+                    "appearances": 4,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 320,
+                    "position": "LW",
+                    "rating": 7.4
+                },
+                {
+                    "team_id": "senegal",
+                    "competition": "AFCON Qualifiers & Friendlies",
+                    "appearances": 9,
+                    "goals": 7,
+                    "assists": 3,
+                    "minutes": 750,
+                    "position": "LW",
+                    "rating": 8.3
+                }
+            ]
+        },
+        {
+            "season": 2023,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2023",
+            "appearances": 38,
+            "goals": 12,
+            "assists": 4,
+            "minutes": 2900,
+            "position": "Left Wing/Right Wing",
+            "rating": 7.2,
+            "xG": 10.5,
+            "xA": 4.0,
+            "key_passes": 40,
+            "successful_dribbles": 60,
+            "duels_won": 45,
+            "shots_per_game": 2.2,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 20,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.0,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/RW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "bayern",
+                    "to": "alnassr",
+                    "transfer_fee": "€30M",
+                    "date": "2023-08-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [
+                    "Nagelsmann to Tuchel"
+                ],
+                "team_tactics": "Possession dominant, wing rotation",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga & UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "senegal",
+                    "competition": "AFCON 2023",
+                    "appearances": 6,
+                    "goals": 4,
+                    "assists": 2,
+                    "minutes": 500,
+                    "position": "LW",
+                    "rating": 7.9
+                },
+                {
+                    "team_id": "senegal",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 2,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 160,
+                    "position": "LW",
+                    "rating": 8.0
+                }
+            ]
+        },
+        {
+            "season": 2024,
+            "team_id": "alnassr",
+            "league_id": "saudi-pro-league-2024",
+            "appearances": 50,
+            "goals": 19,
+            "assists": 5,
+            "minutes": 3800,
+            "position": "Left Wing/Forward",
+            "rating": 7.6,
+            "xG": 16.0,
+            "xA": 5.5,
+            "key_passes": 55,
+            "successful_dribbles": 75,
+            "duels_won": 50,
+            "shots_per_game": 2.5,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 25,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.5,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/ST",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Ronaldo-Mane partnership, direct attacks",
+                "teammate_quality": "High (Ronaldo)",
+                "league_competitiveness": "Saudi Pro League & ACL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "senegal",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 12,
+                    "goals": 6,
+                    "assists": 3,
+                    "minutes": 950,
+                    "position": "LW",
+                    "rating": 8.0
+                }
+            ]
+        },
+        {
+            "season": 2025,
+            "team_id": "alnassr",
+            "league_id": "saudi-pro-league-2025",
+            "appearances": 47,
+            "goals": 18,
+            "assists": 3,
+            "minutes": 3600,
+            "position": "Left Wing/Forward",
+            "rating": 7.7,
+            "xG": 15.5,
+            "xA": 4.0,
+            "key_passes": 52,
+            "successful_dribbles": 70,
+            "duels_won": 48,
+            "shots_per_game": 2.4,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 22,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.0,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/ST",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Established Saudi dominance, ACL focus",
+                "teammate_quality": "High",
+                "league_competitiveness": "Saudi Pro League & ACL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "senegal",
+                    "competition": "AFCON 2025",
+                    "appearances": 7,
+                    "goals": 5,
+                    "assists": 3,
+                    "minutes": 600,
+                    "position": "LW",
+                    "rating": 8.4
+                },
+                {
+                    "team_id": "senegal",
+                    "competition": "World Cup 2026 Qualifiers",
+                    "appearances": 4,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 320,
+                    "position": "LW",
+                    "rating": 8.1
+                }
+            ]
+        },
+        {
+            "season": 2026,
+            "team_id": "alnassr",
+            "league_id": "saudi-pro-league-2026",
+            "appearances": 25,
+            "goals": 10,
+            "assists": 2,
+            "minutes": 2000,
+            "position": "Left Wing/Forward",
+            "rating": 7.6,
+            "xG": 8.5,
+            "xA": 2.5,
+            "key_passes": 30,
+            "successful_dribbles": 40,
+            "duels_won": 30,
+            "shots_per_game": 2.3,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 15,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.5,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/ST",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Title challengers, AFCON winners captain",
+                "teammate_quality": "High",
+                "league_competitiveness": "Saudi Pro League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "senegal",
+                    "competition": "AFCON 2026",
+                    "appearances": 7,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 600,
+                    "position": "LW",
+                    "rating": 8.5
+                },
+                {
+                    "team_id": "senegal",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 4,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 320,
+                    "position": "LW",
+                    "rating": 7.9
+                }
+            ]
+        }
+    ]
+}
