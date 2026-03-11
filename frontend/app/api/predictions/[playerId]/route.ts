@@ -1,0 +1,111 @@
+import { hasSupabaseServerConfig, supabaseRestGet } from "@/lib/supabase-rest";
+import { promises as fs } from "node:fs";
+import path from "node:path";
+import { NextResponse } from "next/server";
+
+function sanitizePlayerId(raw: string): string | null {
+  const clean = String(raw || "").trim().toLowerCase();
+  if (!/^[a-z0-9-]+$/.test(clean)) {
+    return null;
+  }
+  return clean;
+}
+
+async function readLocalFallbackPrediction(playerId: string): Promise<any[] | null> {
+  const filePath = path.join(process.cwd(), "public", "data", "predictions", `${playerId}.json`);
+  try {
+    const content = await fs.readFile(filePath, "utf-8");
+    const parsed = JSON.parse(content);
+    return Array.isArray(parsed) ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+export async function GET(
+  _request: Request,
+  context: { params: { playerId: string } }
+) {
+  const playerId = sanitizePlayerId(context.params.playerId);
+  if (!playerId) {
+    return NextResponse.json({ error: "Invalid player id" }, { status: 400 });
+  }
+
+  if (!hasSupabaseServerConfig()) {
+    const fallback = await readLocalFallbackPrediction(playerId);
+    if (!fallback) {
+      return NextResponse.json({ error: "Prediction not found" }, { status: 404 });
+    }
+
+    return NextResponse.json({
+      player: { id: playerId, name: playerId },
+      stats: fallback,
+      source: "fallback",
+    });
+  }
+
+  try {
+    const [predictionRows, playerRows] = await Promise.all([
+      supabaseRestGet("latest_player_predictions", {
+        select: "player_id,run_id,predicted_at,horizon_seasons,prediction_json,confidence_score",
+        player_id: `eq.${playerId}`,
+        limit: "1",
+      }),
+      supabaseRestGet("players", {
+        select: "id,name",
+        id: `eq.${playerId}`,
+        limit: "1",
+      }),
+    ]);
+
+    const prediction = (predictionRows || [])[0];
+    const player = (playerRows || [])[0];
+
+    if (!prediction) {
+      const fallback = await readLocalFallbackPrediction(playerId);
+      if (!fallback) {
+        return NextResponse.json({ error: "Prediction not found" }, { status: 404 });
+      }
+
+      return NextResponse.json({
+        player: { id: playerId, name: player?.name || playerId },
+        stats: fallback,
+        source: "fallback",
+      });
+    }
+
+    const stats = Array.isArray(prediction.prediction_json)
+      ? prediction.prediction_json
+      : [];
+
+    return NextResponse.json({
+      player: {
+        id: playerId,
+        name: player?.name || playerId,
+      },
+      stats,
+      meta: {
+        run_id: prediction.run_id,
+        predicted_at: prediction.predicted_at,
+        horizon_seasons: prediction.horizon_seasons,
+        confidence_score: prediction.confidence_score,
+      },
+      source: "database",
+    });
+  } catch (error: any) {
+    const fallback = await readLocalFallbackPrediction(playerId);
+    if (fallback) {
+      return NextResponse.json({
+        player: { id: playerId, name: playerId },
+        stats: fallback,
+        source: "fallback",
+        error: error?.message || "DB query failed",
+      });
+    }
+
+    return NextResponse.json(
+      { error: error?.message || "Failed to fetch prediction" },
+      { status: 500 }
+    );
+  }
+}

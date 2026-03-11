@@ -1,0 +1,1024 @@
+{
+    "player": {
+        "id": "benzema",
+        "name": "Karim Benzema",
+        "birth_date": "1987-12-19",
+        "nationality": "France",
+        "height_cm": 185,
+        "weight_kg": 81,
+        "dominant_foot": "Right"
+    },
+    "teams": [
+        {
+            "id": "lyon",
+            "name": "Olympique Lyonnais",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/olympique-lyonnais.svg",
+            "country": "France"
+        },
+        {
+            "id": "realmadrid",
+            "name": "Real Madrid",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/real-madrid-c-f-logo.svg",
+            "country": "Spain"
+        },
+        {
+            "id": "alittihad",
+            "name": "Al-Ittihad",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/al-ittihad-logo.svg",
+            "country": "Saudi Arabia"
+        },
+        {
+            "id": "france",
+            "name": "France National Team",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/france-6.svg",
+            "country": "France"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 2004,
+            "team_id": "lyon",
+            "league_id": "ligue1-2004",
+            "appearances": 6,
+            "goals": 0,
+            "assists": 1,
+            "minutes": 162,
+            "position": "Forward",
+            "rating": 6.2,
+            "xG": 0.2,
+            "xA": 0.1,
+            "key_passes": 2,
+            "successful_dribbles": 3,
+            "duels_won": 2,
+            "shots_per_game": 0.2,
+            "tackles_per_game": 0.1,
+            "fouls_drawn": 1,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.5,
+                "acceleration": "Developing",
+                "stamina": "Youth",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Forward",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Minimal"
+            },
+            "psychological_factors": {
+                "consistency": "Promising",
+                "pressure_handling": "Developing",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Ligue 1 veteran core",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2005,
+            "team_id": "lyon",
+            "league_id": "ligue1-2005",
+            "appearances": 13,
+            "goals": 1,
+            "assists": 0,
+            "minutes": 363,
+            "position": "Forward",
+            "rating": 6.5,
+            "xG": 0.8,
+            "xA": 0.1,
+            "key_passes": 3,
+            "successful_dribbles": 5,
+            "duels_won": 2,
+            "shots_per_game": 0.3,
+            "tackles_per_game": 0.1,
+            "fouls_drawn": 1,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.9,
+                "acceleration": "Developing",
+                "stamina": "Youth",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Forward",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Minimal"
+            },
+            "psychological_factors": {
+                "consistency": "Emerging",
+                "pressure_handling": "Rising",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Ligue 1 favorites",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "France U17/U19",
+                    "appearances": 7,
+                    "goals": 3,
+                    "assists": 1,
+                    "minutes": 490,
+                    "position": "Forward",
+                    "rating": 6.8
+                }
+            ]
+        },
+        {
+            "season": 2006,
+            "team_id": "lyon",
+            "league_id": "ligue1-2006",
+            "appearances": 21,
+            "goals": 5,
+            "assists": 2,
+            "minutes": 808,
+            "position": "Forward",
+            "rating": 6.9,
+            "xG": 2.5,
+            "xA": 1.2,
+            "key_passes": 6,
+            "successful_dribbles": 8,
+            "duels_won": 5,
+            "shots_per_game": 0.6,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 3,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.2,
+                "acceleration": "Good",
+                "stamina": "Young",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Forward",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Improving",
+                "pressure_handling": "Young",
+                "clutch_performance": "Emerging"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Ligue 1 favorites",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "U21/Euro U21 Qual",
+                    "appearances": 6,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 411,
+                    "position": "Forward",
+                    "rating": 6.9
+                }
+            ]
+        },
+        {
+            "season": 2007,
+            "team_id": "lyon",
+            "league_id": "ligue1-2007",
+            "appearances": 36,
+            "goals": 20,
+            "assists": 4,
+            "minutes": 2656,
+            "position": "Centre Forward",
+            "rating": 8.1,
+            "xG": 13.2,
+            "xA": 2.8,
+            "key_passes": 23,
+            "successful_dribbles": 27,
+            "duels_won": 12,
+            "shots_per_game": 1.8,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 8,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.1,
+                "acceleration": "Very Good",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Centre Forward",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Ligue 1 attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "Euro 2008 Qualifiers",
+                    "appearances": 7,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 420,
+                    "position": "Forward",
+                    "rating": 7.0
+                }
+            ]
+        },
+        {
+            "season": 2008,
+            "team_id": "lyon",
+            "league_id": "ligue1-2008",
+            "appearances": 36,
+            "goals": 17,
+            "assists": 5,
+            "minutes": 2853,
+            "position": "Centre Forward",
+            "rating": 7.6,
+            "xG": 10.9,
+            "xA": 4.1,
+            "key_passes": 19,
+            "successful_dribbles": 19,
+            "duels_won": 11,
+            "shots_per_game": 1.2,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 8,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.8,
+                "acceleration": "Good",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "CF",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "High",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Ligue 1 attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "Euro 2008",
+                    "appearances": 3,
+                    "goals": 0,
+                    "assists": 0,
+                    "minutes": 155,
+                    "position": "Forward",
+                    "rating": 6.5
+                }
+            ]
+        },
+        {
+            "season": 2009,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2009",
+            "appearances": 27,
+            "goals": 8,
+            "assists": 5,
+            "minutes": 1890,
+            "position": "Striker",
+            "rating": 7.2,
+            "xG": 6.3,
+            "xA": 2.1,
+            "key_passes": 12,
+            "successful_dribbles": 14,
+            "duels_won": 8,
+            "shots_per_game": 0.7,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 4,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.2,
+                "acceleration": "Good",
+                "stamina": "Very Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "CF",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Emerging",
+                "pressure_handling": "High",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "lyon",
+                    "to": "realmadrid",
+                    "transfer_fee": "€35M",
+                    "date": "2009-07-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Madrid transition",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "World Cup 2010 Qualifiers",
+                    "appearances": 7,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 538,
+                    "position": "Forward",
+                    "rating": 7.0
+                }
+            ]
+        },
+        {
+            "season": 2010,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2010",
+            "appearances": 33,
+            "goals": 15,
+            "assists": 7,
+            "minutes": 2058,
+            "position": "Striker",
+            "rating": 7.6,
+            "xG": 8.2,
+            "xA": 3.4,
+            "key_passes": 14,
+            "successful_dribbles": 18,
+            "duels_won": 10,
+            "shots_per_game": 1.2,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 6,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.7,
+                "acceleration": "Good",
+                "stamina": "Very Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "CF",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Madrid attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "Euro 2012 Qualifiers",
+                    "appearances": 7,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 495,
+                    "position": "Forward",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2011,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2011",
+            "appearances": 34,
+            "goals": 21,
+            "assists": 9,
+            "minutes": 2147,
+            "position": "Striker",
+            "rating": 8.1,
+            "xG": 9.5,
+            "xA": 4.2,
+            "key_passes": 19,
+            "successful_dribbles": 21,
+            "duels_won": 12,
+            "shots_per_game": 1.8,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 8,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.0,
+                "acceleration": "Very Good",
+                "stamina": "Very Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "CF",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Madrid attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2012,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2012",
+            "appearances": 30,
+            "goals": 11,
+            "assists": 5,
+            "minutes": 1846,
+            "position": "CF",
+            "rating": 7.4,
+            "xG": 7.4,
+            "xA": 2.6,
+            "key_passes": 12,
+            "successful_dribbles": 15,
+            "duels_won": 8,
+            "shots_per_game": 1.1,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 4,
+            "injuries": [
+                {
+                    "type": "Thigh injury",
+                    "start_date": "2012-02-19",
+                    "end_date": "2012-03-10",
+                    "days_lost": 20
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.2,
+                "acceleration": "Good",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "CF",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Experienced",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Madrid attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "Euro 2012",
+                    "appearances": 4,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 357,
+                    "position": "Forward",
+                    "rating": 6.9
+                }
+            ]
+        },
+        {
+            "season": 2013,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2013",
+            "appearances": 35,
+            "goals": 17,
+            "assists": 10,
+            "minutes": 2414,
+            "position": "CF",
+            "rating": 7.7,
+            "xG": 9.3,
+            "xA": 4.2,
+            "key_passes": 17,
+            "successful_dribbles": 19,
+            "duels_won": 12,
+            "shots_per_game": 1.3,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 5,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.5,
+                "acceleration": "Good",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "CF",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Strong",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Madrid attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2014,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2014",
+            "appearances": 29,
+            "goals": 15,
+            "assists": 7,
+            "minutes": 2201,
+            "position": "CF",
+            "rating": 7.6,
+            "xG": 8.4,
+            "xA": 3.4,
+            "key_passes": 12,
+            "successful_dribbles": 13,
+            "duels_won": 9,
+            "shots_per_game": 1.2,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 4,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.3,
+                "acceleration": "Good",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "CF",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Strong",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Madrid attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "World Cup 2014",
+                    "appearances": 5,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 414,
+                    "position": "Forward",
+                    "rating": 7.7
+                }
+            ]
+        },
+        {
+            "season": 2015,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2015",
+            "appearances": 27,
+            "goals": 24,
+            "assists": 7,
+            "minutes": 2022,
+            "position": "Centre Forward",
+            "rating": 8.3,
+            "xG": 13.3,
+            "xA": 4.9,
+            "key_passes": 15,
+            "successful_dribbles": 16,
+            "duels_won": 8,
+            "shots_per_game": 1.5,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 7,
+            "injuries": [
+                {
+                    "type": "Hamstring injury",
+                    "start_date": "2016-03-19",
+                    "end_date": "2016-04-10",
+                    "days_lost": 22
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.1,
+                "acceleration": "Good",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "CF",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Madrid attack/possession",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2016,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2016",
+            "appearances": 29,
+            "goals": 11,
+            "assists": 5,
+            "minutes": 2061,
+            "position": "CF",
+            "rating": 7.8,
+            "xG": 7.8,
+            "xA": 2.8,
+            "key_passes": 13,
+            "successful_dribbles": 12,
+            "duels_won": 7,
+            "shots_per_game": 1.2,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 5,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.9,
+                "acceleration": "Good",
+                "stamina": "Adequate",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "CF",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Strong",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Madrid attack/possession",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2017,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2017",
+            "appearances": 32,
+            "goals": 5,
+            "assists": 10,
+            "minutes": 2412,
+            "position": "CF",
+            "rating": 6.8,
+            "xG": 6.2,
+            "xA": 3.7,
+            "key_passes": 15,
+            "successful_dribbles": 11,
+            "duels_won": 5,
+            "shots_per_game": 0.9,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 2,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.5,
+                "acceleration": "Average",
+                "stamina": "Average",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "CF",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Reduced",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Zidane flexible",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "Return to National team",
+                    "appearances": 4,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 292,
+                    "position": "CF",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2018,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2018",
+            "appearances": 36,
+            "goals": 21,
+            "assists": 7,
+            "minutes": 2978,
+            "position": "Centre Forward",
+            "rating": 8.0,
+            "xG": 12.8,
+            "xA": 5.4,
+            "key_passes": 19,
+            "successful_dribbles": 13,
+            "duels_won": 10,
+            "shots_per_game": 1.7,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 5,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.9,
+                "acceleration": "Good",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Centre Forward",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Madrid focus",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "Euro 2020 Qualifiers",
+                    "appearances": 8,
+                    "goals": 5,
+                    "assists": 3,
+                    "minutes": 641,
+                    "position": "CF",
+                    "rating": 7.7
+                }
+            ]
+        },
+        {
+            "season": 2019,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2019",
+            "appearances": 37,
+            "goals": 21,
+            "assists": 9,
+            "minutes": 3187,
+            "position": "CF",
+            "rating": 8.7,
+            "xG": 14.4,
+            "xA": 6.2,
+            "key_passes": 23,
+            "successful_dribbles": 16,
+            "duels_won": 13,
+            "shots_per_game": 2.3,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 6,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.8,
+                "acceleration": "Good",
+                "stamina": "Very Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Centre Forward",
+                "contribution_to_build_up": "World Class",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Madrid focus",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2020,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2020",
+            "appearances": 34,
+            "goals": 23,
+            "assists": 9,
+            "minutes": 3150,
+            "position": "CF",
+            "rating": 8.9,
+            "xG": 15.7,
+            "xA": 6.4,
+            "key_passes": 25,
+            "successful_dribbles": 14,
+            "duels_won": 12,
+            "shots_per_game": 2.4,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 7,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.3,
+                "acceleration": "Veteran",
+                "stamina": "Excellent",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Centre Forward",
+                "contribution_to_build_up": "World Class",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Ballon d'Or",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Legendary"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Leadership role",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "Euro 2021",
+                    "appearances": 4,
+                    "goals": 4,
+                    "assists": 1,
+                    "minutes": 390,
+                    "position": "CF",
+                    "rating": 8.8
+                }
+            ]
+        },
+        {
+            "season": 2021,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2021",
+            "appearances": 32,
+            "goals": 27,
+            "assists": 8,
+            "minutes": 3080,
+            "position": "CF",
+            "rating": 9.1,
+            "xG": 18.2,
+            "xA": 7.0,
+            "key_passes": 26,
+            "successful_dribbles": 12,
+            "duels_won": 9,
+            "shots_per_game": 2.8,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 6,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.2,
+                "acceleration": "Veteran",
+                "stamina": "Excellent",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "CF",
+                "contribution_to_build_up": "World Class",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Ballon d'Or",
+                "pressure_handling": "Legendary",
+                "clutch_performance": "Legendary"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Madrid key man",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2022,
+            "team_id": "alittihad",
+            "league_id": "spl-2022",
+            "appearances": 31,
+            "goals": 21,
+            "assists": 9,
+            "minutes": 2662,
+            "position": "CF",
+            "rating": 8.3,
+            "xG": 11.8,
+            "xA": 5.5,
+            "key_passes": 15,
+            "successful_dribbles": 9,
+            "duels_won": 4,
+            "shots_per_game": 1.2,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 3,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.5,
+                "acceleration": "Reduced",
+                "stamina": "Veteran",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "CF",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Late career",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "realmadrid",
+                    "to": "alittihad",
+                    "transfer_fee": "Free",
+                    "date": "2023-07-04"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "SPL support",
+                "teammate_quality": "Strong",
+                "league_competitiveness": "Saudi Pro League"
+            },
+            "national_team_stats": []
+        }
+    ]
+}

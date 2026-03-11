@@ -1,0 +1,980 @@
+{
+    "player": {
+        "id": "mahrez",
+        "name": "Riyad Mahrez",
+        "birth_date": "1991-02-21",
+        "nationality": "Algeria",
+        "height_cm": 179,
+        "weight_kg": 67,
+        "dominant_foot": "Left"
+    },
+    "teams": [
+        {
+            "id": "lehavreii",
+            "name": "Le Havre II",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/3/32/Le_Havre_AC_logo.svg",
+            "country": "France"
+        },
+        {
+            "id": "lehavre",
+            "name": "Le Havre AC",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/3/32/Le_Havre_AC_logo.svg",
+            "country": "France"
+        },
+        {
+            "id": "leicester",
+            "name": "Leicester City",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/6/63/Leicester02.png",
+            "country": "England"
+        },
+        {
+            "id": "mancity",
+            "name": "Manchester City",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg",
+            "country": "England"
+        },
+        {
+            "id": "alahli",
+            "name": "Al Ahli",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/6/60/Al-Ahli_Jeddah.png",
+            "country": "Saudi Arabia"
+        },
+        {
+            "id": "algeria",
+            "name": "Algeria National Team",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg",
+            "country": "Algeria"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 2010,
+            "team_id": "lehavreii",
+            "league_id": "french-cfa-2010-11",
+            "appearances": 27,
+            "goals": 1,
+            "assists": 3,
+            "minutes": 1900,
+            "position": "Right Wing",
+            "rating": 6.5,
+            "xG": 2.1,
+            "xA": 3.0,
+            "key_passes": 25,
+            "successful_dribbles": 60,
+            "duels_won": 40,
+            "shots_per_game": 1.0,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 15,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.0,
+                "acceleration": "High",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Limited"
+            },
+            "psychological_factors": {
+                "consistency": "Emerging",
+                "pressure_handling": "Unproven",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wide 4-3-3, focus on youth",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "French CFA"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2011,
+            "team_id": "lehavreii",
+            "league_id": "french-cfa-2011-12",
+            "appearances": 29,
+            "goals": 2,
+            "assists": 4,
+            "minutes": 2100,
+            "position": "Right Wing",
+            "rating": 6.7,
+            "xG": 3.0,
+            "xA": 3.9,
+            "key_passes": 30,
+            "successful_dribbles": 70,
+            "duels_won": 48,
+            "shots_per_game": 1.2,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 18,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.5,
+                "acceleration": "High",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW/AM",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Limited"
+            },
+            "psychological_factors": {
+                "consistency": "Improving",
+                "pressure_handling": "Promising",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Possession-oriented 4-2-3-1",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "French CFA"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2012,
+            "team_id": "lehavre",
+            "league_id": "ligue2-2012-13",
+            "appearances": 29,
+            "goals": 3,
+            "assists": 5,
+            "minutes": 2100,
+            "position": "Right Wing",
+            "rating": 6.9,
+            "xG": 4.0,
+            "xA": 4.8,
+            "key_passes": 35,
+            "successful_dribbles": 80,
+            "duels_won": 55,
+            "shots_per_game": 1.4,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 22,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.8,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW/AM",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Improving",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter-attacking, wide overloads",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Ligue 2"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2013,
+            "team_id": "leicester",
+            "league_id": "championship-2013-14",
+            "appearances": 19,
+            "goals": 3,
+            "assists": 5,
+            "minutes": 1200,
+            "position": "Right Wing",
+            "rating": 7.0,
+            "xG": 3.2,
+            "xA": 4.0,
+            "key_passes": 30,
+            "successful_dribbles": 55,
+            "duels_won": 40,
+            "shots_per_game": 1.6,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 20,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.0,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Developing",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "lehavre",
+                    "to": "leicester",
+                    "transfer_fee": "€500k",
+                    "date": "2014-01-11"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wide 4-4-2 promotion push",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Championship"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2014,
+            "team_id": "leicester",
+            "league_id": "premierleague-2014-15",
+            "appearances": 32,
+            "goals": 4,
+            "assists": 3,
+            "minutes": 2100,
+            "position": "Right Wing",
+            "rating": 7.0,
+            "xG": 5.0,
+            "xA": 4.0,
+            "key_passes": 40,
+            "successful_dribbles": 90,
+            "duels_won": 65,
+            "shots_per_game": 1.7,
+            "tackles_per_game": 1.2,
+            "fouls_drawn": 30,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.2,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "RW/AM",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Improving",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Reactive 4-4-2 survival",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "algeria",
+                    "competition": "World Cup 2014",
+                    "appearances": 1,
+                    "goals": 0,
+                    "assists": 0,
+                    "minutes": 45,
+                    "position": "RW",
+                    "rating": 6.3
+                },
+                {
+                    "team_id": "algeria",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 4,
+                    "goals": 0,
+                    "assists": 1,
+                    "minutes": 250,
+                    "position": "RW",
+                    "rating": 6.7
+                }
+            ]
+        },
+        {
+            "season": 2015,
+            "team_id": "leicester",
+            "league_id": "premierleague-2015-16",
+            "appearances": 39,
+            "goals": 18,
+            "assists": 11,
+            "minutes": 3200,
+            "position": "Right Wing",
+            "rating": 7.9,
+            "xG": 14.0,
+            "xA": 9.5,
+            "key_passes": 70,
+            "successful_dribbles": 120,
+            "duels_won": 85,
+            "shots_per_game": 2.3,
+            "tackles_per_game": 1.3,
+            "fouls_drawn": 45,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.4,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/IF",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Ranieri deep block & counters",
+                "teammate_quality": "Good (Vardy, Kanté)",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "algeria",
+                    "competition": "AFCON 2015",
+                    "appearances": 3,
+                    "goals": 1,
+                    "assists": 0,
+                    "minutes": 230,
+                    "position": "RW",
+                    "rating": 7.1
+                },
+                {
+                    "team_id": "algeria",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 5,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 380,
+                    "position": "RW/AM",
+                    "rating": 7.3
+                }
+            ]
+        },
+        {
+            "season": 2016,
+            "team_id": "leicester",
+            "league_id": "premierleague-2016-17",
+            "appearances": 48,
+            "goals": 10,
+            "assists": 7,
+            "minutes": 3600,
+            "position": "Right Wing",
+            "rating": 7.3,
+            "xG": 8.5,
+            "xA": 7.0,
+            "key_passes": 65,
+            "successful_dribbles": 115,
+            "duels_won": 80,
+            "shots_per_game": 2.0,
+            "tackles_per_game": 1.2,
+            "fouls_drawn": 40,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.2,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/AM",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    "Ranieri replaced mid-season"
+                ],
+                "team_tactics": "More possession, European focus",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Premier League & Champions League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "algeria",
+                    "competition": "AFCON 2017",
+                    "appearances": 3,
+                    "goals": 2,
+                    "assists": 0,
+                    "minutes": 270,
+                    "position": "RW/AM",
+                    "rating": 7.4
+                },
+                {
+                    "team_id": "algeria",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 5,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 400,
+                    "position": "RW",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2017,
+            "team_id": "leicester",
+            "league_id": "premierleague-2017-18",
+            "appearances": 42,
+            "goals": 13,
+            "assists": 10,
+            "minutes": 3400,
+            "position": "Right Wing",
+            "rating": 7.5,
+            "xG": 10.5,
+            "xA": 9.0,
+            "key_passes": 80,
+            "successful_dribbles": 130,
+            "duels_won": 90,
+            "shots_per_game": 2.2,
+            "tackles_per_game": 1.1,
+            "fouls_drawn": 45,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.0,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/AM",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "leicester",
+                    "to": "mancity",
+                    "transfer_fee": "€67.8M",
+                    "date": "2018-07-10"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter + more structured build-up",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "algeria",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 7,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 550,
+                    "position": "RW/AM",
+                    "rating": 7.4
+                }
+            ]
+        },
+        {
+            "season": 2018,
+            "team_id": "mancity",
+            "league_id": "premierleague-2018-19",
+            "appearances": 44,
+            "goals": 12,
+            "assists": 12,
+            "minutes": 2800,
+            "position": "Right Wing",
+            "rating": 7.4,
+            "xG": 11.0,
+            "xA": 10.0,
+            "key_passes": 75,
+            "successful_dribbles": 110,
+            "duels_won": 80,
+            "shots_per_game": 2.5,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 30,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.8,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/IF",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Guardiola positional play",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League & Champions League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "algeria",
+                    "competition": "AFCON 2019",
+                    "appearances": 7,
+                    "goals": 3,
+                    "assists": 1,
+                    "minutes": 600,
+                    "position": "RW/AM",
+                    "rating": 7.8
+                },
+                {
+                    "team_id": "algeria",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 5,
+                    "goals": 1,
+                    "assists": 2,
+                    "minutes": 400,
+                    "position": "RW",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2019,
+            "team_id": "mancity",
+            "league_id": "premierleague-2019-20",
+            "appearances": 52,
+            "goals": 14,
+            "assists": 16,
+            "minutes": 3300,
+            "position": "Right Wing",
+            "rating": 7.7,
+            "xG": 13.0,
+            "xA": 13.5,
+            "key_passes": 90,
+            "successful_dribbles": 130,
+            "duels_won": 90,
+            "shots_per_game": 2.7,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 38,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.6,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/IF",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "High-possession 4-3-3",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League & Champions League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "algeria",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 8,
+                    "goals": 4,
+                    "assists": 3,
+                    "minutes": 650,
+                    "position": "RW/AM",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2020,
+            "team_id": "mancity",
+            "league_id": "premierleague-2020-21",
+            "appearances": 48,
+            "goals": 14,
+            "assists": 9,
+            "minutes": 3200,
+            "position": "Right Wing",
+            "rating": 7.6,
+            "xG": 12.5,
+            "xA": 8.5,
+            "key_passes": 80,
+            "successful_dribbles": 115,
+            "duels_won": 85,
+            "shots_per_game": 2.6,
+            "tackles_per_game": 1.1,
+            "fouls_drawn": 35,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.3,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/IF",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Narrow inverted winger role",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League & Champions League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "algeria",
+                    "competition": "AFCON 2021 (played in 2022)",
+                    "appearances": 3,
+                    "goals": 1,
+                    "assists": 0,
+                    "minutes": 270,
+                    "position": "RW/AM",
+                    "rating": 6.8
+                },
+                {
+                    "team_id": "algeria",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 7,
+                    "goals": 4,
+                    "assists": 3,
+                    "minutes": 600,
+                    "position": "RW",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2021,
+            "team_id": "mancity",
+            "league_id": "premierleague-2021-22",
+            "appearances": 47,
+            "goals": 24,
+            "assists": 9,
+            "minutes": 3000,
+            "position": "Right Wing",
+            "rating": 7.8,
+            "xG": 20.0,
+            "xA": 8.0,
+            "key_passes": 75,
+            "successful_dribbles": 105,
+            "duels_won": 78,
+            "shots_per_game": 3.0,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 33,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.0,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/IF",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "False 9, heavy rotations",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League & Champions League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "algeria",
+                    "competition": "World Cup Qualifiers 2022",
+                    "appearances": 8,
+                    "goals": 5,
+                    "assists": 2,
+                    "minutes": 650,
+                    "position": "RW/AM",
+                    "rating": 7.7
+                },
+                {
+                    "team_id": "algeria",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 4,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 320,
+                    "position": "RW",
+                    "rating": 7.3
+                }
+            ]
+        },
+        {
+            "season": 2022,
+            "team_id": "mancity",
+            "league_id": "premierleague-2022-23",
+            "appearances": 47,
+            "goals": 15,
+            "assists": 13,
+            "minutes": 2900,
+            "position": "Right Wing",
+            "rating": 7.6,
+            "xG": 13.0,
+            "xA": 11.0,
+            "key_passes": 85,
+            "successful_dribbles": 110,
+            "duels_won": 80,
+            "shots_per_game": 2.5,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 32,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.7,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/IF",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "mancity",
+                    "to": "alahli",
+                    "transfer_fee": "€35M",
+                    "date": "2023-07-28"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Inverted winger with overlapping full-back",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Premier League & Champions League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "algeria",
+                    "competition": "AFCON Qualifiers & Friendlies",
+                    "appearances": 9,
+                    "goals": 4,
+                    "assists": 4,
+                    "minutes": 720,
+                    "position": "RW/AM",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2023,
+            "team_id": "alahli",
+            "league_id": "saudi-proleague-2023-24",
+            "appearances": 33,
+            "goals": 12,
+            "assists": 13,
+            "minutes": 2950,
+            "position": "Right Wing",
+            "rating": 7.6,
+            "xG": 11.0,
+            "xA": 12.0,
+            "key_passes": 85,
+            "successful_dribbles": 105,
+            "duels_won": 78,
+            "shots_per_game": 2.3,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 34,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.3,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/AM",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Possession plus transitions, winger as creator",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Saudi Pro League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "algeria",
+                    "competition": "AFCON 2023",
+                    "appearances": 3,
+                    "goals": 0,
+                    "assists": 1,
+                    "minutes": 260,
+                    "position": "RW",
+                    "rating": 6.8
+                },
+                {
+                    "team_id": "algeria",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 5,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 400,
+                    "position": "RW/AM",
+                    "rating": 7.3
+                }
+            ]
+        },
+        {
+            "season": 2024,
+            "team_id": "alahli",
+            "league_id": "saudi-proleague-2024-25",
+            "appearances": 45,
+            "goals": 17,
+            "assists": 19,
+            "minutes": 3600,
+            "position": "Right Wing",
+            "rating": 7.8,
+            "xG": 16.0,
+            "xA": 17.0,
+            "key_passes": 110,
+            "successful_dribbles": 120,
+            "duels_won": 90,
+            "shots_per_game": 2.7,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 40,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.0,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/AM",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Creative hub in 4-3-3/4-2-3-1",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Saudi Pro League & AFC competition"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "algeria",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 6,
+                    "goals": 3,
+                    "assists": 3,
+                    "minutes": 480,
+                    "position": "RW/AM",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2025,
+            "team_id": "alahli",
+            "league_id": "saudi-proleague-2025-26",
+            "appearances": 20,
+            "goals": 4,
+            "assists": 7,
+            "minutes": 1720,
+            "position": "Right Wing",
+            "rating": 7.6,
+            "xG": 3.0,
+            "xA": 6.5,
+            "key_passes": 55,
+            "successful_dribbles": 70,
+            "duels_won": 50,
+            "shots_per_game": 1.3,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 22,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.5,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/AM",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Creative veteran role, controlled tempo",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Saudi Pro League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "algeria",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 4,
+                    "goals": 1,
+                    "assists": 2,
+                    "minutes": 320,
+                    "position": "RW/AM",
+                    "rating": 7.2
+                }
+            ]
+        }
+    ]
+}

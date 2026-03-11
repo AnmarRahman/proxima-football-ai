@@ -1,0 +1,1058 @@
+{
+    "player": {
+        "id": "son",
+        "name": "Son Heung-min",
+        "birth_date": "1992-07-08",
+        "nationality": "South Korea",
+        "height_cm": 183,
+        "weight_kg": 78,
+        "dominant_foot": "Right"
+    },
+    "teams": [
+        {
+            "id": "hamburg",
+            "name": "Hamburger SV",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/HSV-Logo.svg",
+            "country": "Germany"
+        },
+        {
+            "id": "leverkusen",
+            "name": "Bayer 04 Leverkusen",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/5/59/Bayer_04_Leverkusen_logo.svg",
+            "country": "Germany"
+        },
+        {
+            "id": "tottenham",
+            "name": "Tottenham Hotspur",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg",
+            "country": "England"
+        },
+        {
+            "id": "southkorea",
+            "name": "South Korea National Team",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg",
+            "country": "South Korea"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 2010,
+            "team_id": "hamburg",
+            "league_id": "bundesliga-2010",
+            "appearances": 14,
+            "goals": 3,
+            "assists": 1,
+            "minutes": 800,
+            "position": "Forward/Winger",
+            "rating": 6.7,
+            "xG": 2.8,
+            "xA": 1.0,
+            "key_passes": 10,
+            "successful_dribbles": 22,
+            "duels_won": 18,
+            "shots_per_game": 1.4,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 9,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.0,
+                "acceleration": "Very High",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW/CF",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Limited"
+            },
+            "psychological_factors": {
+                "consistency": "Emerging",
+                "pressure_handling": "Promising",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Direct attacking, counter-attacks",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 3,
+                    "goals": 0,
+                    "assists": 0,
+                    "minutes": 120,
+                    "position": "LW",
+                    "rating": 6.5
+                }
+            ]
+        },
+        {
+            "season": 2011,
+            "team_id": "hamburg",
+            "league_id": "bundesliga-2011",
+            "appearances": 30,
+            "goals": 5,
+            "assists": 2,
+            "minutes": 1700,
+            "position": "Forward/Winger",
+            "rating": 6.9,
+            "xG": 4.7,
+            "xA": 2.0,
+            "key_passes": 18,
+            "successful_dribbles": 38,
+            "duels_won": 30,
+            "shots_per_game": 1.6,
+            "tackles_per_game": 0.6,
+            "fouls_drawn": 14,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.3,
+                "acceleration": "Very High",
+                "stamina": "Developing",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW/RW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Developing",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wing play with counter-attacks",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "AFC Asian Cup 2011",
+                    "appearances": 3,
+                    "goals": 1,
+                    "assists": 0,
+                    "minutes": 160,
+                    "position": "LW",
+                    "rating": 7.0
+                }
+            ]
+        },
+        {
+            "season": 2012,
+            "team_id": "hamburg",
+            "league_id": "bundesliga-2012",
+            "appearances": 37,
+            "goals": 12,
+            "assists": 2,
+            "minutes": 2600,
+            "position": "Forward/Winger",
+            "rating": 7.2,
+            "xG": 10.5,
+            "xA": 3.0,
+            "key_passes": 26,
+            "successful_dribbles": 60,
+            "duels_won": 45,
+            "shots_per_game": 2.1,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 20,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.8,
+                "acceleration": "Very High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW/CF",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "hamburg",
+                    "to": "leverkusen",
+                    "transfer_fee": "€10M",
+                    "date": "2013-06-13"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Transition-based, quick counters",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 9,
+                    "goals": 3,
+                    "assists": 1,
+                    "minutes": 620,
+                    "position": "LW/CF",
+                    "rating": 7.1
+                }
+            ]
+        },
+        {
+            "season": 2013,
+            "team_id": "leverkusen",
+            "league_id": "bundesliga-2013",
+            "appearances": 43,
+            "goals": 12,
+            "assists": 7,
+            "minutes": 3000,
+            "position": "Left Wing/Second Striker",
+            "rating": 7.4,
+            "xG": 11.2,
+            "xA": 6.0,
+            "key_passes": 40,
+            "successful_dribbles": 72,
+            "duels_won": 55,
+            "shots_per_game": 2.2,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 23,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.0,
+                "acceleration": "Very High",
+                "stamina": "Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/SS",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "High-press, vertical attacking",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Bundesliga/UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "2014 World Cup Qualifiers & Friendlies",
+                    "appearances": 10,
+                    "goals": 4,
+                    "assists": 2,
+                    "minutes": 780,
+                    "position": "LW/SS",
+                    "rating": 7.3
+                }
+            ]
+        },
+        {
+            "season": 2014,
+            "team_id": "leverkusen",
+            "league_id": "bundesliga-2014",
+            "appearances": 42,
+            "goals": 17,
+            "assists": 4,
+            "minutes": 3200,
+            "position": "Left Wing/Forward",
+            "rating": 7.5,
+            "xG": 15.0,
+            "xA": 4.5,
+            "key_passes": 38,
+            "successful_dribbles": 75,
+            "duels_won": 60,
+            "shots_per_game": 2.7,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 26,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.2,
+                "acceleration": "Very High",
+                "stamina": "Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/CF",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Pressing, quick transitions",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Bundesliga/UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "FIFA World Cup 2014",
+                    "appearances": 3,
+                    "goals": 1,
+                    "assists": 0,
+                    "minutes": 260,
+                    "position": "LW",
+                    "rating": 7.0
+                },
+                {
+                    "team_id": "southkorea",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 7,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 520,
+                    "position": "LW/CF",
+                    "rating": 7.1
+                }
+            ]
+        },
+        {
+            "season": 2015,
+            "team_id": "leverkusen",
+            "league_id": "bundesliga-2015",
+            "appearances": 42,
+            "goals": 17,
+            "assists": 5,
+            "minutes": 3100,
+            "position": "Left Wing/Forward",
+            "rating": 7.5,
+            "xG": 15.4,
+            "xA": 5.2,
+            "key_passes": 42,
+            "successful_dribbles": 78,
+            "duels_won": 63,
+            "shots_per_game": 2.8,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 27,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.3,
+                "acceleration": "Very High",
+                "stamina": "Very Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/SS",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "leverkusen",
+                    "to": "tottenham",
+                    "transfer_fee": "£22M",
+                    "date": "2015-08-28"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking 4-2-3-1",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Bundesliga/UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "AFC Asian Cup 2015",
+                    "appearances": 6,
+                    "goals": 3,
+                    "assists": 1,
+                    "minutes": 500,
+                    "position": "LW/CF",
+                    "rating": 7.6
+                },
+                {
+                    "team_id": "southkorea",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 5,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 380,
+                    "position": "LW",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2016,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2016",
+            "appearances": 42,
+            "goals": 8,
+            "assists": 5,
+            "minutes": 2400,
+            "position": "Left Wing/Right Wing",
+            "rating": 7.1,
+            "xG": 7.3,
+            "xA": 4.7,
+            "key_passes": 35,
+            "successful_dribbles": 64,
+            "duels_won": 52,
+            "shots_per_game": 2.1,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 22,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.0,
+                "acceleration": "Very High",
+                "stamina": "Very Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/RW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Pochettino high-press 4-2-3-1",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League/UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 11,
+                    "goals": 5,
+                    "assists": 2,
+                    "minutes": 820,
+                    "position": "LW/SS",
+                    "rating": 7.3
+                }
+            ]
+        },
+        {
+            "season": 2017,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2017",
+            "appearances": 47,
+            "goals": 21,
+            "assists": 10,
+            "minutes": 3200,
+            "position": "Left Wing/Forward",
+            "rating": 7.7,
+            "xG": 18.5,
+            "xA": 9.0,
+            "key_passes": 60,
+            "successful_dribbles": 95,
+            "duels_won": 70,
+            "shots_per_game": 2.8,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 30,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.2,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/SS",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "High-press, Kane-Son partnership",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League/UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 9,
+                    "goals": 4,
+                    "assists": 3,
+                    "minutes": 700,
+                    "position": "LW/SS",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2018,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2018",
+            "appearances": 48,
+            "goals": 20,
+            "assists": 9,
+            "minutes": 3300,
+            "position": "Left Wing/Forward",
+            "rating": 7.8,
+            "xG": 17.6,
+            "xA": 8.2,
+            "key_passes": 62,
+            "successful_dribbles": 100,
+            "duels_won": 75,
+            "shots_per_game": 2.9,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 32,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.0,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/SS",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Pochettino pressing, UCL run",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League/UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "FIFA World Cup 2018",
+                    "appearances": 3,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 270,
+                    "position": "LW/SS",
+                    "rating": 7.4
+                },
+                {
+                    "team_id": "southkorea",
+                    "competition": "Asian Games 2018 & Friendlies",
+                    "appearances": 8,
+                    "goals": 4,
+                    "assists": 3,
+                    "minutes": 650,
+                    "position": "LW/CF",
+                    "rating": 7.7
+                }
+            ]
+        },
+        {
+            "season": 2019,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2019",
+            "appearances": 41,
+            "goals": 18,
+            "assists": 9,
+            "minutes": 3000,
+            "position": "Left Wing/Forward",
+            "rating": 7.7,
+            "xG": 15.9,
+            "xA": 7.8,
+            "key_passes": 58,
+            "successful_dribbles": 90,
+            "duels_won": 70,
+            "shots_per_game": 2.7,
+            "tackles_per_game": 1.1,
+            "fouls_drawn": 30,
+            "injuries": [
+                {
+                    "type": "Arm fracture",
+                    "start_date": "2019-11-04",
+                    "end_date": "2019-12-15",
+                    "days_lost": 41
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.8,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "LW/SS",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    "Pochettino to Mourinho"
+                ],
+                "team_tactics": "Transition from pressing to counter-attacking",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League/UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "AFC Asian Cup 2019 & Qualifiers",
+                    "appearances": 9,
+                    "goals": 3,
+                    "assists": 3,
+                    "minutes": 720,
+                    "position": "LW/CF",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2020,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2020",
+            "appearances": 41,
+            "goals": 24,
+            "assists": 16,
+            "minutes": 3400,
+            "position": "Left Wing/Second Striker",
+            "rating": 8.1,
+            "xG": 18.5,
+            "xA": 13.5,
+            "key_passes": 85,
+            "successful_dribbles": 95,
+            "duels_won": 75,
+            "shots_per_game": 2.9,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 34,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.5,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/SS",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Mourinho counter-attacking, Kane-Son axis",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League/Europa"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 6,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 470,
+                    "position": "LW/CF",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2021,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2021",
+            "appearances": 45,
+            "goals": 22,
+            "assists": 9,
+            "minutes": 3400,
+            "position": "Left Wing/Second Striker",
+            "rating": 7.8,
+            "xG": 19.0,
+            "xA": 7.8,
+            "key_passes": 70,
+            "successful_dribbles": 88,
+            "duels_won": 72,
+            "shots_per_game": 2.8,
+            "tackles_per_game": 1.1,
+            "fouls_drawn": 32,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.0,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/SS",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    "Mourinho to Nuno to Conte"
+                ],
+                "team_tactics": "Hybrid between counter and wing overloads",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League/UECL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 7,
+                    "goals": 4,
+                    "assists": 2,
+                    "minutes": 600,
+                    "position": "LW/CF",
+                    "rating": 7.7
+                }
+            ]
+        },
+        {
+            "season": 2022,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2022",
+            "appearances": 45,
+            "goals": 24,
+            "assists": 10,
+            "minutes": 3600,
+            "position": "Left Wing/Forward",
+            "rating": 8.3,
+            "xG": 21.5,
+            "xA": 8.5,
+            "key_passes": 80,
+            "successful_dribbles": 96,
+            "duels_won": 78,
+            "shots_per_game": 3.1,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 34,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.8,
+                "acceleration": "Very High",
+                "stamina": "High",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW/SS",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Excellent",
+                "pressure_handling": "Excellent",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Conte 3-4-3 with counter-attacks",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League/UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 12,
+                    "goals": 5,
+                    "assists": 3,
+                    "minutes": 950,
+                    "position": "LW/CF",
+                    "rating": 7.7
+                }
+            ]
+        },
+        {
+            "season": 2023,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2023",
+            "appearances": 47,
+            "goals": 10,
+            "assists": 6,
+            "minutes": 3400,
+            "position": "Left Wing/Forward",
+            "rating": 7.2,
+            "xG": 11.5,
+            "xA": 6.3,
+            "key_passes": 65,
+            "successful_dribbles": 80,
+            "duels_won": 68,
+            "shots_per_game": 2.6,
+            "tackles_per_game": 1.1,
+            "fouls_drawn": 30,
+            "injuries": [
+                {
+                    "type": "Sports hernia surgery",
+                    "start_date": "2022-10-01",
+                    "end_date": "2022-11-06",
+                    "days_lost": 36
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.3,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "LW/CF",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    "Conte departure"
+                ],
+                "team_tactics": "Mixed between counter and positional play",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League/UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "FIFA World Cup 2022",
+                    "appearances": 4,
+                    "goals": 0,
+                    "assists": 1,
+                    "minutes": 360,
+                    "position": "LW/SS",
+                    "rating": 6.9
+                },
+                {
+                    "team_id": "southkorea",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 8,
+                    "goals": 6,
+                    "assists": 2,
+                    "minutes": 650,
+                    "position": "LW/CF",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2024,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2024",
+            "appearances": 45,
+            "goals": 17,
+            "assists": 10,
+            "minutes": 3600,
+            "position": "Centre Forward/Left Wing",
+            "rating": 7.9,
+            "xG": 16.0,
+            "xA": 9.5,
+            "key_passes": 78,
+            "successful_dribbles": 90,
+            "duels_won": 72,
+            "shots_per_game": 3.0,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 32,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.0,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "CF/LW",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Excellent",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Postecoglou high-possession, high-line system",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "AFC Asian Cup 2023 (played 2024)",
+                    "appearances": 6,
+                    "goals": 3,
+                    "assists": 3,
+                    "minutes": 540,
+                    "position": "CF/10",
+                    "rating": 7.8
+                },
+                {
+                    "team_id": "southkorea",
+                    "competition": "2026 World Cup Qualifiers & Friendlies",
+                    "appearances": 9,
+                    "goals": 7,
+                    "assists": 3,
+                    "minutes": 720,
+                    "position": "CF/LW",
+                    "rating": 7.9
+                }
+            ]
+        },
+        {
+            "season": 2025,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2025",
+            "appearances": 38,
+            "goals": 15,
+            "assists": 8,
+            "minutes": 3100,
+            "position": "Centre Forward/Left Wing",
+            "rating": 7.7,
+            "xG": 14.2,
+            "xA": 7.5,
+            "key_passes": 65,
+            "successful_dribbles": 78,
+            "duels_won": 64,
+            "shots_per_game": 2.8,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 28,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.7,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "CF/LW",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Excellent",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Postecoglou 4-3-3, Son as captain and focal point",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League/UCL race"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "2026 World Cup Qualifiers & Friendlies",
+                    "appearances": 9,
+                    "goals": 3,
+                    "assists": 3,
+                    "minutes": 700,
+                    "position": "CF/LW",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2026,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2026",
+            "appearances": 10,
+            "goals": 4,
+            "assists": 2,
+            "minutes": 800,
+            "position": "Centre Forward/Left Wing",
+            "rating": 7.5,
+            "xG": 3.9,
+            "xA": 2.0,
+            "key_passes": 18,
+            "successful_dribbles": 20,
+            "duels_won": 15,
+            "shots_per_game": 2.7,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 9,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.3,
+                "acceleration": "High",
+                "stamina": "High",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "CF/LW",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Excellent",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Continuation of high-possession attacking system",
+                "teammate_quality": "High",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "southkorea",
+                    "competition": "2026 World Cup Qualifiers & Friendlies",
+                    "appearances": 4,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 300,
+                    "position": "CF/LW",
+                    "rating": 7.5
+                }
+            ]
+        }
+    ]
+}

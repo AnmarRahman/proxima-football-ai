@@ -1,0 +1,1094 @@
+{
+    "player": {
+        "id": "ribery",
+        "name": "Franck Ribéry",
+        "birth_date": "1983-04-07",
+        "nationality": "France",
+        "height_cm": 170,
+        "weight_kg": 72,
+        "dominant_foot": "Right"
+    },
+    "teams": [
+        {
+            "id": "boulogne",
+            "name": "Boulogne",
+            "country": "France"
+        },
+        {
+            "id": "alés",
+            "name": "Alés",
+            "country": "France"
+        },
+        {
+            "id": "brest",
+            "name": "Brest",
+            "country": "France"
+        },
+        {
+            "id": "metz",
+            "name": "FC Metz",
+            "country": "France"
+        },
+        {
+            "id": "galatasaray",
+            "name": "Galatasaray",
+            "country": "Turkey"
+        },
+        {
+            "id": "marseille",
+            "name": "Olympique Marseille",
+            "country": "France"
+        },
+        {
+            "id": "bayern",
+            "name": "Bayern Munich",
+            "country": "Germany"
+        },
+        {
+            "id": "fiorentina",
+            "name": "Fiorentina",
+            "country": "Italy"
+        },
+        {
+            "id": "salernitana",
+            "name": "Salernitana",
+            "country": "Italy"
+        },
+        {
+            "id": "france",
+            "name": "France National Team",
+            "country": "France"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 2001,
+            "team_id": "boulogne",
+            "league_id": "national-2001",
+            "appearances": 26,
+            "goals": 5,
+            "assists": 2,
+            "minutes": 1903,
+            "position": "Winger",
+            "rating": 6.6,
+            "xG": 1.3,
+            "xA": 0.7,
+            "key_passes": 10,
+            "successful_dribbles": 14,
+            "duels_won": 11,
+            "shots_per_game": 0.3,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 3,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.3,
+                "acceleration": "Developing",
+                "stamina": "Medium",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Developing",
+                "pressure_handling": "Emerging",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Typical French",
+                "teammate_quality": "Modest",
+                "league_competitiveness": "Championnat National"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2002,
+            "team_id": "alés",
+            "league_id": "national-2002",
+            "appearances": 18,
+            "goals": 1,
+            "assists": 0,
+            "minutes": 1210,
+            "position": "Winger",
+            "rating": 6.3,
+            "xG": 0.6,
+            "xA": 0.2,
+            "key_passes": 4,
+            "successful_dribbles": 6,
+            "duels_won": 4,
+            "shots_per_game": 0.1,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 1,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.6,
+                "acceleration": "Developing",
+                "stamina": "Medium",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Raw",
+                "pressure_handling": "Emerging",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Basic",
+                "teammate_quality": "Modest",
+                "league_competitiveness": "Championnat National"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2003,
+            "team_id": "brest",
+            "league_id": "national-2003",
+            "appearances": 35,
+            "goals": 3,
+            "assists": 5,
+            "minutes": 2093,
+            "position": "Winger",
+            "rating": 6.9,
+            "xG": 1.2,
+            "xA": 1.0,
+            "key_passes": 7,
+            "successful_dribbles": 9,
+            "duels_won": 6,
+            "shots_per_game": 0.2,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 2,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.9,
+                "acceleration": "Medium",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Solid",
+                "pressure_handling": "Improving",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Typical French lower-division",
+                "teammate_quality": "Modest",
+                "league_competitiveness": "Championnat National"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2004,
+            "team_id": "metz",
+            "league_id": "ligue1-2004",
+            "appearances": 20,
+            "goals": 1,
+            "assists": 2,
+            "minutes": 1480,
+            "position": "Winger",
+            "rating": 6.7,
+            "xG": 1.1,
+            "xA": 0.8,
+            "key_passes": 8,
+            "successful_dribbles": 15,
+            "duels_won": 7,
+            "shots_per_game": 0.1,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 3,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.1,
+                "acceleration": "Good",
+                "stamina": "Medium",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Promising",
+                "pressure_handling": "Developing",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "metz",
+                    "to": "galatasaray",
+                    "transfer_fee": "€1.9M",
+                    "date": "2005-01-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Transitional",
+                "teammate_quality": "Modest",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2005,
+            "team_id": "galatasaray",
+            "league_id": "superlig-2005",
+            "appearances": 17,
+            "goals": 1,
+            "assists": 2,
+            "minutes": 1112,
+            "position": "Winger",
+            "rating": 6.8,
+            "xG": 0.6,
+            "xA": 0.7,
+            "key_passes": 5,
+            "successful_dribbles": 11,
+            "duels_won": 7,
+            "shots_per_game": 0.2,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 2,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.2,
+                "acceleration": "Medium",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Promising",
+                "pressure_handling": "Developing",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "galatasaray",
+                    "to": "marseille",
+                    "transfer_fee": "Free",
+                    "date": "2005-08-30"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Classic Turkish",
+                "teammate_quality": "Modest",
+                "league_competitiveness": "Süper Lig"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2005,
+            "team_id": "marseille",
+            "league_id": "ligue1-2005",
+            "appearances": 35,
+            "goals": 6,
+            "assists": 10,
+            "minutes": 2715,
+            "position": "Winger",
+            "rating": 7.3,
+            "xG": 3.3,
+            "xA": 2.9,
+            "key_passes": 19,
+            "successful_dribbles": 26,
+            "duels_won": 13,
+            "shots_per_game": 0.5,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 8,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.5,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Promising",
+                "pressure_handling": "Developing",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "High press",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Ligue 1"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "World Cup 2006",
+                    "appearances": 7,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 503,
+                    "position": "Winger",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2007,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2007",
+            "appearances": 28,
+            "goals": 9,
+            "assists": 8,
+            "minutes": 2079,
+            "position": "Winger",
+            "rating": 7.7,
+            "xG": 5.6,
+            "xA": 3.1,
+            "key_passes": 18,
+            "successful_dribbles": 24,
+            "duels_won": 14,
+            "shots_per_game": 0.9,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 6,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.9,
+                "acceleration": "Very Good",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Rising",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "Euro 2008",
+                    "appearances": 3,
+                    "goals": 0,
+                    "assists": 1,
+                    "minutes": 265,
+                    "position": "Winger",
+                    "rating": 6.4
+                }
+            ]
+        },
+        {
+            "season": 2008,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2008",
+            "appearances": 25,
+            "goals": 9,
+            "assists": 9,
+            "minutes": 1767,
+            "position": "Winger",
+            "rating": 7.8,
+            "xG": 5.5,
+            "xA": 4.4,
+            "key_passes": 19,
+            "successful_dribbles": 23,
+            "duels_won": 14,
+            "shots_per_game": 0.8,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 5,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.5,
+                "acceleration": "Very Good",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Rising",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "World Cup 2010 Qualifiers",
+                    "appearances": 6,
+                    "goals": 1,
+                    "assists": 2,
+                    "minutes": 532,
+                    "position": "Winger",
+                    "rating": 6.7
+                }
+            ]
+        },
+        {
+            "season": 2009,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2009",
+            "appearances": 30,
+            "goals": 4,
+            "assists": 12,
+            "minutes": 2065,
+            "position": "Winger",
+            "rating": 7.7,
+            "xG": 2.8,
+            "xA": 5.9,
+            "key_passes": 21,
+            "successful_dribbles": 26,
+            "duels_won": 13,
+            "shots_per_game": 0.5,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 6,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.4,
+                "acceleration": "Very Good",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Rising",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "World Cup 2010",
+                    "appearances": 3,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 230,
+                    "position": "Winger",
+                    "rating": 6.5
+                }
+            ]
+        },
+        {
+            "season": 2010,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2010",
+            "appearances": 19,
+            "goals": 7,
+            "assists": 8,
+            "minutes": 1440,
+            "position": "Winger",
+            "rating": 7.9,
+            "xG": 3.6,
+            "xA": 3.3,
+            "key_passes": 17,
+            "successful_dribbles": 20,
+            "duels_won": 10,
+            "shots_per_game": 0.9,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 5,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.2,
+                "acceleration": "Very Good",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Prime",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "Euro 2012 Qualifiers",
+                    "appearances": 7,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 579,
+                    "position": "Winger",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2011,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2011",
+            "appearances": 32,
+            "goals": 12,
+            "assists": 14,
+            "minutes": 2299,
+            "position": "Winger",
+            "rating": 8.1,
+            "xG": 5.5,
+            "xA": 5.1,
+            "key_passes": 20,
+            "successful_dribbles": 21,
+            "duels_won": 11,
+            "shots_per_game": 0.9,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 6,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.0,
+                "acceleration": "Very Good",
+                "stamina": "Excellent",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Prime",
+                "pressure_handling": "Prime",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "Euro 2012",
+                    "appearances": 4,
+                    "goals": 0,
+                    "assists": 1,
+                    "minutes": 350,
+                    "position": "Winger",
+                    "rating": 6.6
+                }
+            ]
+        },
+        {
+            "season": 2012,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2012",
+            "appearances": 27,
+            "goals": 10,
+            "assists": 5,
+            "minutes": 1922,
+            "position": "Winger",
+            "rating": 7.8,
+            "xG": 4.2,
+            "xA": 2.7,
+            "key_passes": 14,
+            "successful_dribbles": 16,
+            "duels_won": 8,
+            "shots_per_game": 0.7,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 3,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.5,
+                "acceleration": "Good",
+                "stamina": "Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Prime",
+                "pressure_handling": "Prime",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2013,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2013",
+            "appearances": 22,
+            "goals": 10,
+            "assists": 10,
+            "minutes": 1597,
+            "position": "Winger",
+            "rating": 8.2,
+            "xG": 5.6,
+            "xA": 4.5,
+            "key_passes": 17,
+            "successful_dribbles": 17,
+            "duels_won": 9,
+            "shots_per_game": 0.8,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 4,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.3,
+                "acceleration": "Good",
+                "stamina": "Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "france",
+                    "competition": "World Cup 2014 Qualifiers",
+                    "appearances": 8,
+                    "goals": 4,
+                    "assists": 3,
+                    "minutes": 703,
+                    "position": "Winger",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2014,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2014",
+            "appearances": 23,
+            "goals": 9,
+            "assists": 7,
+            "minutes": 1401,
+            "position": "Winger",
+            "rating": 7.7,
+            "xG": 5.2,
+            "xA": 3.7,
+            "key_passes": 14,
+            "successful_dribbles": 16,
+            "duels_won": 10,
+            "shots_per_game": 0.7,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 5,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.2,
+                "acceleration": "Good",
+                "stamina": "Adequate",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2015,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2015",
+            "appearances": 18,
+            "goals": 4,
+            "assists": 1,
+            "minutes": 993,
+            "position": "Winger",
+            "rating": 6.8,
+            "xG": 1.5,
+            "xA": 0.8,
+            "key_passes": 6,
+            "successful_dribbles": 10,
+            "duels_won": 5,
+            "shots_per_game": 0.3,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 2,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.8,
+                "acceleration": "Minimal",
+                "stamina": "Minimal",
+                "recovery_rate": "Low"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Minimal",
+                "defensive_transitions": "Minimal"
+            },
+            "psychological_factors": {
+                "consistency": "Declining",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Support",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2016,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2016",
+            "appearances": 22,
+            "goals": 5,
+            "assists": 4,
+            "minutes": 1106,
+            "position": "Winger",
+            "rating": 7.0,
+            "xG": 2.1,
+            "xA": 1.3,
+            "key_passes": 7,
+            "successful_dribbles": 9,
+            "duels_won": 6,
+            "shots_per_game": 0.4,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 2,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.5,
+                "acceleration": "Reduced",
+                "stamina": "Low",
+                "recovery_rate": "Low"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Support",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Declining",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Support",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2017,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2017",
+            "appearances": 19,
+            "goals": 5,
+            "assists": 1,
+            "minutes": 743,
+            "position": "Winger",
+            "rating": 6.7,
+            "xG": 1.4,
+            "xA": 0.7,
+            "key_passes": 3,
+            "successful_dribbles": 5,
+            "duels_won": 3,
+            "shots_per_game": 0.2,
+            "tackles_per_game": 0.1,
+            "fouls_drawn": 1,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 28.9,
+                "acceleration": "Minimal",
+                "stamina": "Minimal",
+                "recovery_rate": "Minimal"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Minimal",
+                "defensive_transitions": "Minimal"
+            },
+            "psychological_factors": {
+                "consistency": "Retiring",
+                "pressure_handling": "Retired",
+                "clutch_performance": "Minimal"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Support",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2018,
+            "team_id": "bayern",
+            "league_id": "bundesliga-2018",
+            "appearances": 25,
+            "goals": 6,
+            "assists": 0,
+            "minutes": 1360,
+            "position": "Winger",
+            "rating": 7.2,
+            "xG": 3.3,
+            "xA": 1.5,
+            "key_passes": 7,
+            "successful_dribbles": 8,
+            "duels_won": 5,
+            "shots_per_game": 0.7,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 2,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.5,
+                "acceleration": "Low",
+                "stamina": "Low",
+                "recovery_rate": "Veteran"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Support",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Late career",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "bayern",
+                    "to": "fiorentina",
+                    "transfer_fee": "Free",
+                    "date": "2019-08-21"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Support role",
+                "teammate_quality": "Average",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2019,
+            "team_id": "fiorentina",
+            "league_id": "seriea-2019",
+            "appearances": 21,
+            "goals": 3,
+            "assists": 1,
+            "minutes": 1532,
+            "position": "Winger",
+            "rating": 6.8,
+            "xG": 1.1,
+            "xA": 0.8,
+            "key_passes": 4,
+            "successful_dribbles": 6,
+            "duels_won": 2,
+            "shots_per_game": 0.3,
+            "tackles_per_game": 0.1,
+            "fouls_drawn": 1,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.8,
+                "acceleration": "Minimal",
+                "stamina": "Minimal",
+                "recovery_rate": "Minimal"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Minimal",
+                "defensive_transitions": "Minimal"
+            },
+            "psychological_factors": {
+                "consistency": "Retiring",
+                "pressure_handling": "Retired",
+                "clutch_performance": "Minimal"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Support role",
+                "teammate_quality": "Average",
+                "league_competitiveness": "Serie A"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2020,
+            "team_id": "fiorentina",
+            "league_id": "seriea-2020",
+            "appearances": 25,
+            "goals": 2,
+            "assists": 1,
+            "minutes": 1374,
+            "position": "Winger",
+            "rating": 6.3,
+            "xG": 0.7,
+            "xA": 0.5,
+            "key_passes": 2,
+            "successful_dribbles": 2,
+            "duels_won": 1,
+            "shots_per_game": 0.2,
+            "tackles_per_game": 0.1,
+            "fouls_drawn": 0,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 28.0,
+                "acceleration": "Minimal",
+                "stamina": "Minimal",
+                "recovery_rate": "Declining"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Minimal",
+                "defensive_transitions": "Minimal"
+            },
+            "psychological_factors": {
+                "consistency": "Retiring",
+                "pressure_handling": "Retired",
+                "clutch_performance": "Minimal"
+            },
+            "transfer_history": [
+                {
+                    "from": "fiorentina",
+                    "to": "salernitana",
+                    "transfer_fee": "Free",
+                    "date": "2021-09-06"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Support role",
+                "teammate_quality": "Average",
+                "league_competitiveness": "Serie A"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2021,
+            "team_id": "salernitana",
+            "league_id": "seriea-2021",
+            "appearances": 22,
+            "goals": 0,
+            "assists": 2,
+            "minutes": 1188,
+            "position": "Winger",
+            "rating": 5.9,
+            "xG": 0.2,
+            "xA": 0.4,
+            "key_passes": 1,
+            "successful_dribbles": 1,
+            "duels_won": 0,
+            "shots_per_game": 0.1,
+            "tackles_per_game": 0.1,
+            "fouls_drawn": 0,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 26.5,
+                "acceleration": "Minimal",
+                "stamina": "Minimal",
+                "recovery_rate": "Declining"
+            },
+            "tactical_data": {
+                "average_position": "LW",
+                "contribution_to_build_up": "Minimal",
+                "defensive_transitions": "Minimal"
+            },
+            "psychological_factors": {
+                "consistency": "Retired",
+                "pressure_handling": "Retired",
+                "clutch_performance": "None"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Support role",
+                "teammate_quality": "Average",
+                "league_competitiveness": "Serie A"
+            },
+            "national_team_stats": []
+        }
+    ]
+}

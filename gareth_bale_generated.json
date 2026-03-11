@@ -1,0 +1,1188 @@
+{
+    "player": {
+        "id": "bale",
+        "name": "Gareth Bale",
+        "birth_date": "1989-07-16",
+        "nationality": "Wales",
+        "height_cm": 185,
+        "weight_kg": 82,
+        "dominant_foot": "Left"
+    },
+    "teams": [
+        {
+            "id": "southampton",
+            "name": "Southampton FC",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/southampton-fc.svg",
+            "country": "England"
+        },
+        {
+            "id": "tottenham",
+            "name": "Tottenham Hotspur",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/tottenham-hotspur.svg",
+            "country": "England"
+        },
+        {
+            "id": "realmadrid",
+            "name": "Real Madrid",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/real-madrid-c-f-logo.svg",
+            "country": "Spain"
+        },
+        {
+            "id": "lafc",
+            "name": "LAFC",
+            "logo_url": "https://cdn.worldvectorlogo.com/logos/los-angeles-football-club-1.svg",
+            "country": "USA"
+        },
+        {
+            "id": "wales",
+            "name": "Wales National Team",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Wales_(2).svg",
+            "country": "Wales"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 2005,
+            "team_id": "southampton",
+            "league_id": "championship-2005",
+            "appearances": 40,
+            "goals": 5,
+            "assists": 4,
+            "minutes": 2917,
+            "position": "Left Back/Winger",
+            "rating": 6.9,
+            "xG": 2.7,
+            "xA": 1.9,
+            "key_passes": 13,
+            "successful_dribbles": 22,
+            "duels_won": 21,
+            "shots_per_game": 0.6,
+            "tackles_per_game": 1.3,
+            "fouls_drawn": 9,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.1,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Left Back",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Promising",
+                "pressure_handling": "Developing",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Defensive, transitions",
+                "teammate_quality": "Modest",
+                "league_competitiveness": "Championship"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 1,
+                    "goals": 0,
+                    "assists": 0,
+                    "minutes": 72,
+                    "position": "Left Back",
+                    "rating": 6.6
+                }
+            ]
+        },
+        {
+            "season": 2006,
+            "team_id": "southampton",
+            "league_id": "championship-2006",
+            "appearances": 38,
+            "goals": 5,
+            "assists": 5,
+            "minutes": 2888,
+            "position": "Left Back/Winger",
+            "rating": 7.1,
+            "xG": 3.3,
+            "xA": 2.1,
+            "key_passes": 15,
+            "successful_dribbles": 24,
+            "duels_won": 20,
+            "shots_per_game": 0.6,
+            "tackles_per_game": 1.2,
+            "fouls_drawn": 11,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.5,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Left Back/Winger",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Solid",
+                "pressure_handling": "Developing",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "southampton",
+                    "to": "tottenham",
+                    "transfer_fee": "£7M",
+                    "date": "2007-05-25"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Defensive, transitions",
+                "teammate_quality": "Modest",
+                "league_competitiveness": "Championship"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "Wales Senior",
+                    "appearances": 4,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 273,
+                    "position": "Left Back",
+                    "rating": 7.0
+                }
+            ]
+        },
+        {
+            "season": 2007,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2007",
+            "appearances": 25,
+            "goals": 5,
+            "assists": 3,
+            "minutes": 1800,
+            "position": "Left Back/Winger",
+            "rating": 7.0,
+            "xG": 2.6,
+            "xA": 1.8,
+            "key_passes": 11,
+            "successful_dribbles": 24,
+            "duels_won": 19,
+            "shots_per_game": 0.7,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 7,
+            "injuries": [
+                {
+                    "type": "Foot injury",
+                    "start_date": "2008-02-02",
+                    "end_date": "2008-03-21",
+                    "days_lost": 47
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.0,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Left Back/Winger",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Promising",
+                "pressure_handling": "Developing",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "southampton",
+                    "to": "tottenham",
+                    "transfer_fee": "£7M",
+                    "date": "2007-05-25"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Defensive, transitions",
+                "teammate_quality": "Growing",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 7,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 540,
+                    "position": "Left Back/Winger",
+                    "rating": 7.1
+                }
+            ]
+        },
+        {
+            "season": 2008,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2008",
+            "appearances": 16,
+            "goals": 0,
+            "assists": 2,
+            "minutes": 1098,
+            "position": "Left Back/Winger",
+            "rating": 6.5,
+            "xG": 0.5,
+            "xA": 0.8,
+            "key_passes": 6,
+            "successful_dribbles": 10,
+            "duels_won": 8,
+            "shots_per_game": 0.3,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 2,
+            "injuries": [
+                {
+                    "type": "Knee injury",
+                    "start_date": "2009-01-15",
+                    "end_date": "2009-04-05",
+                    "days_lost": 80
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.5,
+                "acceleration": "High",
+                "stamina": "Decent",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Left Back/Winger",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Developing",
+                "pressure_handling": "Modest",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Defensive, transitions",
+                "teammate_quality": "Growing",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 7,
+                    "goals": 1,
+                    "assists": 2,
+                    "minutes": 560,
+                    "position": "LB/LW",
+                    "rating": 6.9
+                }
+            ]
+        },
+        {
+            "season": 2009,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2009",
+            "appearances": 23,
+            "goals": 3,
+            "assists": 4,
+            "minutes": 1817,
+            "position": "Left Back/Winger",
+            "rating": 7.2,
+            "xG": 1.7,
+            "xA": 1.1,
+            "key_passes": 9,
+            "successful_dribbles": 14,
+            "duels_won": 10,
+            "shots_per_game": 0.4,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 3,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.8,
+                "acceleration": "High",
+                "stamina": "Decent",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Left Back/Winger",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Decent",
+                "pressure_handling": "Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Defensive, transitions",
+                "teammate_quality": "Growing",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 8,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 662,
+                    "position": "Left Back/Winger",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2010,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2010",
+            "appearances": 30,
+            "goals": 7,
+            "assists": 8,
+            "minutes": 2377,
+            "position": "Left Winger",
+            "rating": 7.7,
+            "xG": 3.5,
+            "xA": 2.7,
+            "key_passes": 22,
+            "successful_dribbles": 33,
+            "duels_won": 28,
+            "shots_per_game": 1.1,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 10,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.2,
+                "acceleration": "Elite",
+                "stamina": "Very Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "Left Winger",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter attack",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "Euro 2012 Qualifiers",
+                    "appearances": 6,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 480,
+                    "position": "LW",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2011,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2011",
+            "appearances": 36,
+            "goals": 12,
+            "assists": 12,
+            "minutes": 3026,
+            "position": "Left Winger",
+            "rating": 8.0,
+            "xG": 6.6,
+            "xA": 5.2,
+            "key_passes": 28,
+            "successful_dribbles": 38,
+            "duels_won": 27,
+            "shots_per_game": 1.9,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 11,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.4,
+                "acceleration": "Elite",
+                "stamina": "Elite",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "Left Winger",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter attack",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 8,
+                    "goals": 1,
+                    "assists": 3,
+                    "minutes": 694,
+                    "position": "Left Winger",
+                    "rating": 7.0
+                }
+            ]
+        },
+        {
+            "season": 2012,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2012",
+            "appearances": 33,
+            "goals": 21,
+            "assists": 8,
+            "minutes": 2935,
+            "position": "Left Winger",
+            "rating": 8.4,
+            "xG": 12.1,
+            "xA": 4.5,
+            "key_passes": 36,
+            "successful_dribbles": 49,
+            "duels_won": 28,
+            "shots_per_game": 2.2,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 13,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.9,
+                "acceleration": "Elite",
+                "stamina": "Elite",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "Left Winger",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter attack",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 9,
+                    "goals": 3,
+                    "assists": 3,
+                    "minutes": 725,
+                    "position": "LW",
+                    "rating": 7.7
+                }
+            ]
+        },
+        {
+            "season": 2013,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2013",
+            "appearances": 34,
+            "goals": 21,
+            "assists": 8,
+            "minutes": 3027,
+            "position": "Left Winger",
+            "rating": 8.6,
+            "xG": 13.8,
+            "xA": 5.4,
+            "key_passes": 41,
+            "successful_dribbles": 57,
+            "duels_won": 29,
+            "shots_per_game": 2.5,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 15,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 35.0,
+                "acceleration": "Elite",
+                "stamina": "Elite",
+                "recovery_rate": "Very High"
+            },
+            "tactical_data": {
+                "average_position": "Left Winger/AM",
+                "contribution_to_build_up": "World Class",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "tottenham",
+                    "to": "realmadrid",
+                    "transfer_fee": "€100M",
+                    "date": "2013-09-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter attack",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "World Cup Qualifiers",
+                    "appearances": 7,
+                    "goals": 5,
+                    "assists": 2,
+                    "minutes": 611,
+                    "position": "LW/AM",
+                    "rating": 7.9
+                }
+            ]
+        },
+        {
+            "season": 2013,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2013",
+            "appearances": 27,
+            "goals": 15,
+            "assists": 12,
+            "minutes": 2169,
+            "position": "Right Winger/AM",
+            "rating": 8.2,
+            "xG": 7.7,
+            "xA": 6.2,
+            "key_passes": 29,
+            "successful_dribbles": 35,
+            "duels_won": 26,
+            "shots_per_game": 1.5,
+            "tackles_per_game": 0.5,
+            "fouls_drawn": 9,
+            "injuries": [
+                {
+                    "type": "Knee injury",
+                    "start_date": "2014-03-09",
+                    "end_date": "2014-03-22",
+                    "days_lost": 13
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.7,
+                "acceleration": "World Class",
+                "stamina": "Elite",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "RW/AM",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "World Class",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter/possession",
+                "teammate_quality": "Galacticos",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "Euro 2016 Qualifiers",
+                    "appearances": 10,
+                    "goals": 7,
+                    "assists": 3,
+                    "minutes": 890,
+                    "position": "LW/AM",
+                    "rating": 8.1
+                }
+            ]
+        },
+        {
+            "season": 2014,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2014",
+            "appearances": 31,
+            "goals": 13,
+            "assists": 9,
+            "minutes": 2376,
+            "position": "Winger",
+            "rating": 7.9,
+            "xG": 8.4,
+            "xA": 5.7,
+            "key_passes": 24,
+            "successful_dribbles": 32,
+            "duels_won": 18,
+            "shots_per_game": 1.6,
+            "tackles_per_game": 0.4,
+            "fouls_drawn": 8,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.6,
+                "acceleration": "Elite",
+                "stamina": "Very Good",
+                "recovery_rate": "High"
+            },
+            "tactical_data": {
+                "average_position": "Winger",
+                "contribution_to_build_up": "Elite",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Consistent",
+                "pressure_handling": "Elite",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter/possession",
+                "teammate_quality": "Galacticos",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 9,
+                    "goals": 6,
+                    "assists": 2,
+                    "minutes": 810,
+                    "position": "Winger/Forward",
+                    "rating": 8.0
+                }
+            ]
+        },
+        {
+            "season": 2015,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2015",
+            "appearances": 23,
+            "goals": 19,
+            "assists": 6,
+            "minutes": 1838,
+            "position": "Winger/Forward",
+            "rating": 8.5,
+            "xG": 14.2,
+            "xA": 4.0,
+            "key_passes": 17,
+            "successful_dribbles": 27,
+            "duels_won": 15,
+            "shots_per_game": 1.9,
+            "tackles_per_game": 0.3,
+            "fouls_drawn": 7,
+            "injuries": [
+                {
+                    "type": "Calf injury",
+                    "start_date": "2016-01-18",
+                    "end_date": "2016-03-09",
+                    "days_lost": 51
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 34.2,
+                "acceleration": "World Class",
+                "stamina": "Elite",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "Winger",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Elite",
+                "pressure_handling": "World Class",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Possession",
+                "teammate_quality": "Galacticos",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "UEFA Euro 2016",
+                    "appearances": 6,
+                    "goals": 3,
+                    "assists": 1,
+                    "minutes": 520,
+                    "position": "Winger/Forward",
+                    "rating": 8.0
+                }
+            ]
+        },
+        {
+            "season": 2016,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2016",
+            "appearances": 19,
+            "goals": 7,
+            "assists": 3,
+            "minutes": 1468,
+            "position": "Winger/Forward",
+            "rating": 7.7,
+            "xG": 6.2,
+            "xA": 2.3,
+            "key_passes": 9,
+            "successful_dribbles": 13,
+            "duels_won": 8,
+            "shots_per_game": 0.7,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 4,
+            "injuries": [
+                {
+                    "type": "Ankle surgery",
+                    "start_date": "2016-11-23",
+                    "end_date": "2017-02-25",
+                    "days_lost": 94
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.7,
+                "acceleration": "Very Good",
+                "stamina": "Reduced",
+                "recovery_rate": "Poor"
+            },
+            "tactical_data": {
+                "average_position": "Forward",
+                "contribution_to_build_up": "Reduced",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Reduced",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Rotated attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 7,
+                    "goals": 4,
+                    "assists": 1,
+                    "minutes": 612,
+                    "position": "Winger/Forward",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2017,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2017",
+            "appearances": 26,
+            "goals": 12,
+            "assists": 4,
+            "minutes": 1542,
+            "position": "Forward/Winger",
+            "rating": 7.8,
+            "xG": 7.1,
+            "xA": 2.2,
+            "key_passes": 8,
+            "successful_dribbles": 11,
+            "duels_won": 7,
+            "shots_per_game": 0.6,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 3,
+            "injuries": [
+                {
+                    "type": "Calf injury",
+                    "start_date": "2018-03-14",
+                    "end_date": "2018-04-10",
+                    "days_lost": 27
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.2,
+                "acceleration": "Reduced",
+                "stamina": "Reduced",
+                "recovery_rate": "Poor"
+            },
+            "tactical_data": {
+                "average_position": "Forward",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Late career",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Rotated attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 6,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 526,
+                    "position": "Winger/Forward",
+                    "rating": 7.3
+                }
+            ]
+        },
+        {
+            "season": 2018,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2018",
+            "appearances": 29,
+            "goals": 8,
+            "assists": 3,
+            "minutes": 1380,
+            "position": "Forward/Winger",
+            "rating": 7.3,
+            "xG": 4.9,
+            "xA": 1.3,
+            "key_passes": 4,
+            "successful_dribbles": 8,
+            "duels_won": 6,
+            "shots_per_game": 0.4,
+            "tackles_per_game": 0.1,
+            "fouls_drawn": 2,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.6,
+                "acceleration": "Low",
+                "stamina": "Low",
+                "recovery_rate": "Poor"
+            },
+            "tactical_data": {
+                "average_position": "Forward",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Declining",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Rotated attack",
+                "teammate_quality": "Good",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 9,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 759,
+                    "position": "Winger/Forward",
+                    "rating": 7.1
+                }
+            ]
+        },
+        {
+            "season": 2019,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2019",
+            "appearances": 20,
+            "goals": 3,
+            "assists": 2,
+            "minutes": 1260,
+            "position": "Forward/Winger",
+            "rating": 7.0,
+            "xG": 3.7,
+            "xA": 1.4,
+            "key_passes": 6,
+            "successful_dribbles": 9,
+            "duels_won": 6,
+            "shots_per_game": 1.0,
+            "tackles_per_game": 0.2,
+            "fouls_drawn": 4,
+            "injuries": [
+                {
+                    "type": "Calf injury",
+                    "start_date": "2019-09-13",
+                    "end_date": "2019-11-05",
+                    "days_lost": 53
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.1,
+                "acceleration": "Low",
+                "stamina": "Low",
+                "recovery_rate": "Poor"
+            },
+            "tactical_data": {
+                "average_position": "Forward",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Declining",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Rotated attack",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 8,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 650,
+                    "position": "Winger/Forward",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2020,
+            "team_id": "tottenham",
+            "league_id": "premierleague-2020",
+            "appearances": 20,
+            "goals": 11,
+            "assists": 2,
+            "minutes": 920,
+            "position": "Winger",
+            "rating": 7.2,
+            "xG": 3.9,
+            "xA": 0.9,
+            "key_passes": 2,
+            "successful_dribbles": 3,
+            "duels_won": 2,
+            "shots_per_game": 0.3,
+            "tackles_per_game": 0.1,
+            "fouls_drawn": 1,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.8,
+                "acceleration": "Low",
+                "stamina": "Low",
+                "recovery_rate": "Poor"
+            },
+            "tactical_data": {
+                "average_position": "Advanced winger",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Minimal"
+            },
+            "psychological_factors": {
+                "consistency": "Declining",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [
+                {
+                    "from": "realmadrid",
+                    "to": "tottenham",
+                    "transfer_fee": "Loan",
+                    "date": "2020-09-19"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Support role",
+                "teammate_quality": "Average",
+                "league_competitiveness": "Premier League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 11,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 854,
+                    "position": "Winger/Forward",
+                    "rating": 7.2
+                }
+            ]
+        },
+        {
+            "season": 2021,
+            "team_id": "realmadrid",
+            "league_id": "laliga-2021",
+            "appearances": 7,
+            "goals": 1,
+            "assists": 0,
+            "minutes": 290,
+            "position": "Forward/Winger",
+            "rating": 6.6,
+            "xG": 1.1,
+            "xA": 0.2,
+            "key_passes": 2,
+            "successful_dribbles": 2,
+            "duels_won": 1,
+            "shots_per_game": 0.8,
+            "tackles_per_game": 0.1,
+            "fouls_drawn": 1,
+            "injuries": [
+                {
+                    "type": "Hamstring injury",
+                    "start_date": "2021-09-11",
+                    "end_date": "2021-11-27",
+                    "days_lost": 77
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.2,
+                "acceleration": "Low",
+                "stamina": "Low",
+                "recovery_rate": "Poor"
+            },
+            "tactical_data": {
+                "average_position": "Forward",
+                "contribution_to_build_up": "Low",
+                "defensive_transitions": "Low"
+            },
+            "psychological_factors": {
+                "consistency": "Late career",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "tottenham",
+                    "to": "realmadrid",
+                    "transfer_fee": "Loan return",
+                    "date": "2021-06-30"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Depth option",
+                "teammate_quality": "Elite",
+                "league_competitiveness": "La Liga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 8,
+                    "goals": 6,
+                    "assists": 2,
+                    "minutes": 703,
+                    "position": "Forward",
+                    "rating": 7.8
+                }
+            ]
+        },
+        {
+            "season": 2022,
+            "team_id": "lafc",
+            "league_id": "mls-2022",
+            "appearances": 12,
+            "goals": 3,
+            "assists": 1,
+            "minutes": 510,
+            "position": "Winger/Forward",
+            "rating": 6.9,
+            "xG": 2.5,
+            "xA": 0.7,
+            "key_passes": 3,
+            "successful_dribbles": 4,
+            "duels_won": 2,
+            "shots_per_game": 0.2,
+            "tackles_per_game": 0.1,
+            "fouls_drawn": 0,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.2,
+                "acceleration": "Minimal",
+                "stamina": "Low",
+                "recovery_rate": "Declining"
+            },
+            "tactical_data": {
+                "average_position": "Forward",
+                "contribution_to_build_up": "Minimal",
+                "defensive_transitions": "Minimal"
+            },
+            "psychological_factors": {
+                "consistency": "Retiring",
+                "pressure_handling": "Veteran",
+                "clutch_performance": "Rare"
+            },
+            "transfer_history": [
+                {
+                    "from": "realmadrid",
+                    "to": "lafc",
+                    "transfer_fee": "Free",
+                    "date": "2022-06-27"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "MLS support",
+                "teammate_quality": "Average",
+                "league_competitiveness": "MLS"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "wales",
+                    "competition": "World Cup 2022",
+                    "appearances": 3,
+                    "goals": 1,
+                    "assists": 0,
+                    "minutes": 245,
+                    "position": "Forward",
+                    "rating": 6.3
+                }
+            ]
+        }
+    ]
+}
