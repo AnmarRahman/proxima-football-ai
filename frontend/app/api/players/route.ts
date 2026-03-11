@@ -16,8 +16,9 @@ export async function GET() {
 
   try {
     const rows = await supabaseRestGet("players", {
-      select: "id,name,is_retired",
+      select: "id,name,is_retired,over_35",
       is_retired: "eq.false",
+      over_35: "eq.false",
       order: "name.asc",
     });
 

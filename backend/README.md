@@ -81,3 +81,9 @@ After changing it, rerun:
 ```bash
 python backend/python/import_players_to_db.py
 ```
+
+You can also set the age threshold for `over_35` computation during import:
+
+```bash
+python backend/python/import_players_to_db.py --over-age-threshold 35
+```
