@@ -718,7 +718,7 @@ def main() -> None:
         database_url = args.database_url.strip()
         if not database_url:
             raise ValueError("DB mode requested but no DATABASE_URL / --database-url was provided.")
-        db_conn = psycopg.connect(database_url)
+        db_conn = psycopg.connect(database_url, prepare_threshold=None)
 
         if args.output_target in {"db", "both"}:
             lock_acquired = acquire_prediction_run_lock(db_conn)
@@ -816,6 +816,11 @@ def main() -> None:
                     )
                     print(f"Saved DB prediction: {player_id} (horizon={len(predictions)})")
             except Exception as exc:
+                if args.output_target in {"db", "both"} and db_conn is not None:
+                    try:
+                        db_conn.rollback()
+                    except Exception:
+                        pass
                 failures.append(player_id)
                 print(f"[WARN] Failed for {player_id}: {exc}")
 
@@ -835,6 +840,12 @@ def main() -> None:
 
         print("Finished successfully for all requested players.")
     except Exception as exc:
+        if db_conn is not None:
+            try:
+                db_conn.rollback()
+            except Exception:
+                pass
+
         if run_id is not None and db_conn is not None:
             try:
                 finalize_prediction_run(

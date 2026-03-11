@@ -342,7 +342,7 @@ def main() -> None:
     failed = 0
     total_seasons = 0
 
-    with psycopg.connect(database_url) as conn:
+    with psycopg.connect(database_url, prepare_threshold=None) as conn:
         for file_path in iter_player_files(players_dir):
             try:
                 with conn.cursor() as cur:

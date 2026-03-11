@@ -55,7 +55,7 @@ def main() -> None:
     if not files:
         raise SystemExit(f"No SQL migrations found in {MIGRATIONS_DIR}")
 
-    with psycopg.connect(database_url) as conn:
+    with psycopg.connect(database_url, prepare_threshold=None) as conn:
         ensure_migrations_table(conn)
         conn.commit()
 
