@@ -3,7 +3,7 @@ import json
 import os
 from datetime import date
 from pathlib import Path
-from typing import Any, Dict, Iterable, Optional
+from typing import Any, Dict, Iterable, Optional, Set
 
 try:
     import psycopg
@@ -12,6 +12,7 @@ except ImportError as exc:  # pragma: no cover
 
 BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_PLAYERS_DIR = BASE_DIR / "data" / "players"
+STATUS_OVERRIDES_FILENAME = "player_status_overrides.json"
 
 
 def parse_args() -> argparse.Namespace:
@@ -58,13 +59,41 @@ def to_date(value: Any) -> Optional[date]:
         return None
 
 
-def parse_retired(player: Dict[str, Any]) -> bool:
-    raw = player.get("is_retired", player.get("retired", False))
-    if isinstance(raw, bool):
-        return raw
-    if isinstance(raw, (int, float)):
-        return bool(raw)
-    return str(raw).strip().lower() in {"1", "true", "yes", "retired", "y"}
+
+
+def load_status_overrides(path: Path) -> Dict[str, Set[str]]:
+    if not path.exists():
+        return {"retired_ids": set(), "active_ids": set()}
+
+    data = json.loads(path.read_text(encoding="utf-8-sig"))
+    retired_ids = {str(v).strip().lower() for v in (data.get("retired_ids") or []) if str(v).strip()}
+    active_ids = {str(v).strip().lower() for v in (data.get("active_ids") or []) if str(v).strip()}
+    return {"retired_ids": retired_ids, "active_ids": active_ids}
+def parse_retired(
+    player: Dict[str, Any],
+    player_id: str,
+    retired_ids: Set[str],
+    active_ids: Set[str],
+) -> bool:
+    # Explicit flags in player JSON always win.
+    if "is_retired" in player or "retired" in player:
+        raw = player.get("is_retired", player.get("retired", False))
+        if isinstance(raw, bool):
+            return raw
+        if isinstance(raw, (int, float)):
+            return bool(raw)
+        return str(raw).strip().lower() in {"1", "true", "yes", "retired", "y"}
+
+    # Explicit retired date in JSON implies retired.
+    if player.get("retired_since"):
+        return True
+
+    if player_id in active_ids:
+        return False
+    if player_id in retired_ids:
+        return True
+
+    return False
 
 
 def ensure_team(cur: psycopg.Cursor, team_id: Optional[str], name: Optional[str] = None) -> None:
@@ -87,7 +116,7 @@ def ensure_team(cur: psycopg.Cursor, team_id: Optional[str], name: Optional[str]
     )
 
 
-def upsert_player(cur: psycopg.Cursor, player: Dict[str, Any]) -> None:
+def upsert_player(cur: psycopg.Cursor, player: Dict[str, Any], is_retired: bool) -> None:
     player_id = str(player.get("id", "")).strip().lower()
     if not player_id:
         raise ValueError("Player is missing id")
@@ -117,7 +146,7 @@ def upsert_player(cur: psycopg.Cursor, player: Dict[str, Any]) -> None:
             to_int(player.get("height_cm")),
             to_int(player.get("weight_kg")),
             player.get("dominant_foot"),
-            parse_retired(player),
+            is_retired,
             to_date(player.get("retired_since")),
         ),
     )
@@ -291,11 +320,21 @@ def replace_season_children(cur: psycopg.Cursor, player_season_id: int, season: 
         )
 
 
-def import_file(cur: psycopg.Cursor, file_path: Path) -> Dict[str, int]:
+def import_file(
+    cur: psycopg.Cursor,
+    file_path: Path,
+    retired_ids: Set[str],
+    active_ids: Set[str],
+) -> Dict[str, int]:
     data = json.loads(file_path.read_text(encoding="utf-8"))
     player = data.get("player") or {}
+    player_id = str(player.get("id", "")).strip().lower()
 
-    upsert_player(cur, player)
+    upsert_player(
+        cur,
+        player,
+        is_retired=parse_retired(player, player_id, retired_ids=retired_ids, active_ids=active_ids),
+    )
 
     for team in data.get("teams") or []:
         ensure_team(cur, str(team.get("id", "")).strip().lower() or None, team.get("name"))
@@ -310,7 +349,6 @@ def import_file(cur: psycopg.Cursor, file_path: Path) -> Dict[str, int]:
             (team.get("country"), team.get("logo_url"), str(team.get("id", "")).strip().lower()),
         )
 
-    player_id = str(player.get("id", "")).strip().lower()
     season_count = 0
 
     for season in data.get("seasons") or []:
@@ -323,7 +361,7 @@ def import_file(cur: psycopg.Cursor, file_path: Path) -> Dict[str, int]:
 
 def iter_player_files(players_dir: Path) -> Iterable[Path]:
     for file_path in sorted(players_dir.glob("*.json")):
-        if file_path.name.endswith("_predictions.json"):
+        if file_path.name.endswith("_predictions.json") or file_path.name == STATUS_OVERRIDES_FILENAME:
             continue
         yield file_path
 
@@ -342,11 +380,15 @@ def main() -> None:
     failed = 0
     total_seasons = 0
 
+    overrides = load_status_overrides(players_dir / STATUS_OVERRIDES_FILENAME)
+    retired_ids = overrides["retired_ids"]
+    active_ids = overrides["active_ids"]
+
     with psycopg.connect(database_url, prepare_threshold=None) as conn:
         for file_path in iter_player_files(players_dir):
             try:
                 with conn.cursor() as cur:
-                    stats = import_file(cur, file_path)
+                    stats = import_file(cur, file_path, retired_ids=retired_ids, active_ids=active_ids)
                 conn.commit()
                 imported += 1
                 total_seasons += stats["seasons"]
