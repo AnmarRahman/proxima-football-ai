@@ -8,6 +8,7 @@ Services:
 
 - `app` (Next.js on port `4040`)
 - `postgres` (`postgres:16-alpine`)
+- `postgrest` (REST API over Postgres for the app)
 
 ## One-time setup on VM
 
@@ -28,6 +29,8 @@ This script:
 1. archives tracked git files
 2. uploads them to the VM target directory
 3. runs remote container update script
+4. forces `DATABASE_PROVIDER=postgres` for VM runtime
+5. runs Postgres migrations and imports all player JSON files into Postgres
 
 ## Configure environment on VM
 
@@ -43,6 +46,7 @@ At minimum set:
 
 - `ADMIN_DASHBOARD_PASSWORD`
 - `ADMIN_SESSION_SECRET`
+- `POSTGRES_PASSWORD`
 
 ## Docker commands on VM
 
@@ -50,4 +54,5 @@ At minimum set:
 cd /home/anmarrahman/docker/proxima-football-ai
 docker compose ps
 docker compose logs -f app
+docker compose logs -f postgrest
 ```

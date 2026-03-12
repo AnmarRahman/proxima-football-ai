@@ -1,5 +1,10 @@
+import { isPostgresProvider } from "@/lib/database-provider";
+
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
 const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+const POSTGREST_URL = process.env.POSTGREST_URL;
+const POSTGREST_API_KEY = process.env.POSTGREST_API_KEY;
 
 export type SupabaseRestRequestOptions = {
   method?: "GET" | "POST" | "PATCH" | "PUT" | "DELETE";
@@ -8,31 +13,100 @@ export type SupabaseRestRequestOptions = {
   extraHeaders?: Record<string, string>;
 };
 
-export function hasSupabaseServerConfig(): boolean {
+type RestConfig = {
+  baseUrl: string;
+  pathPrefix: string;
+  defaultHeaders: Record<string, string>;
+};
+
+function hasPostgresRestConfig(): boolean {
+  return Boolean(POSTGREST_URL);
+}
+
+function hasSupabaseConfig(): boolean {
   return Boolean(SUPABASE_URL && SUPABASE_SERVICE_ROLE_KEY);
 }
 
+export function hasSupabaseServerConfig(): boolean {
+  return isPostgresProvider() ? hasPostgresRestConfig() : hasSupabaseConfig();
+}
+
 export function getSupabaseServerConfig(): { url: string; serviceRoleKey: string } {
+  if (isPostgresProvider()) {
+    if (!POSTGREST_URL) {
+      throw new Error("Missing PostgREST server configuration.");
+    }
+
+    return {
+      url: POSTGREST_URL,
+      serviceRoleKey: POSTGREST_API_KEY || "",
+    };
+  }
+
   if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
     throw new Error("Missing Supabase server configuration.");
   }
+
   return { url: SUPABASE_URL, serviceRoleKey: SUPABASE_SERVICE_ROLE_KEY };
+}
+
+function getRestConfig(): RestConfig {
+  if (isPostgresProvider()) {
+    if (!POSTGREST_URL) {
+      throw new Error("Missing PostgREST server configuration. Set POSTGREST_URL.");
+    }
+
+    const headers: Record<string, string> = {};
+    if (POSTGREST_API_KEY) {
+      headers.Authorization = `Bearer ${POSTGREST_API_KEY}`;
+    }
+
+    return {
+      baseUrl: POSTGREST_URL,
+      pathPrefix: "",
+      defaultHeaders: headers,
+    };
+  }
+
+  if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
+    throw new Error("Missing Supabase server configuration.");
+  }
+
+  return {
+    baseUrl: SUPABASE_URL,
+    pathPrefix: "/rest/v1",
+    defaultHeaders: {
+      apikey: SUPABASE_SERVICE_ROLE_KEY,
+      Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
+    },
+  };
+}
+
+function buildEndpoint(baseUrl: string, pathPrefix: string, path: string): URL {
+  const endpoint = new URL(baseUrl);
+  const basePath = endpoint.pathname === "/" ? "" : endpoint.pathname;
+  const normalizedPath = String(path || "").replace(/^\/+|\/+$/g, "");
+  const normalizedPrefix = String(pathPrefix || "").replace(/^\/+|\/+$/g, "");
+  const normalizedBasePath = String(basePath || "").replace(/^\/+|\/+$/g, "");
+
+  const segments = [normalizedBasePath, normalizedPrefix, normalizedPath].filter(Boolean);
+  endpoint.pathname = `/${segments.join("/")}`;
+  return endpoint;
 }
 
 export async function supabaseRestRequest(
   path: string,
   options: SupabaseRestRequestOptions = {}
 ): Promise<any> {
-  const { url, serviceRoleKey } = getSupabaseServerConfig();
-  const endpoint = new URL(`/rest/v1/${path}`, url);
+  const { baseUrl, pathPrefix, defaultHeaders } = getRestConfig();
+  const endpoint = buildEndpoint(baseUrl, pathPrefix, path);
 
   for (const [key, value] of Object.entries(options.params || {})) {
     endpoint.searchParams.set(key, value);
   }
 
   const headers: Record<string, string> = {
-    apikey: serviceRoleKey,
-    Authorization: `Bearer ${serviceRoleKey}`,
+    ...defaultHeaders,
     ...(options.extraHeaders || {}),
   };
 
@@ -51,7 +125,7 @@ export async function supabaseRestRequest(
 
   if (!res.ok) {
     const errBody = await res.text();
-    throw new Error(`Supabase REST request failed (${res.status}): ${errBody}`);
+    throw new Error(`REST request failed (${res.status}): ${errBody}`);
   }
 
   const text = await res.text();

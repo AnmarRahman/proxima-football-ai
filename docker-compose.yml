@@ -11,8 +11,9 @@ services:
       NODE_ENV: production
       PORT: 4040
       HOSTNAME: 0.0.0.0
-      DATABASE_PROVIDER: ${DATABASE_PROVIDER:-sqlite}
-      SQLITE_DATABASE_PATH: ${SQLITE_DATABASE_PATH:-/app/data/proxima.sqlite3}
+      DATABASE_PROVIDER: ${DATABASE_PROVIDER:-postgres}
+      POSTGREST_URL: ${POSTGREST_URL:-http://postgrest:3000}
+      POSTGREST_API_KEY: ${POSTGREST_API_KEY:-}
       NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL:-}
       SUPABASE_SERVICE_ROLE_KEY: ${SUPABASE_SERVICE_ROLE_KEY:-}
       ADMIN_DASHBOARD_PASSWORD: ${ADMIN_DASHBOARD_PASSWORD:-change-me}
@@ -22,11 +23,11 @@ services:
       GITHUB_REPO_NAME: ${GITHUB_REPO_NAME:-}
       GITHUB_WORKFLOW_ID: ${GITHUB_WORKFLOW_ID:-weekly-predictions.yml}
       GITHUB_WORKFLOW_REF: ${GITHUB_WORKFLOW_REF:-main}
-    volumes:
-      - proxima_sqlite_data:/app/data
     depends_on:
       postgres:
         condition: service_healthy
+      postgrest:
+        condition: service_started
 
   postgres:
     image: postgres:16-alpine
@@ -46,18 +47,35 @@ services:
       timeout: 5s
       retries: 5
 
-  sqlite-seed:
+  postgrest:
+    image: postgrest/postgrest:latest
+    container_name: proxima-postgrest
+    restart: unless-stopped
+    environment:
+      PGRST_DB_URI: postgres://${POSTGRES_USER:-proxima}:${POSTGRES_PASSWORD:-proxima_password}@postgres:5432/${POSTGRES_DB:-proxima_ai}
+      PGRST_DB_SCHEMA: public
+      PGRST_DB_ANON_ROLE: ${POSTGRES_USER:-proxima}
+      PGRST_SERVER_PORT: 3000
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  postgres-seed:
     image: python:3.11-slim
     working_dir: /repo
     volumes:
       - ./:/repo:ro
-      - proxima_sqlite_data:/data
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-proxima}:${POSTGRES_PASSWORD:-proxima_password}@postgres:5432/${POSTGRES_DB:-proxima_ai}
+    depends_on:
+      postgres:
+        condition: service_healthy
     command: >-
       bash -lc "
-      python backend/python/migrate_sqlite.py --sqlite-path /data/proxima.sqlite3 &&
-      python backend/python/import_players_to_sqlite.py --sqlite-path /data/proxima.sqlite3 --players-dir backend/python/data/players
+      pip install --no-cache-dir 'psycopg[binary]>=3.2.0' &&
+      python backend/python/migrate_db.py &&
+      python backend/python/import_players_to_db.py --players-dir backend/python/data/players
       "
 
 volumes:
   proxima_postgres_data:
-  proxima_sqlite_data:

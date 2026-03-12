@@ -9,21 +9,31 @@ if [ ! -f .env ]; then
   echo "Created $APP_DIR/.env from .env.docker.example. Edit it before production use."
 fi
 
-DB_PROVIDER="sqlite"
+# Force VM deployments to use Dockerized Postgres + PostgREST (no SQLite runtime).
 if grep -q '^DATABASE_PROVIDER=' .env; then
-  DB_PROVIDER="$(grep '^DATABASE_PROVIDER=' .env | tail -n1 | cut -d'=' -f2 | tr -d ' \r\n\t')"
+  sed -i 's/^DATABASE_PROVIDER=.*/DATABASE_PROVIDER=postgres/' .env
+else
+  echo 'DATABASE_PROVIDER=postgres' >> .env
 fi
 
-echo "Updating images and restarting containers..."
-docker compose pull postgres || true
+if ! grep -q '^POSTGREST_URL=' .env; then
+  echo 'POSTGREST_URL=http://postgrest:3000' >> .env
+fi
+
+sed -i '/^SQLITE_DATABASE_PATH=/d' .env
+
+echo "Updating images and rebuilding app..."
+docker compose pull postgres postgrest || true
 docker compose build --pull app
 
-if [ "$DB_PROVIDER" = "sqlite" ]; then
-  echo "Seeding SQLite database from backend/python/data/players ..."
-  docker compose run --rm sqlite-seed
-fi
+echo "Starting Postgres + PostgREST..."
+docker compose up -d postgres postgrest
 
-docker compose up -d --remove-orphans
+echo "Applying Postgres migrations + importing player JSON data..."
+docker compose run --rm postgres-seed
+
+echo "Starting app container..."
+docker compose up -d app --remove-orphans
 
 echo "Current containers:"
 docker compose ps

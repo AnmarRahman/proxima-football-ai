@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(
       {
         error:
-          "Supabase server config is missing. Set NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY.",
+          "Database REST config is missing for the selected provider. Set POSTGREST_URL for postgres mode, or NEXT_PUBLIC_SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY for supabase mode.",
       },
       { status: 500 }
     );
