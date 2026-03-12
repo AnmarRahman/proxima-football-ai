@@ -46,6 +46,18 @@ services:
       timeout: 5s
       retries: 5
 
+  sqlite-seed:
+    image: python:3.11-slim
+    working_dir: /repo
+    volumes:
+      - ./:/repo:ro
+      - proxima_sqlite_data:/data
+    command: >-
+      bash -lc "
+      python backend/python/migrate_sqlite.py --sqlite-path /data/proxima.sqlite3 &&
+      python backend/python/import_players_to_sqlite.py --sqlite-path /data/proxima.sqlite3 --players-dir backend/python/data/players
+      "
+
 volumes:
   proxima_postgres_data:
   proxima_sqlite_data:
