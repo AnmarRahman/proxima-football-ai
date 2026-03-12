@@ -1,11 +1,5 @@
 import { isPostgresProvider } from "@/lib/database-provider";
 
-const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
-const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
-
-const POSTGREST_URL = process.env.POSTGREST_URL;
-const POSTGREST_API_KEY = process.env.POSTGREST_API_KEY;
-
 export type SupabaseRestRequestOptions = {
   method?: "GET" | "POST" | "PATCH" | "PUT" | "DELETE";
   params?: Record<string, string>;
@@ -19,12 +13,32 @@ type RestConfig = {
   defaultHeaders: Record<string, string>;
 };
 
+function readEnv(name: string): string {
+  return String(process.env[name] || "").trim();
+}
+
+function getSupabaseUrl(): string {
+  return readEnv("NEXT_PUBLIC_SUPABASE_URL") || readEnv("SUPABASE_URL");
+}
+
+function getSupabaseServiceRoleKey(): string {
+  return readEnv("SUPABASE_SERVICE_ROLE_KEY");
+}
+
+function getPostgrestUrl(): string {
+  return readEnv("POSTGREST_URL");
+}
+
+function getPostgrestApiKey(): string {
+  return readEnv("POSTGREST_API_KEY");
+}
+
 function hasPostgresRestConfig(): boolean {
-  return Boolean(POSTGREST_URL);
+  return Boolean(getPostgrestUrl());
 }
 
 function hasSupabaseConfig(): boolean {
-  return Boolean(SUPABASE_URL && SUPABASE_SERVICE_ROLE_KEY);
+  return Boolean(getSupabaseUrl() && getSupabaseServiceRoleKey());
 }
 
 export function hasSupabaseServerConfig(): boolean {
@@ -33,51 +47,60 @@ export function hasSupabaseServerConfig(): boolean {
 
 export function getSupabaseServerConfig(): { url: string; serviceRoleKey: string } {
   if (isPostgresProvider()) {
-    if (!POSTGREST_URL) {
+    const postgrestUrl = getPostgrestUrl();
+    if (!postgrestUrl) {
       throw new Error("Missing PostgREST server configuration.");
     }
 
     return {
-      url: POSTGREST_URL,
-      serviceRoleKey: POSTGREST_API_KEY || "",
+      url: postgrestUrl,
+      serviceRoleKey: getPostgrestApiKey(),
     };
   }
 
-  if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
+  const supabaseUrl = getSupabaseUrl();
+  const serviceRoleKey = getSupabaseServiceRoleKey();
+
+  if (!supabaseUrl || !serviceRoleKey) {
     throw new Error("Missing Supabase server configuration.");
   }
 
-  return { url: SUPABASE_URL, serviceRoleKey: SUPABASE_SERVICE_ROLE_KEY };
+  return { url: supabaseUrl, serviceRoleKey };
 }
 
 function getRestConfig(): RestConfig {
   if (isPostgresProvider()) {
-    if (!POSTGREST_URL) {
+    const postgrestUrl = getPostgrestUrl();
+    if (!postgrestUrl) {
       throw new Error("Missing PostgREST server configuration. Set POSTGREST_URL.");
     }
 
     const headers: Record<string, string> = {};
-    if (POSTGREST_API_KEY) {
-      headers.Authorization = `Bearer ${POSTGREST_API_KEY}`;
+    const postgrestApiKey = getPostgrestApiKey();
+    if (postgrestApiKey) {
+      headers.Authorization = `Bearer ${postgrestApiKey}`;
     }
 
     return {
-      baseUrl: POSTGREST_URL,
+      baseUrl: postgrestUrl,
       pathPrefix: "",
       defaultHeaders: headers,
     };
   }
 
-  if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
+  const supabaseUrl = getSupabaseUrl();
+  const serviceRoleKey = getSupabaseServiceRoleKey();
+
+  if (!supabaseUrl || !serviceRoleKey) {
     throw new Error("Missing Supabase server configuration.");
   }
 
   return {
-    baseUrl: SUPABASE_URL,
+    baseUrl: supabaseUrl,
     pathPrefix: "/rest/v1",
     defaultHeaders: {
-      apikey: SUPABASE_SERVICE_ROLE_KEY,
-      Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
+      apikey: serviceRoleKey,
+      Authorization: `Bearer ${serviceRoleKey}`,
     },
   };
 }
