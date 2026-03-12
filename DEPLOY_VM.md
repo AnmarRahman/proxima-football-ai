@@ -46,7 +46,8 @@ At minimum set:
 
 - `ADMIN_DASHBOARD_PASSWORD`
 - `ADMIN_SESSION_SECRET`
-- `POSTGRES_PASSWORD`
+- POSTGRES_PASSWORD 
+- POSTGRES_DATA_DIR (example: /home/anmarrahman/docker/proxima-football-ai/proxima_postgres_data)
 
 ## Docker commands on VM
 
@@ -56,3 +57,5 @@ docker compose ps
 docker compose logs -f app
 docker compose logs -f postgrest
 ```
+
+
