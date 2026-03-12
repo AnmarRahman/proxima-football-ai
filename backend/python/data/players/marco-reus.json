@@ -1,0 +1,1113 @@
+{
+    "player": {
+        "id": "marcoreus",
+        "name": "Marco Reus",
+        "birth_date": "1989-05-31",
+        "nationality": "Germany",
+        "height_cm": 180,
+        "weight_kg": 71,
+        "dominant_foot": "Right"
+    },
+    "teams": [
+        {
+            "id": "rwahlen",
+            "name": "Rot Weiss Ahlen",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/6/6b/Rot_Weiss_Ahlen_logo.svg",
+            "country": "Germany"
+        },
+        {
+            "id": "gladbach",
+            "name": "Borussia Mönchengladbach",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Borussia_M%C3%B6nchengladbach_logo.svg",
+            "country": "Germany"
+        },
+        {
+            "id": "bvb",
+            "name": "Borussia Dortmund",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Borussia_Dortmund_logo.svg",
+            "country": "Germany"
+        },
+        {
+            "id": "lagalaxy",
+            "name": "LA Galaxy",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/2/2e/Los_Angeles_Galaxy_logo.svg",
+            "country": "United States"
+        },
+        {
+            "id": "germany",
+            "name": "Germany National Team",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg",
+            "country": "Germany"
+        }
+    ],
+    "seasons": [
+        {
+            "season": 2008,
+            "team_id": "rwahlen",
+            "league_id": "2bundesliga-2008",
+            "appearances": 27,
+            "goals": 4,
+            "assists": 3,
+            "minutes": 2000,
+            "position": "Left Wing",
+            "rating": 6.8,
+            "xG": 4.2,
+            "xA": 3.1,
+            "key_passes": 25,
+            "successful_dribbles": 42,
+            "duels_won": 130,
+            "shots_per_game": 1.4,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 25,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.0,
+                "acceleration": "Very High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW/AM",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Developing"
+            },
+            "psychological_factors": {
+                "consistency": "Emerging",
+                "pressure_handling": "Promising",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter-attacking, direct",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "2. Bundesliga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2009,
+            "team_id": "rwahlen",
+            "league_id": "2bundesliga-2009",
+            "appearances": 27,
+            "goals": 4,
+            "assists": 3,
+            "minutes": 2100,
+            "position": "Left Wing",
+            "rating": 6.9,
+            "xG": 4.5,
+            "xA": 3.4,
+            "key_passes": 28,
+            "successful_dribbles": 48,
+            "duels_won": 140,
+            "shots_per_game": 1.5,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 27,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.2,
+                "acceleration": "Very High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW/SS",
+                "contribution_to_build_up": "Medium",
+                "defensive_transitions": "Developing"
+            },
+            "psychological_factors": {
+                "consistency": "Improving",
+                "pressure_handling": "Promising",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "rwahlen",
+                    "to": "gladbach",
+                    "transfer_fee": "€1M",
+                    "date": "2009-07-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Counter-attacking",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "2. Bundesliga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2010,
+            "team_id": "gladbach",
+            "league_id": "bundesliga-2010",
+            "appearances": 33,
+            "goals": 8,
+            "assists": 4,
+            "minutes": 2600,
+            "position": "Left Wing",
+            "rating": 7.1,
+            "xG": 8.2,
+            "xA": 5.0,
+            "key_passes": 40,
+            "successful_dribbles": 62,
+            "duels_won": 190,
+            "shots_per_game": 2.1,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 38,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.5,
+                "acceleration": "Very High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "LW/AM",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Developing",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Wing-focused, transition play",
+                "teammate_quality": "Moderate",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2011,
+            "team_id": "gladbach",
+            "league_id": "bundesliga-2011",
+            "appearances": 38,
+            "goals": 13,
+            "assists": 8,
+            "minutes": 3100,
+            "position": "Attacking Midfield",
+            "rating": 7.5,
+            "xG": 13.5,
+            "xA": 7.5,
+            "key_passes": 55,
+            "successful_dribbles": 80,
+            "duels_won": 220,
+            "shots_per_game": 2.4,
+            "tackles_per_game": 1.1,
+            "fouls_drawn": 45,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.8,
+                "acceleration": "Very High",
+                "stamina": "Very Good",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "AM/LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Compact defense, fast breaks",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "germany",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 3,
+                    "goals": 0,
+                    "assists": 1,
+                    "minutes": 180,
+                    "position": "LW/AM",
+                    "rating": 6.8
+                }
+            ]
+        },
+        {
+            "season": 2012,
+            "team_id": "gladbach",
+            "league_id": "bundesliga-2012",
+            "appearances": 37,
+            "goals": 21,
+            "assists": 11,
+            "minutes": 3200,
+            "position": "Attacking Midfield",
+            "rating": 8.0,
+            "xG": 20.0,
+            "xA": 9.5,
+            "key_passes": 70,
+            "successful_dribbles": 95,
+            "duels_won": 240,
+            "shots_per_game": 3.0,
+            "tackles_per_game": 1.2,
+            "fouls_drawn": 52,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.0,
+                "acceleration": "Very High",
+                "stamina": "Very Good",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "AM/LW",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [
+                {
+                    "from": "gladbach",
+                    "to": "bvb",
+                    "transfer_fee": "€17M",
+                    "date": "2012-07-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "High pressing, transition attacks",
+                "teammate_quality": "Good",
+                "league_competitiveness": "Bundesliga"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "germany",
+                    "competition": "UEFA Euro 2012",
+                    "appearances": 5,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 300,
+                    "position": "LW/AM",
+                    "rating": 7.8
+                },
+                {
+                    "team_id": "germany",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 5,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 350,
+                    "position": "LW/AM",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2013,
+            "team_id": "bvb",
+            "league_id": "bundesliga-2013",
+            "appearances": 49,
+            "goals": 19,
+            "assists": 16,
+            "minutes": 3900,
+            "position": "Attacking Midfield",
+            "rating": 8.1,
+            "xG": 18.0,
+            "xA": 14.5,
+            "key_passes": 92,
+            "successful_dribbles": 105,
+            "duels_won": 280,
+            "shots_per_game": 2.9,
+            "tackles_per_game": 1.3,
+            "fouls_drawn": 60,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 33.1,
+                "acceleration": "Very High",
+                "stamina": "Very Good",
+                "recovery_rate": "Very Good"
+            },
+            "tactical_data": {
+                "average_position": "AM/LW",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Klopp high pressing and vertical play",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Bundesliga/UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "germany",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 6,
+                    "goals": 2,
+                    "assists": 2,
+                    "minutes": 450,
+                    "position": "LW/AM",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2014,
+            "team_id": "bvb",
+            "league_id": "bundesliga-2014",
+            "appearances": 32,
+            "goals": 11,
+            "assists": 8,
+            "minutes": 2700,
+            "position": "Attacking Midfield",
+            "rating": 7.7,
+            "xG": 11.5,
+            "xA": 8.5,
+            "key_passes": 70,
+            "successful_dribbles": 90,
+            "duels_won": 230,
+            "shots_per_game": 2.7,
+            "tackles_per_game": 1.2,
+            "fouls_drawn": 52,
+            "injuries": [
+                {
+                    "type": "Ankle ligament injury",
+                    "start_date": "2014-06-06",
+                    "end_date": "2014-09-20",
+                    "days_lost": 106
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.8,
+                "acceleration": "Very High",
+                "stamina": "Very Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "AM/LW",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "High pressing, compact block",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Bundesliga/UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "germany",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 4,
+                    "goals": 0,
+                    "assists": 1,
+                    "minutes": 250,
+                    "position": "LW/AM",
+                    "rating": 7.0
+                }
+            ]
+        },
+        {
+            "season": 2015,
+            "team_id": "bvb",
+            "league_id": "bundesliga-2015",
+            "appearances": 43,
+            "goals": 23,
+            "assists": 7,
+            "minutes": 3500,
+            "position": "Attacking Midfield",
+            "rating": 8.0,
+            "xG": 21.0,
+            "xA": 7.0,
+            "key_passes": 76,
+            "successful_dribbles": 98,
+            "duels_won": 260,
+            "shots_per_game": 3.1,
+            "tackles_per_game": 1.1,
+            "fouls_drawn": 55,
+            "injuries": [
+                {
+                    "type": "Ankle injury",
+                    "start_date": "2015-02-01",
+                    "end_date": "2015-03-01",
+                    "days_lost": 28
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.7,
+                "acceleration": "Very High",
+                "stamina": "Very Good",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "AM/LW",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking, possession and counter",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Bundesliga/Europa League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "germany",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 4,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 270,
+                    "position": "LW/AM",
+                    "rating": 7.5
+                }
+            ]
+        },
+        {
+            "season": 2016,
+            "team_id": "bvb",
+            "league_id": "bundesliga-2016",
+            "appearances": 32,
+            "goals": 12,
+            "assists": 8,
+            "minutes": 2600,
+            "position": "Attacking Midfield",
+            "rating": 7.6,
+            "xG": 11.8,
+            "xA": 8.1,
+            "key_passes": 72,
+            "successful_dribbles": 88,
+            "duels_won": 220,
+            "shots_per_game": 2.6,
+            "tackles_per_game": 1.1,
+            "fouls_drawn": 47,
+            "injuries": [
+                {
+                    "type": "Groin injury",
+                    "start_date": "2016-05-21",
+                    "end_date": "2016-09-10",
+                    "days_lost": 112
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 32.1,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "AM/LW",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    "Tuchel tactical shift"
+                ],
+                "team_tactics": "High possession, flexible front three",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Bundesliga/Europa League"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "germany",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 2,
+                    "goals": 0,
+                    "assists": 1,
+                    "minutes": 120,
+                    "position": "AM",
+                    "rating": 7.1
+                }
+            ]
+        },
+        {
+            "season": 2017,
+            "team_id": "bvb",
+            "league_id": "bundesliga-2017",
+            "appearances": 20,
+            "goals": 7,
+            "assists": 3,
+            "minutes": 1500,
+            "position": "Attacking Midfield",
+            "rating": 7.2,
+            "xG": 7.0,
+            "xA": 3.5,
+            "key_passes": 45,
+            "successful_dribbles": 60,
+            "duels_won": 150,
+            "shots_per_game": 2.4,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 35,
+            "injuries": [
+                {
+                    "type": "Cruciate ligament injury",
+                    "start_date": "2017-05-27",
+                    "end_date": "2018-02-10",
+                    "days_lost": 259
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.5,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Reduced"
+            },
+            "tactical_data": {
+                "average_position": "AM/LW",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Variable",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [
+                    "Multiple coaching changes"
+                ],
+                "team_tactics": "Transition between systems",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Bundesliga/UCL"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2018,
+            "team_id": "bvb",
+            "league_id": "bundesliga-2018",
+            "appearances": 36,
+            "goals": 21,
+            "assists": 10,
+            "minutes": 3100,
+            "position": "Attacking Midfield",
+            "rating": 8.2,
+            "xG": 19.5,
+            "xA": 9.2,
+            "key_passes": 85,
+            "successful_dribbles": 92,
+            "duels_won": 260,
+            "shots_per_game": 3.0,
+            "tackles_per_game": 1.1,
+            "fouls_drawn": 55,
+            "injuries": [
+                {
+                    "type": "Minor muscle injury",
+                    "start_date": "2018-03-01",
+                    "end_date": "2018-03-18",
+                    "days_lost": 17
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.8,
+                "acceleration": "High",
+                "stamina": "Very Good",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "AM/SS",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "High"
+            },
+            "psychological_factors": {
+                "consistency": "Very Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking, fluid front four",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Bundesliga/UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "germany",
+                    "competition": "FIFA World Cup 2018",
+                    "appearances": 3,
+                    "goals": 1,
+                    "assists": 1,
+                    "minutes": 240,
+                    "position": "LW/AM",
+                    "rating": 7.2
+                },
+                {
+                    "team_id": "germany",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 5,
+                    "goals": 0,
+                    "assists": 1,
+                    "minutes": 280,
+                    "position": "AM",
+                    "rating": 7.0
+                }
+            ]
+        },
+        {
+            "season": 2019,
+            "team_id": "bvb",
+            "league_id": "bundesliga-2019",
+            "appearances": 39,
+            "goals": 17,
+            "assists": 11,
+            "minutes": 3200,
+            "position": "Attacking Midfield",
+            "rating": 7.9,
+            "xG": 16.0,
+            "xA": 10.2,
+            "key_passes": 88,
+            "successful_dribbles": 90,
+            "duels_won": 250,
+            "shots_per_game": 2.8,
+            "tackles_per_game": 1.2,
+            "fouls_drawn": 50,
+            "injuries": [
+                {
+                    "type": "Ankle problems",
+                    "start_date": "2019-02-05",
+                    "end_date": "2019-03-10",
+                    "days_lost": 33
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 31.4,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "AM/SS",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking 4-2-3-1",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Bundesliga/UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "germany",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 7,
+                    "goals": 3,
+                    "assists": 2,
+                    "minutes": 480,
+                    "position": "AM",
+                    "rating": 7.6
+                }
+            ]
+        },
+        {
+            "season": 2020,
+            "team_id": "bvb",
+            "league_id": "bundesliga-2020",
+            "appearances": 19,
+            "goals": 5,
+            "assists": 4,
+            "minutes": 1400,
+            "position": "Attacking Midfield",
+            "rating": 7.1,
+            "xG": 5.4,
+            "xA": 4.0,
+            "key_passes": 50,
+            "successful_dribbles": 55,
+            "duels_won": 160,
+            "shots_per_game": 2.2,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 30,
+            "injuries": [
+                {
+                    "type": "Adductor injury",
+                    "start_date": "2020-02-05",
+                    "end_date": "2020-05-31",
+                    "days_lost": 116
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.8,
+                "acceleration": "High",
+                "stamina": "Good",
+                "recovery_rate": "Reduced"
+            },
+            "tactical_data": {
+                "average_position": "AM",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Variable",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Possession and counter mix",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Bundesliga/UCL (Covid-19 season)"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2021,
+            "team_id": "bvb",
+            "league_id": "bundesliga-2021",
+            "appearances": 49,
+            "goals": 11,
+            "assists": 12,
+            "minutes": 3336,
+            "position": "Attacking Midfield",
+            "rating": 7.6,
+            "xG": 10.5,
+            "xA": 11.0,
+            "key_passes": 95,
+            "successful_dribbles": 80,
+            "duels_won": 260,
+            "shots_per_game": 2.3,
+            "tackles_per_game": 1.2,
+            "fouls_drawn": 45,
+            "injuries": [
+                {
+                    "type": "Minor knee issues",
+                    "start_date": "2021-10-10",
+                    "end_date": "2021-10-25",
+                    "days_lost": 15
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 30.4,
+                "acceleration": "Good",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "AM/LW",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Frequent"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking 4-2-3-1/4-3-3",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Bundesliga/UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "germany",
+                    "competition": "UEFA Euro 2020 (played 2021) & Friendlies",
+                    "appearances": 4,
+                    "goals": 2,
+                    "assists": 1,
+                    "minutes": 260,
+                    "position": "AM/LW",
+                    "rating": 7.4
+                }
+            ]
+        },
+        {
+            "season": 2022,
+            "team_id": "bvb",
+            "league_id": "bundesliga-2022",
+            "appearances": 31,
+            "goals": 9,
+            "assists": 9,
+            "minutes": 2500,
+            "position": "Attacking Midfield",
+            "rating": 7.4,
+            "xG": 8.8,
+            "xA": 8.5,
+            "key_passes": 80,
+            "successful_dribbles": 70,
+            "duels_won": 220,
+            "shots_per_game": 2.1,
+            "tackles_per_game": 1.1,
+            "fouls_drawn": 40,
+            "injuries": [
+                {
+                    "type": "Ankle injury",
+                    "start_date": "2022-09-17",
+                    "end_date": "2022-11-01",
+                    "days_lost": 45
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.9,
+                "acceleration": "Good",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "AM",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Possession-focused, structured attack",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Bundesliga/UCL"
+            },
+            "national_team_stats": [
+                {
+                    "team_id": "germany",
+                    "competition": "Qualifiers & Friendlies",
+                    "appearances": 4,
+                    "goals": 0,
+                    "assists": 1,
+                    "minutes": 260,
+                    "position": "AM",
+                    "rating": 7.0
+                }
+            ]
+        },
+        {
+            "season": 2023,
+            "team_id": "bvb",
+            "league_id": "bundesliga-2023",
+            "appearances": 31,
+            "goals": 8,
+            "assists": 6,
+            "minutes": 2300,
+            "position": "Attacking Midfield",
+            "rating": 7.2,
+            "xG": 7.6,
+            "xA": 6.2,
+            "key_passes": 70,
+            "successful_dribbles": 60,
+            "duels_won": 200,
+            "shots_per_game": 2.0,
+            "tackles_per_game": 1.0,
+            "fouls_drawn": 35,
+            "injuries": [
+                {
+                    "type": "Muscle fatigue",
+                    "start_date": "2023-03-10",
+                    "end_date": "2023-03-25",
+                    "days_lost": 15
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 29.4,
+                "acceleration": "Good",
+                "stamina": "Good",
+                "recovery_rate": "Normal"
+            },
+            "tactical_data": {
+                "average_position": "AM/SS",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [
+                {
+                    "from": "bvb",
+                    "to": "lagalaxy",
+                    "transfer_fee": "Free",
+                    "date": "2024-07-01"
+                }
+            ],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Attacking 4-2-3-1/4-1-4-1",
+                "teammate_quality": "Very Good",
+                "league_competitiveness": "Bundesliga/UCL"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2024,
+            "team_id": "lagalaxy",
+            "league_id": "mls-2024",
+            "appearances": 11,
+            "goals": 1,
+            "assists": 1,
+            "minutes": 800,
+            "position": "Attacking Midfield",
+            "rating": 6.9,
+            "xG": 1.5,
+            "xA": 1.6,
+            "key_passes": 18,
+            "successful_dribbles": 20,
+            "duels_won": 80,
+            "shots_per_game": 1.5,
+            "tackles_per_game": 0.8,
+            "fouls_drawn": 18,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 28.5,
+                "acceleration": "Good",
+                "stamina": "Good",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "AM",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Possession-oriented MLS style",
+                "teammate_quality": "Good",
+                "league_competitiveness": "MLS"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2025,
+            "team_id": "lagalaxy",
+            "league_id": "mls-2025",
+            "appearances": 28,
+            "goals": 5,
+            "assists": 8,
+            "minutes": 2044,
+            "position": "Attacking Midfield",
+            "rating": 7.1,
+            "xG": 3.9,
+            "xA": 4.5,
+            "key_passes": 47,
+            "successful_dribbles": 55,
+            "duels_won": 190,
+            "shots_per_game": 1.3,
+            "tackles_per_game": 0.9,
+            "fouls_drawn": 30,
+            "injuries": [
+                {
+                    "type": "Minor muscle strain",
+                    "start_date": "2025-06-10",
+                    "end_date": "2025-06-25",
+                    "days_lost": 15
+                }
+            ],
+            "physical_metrics": {
+                "sprint_speed_kmh": 28.0,
+                "acceleration": "Good",
+                "stamina": "Good",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "AM/CM",
+                "contribution_to_build_up": "Very High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Good",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Playmaking hub, structured attack",
+                "teammate_quality": "Good",
+                "league_competitiveness": "MLS/Leagues Cup"
+            },
+            "national_team_stats": []
+        },
+        {
+            "season": 2026,
+            "team_id": "lagalaxy",
+            "league_id": "mls-2026",
+            "appearances": 4,
+            "goals": 0,
+            "assists": 1,
+            "minutes": 162,
+            "position": "Attacking Midfield",
+            "rating": 6.9,
+            "xG": 0.3,
+            "xA": 0.6,
+            "key_passes": 8,
+            "successful_dribbles": 10,
+            "duels_won": 25,
+            "shots_per_game": 1.0,
+            "tackles_per_game": 0.7,
+            "fouls_drawn": 6,
+            "injuries": [],
+            "physical_metrics": {
+                "sprint_speed_kmh": 27.5,
+                "acceleration": "Adequate",
+                "stamina": "Good",
+                "recovery_rate": "Good"
+            },
+            "tactical_data": {
+                "average_position": "AM",
+                "contribution_to_build_up": "High",
+                "defensive_transitions": "Medium"
+            },
+            "psychological_factors": {
+                "consistency": "Stable",
+                "pressure_handling": "Very Good",
+                "clutch_performance": "Occasional"
+            },
+            "transfer_history": [],
+            "external_factors": {
+                "manager_changes": [],
+                "team_tactics": "Early-season MLS, controlled possession",
+                "teammate_quality": "Good",
+                "league_competitiveness": "MLS"
+            },
+            "national_team_stats": []
+        }
+    ]
+}
