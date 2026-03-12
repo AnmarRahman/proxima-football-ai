@@ -34,7 +34,8 @@ jobs:
       - name: Apply migrations
         run: python backend/python/migrate_db.py
 
-      - name: Import player JSONs into DB
+      - name: Import player JSONs into DB (optional bootstrap)
+        if: ${{ vars.IMPORT_PLAYERS_FROM_REPO == 'true' }}
         run: python backend/python/import_players_to_db.py
 
       - name: Generate and store predictions
