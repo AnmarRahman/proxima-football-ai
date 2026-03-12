@@ -1,0 +1,51 @@
+services:
+  app:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: proxima-app
+    restart: unless-stopped
+    ports:
+      - "4040:4040"
+    environment:
+      NODE_ENV: production
+      PORT: 4040
+      HOSTNAME: 0.0.0.0
+      DATABASE_PROVIDER: ${DATABASE_PROVIDER:-sqlite}
+      SQLITE_DATABASE_PATH: ${SQLITE_DATABASE_PATH:-/app/data/proxima.sqlite3}
+      NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL:-}
+      SUPABASE_SERVICE_ROLE_KEY: ${SUPABASE_SERVICE_ROLE_KEY:-}
+      ADMIN_DASHBOARD_PASSWORD: ${ADMIN_DASHBOARD_PASSWORD:-change-me}
+      ADMIN_SESSION_SECRET: ${ADMIN_SESSION_SECRET:-change-me}
+      GITHUB_ACTIONS_TOKEN: ${GITHUB_ACTIONS_TOKEN:-}
+      GITHUB_REPO_OWNER: ${GITHUB_REPO_OWNER:-}
+      GITHUB_REPO_NAME: ${GITHUB_REPO_NAME:-}
+      GITHUB_WORKFLOW_ID: ${GITHUB_WORKFLOW_ID:-weekly-predictions.yml}
+      GITHUB_WORKFLOW_REF: ${GITHUB_WORKFLOW_REF:-main}
+    volumes:
+      - proxima_sqlite_data:/app/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: proxima-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-proxima}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-proxima_password}
+      POSTGRES_DB: ${POSTGRES_DB:-proxima_ai}
+    ports:
+      - "5432:5432"
+    volumes:
+      - proxima_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-proxima} -d ${POSTGRES_DB:-proxima_ai}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  proxima_postgres_data:
+  proxima_sqlite_data:
