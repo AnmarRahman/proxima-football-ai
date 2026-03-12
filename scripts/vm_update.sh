@@ -9,7 +9,6 @@ if [ ! -f .env ]; then
   echo "Created $APP_DIR/.env from .env.docker.example. Edit it before production use."
 fi
 
-# Force VM deployments to use Dockerized Postgres + PostgREST (no SQLite runtime).
 if grep -q '^DATABASE_PROVIDER=' .env; then
   sed -i 's/^DATABASE_PROVIDER=.*/DATABASE_PROVIDER=postgres/' .env
 else
@@ -20,7 +19,6 @@ if ! grep -q '^POSTGREST_URL=' .env; then
   echo 'POSTGREST_URL=http://postgrest:3000' >> .env
 fi
 
-sed -i '/^SQLITE_DATABASE_PATH=/d' .env
 
 echo "Updating images and rebuilding app..."
 docker compose pull postgres postgrest || true

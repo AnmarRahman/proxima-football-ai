@@ -6,7 +6,4 @@
 **/__pycache__/
 *.py[cod]
 
-# Local SQLite files
-*.sqlite
-*.sqlite3
 *.db

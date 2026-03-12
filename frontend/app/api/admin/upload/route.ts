@@ -1,7 +1,6 @@
-import { getDatabaseProvider, isSQLiteProvider } from "@/lib/database-provider";
+import { getDatabaseProvider } from "@/lib/database-provider";
 import { hasAdminAuthConfig, isAdminAuthenticated } from "@/lib/admin-auth";
 import { importPlayerDocument } from "@/lib/player-json-import";
-import { importPlayerDocumentToSqlite } from "@/lib/player-json-import-sqlite";
 import { hasSupabaseServerConfig } from "@/lib/supabase-rest";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -43,7 +42,7 @@ export async function POST(request: NextRequest) {
 
   const provider = getDatabaseProvider();
 
-  if (!isSQLiteProvider() && !hasSupabaseServerConfig()) {
+  if (!hasSupabaseServerConfig()) {
     return NextResponse.json(
       {
         error:
@@ -69,9 +68,7 @@ export async function POST(request: NextRequest) {
       const raw = (await file.text()).replace(/^\uFEFF/, "");
       const parsed = JSON.parse(raw);
 
-      const result = isSQLiteProvider()
-        ? importPlayerDocumentToSqlite(parsed, { overAgeThreshold })
-        : await importPlayerDocument(parsed, { overAgeThreshold });
+      const result = await importPlayerDocument(parsed, { overAgeThreshold });
 
       successes.push({
         file: file.name,

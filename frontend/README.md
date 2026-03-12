@@ -1,10 +1,9 @@
 # Frontend
 
-This Next.js app supports three database providers:
+This Next.js app supports two database providers:
 
 - `postgres` (recommended for self-hosted Docker: via PostgREST)
 - `supabase`
-- `sqlite` (local/dev only)
 
 Provider is selected with `DATABASE_PROVIDER`.
 
@@ -30,15 +29,13 @@ Server routes:
 - `POST /api/admin/upload`
 - `POST /api/admin/trigger`
 
-In SQLite mode, `/api/admin/trigger` is intentionally disabled.
-
 ## Environment variables
 
 Copy `.env.example` to `.env.local` and fill values.
 
 Core:
 
-- `DATABASE_PROVIDER` -> `postgres`, `supabase`, or `sqlite`
+- `DATABASE_PROVIDER` -> `postgres` or `supabase`
 - `ADMIN_DASHBOARD_PASSWORD`
 - `ADMIN_SESSION_SECRET`
 
@@ -46,10 +43,6 @@ Postgres mode:
 
 - `POSTGREST_URL`
 - `POSTGREST_API_KEY` (optional)
-
-SQLite mode:
-
-- `SQLITE_DATABASE_PATH`
 
 Supabase mode:
 

@@ -1,6 +1,5 @@
-import { getDatabaseProvider, isSQLiteProvider } from "@/lib/database-provider";
+import { getDatabaseProvider } from "@/lib/database-provider";
 import { hasSupabaseServerConfig, supabaseRestGet } from "@/lib/supabase-rest";
-import { sqliteGet } from "@/lib/sqlite-db";
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { NextResponse } from "next/server";
@@ -49,82 +48,6 @@ export async function GET(
     return NextResponse.json({ error: "Invalid player id" }, { status: 400 });
   }
 
-  if (isSQLiteProvider()) {
-    try {
-      const prediction = sqliteGet<{
-        run_id: string;
-        predicted_at: string;
-        horizon_seasons: number;
-        prediction_json: unknown;
-        confidence_score: number | null;
-        player_name: string | null;
-      }>(
-        `
-        select
-          pp.run_id,
-          pp.predicted_at,
-          pp.horizon_seasons,
-          pp.prediction_json,
-          pp.confidence_score,
-          p.name as player_name
-        from player_predictions pp
-        join prediction_runs pr on pr.id = pp.run_id and pr.status = 'success'
-        left join players p on p.id = pp.player_id
-        where pp.player_id = ?
-        order by pp.predicted_at desc, pp.id desc
-        limit 1
-        `,
-        [playerId]
-      );
-
-      if (!prediction) {
-        const fallback = await readLocalFallbackPrediction(playerId);
-        if (!fallback) {
-          return NextResponse.json({ error: "Prediction not found" }, { status: 404 });
-        }
-
-        return NextResponse.json({
-          player: { id: playerId, name: playerId },
-          stats: fallback,
-          source: "fallback",
-          provider,
-        });
-      }
-
-      return NextResponse.json({
-        player: {
-          id: playerId,
-          name: prediction.player_name || playerId,
-        },
-        stats: parsePredictionJson(prediction.prediction_json),
-        meta: {
-          run_id: prediction.run_id,
-          predicted_at: prediction.predicted_at,
-          horizon_seasons: prediction.horizon_seasons,
-          confidence_score: prediction.confidence_score,
-        },
-        source: "sqlite",
-        provider,
-      });
-    } catch (error: any) {
-      const fallback = await readLocalFallbackPrediction(playerId);
-      if (fallback) {
-        return NextResponse.json({
-          player: { id: playerId, name: playerId },
-          stats: fallback,
-          source: "fallback",
-          provider,
-          error: error?.message || "SQLite query failed",
-        });
-      }
-
-      return NextResponse.json(
-        { error: error?.message || "Failed to fetch prediction" },
-        { status: 500 }
-      );
-    }
-  }
-
   if (!hasSupabaseServerConfig()) {
     const fallback = await readLocalFallbackPrediction(playerId);
     if (!fallback) {
@@ -170,16 +93,12 @@ export async function GET(
       });
     }
 
-    const stats = Array.isArray(prediction.prediction_json)
-      ? prediction.prediction_json
-      : [];
-
     return NextResponse.json({
       player: {
         id: playerId,
         name: player?.name || playerId,
       },
-      stats,
+      stats: parsePredictionJson(prediction.prediction_json),
       meta: {
         run_id: prediction.run_id,
         predicted_at: prediction.predicted_at,
