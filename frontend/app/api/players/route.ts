@@ -2,6 +2,9 @@ import { getDatabaseProvider } from "@/lib/database-provider";
 import { hasSupabaseServerConfig, supabaseRestGet } from "@/lib/supabase-rest";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 const FALLBACK_PLAYERS = [
   { id: "mbappe", name: "Kylian Mbappe" },
   { id: "haaland", name: "Erling Haaland" },
@@ -43,3 +46,6 @@ export async function GET() {
     );
   }
 }
+
+
+

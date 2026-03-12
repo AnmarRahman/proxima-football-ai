@@ -4,6 +4,9 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 function sanitizePlayerId(raw: string): string | null {
   const clean = String(raw || "").trim().toLowerCase();
   if (!/^[a-z0-9-]+$/.test(clean)) {
@@ -126,3 +129,6 @@ export async function GET(
     );
   }
 }
+
+
+
