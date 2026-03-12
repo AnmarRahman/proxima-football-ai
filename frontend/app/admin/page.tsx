@@ -5,6 +5,7 @@ import { FormEvent, useEffect, useMemo, useState } from "react";
 type SessionResponse = {
   authenticated: boolean;
   configured: boolean;
+  provider?: string;
 };
 
 type UploadResult = {
@@ -16,6 +17,7 @@ type UploadResult = {
 
 type UploadResponse = {
   ok: boolean;
+  provider?: string;
   overAgeThreshold: number;
   totals: {
     filesReceived: number;
@@ -31,6 +33,7 @@ export default function AdminPage() {
   const [loadingSession, setLoadingSession] = useState(true);
   const [configured, setConfigured] = useState(true);
   const [authenticated, setAuthenticated] = useState(false);
+  const [provider, setProvider] = useState("supabase");
 
   const [password, setPassword] = useState("");
   const [loginError, setLoginError] = useState<string | null>(null);
@@ -63,9 +66,11 @@ export default function AdminPage() {
       const data = (await res.json()) as SessionResponse;
       setConfigured(Boolean(data.configured));
       setAuthenticated(Boolean(data.authenticated));
+      setProvider(String(data.provider || "supabase"));
     } catch {
       setConfigured(false);
       setAuthenticated(false);
+      setProvider("unknown");
     } finally {
       setLoadingSession(false);
     }
@@ -254,6 +259,7 @@ export default function AdminPage() {
         <div>
           <h1 className="text-3xl font-bold text-[#D4AF37]">Admin Dashboard</h1>
           <p className="mt-2 text-sm text-gray-300">Manage player data and manually trigger prediction runs.</p>
+          <p className="mt-1 text-xs text-gray-400">Database provider: {provider}</p>
         </div>
         <button
           onClick={handleLogout}
@@ -306,7 +312,7 @@ export default function AdminPage() {
             disabled={uploading}
             className="rounded-md bg-[#D4AF37] px-4 py-2 font-semibold text-black disabled:opacity-60"
           >
-            {uploading ? "Uploading..." : "Upload to Supabase"}
+            {uploading ? "Uploading..." : "Upload to Database"}
           </button>
         </form>
 
@@ -330,6 +336,15 @@ export default function AdminPage() {
         ) : null}
       </section>
 
+      {provider === "sqlite" ? (
+        <section className="mt-8 rounded-xl border border-[#2A2A2A] bg-[#0B0B0B] p-6">
+          <h2 className="text-xl font-semibold text-[#D4AF37]">SQLite Mode Note</h2>
+          <p className="mt-2 text-sm text-gray-300">
+            In SQLite mode, run predictions locally with backend scripts. Dashboard-triggered GitHub runs are disabled.
+          </p>
+        </section>
+      ) : null}
+
       <section className="mt-8 rounded-xl border border-[#2A2A2A] bg-[#0B0B0B] p-6">
         <h2 className="text-xl font-semibold text-[#D4AF37]">Run Predictions Now</h2>
         <p className="mt-2 text-sm text-gray-300">
@@ -339,7 +354,7 @@ export default function AdminPage() {
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <button
             onClick={handleTriggerWorkflow}
-            disabled={triggering}
+            disabled={triggering || provider === "sqlite"}
             className="rounded-md bg-[#D4AF37] px-4 py-2 font-semibold text-black disabled:opacity-60"
           >
             {triggering ? "Triggering..." : "Trigger GitHub Action"}
@@ -352,4 +367,3 @@ export default function AdminPage() {
     </main>
   );
 }
-

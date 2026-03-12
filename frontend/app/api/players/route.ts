@@ -1,4 +1,6 @@
+import { getDatabaseProvider, isSQLiteProvider } from "@/lib/database-provider";
 import { hasSupabaseServerConfig, supabaseRestGet } from "@/lib/supabase-rest";
+import { sqliteAll } from "@/lib/sqlite-db";
 import { NextResponse } from "next/server";
 
 const FALLBACK_PLAYERS = [
@@ -10,8 +12,41 @@ const FALLBACK_PLAYERS = [
 ];
 
 export async function GET() {
+  const provider = getDatabaseProvider();
+
+  if (isSQLiteProvider()) {
+    try {
+      const rows = sqliteAll<{ id: string; name: string }>(
+        `
+        select id, name
+        from players
+        where coalesce(is_retired, 0) = 0
+          and coalesce(over_35, 0) = 0
+        order by name asc
+        `
+      );
+
+      const players = (rows || []).map((row) => ({
+        id: String(row.id),
+        name: String(row.name),
+      }));
+
+      return NextResponse.json({ players, source: "sqlite", provider });
+    } catch (error: any) {
+      return NextResponse.json(
+        {
+          players: FALLBACK_PLAYERS,
+          source: "fallback",
+          provider,
+          error: error?.message || "Failed to query SQLite",
+        },
+        { status: 200 }
+      );
+    }
+  }
+
   if (!hasSupabaseServerConfig()) {
-    return NextResponse.json({ players: FALLBACK_PLAYERS, source: "fallback" });
+    return NextResponse.json({ players: FALLBACK_PLAYERS, source: "fallback", provider });
   }
 
   try {
@@ -27,12 +62,13 @@ export async function GET() {
       name: String(row.name),
     }));
 
-    return NextResponse.json({ players, source: "database" });
+    return NextResponse.json({ players, source: "database", provider });
   } catch (error: any) {
     return NextResponse.json(
       {
         players: FALLBACK_PLAYERS,
         source: "fallback",
+        provider,
         error: error?.message || "Failed to query Supabase",
       },
       { status: 200 }

@@ -1,20 +1,27 @@
 # Frontend
 
-This Next.js app reads prediction data through API routes:
+This Next.js app supports two database providers:
 
-- `GET /api/players` -> active and under-threshold player list from Supabase (`players` table)
-- `GET /api/predictions/:playerId` -> latest prediction from `latest_player_predictions` view
+- `supabase` (default)
+- `sqlite` (local/dev)
 
-If Supabase env vars are missing or query fails, routes fall back to local JSON in `public/data/predictions` when available.
+Provider is selected with `DATABASE_PROVIDER`.
+
+## API behavior
+
+- `GET /api/players` -> active and under-threshold player list from configured provider
+- `GET /api/predictions/:playerId` -> latest prediction from configured provider
+
+If query fails, routes fall back to local JSON in `public/data/predictions` when available.
 
 ## Admin dashboard
 
 `/admin` provides a password-protected dashboard to:
 
-- upload player JSON files to Supabase
-- manually dispatch the GitHub workflow (`weekly-predictions.yml` by default)
+- upload player JSON files to the configured provider
+- trigger GitHub workflow (Supabase mode only)
 
-Server routes used by the admin dashboard:
+Server routes:
 
 - `POST /api/admin/login`
 - `POST /api/admin/logout`
@@ -22,20 +29,29 @@ Server routes used by the admin dashboard:
 - `POST /api/admin/upload`
 - `POST /api/admin/trigger`
 
+In SQLite mode, `/api/admin/trigger` is intentionally disabled.
+
 ## Environment variables
 
-Copy `.env.example` to `.env.local` and fill values:
+Copy `.env.example` to `.env.local` and fill values.
+
+Core:
+
+- `DATABASE_PROVIDER` -> `supabase` or `sqlite`
+- `SQLITE_DATABASE_PATH` (needed for sqlite mode)
+- `ADMIN_DASHBOARD_PASSWORD`
+- `ADMIN_SESSION_SECRET`
+
+Supabase mode:
 
 - `NEXT_PUBLIC_SUPABASE_URL`
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY` (optional for current server-routed setup)
-- `SUPABASE_SERVICE_ROLE_KEY` (required for server API routes)
-- `ADMIN_DASHBOARD_PASSWORD` (required for `/admin`)
-- `ADMIN_SESSION_SECRET` (required for `/admin`)
-- `GITHUB_ACTIONS_TOKEN` (required for manual workflow dispatch)
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY` (optional)
+- `SUPABASE_SERVICE_ROLE_KEY`
+- `GITHUB_ACTIONS_TOKEN`
 - `GITHUB_REPO_OWNER`
 - `GITHUB_REPO_NAME`
-- `GITHUB_WORKFLOW_ID` (defaults to `weekly-predictions.yml`)
-- `GITHUB_WORKFLOW_REF` (defaults to `main`)
+- `GITHUB_WORKFLOW_ID`
+- `GITHUB_WORKFLOW_REF`
 
 ## Run locally
 

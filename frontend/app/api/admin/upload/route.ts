@@ -1,5 +1,7 @@
+import { getDatabaseProvider, isSQLiteProvider } from "@/lib/database-provider";
 import { hasAdminAuthConfig, isAdminAuthenticated } from "@/lib/admin-auth";
 import { importPlayerDocument } from "@/lib/player-json-import";
+import { importPlayerDocumentToSqlite } from "@/lib/player-json-import-sqlite";
 import { hasSupabaseServerConfig } from "@/lib/supabase-rest";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -39,9 +41,14 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  if (!hasSupabaseServerConfig()) {
+  const provider = getDatabaseProvider();
+
+  if (!isSQLiteProvider() && !hasSupabaseServerConfig()) {
     return NextResponse.json(
-      { error: "Supabase server config is missing. Set NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY." },
+      {
+        error:
+          "Supabase server config is missing. Set NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY.",
+      },
       { status: 500 }
     );
   }
@@ -61,7 +68,10 @@ export async function POST(request: NextRequest) {
     try {
       const raw = (await file.text()).replace(/^\uFEFF/, "");
       const parsed = JSON.parse(raw);
-      const result = await importPlayerDocument(parsed, { overAgeThreshold });
+
+      const result = isSQLiteProvider()
+        ? importPlayerDocumentToSqlite(parsed, { overAgeThreshold })
+        : await importPlayerDocument(parsed, { overAgeThreshold });
 
       successes.push({
         file: file.name,
@@ -78,6 +88,7 @@ export async function POST(request: NextRequest) {
 
   return NextResponse.json({
     ok: failures.length === 0,
+    provider,
     overAgeThreshold,
     totals: {
       filesReceived: files.length,

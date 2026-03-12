@@ -1,43 +1,60 @@
 # Backend
 
-This backend now supports two modes for prediction data flow:
+Backend now supports two DB paths:
 
-1. `files` mode (legacy): read player JSON files and write prediction JSON files.
-2. `db` mode (new): read player data from Postgres and write predictions to Postgres.
+1. Postgres (`*_to_db.py`, `main.py`, `migrate_db.py`)
+2. SQLite (`*_to_sqlite.py`, `main_sqlite.py`, `migrate_sqlite.py`)
 
-## Database schema
+## SQLite quick start
 
-SQL migrations live in:
+1. Create schema:
 
-- `backend/db/migrations`
+```bash
+python backend/python/migrate_sqlite.py --sqlite-path backend/python/data/proxima.sqlite3
+```
 
-Apply migrations:
+2. Import players JSON into SQLite:
+
+```bash
+python backend/python/import_players_to_sqlite.py --sqlite-path backend/python/data/proxima.sqlite3
+```
+
+3. Generate predictions from SQLite and write back to SQLite:
+
+```bash
+python backend/python/main_sqlite.py \
+  --data-source sqlite \
+  --output-target sqlite \
+  --all-active \
+  --sqlite-path backend/python/data/proxima.sqlite3
+```
+
+Optional: also write JSON prediction files for frontend fallback:
+
+```bash
+python backend/python/main_sqlite.py \
+  --data-source sqlite \
+  --output-target both \
+  --copy-to-frontend \
+  --all-active \
+  --sqlite-path backend/python/data/proxima.sqlite3
+```
+
+## Postgres mode
+
+### Apply migrations
 
 ```bash
 python backend/python/migrate_db.py --database-url "<postgres-url>"
 ```
 
-or set `DATABASE_URL` and run:
-
-```bash
-python backend/python/migrate_db.py
-```
-
-## Import local JSON data into Postgres
+### Import local JSON data into Postgres
 
 ```bash
 python backend/python/import_players_to_db.py --database-url "<postgres-url>"
 ```
 
-## Run predictor
-
-### Legacy files mode
-
-```bash
-python backend/python/main.py --all-active --output-target files
-```
-
-### DB mode (recommended)
+### Run predictor
 
 ```bash
 python backend/python/main.py \
@@ -48,42 +65,17 @@ python backend/python/main.py \
   --triggered-by local
 ```
 
-This writes:
-
-- run metadata to `prediction_runs`
-- per-player results to `player_predictions`
-- latest results are queryable from `latest_player_predictions` view
-
-## Weekly automation
-
-GitHub Actions workflow:
-
-- `.github/workflows/weekly-predictions.yml`
-
-It runs:
-
-1. migration
-2. JSON import
-3. prediction generation in DB mode
-
-Required GitHub secret:
-
-- `DATABASE_URL`
-
 ## Retired Player Overrides
 
-To control which players appear as active in the website selector, edit:
+To control active/retired tagging during imports, edit:
 
 - `backend/python/data/players/player_status_overrides.json`
 
-After changing it, rerun:
+Then rerun import.
 
-```bash
-python backend/python/import_players_to_db.py
-```
-
-You can also set the age threshold for `over_35` computation during import:
+Age-threshold override for `over_35`:
 
 ```bash
 python backend/python/import_players_to_db.py --over-age-threshold 35
+python backend/python/import_players_to_sqlite.py --over-age-threshold 35
 ```

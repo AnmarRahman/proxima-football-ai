@@ -1,7 +1,12 @@
-﻿# Python virtual environments
+# Python virtual environments
 .venv/
 .venv311/
 
 # Python cache
 **/__pycache__/
 *.py[cod]
+
+# Local SQLite files
+*.sqlite
+*.sqlite3
+*.db
