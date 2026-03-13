@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+import re
 from datetime import date
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Set
@@ -13,6 +14,8 @@ except ImportError as exc:  # pragma: no cover
 BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_PLAYERS_DIR = BASE_DIR / "data" / "players"
 STATUS_OVERRIDES_FILENAME = "player_status_overrides.json"
+UNKNOWN_TEAM_ID = "unknown-team"
+UNKNOWN_TEAM_NAME = "Unknown Team"
 
 
 def parse_args() -> argparse.Namespace:
@@ -63,6 +66,78 @@ def to_date(value: Any) -> Optional[date]:
         return date.fromisoformat(str(value))
     except ValueError:
         return None
+
+
+def normalize_slug(value: Any, default: str = "unknown") -> str:
+    if value is None:
+        return default
+    raw = str(value).strip().lower()
+    if not raw:
+        return default
+    slug = re.sub(r"[^a-z0-9]+", "-", raw).strip("-")
+    return slug or default
+
+
+def normalize_team_id(value: Any) -> str:
+    if value is None:
+        return UNKNOWN_TEAM_ID
+    clean = str(value).strip().lower()
+    return clean or UNKNOWN_TEAM_ID
+
+
+def explode_season_rows(season: Dict[str, Any]) -> List[Dict[str, Any]]:
+    season_year = to_int(season.get("season"))
+    if season_year is None:
+        return []
+
+    season_level_national = season.get("national_team_stats") or []
+    season_level_injuries = season.get("injuries") or []
+    season_level_transfers = season.get("transfer_history") or []
+    season_level_physical = season.get("physical_metrics") or {}
+    season_level_tactical = season.get("tactical_data") or {}
+
+    rows: List[Dict[str, Any]] = []
+
+    teams = season.get("teams") or []
+    if isinstance(teams, list):
+        for team_entry in teams:
+            if not isinstance(team_entry, dict):
+                continue
+
+            team_id = normalize_team_id(team_entry.get("team_id") or season.get("team_id"))
+            competitions = team_entry.get("competitions") or []
+            if not isinstance(competitions, list) or not competitions:
+                competitions = [{}]
+
+            for comp in competitions:
+                if not isinstance(comp, dict):
+                    continue
+
+                competition_name = str(comp.get("competition", "")).strip()
+                row = dict(comp)
+                row["season"] = season_year
+                row["team_id"] = team_id
+                row["league_id"] = normalize_slug(comp.get("league_id") or competition_name or season.get("league_id"))
+                row["national_team_stats"] = comp.get("national_team_stats", season_level_national) or []
+                row["injuries"] = comp.get("injuries", season_level_injuries) or []
+                row["transfer_history"] = comp.get("transfer_history", season_level_transfers) or []
+                row["physical_metrics"] = comp.get("physical_metrics", season_level_physical) or {}
+                row["tactical_data"] = comp.get("tactical_data", season_level_tactical) or {}
+                rows.append(row)
+
+    if rows:
+        return rows
+
+    fallback = dict(season)
+    fallback["season"] = season_year
+    fallback["team_id"] = normalize_team_id(season.get("team_id"))
+    fallback["league_id"] = normalize_slug(season.get("league_id"))
+    fallback["national_team_stats"] = season_level_national
+    fallback["injuries"] = season_level_injuries
+    fallback["transfer_history"] = season_level_transfers
+    fallback["physical_metrics"] = season_level_physical
+    fallback["tactical_data"] = season_level_tactical
+    return [fallback]
 
 
 def parse_bool(value: Any, default: Optional[bool] = None) -> Optional[bool]:
@@ -219,14 +294,13 @@ def upsert_player_season(
     player_id: str,
     season: Dict[str, Any],
 ) -> int:
-    team_id = str(season.get("team_id", "")).strip().lower() or None
-    league_id = str(season.get("league_id", "")).strip().lower() or "unknown"
+    team_id = normalize_team_id(season.get("team_id"))
+    league_id = normalize_slug(season.get("league_id"), default="unknown")
 
     physical = season.get("physical_metrics") or {}
     tactical = season.get("tactical_data") or {}
 
-    if team_id:
-        ensure_team(cur, team_id)
+    ensure_team(cur, team_id, UNKNOWN_TEAM_NAME if team_id == UNKNOWN_TEAM_ID else None)
 
     cur.execute(
         """
@@ -417,9 +491,11 @@ def import_file(
     season_count = 0
 
     for season in seasons:
-        season_id = upsert_player_season(cur, player_id, season)
-        replace_season_children(cur, season_id, season)
-        season_count += 1
+        expanded_rows = explode_season_rows(season)
+        for season_row in expanded_rows:
+            season_id = upsert_player_season(cur, player_id, season_row)
+            replace_season_children(cur, season_id, season_row)
+            season_count += 1
 
     return {"seasons": season_count}
 
