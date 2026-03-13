@@ -22,6 +22,9 @@ type SeasonValidationResult = {
   teamId: string;
 };
 
+const UNKNOWN_TEAM_ID = "unknown-team";
+const UNKNOWN_TEAM_NAME = "Unknown Team";
+
 function asRecord(value: unknown): Dict {
   return value && typeof value === "object" && !Array.isArray(value) ? (value as Dict) : {};
 }
@@ -47,6 +50,19 @@ function normalizeId(value: unknown): string | null {
   }
   const clean = String(value).trim().toLowerCase();
   return clean ? clean : null;
+}
+
+function normalizeTeamId(value: unknown): string {
+  return normalizeId(value) || UNKNOWN_TEAM_ID;
+}
+
+function normalizeSlug(value: unknown, fallback = "unknown"): string {
+  const raw = String(value ?? "").trim().toLowerCase();
+  if (!raw) {
+    return fallback;
+  }
+  const slug = raw.replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  return slug || fallback;
 }
 
 function titleFromId(id: string): string {
@@ -212,12 +228,12 @@ async function upsertPlayerSeason(playerId: string, season: Dict): Promise<numbe
     throw new Error(`Missing or invalid season year for player ${playerId}`);
   }
 
-  const teamId = normalizeId(season.team_id);
-  const leagueId = normalizeId(season.league_id) || "unknown";
+  const teamId = normalizeTeamId(season.team_id);
+  const leagueId = normalizeSlug(season.league_id, "unknown");
   const physical = asRecord(season.physical_metrics);
   const tactical = asRecord(season.tactical_data);
 
-  await ensureTeam(teamId);
+  await ensureTeam(teamId, teamId === UNKNOWN_TEAM_ID ? { name: UNKNOWN_TEAM_NAME } : {});
 
   const row = {
     player_id: playerId,
@@ -349,6 +365,69 @@ async function replaceSeasonChildren(playerSeasonId: number, season: Dict): Prom
   }
 }
 
+function expandSeasonRows(seasonInput: Dict): Dict[] {
+  const seasonYear = toInt(seasonInput.season);
+  if (seasonYear === null) {
+    return [];
+  }
+
+  const seasonLevelNational = recordArray(seasonInput.national_team_stats);
+  const seasonLevelInjuries = recordArray(seasonInput.injuries);
+  const seasonLevelTransfers = recordArray(seasonInput.transfer_history);
+  const seasonLevelPhysical = asRecord(seasonInput.physical_metrics);
+  const seasonLevelTactical = asRecord(seasonInput.tactical_data);
+
+  const rows: Dict[] = [];
+  const teamEntries = recordArray(seasonInput.teams);
+
+  for (const teamEntry of teamEntries) {
+    const teamId = normalizeTeamId(teamEntry.team_id ?? seasonInput.team_id);
+    const competitions = recordArray(teamEntry.competitions);
+    const comps = competitions.length ? competitions : [{}];
+
+    for (const comp of comps) {
+      const competitionName = toStringOrNull(comp.competition);
+      rows.push({
+        ...comp,
+        season: seasonYear,
+        team_id: teamId,
+        league_id: normalizeSlug(comp.league_id ?? competitionName ?? seasonInput.league_id, "unknown"),
+        national_team_stats: recordArray(comp.national_team_stats).length
+          ? recordArray(comp.national_team_stats)
+          : seasonLevelNational,
+        injuries: recordArray(comp.injuries).length ? recordArray(comp.injuries) : seasonLevelInjuries,
+        transfer_history: recordArray(comp.transfer_history).length
+          ? recordArray(comp.transfer_history)
+          : seasonLevelTransfers,
+        physical_metrics: Object.keys(asRecord(comp.physical_metrics)).length
+          ? asRecord(comp.physical_metrics)
+          : seasonLevelPhysical,
+        tactical_data: Object.keys(asRecord(comp.tactical_data)).length
+          ? asRecord(comp.tactical_data)
+          : seasonLevelTactical,
+      });
+    }
+  }
+
+  if (rows.length) {
+    return rows;
+  }
+
+  return [
+    {
+      ...seasonInput,
+      season: seasonYear,
+      team_id: normalizeTeamId(seasonInput.team_id),
+      league_id: normalizeSlug(seasonInput.league_id, "unknown"),
+      national_team_stats: seasonLevelNational,
+      injuries: seasonLevelInjuries,
+      transfer_history: seasonLevelTransfers,
+      physical_metrics: seasonLevelPhysical,
+      tactical_data: seasonLevelTactical,
+    },
+  ];
+}
+
 function validateSeasonDocument(seasonInput: unknown): SeasonValidationResult {
   const season = asRecord(seasonInput);
   if (!Object.keys(season).length) {
@@ -459,9 +538,12 @@ export async function importPlayerDocument(
 
   let importedSeasons = 0;
   for (const season of seasons) {
-    const playerSeasonId = await upsertPlayerSeason(playerId, season);
-    await replaceSeasonChildren(playerSeasonId, season);
-    importedSeasons += 1;
+    const expandedRows = expandSeasonRows(season);
+    for (const seasonRow of expandedRows) {
+      const playerSeasonId = await upsertPlayerSeason(playerId, seasonRow);
+      await replaceSeasonChildren(playerSeasonId, seasonRow);
+      importedSeasons += 1;
+    }
   }
 
   return {
