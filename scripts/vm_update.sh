@@ -19,6 +19,10 @@ if ! grep -q '^POSTGREST_URL=' .env; then
   echo 'POSTGREST_URL=http://postgrest:3000' >> .env
 fi
 
+if ! grep -q '^ADMIN_COOKIE_SECURE=' .env; then
+  echo 'ADMIN_COOKIE_SECURE=false' >> .env
+fi
+
 if ! grep -q '^POSTGRES_DATA_DIR=' .env; then
   echo 'POSTGRES_DATA_DIR=/home/anmarrahman/docker/proxima-football-ai/proxima_postgres_data' >> .env
 fi

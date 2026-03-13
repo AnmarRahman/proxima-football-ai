@@ -13,6 +13,25 @@ function readEnv(name: string): string {
   return String(process.env[name] || "").trim();
 }
 
+function parseBoolean(value: string, fallback: boolean): boolean {
+  const normalized = String(value || "").trim().toLowerCase();
+  if (["1", "true", "yes", "y", "on"].includes(normalized)) {
+    return true;
+  }
+  if (["0", "false", "no", "n", "off"].includes(normalized)) {
+    return false;
+  }
+  return fallback;
+}
+
+function shouldUseSecureCookies(): boolean {
+  const override = readEnv("ADMIN_COOKIE_SECURE");
+  if (override) {
+    return parseBoolean(override, true);
+  }
+  return process.env.NODE_ENV === "production";
+}
+
 function getAdminPassword(): string {
   const password = readEnv("ADMIN_DASHBOARD_PASSWORD");
   if (!password) {
@@ -93,7 +112,7 @@ export function setAdminSessionCookie(response: NextResponse): void {
     value: token,
     httpOnly: true,
     sameSite: "strict",
-    secure: process.env.NODE_ENV === "production",
+    secure: shouldUseSecureCookies(),
     path: "/",
     maxAge: SESSION_TTL_SECONDS,
   });
@@ -105,7 +124,7 @@ export function clearAdminSessionCookie(response: NextResponse): void {
     value: "",
     httpOnly: true,
     sameSite: "strict",
-    secure: process.env.NODE_ENV === "production",
+    secure: shouldUseSecureCookies(),
     path: "/",
     maxAge: 0,
   });
