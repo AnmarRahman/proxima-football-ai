@@ -9,8 +9,12 @@ type SessionPayload = {
   exp: number;
 };
 
+function readEnv(name: string): string {
+  return String(process.env[name] || "").trim();
+}
+
 function getAdminPassword(): string {
-  const password = process.env.ADMIN_DASHBOARD_PASSWORD;
+  const password = readEnv("ADMIN_DASHBOARD_PASSWORD");
   if (!password) {
     throw new Error("Missing ADMIN_DASHBOARD_PASSWORD.");
   }
@@ -18,7 +22,7 @@ function getAdminPassword(): string {
 }
 
 function getSessionSecret(): string {
-  const secret = process.env.ADMIN_SESSION_SECRET;
+  const secret = readEnv("ADMIN_SESSION_SECRET");
   if (!secret) {
     throw new Error("Missing ADMIN_SESSION_SECRET.");
   }
@@ -68,7 +72,7 @@ function decodeSession(token: string, secret: string): SessionPayload | null {
 }
 
 export function hasAdminAuthConfig(): boolean {
-  return Boolean(process.env.ADMIN_DASHBOARD_PASSWORD && process.env.ADMIN_SESSION_SECRET);
+  return Boolean(readEnv("ADMIN_DASHBOARD_PASSWORD") && readEnv("ADMIN_SESSION_SECRET"));
 }
 
 export function verifyAdminPassword(candidate: string): boolean {
