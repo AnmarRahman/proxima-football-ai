@@ -329,6 +329,7 @@ export default function AdminPage() {
   const [dbTotals, setDbTotals] = useState({ players: 0, seasons: 0 });
 
   const [editingPlayerId, setEditingPlayerId] = useState<string | null>(null);
+  const [editingPlayerName, setEditingPlayerName] = useState("");
   const [editingSeasonKey, setEditingSeasonKey] = useState("new");
   const [editorMode, setEditorMode] = useState<SeasonEditorMode>("manual");
   const [baseSeasonDoc, setBaseSeasonDoc] = useState<Record<string, unknown>>(emptySeasonDoc());
@@ -420,6 +421,21 @@ export default function AdminPage() {
     loadDatabase();
   }, [authenticated]);
 
+  useEffect(() => {
+    if (!editingPlayerId) {
+      return;
+    }
+
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && !savingSeason) {
+        cancelSeasonEditor();
+      }
+    };
+
+    window.addEventListener("keydown", handleEscape);
+    return () => window.removeEventListener("keydown", handleEscape);
+  }, [editingPlayerId, savingSeason]);
+
   async function handleLogin(event: FormEvent) {
     event.preventDefault();
     setLoginError(null);
@@ -455,9 +471,10 @@ export default function AdminPage() {
     setDbPlayers([]);
     setDbTotals({ players: 0, seasons: 0 });
   }
-  function startAddSeason(playerId: string) {
+  function startAddSeason(playerId: string, playerName: string) {
     const doc = emptySeasonDoc();
     setEditingPlayerId(playerId);
+    setEditingPlayerName(playerName);
     setEditingSeasonKey("new");
     setEditorMode("manual");
     setBaseSeasonDoc(doc);
@@ -467,9 +484,10 @@ export default function AdminPage() {
     setSeasonSaveMessage(null);
   }
 
-  function startEditSeason(playerId: string, season: PlayerSeason) {
+  function startEditSeason(playerId: string, playerName: string, season: PlayerSeason) {
     const doc = seasonDocFromRow(season);
     setEditingPlayerId(playerId);
+    setEditingPlayerName(playerName);
     setEditingSeasonKey(`${season.season}-${season.team_id || "none"}-${season.league_id || "unknown"}`);
     setEditorMode("manual");
     setBaseSeasonDoc(doc);
@@ -481,6 +499,7 @@ export default function AdminPage() {
 
   function cancelSeasonEditor() {
     setEditingPlayerId(null);
+    setEditingPlayerName("");
     setEditingSeasonKey("new");
     setSeasonSaveError(null);
     setSeasonSaveMessage(null);
@@ -579,7 +598,9 @@ export default function AdminPage() {
       setSeasonSaveMessage(String(data?.message || "Season saved successfully."));
       await loadDatabase();
 
-      if (window.confirm("Season saved successfully. Do you want to run the prediction script now?")) {
+      const shouldRunPredictions = window.confirm("Season saved successfully. Do you want to run the prediction script now?");
+      cancelSeasonEditor();
+      if (shouldRunPredictions) {
         await handleTriggerWorkflow();
       }
     } catch {
@@ -802,7 +823,7 @@ export default function AdminPage() {
 
                 <div className="mb-3 flex justify-end">
                   <button
-                    onClick={() => startAddSeason(player.id)}
+                    onClick={() => startAddSeason(player.id, player.name)}
                     className="rounded-md border border-[#2A2A2A] bg-[#151515] px-3 py-1.5 text-xs font-semibold text-gray-100 hover:border-[#D4AF37]"
                   >
                     Add Season
@@ -841,7 +862,7 @@ export default function AdminPage() {
                           <td className="px-2 py-2">{season.xa ?? "-"}</td>
                           <td className="px-2 py-2">
                             <button
-                              onClick={() => startEditSeason(player.id, season)}
+                              onClick={() => startEditSeason(player.id, player.name, season)}
                               className="rounded border border-[#2A2A2A] bg-[#151515] px-2 py-1 text-[11px] text-gray-100 hover:border-[#D4AF37]"
                             >
                               Edit
@@ -853,84 +874,7 @@ export default function AdminPage() {
                   </table>
                 </div>
 
-                {editingPlayerId === player.id ? (
-                  <div className="mt-5 rounded-md border border-[#2A2A2A] bg-[#090909] p-4">
-                    <div className="flex flex-wrap items-center justify-between gap-3">
-                      <p className="text-sm font-semibold text-[#D4AF37]">
-                        {editingSeasonKey === "new" ? "Add New Season" : "Edit Season"}
-                      </p>
 
-                      <div className="flex items-center gap-4 text-xs text-gray-200">
-                        <label className="inline-flex items-center gap-2">
-                          <input
-                            type="radio"
-                            name={`season-editor-mode-${player.id}`}
-                            checked={editorMode === "manual"}
-                            onChange={() => handleEditorModeChange("manual")}
-                          />
-                          Manual Form
-                        </label>
-                        <label className="inline-flex items-center gap-2">
-                          <input
-                            type="radio"
-                            name={`season-editor-mode-${player.id}`}
-                            checked={editorMode === "json"}
-                            onChange={() => handleEditorModeChange("json")}
-                          />
-                          JSON Input
-                        </label>
-                      </div>
-                    </div>
-
-                    {editorMode === "manual" ? (
-                      <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-                        {MANUAL_FIELDS.map((field) => (
-                          <label key={field.key} className="text-xs text-gray-200">
-                            {field.label}
-                            {field.required ? " *" : ""}
-                            <input
-                              value={manualDraft[field.key]}
-                              onChange={(event) => setManualField(field.key, event.target.value)}
-                              className="mt-1 w-full rounded border border-[#2A2A2A] bg-black px-2 py-1.5 text-white"
-                            />
-                          </label>
-                        ))}
-                      </div>
-                    ) : (
-                      <div className="mt-4">
-                        <label className="text-xs text-gray-200">
-                          Season JSON (must be one season object)
-                          <textarea
-                            value={seasonJson}
-                            onChange={(event) => setSeasonJson(event.target.value)}
-                            rows={16}
-                            className="mt-1 w-full rounded border border-[#2A2A2A] bg-black px-3 py-2 font-mono text-xs text-white"
-                          />
-                        </label>
-                      </div>
-                    )}
-
-                    {seasonSaveError ? <p className="mt-3 text-sm text-red-400">{seasonSaveError}</p> : null}
-                    {seasonSaveMessage ? <p className="mt-3 text-sm text-green-300">{seasonSaveMessage}</p> : null}
-
-                    <div className="mt-4 flex flex-wrap items-center gap-3">
-                      <button
-                        onClick={handleSaveSeason}
-                        disabled={savingSeason}
-                        className="rounded-md bg-[#D4AF37] px-4 py-2 text-sm font-semibold text-black disabled:opacity-60"
-                      >
-                        {savingSeason ? "Saving..." : "Save Season"}
-                      </button>
-                      <button
-                        onClick={cancelSeasonEditor}
-                        disabled={savingSeason}
-                        className="rounded-md border border-[#2A2A2A] bg-black px-4 py-2 text-sm text-gray-200 hover:border-[#D4AF37] disabled:opacity-60"
-                      >
-                        Cancel
-                      </button>
-                    </div>
-                  </div>
-                ) : null}
               </div>
             </details>
           ))}
@@ -1015,6 +959,100 @@ export default function AdminPage() {
         {triggerMessage ? <p className="mt-4 text-sm text-green-300">{triggerMessage}</p> : null}
         {triggerError ? <p className="mt-4 text-sm text-red-400">{triggerError}</p> : null}
       </section>
+      {editingPlayerId ? (
+        <div className="fixed inset-0 z-50 flex items-start justify-center bg-black/70 px-4 py-8" role="dialog" aria-modal="true">
+          <button
+            type="button"
+            aria-label="Close season editor"
+            disabled={savingSeason}
+            onClick={cancelSeasonEditor}
+            className="absolute inset-0 cursor-default"
+          />
+
+          <div className="relative z-10 w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-xl border border-[#2A2A2A] bg-[#090909] p-5 text-white">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <p className="text-lg font-semibold text-[#D4AF37]">
+                  {editingSeasonKey === "new" ? "Add New Season" : "Edit Season"}
+                </p>
+                <p className="mt-1 text-xs text-gray-400">
+                  {editingPlayerName} ({editingPlayerId})
+                </p>
+              </div>
+
+              <div className="flex items-center gap-4 text-xs text-gray-200">
+                <label className="inline-flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="season-editor-mode-modal"
+                    checked={editorMode === "manual"}
+                    onChange={() => handleEditorModeChange("manual")}
+                  />
+                  Manual Form
+                </label>
+                <label className="inline-flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="season-editor-mode-modal"
+                    checked={editorMode === "json"}
+                    onChange={() => handleEditorModeChange("json")}
+                  />
+                  JSON Input
+                </label>
+              </div>
+            </div>
+
+            {editorMode === "manual" ? (
+              <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                {MANUAL_FIELDS.map((field) => (
+                  <label key={field.key} className="text-xs text-gray-200">
+                    {field.label}
+                    {field.required ? " *" : ""}
+                    <input
+                      value={manualDraft[field.key]}
+                      onChange={(event) => setManualField(field.key, event.target.value)}
+                      className="mt-1 w-full rounded border border-[#2A2A2A] bg-black px-2 py-1.5 text-white"
+                    />
+                  </label>
+                ))}
+              </div>
+            ) : (
+              <div className="mt-4">
+                <label className="text-xs text-gray-200">
+                  Season JSON (must be one season object)
+                  <textarea
+                    value={seasonJson}
+                    onChange={(event) => setSeasonJson(event.target.value)}
+                    rows={18}
+                    className="mt-1 w-full rounded border border-[#2A2A2A] bg-black px-3 py-2 font-mono text-xs text-white"
+                  />
+                </label>
+              </div>
+            )}
+
+            {seasonSaveError ? <p className="mt-3 text-sm text-red-400">{seasonSaveError}</p> : null}
+            {seasonSaveMessage ? <p className="mt-3 text-sm text-green-300">{seasonSaveMessage}</p> : null}
+
+            <div className="mt-5 flex flex-wrap items-center gap-3">
+              <button
+                onClick={handleSaveSeason}
+                disabled={savingSeason}
+                className="rounded-md bg-[#D4AF37] px-4 py-2 text-sm font-semibold text-black disabled:opacity-60"
+              >
+                {savingSeason ? "Saving..." : "Save Season"}
+              </button>
+              <button
+                onClick={cancelSeasonEditor}
+                disabled={savingSeason}
+                className="rounded-md border border-[#2A2A2A] bg-black px-4 py-2 text-sm text-gray-200 hover:border-[#D4AF37] disabled:opacity-60"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      ) : null}
+
     </main>
   );
 }
