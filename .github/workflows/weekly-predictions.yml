@@ -34,8 +34,26 @@ jobs:
       - name: Apply migrations
         run: python backend/python/migrate_db.py
 
-      - name: Import player JSONs into DB (optional bootstrap)
-        if: ${{ vars.IMPORT_PLAYERS_FROM_REPO == 'true' }}
+      - name: Count existing player seasons
+        id: db_counts
+        run: |
+          python - <<'PY'
+          import os
+          import psycopg
+
+          database_url = os.environ["DATABASE_URL"]
+          with psycopg.connect(database_url) as conn:
+              with conn.cursor() as cur:
+                  cur.execute("select count(*) from player_seasons;")
+                  season_count = int(cur.fetchone()[0] or 0)
+
+          print(f"player_seasons count: {season_count}")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
+              fh.write(f"season_count={season_count}\n")
+          PY
+
+      - name: Import player JSONs into DB (bootstrap if empty or forced)
+        if: ${{ steps.db_counts.outputs.season_count == '0' || vars.IMPORT_PLAYERS_FROM_REPO == 'true' }}
         run: python backend/python/import_players_to_db.py
 
       - name: Generate and store predictions
