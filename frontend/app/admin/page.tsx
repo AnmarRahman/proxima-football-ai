@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 
 type SessionResponse = {
   authenticated: boolean;
@@ -327,6 +327,10 @@ export default function AdminPage() {
   const [dbError, setDbError] = useState<string | null>(null);
   const [dbPlayers, setDbPlayers] = useState<AdminPlayer[]>([]);
   const [dbTotals, setDbTotals] = useState({ players: 0, seasons: 0 });
+  const [playerSearchQuery, setPlayerSearchQuery] = useState("");
+  const [statusFilter, setStatusFilter] = useState<"all" | "active" | "retired">("all");
+  const [ageFilter, setAgeFilter] = useState<"all" | "under_or_equal_35" | "over_35">("all");
+  const [sortBy, setSortBy] = useState<"name" | "seasons" | "latest">("name");
 
   const [editingPlayerId, setEditingPlayerId] = useState<string | null>(null);
   const [editingPlayerName, setEditingPlayerName] = useState("");
@@ -338,6 +342,8 @@ export default function AdminPage() {
   const [savingSeason, setSavingSeason] = useState(false);
   const [seasonSaveError, setSeasonSaveError] = useState<string | null>(null);
   const [seasonSaveMessage, setSeasonSaveMessage] = useState<string | null>(null);
+  const [isEditorDirty, setIsEditorDirty] = useState(false);
+  const seasonModalRef = useRef<HTMLDivElement | null>(null);
 
   const [files, setFiles] = useState<File[]>([]);
   const [overAgeThreshold, setOverAgeThreshold] = useState("35");
@@ -358,6 +364,45 @@ export default function AdminPage() {
     }
     return `${files.length} files selected`;
   }, [files]);
+
+  const filteredPlayers = useMemo(() => {
+    const query = playerSearchQuery.trim().toLowerCase();
+
+    const filtered = dbPlayers.filter((player) => {
+      const matchesQuery =
+        !query ||
+        player.name.toLowerCase().includes(query) ||
+        player.id.toLowerCase().includes(query) ||
+        (player.nationality || "").toLowerCase().includes(query);
+
+      const matchesRetired =
+        statusFilter === "all" ? true : statusFilter === "active" ? !player.is_retired : player.is_retired;
+
+      const matchesAge =
+        ageFilter === "all" ? true : ageFilter === "under_or_equal_35" ? !player.over_35 : player.over_35;
+
+      return matchesQuery && matchesRetired && matchesAge;
+    });
+
+    filtered.sort((a, b) => {
+      if (sortBy === "name") {
+        return a.name.localeCompare(b.name);
+      }
+      if (sortBy === "seasons") {
+        return b.season_count - a.season_count;
+      }
+      if (sortBy === "latest") {
+        return (b.latest_season?.season || 0) - (a.latest_season?.season || 0);
+      }
+      return a.name.localeCompare(b.name);
+    });
+
+    return filtered;
+  }, [ageFilter, dbPlayers, playerSearchQuery, sortBy, statusFilter]);
+
+  const filteredSeasonTotal = useMemo(() => {
+    return filteredPlayers.reduce((sum, player) => sum + player.season_count, 0);
+  }, [filteredPlayers]);
 
   async function refreshSession() {
     setLoadingSession(true);
@@ -426,15 +471,61 @@ export default function AdminPage() {
       return;
     }
 
-    const handleEscape = (event: KeyboardEvent) => {
+    const modalRoot = seasonModalRef.current;
+    const focusableSelector = "button, [href], input, select, textarea, [tabindex]:not([tabindex=\"-1\"])";
+
+    const focusables = modalRoot
+      ? Array.from(modalRoot.querySelectorAll<HTMLElement>(focusableSelector)).filter(
+          (el) => !el.hasAttribute("disabled") && el.tabIndex !== -1
+        )
+      : [];
+
+    const firstFocusable = focusables[0];
+    const lastFocusable = focusables[focusables.length - 1];
+
+    firstFocusable?.focus();
+
+    const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape" && !savingSeason) {
-        cancelSeasonEditor();
+        requestCloseSeasonEditor();
+        return;
+      }
+
+      if (event.key !== "Tab" || !focusables.length) {
+        return;
+      }
+
+      const active = document.activeElement as HTMLElement | null;
+      if (event.shiftKey) {
+        if (!active || active === firstFocusable) {
+          event.preventDefault();
+          lastFocusable?.focus();
+        }
+        return;
+      }
+
+      if (!active || active === lastFocusable) {
+        event.preventDefault();
+        firstFocusable?.focus();
       }
     };
 
-    window.addEventListener("keydown", handleEscape);
-    return () => window.removeEventListener("keydown", handleEscape);
-  }, [editingPlayerId, savingSeason]);
+    const onBeforeUnload = (event: BeforeUnloadEvent) => {
+      if (!isEditorDirty) {
+        return;
+      }
+      event.preventDefault();
+      event.returnValue = "";
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+    window.addEventListener("beforeunload", onBeforeUnload);
+
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+      window.removeEventListener("beforeunload", onBeforeUnload);
+    };
+  }, [editingPlayerId, isEditorDirty, savingSeason]);
 
   async function handleLogin(event: FormEvent) {
     event.preventDefault();
@@ -482,6 +573,7 @@ export default function AdminPage() {
     setSeasonJson(safeJsonStringify(doc));
     setSeasonSaveError(null);
     setSeasonSaveMessage(null);
+    setIsEditorDirty(false);
   }
 
   function startEditSeason(playerId: string, playerName: string, season: PlayerSeason) {
@@ -495,6 +587,7 @@ export default function AdminPage() {
     setSeasonJson(safeJsonStringify(doc));
     setSeasonSaveError(null);
     setSeasonSaveMessage(null);
+    setIsEditorDirty(false);
   }
 
   function cancelSeasonEditor() {
@@ -503,12 +596,29 @@ export default function AdminPage() {
     setEditingSeasonKey("new");
     setSeasonSaveError(null);
     setSeasonSaveMessage(null);
+    setIsEditorDirty(false);
+  }
+
+  function requestCloseSeasonEditor() {
+    if (savingSeason) {
+      return;
+    }
+
+    if (isEditorDirty) {
+      const shouldDiscard = window.confirm("You have unsaved changes. Discard them?");
+      if (!shouldDiscard) {
+        return;
+      }
+    }
+
+    cancelSeasonEditor();
   }
 
   function setManualField(key: keyof SeasonManualDraft, value: string) {
     setManualDraft((prev) => ({ ...prev, [key]: value }));
     setSeasonSaveError(null);
     setSeasonSaveMessage(null);
+    setIsEditorDirty(true);
   }
 
   function handleEditorModeChange(nextMode: SeasonEditorMode) {
@@ -596,6 +706,7 @@ export default function AdminPage() {
       }
 
       setSeasonSaveMessage(String(data?.message || "Season saved successfully."));
+      setIsEditorDirty(false);
       await loadDatabase();
 
       const shouldRunPredictions = window.confirm("Season saved successfully. Do you want to run the prediction script now?");
@@ -774,7 +885,7 @@ export default function AdminPage() {
               Live player data from your database. Expand a player to inspect and edit season-level stats.
             </p>
             <p className="mt-1 text-xs text-gray-400">
-              Players: {dbTotals.players} | Seasons: {dbTotals.seasons}
+              Players: {filteredPlayers.length}/{dbTotals.players} | Seasons: {filteredSeasonTotal}/{dbTotals.seasons}
             </p>
           </div>
           <button
@@ -786,14 +897,57 @@ export default function AdminPage() {
           </button>
         </div>
 
+        <div className="mt-4 grid gap-3 md:grid-cols-4">
+          <input
+            value={playerSearchQuery}
+            onChange={(event) => setPlayerSearchQuery(event.target.value)}
+            placeholder="Search by name, id, nationality"
+            className="rounded-md border border-[#2A2A2A] bg-black px-3 py-2 text-sm text-white outline-none focus:border-[#D4AF37]"
+          />
+
+          <select
+            value={statusFilter}
+            onChange={(event) => setStatusFilter(event.target.value as "all" | "active" | "retired")}
+            className="rounded-md border border-[#2A2A2A] bg-black px-3 py-2 text-sm text-white outline-none focus:border-[#D4AF37]"
+          >
+            <option value="all">All statuses</option>
+            <option value="active">Active only</option>
+            <option value="retired">Retired only</option>
+          </select>
+
+          <select
+            value={ageFilter}
+            onChange={(event) => setAgeFilter(event.target.value as "all" | "under_or_equal_35" | "over_35")}
+            className="rounded-md border border-[#2A2A2A] bg-black px-3 py-2 text-sm text-white outline-none focus:border-[#D4AF37]"
+          >
+            <option value="all">All age bands</option>
+            <option value="under_or_equal_35">35 or under</option>
+            <option value="over_35">Over 35</option>
+          </select>
+
+          <select
+            value={sortBy}
+            onChange={(event) => setSortBy(event.target.value as "name" | "seasons" | "latest")}
+            className="rounded-md border border-[#2A2A2A] bg-black px-3 py-2 text-sm text-white outline-none focus:border-[#D4AF37]"
+          >
+            <option value="name">Sort: Name</option>
+            <option value="seasons">Sort: Most Seasons</option>
+            <option value="latest">Sort: Latest Season</option>
+          </select>
+        </div>
+
         {dbError ? <p className="mt-4 text-sm text-red-400">{dbError}</p> : null}
 
         {!dbLoading && !dbError && !dbPlayers.length ? (
           <p className="mt-4 text-sm text-gray-300">No players found in database.</p>
         ) : null}
 
+        {!dbLoading && !dbError && dbPlayers.length > 0 && !filteredPlayers.length ? (
+          <p className="mt-4 text-sm text-gray-300">No players match your current filters.</p>
+        ) : null}
+
         <div className="mt-5 max-h-[620px] space-y-3 overflow-y-auto pr-1">
-          {dbPlayers.map((player) => (
+          {filteredPlayers.map((player) => (
             <details key={player.id} className="rounded-lg border border-[#2A2A2A] bg-black p-4">
               <summary className="cursor-pointer list-none">
                 <div className="flex flex-wrap items-center justify-between gap-3">
@@ -965,11 +1119,15 @@ export default function AdminPage() {
             type="button"
             aria-label="Close season editor"
             disabled={savingSeason}
-            onClick={cancelSeasonEditor}
+            onClick={requestCloseSeasonEditor}
             className="absolute inset-0 cursor-default"
           />
 
-          <div className="relative z-10 w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-xl border border-[#2A2A2A] bg-[#090909] p-5 text-white">
+          <div
+            ref={seasonModalRef}
+            tabIndex={-1}
+            className="relative z-10 w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-xl border border-[#2A2A2A] bg-[#090909] p-5 text-white"
+          >
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div>
                 <p className="text-lg font-semibold text-[#D4AF37]">
@@ -1022,7 +1180,12 @@ export default function AdminPage() {
                   Season JSON (must be one season object)
                   <textarea
                     value={seasonJson}
-                    onChange={(event) => setSeasonJson(event.target.value)}
+                    onChange={(event) => {
+                      setSeasonJson(event.target.value);
+                      setIsEditorDirty(true);
+                      setSeasonSaveError(null);
+                      setSeasonSaveMessage(null);
+                    }}
                     rows={18}
                     className="mt-1 w-full rounded border border-[#2A2A2A] bg-black px-3 py-2 font-mono text-xs text-white"
                   />
@@ -1042,7 +1205,7 @@ export default function AdminPage() {
                 {savingSeason ? "Saving..." : "Save Season"}
               </button>
               <button
-                onClick={cancelSeasonEditor}
+                onClick={requestCloseSeasonEditor}
                 disabled={savingSeason}
                 className="rounded-md border border-[#2A2A2A] bg-black px-4 py-2 text-sm text-gray-200 hover:border-[#D4AF37] disabled:opacity-60"
               >

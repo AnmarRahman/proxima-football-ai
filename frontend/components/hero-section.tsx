@@ -5,7 +5,7 @@ import { ArrowRight, Brain, TrendingUp, Users } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative flex-1 flex flex-col justify-center overflow-hidden py-40">
+    <section className="relative flex-1 flex flex-col justify-center overflow-hidden py-24 md:py-32 lg:py-40">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-bottom"

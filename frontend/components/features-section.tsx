@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { GitCompare, Search, Target } from "lucide-react"
+import Link from "next/link"
 
 export function FeaturesSection() {
   const features = [
@@ -35,7 +36,7 @@ export function FeaturesSection() {
   ]
 
   return (
-    <section className="py-24 bg-[#060606]">
+    <section className="py-16 md:py-24 bg-[#060606]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Powerful AI-Driven Features</h2>
@@ -50,30 +51,32 @@ export function FeaturesSection() {
             <Card
               key={index}
               className={`group hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 border-border/50 bg-card/80 backdrop-blur-sm ${
-                !feature.available ? 'opacity-75' : ''
+                !feature.available ? "opacity-75" : ""
               }`}
             >
               <CardHeader>
                 <div className="flex items-center justify-between mb-4">
-                  <feature.icon 
+                  <feature.icon
                     className={`h-10 w-10 group-hover:scale-110 transition-transform duration-300 ${
-                      feature.available ? 'text-primary' : 'text-muted-foreground'
-                    }`} 
+                      feature.available ? "text-primary" : "text-muted-foreground"
+                    }`}
                   />
-                  <Badge 
-                    variant="secondary" 
+                  <Badge
+                    variant="secondary"
                     className={`border-primary/20 ${
-                      feature.available 
-                        ? 'bg-primary/10 text-primary' 
-                        : 'bg-yellow-500/10 text-yellow-500 border-yellow-500/20'
+                      feature.available
+                        ? "bg-primary/10 text-primary"
+                        : "bg-yellow-500/10 text-yellow-500 border-yellow-500/20"
                     }`}
                   >
                     {feature.badge}
                   </Badge>
                 </div>
-                <CardTitle className={`text-xl group-hover:text-primary transition-colors duration-300 ${
-                  !feature.available ? 'text-muted-foreground' : ''
-                }`}>
+                <CardTitle
+                  className={`text-xl group-hover:text-primary transition-colors duration-300 ${
+                    !feature.available ? "text-muted-foreground" : ""
+                  }`}
+                >
                   {feature.title}
                 </CardTitle>
                 <CardDescription className="text-muted-foreground leading-relaxed">
@@ -90,17 +93,13 @@ export function FeaturesSection() {
                   variant="outline"
                   className={`w-full transition-all duration-300 ${
                     feature.available
-                      ? 'border-primary/30 hover:bg-primary/10 hover:border-primary/50 hover:text-white bg-transparent'
-                      : 'border-muted-foreground/30 bg-transparent cursor-not-allowed opacity-60'
+                      ? "border-primary/30 hover:bg-primary/10 hover:border-primary/50 hover:text-white bg-transparent"
+                      : "border-muted-foreground/30 bg-transparent cursor-not-allowed opacity-60"
                   }`}
                   asChild={feature.available}
                   disabled={!feature.available}
                 >
-                  {feature.available ? (
-                    <a href={feature.href}>Explore Feature</a>
-                  ) : (
-                    <span>Coming Soon</span>
-                  )}
+                  {feature.available ? <Link href={feature.href}>Explore Feature</Link> : <span>Coming Soon</span>}
                 </Button>
               </CardContent>
             </Card>
