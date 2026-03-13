@@ -1,4 +1,4 @@
-import { ProximaLogo } from "@/components/proxima-logo"
+ï»¿import { ProximaLogo } from "@/components/proxima-logo"
 import { Github, Linkedin, Mail, Twitter } from "lucide-react"
 import Link from "next/link"
 
@@ -106,7 +106,7 @@ export function Footer() {
 
         <div className="mt-8 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Proxima Football AI. All rights reserved.
+            (c) {new Date().getFullYear()} Proxima Football AI. All rights reserved.
           </p>
           <p className="text-muted-foreground text-sm mt-2 md:mt-0">
             Powered by {" "}
@@ -124,3 +124,4 @@ export function Footer() {
     </footer>
   )
 }
+
