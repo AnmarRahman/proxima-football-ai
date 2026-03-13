@@ -61,14 +61,39 @@ SEASON_BASE_KEYS = [
 ]
 
 NUMERIC_CLAMPS = {
+    "appearances": (0.0, 80.0),
+    "goals": (0.0, 100.0),
+    "assists": (0.0, 60.0),
+    "minutes": (0.0, 7000.0),
     "rating": (4.0, 10.0),
-    "days_lost": (0.0, None),
+    "xG": (0.0, 80.0),
+    "xA": (0.0, 50.0),
+    "key_passes": (0.0, 250.0),
+    "successful_dribbles": (0.0, 400.0),
+    "duels_won": (0.0, 600.0),
+    "shots_per_game": (0.0, 10.0),
+    "tackles_per_game": (0.0, 8.0),
+    "fouls_drawn": (0.0, 200.0),
+    "days_lost": (0.0, 365.0),
     "sprint_speed_kmh": (20.0, 45.0),
     "acceleration": (0.0, 5.0),
     "stamina": (0.0, 5.0),
     "recovery_rate": (0.0, 5.0),
     "contribution_to_build_up": (0.0, 5.0),
     "defensive_transitions": (0.0, 5.0),
+}
+
+INTEGER_FEATURES = {
+    "appearances",
+    "goals",
+    "assists",
+    "minutes",
+    "key_passes",
+    "successful_dribbles",
+    "duels_won",
+    "fouls_drawn",
+    "days_lost",
+    "age",
 }
 
 PHYSICAL_MAPPING = {
@@ -495,10 +520,14 @@ def make_player_window(player_df: pd.DataFrame, window_size: int) -> np.ndarray:
 
 def postprocess_prediction(values: Sequence[float], age: int) -> Dict[str, float]:
     out = dict(zip(FEATURE_NAMES, [float(v) for v in values]))
-    out["age"] = float(age)
+    out["age"] = float(max(0, age))
 
     for key, value in out.items():
         out[key] = clamp_value(key, float(value))
+
+    for key in INTEGER_FEATURES:
+        if key in out:
+            out[key] = float(int(round(out[key])))
 
     return out
 
@@ -666,7 +695,7 @@ def parse_args() -> argparse.Namespace:
         help="When used with --all-players/--all-active, include players marked as retired.",
     )
     parser.add_argument("--window-size", type=int, default=4, help="Historical seasons used for next-season prediction.")
-    parser.add_argument("--retirement-age", type=int, default=35, help="Maximum age to forecast to.")
+    parser.add_argument("--retirement-age", type=int, default=40, help="Maximum age to forecast to.")
     parser.add_argument("--epochs", type=int, default=300, help="Maximum training epochs.")
     parser.add_argument("--batch-size", type=int, default=16, help="Training batch size.")
     parser.add_argument("--seed", type=int, default=42, help="Random seed.")
