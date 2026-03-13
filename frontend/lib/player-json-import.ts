@@ -16,6 +16,12 @@ export type PlayerImportResult = {
   seasonsImported: number;
 };
 
+type SeasonValidationResult = {
+  season: Dict;
+  seasonYear: number;
+  teamId: string;
+};
+
 function asRecord(value: unknown): Dict {
   return value && typeof value === "object" && !Array.isArray(value) ? (value as Dict) : {};
 }
@@ -25,6 +31,14 @@ function recordArray(value: unknown): Dict[] {
     return [];
   }
   return value.map(asRecord).filter((entry) => Object.keys(entry).length > 0);
+}
+
+function toStringOrNull(value: unknown): string | null {
+  if (value === null || value === undefined) {
+    return null;
+  }
+  const clean = String(value).trim();
+  return clean ? clean : null;
 }
 
 function normalizeId(value: unknown): string | null {
@@ -335,6 +349,93 @@ async function replaceSeasonChildren(playerSeasonId: number, season: Dict): Prom
   }
 }
 
+function validateSeasonDocument(seasonInput: unknown): SeasonValidationResult {
+  const season = asRecord(seasonInput);
+  if (!Object.keys(season).length) {
+    throw new Error("Invalid season JSON: expected an object.");
+  }
+
+  const seasonYear = toInt(season.season);
+  if (seasonYear === null || seasonYear < 1900 || seasonYear > 2200) {
+    throw new Error("Invalid season JSON: 'season' must be a valid year.");
+  }
+
+  const teamId = normalizeId(season.team_id);
+  if (!teamId) {
+    throw new Error("Invalid season JSON: 'team_id' is required.");
+  }
+
+  const normalized: Dict = {
+    ...season,
+    season: seasonYear,
+    team_id: teamId,
+    league_id: normalizeId(season.league_id) || "unknown",
+    position: toStringOrNull(season.position),
+    appearances: toInt(season.appearances),
+    goals: toInt(season.goals),
+    assists: toInt(season.assists),
+    minutes: toInt(season.minutes),
+    rating: toFloat(season.rating),
+    xG: toFloat(season.xG ?? season.xg),
+    xA: toFloat(season.xA ?? season.xa),
+    key_passes: toInt(season.key_passes),
+    successful_dribbles: toInt(season.successful_dribbles),
+    duels_won: toInt(season.duels_won),
+    shots_per_game: toFloat(season.shots_per_game),
+    tackles_per_game: toFloat(season.tackles_per_game),
+    fouls_drawn: toInt(season.fouls_drawn),
+    physical_metrics: asRecord(season.physical_metrics),
+    tactical_data: asRecord(season.tactical_data),
+    national_team_stats: recordArray(season.national_team_stats),
+    injuries: recordArray(season.injuries),
+    transfer_history: recordArray(season.transfer_history),
+  };
+
+  return {
+    season: normalized,
+    seasonYear,
+    teamId,
+  };
+}
+
+async function playerExists(playerId: string): Promise<boolean> {
+  const rows = await supabaseRestRequest("players", {
+    method: "GET",
+    params: {
+      select: "id",
+      id: `eq.${playerId}`,
+      limit: "1",
+    },
+  });
+
+  return Array.isArray(rows) && rows.length > 0;
+}
+
+export async function upsertPlayerSeasonDocument(
+  playerIdInput: unknown,
+  seasonInput: unknown
+): Promise<{ playerId: string; season: number; teamId: string }> {
+  const playerId = normalizeId(playerIdInput);
+  if (!playerId) {
+    throw new Error("Missing or invalid player id.");
+  }
+
+  const exists = await playerExists(playerId);
+  if (!exists) {
+    throw new Error(`Player '${playerId}' was not found in database.`);
+  }
+
+  const validated = validateSeasonDocument(seasonInput);
+  const playerSeasonId = await upsertPlayerSeason(playerId, validated.season);
+  await replaceSeasonChildren(playerSeasonId, validated.season);
+
+  return {
+    playerId,
+    season: validated.seasonYear,
+    teamId: validated.teamId,
+  };
+}
+
 export async function importPlayerDocument(
   document: unknown,
   options: ImportOptions = {}
@@ -369,4 +470,3 @@ export async function importPlayerDocument(
     seasonsImported: importedSeasons,
   };
 }
-

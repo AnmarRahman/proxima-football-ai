@@ -21,12 +21,30 @@ type SeasonRow = {
   goals?: number | string | null;
   assists?: number | string | null;
   minutes?: number | string | null;
+  position?: string | null;
   rating?: number | string | null;
+  xg?: number | string | null;
+  xa?: number | string | null;
+  key_passes?: number | string | null;
+  successful_dribbles?: number | string | null;
+  duels_won?: number | string | null;
+  shots_per_game?: number | string | null;
+  tackles_per_game?: number | string | null;
+  fouls_drawn?: number | string | null;
+  raw_json?: unknown;
 };
 
 function toNumber(value: unknown): number {
   const parsed = Number(value);
   return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function toNullableNumber(value: unknown): number | null {
+  if (value === null || value === undefined || value === "") {
+    return null;
+  }
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : null;
 }
 
 async function fetchAllPlayers(): Promise<PlayerRow[]> {
@@ -65,7 +83,8 @@ async function fetchAllSeasons(): Promise<SeasonRow[]> {
 
   while (true) {
     const rows = (await supabaseRestGet("player_seasons", {
-      select: "player_id,season,team_id,league_id,appearances,goals,assists,minutes,rating",
+      select:
+        "player_id,season,team_id,league_id,appearances,goals,assists,minutes,position,rating,xg,xa,key_passes,successful_dribbles,duels_won,shots_per_game,tackles_per_game,fouls_drawn,raw_json",
       order: "player_id.asc,season.desc",
       limit: String(pageSize),
       offset: String(offset),
@@ -161,7 +180,17 @@ export async function GET(request: NextRequest) {
               goals: toNumber(latest.goals),
               assists: toNumber(latest.assists),
               minutes: toNumber(latest.minutes),
-              rating: latest.rating === null || latest.rating === undefined ? null : Number(latest.rating),
+              position: latest.position || null,
+              rating: toNullableNumber(latest.rating),
+              xg: toNullableNumber(latest.xg),
+              xa: toNullableNumber(latest.xa),
+              key_passes: toNullableNumber(latest.key_passes),
+              successful_dribbles: toNullableNumber(latest.successful_dribbles),
+              duels_won: toNullableNumber(latest.duels_won),
+              shots_per_game: toNullableNumber(latest.shots_per_game),
+              tackles_per_game: toNullableNumber(latest.tackles_per_game),
+              fouls_drawn: toNullableNumber(latest.fouls_drawn),
+              raw_json: latest.raw_json ?? null,
             }
           : null,
         seasons: playerSeasons.map((season) => ({
@@ -172,7 +201,17 @@ export async function GET(request: NextRequest) {
           goals: toNumber(season.goals),
           assists: toNumber(season.assists),
           minutes: toNumber(season.minutes),
-          rating: season.rating === null || season.rating === undefined ? null : Number(season.rating),
+          position: season.position || null,
+          rating: toNullableNumber(season.rating),
+          xg: toNullableNumber(season.xg),
+          xa: toNullableNumber(season.xa),
+          key_passes: toNullableNumber(season.key_passes),
+          successful_dribbles: toNullableNumber(season.successful_dribbles),
+          duels_won: toNullableNumber(season.duels_won),
+          shots_per_game: toNullableNumber(season.shots_per_game),
+          tackles_per_game: toNullableNumber(season.tackles_per_game),
+          fouls_drawn: toNullableNumber(season.fouls_drawn),
+          raw_json: season.raw_json ?? null,
         })),
       };
     });
