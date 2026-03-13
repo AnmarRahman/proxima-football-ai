@@ -18,6 +18,7 @@ services:
       SUPABASE_SERVICE_ROLE_KEY: ${SUPABASE_SERVICE_ROLE_KEY:-}
       ADMIN_DASHBOARD_PASSWORD: ${ADMIN_DASHBOARD_PASSWORD:-change-me}
       ADMIN_SESSION_SECRET: ${ADMIN_SESSION_SECRET:-change-me}
+      ADMIN_COOKIE_SECURE: ${ADMIN_COOKIE_SECURE:-false}
       GITHUB_ACTIONS_TOKEN: ${GITHUB_ACTIONS_TOKEN:-}
       GITHUB_REPO_OWNER: ${GITHUB_REPO_OWNER:-}
       GITHUB_REPO_NAME: ${GITHUB_REPO_NAME:-}
@@ -76,4 +77,6 @@ services:
       python backend/python/migrate_db.py &&
       python backend/python/import_players_to_db.py --players-dir backend/python/data/players
       "
+
+
 
