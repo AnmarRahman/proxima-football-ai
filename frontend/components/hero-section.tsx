@@ -1,4 +1,5 @@
 // HeroSection.tsx
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Brain, TrendingUp, Users } from "lucide-react"
 
@@ -44,9 +45,11 @@ export function HeroSection() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-          <Button size="lg" className="bg-primary uppercase text-primary-foreground hover:bg-primary/90 text-lg px-8 py-4 group">
-            Explore AI Predictions
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          <Button asChild size="lg" className="bg-primary uppercase text-primary-foreground hover:bg-primary/90 text-lg px-8 py-4 group">
+            <Link href="/predictions">
+              Explore AI Predictions
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </Button>
           <Button
             size="lg"
