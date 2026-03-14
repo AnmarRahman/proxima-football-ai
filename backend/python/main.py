@@ -7,13 +7,10 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple
 
 import numpy as np
 import pandas as pd
-import tensorflow as tf
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
+from sklearn.multioutput import MultiOutputRegressor
 from sklearn.preprocessing import MinMaxScaler
-from tensorflow.keras.callbacks import EarlyStopping
-from tensorflow.keras.layers import GRU, Dense, Dropout
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.optimizers import Adam
 
 try:
     import psycopg
@@ -440,19 +437,6 @@ def build_training_sequences(df: pd.DataFrame, window_size: int) -> Tuple[np.nda
     return x, y
 
 
-def build_model(window_size: int, num_features: int) -> Sequential:
-    model = Sequential(
-        [
-            GRU(96, input_shape=(window_size, num_features)),
-            Dropout(0.2),
-            Dense(64, activation="relu"),
-            Dense(num_features),
-        ]
-    )
-    model.compile(optimizer=Adam(learning_rate=1e-3), loss="mse", metrics=["mae"])
-    return model
-
-
 def train_global_model(
     x_raw: np.ndarray,
     y_raw: np.ndarray,
@@ -460,7 +444,7 @@ def train_global_model(
     epochs: int,
     batch_size: int,
     seed: int,
-) -> Tuple[Sequential, MinMaxScaler, Dict[str, float]]:
+) -> Tuple[Any, MinMaxScaler, Dict[str, float]]:
     num_features = x_raw.shape[2]
     scaler = MinMaxScaler()
 
@@ -470,24 +454,22 @@ def train_global_model(
     x_scaled = scaler.transform(x_raw.reshape(-1, num_features)).reshape(x_raw.shape)
     y_scaled = scaler.transform(y_raw)
 
+    x_flat = x_scaled.reshape(x_scaled.shape[0], -1)
+
     x_train, x_val, y_train, y_val = train_test_split(
-        x_scaled, y_scaled, test_size=0.2, random_state=seed
+        x_flat, y_scaled, test_size=0.2, random_state=seed
     )
 
-    model = build_model(window_size=window_size, num_features=num_features)
-    callbacks = [EarlyStopping(monitor="val_loss", patience=35, restore_best_weights=True)]
-
-    history = model.fit(
-        x_train,
-        y_train,
-        validation_data=(x_val, y_val),
-        epochs=epochs,
-        batch_size=batch_size,
-        verbose=0,
-        callbacks=callbacks,
+    base_estimator = RandomForestRegressor(
+        n_estimators=300,
+        random_state=seed,
+        n_jobs=-1,
+        min_samples_leaf=2,
     )
+    model = MultiOutputRegressor(base_estimator)
+    model.fit(x_train, y_train)
 
-    val_pred_scaled = model.predict(x_val, verbose=0)
+    val_pred_scaled = model.predict(x_val)
     val_pred = scaler.inverse_transform(val_pred_scaled)
     val_true = scaler.inverse_transform(y_val)
 
@@ -496,12 +478,12 @@ def train_global_model(
     mae_rating = float(np.mean(np.abs(val_pred[:, rating_idx] - val_true[:, rating_idx])))
 
     metrics = {
-        "epochs_ran": float(len(history.history.get("loss", []))),
+        "epochs_ran": 1.0,
         "val_mae_all_features": mae_all,
         "val_mae_rating": mae_rating,
     }
     print(
-        f"Model trained. Validation MAE (all features): {mae_all:.4f}, "
+        f"Model trained (sklearn). Validation MAE (all features): {mae_all:.4f}, "
         f"rating MAE: {mae_rating:.4f}"
     )
     return model, scaler, metrics
@@ -535,7 +517,7 @@ def postprocess_prediction(values: Sequence[float], age: int) -> Dict[str, float
 def predict_for_player(
     player_id: str,
     full_df: pd.DataFrame,
-    model: Sequential,
+    model: Any,
     scaler: MinMaxScaler,
     window_size: int,
     retirement_age: int,
@@ -556,7 +538,7 @@ def predict_for_player(
 
     for step in range(remaining):
         x_scaled = scaler.transform(window).reshape(1, window_size, len(FEATURE_NAMES))
-        pred_scaled = model.predict(x_scaled, verbose=0)[0]
+        pred_scaled = model.predict(x_scaled.reshape(1, -1))[0]
         pred = scaler.inverse_transform(pred_scaled.reshape(1, -1))[0]
 
         season = last_season + step + 1
@@ -673,7 +655,6 @@ def set_seeds(seed: int) -> None:
     os.environ["PYTHONHASHSEED"] = str(seed)
     random.seed(seed)
     np.random.seed(seed)
-    tf.random.set_seed(seed)
 
 
 def parse_args() -> argparse.Namespace:
@@ -904,6 +885,10 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+
+
 
 
 
