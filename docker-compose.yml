@@ -78,5 +78,32 @@ services:
       python backend/python/import_players_to_db.py --players-dir backend/python/data/players
       "
 
-
-
+  predictor:
+    image: python:3.11-slim
+    working_dir: /repo
+    volumes:
+      - ./:/repo
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-proxima}:${POSTGRES_PASSWORD:-proxima_password}@postgres:5432/${POSTGRES_DB:-proxima_ai}
+      TF_ENABLE_ONEDNN_OPTS: "0"
+      OMP_NUM_THREADS: "1"
+      TF_NUM_INTRAOP_THREADS: "1"
+      TF_NUM_INTEROP_THREADS: "1"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: >-
+      bash -lc "
+      pip install --no-cache-dir -r backend/requirements.txt &&
+      python backend/python/main.py
+      --data-source db
+      --output-target db
+      --all-active
+      --epochs 120
+      --batch-size 16
+      --window-size 4
+      --retirement-age 40
+      --run-type manual
+      --triggered-by docker-compose
+      --model-version gru-v2
+      "

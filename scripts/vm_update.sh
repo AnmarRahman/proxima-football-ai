@@ -49,3 +49,7 @@ docker compose up -d app --remove-orphans
 
 echo "Current containers:"
 docker compose ps
+
+echo
+echo "Next step (required for non-Mbappe predictions):"
+echo "  docker compose run --rm predictor"
