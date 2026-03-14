@@ -44,12 +44,19 @@ docker compose up -d postgres postgrest
 echo "Applying Postgres migrations + importing player JSON data..."
 docker compose run --rm postgres-seed
 
+echo "Running predictor to populate player_predictions..."
+docker compose run --rm predictor
+
 echo "Starting app container..."
 docker compose up -d app --remove-orphans
 
+PRED_COUNT=$(docker compose exec -T postgres psql -U "${POSTGRES_USER:-proxima}" -d "${POSTGRES_DB:-proxima_ai}" -t -A -c "select count(*) from player_predictions;" | tr -d '\r')
+if [ -z "$PRED_COUNT" ] || [ "$PRED_COUNT" = "0" ]; then
+  echo "[ERROR] player_predictions is empty after predictor run."
+  exit 1
+fi
+
+echo "player_predictions count: $PRED_COUNT"
+
 echo "Current containers:"
 docker compose ps
-
-echo
-echo "Next step (required for non-Mbappe predictions):"
-echo "  docker compose run --rm predictor"
