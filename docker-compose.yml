@@ -93,17 +93,4 @@ services:
       postgres:
         condition: service_healthy
     command: >-
-      bash -lc "
-      pip install --no-cache-dir -r backend/requirements.txt &&
-      python backend/python/main.py
-      --data-source db
-      --output-target db
-      --all-active
-      --epochs 120
-      --batch-size 16
-      --window-size 4
-      --retirement-age 40
-      --run-type manual
-      --triggered-by docker-compose
-      --model-version gru-v2
-      "
+      bash -lc "pip install --no-cache-dir -r backend/requirements.txt && python backend/python/main.py --data-source db --output-target db --all-active --epochs 120 --batch-size 16 --window-size 4 --retirement-age 40 --run-type manual --triggered-by docker-compose --model-version gru-v2"
