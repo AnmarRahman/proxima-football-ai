@@ -15,10 +15,7 @@ jobs:
     timeout-minutes: 120
     env:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
-      TF_ENABLE_ONEDNN_OPTS: "0"
       OMP_NUM_THREADS: "1"
-      TF_NUM_INTRAOP_THREADS: "1"
-      TF_NUM_INTEROP_THREADS: "1"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -56,16 +53,29 @@ jobs:
         if: ${{ steps.db_counts.outputs.season_count == '0' || vars.IMPORT_PLAYERS_FROM_REPO == 'true' }}
         run: python backend/python/import_players_to_db.py
 
+      - name: Fingerprint training data
+        id: training_data
+        shell: bash
+        run: |
+          fingerprint="$(python backend/python/main.py --data-source db --output-target files --print-data-fingerprint | tail -n 1)"
+          test -n "$fingerprint"
+          echo "fingerprint=$fingerprint" >> "$GITHUB_OUTPUT"
+          echo "Training data fingerprint: $fingerprint"
+
+      - name: Restore trained model
+        uses: actions/cache@v4
+        with:
+          path: backend/python/artifacts/career_model.joblib
+          key: career-model-${{ runner.os }}-rf-v4-${{ hashFiles('backend/python/main.py', 'backend/requirements.txt') }}-${{ steps.training_data.outputs.fingerprint }}
+
       - name: Generate and store predictions
         run: >-
           python backend/python/main.py
           --data-source db
           --output-target db
           --all-active
-          --epochs 120
-          --batch-size 16
           --window-size 4
           --retirement-age 40
           --run-type scheduled
           --triggered-by github-actions
-          --model-version gru-v2
+          --model-version random-forest-v4-position-aware-blend
