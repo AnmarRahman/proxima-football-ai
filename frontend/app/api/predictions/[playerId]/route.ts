@@ -3,6 +3,9 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 function sanitizePlayerId(raw: string): string | null {
   const clean = String(raw || "").trim().toLowerCase();
   if (!/^[a-z0-9-]+$/.test(clean)) {
@@ -20,6 +23,21 @@ async function readLocalFallbackPrediction(playerId: string): Promise<any[] | nu
   } catch {
     return null;
   }
+}
+
+function parsePredictionJson(raw: unknown): any[] {
+  if (Array.isArray(raw)) {
+    return raw;
+  }
+  if (typeof raw === "string") {
+    try {
+      const parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch {
+      return [];
+    }
+  }
+  return [];
 }
 
 export async function GET(
@@ -40,12 +58,13 @@ export async function GET(
     return NextResponse.json({
       player: { id: playerId, name: playerId },
       stats: fallback,
+      current_stats: null,
       source: "fallback",
     });
   }
 
   try {
-    const [predictionRows, playerRows] = await Promise.all([
+    const [predictionRows, playerRows, currentSeasonRows] = await Promise.all([
       supabaseRestGet("latest_player_predictions", {
         select: "player_id,run_id,predicted_at,horizon_seasons,prediction_json,confidence_score",
         player_id: `eq.${playerId}`,
@@ -56,10 +75,17 @@ export async function GET(
         id: `eq.${playerId}`,
         limit: "1",
       }),
+      supabaseRestGet("player_seasons", {
+        select: "season,rating,sprint_speed_kmh,shots_per_game,key_passes,successful_dribbles,tackles_per_game,stamina",
+        player_id: `eq.${playerId}`,
+        order: "season.desc",
+        limit: "1",
+      }),
     ]);
 
     const prediction = (predictionRows || [])[0];
     const player = (playerRows || [])[0];
+    const currentStats = (currentSeasonRows || [])[0] || null;
 
     if (!prediction) {
       const fallback = await readLocalFallbackPrediction(playerId);
@@ -70,20 +96,18 @@ export async function GET(
       return NextResponse.json({
         player: { id: playerId, name: player?.name || playerId },
         stats: fallback,
+        current_stats: currentStats,
         source: "fallback",
       });
     }
-
-    const stats = Array.isArray(prediction.prediction_json)
-      ? prediction.prediction_json
-      : [];
 
     return NextResponse.json({
       player: {
         id: playerId,
         name: player?.name || playerId,
       },
-      stats,
+      stats: parsePredictionJson(prediction.prediction_json),
+      current_stats: currentStats,
       meta: {
         run_id: prediction.run_id,
         predicted_at: prediction.predicted_at,
@@ -98,6 +122,7 @@ export async function GET(
       return NextResponse.json({
         player: { id: playerId, name: playerId },
         stats: fallback,
+        current_stats: null,
         source: "fallback",
         error: error?.message || "DB query failed",
       });

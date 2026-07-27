@@ -1,19 +1,19 @@
 import argparse
+import hashlib
 import json
 import os
 import random
+import re
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 
+import joblib
 import numpy as np
 import pandas as pd
-import tensorflow as tf
-from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import GroupShuffleSplit
 from sklearn.preprocessing import MinMaxScaler
-from tensorflow.keras.callbacks import EarlyStopping
-from tensorflow.keras.layers import GRU, Dense, Dropout
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.optimizers import Adam
 
 try:
     import psycopg
@@ -43,6 +43,20 @@ FEATURE_NAMES = [
     "defensive_transitions",
     "age",
 ]
+
+POSITION_FEATURE_NAMES = [
+    "position_goalkeeper",
+    "position_center_back",
+    "position_full_back",
+    "position_defensive_midfield",
+    "position_central_midfield",
+    "position_attacking_midfield",
+    "position_winger",
+    "position_striker",
+]
+
+MODEL_INPUT_NAMES = FEATURE_NAMES + POSITION_FEATURE_NAMES
+PREDICTION_BLEND = 0.5
 
 SEASON_BASE_KEYS = [
     "appearances",
@@ -127,6 +141,7 @@ TACTICAL_MAPPING = {
 BASE_DIR = Path(__file__).resolve().parent
 PLAYERS_DIR = BASE_DIR / "data" / "players"
 PREDICTIONS_DIR = PLAYERS_DIR / "predictions"
+DEFAULT_MODEL_ARTIFACT = BASE_DIR / "artifacts" / "career_model.joblib"
 FRONTEND_PREDICTIONS_DIR = BASE_DIR.parent.parent / "frontend" / "public" / "data" / "predictions"
 PREDICTIONS_DIR.mkdir(parents=True, exist_ok=True)
 PREDICTION_RUN_LOCK_KEY = 91827463
@@ -168,6 +183,53 @@ def parse_retired_flag(player: Dict[str, object]) -> bool:
 def map_label(label: object, mapping: Dict[str, float]) -> float:
     key = normalize_label(label)
     return mapping.get(key, 0.0)
+
+
+def position_features(position: object) -> Dict[str, float]:
+    """Return stable, multi-label role features for a season position string."""
+    normalized = re.sub(r"[^a-z0-9]+", " ", normalize_label(position)).strip()
+    tokens = set(normalized.split())
+    features = {name: 0.0 for name in POSITION_FEATURE_NAMES}
+
+    if "goalkeeper" in normalized or "keeper" in tokens or "gk" in tokens:
+        features["position_goalkeeper"] = 1.0
+    if any(term in normalized for term in ("center back", "centre back")) or "cb" in tokens:
+        features["position_center_back"] = 1.0
+    if any(term in normalized for term in ("left back", "right back", "full back", "wing back")) or tokens.intersection({"lb", "rb", "lwb", "rwb"}):
+        features["position_full_back"] = 1.0
+    if any(term in normalized for term in ("defensive midfield", "holding midfield")) or tokens.intersection({"dm", "cdm"}):
+        features["position_defensive_midfield"] = 1.0
+    if any(term in normalized for term in ("central midfield", "central midfielder", "centre midfield", "left central midfielder", "right central midfielder")) or "cm" in tokens:
+        features["position_central_midfield"] = 1.0
+    if any(term in normalized for term in ("attacking midfield", "attacking midfielder", "number 10")) or tokens.intersection({"am", "cam"}):
+        features["position_attacking_midfield"] = 1.0
+    if "wing" in normalized or "winger" in normalized or tokens.intersection({"lw", "rw", "lm", "rm"}):
+        features["position_winger"] = 1.0
+    if any(term in normalized for term in ("striker", "forward", "false 9", "false nine", "second striker", "centre forward", "center forward")) or tokens.intersection({"st", "cf", "ss"}):
+        features["position_striker"] = 1.0
+
+    # Preserve a useful broad signal for generic source labels.
+    if not any(features.values()):
+        if "defender" in normalized:
+            features["position_center_back"] = 1.0
+        elif "midfield" in normalized:
+            features["position_central_midfield"] = 1.0
+
+    return features
+
+
+def extract_season_position(season: Dict[str, object]) -> object:
+    if season.get("position"):
+        return season.get("position")
+
+    for team in season.get("teams", []) or []:
+        if team.get("position"):
+            return team.get("position")
+        for competition in team.get("competitions", []) or []:
+            if competition.get("position"):
+                return competition.get("position")
+
+    return ""
 
 
 def clamp_value(name: str, value: float) -> float:
@@ -266,6 +328,7 @@ def flatten_season(season: Dict[str, object], birth_year: int) -> Optional[Dict[
             flat[key] /= num_comps
 
     flat["age"] = safe_float(season_year, default=0.0) - float(birth_year)
+    flat.update(position_features(extract_season_position(season)))
     return flat
 
 
@@ -273,22 +336,28 @@ def postprocess_loaded_df(df: pd.DataFrame) -> pd.DataFrame:
     if df.empty:
         raise ValueError("Training dataframe is empty after loading player seasons.")
 
+    if "position" in df.columns:
+        encoded_positions = df["position"].apply(position_features).apply(pd.Series)
+        for column in POSITION_FEATURE_NAMES:
+            df[column] = encoded_positions[column]
+
+    for column in MODEL_INPUT_NAMES:
+        if column not in df.columns:
+            df[column] = 0.0
+        df[column] = pd.to_numeric(df[column], errors="coerce")
+
+    df[MODEL_INPUT_NAMES] = df[MODEL_INPUT_NAMES].replace([np.inf, -np.inf], np.nan)
+
+    # Preserve each player's normal scale where possible, then use the corpus
+    # median. Rating has a football-specific fallback; absent role flags are 0.
     for column in FEATURE_NAMES:
-        if column in ["acceleration", "stamina", "recovery_rate", "contribution_to_build_up", "defensive_transitions"]:
-            continue
-        if column in df.columns:
-            df[column] = pd.to_numeric(df[column], errors="coerce")
+        player_medians = df.groupby("player_id")[column].transform("median")
+        df[column] = df[column].fillna(player_medians)
+        global_median = df[column].median(skipna=True)
+        fallback = 6.5 if column == "rating" else 0.0
+        df[column] = df[column].fillna(fallback if pd.isna(global_median) else global_median)
 
-    df["rating"] = pd.to_numeric(df["rating"], errors="coerce")
-
-    # Allow source-only datasets that omit rating by imputing per-player median,
-    # then falling back to a global median.
-    global_rating = float(df["rating"].median(skipna=True))
-    if np.isnan(global_rating):
-        global_rating = 6.5
-
-    df["rating"] = df.groupby("player_id")["rating"].transform(lambda s: s.fillna(s.median()))
-    df["rating"] = df["rating"].fillna(global_rating)
+    df[POSITION_FEATURE_NAMES] = df[POSITION_FEATURE_NAMES].fillna(0.0)
     df = df.sort_values(["player_id", "season"]).reset_index(drop=True)
 
     player_count = df["player_id"].nunique()
@@ -347,6 +416,7 @@ def load_all_players_df_from_db(conn: Any) -> pd.DataFrame:
       p.name as player_name,
       coalesce(p.is_retired, false) as is_retired,
       s.season,
+      coalesce(s.position, '') as position,
       coalesce(s.appearances, 0) as appearances,
       coalesce(s.goals, 0) as goals,
       coalesce(s.assists, 0) as assists,
@@ -406,109 +476,227 @@ def load_all_players_df_from_db(conn: Any) -> pd.DataFrame:
     return postprocess_loaded_df(df)
 
 
-def build_training_sequences(df: pd.DataFrame, window_size: int) -> Tuple[np.ndarray, np.ndarray]:
+def build_training_sequences(
+    df: pd.DataFrame, window_size: int
+) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
     x_rows: List[np.ndarray] = []
     y_rows: List[np.ndarray] = []
+    group_rows: List[str] = []
 
-    for _, group in df.groupby("player_id", sort=False):
+    for player_id, group in df.groupby("player_id", sort=False):
         group = group.sort_values("season")
-        values = group[FEATURE_NAMES].values.astype(np.float32)
+        input_values = group[MODEL_INPUT_NAMES].values.astype(np.float32)
+        target_values = group[FEATURE_NAMES].values.astype(np.float32)
 
-        if len(values) < 2:
+        if len(input_values) < 2:
             continue
 
-        if len(values) <= window_size:
+        if len(input_values) <= window_size:
             # Short-career players still contribute one sample via left-padding.
-            history = values[:-1]
+            history = input_values[:-1]
             pad_count = window_size - len(history)
-            padded = np.repeat(values[:1], pad_count, axis=0) if pad_count > 0 else np.empty((0, values.shape[1]))
+            padded = (
+                np.repeat(input_values[:1], pad_count, axis=0)
+                if pad_count > 0
+                else np.empty((0, input_values.shape[1]))
+            )
             padded_window = np.vstack([padded, history]) if len(history) > 0 else padded
             x_rows.append(padded_window.astype(np.float32))
-            y_rows.append(values[-1])
+            y_rows.append(target_values[-1])
+            group_rows.append(str(player_id))
             continue
 
-        for idx in range(window_size, len(values)):
-            x_rows.append(values[idx - window_size : idx])
-            y_rows.append(values[idx])
+        for idx in range(window_size, len(input_values)):
+            x_rows.append(input_values[idx - window_size : idx])
+            y_rows.append(target_values[idx])
+            group_rows.append(str(player_id))
 
     if not x_rows:
         raise ValueError("No training windows could be built. Reduce window size or add more seasons.")
 
     x = np.array(x_rows, dtype=np.float32)
     y = np.array(y_rows, dtype=np.float32)
+    groups = np.array(group_rows)
     print(f"Built {len(x)} training windows (window_size={window_size}).")
-    return x, y
-
-
-def build_model(window_size: int, num_features: int) -> Sequential:
-    model = Sequential(
-        [
-            GRU(96, input_shape=(window_size, num_features)),
-            Dropout(0.2),
-            Dense(64, activation="relu"),
-            Dense(num_features),
-        ]
-    )
-    model.compile(optimizer=Adam(learning_rate=1e-3), loss="mse", metrics=["mae"])
-    return model
+    return x, y, groups
 
 
 def train_global_model(
     x_raw: np.ndarray,
     y_raw: np.ndarray,
+    groups: np.ndarray,
     window_size: int,
     epochs: int,
     batch_size: int,
     seed: int,
-) -> Tuple[Sequential, MinMaxScaler, Dict[str, float]]:
-    num_features = x_raw.shape[2]
-    scaler = MinMaxScaler()
+) -> Tuple[Any, MinMaxScaler, MinMaxScaler, Dict[str, Any]]:
+    del epochs, batch_size  # Retained as CLI-compatible no-ops for the sklearn backend.
 
-    stacked = np.vstack([x_raw.reshape(-1, num_features), y_raw])
-    scaler.fit(stacked)
+    unique_players = np.unique(groups)
+    if len(unique_players) < 2:
+        raise ValueError("Leak-free validation requires at least two players.")
 
-    x_scaled = scaler.transform(x_raw.reshape(-1, num_features)).reshape(x_raw.shape)
-    y_scaled = scaler.transform(y_raw)
+    splitter = GroupShuffleSplit(n_splits=1, test_size=0.2, random_state=seed)
+    train_indices, val_indices = next(splitter.split(x_raw, y_raw, groups=groups))
 
-    x_train, x_val, y_train, y_val = train_test_split(
-        x_scaled, y_scaled, test_size=0.2, random_state=seed
+    num_input_features = x_raw.shape[2]
+    x_scaler = MinMaxScaler()
+    y_scaler = MinMaxScaler()
+    x_scaler.fit(x_raw[train_indices].reshape(-1, num_input_features))
+    y_scaler.fit(y_raw[train_indices])
+
+    x_train = x_scaler.transform(
+        x_raw[train_indices].reshape(-1, num_input_features)
+    ).reshape(len(train_indices), window_size, num_input_features)
+    x_val = x_scaler.transform(
+        x_raw[val_indices].reshape(-1, num_input_features)
+    ).reshape(len(val_indices), window_size, num_input_features)
+    y_train = y_scaler.transform(y_raw[train_indices])
+
+    model = RandomForestRegressor(
+        n_estimators=400,
+        random_state=seed,
+        n_jobs=-1,
+        min_samples_leaf=1,
+        max_features=0.75,
     )
+    model.fit(x_train.reshape(len(x_train), -1), y_train)
 
-    model = build_model(window_size=window_size, num_features=num_features)
-    callbacks = [EarlyStopping(monitor="val_loss", patience=35, restore_best_weights=True)]
-
-    history = model.fit(
-        x_train,
-        y_train,
-        validation_data=(x_val, y_val),
-        epochs=epochs,
-        batch_size=batch_size,
-        verbose=0,
-        callbacks=callbacks,
+    val_pred_scaled = model.predict(x_val.reshape(len(x_val), -1))
+    raw_val_pred = y_scaler.inverse_transform(val_pred_scaled)
+    val_true = y_raw[val_indices]
+    persistence_baseline = x_raw[val_indices, -1, : len(FEATURE_NAMES)]
+    val_pred = persistence_baseline + PREDICTION_BLEND * (
+        raw_val_pred - persistence_baseline
     )
-
-    val_pred_scaled = model.predict(x_val, verbose=0)
-    val_pred = scaler.inverse_transform(val_pred_scaled)
-    val_true = scaler.inverse_transform(y_val)
 
     mae_all = float(np.mean(np.abs(val_pred - val_true)))
+    baseline_mae_all = float(np.mean(np.abs(persistence_baseline - val_true)))
+    goals_idx = FEATURE_NAMES.index("goals")
+    assists_idx = FEATURE_NAMES.index("assists")
     rating_idx = FEATURE_NAMES.index("rating")
+    mae_goals = float(np.mean(np.abs(val_pred[:, goals_idx] - val_true[:, goals_idx])))
+    mae_assists = float(np.mean(np.abs(val_pred[:, assists_idx] - val_true[:, assists_idx])))
     mae_rating = float(np.mean(np.abs(val_pred[:, rating_idx] - val_true[:, rating_idx])))
+    baseline_mae_goals = float(
+        np.mean(np.abs(persistence_baseline[:, goals_idx] - val_true[:, goals_idx]))
+    )
+    baseline_mae_assists = float(
+        np.mean(np.abs(persistence_baseline[:, assists_idx] - val_true[:, assists_idx]))
+    )
+    baseline_mae_rating = float(
+        np.mean(np.abs(persistence_baseline[:, rating_idx] - val_true[:, rating_idx]))
+    )
 
     metrics = {
-        "epochs_ran": float(len(history.history.get("loss", []))),
+        "estimator_count": 400,
+        "training_players": int(len(np.unique(groups[train_indices]))),
+        "validation_players": int(len(np.unique(groups[val_indices]))),
+        "training_windows": int(len(train_indices)),
+        "validation_windows": int(len(val_indices)),
+        "prediction_blend": PREDICTION_BLEND,
         "val_mae_all_features": mae_all,
+        "persistence_mae_all_features": baseline_mae_all,
+        "val_mae_goals": mae_goals,
+        "persistence_mae_goals": baseline_mae_goals,
+        "val_mae_assists": mae_assists,
+        "persistence_mae_assists": baseline_mae_assists,
         "val_mae_rating": mae_rating,
+        "persistence_mae_rating": baseline_mae_rating,
     }
     print(
-        f"Model trained. Validation MAE (all features): {mae_all:.4f}, "
-        f"rating MAE: {mae_rating:.4f}"
+        "Model trained (sklearn, player-held-out validation). "
+        f"Players train/validation: {metrics['training_players']}/{metrics['validation_players']}. "
+        f"MAE goals: {mae_goals:.3f}, assists: {mae_assists:.3f}, "
+        f"rating: {mae_rating:.3f}, all features: {mae_all:.3f} "
+        f"(persistence baseline: {baseline_mae_all:.3f})."
     )
-    return model, scaler, metrics
+    return model, x_scaler, y_scaler, metrics
+
+
+def training_data_fingerprint(df: pd.DataFrame) -> str:
+    columns = ["player_id", "season", "is_retired"] + MODEL_INPUT_NAMES
+    normalized = df[columns].copy().sort_values(["player_id", "season"]).reset_index(drop=True)
+    payload = normalized.to_json(
+        orient="records",
+        date_format="iso",
+        double_precision=10,
+    )
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def load_model_artifact(
+    artifact_path: Path,
+    data_fingerprint: str,
+    window_size: int,
+    model_version: str,
+) -> Optional[Tuple[Any, MinMaxScaler, MinMaxScaler, Dict[str, Any]]]:
+    if not artifact_path.exists():
+        return None
+
+    try:
+        artifact = joblib.load(artifact_path)
+    except Exception as exc:
+        print(f"[WARN] Could not load model artifact {artifact_path}: {exc}")
+        return None
+
+    expected = {
+        "data_fingerprint": data_fingerprint,
+        "window_size": window_size,
+        "model_version": model_version,
+        "input_features": MODEL_INPUT_NAMES,
+        "target_features": FEATURE_NAMES,
+    }
+    mismatches = [key for key, value in expected.items() if artifact.get(key) != value]
+    if mismatches:
+        print(f"Model artifact is stale ({', '.join(mismatches)} changed); retraining.")
+        return None
+
+    required = ("model", "x_scaler", "y_scaler", "metrics")
+    if any(key not in artifact for key in required):
+        print("[WARN] Model artifact is incomplete; retraining.")
+        return None
+
+    print(f"Reusing model artifact: {artifact_path}")
+    return (
+        artifact["model"],
+        artifact["x_scaler"],
+        artifact["y_scaler"],
+        artifact["metrics"],
+    )
+
+
+def save_model_artifact(
+    artifact_path: Path,
+    model: Any,
+    x_scaler: MinMaxScaler,
+    y_scaler: MinMaxScaler,
+    metrics: Dict[str, Any],
+    data_fingerprint: str,
+    window_size: int,
+    model_version: str,
+) -> None:
+    artifact_path.parent.mkdir(parents=True, exist_ok=True)
+    temporary_path = artifact_path.with_suffix(f"{artifact_path.suffix}.tmp")
+    artifact = {
+        "model": model,
+        "x_scaler": x_scaler,
+        "y_scaler": y_scaler,
+        "metrics": metrics,
+        "data_fingerprint": data_fingerprint,
+        "window_size": window_size,
+        "model_version": model_version,
+        "input_features": MODEL_INPUT_NAMES,
+        "target_features": FEATURE_NAMES,
+        "trained_at": datetime.now(timezone.utc).isoformat(),
+    }
+    joblib.dump(artifact, temporary_path)
+    temporary_path.replace(artifact_path)
+    print(f"Saved model artifact: {artifact_path}")
 
 
 def make_player_window(player_df: pd.DataFrame, window_size: int) -> np.ndarray:
-    values = player_df[FEATURE_NAMES].values.astype(np.float32)
+    values = player_df[MODEL_INPUT_NAMES].values.astype(np.float32)
 
     if len(values) >= window_size:
         return values[-window_size:]
@@ -535,8 +723,9 @@ def postprocess_prediction(values: Sequence[float], age: int) -> Dict[str, float
 def predict_for_player(
     player_id: str,
     full_df: pd.DataFrame,
-    model: Sequential,
-    scaler: MinMaxScaler,
+    model: Any,
+    x_scaler: MinMaxScaler,
+    y_scaler: MinMaxScaler,
     window_size: int,
     retirement_age: int,
 ) -> List[Dict[str, object]]:
@@ -552,12 +741,17 @@ def predict_for_player(
         return []
 
     window = make_player_window(player_df, window_size=window_size)
+    position_context = player_df[POSITION_FEATURE_NAMES].iloc[-1].to_numpy(dtype=np.float32)
     predictions: List[Dict[str, object]] = []
 
     for step in range(remaining):
-        x_scaled = scaler.transform(window).reshape(1, window_size, len(FEATURE_NAMES))
-        pred_scaled = model.predict(x_scaled, verbose=0)[0]
-        pred = scaler.inverse_transform(pred_scaled.reshape(1, -1))[0]
+        x_scaled = x_scaler.transform(window).reshape(
+            1, window_size, len(MODEL_INPUT_NAMES)
+        )
+        pred_scaled = model.predict(x_scaled.reshape(1, -1))[0]
+        raw_pred = y_scaler.inverse_transform(pred_scaled.reshape(1, -1))[0]
+        persistence = window[-1, : len(FEATURE_NAMES)]
+        pred = persistence + PREDICTION_BLEND * (raw_pred - persistence)
 
         season = last_season + step + 1
         age = last_age + step + 1
@@ -565,7 +759,8 @@ def predict_for_player(
         pred_row["season"] = season
         predictions.append(ensure_py_types(pred_row))
 
-        next_vec = np.array([pred_row[name] for name in FEATURE_NAMES], dtype=np.float32)
+        next_stats = np.array([pred_row[name] for name in FEATURE_NAMES], dtype=np.float32)
+        next_vec = np.concatenate([next_stats, position_context])
         window = np.vstack([window[1:], next_vec])
 
     return predictions
@@ -673,7 +868,6 @@ def set_seeds(seed: int) -> None:
     os.environ["PYTHONHASHSEED"] = str(seed)
     random.seed(seed)
     np.random.seed(seed)
-    tf.random.set_seed(seed)
 
 
 def parse_args() -> argparse.Namespace:
@@ -733,8 +927,23 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--model-version",
-        default="gru-v2",
+        default="random-forest-v4-position-aware-blend",
         help="Version label persisted with prediction runs in DB mode.",
+    )
+    parser.add_argument(
+        "--model-artifact",
+        default=os.getenv("MODEL_ARTIFACT_PATH", str(DEFAULT_MODEL_ARTIFACT)),
+        help="Cached sklearn model artifact. Reused only when its data fingerprint matches.",
+    )
+    parser.add_argument(
+        "--force-retrain",
+        action="store_true",
+        help="Ignore an existing model artifact and train a fresh model.",
+    )
+    parser.add_argument(
+        "--print-data-fingerprint",
+        action="store_true",
+        help="Print the normalized training-data fingerprint and exit without training.",
     )
     return parser.parse_args()
 
@@ -768,15 +977,45 @@ def main() -> None:
         else:
             df = load_all_players_df_from_files()
 
-        x_raw, y_raw = build_training_sequences(df, window_size=args.window_size)
-        model, scaler, metrics = train_global_model(
-            x_raw=x_raw,
-            y_raw=y_raw,
-            window_size=args.window_size,
-            epochs=args.epochs,
-            batch_size=args.batch_size,
-            seed=args.seed,
-        )
+        data_fingerprint = training_data_fingerprint(df)
+        if args.print_data_fingerprint:
+            print(data_fingerprint)
+            return
+
+        artifact_path = Path(args.model_artifact).expanduser().resolve()
+        cached_artifact = None
+        if not args.force_retrain:
+            cached_artifact = load_model_artifact(
+                artifact_path=artifact_path,
+                data_fingerprint=data_fingerprint,
+                window_size=args.window_size,
+                model_version=args.model_version,
+            )
+
+        artifact_reused = cached_artifact is not None
+        if cached_artifact is not None:
+            model, x_scaler, y_scaler, metrics = cached_artifact
+        else:
+            x_raw, y_raw, groups = build_training_sequences(df, window_size=args.window_size)
+            model, x_scaler, y_scaler, metrics = train_global_model(
+                x_raw=x_raw,
+                y_raw=y_raw,
+                groups=groups,
+                window_size=args.window_size,
+                epochs=args.epochs,
+                batch_size=args.batch_size,
+                seed=args.seed,
+            )
+            save_model_artifact(
+                artifact_path=artifact_path,
+                model=model,
+                x_scaler=x_scaler,
+                y_scaler=y_scaler,
+                metrics=metrics,
+                data_fingerprint=data_fingerprint,
+                window_size=args.window_size,
+                model_version=args.model_version,
+            )
 
         if args.all_players or args.all_active:
             player_index = (
@@ -812,6 +1051,8 @@ def main() -> None:
                 "metrics": metrics,
                 "seed": args.seed,
                 "player_count": len(target_ids),
+                "data_fingerprint": data_fingerprint,
+                "model_artifact_reused": artifact_reused,
             }
             run_id = create_prediction_run(
                 conn=db_conn,
@@ -828,7 +1069,8 @@ def main() -> None:
                     player_id=player_id,
                     full_df=df,
                     model=model,
-                    scaler=scaler,
+                    x_scaler=x_scaler,
+                    y_scaler=y_scaler,
                     window_size=args.window_size,
                     retirement_age=args.retirement_age,
                 )
@@ -904,9 +1146,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-

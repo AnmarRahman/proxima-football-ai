@@ -21,10 +21,15 @@ const FALLBACK_PLAYER_OPTIONS: PlayerOption[] = [
   { id: "neymar", name: "Neymar Jr.", fallbackJson: "neymar.json" },
 ];
 
+type MessageTone = "info" | "error";
+
 export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
   const [selectedPlayerId, setSelectedPlayerId] = useState<string>("");
   const [loading, setLoading] = useState(false);
   const [loadingText, setLoadingText] = useState("");
+  const [playersLoading, setPlayersLoading] = useState(true);
+  const [message, setMessage] = useState<string | null>(null);
+  const [messageTone, setMessageTone] = useState<MessageTone>("info");
   const [playerOptions, setPlayerOptions] = useState<PlayerOption[]>(FALLBACK_PLAYER_OPTIONS);
 
   const loadingMessages = [
@@ -40,9 +45,15 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
     let isMounted = true;
 
     const loadPlayers = async () => {
+      setPlayersLoading(true);
+
       try {
         const response = await fetch("/api/players", { cache: "no-store" });
         if (!response.ok) {
+          if (isMounted) {
+            setMessage("Could not load players from database. Showing fallback list.");
+            setMessageTone("error");
+          }
           return;
         }
 
@@ -56,9 +67,20 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
               name: String(p.name),
             }))
           );
+          setMessage(null);
+        } else if (isMounted) {
+          setMessage("No eligible players were returned by the API. Showing fallback list.");
+          setMessageTone("error");
         }
       } catch {
-        // Keep fallback options when API is unavailable.
+        if (isMounted) {
+          setMessage("Network error while loading players. Showing fallback list.");
+          setMessageTone("error");
+        }
+      } finally {
+        if (isMounted) {
+          setPlayersLoading(false);
+        }
       }
     };
 
@@ -75,6 +97,9 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
     }
 
     setLoading(true);
+    setLoadingText(loadingMessages[0]);
+    setMessage(null);
+    onPlayerSelect?.(null);
 
     let i = 0;
     const interval = setInterval(() => {
@@ -82,33 +107,41 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
       i += 1;
     }, 1000);
 
+    let resolved = false;
+
     try {
       const playerInfo = playerOptions.find((p) => p.id === selectedPlayerId);
 
-      const response = await fetch(`/api/predictions/${selectedPlayerId}`, { cache: "no-store" });
-      if (!response.ok) {
-        throw new Error(`Prediction fetch failed (${response.status})`);
-      }
+      try {
+        const response = await fetch(`/api/predictions/${selectedPlayerId}`, { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error(`Prediction fetch failed (${response.status})`);
+        }
 
-      const payload = await response.json();
-      const stats = Array.isArray(payload?.stats) ? payload.stats : [];
-      const resolvedName = payload?.player?.name || playerInfo?.name || selectedPlayerId;
+        const payload = await response.json();
+        const stats = Array.isArray(payload?.stats) ? payload.stats : [];
+        const resolvedName = payload?.player?.name || playerInfo?.name || selectedPlayerId;
 
-      if (onPlayerSelect) {
-        onPlayerSelect({
+        if (!stats.length) {
+          setMessage("No prediction is available for this player yet.");
+          setMessageTone("error");
+        }
+
+        onPlayerSelect?.({
           id: selectedPlayerId,
           name: resolvedName,
           stats,
+          currentStats: payload?.current_stats || null,
           meta: payload?.meta || null,
           source: payload?.source || "unknown",
         });
-      }
-    } catch (err) {
-      console.error("Error fetching player prediction:", err);
 
-      // Last-resort static fallback for local dev.
-      try {
-        const playerInfo = playerOptions.find((p) => p.id === selectedPlayerId);
+        resolved = true;
+      } catch (err) {
+        console.error("Error fetching player prediction:", err);
+      }
+
+      if (!resolved) {
         const fallbackJson = playerInfo?.fallbackJson || `${selectedPlayerId}.json`;
         const localRes = await fetch(`/data/predictions/${fallbackJson}`);
         if (!localRes.ok) {
@@ -116,17 +149,28 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
         }
 
         const localData = await localRes.json();
-        if (onPlayerSelect) {
-          onPlayerSelect({
-            id: selectedPlayerId,
-            name: playerInfo?.name || selectedPlayerId,
-            stats: Array.isArray(localData) ? localData : [],
-            source: "fallback",
-          });
+        const fallbackStats = Array.isArray(localData) ? localData : [];
+
+        if (!fallbackStats.length) {
+          setMessage("Prediction data exists but is empty for this player.");
+          setMessageTone("error");
+        } else {
+          setMessage("Loaded fallback prediction data.");
+          setMessageTone("info");
         }
-      } catch (fallbackErr) {
-        console.error("Fallback prediction failed:", fallbackErr);
+
+        onPlayerSelect?.({
+          id: selectedPlayerId,
+          name: playerInfo?.name || selectedPlayerId,
+          stats: fallbackStats,
+          source: "fallback",
+        });
       }
+    } catch (fallbackErr) {
+      console.error("Fallback prediction failed:", fallbackErr);
+      setMessage("Prediction is unavailable right now. Try again later.");
+      setMessageTone("error");
+      onPlayerSelect?.(null);
     } finally {
       clearInterval(interval);
       setLoading(false);
@@ -136,11 +180,12 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
 
   return (
     <div className="max-w-4xl mx-auto p-4">
-      <div className="mb-6 flex gap-2 flex-wrap items-center">
+      <div className="mb-2 flex gap-2 flex-wrap items-center">
         <select
-          className="border border-border rounded px-2 py-1 bg-background text-foreground"
+          className="border border-border rounded px-2 py-1 bg-background text-foreground disabled:opacity-60"
           value={selectedPlayerId}
           onChange={(e) => setSelectedPlayerId(e.target.value)}
+          disabled={loading || playersLoading}
         >
           <option value="">Select a player...</option>
           {playerOptions.map((p) => (
@@ -149,10 +194,19 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
             </option>
           ))}
         </select>
-        <Button onClick={handlePlayerSelect} disabled={loading || !selectedPlayerId}>
-          {loading ? "Predicting..." : "Predict Career"}
+        <Button onClick={handlePlayerSelect} disabled={loading || playersLoading || !selectedPlayerId}>
+          {playersLoading ? "Loading players..." : loading ? "Predicting..." : "Predict Career"}
         </Button>
       </div>
+
+      {playersLoading ? <p className="mb-4 text-xs text-gray-400">Loading player list...</p> : null}
+
+      {message ? (
+        <p className={`mb-4 text-sm ${messageTone === "error" ? "text-red-400" : "text-gray-300"}`} aria-live="polite">
+          {message}
+        </p>
+      ) : null}
+
       {loading && (
         <div className="flex flex-col justify-center items-center py-20">
           <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin mb-4" />
