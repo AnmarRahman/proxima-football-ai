@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Activity, CalendarRange, Target } from "lucide-react";
 import { formatPosition } from "@/lib/player-position";
 import type { ReactNode } from "react";
-import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Bar, BarChart, CartesianGrid, Cell, LabelList, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 type Interval = { lower: number; upper: number; method?: string | null } | null;
 
@@ -19,8 +19,8 @@ type ForecastPayload = {
     season: string;
     season_start_year: number;
     season_end_year: number;
-    appearances: number;
-    goals: number;
+    appearances: number | null;
+    goals: number | null;
     is_partial: boolean;
     model_eligible: boolean;
   }>;
@@ -67,12 +67,13 @@ function ForecastCard({
 }
 export function CareerPredictionDashboard(props: ForecastPayload) {
   const { player, prediction, historical_seasons = [] } = props;
+  const analyzedSeasons = historical_seasons.filter((season) => season.model_eligible && !season.is_partial);
   const progressionData = [
-    ...historical_seasons.map((season) => ({
-      season: `${season.season}${season.is_partial ? " (to date)" : ""}`,
+    ...analyzedSeasons.map((season) => ({
+      season: season.season,
       appearances: season.appearances,
       goals: season.goals,
-      kind: season.is_partial ? "partial" : "historical",
+      kind: "historical",
     })),
     {
       season: `${prediction.predicted_season || "Next season"} (forecast)`,
@@ -81,7 +82,21 @@ export function CareerPredictionDashboard(props: ForecastPayload) {
       kind: "forecast",
     },
   ];
-  const chartWidth = Math.max(760, progressionData.length * 76);
+  const chartWidth = Math.max(760, progressionData.length * 94);
+  const firstAnalyzedSeason = analyzedSeasons[0]?.season;
+  const lastAnalyzedSeason = analyzedSeasons[analyzedSeasons.length - 1]?.season;
+  const analyzedRange = firstAnalyzedSeason && lastAnalyzedSeason
+    ? `${firstAnalyzedSeason} to ${lastAnalyzedSeason}`
+    : prediction.based_on_season || "available career history";
+  const hiddenLimitationFragments = [
+    "prediction-point=latest-completed",
+    "does not predict the season after the ongoing partial season",
+    "no retirement-age or full-career trajectory prediction",
+    "no assists, ratings, transfers, trophies, or goalkeeper outputs",
+  ];
+  const visibleLimitations = (prediction.limitations || []).filter((limitation) =>
+    !hiddenLimitationFragments.some((fragment) => limitation.toLowerCase().includes(fragment))
+  );
 
   return (
     <section className="mt-10 space-y-6 animate-fade-in">
@@ -111,55 +126,38 @@ export function CareerPredictionDashboard(props: ForecastPayload) {
         <CardHeader>
           <CardTitle>Career Progression</CardTitle>
           <CardDescription>
-            Sourced domestic-league seasons are shown chronologically. Gold marks the next-season forecast.
+            Completed domestic-league seasons are shown chronologically, followed by the forecast season.
           </CardDescription>
         </CardHeader>
-        <CardContent className="space-y-8">
+        <CardContent className="space-y-6">
           <div className="flex flex-wrap gap-4 text-xs text-muted-foreground">
-            <span className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-sm bg-slate-500" />Recorded appearances</span>
-            <span className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-sm bg-emerald-400" />Recorded goals</span>
-            <span className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-sm bg-primary" />Forecast</span>
+            <span className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-sm bg-slate-500" />Appearances</span>
+            <span className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-sm bg-emerald-400" />Goals</span>
+            <span>The final season is the forecast.</span>
           </div>
 
-          <div>
-            <p className="mb-3 text-sm font-semibold text-foreground">League appearances by season</p>
-            <div className="overflow-x-auto pb-2">
-              <div style={{ height: 270, width: chartWidth }}>
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={progressionData} margin={{ top: 8, right: 12, left: 0, bottom: 48 }}>
-                    <CartesianGrid vertical={false} stroke="#ffffff18" strokeDasharray="3 3" />
-                    <XAxis dataKey="season" angle={-35} textAnchor="end" interval={0} height={70} tickLine={false} stroke="#a1a1aa" fontSize={11} />
-                    <YAxis allowDecimals={false} tickLine={false} stroke="#a1a1aa" />
-                    <Tooltip cursor={{ fill: "#ffffff08" }} contentStyle={{ background: "#090909", border: "1px solid #333", borderRadius: 8 }} />
-                    <Bar dataKey="appearances" name="Appearances" radius={[5, 5, 0, 0]} maxBarSize={42}>
-                      {progressionData.map((entry, index) => (
-                        <Cell key={`${entry.season}-appearances-${index}`} fill={entry.kind === "forecast" ? "#d4af37" : entry.kind === "partial" ? "#94a3b8" : "#64748b"} />
-                      ))}
-                    </Bar>
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <p className="mb-3 text-sm font-semibold text-foreground">League goals by season</p>
-            <div className="overflow-x-auto pb-2">
-              <div style={{ height: 270, width: chartWidth }}>
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={progressionData} margin={{ top: 8, right: 12, left: 0, bottom: 48 }}>
-                    <CartesianGrid vertical={false} stroke="#ffffff18" strokeDasharray="3 3" />
-                    <XAxis dataKey="season" angle={-35} textAnchor="end" interval={0} height={70} tickLine={false} stroke="#a1a1aa" fontSize={11} />
-                    <YAxis allowDecimals={false} tickLine={false} stroke="#a1a1aa" />
-                    <Tooltip cursor={{ fill: "#ffffff08" }} contentStyle={{ background: "#090909", border: "1px solid #333", borderRadius: 8 }} />
-                    <Bar dataKey="goals" name="Goals" radius={[5, 5, 0, 0]} maxBarSize={42}>
-                      {progressionData.map((entry, index) => (
-                        <Cell key={`${entry.season}-goals-${index}`} fill={entry.kind === "forecast" ? "#d4af37" : entry.kind === "partial" ? "#6ee7c8" : "#24c7a5"} />
-                      ))}
-                    </Bar>
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
+          <div className="overflow-x-auto pb-2">
+            <div style={{ height: 350, width: chartWidth }}>
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={progressionData} margin={{ top: 28, right: 12, left: 0, bottom: 54 }} barGap={4}>
+                  <CartesianGrid vertical={false} stroke="#ffffff18" strokeDasharray="3 3" />
+                  <XAxis dataKey="season" angle={-35} textAnchor="end" interval={0} height={76} tickLine={false} stroke="#a1a1aa" fontSize={11} />
+                  <YAxis allowDecimals={false} tickLine={false} stroke="#a1a1aa" />
+                  <Tooltip cursor={{ fill: "#ffffff08" }} contentStyle={{ background: "#090909", border: "1px solid #333", borderRadius: 8 }} />
+                  <Bar dataKey="appearances" name="Appearances" radius={[5, 5, 0, 0]} maxBarSize={34}>
+                    {progressionData.map((entry, index) => (
+                      <Cell key={`${entry.season}-appearances-${index}`} fill="#64748b" stroke={entry.kind === "forecast" ? "#d4af37" : "transparent"} strokeWidth={entry.kind === "forecast" ? 2 : 0} />
+                    ))}
+                    <LabelList dataKey="appearances" position="top" fill="#cbd5e1" fontSize={11} />
+                  </Bar>
+                  <Bar dataKey="goals" name="Goals" radius={[5, 5, 0, 0]} maxBarSize={34}>
+                    {progressionData.map((entry, index) => (
+                      <Cell key={`${entry.season}-goals-${index}`} fill="#24c7a5" stroke={entry.kind === "forecast" ? "#d4af37" : "transparent"} strokeWidth={entry.kind === "forecast" ? 2 : 0} />
+                    ))}
+                    <LabelList dataKey="goals" position="top" fill="#6ee7c8" fontSize={11} />
+                  </Bar>
+                </BarChart>
+              </ResponsiveContainer>
             </div>
           </div>
         </CardContent>
@@ -172,7 +170,7 @@ export function CareerPredictionDashboard(props: ForecastPayload) {
             <CardDescription>The historical record considered for this forecast.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4 text-sm">
-            <div className="flex gap-3"><CalendarRange className="mt-0.5 h-4 w-4 text-primary" /><div><p className="font-medium">Based on performances through {prediction.based_on_season || "the latest completed season"}</p><p className="text-muted-foreground">{prediction.coverage_metadata?.eligible_seasons_used || historical_seasons.length} career seasons analyzed</p></div></div>
+            <div className="flex gap-3"><CalendarRange className="mt-0.5 h-4 w-4 text-primary" /><div><p className="font-medium">Seasons analyzed: {analyzedRange}</p><p className="text-muted-foreground">{prediction.coverage_metadata?.eligible_seasons_used || analyzedSeasons.length} domestic-league seasons</p></div></div>
           </CardContent>
         </Card>
       </div>
@@ -183,16 +181,14 @@ export function CareerPredictionDashboard(props: ForecastPayload) {
           <CardDescription>The validated model is intentionally limited to one domestic-league season.</CardDescription>
         </CardHeader>
         <CardContent>
-          <ul className="grid gap-2 text-sm text-muted-foreground md:grid-cols-2">
-            {(prediction.limitations || []).map((limitation) => (
+          {visibleLimitations.length ? <ul className="grid gap-2 text-sm text-muted-foreground md:grid-cols-2">
+            {visibleLimitations.map((limitation) => (
               <li key={limitation} className="rounded-lg border border-border/50 bg-black/15 px-3 py-2">{limitation}</li>
             ))}
-            <li className="rounded-lg border border-border/50 bg-black/15 px-3 py-2">No retirement-age or full-career trajectory prediction</li>
-            <li className="rounded-lg border border-border/50 bg-black/15 px-3 py-2">No assists, ratings, transfers, trophies, or goalkeeper outputs</li>
-          </ul>
-          {!prediction.appearances.interval && prediction.appearances.interval_unavailable_reason ? (
-            <p className="mt-4 text-xs text-amber-300">Appearance interval withheld: {prediction.appearances.interval_unavailable_reason}</p>
-          ) : null}
+          </ul> : null}
+          <p className={`${visibleLimitations.length ? "mt-4" : ""} text-sm text-amber-200`}>
+            Injuries and transfers can significantly affect a season and are not included in this forecast.
+          </p>
         </CardContent>
       </Card>
     </section>
