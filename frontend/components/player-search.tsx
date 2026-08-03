@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { AIAnalysisLoader } from "@/components/ai-analysis-loader";
 import { useEffect, useState } from "react";
 
 interface PlayerSearchProps {
@@ -56,11 +57,16 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
     setLoading(true);
     setMessage(null);
     onPlayerSelect?.(null);
+    const loaderStartedAt = Date.now();
     try {
       const response = await fetch(`/api/predictions/${selectedPlayerId}`, { cache: "no-store" });
       const payload = await response.json();
       if (!response.ok) {
         throw new Error(payload?.error || "Prediction is unavailable.");
+      }
+      const remainingLoaderTime = Math.max(0, 3200 - (Date.now() - loaderStartedAt));
+      if (remainingLoaderTime) {
+        await new Promise((resolve) => window.setTimeout(resolve, remainingLoaderTime));
       }
       onPlayerSelect?.(payload);
     } catch (error: any) {
@@ -101,6 +107,11 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
         <p className="mt-3 text-xs text-muted-foreground">
           Showing {playerOptions.length} active outfield player{playerOptions.length === 1 ? "" : "s"} with stored Tier A predictions.
         </p>
+      ) : null}
+      {loading ? (
+        <AIAnalysisLoader
+          playerName={playerOptions.find((player) => player.id === selectedPlayerId)?.name || "player"}
+        />
       ) : null}
     </section>
   );
