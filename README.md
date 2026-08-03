@@ -1,45 +1,51 @@
 # Proxima Football AI
 
-Proxima Football AI predicts the future season-by-season career trajectory of football players. The production deployment uses a Next.js frontend on Vercel, Supabase Postgres for player data and predictions, and GitHub Actions for scheduled or manually triggered model runs.
+Proxima Football AI provides evidence-backed forecasts for a player's next domestic-league season. The production application runs on Vercel, stores canonical data and current predictions in Supabase Postgres, and runs approved Python inference through GitHub Actions.
 
-## Production Architecture
+The production model is intentionally limited to:
 
-- `frontend/`: Next.js website, API routes, prediction dashboard, and admin dashboard.
-- `backend/python/`: player import, database migrations, model training, inference, and evaluation.
-- Supabase Postgres: historical player seasons, prediction runs, and generated predictions.
-- GitHub Actions: imports seed data when required, restores or trains the model, and writes predictions to Supabase.
-- Vercel: serves the website and reads the latest predictions through server-side API routes.
+- expected league appearances next season;
+- expected league goals next season;
+- uncertainty intervals when the validated interval policy supports them.
 
-The frontend never trains the model inside a Vercel request. Training is a background GitHub Actions job because it can take longer than a serverless request and requires access to the complete training dataset.
+It does not claim to predict a complete career, retirement age, assists, ratings, injuries, or tactical attributes.
+
+## Architecture
+
+- `frontend/`: Next.js website, server API routes, prediction UI, and admin dashboard.
+- `backend/python/model_artifacts/tier_a_v1/`: approved, immutable Tier A model artifact.
+- `backend/python/data/collected_player_seasons.csv`: reviewed Tier A release dataset.
+- `backend/db/migrations/003_tier_a_prediction_pipeline.sql`: isolated production ML tables.
+- Supabase Postgres: canonical ML inputs, model registry, prediction runs, and current predictions.
+- GitHub Actions: weekly or manually triggered inference and separate candidate-model training.
+- Vercel: reads stored predictions; it never trains or executes the Python model.
+
+## Data Isolation
+
+The rich historical dataset and production Tier A dataset are deliberately separate:
+
+- `players` and `player_seasons`: legacy detailed player records used by the admin data viewer.
+- `ml_players` and `ml_player_seasons`: normalized domestic-league appearances/goals used by `tier-a-v1`.
+- `next_season_predictions`: one current forecast per player.
+- `tier_a_prediction_runs`: inference audit trail.
+- `model_versions`: model manifest, digest, metrics, and approval state.
+
+Inference only upserts `next_season_predictions`. It never creates or edits historical season rows. Running a player again replaces that player's previous current forecast.
 
 ## Model Lifecycle
 
-The predictor uses a position-aware multi-output random forest. It forecasts the next season from a rolling four-season window and recursively generates later seasons.
+`tier-a-v1` is trained once and committed as an approved release artifact. Normal prediction runs load that artifact and do not retrain it.
 
-1. GitHub Actions calculates a fingerprint from normalized Supabase training data.
-2. A model artifact is restored from the GitHub Actions cache when the data and model code are unchanged.
-3. If no matching artifact exists, the model is trained with entire players held out for validation.
-4. The artifact is cached under `backend/python/artifacts/career_model.joblib`.
-5. Predictions are written to `player_predictions`; historical `player_seasons` rows are never modified by inference.
+1. Edit or import reviewed rows in `ml_players` and `ml_player_seasons`.
+2. Run the approved artifact to refresh predictions.
+3. If the training dataset or feature code changes, run the candidate-training workflow.
+4. Review its metrics and artifact before explicitly promoting a new model version.
 
-The model retrains automatically after player data, feature definitions, dependencies, or predictor code changes. Use `--force-retrain` to bypass a local artifact manually.
+The current one-step appearances and goals models passed the Phase 3 validation gates. Full recursive career trajectories did not, so they are not exposed as production predictions.
 
-## Player Data
+## First Supabase Setup
 
-Source JSON files live in `backend/python/data/players/`. The planned balanced collection roster is documented in `backend/python/data/PLAYER_SCRAPE_ROSTER.md`.
-
-Import local JSON files into the configured database:
-
-```powershell
-python backend/python/migrate_db.py
-python backend/python/import_players_to_db.py
-```
-
-The importer upserts players and seasons, so unchanged rows are updated rather than duplicated.
-
-## Local Setup
-
-Use Python 3.11:
+Use Python 3.11 and install dependencies:
 
 ```powershell
 py -3.11 -m venv .venv311
@@ -49,38 +55,26 @@ python -m pip install --upgrade pip
 pip install -r backend/requirements.txt
 ```
 
-Set the Supabase Postgres connection string:
+Set the Supabase Postgres connection string, apply migrations, and import the reviewed Tier A release:
 
 ```powershell
-$env:DATABASE_URL="postgresql://..."
+$env:DATABASE_URL="postgresql://...?...sslmode=require"
+python backend/python/migrate_db.py
+python backend/python/import_tier_a_to_db.py
+python backend/python/run_tier_a_predictions.py --run-type manual --triggered-by local
 ```
 
-Run all eligible predictions:
+The import replaces each included player's ML season rows and registers the exact committed `tier-a-v1` manifest as approved. It does not modify the legacy detailed season tables.
 
-```powershell
-python backend/python/main.py --data-source db --output-target db --all-active --window-size 4 --retirement-age 40 --run-type manual --triggered-by local --model-version random-forest-v4-position-aware-blend
-```
+## GitHub Actions
 
-Force model retraining:
+Add `DATABASE_URL` under **Repository Settings > Secrets and variables > Actions**.
 
-```powershell
-python backend/python/main.py --data-source db --output-target db --all-active --force-retrain
-```
+- **Tier A Next-Season Predictions** (`tier-a-predictions.yml`): runs every Monday at 04:00 UTC and can be dispatched manually for all players or one player.
+- **Train Tier A Candidate Model** (`train-tier-a-model.yml`): manually exports deterministic Supabase training data and creates an unapproved downloadable candidate artifact.
+- **Legacy Career Predictions** (`weekly-predictions.yml`): manual-only compatibility workflow; do not use it for production forecasts.
 
-Run tests and model comparison:
-
-```powershell
-python -m unittest discover -s backend/python/tests -v
-python backend/python/evaluate_models.py
-```
-
-Start the frontend:
-
-```powershell
-cd frontend
-npm install
-npm run dev
-```
+Set repository variable `IMPORT_TIER_A_FROM_REPO=true` only when the reviewed committed CSV should replace the current Supabase ML input tables on a prediction run. Leave it unset for normal database-first operation.
 
 ## Vercel Configuration
 
@@ -91,19 +85,35 @@ Set the Vercel project root to `frontend` and configure:
 - `ADMIN_DASHBOARD_PASSWORD`
 - `ADMIN_SESSION_SECRET`
 - `GITHUB_ACTIONS_TOKEN`
-- `GITHUB_REPO_OWNER`
-- `GITHUB_REPO_NAME`
-- `GITHUB_WORKFLOW_ID=weekly-predictions.yml`
-- `GITHUB_WORKFLOW_REF=codex/prediction-pipeline-refactor` while deploying this branch, or `main` after merge
+- `GITHUB_REPO_OWNER=AnmarRahman`
+- `GITHUB_REPO_NAME=proxima-football-ai`
+- `GITHUB_WORKFLOW_ID=tier-a-predictions.yml`
+- `GITHUB_WORKFLOW_REF=main` after merge
 
-Do not expose `SUPABASE_SERVICE_ROLE_KEY`, `DATABASE_URL`, admin secrets, or the GitHub token through `NEXT_PUBLIC_*` variables.
+Never expose `SUPABASE_SERVICE_ROLE_KEY`, `DATABASE_URL`, admin secrets, or the GitHub token through `NEXT_PUBLIC_*` variables.
 
-## GitHub Actions
+## Development
 
-Add `DATABASE_URL` under repository **Settings > Secrets and variables > Actions**. Run **Weekly Predictions** manually after the first database import. The workflow also runs every Monday at 04:00 UTC.
+Run all Python tests:
 
-The admin dashboard can dispatch the same workflow when its GitHub variables and token are configured in Vercel.
+```powershell
+python backend/python/run_tests.py
+```
+
+Run the frontend:
+
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+Useful API checks after predictions exist:
+
+- `/api/players`
+- `/api/predictions/erling-haaland`
+- `/api/admin/prediction-status` while authenticated as an administrator
 
 ## Data Limitations
 
-The current dataset is small and attacker-heavy. Treat displayed confidence as model validation information, not a guarantee. A reliable general career model requires substantially more players, goalkeeper-specific modeling, consistent season definitions, and source-backed statistics.
+Tier A uses free, provenance-backed domestic-league appearances and goals. It lacks consistent minutes, shots, xG, assists, and injury data. The UI therefore presents a one-season statistical estimate with explicit uncertainty and does not describe it as a complete career forecast.

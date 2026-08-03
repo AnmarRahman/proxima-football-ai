@@ -10,7 +10,7 @@ function getGithubDispatchConfig(): GithubDispatchConfig {
   const token = process.env.GITHUB_ACTIONS_TOKEN;
   const owner = process.env.GITHUB_REPO_OWNER;
   const repo = process.env.GITHUB_REPO_NAME;
-  const workflowId = process.env.GITHUB_WORKFLOW_ID || "weekly-predictions.yml";
+  const workflowId = process.env.GITHUB_WORKFLOW_ID || "tier-a-predictions.yml";
   const ref = process.env.GITHUB_WORKFLOW_REF || "main";
 
   if (!token || !owner || !repo) {
