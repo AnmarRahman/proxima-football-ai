@@ -2,6 +2,18 @@
 
 import { Button } from "@/components/ui/button";
 import { AIAnalysisLoader } from "@/components/ai-analysis-loader";
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+} from "@/components/ui/command";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { formatPosition } from "@/lib/player-position";
+import { cn } from "@/lib/utils";
+import { Check, ChevronsUpDown } from "lucide-react";
 import { useEffect, useState } from "react";
 
 interface PlayerSearchProps {
@@ -22,6 +34,9 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
   const [playersLoading, setPlayersLoading] = useState(true);
   const [message, setMessage] = useState<string | null>(null);
   const [playerOptions, setPlayerOptions] = useState<PlayerOption[]>([]);
+  const [pickerOpen, setPickerOpen] = useState(false);
+
+  const selectedPlayer = playerOptions.find((player) => player.id === selectedPlayerId);
 
   useEffect(() => {
     let mounted = true;
@@ -79,21 +94,74 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
   return (
     <section className="mx-auto max-w-4xl rounded-2xl border border-border/60 bg-card/50 p-5 backdrop-blur-sm">
       <div className="flex flex-col gap-3 sm:flex-row">
-        <label className="sr-only" htmlFor="player-prediction-select">Player</label>
-        <select
-          id="player-prediction-select"
-          className="min-h-11 flex-1 rounded-lg border border-border bg-background px-3 text-foreground outline-none focus:border-primary disabled:opacity-60"
-          value={selectedPlayerId}
-          onChange={(event) => setSelectedPlayerId(event.target.value)}
-          disabled={loading || playersLoading}
-        >
-          <option value="">Select a player with a current forecast...</option>
-          {playerOptions.map((player) => (
-            <option key={player.id} value={player.id}>
-              {player.name}{player.position ? ` / ${player.position}` : ""}
-            </option>
-          ))}
-        </select>
+        <Popover open={pickerOpen} onOpenChange={setPickerOpen}>
+          <PopoverTrigger asChild>
+            <Button
+              variant="outline"
+              role="combobox"
+              aria-expanded={pickerOpen}
+              aria-label="Search for a player"
+              className="min-h-11 flex-1 justify-between border-border bg-background px-3 font-normal hover:bg-background"
+              disabled={loading || playersLoading}
+            >
+              {selectedPlayer ? (
+                <span className="flex min-w-0 items-center gap-2">
+                  <span className="truncate font-medium">{selectedPlayer.name}</span>
+                  {selectedPlayer.position ? (
+                    <span className="hidden shrink-0 text-xs text-muted-foreground sm:inline">
+                      {formatPosition(selectedPlayer.position)}
+                    </span>
+                  ) : null}
+                </span>
+              ) : (
+                <span className="text-muted-foreground">
+                  {playersLoading ? "Loading players..." : "Search players..."}
+                </span>
+              )}
+              <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent
+            align="start"
+            className="w-[var(--radix-popover-trigger-width)] p-0"
+          >
+            <Command>
+              <CommandInput placeholder="Search by player, country, or position..." />
+              <CommandList>
+                <CommandEmpty>No matching player found.</CommandEmpty>
+                <CommandGroup heading={`${playerOptions.length} available players`}>
+                  {playerOptions.map((player) => (
+                    <CommandItem
+                      key={player.id}
+                      value={`${player.name} ${player.nationality || ""} ${player.position || ""}`}
+                      onSelect={() => {
+                        setSelectedPlayerId(player.id);
+                        setPickerOpen(false);
+                        setMessage(null);
+                      }}
+                      className="py-3"
+                    >
+                      <Check
+                        className={cn(
+                          "h-4 w-4 text-primary",
+                          selectedPlayerId === player.id ? "opacity-100" : "opacity-0"
+                        )}
+                      />
+                      <span className="min-w-0 flex-1">
+                        <span className="block truncate font-medium">{player.name}</span>
+                        <span className="block truncate text-xs text-muted-foreground">
+                          {[player.position ? formatPosition(player.position) : null, player.nationality]
+                            .filter(Boolean)
+                            .join(" / ")}
+                        </span>
+                      </span>
+                    </CommandItem>
+                  ))}
+                </CommandGroup>
+              </CommandList>
+            </Command>
+          </PopoverContent>
+        </Popover>
         <Button
           className="min-h-11 px-6"
           onClick={handlePlayerSelect}
@@ -110,7 +178,7 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
       ) : null}
       {loading ? (
         <AIAnalysisLoader
-          playerName={playerOptions.find((player) => player.id === selectedPlayerId)?.name || "player"}
+          playerName={selectedPlayer?.name || "player"}
         />
       ) : null}
     </section>

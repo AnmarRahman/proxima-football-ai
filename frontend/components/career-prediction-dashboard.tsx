@@ -2,6 +2,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Activity, CalendarRange, Database, Target } from "lucide-react";
+import { formatPosition } from "@/lib/player-position";
 import type { ReactNode } from "react";
 import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
@@ -87,7 +88,7 @@ export function CareerPredictionDashboard(props: ForecastPayload) {
           <div>
             <h2 className="text-3xl font-bold text-foreground md:text-4xl">{player.name}</h2>
             <p className="mt-2 text-muted-foreground">
-              {player.primary_position || "Outfield player"}{player.nationality ? ` / ${player.nationality}` : ""}
+              {player.primary_position ? formatPosition(player.primary_position) : "Outfield Player"}{player.nationality ? ` / ${player.nationality}` : ""}
             </p>
           </div>
           <div className="rounded-xl border border-border/60 bg-black/25 px-4 py-3 text-sm">

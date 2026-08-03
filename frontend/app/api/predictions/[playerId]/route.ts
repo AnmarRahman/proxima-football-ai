@@ -1,4 +1,5 @@
 import { hasSupabaseServerConfig, supabaseRestGet } from "@/lib/supabase-rest";
+import { normalizePosition } from "@/lib/player-position";
 import { NextResponse } from "next/server";
 
 export const dynamic = "force-dynamic";
@@ -50,7 +51,11 @@ export async function GET(
         id: String(player.id),
         name: String(player.name),
         nationality: player.nationality || null,
-        primary_position: player.primary_position || null,
+        primary_position: normalizePosition(
+          player.position_group,
+          player.primary_position,
+          player.coarse_group
+        ),
         position_group: player.position_group || null,
         coarse_group: player.coarse_group || null,
         career_status: player.career_status,
