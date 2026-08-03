@@ -29,6 +29,16 @@ def input_sha256(player: dict[str, Any]) -> str:
     return hashlib.sha256(canonical_json(player).encode("utf-8")).hexdigest()
 
 
+def verify_release_artifacts(artifact_dir: Path, manifest: dict[str, Any]) -> None:
+    for name, expected in manifest.get("artifact_sha256", {}).items():
+        path = artifact_dir / name
+        if not path.is_file():
+            raise ValueError(f"Approved model artifact is missing: {name}")
+        actual = hashlib.sha256(path.read_bytes()).hexdigest()
+        if actual != expected:
+            raise ValueError(f"Approved model artifact hash mismatch: {name}")
+
+
 def build_player_input(player: dict[str, Any], seasons: list[dict[str, Any]]) -> dict[str, Any]:
     return {
         "player_id": player["id"],
@@ -246,6 +256,7 @@ def main() -> None:
     manifest_sha = (artifact_dir / "manifest.sha256").read_text(encoding="utf-8").strip()
     if args.expected_manifest_sha256 and args.expected_manifest_sha256 != manifest_sha:
         raise ValueError("Approved model manifest does not match the trusted release digest")
+    verify_release_artifacts(artifact_dir, manifest)
     model_version = manifest["model_version"]
 
     with psycopg.connect(args.database_url, prepare_threshold=None) as conn:

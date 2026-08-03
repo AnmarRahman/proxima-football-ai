@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import sys
 import unittest
 from pathlib import Path
@@ -14,7 +15,12 @@ MIGRATION = BACKEND.parent / "db" / "migrations" / "003_tier_a_prediction_pipeli
 sys.path.insert(0, str(BACKEND))
 
 from import_tier_a_to_db import group_rows, load_rows, parse_bool
-from run_tier_a_predictions import build_player_input, input_sha256, prediction_point
+from run_tier_a_predictions import (
+    build_player_input,
+    input_sha256,
+    prediction_point,
+    verify_release_artifacts,
+)
 
 
 class TierAImportTests(unittest.TestCase):
@@ -100,9 +106,17 @@ class TierASchemaTests(unittest.TestCase):
     def test_release_manifest_uses_git_stable_lf_bytes(self):
         artifact_dir = BACKEND / "model_artifacts" / "tier_a_v1"
         manifest_bytes = (artifact_dir / "model_manifest.json").read_bytes()
+        feature_bytes = (artifact_dir / "feature_schema.json").read_bytes()
         expected = (artifact_dir / "manifest.sha256").read_text(encoding="utf-8").strip()
+        manifest = json.loads(manifest_bytes)
         self.assertNotIn(b"\r\n", manifest_bytes)
+        self.assertNotIn(b"\r\n", feature_bytes)
         self.assertEqual(hashlib.sha256(manifest_bytes).hexdigest(), expected)
+        self.assertEqual(
+            hashlib.sha256(feature_bytes).hexdigest(),
+            manifest["artifact_sha256"]["feature_schema.json"],
+        )
+        verify_release_artifacts(artifact_dir, manifest)
 
     def test_migration_is_stable_for_release_tracking(self):
         digest = hashlib.sha256(MIGRATION.read_bytes()).hexdigest()

@@ -97,6 +97,6 @@
     "goals_model.joblib": "3fe17a915e4c15744a478670bc5eba784fa3ed80acec92cc8a86a2cdb0e8c073",
     "appearances_interval.joblib": "020eb62a52d37a40682e548eb9bcf1e0ef924b733c1c97e723c0ddc9b0d3913f",
     "goals_interval.joblib": "34f45d6f0731b0818aee6719264f064262ddeb8d2d7e97ee3b98173d25925fe6",
-    "feature_schema.json": "12a0751a771f27e5226c466dceee05bf08f951f57d739dbc965263ac466caa55"
+    "feature_schema.json": "65550918cb5b9dc70b94a37368358995a67034ebac831d4019c21f09c8b00d1b"
   }
 }
