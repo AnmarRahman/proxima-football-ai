@@ -1,0 +1,366 @@
+{
+  "seed": 42,
+  "training_csv_sha256": "2ca0bcb6c786f1d4bdb570b920e4b2cd86840a384f5ee46f8c5217643f45aec6",
+  "input_row_count": 2996,
+  "metric_definitions": {
+    "grouped_oof_mae": "player-grouped out-of-fold point MAE (NOT a final independent test set)",
+    "chronological_heldout_mae": "train early seasons, evaluate latest seasons",
+    "policy_outer_*": "FULLY NESTED policy evaluation: per outer fold the entire interval policy (method+suppression+calibration) is learned on outer-train only and applied to held-out outer-test. Emitted-only coverage excludes suppressed rows.",
+    "final_policy_*": "the DEPLOYED all-data policy; NOT independent test results",
+    "final_fit": "deployed point model is fit on ALL training rows"
+  },
+  "appearances": {
+    "training_row_count": 2772,
+    "grouped_oof_mae": 5.714,
+    "naive_persistence_mae": 7.008,
+    "chronological_heldout_mae": 5.962,
+    "chronological_heldout_naive_mae": 6.562,
+    "policy_outer_coverage_when_emitted": 0.856,
+    "policy_outer_interval_emission_rate": 0.731,
+    "policy_outer_mean_width_when_emitted": 17.43,
+    "policy_outer_median_width_when_emitted": 17.41,
+    "policy_outer_suppression_rate": 0.269,
+    "policy_outer_point_mae_all_rows": 5.714,
+    "policy_outer_availability_all_pass": true,
+    "selected_method_frequency": {
+      "global": 4,
+      "mondrian_pos": 1
+    },
+    "unsupported_interval_groups": [],
+    "policy_outer_evaluation": {
+      "overall": {
+        "n": 2772,
+        "n_emitted": 2026,
+        "emission_rate": 0.731,
+        "coverage_when_emitted": 0.856,
+        "mean_width_when_emitted": 17.43,
+        "median_width_when_emitted": 17.41
+      },
+      "by_position": {
+        "DEF": {
+          "n": 829,
+          "n_emitted": 551,
+          "emission_rate": 0.665,
+          "coverage_when_emitted": 0.835,
+          "mean_width_when_emitted": 17.62,
+          "median_width_when_emitted": 17.51
+        },
+        "MID": {
+          "n": 964,
+          "n_emitted": 752,
+          "emission_rate": 0.78,
+          "coverage_when_emitted": 0.874,
+          "mean_width_when_emitted": 17.23,
+          "median_width_when_emitted": 17.38
+        },
+        "WIDE": {
+          "n": 471,
+          "n_emitted": 346,
+          "emission_rate": 0.735,
+          "coverage_when_emitted": 0.876,
+          "mean_width_when_emitted": 17.51,
+          "median_width_when_emitted": 17.51
+        },
+        "FWD": {
+          "n": 508,
+          "n_emitted": 377,
+          "emission_rate": 0.742,
+          "coverage_when_emitted": 0.836,
+          "mean_width_when_emitted": 17.5,
+          "median_width_when_emitted": 17.51
+        }
+      },
+      "by_age": {
+        "<=21": {
+          "n": 774,
+          "n_emitted": 522,
+          "emission_rate": 0.674,
+          "coverage_when_emitted": 0.812,
+          "mean_width_when_emitted": 17.45,
+          "median_width_when_emitted": 17.41
+        },
+        "22-25": {
+          "n": 678,
+          "n_emitted": 638,
+          "emission_rate": 0.941,
+          "coverage_when_emitted": 0.893,
+          "mean_width_when_emitted": 17.44,
+          "median_width_when_emitted": 17.51
+        },
+        "26-29": {
+          "n": 573,
+          "n_emitted": 518,
+          "emission_rate": 0.904,
+          "coverage_when_emitted": 0.886,
+          "mean_width_when_emitted": 17.44,
+          "median_width_when_emitted": 17.51
+        },
+        "30-33": {
+          "n": 469,
+          "n_emitted": 288,
+          "emission_rate": 0.614,
+          "coverage_when_emitted": 0.823,
+          "mean_width_when_emitted": 17.38,
+          "median_width_when_emitted": 17.41
+        },
+        "34+": {
+          "n": 278,
+          "n_emitted": 60,
+          "emission_rate": 0.216,
+          "coverage_when_emitted": 0.75,
+          "mean_width_when_emitted": 17.43,
+          "median_width_when_emitted": 17.51
+        }
+      },
+      "by_pred_band": {
+        "0-15": {
+          "n": 3,
+          "n_emitted": 1,
+          "emission_rate": 0.333,
+          "coverage_when_emitted": 0.0,
+          "mean_width_when_emitted": 18.11,
+          "median_width_when_emitted": 18.11
+        },
+        "16-25": {
+          "n": 744,
+          "n_emitted": 0,
+          "emission_rate": 0.0,
+          "coverage_when_emitted": null,
+          "mean_width_when_emitted": null,
+          "median_width_when_emitted": null
+        },
+        "26-34": {
+          "n": 1790,
+          "n_emitted": 1790,
+          "emission_rate": 1.0,
+          "coverage_when_emitted": 0.874,
+          "mean_width_when_emitted": 17.43,
+          "median_width_when_emitted": 17.41
+        },
+        "35+": {
+          "n": 235,
+          "n_emitted": 235,
+          "emission_rate": 1.0,
+          "coverage_when_emitted": 0.723,
+          "mean_width_when_emitted": 17.44,
+          "median_width_when_emitted": 17.41
+        }
+      },
+      "suppression_rate": 0.269,
+      "suppression_reasons": {
+        "interval suppressed for predicted band 16-25 (insufficient conditional coverage)": 744,
+        "interval suppressed for predicted band 0-15 (insufficient conditional coverage)": 2
+      },
+      "point_mae_all_rows": 5.714,
+      "selected_method_frequency": {
+        "global": 4,
+        "mondrian_pos": 1
+      },
+      "availability_acceptance": {
+        "overall_coverage_when_emitted_0.75_0.87": true,
+        "overall_emission_rate_ge_0.70": true,
+        "pos_DEF_coverage_ge_0.70": true,
+        "pos_DEF_emission_ge_0.60": true,
+        "pos_MID_coverage_ge_0.70": true,
+        "pos_MID_emission_ge_0.60": true,
+        "pos_WIDE_coverage_ge_0.70": true,
+        "pos_WIDE_emission_ge_0.60": true,
+        "pos_FWD_coverage_ge_0.70": true,
+        "pos_FWD_emission_ge_0.60": true,
+        "highband_35+_coverage_ge_0.70": true,
+        "_all_pass": true,
+        "_n_pass": 11,
+        "unsupported_interval_groups": []
+      }
+    },
+    "final_policy_method": "global",
+    "final_policy_selection_protocol": "all-data grouped inner CV; predetermined complexity-order rule; NOT an independent test",
+    "final_policy_suppressed_positions": [],
+    "final_policy_suppressed_pred_bands": [
+      "0-15",
+      "16-25"
+    ],
+    "interval_nominal_coverage": 0.8,
+    "excluded_rows": {
+      "ineligible_seasons_excluded": 2,
+      "continuation_censored_active_or_unknown": 110,
+      "target_from_partial_next_excluded": 30,
+      "continuation_censored_partial_next": 30,
+      "regression_no_consecutive_next": 12
+    }
+  },
+  "goals": {
+    "training_row_count": 2772,
+    "grouped_oof_mae": 3.046,
+    "naive_persistence_mae": 3.461,
+    "chronological_heldout_mae": 2.892,
+    "chronological_heldout_naive_mae": 3.343,
+    "policy_outer_coverage_when_emitted": 0.806,
+    "policy_outer_interval_emission_rate": 1.0,
+    "policy_outer_mean_width_when_emitted": 8.9,
+    "policy_outer_median_width_when_emitted": 7.27,
+    "policy_outer_suppression_rate": 0.0,
+    "policy_outer_point_mae_all_rows": 3.046,
+    "policy_outer_availability_all_pass": true,
+    "selected_method_frequency": {
+      "mondrian_pos": 4,
+      "mondrian_pos_scaled": 1
+    },
+    "unsupported_interval_groups": [],
+    "policy_outer_evaluation": {
+      "overall": {
+        "n": 2772,
+        "n_emitted": 2772,
+        "emission_rate": 1.0,
+        "coverage_when_emitted": 0.806,
+        "mean_width_when_emitted": 8.9,
+        "median_width_when_emitted": 7.27
+      },
+      "by_position": {
+        "DEF": {
+          "n": 829,
+          "n_emitted": 829,
+          "emission_rate": 1.0,
+          "coverage_when_emitted": 0.8,
+          "mean_width_when_emitted": 3.01,
+          "median_width_when_emitted": 3.11
+        },
+        "MID": {
+          "n": 964,
+          "n_emitted": 964,
+          "emission_rate": 1.0,
+          "coverage_when_emitted": 0.807,
+          "mean_width_when_emitted": 6.93,
+          "median_width_when_emitted": 7.22
+        },
+        "WIDE": {
+          "n": 471,
+          "n_emitted": 471,
+          "emission_rate": 1.0,
+          "coverage_when_emitted": 0.817,
+          "mean_width_when_emitted": 12.51,
+          "median_width_when_emitted": 12.17
+        },
+        "FWD": {
+          "n": 508,
+          "n_emitted": 508,
+          "emission_rate": 1.0,
+          "coverage_when_emitted": 0.803,
+          "mean_width_when_emitted": 18.89,
+          "median_width_when_emitted": 19.13
+        }
+      },
+      "by_age": {
+        "<=21": {
+          "n": 774,
+          "n_emitted": 774,
+          "emission_rate": 1.0,
+          "coverage_when_emitted": 0.811,
+          "mean_width_when_emitted": 8.6,
+          "median_width_when_emitted": 7.27
+        },
+        "22-25": {
+          "n": 678,
+          "n_emitted": 678,
+          "emission_rate": 1.0,
+          "coverage_when_emitted": 0.783,
+          "mean_width_when_emitted": 9.22,
+          "median_width_when_emitted": 7.34
+        },
+        "26-29": {
+          "n": 573,
+          "n_emitted": 573,
+          "emission_rate": 1.0,
+          "coverage_when_emitted": 0.778,
+          "mean_width_when_emitted": 9.29,
+          "median_width_when_emitted": 7.37
+        },
+        "30-33": {
+          "n": 469,
+          "n_emitted": 469,
+          "emission_rate": 1.0,
+          "coverage_when_emitted": 0.836,
+          "mean_width_when_emitted": 8.76,
+          "median_width_when_emitted": 7.27
+        },
+        "34+": {
+          "n": 278,
+          "n_emitted": 278,
+          "emission_rate": 1.0,
+          "coverage_when_emitted": 0.853,
+          "mean_width_when_emitted": 8.35,
+          "median_width_when_emitted": 6.58
+        }
+      },
+      "by_pred_band": {
+        "0-2": {
+          "n": 809,
+          "n_emitted": 809,
+          "emission_rate": 1.0,
+          "coverage_when_emitted": 0.855,
+          "mean_width_when_emitted": 3.3,
+          "median_width_when_emitted": 3.09
+        },
+        "3-7": {
+          "n": 652,
+          "n_emitted": 652,
+          "emission_rate": 1.0,
+          "coverage_when_emitted": 0.827,
+          "mean_width_when_emitted": 8.48,
+          "median_width_when_emitted": 7.5
+        },
+        "8-15": {
+          "n": 511,
+          "n_emitted": 511,
+          "emission_rate": 1.0,
+          "coverage_when_emitted": 0.73,
+          "mean_width_when_emitted": 14.39,
+          "median_width_when_emitted": 14.64
+        },
+        "16+": {
+          "n": 800,
+          "n_emitted": 800,
+          "emission_rate": 1.0,
+          "coverage_when_emitted": 0.787,
+          "mean_width_when_emitted": 11.39,
+          "median_width_when_emitted": 7.5
+        }
+      },
+      "suppression_rate": 0.0,
+      "suppression_reasons": {},
+      "point_mae_all_rows": 3.046,
+      "selected_method_frequency": {
+        "mondrian_pos": 4,
+        "mondrian_pos_scaled": 1
+      },
+      "availability_acceptance": {
+        "overall_coverage_when_emitted_0.75_0.87": true,
+        "overall_emission_rate_ge_0.70": true,
+        "pos_DEF_coverage_ge_0.70": true,
+        "pos_DEF_emission_ge_0.60": true,
+        "pos_MID_coverage_ge_0.70": true,
+        "pos_MID_emission_ge_0.60": true,
+        "pos_WIDE_coverage_ge_0.70": true,
+        "pos_WIDE_emission_ge_0.60": true,
+        "pos_FWD_coverage_ge_0.70": true,
+        "pos_FWD_emission_ge_0.60": true,
+        "highband_16+_coverage_ge_0.70": true,
+        "_all_pass": true,
+        "_n_pass": 11,
+        "unsupported_interval_groups": []
+      }
+    },
+    "final_policy_method": "mondrian_pos",
+    "final_policy_selection_protocol": "all-data grouped inner CV; predetermined complexity-order rule; NOT an independent test",
+    "final_policy_suppressed_positions": [],
+    "final_policy_suppressed_pred_bands": [],
+    "interval_nominal_coverage": 0.8,
+    "excluded_rows": {
+      "ineligible_seasons_excluded": 2,
+      "continuation_censored_active_or_unknown": 110,
+      "target_from_partial_next_excluded": 30,
+      "continuation_censored_partial_next": 30,
+      "regression_no_consecutive_next": 12
+    }
+  }
+}

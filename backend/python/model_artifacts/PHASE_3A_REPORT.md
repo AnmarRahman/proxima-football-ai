@@ -125,14 +125,28 @@ acquisition, 3 existing).
   `policy_outer_evaluation`; summarized above.
 - **Unsupported interval groups:** none (both targets).
 - **All release coverage + availability criteria pass:** **YES** (both targets).
-- **Clean commit / retrain approved?** **NO — still required.** `git_dirty=true`,
-  the code/data are untracked, and this build used `--allow-dirty --force`, so
-  `releasable=false`. A clean commit of code + data + pipeline, then a fresh
-  release retrain (no `--allow-dirty`/`--force`), is required before any release.
+- **Clean commit / retrain — DONE (Phase 3B).** Source + data + pipeline were
+  committed, then the release was retrained from that clean commit with no
+  `--allow-dirty` and no `--force`. The release manifest reports `git_dirty=false`,
+  `forced_overwrite=false`, **`releasable=true`**, `git_commit` = the source
+  commit, and the committed dataset hash `2ca0bcb6c786…`. All 104 tests pass
+  against the release artifacts.
+
+## Phase 3B — clean release (completed)
+
+The self-contamination hazard (temp staging dir under `model_artifacts/` making a
+clean build look dirty) is fixed: git/source state is captured **before** the
+ignored `*.build-*` staging dir is created; the build re-verifies source hashes
+are unchanged and aborts if tracked source/data change during training;
+`--allow-dirty` is dev-only (`releasable=false`) and `--force` is never releasable
+— all proved by a temporary-git-repo test. Two local commits were made: (1) source
++ data + pipeline, (2) the `tier_a_v1` release artifacts. Nothing pushed; no PR;
+Supabase, frontend, GitHub Actions, deployment, `data/players/`, and the
+production predictor remain untouched.
 
 ## Stop
 
 Fully-nested interval policy evaluated and honestly reported; the deployed policy
-is separated from the honest outer metrics. No commit, no release retrain, no
-integration, no deploy. Awaiting approval; a clean commit + release retrain
-remains required before release.
+is separated from the honest outer metrics. Clean source commit + clean release
+retrain complete; two local commits only. No push, no PR, no integration, no
+deploy — awaiting explicit approval.
