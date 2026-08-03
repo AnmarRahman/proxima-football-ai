@@ -1,4 +1,5 @@
 import { hasSupabaseServerConfig, supabaseRestGet } from "@/lib/supabase-rest";
+import { normalizePosition } from "@/lib/player-position";
 import { NextResponse } from "next/server";
 
 export const dynamic = "force-dynamic";
@@ -14,7 +15,7 @@ export async function GET() {
   try {
     const [playerRows, predictionRows] = await Promise.all([
       supabaseRestGet("ml_players", {
-        select: "id,name,nationality,primary_position,coarse_group,career_status",
+        select: "id,name,nationality,primary_position,position_group,coarse_group,career_status",
         career_status: "eq.active",
         order: "name.asc",
         limit: "1000",
@@ -36,7 +37,7 @@ export async function GET() {
           id: String(row.id),
           name: String(row.name),
           nationality: row.nationality || null,
-          position: row.primary_position || null,
+          position: normalizePosition(row.position_group, row.primary_position, row.coarse_group),
           coarse_group: row.coarse_group || null,
           predicted_season: prediction?.predicted_season || null,
           model_version: prediction?.model_version || null,
