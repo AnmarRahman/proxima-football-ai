@@ -288,6 +288,12 @@ def main() -> None:
                     predicted += 1
                     print(f"Predicted {player_input['player_id']}: apps={prediction['appearances']['expected']}, goals={prediction['goals']['expected']}")
 
+                if player_inputs and predicted == 0:
+                    raise RuntimeError(
+                        f"Prediction run rejected all {len(player_inputs)} requested players; "
+                        f"first rejection: {rejected[0]['code'] if rejected else 'unknown'}"
+                    )
+
                 if not args.player_id:
                     cur.execute(
                         """
@@ -312,10 +318,17 @@ def main() -> None:
                 cur.execute(
                     """
                     update tier_a_prediction_runs
-                    set status = 'failed', ended_at = now(), error_message = %s
+                    set status = 'failed', ended_at = now(), predicted_count = %s,
+                        rejected_count = %s, error_message = %s, meta = %s
                     where id = %s
                     """,
-                    (str(exc), run_id),
+                    (
+                        predicted,
+                        len(rejected),
+                        str(exc),
+                        Jsonb({"rejections": rejected}),
+                        run_id,
+                    ),
                 )
             conn.commit()
             raise

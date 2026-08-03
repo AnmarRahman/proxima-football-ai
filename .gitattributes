@@ -1,0 +1,2 @@
+backend/python/model_artifacts/**/model_manifest.json text eol=lf
+backend/python/model_artifacts/**/manifest.sha256 text eol=lf
