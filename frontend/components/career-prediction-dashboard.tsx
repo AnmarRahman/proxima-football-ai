@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Activity, CalendarRange, Target } from "lucide-react";
 import { formatPosition } from "@/lib/player-position";
 import type { ReactNode } from "react";
-import { Bar, BarChart, CartesianGrid, Cell, LabelList, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Bar, BarChart, CartesianGrid, Cell, LabelList, ResponsiveContainer, XAxis, YAxis } from "recharts";
 
 type Interval = { lower: number; upper: number; method?: string | null } | null;
 
@@ -68,8 +68,11 @@ function ForecastCard({
 export function CareerPredictionDashboard(props: ForecastPayload) {
   const { player, prediction, historical_seasons = [] } = props;
   const analyzedSeasons = historical_seasons.filter((season) => season.model_eligible && !season.is_partial);
+  const chartSeasons = analyzedSeasons.filter(
+    (season) => (season.appearances ?? 0) > 0 || (season.goals ?? 0) > 0
+  );
   const progressionData = [
-    ...analyzedSeasons.map((season) => ({
+    ...chartSeasons.map((season) => ({
       season: season.season,
       appearances: season.appearances,
       goals: season.goals,
@@ -143,7 +146,6 @@ export function CareerPredictionDashboard(props: ForecastPayload) {
                   <CartesianGrid vertical={false} stroke="#ffffff18" strokeDasharray="3 3" />
                   <XAxis dataKey="season" angle={-35} textAnchor="end" interval={0} height={76} tickLine={false} stroke="#a1a1aa" fontSize={11} />
                   <YAxis allowDecimals={false} tickLine={false} stroke="#a1a1aa" />
-                  <Tooltip cursor={{ fill: "#ffffff08" }} contentStyle={{ background: "#090909", border: "1px solid #333", borderRadius: 8 }} />
                   <Bar dataKey="appearances" name="Appearances" radius={[5, 5, 0, 0]} maxBarSize={34}>
                     {progressionData.map((entry, index) => (
                       <Cell key={`${entry.season}-appearances-${index}`} fill="#64748b" stroke={entry.kind === "forecast" ? "#d4af37" : "transparent"} strokeWidth={entry.kind === "forecast" ? 2 : 0} />
