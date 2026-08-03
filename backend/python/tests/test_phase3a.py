@@ -306,7 +306,8 @@ class DatasetAndDeterminismTests(unittest.TestCase):
     def test_dataset_is_actual_training_source_and_deterministic(self):
         # one fresh train on a SUBSET proves --dataset is the source; a fresh train
         # on the FULL set must reproduce the deployed metrics (determinism).
-        rows = list(csv.DictReader(open(DATASET, encoding="utf-8")))
+        with DATASET.open(encoding="utf-8") as dataset_file:
+            rows = list(csv.DictReader(dataset_file))
         keep = sorted({r["player_id"] for r in rows})[:60]
         with tempfile.TemporaryDirectory() as tmp:
             sub_csv = Path(tmp) / "subset.csv"
