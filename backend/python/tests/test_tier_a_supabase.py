@@ -95,6 +95,14 @@ class TierASchemaTests(unittest.TestCase):
     def test_runner_supports_out_of_band_manifest_digest(self):
         source = (BACKEND / "run_tier_a_predictions.py").read_text(encoding="utf-8")
         self.assertIn("TIER_A_EXPECTED_MANIFEST_SHA256", source)
+        self.assertIn("Prediction run rejected all", source)
+
+    def test_release_manifest_uses_git_stable_lf_bytes(self):
+        artifact_dir = BACKEND / "model_artifacts" / "tier_a_v1"
+        manifest_bytes = (artifact_dir / "model_manifest.json").read_bytes()
+        expected = (artifact_dir / "manifest.sha256").read_text(encoding="utf-8").strip()
+        self.assertNotIn(b"\r\n", manifest_bytes)
+        self.assertEqual(hashlib.sha256(manifest_bytes).hexdigest(), expected)
 
     def test_migration_is_stable_for_release_tracking(self):
         digest = hashlib.sha256(MIGRATION.read_bytes()).hexdigest()
