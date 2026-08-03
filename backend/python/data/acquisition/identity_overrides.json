@@ -1,0 +1,41 @@
+{
+  "_comment": "Reviewed Wikidata QID overrides for names that automatic search cannot resolve safely (mononyms colliding with places/given names, or shared names where sitelink count picks the wrong person). Each entry is hand-verified against date of birth, nationality, position, and expected clubs. The collector trusts these values and fetches the given enwiki_title for the career table.",
+  "overrides": {
+    "Xavi": {
+      "wikidata_id": "Q17500",
+      "enwiki_title": "Xavi (footballer, born 1980)",
+      "birth_date": "1980-01-25",
+      "nationality": "Spain",
+      "position_label": "midfielder",
+      "expected_clubs": ["Barcelona", "Al Sadd"],
+      "reason": "Mononym: Wikidata search for 'Xavi' returns the given-name item, an Italian municipality, and researchers, not the footballer. Verified as Xavier Hernandez Creus (Q17500), b.1980-01-25, Spain, central midfielder for Barcelona; enwiki page 'Xavi' redirects to 'Xavi (footballer, born 1980)'."
+    },
+    "Gavi": {
+      "wikidata_id": "Q108111889",
+      "enwiki_title": "Gavi (footballer)",
+      "birth_date": "2004-08-05",
+      "nationality": "Spain",
+      "position_label": "midfielder",
+      "expected_clubs": ["Barcelona"],
+      "reason": "Mononym: 'Gavi' collides with a Piedmont municipality, the vaccine alliance GAVI, and given names. Verified as Pablo Martin Paez Gavira (Q108111889), b.2004-08-05, Spain, midfielder for Barcelona."
+    },
+    "Jorginho": {
+      "wikidata_id": "Q3810078",
+      "enwiki_title": "Jorginho (footballer, born December 1991)",
+      "birth_date": "1991-12-20",
+      "nationality": "Italy",
+      "position_label": "midfielder",
+      "expected_clubs": ["Napoli", "Chelsea", "Arsenal"],
+      "reason": "Shared name: automatic resolution picked the 1964 Brazilian Jorginho (Q163750) because it has more sitelinks. The roster means the Italy international Jorge Luiz Frello Filho (Q3810078), b.1991-12-20, deep-lying midfielder for Napoli/Chelsea/Arsenal."
+    },
+    "Bernardo Silva": {
+      "wikidata_id": "Q15521306",
+      "enwiki_title": "Bernardo Silva",
+      "birth_date": "1994-08-10",
+      "nationality": "Portugal",
+      "position_label": "midfielder",
+      "expected_clubs": ["Benfica", "Monaco", "Manchester City"],
+      "reason": "Automatic resolution reached the correct entity (Q15521306) but flagged it ambiguous against namesakes (Bernardo b.1965, Bernardo Silva b.2001). Confirmed as Bernardo Mota Veiga de Carvalho e Silva, b.1994-08-10, Portugal, Manchester City midfielder."
+    }
+  }
+}

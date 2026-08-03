@@ -1,0 +1,330 @@
+{
+  "player_id": "jude-bellingham",
+  "wikidata_id": "Q66241169",
+  "name": "Jude Bellingham",
+  "requested_name": "Jude Bellingham",
+  "birth_date": "2003-06-29",
+  "nationality": "United Kingdom",
+  "primary_position": "midfielder",
+  "position_group": "CM",
+  "coarse_group": "MID",
+  "roster_section": "Central and Attacking Midfielders (30)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "2003-06-29",
+    "nationality": "United Kingdom",
+    "occupation_footballer": true,
+    "position": "midfielder",
+    "sitelinks": 77,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jude_Bellingham",
+    "retrieved_at": "2026-08-02",
+    "revision": 1367218569,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 8,
+    "season_team_league_rows": 8,
+    "reserve_or_youth_years_dropped": [],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [],
+    "missing_middle_seasons": [],
+    "first_season": 2019,
+    "last_season": 2026,
+    "partial_seasons": [
+      2026
+    ],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 8,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 2019,
+      "season_start_year": 2019,
+      "canonical_season": "2019–20",
+      "season_source_label": "2019–20",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "birmingham-city",
+      "team_name": "Birmingham City",
+      "league_id": "championship",
+      "league_name": "Championship",
+      "appearances": 41,
+      "goals": 4,
+      "is_partial": false,
+      "age": 16,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jude_Bellingham",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367218569,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2020,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2020,
+      "season_start_year": 2020,
+      "canonical_season": "2020–21",
+      "season_source_label": "2020–21",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "borussia-dortmund",
+      "team_name": "Borussia Dortmund",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 29,
+      "goals": 1,
+      "is_partial": false,
+      "age": 17,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jude_Bellingham",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367218569,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2021,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2021,
+      "season_start_year": 2021,
+      "canonical_season": "2021–22",
+      "season_source_label": "2021–22",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "borussia-dortmund",
+      "team_name": "Borussia Dortmund",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 32,
+      "goals": 3,
+      "is_partial": false,
+      "age": 18,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jude_Bellingham",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367218569,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2022,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2022,
+      "season_start_year": 2022,
+      "canonical_season": "2022–23",
+      "season_source_label": "2022–23",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "borussia-dortmund",
+      "team_name": "Borussia Dortmund",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 31,
+      "goals": 8,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jude_Bellingham",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367218569,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2023,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2023,
+      "season_start_year": 2023,
+      "canonical_season": "2023–24",
+      "season_source_label": "2023–24",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 28,
+      "goals": 19,
+      "is_partial": false,
+      "age": 20,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jude_Bellingham",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367218569,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2024,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2024,
+      "season_start_year": 2024,
+      "canonical_season": "2024–25",
+      "season_source_label": "2024–25",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 31,
+      "goals": 9,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jude_Bellingham",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367218569,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2025,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2025,
+      "season_start_year": 2025,
+      "canonical_season": "2025–26",
+      "season_source_label": "2025–26",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 28,
+      "goals": 6,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jude_Bellingham",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367218569,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2026,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2026,
+      "season_start_year": 2026,
+      "canonical_season": "2026–27",
+      "season_source_label": "2026–27",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 0,
+      "goals": 0,
+      "is_partial": true,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jude_Bellingham",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367218569,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2027,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [
+    "ongoing/partial season(s): [2026]"
+  ],
+  "career_status": "active",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q66241169 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": null
+}

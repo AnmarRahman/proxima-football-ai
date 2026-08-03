@@ -1,0 +1,173 @@
+{
+  "batch": 5,
+  "attempted": 25,
+  "collected": 25,
+  "quarantined": 0,
+  "quarantine_fraction": 0.0,
+  "systemic_failure": false,
+  "warnings_total": 20,
+  "collected_players": [
+    {
+      "player_id": "frenkie-de-jong",
+      "name": "Frenkie de Jong",
+      "seasons": 10,
+      "warnings": 0
+    },
+    {
+      "player_id": "pedri",
+      "name": "Pedri",
+      "seasons": 7,
+      "warnings": 0
+    },
+    {
+      "player_id": "gavi-footballer",
+      "name": "Gavi (footballer)",
+      "seasons": 5,
+      "warnings": 0
+    },
+    {
+      "player_id": "jude-bellingham",
+      "name": "Jude Bellingham",
+      "seasons": 8,
+      "warnings": 1
+    },
+    {
+      "player_id": "nicolo-barella",
+      "name": "Nicolò Barella",
+      "seasons": 12,
+      "warnings": 0
+    },
+    {
+      "player_id": "hakan-calhanoglu",
+      "name": "Hakan Çalhanoğlu",
+      "seasons": 15,
+      "warnings": 0
+    },
+    {
+      "player_id": "martin-degaard",
+      "name": "Martin Ødegaard",
+      "seasons": 11,
+      "warnings": 0
+    },
+    {
+      "player_id": "bruno-fernandes",
+      "name": "Bruno Fernandes",
+      "seasons": 14,
+      "warnings": 0
+    },
+    {
+      "player_id": "jamal-musiala",
+      "name": "Jamal Musiala",
+      "seasons": 7,
+      "warnings": 0
+    },
+    {
+      "player_id": "florian-wirtz",
+      "name": "Florian Wirtz",
+      "seasons": 7,
+      "warnings": 0
+    },
+    {
+      "player_id": "cristiano-ronaldo",
+      "name": "Cristiano Ronaldo",
+      "seasons": 24,
+      "warnings": 5
+    },
+    {
+      "player_id": "lionel-messi",
+      "name": "Lionel Messi",
+      "seasons": 23,
+      "warnings": 8
+    },
+    {
+      "player_id": "neymar",
+      "name": "Neymar",
+      "seasons": 18,
+      "warnings": 1
+    },
+    {
+      "player_id": "mohamed-salah",
+      "name": "Mohamed Salah",
+      "seasons": 17,
+      "warnings": 0
+    },
+    {
+      "player_id": "kylian-mbappe",
+      "name": "Kylian Mbappé",
+      "seasons": 12,
+      "warnings": 2
+    },
+    {
+      "player_id": "eden-hazard",
+      "name": "Eden Hazard",
+      "seasons": 16,
+      "warnings": 0
+    },
+    {
+      "player_id": "gareth-bale",
+      "name": "Gareth Bale",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "arjen-robben",
+      "name": "Arjen Robben",
+      "seasons": 20,
+      "warnings": 1
+    },
+    {
+      "player_id": "franck-ribery",
+      "name": "Franck Ribéry",
+      "seasons": 23,
+      "warnings": 0
+    },
+    {
+      "player_id": "angel-di-maria",
+      "name": "Ángel Di María",
+      "seasons": 22,
+      "warnings": 1
+    },
+    {
+      "player_id": "riyad-mahrez",
+      "name": "Riyad Mahrez",
+      "seasons": 16,
+      "warnings": 0
+    },
+    {
+      "player_id": "sadio-mane",
+      "name": "Sadio Mané",
+      "seasons": 15,
+      "warnings": 0
+    },
+    {
+      "player_id": "son-heung-min",
+      "name": "Son Heung-min",
+      "seasons": 17,
+      "warnings": 1
+    },
+    {
+      "player_id": "ronaldinho",
+      "name": "Ronaldinho",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "luis-figo",
+      "name": "Luís Figo",
+      "seasons": 20,
+      "warnings": 0
+    }
+  ],
+  "quarantined_players": [],
+  "requests": {
+    "wikipedia": {
+      "total": 25,
+      "cache_hit_rate": 1.0
+    },
+    "wikidata": {
+      "total": 64,
+      "cache_hit_rate": 1.0
+    }
+  },
+  "gate_ok": true
+}

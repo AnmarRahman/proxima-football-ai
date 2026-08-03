@@ -1,0 +1,171 @@
+{
+  "player_id": "virgil-van-dijk",
+  "primary_position": "defender",
+  "position_group": "CB",
+  "coarse_group": "DEF",
+  "career_status": "active",
+  "birth_date": "1991-07-08",
+  "stat_scope": "domestic_league",
+  "seasons": [
+    {
+      "canonical_season": "2010–11",
+      "season_start_year": 2010,
+      "season_end_year": 2011,
+      "season_format": "split_year",
+      "appearances": 5,
+      "goals": 2,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2011–12",
+      "season_start_year": 2011,
+      "season_end_year": 2012,
+      "season_format": "split_year",
+      "appearances": 23,
+      "goals": 3,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2012–13",
+      "season_start_year": 2012,
+      "season_end_year": 2013,
+      "season_format": "split_year",
+      "appearances": 34,
+      "goals": 2,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2013–14",
+      "season_start_year": 2013,
+      "season_end_year": 2014,
+      "season_format": "split_year",
+      "appearances": 36,
+      "goals": 5,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2014–15",
+      "season_start_year": 2014,
+      "season_end_year": 2015,
+      "season_format": "split_year",
+      "appearances": 35,
+      "goals": 4,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2015–16",
+      "season_start_year": 2015,
+      "season_end_year": 2016,
+      "season_format": "split_year",
+      "appearances": 39,
+      "goals": 3,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2016–17",
+      "season_start_year": 2016,
+      "season_end_year": 2017,
+      "season_format": "split_year",
+      "appearances": 21,
+      "goals": 1,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2017–18",
+      "season_start_year": 2017,
+      "season_end_year": 2018,
+      "season_format": "split_year",
+      "appearances": 26,
+      "goals": 0,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2018–19",
+      "season_start_year": 2018,
+      "season_end_year": 2019,
+      "season_format": "split_year",
+      "appearances": 38,
+      "goals": 4,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2019–20",
+      "season_start_year": 2019,
+      "season_end_year": 2020,
+      "season_format": "split_year",
+      "appearances": 38,
+      "goals": 5,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2020–21",
+      "season_start_year": 2020,
+      "season_end_year": 2021,
+      "season_format": "split_year",
+      "appearances": 5,
+      "goals": 1,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2021–22",
+      "season_start_year": 2021,
+      "season_end_year": 2022,
+      "season_format": "split_year",
+      "appearances": 34,
+      "goals": 3,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2022–23",
+      "season_start_year": 2022,
+      "season_end_year": 2023,
+      "season_format": "split_year",
+      "appearances": 32,
+      "goals": 3,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2023–24",
+      "season_start_year": 2023,
+      "season_end_year": 2024,
+      "season_format": "split_year",
+      "appearances": 36,
+      "goals": 2,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2024–25",
+      "season_start_year": 2024,
+      "season_end_year": 2025,
+      "season_format": "split_year",
+      "appearances": 37,
+      "goals": 3,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2025–26",
+      "season_start_year": 2025,
+      "season_end_year": 2026,
+      "season_format": "split_year",
+      "appearances": 38,
+      "goals": 6,
+      "is_partial": false,
+      "model_eligible": true
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "player_id": "juan-roman-riquelme",
+  "wikidata_id": "Q192965",
+  "name": "Juan Román Riquelme",
+  "requested_name": "Juan Roman Riquelme",
+  "birth_date": "1978-06-24",
+  "nationality": "Argentina",
+  "primary_position": "midfielder",
+  "position_group": "AM",
+  "coarse_group": "MID",
+  "roster_section": "Hybrid Attackers and Number 10s (10)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "1978-06-24",
+    "nationality": "Argentina",
+    "occupation_footballer": true,
+    "position": "midfielder",
+    "sitelinks": 60,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Juan_Román_Riquelme",
+    "retrieved_at": "2026-08-02",
+    "revision": 1366024493,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 5,
+    "season_team_league_rows": 5,
+    "reserve_or_youth_years_dropped": [
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014
+    ],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [],
+    "missing_middle_seasons": [],
+    "first_season": 2002,
+    "last_season": 2006,
+    "partial_seasons": [],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 5,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 2002,
+      "season_start_year": 2002,
+      "canonical_season": "2002–03",
+      "season_source_label": "2002–03",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 30,
+      "goals": 3,
+      "is_partial": false,
+      "age": 24,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Juan_Román_Riquelme",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366024493,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2003,
+      "league_source": "reviewed_override: Riquelme played for FC Barcelona in the Spanish top flight (La Liga) 2002-03.",
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2003,
+      "season_start_year": 2003,
+      "canonical_season": "2003–04",
+      "season_source_label": "2003–04",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "villarreal-loan",
+      "team_name": "Villarreal (loan)",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 33,
+      "goals": 8,
+      "is_partial": false,
+      "age": 25,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Juan_Román_Riquelme",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366024493,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2004,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null,
+      "league_source": "reviewed_override: Villarreal CF competed in La Liga throughout Riquelme's 2003-2007 spell (incl. the loan seasons)."
+    },
+    {
+      "season": 2004,
+      "season_start_year": 2004,
+      "canonical_season": "2004–05",
+      "season_source_label": "2004–05",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "villarreal-loan",
+      "team_name": "Villarreal (loan)",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 35,
+      "goals": 15,
+      "is_partial": false,
+      "age": 26,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Juan_Román_Riquelme",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366024493,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2005,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null,
+      "league_source": "reviewed_override: Villarreal CF competed in La Liga throughout Riquelme's 2003-2007 spell (incl. the loan seasons)."
+    },
+    {
+      "season": 2005,
+      "season_start_year": 2005,
+      "canonical_season": "2005–06",
+      "season_source_label": "2005–06",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "villarreal",
+      "team_name": "Villarreal",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 25,
+      "goals": 12,
+      "is_partial": false,
+      "age": 27,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Juan_Román_Riquelme",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366024493,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2006,
+      "league_source": "reviewed_override: Villarreal CF competed in La Liga throughout Riquelme's 2003-2007 spell (incl. the loan seasons).",
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2006,
+      "season_start_year": 2006,
+      "canonical_season": "2006–07",
+      "season_source_label": "2006–07",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "villarreal",
+      "team_name": "Villarreal",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 13,
+      "goals": 1,
+      "is_partial": false,
+      "age": 28,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Juan_Román_Riquelme",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366024493,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2007,
+      "league_source": "reviewed_override: Villarreal CF competed in La Liga throughout Riquelme's 2003-2007 spell (incl. the loan seasons).",
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [],
+  "career_status": "retired",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q192965 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": "2015"
+}

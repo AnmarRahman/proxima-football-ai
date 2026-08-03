@@ -1,0 +1,243 @@
+{
+  "player_id": "kaka",
+  "name": "Kaka",
+  "position_group": "AM",
+  "coarse_group": "MID",
+  "active": false,
+  "era": "2000s-2010s",
+  "birth_year": 1982,
+  "birth_date": "1982-04-22",
+  "nationality": "Brazil",
+  "career_position_label": "Attacking midfielder",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kaká",
+    "retrieved_at": "2026-08-02",
+    "supports": [
+      "appearances",
+      "goals",
+      "position",
+      "birth_date",
+      "nationality"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 17,
+    "reserve_or_youth_rows_dropped": 0,
+    "dropped_rows": [],
+    "first_season": 2001,
+    "last_season": 2017,
+    "tier": "A",
+    "tier_b_c_available": false
+  },
+  "seasons": [
+    {
+      "season": 2001,
+      "stat_scope": "domestic_league",
+      "appearances": 27,
+      "goals": 12,
+      "clubs": [
+        "São Paulo"
+      ],
+      "competitions": [
+        "Série A"
+      ]
+    },
+    {
+      "season": 2002,
+      "stat_scope": "domestic_league",
+      "appearances": 22,
+      "goals": 9,
+      "clubs": [
+        "São Paulo"
+      ],
+      "competitions": [
+        "Série A"
+      ]
+    },
+    {
+      "season": 2003,
+      "stat_scope": "domestic_league",
+      "appearances": 40,
+      "goals": 12,
+      "clubs": [
+        "São Paulo",
+        "AC Milan"
+      ],
+      "competitions": [
+        "Série A",
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2004,
+      "stat_scope": "domestic_league",
+      "appearances": 36,
+      "goals": 7,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2005,
+      "stat_scope": "domestic_league",
+      "appearances": 35,
+      "goals": 14,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2006,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 8,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2007,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 15,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2008,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 16,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2009,
+      "stat_scope": "domestic_league",
+      "appearances": 25,
+      "goals": 8,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2010,
+      "stat_scope": "domestic_league",
+      "appearances": 14,
+      "goals": 7,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2011,
+      "stat_scope": "domestic_league",
+      "appearances": 27,
+      "goals": 5,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2012,
+      "stat_scope": "domestic_league",
+      "appearances": 19,
+      "goals": 3,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2013,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 7,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2014,
+      "stat_scope": "domestic_league",
+      "appearances": 19,
+      "goals": 2,
+      "clubs": [
+        "São Paulo (loan)"
+      ],
+      "competitions": [
+        "Série A"
+      ]
+    },
+    {
+      "season": 2015,
+      "stat_scope": "domestic_league",
+      "appearances": 28,
+      "goals": 9,
+      "clubs": [
+        "Orlando City SC"
+      ],
+      "competitions": [
+        "MLS"
+      ]
+    },
+    {
+      "season": 2016,
+      "stat_scope": "domestic_league",
+      "appearances": 24,
+      "goals": 9,
+      "clubs": [
+        "Orlando City SC"
+      ],
+      "competitions": [
+        "MLS"
+      ]
+    },
+    {
+      "season": 2017,
+      "stat_scope": "domestic_league",
+      "appearances": 23,
+      "goals": 6,
+      "clubs": [
+        "Orlando City SC"
+      ],
+      "competitions": [
+        "MLS"
+      ]
+    }
+  ]
+}

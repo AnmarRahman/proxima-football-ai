@@ -1,0 +1,173 @@
+{
+  "batch": 1,
+  "attempted": 25,
+  "collected": 25,
+  "quarantined": 0,
+  "quarantine_fraction": 0.0,
+  "systemic_failure": false,
+  "warnings_total": 2,
+  "collected_players": [
+    {
+      "player_id": "virgil-van-dijk",
+      "name": "Virgil van Dijk",
+      "seasons": 16,
+      "warnings": 0
+    },
+    {
+      "player_id": "sergio-ramos",
+      "name": "Sergio Ramos",
+      "seasons": 23,
+      "warnings": 0
+    },
+    {
+      "player_id": "gerard-pique",
+      "name": "Gerard Piqué",
+      "seasons": 19,
+      "warnings": 0
+    },
+    {
+      "player_id": "carles-puyol",
+      "name": "Carles Puyol",
+      "seasons": 15,
+      "warnings": 0
+    },
+    {
+      "player_id": "fabio-cannavaro",
+      "name": "Fabio Cannavaro",
+      "seasons": 19,
+      "warnings": 0
+    },
+    {
+      "player_id": "alessandro-nesta",
+      "name": "Alessandro Nesta",
+      "seasons": 22,
+      "warnings": 0
+    },
+    {
+      "player_id": "paolo-maldini",
+      "name": "Paolo Maldini",
+      "seasons": 25,
+      "warnings": 0
+    },
+    {
+      "player_id": "rio-ferdinand",
+      "name": "Rio Ferdinand",
+      "seasons": 20,
+      "warnings": 0
+    },
+    {
+      "player_id": "nemanja-vidic",
+      "name": "Nemanja Vidić",
+      "seasons": 16,
+      "warnings": 0
+    },
+    {
+      "player_id": "john-terry",
+      "name": "John Terry",
+      "seasons": 20,
+      "warnings": 0
+    },
+    {
+      "player_id": "thiago-silva",
+      "name": "Thiago Silva",
+      "seasons": 23,
+      "warnings": 1
+    },
+    {
+      "player_id": "giorgio-chiellini",
+      "name": "Giorgio Chiellini",
+      "seasons": 22,
+      "warnings": 0
+    },
+    {
+      "player_id": "leonardo-bonucci",
+      "name": "Leonardo Bonucci",
+      "seasons": 19,
+      "warnings": 0
+    },
+    {
+      "player_id": "raphael-varane",
+      "name": "Raphaël Varane",
+      "seasons": 15,
+      "warnings": 0
+    },
+    {
+      "player_id": "pepe-footballer-born-february-1983",
+      "name": "Pepe (footballer, born February 1983)",
+      "seasons": 23,
+      "warnings": 0
+    },
+    {
+      "player_id": "diego-godin",
+      "name": "Diego Godín",
+      "seasons": 21,
+      "warnings": 0
+    },
+    {
+      "player_id": "vincent-kompany",
+      "name": "Vincent Kompany",
+      "seasons": 17,
+      "warnings": 0
+    },
+    {
+      "player_id": "mats-hummels",
+      "name": "Mats Hummels",
+      "seasons": 19,
+      "warnings": 0
+    },
+    {
+      "player_id": "jerome-boateng",
+      "name": "Jérôme Boateng",
+      "seasons": 19,
+      "warnings": 0
+    },
+    {
+      "player_id": "kalidou-koulibaly",
+      "name": "Kalidou Koulibaly",
+      "seasons": 16,
+      "warnings": 0
+    },
+    {
+      "player_id": "aymeric-laporte",
+      "name": "Aymeric Laporte",
+      "seasons": 14,
+      "warnings": 0
+    },
+    {
+      "player_id": "ruben-dias",
+      "name": "Rúben Dias",
+      "seasons": 9,
+      "warnings": 0
+    },
+    {
+      "player_id": "antonio-rudiger",
+      "name": "Antonio Rüdiger",
+      "seasons": 16,
+      "warnings": 1
+    },
+    {
+      "player_id": "marquinhos",
+      "name": "Marquinhos",
+      "seasons": 14,
+      "warnings": 0
+    },
+    {
+      "player_id": "david-alaba",
+      "name": "David Alaba",
+      "seasons": 17,
+      "warnings": 0
+    }
+  ],
+  "quarantined_players": [],
+  "requests": {
+    "wikipedia": {
+      "total": 25,
+      "cache_hit_rate": 1.0
+    },
+    "wikidata": {
+      "total": 63,
+      "cache_hit_rate": 1.0
+    }
+  },
+  "gate_ok": true
+}

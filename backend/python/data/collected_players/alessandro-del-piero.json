@@ -1,0 +1,854 @@
+{
+  "player_id": "alessandro-del-piero",
+  "wikidata_id": "Q624",
+  "name": "Alessandro Del Piero",
+  "requested_name": "Alessandro Del Piero",
+  "birth_date": "1974-11-09",
+  "nationality": "Italy",
+  "primary_position": "forward",
+  "position_group": "AM",
+  "coarse_group": "MID",
+  "roster_section": "Hybrid Attackers and Number 10s (10)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "1974-11-09",
+    "nationality": "Italy",
+    "occupation_footballer": true,
+    "position": "forward",
+    "sitelinks": 85,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+    "retrieved_at": "2026-08-02",
+    "revision": 1367101177,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 24,
+    "season_team_league_rows": 24,
+    "reserve_or_youth_years_dropped": [],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [],
+    "missing_middle_seasons": [],
+    "first_season": 1991,
+    "last_season": 2014,
+    "partial_seasons": [],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 24,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 1991,
+      "season_start_year": 1991,
+      "canonical_season": "1991–92",
+      "season_source_label": "1991–92",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "padova",
+      "team_name": "Padova",
+      "league_id": "serie-b",
+      "league_name": "Serie B",
+      "appearances": 4,
+      "goals": 0,
+      "is_partial": false,
+      "age": 17,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 1992,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 1992,
+      "season_start_year": 1992,
+      "canonical_season": "1992–93",
+      "season_source_label": "1992–93",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "padova",
+      "team_name": "Padova",
+      "league_id": "serie-b",
+      "league_name": "Serie B",
+      "appearances": 10,
+      "goals": 1,
+      "is_partial": false,
+      "age": 18,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 1993,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 1993,
+      "season_start_year": 1993,
+      "canonical_season": "1993–94",
+      "season_source_label": "1993–94",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 11,
+      "goals": 5,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 1994,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 1994,
+      "season_start_year": 1994,
+      "canonical_season": "1994–95",
+      "season_source_label": "1994–95",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 29,
+      "goals": 8,
+      "is_partial": false,
+      "age": 20,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 1995,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 1995,
+      "season_start_year": 1995,
+      "canonical_season": "1995–96",
+      "season_source_label": "1995–96",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 29,
+      "goals": 6,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 1996,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 1996,
+      "season_start_year": 1996,
+      "canonical_season": "1996–97",
+      "season_source_label": "1996–97",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 22,
+      "goals": 8,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 1997,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 1997,
+      "season_start_year": 1997,
+      "canonical_season": "1997–98",
+      "season_source_label": "1997–98",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 32,
+      "goals": 21,
+      "is_partial": false,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 1998,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 1998,
+      "season_start_year": 1998,
+      "canonical_season": "1998–99",
+      "season_source_label": "1998–99",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 8,
+      "goals": 2,
+      "is_partial": false,
+      "age": 24,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 1999,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 1999,
+      "season_start_year": 1999,
+      "canonical_season": "1999–2000",
+      "season_source_label": "1999–2000",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 34,
+      "goals": 9,
+      "is_partial": false,
+      "age": 25,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2000,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2000,
+      "season_start_year": 2000,
+      "canonical_season": "2000–01",
+      "season_source_label": "2000–01",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 25,
+      "goals": 9,
+      "is_partial": false,
+      "age": 26,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2001,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2001,
+      "season_start_year": 2001,
+      "canonical_season": "2001–02",
+      "season_source_label": "2001–02",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 32,
+      "goals": 16,
+      "is_partial": false,
+      "age": 27,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2002,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2002,
+      "season_start_year": 2002,
+      "canonical_season": "2002–03",
+      "season_source_label": "2002–03",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 24,
+      "goals": 16,
+      "is_partial": false,
+      "age": 28,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2003,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2003,
+      "season_start_year": 2003,
+      "canonical_season": "2003–04",
+      "season_source_label": "2003–04",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 22,
+      "goals": 8,
+      "is_partial": false,
+      "age": 29,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2004,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2004,
+      "season_start_year": 2004,
+      "canonical_season": "2004–05",
+      "season_source_label": "2004–05",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 30,
+      "goals": 14,
+      "is_partial": false,
+      "age": 30,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2005,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2005,
+      "season_start_year": 2005,
+      "canonical_season": "2005–06",
+      "season_source_label": "2005–06",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 33,
+      "goals": 12,
+      "is_partial": false,
+      "age": 31,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2006,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2006,
+      "season_start_year": 2006,
+      "canonical_season": "2006–07",
+      "season_source_label": "2006–07",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-b",
+      "league_name": "Serie B",
+      "appearances": 35,
+      "goals": 20,
+      "is_partial": false,
+      "age": 32,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2007,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2007,
+      "season_start_year": 2007,
+      "canonical_season": "2007–08",
+      "season_source_label": "2007–08",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 37,
+      "goals": 21,
+      "is_partial": false,
+      "age": 33,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2008,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2008,
+      "season_start_year": 2008,
+      "canonical_season": "2008–09",
+      "season_source_label": "2008–09",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 31,
+      "goals": 13,
+      "is_partial": false,
+      "age": 34,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2009,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2009,
+      "season_start_year": 2009,
+      "canonical_season": "2009–10",
+      "season_source_label": "2009–10",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 23,
+      "goals": 9,
+      "is_partial": false,
+      "age": 35,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2010,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2010,
+      "season_start_year": 2010,
+      "canonical_season": "2010–11",
+      "season_source_label": "2010–11",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 33,
+      "goals": 8,
+      "is_partial": false,
+      "age": 36,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2011,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2011,
+      "season_start_year": 2011,
+      "canonical_season": "2011–12",
+      "season_source_label": "2011–12",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 23,
+      "goals": 3,
+      "is_partial": false,
+      "age": 37,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2012,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2012,
+      "season_start_year": 2012,
+      "canonical_season": "2012–13",
+      "season_source_label": "2012–13",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "sydney-fc",
+      "team_name": "Sydney FC",
+      "league_id": "a-league",
+      "league_name": "A-League",
+      "appearances": 24,
+      "goals": 14,
+      "is_partial": false,
+      "age": 38,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2013,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2013,
+      "season_start_year": 2013,
+      "canonical_season": "2013–14",
+      "season_source_label": "2013–14",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "sydney-fc",
+      "team_name": "Sydney FC",
+      "league_id": "a-league",
+      "league_name": "A-League",
+      "appearances": 24,
+      "goals": 10,
+      "is_partial": false,
+      "age": 39,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2014,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2014,
+      "season_start_year": 2014,
+      "canonical_season": "2014",
+      "season_source_label": "2014",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "delhi-dynamos",
+      "team_name": "Delhi Dynamos",
+      "league_id": "indian-super-league",
+      "league_name": "Indian Super League",
+      "appearances": 10,
+      "goals": 1,
+      "is_partial": false,
+      "age": 40,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alessandro_Del_Piero",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101177,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2014,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [],
+  "career_status": "retired",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q624 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": "2014"
+}

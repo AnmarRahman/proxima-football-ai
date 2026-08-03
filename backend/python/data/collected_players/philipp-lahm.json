@@ -1,0 +1,576 @@
+{
+  "player_id": "philipp-lahm",
+  "wikidata_id": "Q43682",
+  "name": "Philipp Lahm",
+  "requested_name": "Philipp Lahm",
+  "birth_date": "1983-11-11",
+  "nationality": "Germany",
+  "primary_position": "full-back",
+  "position_group": "FB",
+  "coarse_group": "DEF",
+  "roster_section": "Full-backs and Wing-backs (25)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "1983-11-11",
+    "nationality": "Germany",
+    "occupation_footballer": true,
+    "position": "full-back",
+    "sitelinks": 86,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+    "retrieved_at": "2026-08-02",
+    "revision": 1367109540,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 15,
+    "season_team_league_rows": 15,
+    "reserve_or_youth_years_dropped": [
+      2001,
+      2002,
+      2005
+    ],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [],
+    "missing_middle_seasons": [],
+    "first_season": 2002,
+    "last_season": 2016,
+    "partial_seasons": [],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 15,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 2002,
+      "season_start_year": 2002,
+      "canonical_season": "2002–03",
+      "season_source_label": "2002–03",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "bayern-munich",
+      "team_name": "Bayern Munich",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 0,
+      "goals": 0,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367109540,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2003,
+      "league_source": "reviewed_override: Bayern Munich play in the German Bundesliga.",
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2003,
+      "season_start_year": 2003,
+      "canonical_season": "2003–04",
+      "season_source_label": "2003–04",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "stuttgart-loan",
+      "team_name": "Stuttgart (loan)",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 31,
+      "goals": 1,
+      "is_partial": false,
+      "age": 20,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367109540,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2004,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null,
+      "league_source": "reviewed_override: VfB Stuttgart played in the Bundesliga during Lahm's 2003-2005 loan."
+    },
+    {
+      "season": 2004,
+      "season_start_year": 2004,
+      "canonical_season": "2004–05",
+      "season_source_label": "2004–05",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "stuttgart-loan",
+      "team_name": "Stuttgart (loan)",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 22,
+      "goals": 1,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367109540,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2005,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null,
+      "league_source": "reviewed_override: VfB Stuttgart played in the Bundesliga during Lahm's 2003-2005 loan."
+    },
+    {
+      "season": 2005,
+      "season_start_year": 2005,
+      "canonical_season": "2005–06",
+      "season_source_label": "2005–06",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "bayern-munich",
+      "team_name": "Bayern Munich",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 20,
+      "goals": 0,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367109540,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2006,
+      "league_source": "reviewed_override: Bayern Munich play in the German Bundesliga.",
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2006,
+      "season_start_year": 2006,
+      "canonical_season": "2006–07",
+      "season_source_label": "2006–07",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "bayern-munich",
+      "team_name": "Bayern Munich",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 34,
+      "goals": 1,
+      "is_partial": false,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367109540,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2007,
+      "league_source": "reviewed_override: Bayern Munich play in the German Bundesliga.",
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2007,
+      "season_start_year": 2007,
+      "canonical_season": "2007–08",
+      "season_source_label": "2007–08",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "bayern-munich",
+      "team_name": "Bayern Munich",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 22,
+      "goals": 0,
+      "is_partial": false,
+      "age": 24,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367109540,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2008,
+      "league_source": "reviewed_override: Bayern Munich play in the German Bundesliga.",
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2008,
+      "season_start_year": 2008,
+      "canonical_season": "2008–09",
+      "season_source_label": "2008–09",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "bayern-munich",
+      "team_name": "Bayern Munich",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 28,
+      "goals": 3,
+      "is_partial": false,
+      "age": 25,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367109540,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2009,
+      "league_source": "reviewed_override: Bayern Munich play in the German Bundesliga.",
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2009,
+      "season_start_year": 2009,
+      "canonical_season": "2009–10",
+      "season_source_label": "2009–10",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "bayern-munich",
+      "team_name": "Bayern Munich",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 34,
+      "goals": 0,
+      "is_partial": false,
+      "age": 26,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367109540,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2010,
+      "league_source": "reviewed_override: Bayern Munich play in the German Bundesliga.",
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2010,
+      "season_start_year": 2010,
+      "canonical_season": "2010–11",
+      "season_source_label": "2010–11",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "bayern-munich",
+      "team_name": "Bayern Munich",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 34,
+      "goals": 3,
+      "is_partial": false,
+      "age": 27,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367109540,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2011,
+      "league_source": "reviewed_override: Bayern Munich play in the German Bundesliga.",
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2011,
+      "season_start_year": 2011,
+      "canonical_season": "2011–12",
+      "season_source_label": "2011–12",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "bayern-munich",
+      "team_name": "Bayern Munich",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 31,
+      "goals": 0,
+      "is_partial": false,
+      "age": 28,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367109540,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2012,
+      "league_source": "reviewed_override: Bayern Munich play in the German Bundesliga.",
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2012,
+      "season_start_year": 2012,
+      "canonical_season": "2012–13",
+      "season_source_label": "2012–13",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "bayern-munich",
+      "team_name": "Bayern Munich",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 29,
+      "goals": 0,
+      "is_partial": false,
+      "age": 29,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367109540,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2013,
+      "league_source": "reviewed_override: Bayern Munich play in the German Bundesliga.",
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2013,
+      "season_start_year": 2013,
+      "canonical_season": "2013–14",
+      "season_source_label": "2013–14",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "bayern-munich",
+      "team_name": "Bayern Munich",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 28,
+      "goals": 1,
+      "is_partial": false,
+      "age": 30,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367109540,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2014,
+      "league_source": "reviewed_override: Bayern Munich play in the German Bundesliga.",
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2014,
+      "season_start_year": 2014,
+      "canonical_season": "2014–15",
+      "season_source_label": "2014–15",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "bayern-munich",
+      "team_name": "Bayern Munich",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 20,
+      "goals": 2,
+      "is_partial": false,
+      "age": 31,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367109540,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2015,
+      "league_source": "reviewed_override: Bayern Munich play in the German Bundesliga.",
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2015,
+      "season_start_year": 2015,
+      "canonical_season": "2015–16",
+      "season_source_label": "2015–16",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "bayern-munich",
+      "team_name": "Bayern Munich",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 26,
+      "goals": 1,
+      "is_partial": false,
+      "age": 32,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367109540,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2016,
+      "league_source": "reviewed_override: Bayern Munich play in the German Bundesliga.",
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2016,
+      "season_start_year": 2016,
+      "canonical_season": "2016–17",
+      "season_source_label": "2016–17",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "bayern-munich",
+      "team_name": "Bayern Munich",
+      "league_id": "bundesliga",
+      "league_name": "Bundesliga",
+      "appearances": 26,
+      "goals": 1,
+      "is_partial": false,
+      "age": 33,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367109540,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2017,
+      "league_source": "reviewed_override: Bayern Munich play in the German Bundesliga.",
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [],
+  "career_status": "retired",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q43682 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": "2017"
+}

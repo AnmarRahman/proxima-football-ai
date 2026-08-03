@@ -1,0 +1,928 @@
+{
+  "player_id": "cristiano-ronaldo",
+  "wikidata_id": "Q11571",
+  "name": "Cristiano Ronaldo",
+  "requested_name": "Cristiano Ronaldo",
+  "birth_date": "1985-02-05",
+  "nationality": "Portugal",
+  "primary_position": "wing half",
+  "position_group": "WNG",
+  "coarse_group": "WIDE",
+  "roster_section": "Wingers and Inside Forwards (30)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "1985-02-05",
+    "nationality": "Portugal",
+    "occupation_footballer": true,
+    "position": "wing half",
+    "sitelinks": 211,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+    "retrieved_at": "2026-08-02",
+    "revision": 1367102888,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 24,
+    "season_team_league_rows": 26,
+    "reserve_or_youth_years_dropped": [
+      2002
+    ],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [],
+    "missing_middle_seasons": [],
+    "first_season": 2002,
+    "last_season": 2025,
+    "partial_seasons": [],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 26,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 2002,
+      "season_start_year": 2002,
+      "canonical_season": "2002–03",
+      "season_source_label": "2002–03",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "sporting-cp",
+      "team_name": "Sporting CP",
+      "league_id": "primeira-liga",
+      "league_name": "Primeira Liga",
+      "appearances": 25,
+      "goals": 3,
+      "is_partial": false,
+      "age": 17,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2003,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2003,
+      "season_start_year": 2003,
+      "canonical_season": "2003–04",
+      "season_source_label": "2003–04",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 29,
+      "goals": 4,
+      "is_partial": false,
+      "age": 18,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2004,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2004,
+      "season_start_year": 2004,
+      "canonical_season": "2004–05",
+      "season_source_label": "2004–05",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 33,
+      "goals": 5,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2005,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2005,
+      "season_start_year": 2005,
+      "canonical_season": "2005–06",
+      "season_source_label": "2005–06",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 33,
+      "goals": 9,
+      "is_partial": false,
+      "age": 20,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2006,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2006,
+      "season_start_year": 2006,
+      "canonical_season": "2006–07",
+      "season_source_label": "2006–07",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 34,
+      "goals": 17,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2007,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2007,
+      "season_start_year": 2007,
+      "canonical_season": "2007–08",
+      "season_source_label": "2007–08",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 34,
+      "goals": 31,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2008,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2008,
+      "season_start_year": 2008,
+      "canonical_season": "2008–09",
+      "season_source_label": "2008–09",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 33,
+      "goals": 18,
+      "is_partial": false,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2009,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2009,
+      "season_start_year": 2009,
+      "canonical_season": "2009–10",
+      "season_source_label": "2009–10",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 29,
+      "goals": 26,
+      "is_partial": false,
+      "age": 24,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2010,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2010,
+      "season_start_year": 2010,
+      "canonical_season": "2010–11",
+      "season_source_label": "2010–11",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 34,
+      "goals": 40,
+      "is_partial": false,
+      "age": 25,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2011,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2011,
+      "season_start_year": 2011,
+      "canonical_season": "2011–12",
+      "season_source_label": "2011–12",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 38,
+      "goals": 46,
+      "is_partial": false,
+      "age": 26,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2012,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2012,
+      "season_start_year": 2012,
+      "canonical_season": "2012–13",
+      "season_source_label": "2012–13",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 34,
+      "goals": 34,
+      "is_partial": false,
+      "age": 27,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2013,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2013,
+      "season_start_year": 2013,
+      "canonical_season": "2013–14",
+      "season_source_label": "2013–14",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 30,
+      "goals": 31,
+      "is_partial": false,
+      "age": 28,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2014,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2014,
+      "season_start_year": 2014,
+      "canonical_season": "2014–15",
+      "season_source_label": "2014–15",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 35,
+      "goals": 48,
+      "is_partial": false,
+      "age": 29,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2015,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2015,
+      "season_start_year": 2015,
+      "canonical_season": "2015–16",
+      "season_source_label": "2015–16",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 36,
+      "goals": 35,
+      "is_partial": false,
+      "age": 30,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2016,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2016,
+      "season_start_year": 2016,
+      "canonical_season": "2016–17",
+      "season_source_label": "2016–17",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 29,
+      "goals": 25,
+      "is_partial": false,
+      "age": 31,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2017,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2017,
+      "season_start_year": 2017,
+      "canonical_season": "2017–18",
+      "season_source_label": "2017–18",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 27,
+      "goals": 26,
+      "is_partial": false,
+      "age": 32,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2018,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2018,
+      "season_start_year": 2018,
+      "canonical_season": "2018–19",
+      "season_source_label": "2018–19",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 31,
+      "goals": 21,
+      "is_partial": false,
+      "age": 33,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2019,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2019,
+      "season_start_year": 2019,
+      "canonical_season": "2019–20",
+      "season_source_label": "2019–20",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 33,
+      "goals": 31,
+      "is_partial": false,
+      "age": 34,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2020,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2020,
+      "season_start_year": 2020,
+      "canonical_season": "2020–21",
+      "season_source_label": "2020–21",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 33,
+      "goals": 29,
+      "is_partial": false,
+      "age": 35,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2021,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2021,
+      "season_start_year": 2021,
+      "canonical_season": "2021–22",
+      "season_source_label": "2021–22",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 1,
+      "goals": 0,
+      "is_partial": false,
+      "age": 36,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2022,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2021,
+      "season_start_year": 2021,
+      "canonical_season": "2021–22",
+      "season_source_label": "2021–22",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 30,
+      "goals": 18,
+      "is_partial": false,
+      "age": 36,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2022,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2022,
+      "season_start_year": 2022,
+      "canonical_season": "2022–23",
+      "season_source_label": "2022–23",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "al-nassr",
+      "team_name": "Al-Nassr",
+      "league_id": "saudi-pro-league",
+      "league_name": "Saudi Pro League",
+      "appearances": 16,
+      "goals": 14,
+      "is_partial": false,
+      "age": 37,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2023,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2022,
+      "season_start_year": 2022,
+      "canonical_season": "2022–23",
+      "season_source_label": "2022–23",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 10,
+      "goals": 1,
+      "is_partial": false,
+      "age": 37,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2023,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2023,
+      "season_start_year": 2023,
+      "canonical_season": "2023–24",
+      "season_source_label": "2023–24",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "al-nassr",
+      "team_name": "Al-Nassr",
+      "league_id": "saudi-pro-league",
+      "league_name": "Saudi Pro League",
+      "appearances": 31,
+      "goals": 35,
+      "is_partial": false,
+      "age": 38,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2024,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2024,
+      "season_start_year": 2024,
+      "canonical_season": "2024–25",
+      "season_source_label": "2024–25",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "al-nassr",
+      "team_name": "Al-Nassr",
+      "league_id": "saudi-pro-league",
+      "league_name": "Saudi Pro League",
+      "appearances": 30,
+      "goals": 25,
+      "is_partial": false,
+      "age": 39,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2025,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2025,
+      "season_start_year": 2025,
+      "canonical_season": "2025–26",
+      "season_source_label": "2025–26",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "al-nassr",
+      "team_name": "Al-Nassr",
+      "league_id": "saudi-pro-league",
+      "league_name": "Saudi Pro League",
+      "appearances": 30,
+      "goals": 28,
+      "is_partial": false,
+      "age": 40,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367102888,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2026,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [
+    "2010/real-madrid/la-liga: goals (40) > appearances (34)",
+    "2011/real-madrid/la-liga: goals (46) > appearances (38)",
+    "2013/real-madrid/la-liga: goals (31) > appearances (30)",
+    "2014/real-madrid/la-liga: goals (48) > appearances (35)",
+    "2023/al-nassr/saudi-pro-league: goals (35) > appearances (31)"
+  ],
+  "career_status": "active",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q11571 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": null
+}

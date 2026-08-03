@@ -1,0 +1,53 @@
+{
+  "batch": 8,
+  "attempted": 5,
+  "collected": 5,
+  "quarantined": 0,
+  "quarantine_fraction": 0.0,
+  "systemic_failure": false,
+  "warnings_total": 1,
+  "collected_players": [
+    {
+      "player_id": "juan-roman-riquelme",
+      "name": "Juan Román Riquelme",
+      "seasons": 5,
+      "warnings": 0
+    },
+    {
+      "player_id": "francesco-totti",
+      "name": "Francesco Totti",
+      "seasons": 25,
+      "warnings": 0
+    },
+    {
+      "player_id": "alessandro-del-piero",
+      "name": "Alessandro Del Piero",
+      "seasons": 24,
+      "warnings": 0
+    },
+    {
+      "player_id": "dennis-bergkamp",
+      "name": "Dennis Bergkamp",
+      "seasons": 20,
+      "warnings": 0
+    },
+    {
+      "player_id": "paulo-dybala",
+      "name": "Paulo Dybala",
+      "seasons": 16,
+      "warnings": 1
+    }
+  ],
+  "quarantined_players": [],
+  "requests": {
+    "wikipedia": {
+      "total": 5,
+      "cache_hit_rate": 1.0
+    },
+    "wikidata": {
+      "total": 14,
+      "cache_hit_rate": 1.0
+    }
+  },
+  "gate_ok": true
+}

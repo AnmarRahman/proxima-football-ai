@@ -1,0 +1,432 @@
+{
+  "seed": 42,
+  "n_players": 180,
+  "n_season_rows": 2996,
+  "n_rows_with_next_season": 2816,
+  "targets": {
+    "y_next_apps": {
+      "n_rows": 2816,
+      "chronological": {
+        "cutoff_season": 2018,
+        "n_train": 2087,
+        "n_test": 729,
+        "naive_mae": 7.407407407407407,
+        "agepos_mae": 7.110181867931125,
+        "ridge_mae": 6.523316325546079,
+        "elasticnet_mae": 6.498209040598376,
+        "poisson_mae": 6.510646687565164,
+        "randomforest_mae": 6.552838791086219,
+        "histgb_mae": 6.567285588609588
+      },
+      "lopo": {
+        "agepos_mae": 6.45473704937524,
+        "naive_mae": 7.204900568181818,
+        "ridge_mae": 5.943702103733769,
+        "elasticnet_mae": 5.947384926268029,
+        "poisson_mae": 5.953322732719982,
+        "randomforest_mae": 5.873435814540572,
+        "histgb_mae": 5.724165489865944,
+        "raw_min_prediction_before_clip": {
+          "ridge": 9.992739644252957,
+          "elasticnet": 13.333214818027404,
+          "poisson": 14.55869631127687,
+          "randomforest": 0.4090833333333333,
+          "histgb": 1.5892860775851365
+        },
+        "best_model_vs_baseline_pct": 20.6,
+        "bootstrap95_naive": [
+          6.941,
+          7.473
+        ],
+        "bootstrap95_best": [
+          5.559,
+          5.904
+        ]
+      },
+      "breakdowns": {
+        "best_model": "histgb",
+        "by_position": {
+          "DEF": {
+            "n": 839,
+            "naive_mae": 7.47,
+            "model_mae": 5.94
+          },
+          "FWD": {
+            "n": 515,
+            "naive_mae": 7.52,
+            "model_mae": 5.93
+          },
+          "MID": {
+            "n": 982,
+            "naive_mae": 6.98,
+            "model_mae": 5.54
+          },
+          "WIDE": {
+            "n": 480,
+            "naive_mae": 6.86,
+            "model_mae": 5.49
+          }
+        },
+        "by_age": {
+          "<=21": {
+            "n": 779,
+            "naive_mae": 8.96,
+            "model_mae": 6.61
+          },
+          "22-25": {
+            "n": 685,
+            "naive_mae": 5.93,
+            "model_mae": 4.83
+          },
+          "26-29": {
+            "n": 577,
+            "naive_mae": 5.72,
+            "model_mae": 4.67
+          },
+          "30-33": {
+            "n": 479,
+            "naive_mae": 7.1,
+            "model_mae": 5.98
+          },
+          "34+": {
+            "n": 296,
+            "naive_mae": 8.59,
+            "model_mae": 7.09
+          }
+        }
+      },
+      "by_era": {
+        "best_model": "histgb",
+        "eras": {
+          "1980s": {
+            "n": 13,
+            "naive_mae": 7.69,
+            "model_mae": 5.61
+          },
+          "1990s": {
+            "n": 211,
+            "naive_mae": 7.3,
+            "model_mae": 5.93
+          },
+          "2000s": {
+            "n": 784,
+            "naive_mae": 7.45,
+            "model_mae": 5.8
+          },
+          "2010s": {
+            "n": 1210,
+            "naive_mae": 6.97,
+            "model_mae": 5.65
+          },
+          "2020s": {
+            "n": 598,
+            "naive_mae": 7.31,
+            "model_mae": 5.7
+          }
+        }
+      }
+    },
+    "y_next_goals": {
+      "n_rows": 2816,
+      "chronological": {
+        "cutoff_season": 2018,
+        "n_train": 2087,
+        "n_test": 729,
+        "naive_mae": 3.3237311385459534,
+        "agepos_mae": 3.8242647336604714,
+        "ridge_mae": 2.8535474871118263,
+        "elasticnet_mae": 2.893172790321583,
+        "poisson_mae": 2.95368044070877,
+        "randomforest_mae": 2.9504311939203913,
+        "histgb_mae": 2.9616824664284307
+      },
+      "lopo": {
+        "agepos_mae": 3.896819129016004,
+        "naive_mae": 3.479758522727273,
+        "ridge_mae": 3.049150200198024,
+        "elasticnet_mae": 3.063641628507132,
+        "poisson_mae": 3.2582745122995616,
+        "randomforest_mae": 3.1016046247613853,
+        "histgb_mae": 3.057950237567631,
+        "raw_min_prediction_before_clip": {
+          "ridge": -1.3067544838494207,
+          "elasticnet": -1.6780845396631339,
+          "poisson": 0.7163620212396828,
+          "randomforest": 0.18029761904761904,
+          "histgb": -1.42591281528583
+        },
+        "best_model_vs_baseline_pct": 12.4,
+        "bootstrap95_naive": [
+          3.336,
+          3.625
+        ],
+        "bootstrap95_best": [
+          2.932,
+          3.173
+        ]
+      },
+      "breakdowns": {
+        "best_model": "ridge",
+        "by_position": {
+          "DEF": {
+            "n": 839,
+            "naive_mae": 1.27,
+            "model_mae": 1.19
+          },
+          "FWD": {
+            "n": 515,
+            "naive_mae": 7.09,
+            "model_mae": 6.11
+          },
+          "MID": {
+            "n": 982,
+            "naive_mae": 2.85,
+            "model_mae": 2.48
+          },
+          "WIDE": {
+            "n": 480,
+            "naive_mae": 4.74,
+            "model_mae": 4.18
+          }
+        },
+        "by_age": {
+          "<=21": {
+            "n": 779,
+            "naive_mae": 3.3,
+            "model_mae": 3.0
+          },
+          "22-25": {
+            "n": 685,
+            "naive_mae": 3.65,
+            "model_mae": 3.22
+          },
+          "26-29": {
+            "n": 577,
+            "naive_mae": 3.75,
+            "model_mae": 3.24
+          },
+          "30-33": {
+            "n": 479,
+            "naive_mae": 3.34,
+            "model_mae": 2.89
+          },
+          "34+": {
+            "n": 296,
+            "naive_mae": 3.26,
+            "model_mae": 2.69
+          }
+        }
+      },
+      "by_era": {
+        "best_model": "ridge",
+        "eras": {
+          "1980s": {
+            "n": 13,
+            "naive_mae": 3.77,
+            "model_mae": 3.65
+          },
+          "1990s": {
+            "n": 211,
+            "naive_mae": 3.14,
+            "model_mae": 3.05
+          },
+          "2000s": {
+            "n": 784,
+            "naive_mae": 3.51,
+            "model_mae": 3.05
+          },
+          "2010s": {
+            "n": 1210,
+            "naive_mae": 3.55,
+            "model_mae": 3.13
+          },
+          "2020s": {
+            "n": 598,
+            "naive_mae": 3.41,
+            "model_mae": 2.87
+          }
+        }
+      }
+    },
+    "y_next_gpa": {
+      "n_rows": 2781,
+      "chronological": {
+        "cutoff_season": 2018,
+        "n_train": 2073,
+        "n_test": 708,
+        "naive_mae": 0.11020237795059998,
+        "agepos_mae": 0.12671645592062278,
+        "ridge_mae": 0.09316568375758164,
+        "elasticnet_mae": 0.11102225604840156,
+        "poisson_mae": 0.11305202350033937,
+        "randomforest_mae": 0.0957272035293507,
+        "histgb_mae": 0.0956752240706531
+      },
+      "lopo": {
+        "agepos_mae": 0.125772833579241,
+        "naive_mae": 0.11252668215509302,
+        "ridge_mae": 0.09825824860018002,
+        "elasticnet_mae": 0.11467327861866893,
+        "poisson_mae": 0.1222285297076449,
+        "randomforest_mae": 0.10039820223711747,
+        "histgb_mae": 0.0981441629958995,
+        "raw_min_prediction_before_clip": {
+          "ridge": -0.0209227045110576,
+          "elasticnet": 0.08505931257282154,
+          "poisson": 0.10805364328055622,
+          "randomforest": 0.008789241376197245,
+          "histgb": 0.007014315755002394
+        },
+        "best_model_vs_baseline_pct": 12.8
+      }
+    },
+    "y_continue": {
+      "n_rows": 2891,
+      "n_retirements": 75,
+      "continue_rate": 0.9740574195780007,
+      "baseline_baserate_brier": 0.0252695629430474,
+      "logistic": {
+        "roc_auc": 0.954,
+        "brier": 0.0708,
+        "retire_precision@0.5": 0.206,
+        "retire_recall@0.5": 0.88,
+        "retire_precision@N": 0.4,
+        "retire_recall@N": 0.4,
+        "calibration": [
+          {
+            "bin": "(-0.001, 0.5]",
+            "n": 321,
+            "mean_pred": 0.164,
+            "obs_continue": 0.794
+          },
+          {
+            "bin": "(0.5, 0.7]",
+            "n": 93,
+            "mean_pred": 0.6,
+            "obs_continue": 0.968
+          },
+          {
+            "bin": "(0.7, 0.85]",
+            "n": 102,
+            "mean_pred": 0.784,
+            "obs_continue": 0.98
+          },
+          {
+            "bin": "(0.85, 0.95]",
+            "n": 167,
+            "mean_pred": 0.908,
+            "obs_continue": 0.988
+          },
+          {
+            "bin": "(0.95, 1.01]",
+            "n": 2208,
+            "mean_pred": 0.995,
+            "obs_continue": 0.999
+          }
+        ]
+      },
+      "histgb_clf": {
+        "roc_auc": 0.944,
+        "brier": 0.0212,
+        "retire_precision@0.5": 0.395,
+        "retire_recall@0.5": 0.2,
+        "retire_precision@N": 0.36,
+        "retire_recall@N": 0.36,
+        "calibration": [
+          {
+            "bin": "(-0.001, 0.5]",
+            "n": 38,
+            "mean_pred": 0.344,
+            "obs_continue": 0.605
+          },
+          {
+            "bin": "(0.5, 0.7]",
+            "n": 47,
+            "mean_pred": 0.602,
+            "obs_continue": 0.702
+          },
+          {
+            "bin": "(0.7, 0.85]",
+            "n": 66,
+            "mean_pred": 0.796,
+            "obs_continue": 0.742
+          },
+          {
+            "bin": "(0.85, 0.95]",
+            "n": 122,
+            "mean_pred": 0.915,
+            "obs_continue": 0.893
+          },
+          {
+            "bin": "(0.95, 1.01]",
+            "n": 2618,
+            "mean_pred": 0.998,
+            "obs_continue": 0.994
+          }
+        ]
+      },
+      "calibration_by_age": {
+        "<=21": {
+          "n": 779,
+          "mean_pred_continue": 1.0,
+          "observed_continue": 1.0
+        },
+        "22-25": {
+          "n": 685,
+          "mean_pred_continue": 0.999,
+          "observed_continue": 1.0
+        },
+        "26-29": {
+          "n": 578,
+          "mean_pred_continue": 0.999,
+          "observed_continue": 0.998
+        },
+        "30-33": {
+          "n": 487,
+          "mean_pred_continue": 0.985,
+          "observed_continue": 0.984
+        },
+        "34+": {
+          "n": 362,
+          "mean_pred_continue": 0.819,
+          "observed_continue": 0.818
+        }
+      }
+    },
+    "y_remaining": {
+      "n_rows": 1467,
+      "chronological": {
+        "cutoff_season": 2012,
+        "n_train": 1068,
+        "n_test": 399,
+        "agepos_mae": 2.468414602632384,
+        "ridge_mae": 1.4424949379188385,
+        "elasticnet_mae": 1.4877284690415982,
+        "poisson_mae": 1.8906435756551703,
+        "randomforest_mae": 2.119620724513582,
+        "histgb_mae": 1.971009832996632
+      },
+      "lopo": {
+        "agepos_mae": 2.177095764307795,
+        "ridge_mae": 1.770855764913205,
+        "elasticnet_mae": 1.8058383849434443,
+        "poisson_mae": 1.851813671289794,
+        "randomforest_mae": 1.7693150295039357,
+        "histgb_mae": 1.702778741221065,
+        "raw_min_prediction_before_clip": {
+          "ridge": -4.167133979456718,
+          "elasticnet": -4.702238100644999,
+          "poisson": 0.7756411710864776,
+          "randomforest": 0.3530119047619047,
+          "histgb": -0.8134365128114842
+        },
+        "best_model_vs_baseline_pct": 21.8
+      },
+      "note": "experimental; retired players only"
+    }
+  },
+  "non_negativity": {
+    "all_non_negative": true,
+    "note": "counts clipped at 0"
+  }
+}

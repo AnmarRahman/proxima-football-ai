@@ -1,0 +1,658 @@
+{
+  "seed": 42,
+  "n_players": 20,
+  "n_season_rows": 407,
+  "n_rows_with_next_season": 387,
+  "targets": {
+    "y_next_apps": {
+      "n_rows": 387,
+      "chronological": {
+        "cutoff_season": 2013,
+        "n_train": 279,
+        "n_test": 108,
+        "naive_mae": 7.7592592592592595,
+        "agepos_mae": 7.095422036232634,
+        "ridge_mae": 6.865513142210038,
+        "elasticnet_mae": 6.651023354028234,
+        "poisson_mae": 6.7385141944205325,
+        "randomforest_mae": 7.067212512025014,
+        "histgb_mae": 6.769122284383355
+      },
+      "lopo": {
+        "agepos_mae": 6.248986979382112,
+        "naive_mae": 6.749354005167959,
+        "ridge_mae": 6.087099361717102,
+        "elasticnet_mae": 5.830898723097249,
+        "poisson_mae": 5.929803551940593,
+        "randomforest_mae": 5.787910351348335,
+        "histgb_mae": 5.888404970993436,
+        "raw_min_prediction_before_clip": {
+          "ridge": 2.0412821724487102,
+          "elasticnet": 4.9884048345846566,
+          "poisson": 6.490075741934575,
+          "randomforest": 10.102476190476189,
+          "histgb": 11.874537723852885
+        },
+        "best_model_vs_baseline_pct": 14.2
+      },
+      "breakdowns": {
+        "best_model": "randomforest",
+        "by_position": {
+          "DEF": {
+            "n": 96,
+            "naive_mae": 6.61,
+            "model_mae": 5.04
+          },
+          "FWD": {
+            "n": 65,
+            "naive_mae": 7.85,
+            "model_mae": 6.32
+          },
+          "MID": {
+            "n": 142,
+            "naive_mae": 6.51,
+            "model_mae": 5.63
+          },
+          "WIDE": {
+            "n": 84,
+            "naive_mae": 6.45,
+            "model_mae": 6.49
+          }
+        },
+        "by_age": {
+          "<=21": {
+            "n": 93,
+            "naive_mae": 7.28,
+            "model_mae": 5.15
+          },
+          "22-25": {
+            "n": 79,
+            "naive_mae": 4.44,
+            "model_mae": 4.43
+          },
+          "26-29": {
+            "n": 76,
+            "naive_mae": 6.12,
+            "model_mae": 5.55
+          },
+          "30-33": {
+            "n": 71,
+            "naive_mae": 7.0,
+            "model_mae": 6.18
+          },
+          "34+": {
+            "n": 68,
+            "naive_mae": 9.15,
+            "model_mae": 8.1
+          }
+        }
+      }
+    },
+    "y_next_goals": {
+      "n_rows": 387,
+      "chronological": {
+        "cutoff_season": 2013,
+        "n_train": 279,
+        "n_test": 108,
+        "naive_mae": 4.305555555555555,
+        "agepos_mae": 6.776682946393802,
+        "ridge_mae": 3.8528233833094987,
+        "elasticnet_mae": 3.743089505736802,
+        "poisson_mae": 4.625786446433324,
+        "randomforest_mae": 4.248223416372722,
+        "histgb_mae": 4.108176918204584
+      },
+      "lopo": {
+        "agepos_mae": 6.253616247752118,
+        "naive_mae": 3.842377260981912,
+        "ridge_mae": 3.8688466264049604,
+        "elasticnet_mae": 3.7800828470370584,
+        "poisson_mae": 4.381743391383829,
+        "randomforest_mae": 3.9633568909198753,
+        "histgb_mae": 4.282641200671778,
+        "raw_min_prediction_before_clip": {
+          "ridge": -7.37282660974728,
+          "elasticnet": -3.4681184105656566,
+          "poisson": 0.4762514463016879,
+          "randomforest": 0.3716190476190476,
+          "histgb": 0.3163754724823649
+        },
+        "best_model_vs_baseline_pct": 1.6
+      },
+      "breakdowns": {
+        "best_model": "elasticnet",
+        "by_position": {
+          "DEF": {
+            "n": 96,
+            "naive_mae": 1.35,
+            "model_mae": 1.46
+          },
+          "FWD": {
+            "n": 65,
+            "naive_mae": 8.42,
+            "model_mae": 7.53
+          },
+          "MID": {
+            "n": 142,
+            "naive_mae": 2.96,
+            "model_mae": 2.84
+          },
+          "WIDE": {
+            "n": 84,
+            "naive_mae": 4.63,
+            "model_mae": 5.12
+          }
+        },
+        "by_age": {
+          "<=21": {
+            "n": 93,
+            "naive_mae": 3.62,
+            "model_mae": 3.4
+          },
+          "22-25": {
+            "n": 79,
+            "naive_mae": 3.85,
+            "model_mae": 3.87
+          },
+          "26-29": {
+            "n": 76,
+            "naive_mae": 3.99,
+            "model_mae": 4.2
+          },
+          "30-33": {
+            "n": 71,
+            "naive_mae": 3.86,
+            "model_mae": 3.51
+          },
+          "34+": {
+            "n": 68,
+            "naive_mae": 3.96,
+            "model_mae": 4.01
+          }
+        }
+      }
+    },
+    "y_next_gpa": {
+      "n_rows": 382,
+      "chronological": {
+        "cutoff_season": 2013,
+        "n_train": 275,
+        "n_test": 107,
+        "naive_mae": 0.12904157905207603,
+        "agepos_mae": 0.2260767070943658,
+        "ridge_mae": 0.11585795243887181,
+        "elasticnet_mae": 0.13741548676599336,
+        "poisson_mae": 0.1624811340133495,
+        "randomforest_mae": 0.1264906853856455,
+        "histgb_mae": 0.12563245260072384
+      },
+      "lopo": {
+        "agepos_mae": 0.19839010485077108,
+        "naive_mae": 0.12253633152343743,
+        "ridge_mae": 0.11579248018168946,
+        "elasticnet_mae": 0.12867885467123744,
+        "poisson_mae": 0.1406353490447258,
+        "randomforest_mae": 0.12116563811713195,
+        "histgb_mae": 0.1241626125408079,
+        "raw_min_prediction_before_clip": {
+          "ridge": -0.1347251304854606,
+          "elasticnet": 0.08909295595756211,
+          "poisson": 0.1462294380283664,
+          "randomforest": 0.029475856193367168,
+          "histgb": 0.026416710821532324
+        },
+        "best_model_vs_baseline_pct": 5.5
+      }
+    },
+    "y_continue": {
+      "n_rows": 401,
+      "n_retirements": 14,
+      "continue_rate": 0.9650872817955112,
+      "baseline_baserate_brier": 0.03369382031206273,
+      "logistic": {
+        "roc_auc": 0.918,
+        "brier": 0.0685,
+        "retire_precision@0.5": 0.233,
+        "retire_recall@0.5": 0.714,
+        "retire_precision@N": 0.5,
+        "retire_recall@N": 0.5,
+        "calibration": [
+          {
+            "bin": "(-0.001, 0.5]",
+            "n": 43,
+            "mean_pred": 0.18,
+            "obs_continue": 0.767
+          },
+          {
+            "bin": "(0.5, 0.7]",
+            "n": 12,
+            "mean_pred": 0.616,
+            "obs_continue": 1.0
+          },
+          {
+            "bin": "(0.7, 0.85]",
+            "n": 18,
+            "mean_pred": 0.793,
+            "obs_continue": 0.944
+          },
+          {
+            "bin": "(0.85, 0.95]",
+            "n": 26,
+            "mean_pred": 0.907,
+            "obs_continue": 0.962
+          },
+          {
+            "bin": "(0.95, 1.01]",
+            "n": 302,
+            "mean_pred": 0.996,
+            "obs_continue": 0.993
+          }
+        ]
+      },
+      "histgb_clf": {
+        "roc_auc": 0.844,
+        "brier": 0.031,
+        "retire_precision@0.5": 0.4,
+        "retire_recall@0.5": 0.143,
+        "retire_precision@N": 0.286,
+        "retire_recall@N": 0.286,
+        "calibration": [
+          {
+            "bin": "(-0.001, 0.5]",
+            "n": 5,
+            "mean_pred": 0.255,
+            "obs_continue": 0.6
+          },
+          {
+            "bin": "(0.5, 0.7]",
+            "n": 6,
+            "mean_pred": 0.592,
+            "obs_continue": 0.667
+          },
+          {
+            "bin": "(0.7, 0.85]",
+            "n": 9,
+            "mean_pred": 0.794,
+            "obs_continue": 0.778
+          },
+          {
+            "bin": "(0.85, 0.95]",
+            "n": 9,
+            "mean_pred": 0.914,
+            "obs_continue": 1.0
+          },
+          {
+            "bin": "(0.95, 1.01]",
+            "n": 372,
+            "mean_pred": 0.998,
+            "obs_continue": 0.978
+          }
+        ]
+      }
+    },
+    "y_remaining": {
+      "n_rows": 292,
+      "chronological": {
+        "cutoff_season": 2011,
+        "n_train": 215,
+        "n_test": 77,
+        "agepos_mae": 2.8333999333999333,
+        "ridge_mae": 1.6746062218750124,
+        "elasticnet_mae": 1.9042924860236392,
+        "poisson_mae": 2.173608569711111,
+        "randomforest_mae": 2.1802578100110575,
+        "histgb_mae": 2.364452026458219
+      },
+      "lopo": {
+        "agepos_mae": 3.0259169246340036,
+        "ridge_mae": 3.3769634163936146,
+        "elasticnet_mae": 3.1227677064030748,
+        "poisson_mae": 3.2763750603036006,
+        "randomforest_mae": 2.600470442276521,
+        "histgb_mae": 2.7650622163873115,
+        "raw_min_prediction_before_clip": {
+          "ridge": -4.649610679773204,
+          "elasticnet": -6.4733891524054545,
+          "poisson": 0.6014055466939761,
+          "randomforest": 0.7335555555555554,
+          "histgb": -0.03275358327182131
+        },
+        "best_model_vs_baseline_pct": 14.1
+      },
+      "note": "experimental; retired players only (active players censored)"
+    }
+  },
+  "quantile_intervals": {
+    "target": "y_next_apps",
+    "coverage_80pct_interval": 0.667,
+    "mean_interval_width": 13.7
+  },
+  "example_trajectories_next_apps": {
+    "van-basten": [
+      {
+        "season": 1981,
+        "age": 17,
+        "actual": 20.0,
+        "pred_histgb": 22.0,
+        "pred_naive": 1.0
+      },
+      {
+        "season": 1982,
+        "age": 18,
+        "actual": 26.0,
+        "pred_histgb": 28.1,
+        "pred_naive": 20.0
+      },
+      {
+        "season": 1983,
+        "age": 19,
+        "actual": 33.0,
+        "pred_histgb": 30.4,
+        "pred_naive": 26.0
+      },
+      {
+        "season": 1984,
+        "age": 20,
+        "actual": 26.0,
+        "pred_histgb": 29.7,
+        "pred_naive": 33.0
+      },
+      {
+        "season": 1985,
+        "age": 21,
+        "actual": 27.0,
+        "pred_histgb": 26.8,
+        "pred_naive": 26.0
+      },
+      {
+        "season": 1986,
+        "age": 22,
+        "actual": 11.0,
+        "pred_histgb": 29.3,
+        "pred_naive": 27.0
+      },
+      {
+        "season": 1987,
+        "age": 23,
+        "actual": 33.0,
+        "pred_histgb": 22.1,
+        "pred_naive": 11.0
+      },
+      {
+        "season": 1988,
+        "age": 24,
+        "actual": 26.0,
+        "pred_histgb": 30.1,
+        "pred_naive": 33.0
+      },
+      {
+        "season": 1989,
+        "age": 25,
+        "actual": 31.0,
+        "pred_histgb": 26.7,
+        "pred_naive": 26.0
+      },
+      {
+        "season": 1990,
+        "age": 26,
+        "actual": 31.0,
+        "pred_histgb": 29.3,
+        "pred_naive": 31.0
+      },
+      {
+        "season": 1991,
+        "age": 27,
+        "actual": 15.0,
+        "pred_histgb": 29.6,
+        "pred_naive": 31.0
+      },
+      {
+        "season": 1992,
+        "age": 28,
+        "actual": 0.0,
+        "pred_histgb": 25.7,
+        "pred_naive": 15.0
+      },
+      {
+        "season": 1993,
+        "age": 29,
+        "actual": 0.0,
+        "pred_histgb": 25.7,
+        "pred_naive": 0.0
+      }
+    ],
+    "modric": [
+      {
+        "season": 2003,
+        "age": 18,
+        "actual": 25.0,
+        "pred_histgb": 25.7,
+        "pred_naive": 25.0
+      },
+      {
+        "season": 2004,
+        "age": 19,
+        "actual": 32.0,
+        "pred_histgb": 32.5,
+        "pred_naive": 25.0
+      },
+      {
+        "season": 2005,
+        "age": 20,
+        "actual": 30.0,
+        "pred_histgb": 31.8,
+        "pred_naive": 32.0
+      },
+      {
+        "season": 2006,
+        "age": 21,
+        "actual": 25.0,
+        "pred_histgb": 31.2,
+        "pred_naive": 30.0
+      },
+      {
+        "season": 2007,
+        "age": 22,
+        "actual": 34.0,
+        "pred_histgb": 30.7,
+        "pred_naive": 25.0
+      },
+      {
+        "season": 2008,
+        "age": 23,
+        "actual": 25.0,
+        "pred_histgb": 28.7,
+        "pred_naive": 34.0
+      },
+      {
+        "season": 2009,
+        "age": 24,
+        "actual": 32.0,
+        "pred_histgb": 26.3,
+        "pred_naive": 25.0
+      },
+      {
+        "season": 2010,
+        "age": 25,
+        "actual": 36.0,
+        "pred_histgb": 31.6,
+        "pred_naive": 32.0
+      },
+      {
+        "season": 2011,
+        "age": 26,
+        "actual": 33.0,
+        "pred_histgb": 32.3,
+        "pred_naive": 36.0
+      },
+      {
+        "season": 2012,
+        "age": 27,
+        "actual": 34.0,
+        "pred_histgb": 29.8,
+        "pred_naive": 33.0
+      },
+      {
+        "season": 2013,
+        "age": 28,
+        "actual": 16.0,
+        "pred_histgb": 28.8,
+        "pred_naive": 34.0
+      },
+      {
+        "season": 2014,
+        "age": 29,
+        "actual": 32.0,
+        "pred_histgb": 30.1,
+        "pred_naive": 16.0
+      },
+      {
+        "season": 2015,
+        "age": 30,
+        "actual": 25.0,
+        "pred_histgb": 31.3,
+        "pred_naive": 32.0
+      },
+      {
+        "season": 2016,
+        "age": 31,
+        "actual": 26.0,
+        "pred_histgb": 26.6,
+        "pred_naive": 25.0
+      },
+      {
+        "season": 2017,
+        "age": 32,
+        "actual": 34.0,
+        "pred_histgb": 26.3,
+        "pred_naive": 26.0
+      },
+      {
+        "season": 2018,
+        "age": 33,
+        "actual": 31.0,
+        "pred_histgb": 26.3,
+        "pred_naive": 34.0
+      },
+      {
+        "season": 2019,
+        "age": 34,
+        "actual": 35.0,
+        "pred_histgb": 23.1,
+        "pred_naive": 31.0
+      },
+      {
+        "season": 2020,
+        "age": 35,
+        "actual": 28.0,
+        "pred_histgb": 25.6,
+        "pred_naive": 35.0
+      },
+      {
+        "season": 2021,
+        "age": 36,
+        "actual": 33.0,
+        "pred_histgb": 23.3,
+        "pred_naive": 28.0
+      },
+      {
+        "season": 2022,
+        "age": 37,
+        "actual": 32.0,
+        "pred_histgb": 25.2,
+        "pred_naive": 33.0
+      },
+      {
+        "season": 2023,
+        "age": 38,
+        "actual": 35.0,
+        "pred_histgb": 23.1,
+        "pred_naive": 32.0
+      },
+      {
+        "season": 2024,
+        "age": 39,
+        "actual": 34.0,
+        "pred_histgb": 20.5,
+        "pred_naive": 35.0
+      },
+      {
+        "season": 2025,
+        "age": 40,
+        "actual": 0.0,
+        "pred_histgb": 22.9,
+        "pred_naive": 34.0
+      }
+    ],
+    "haaland": [
+      {
+        "season": 2016,
+        "age": 16,
+        "actual": 14.0,
+        "pred_histgb": 24.0,
+        "pred_naive": 16.0
+      },
+      {
+        "season": 2017,
+        "age": 17,
+        "actual": 27.0,
+        "pred_histgb": 33.4,
+        "pred_naive": 14.0
+      },
+      {
+        "season": 2018,
+        "age": 18,
+        "actual": 29.0,
+        "pred_histgb": 30.5,
+        "pred_naive": 27.0
+      },
+      {
+        "season": 2019,
+        "age": 19,
+        "actual": 28.0,
+        "pred_histgb": 32.2,
+        "pred_naive": 29.0
+      },
+      {
+        "season": 2020,
+        "age": 20,
+        "actual": 24.0,
+        "pred_histgb": 30.6,
+        "pred_naive": 28.0
+      },
+      {
+        "season": 2021,
+        "age": 21,
+        "actual": 35.0,
+        "pred_histgb": 26.0,
+        "pred_naive": 24.0
+      },
+      {
+        "season": 2022,
+        "age": 22,
+        "actual": 31.0,
+        "pred_histgb": 32.3,
+        "pred_naive": 35.0
+      },
+      {
+        "season": 2023,
+        "age": 23,
+        "actual": 31.0,
+        "pred_histgb": 30.7,
+        "pred_naive": 31.0
+      },
+      {
+        "season": 2024,
+        "age": 24,
+        "actual": 35.0,
+        "pred_histgb": 32.3,
+        "pred_naive": 31.0
+      }
+    ]
+  },
+  "non_negativity": {
+    "min_prediction_after_clip": 0.0,
+    "all_non_negative": true,
+    "note": "linear models can emit negatives; clipped to 0 in post-processing."
+  }
+}

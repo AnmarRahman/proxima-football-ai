@@ -1,0 +1,571 @@
+{
+  "generated_for": "free-source feasibility pilot",
+  "current_season_start": 2026,
+  "soccerdata_evaluation": {
+    "provider": "soccerdata",
+    "installed_version": "1.9.1",
+    "used_for_collection": false,
+    "reason": "soccerdata reaches Understat/FBref/Sofascore/WhoScored by using tls_requests / tls-client (bogdanfinn/tls-client), a TLS-fingerprint impersonation library that circumvents anti-bot protection. This violates the no-fingerprinting / no-circumvention policy, so soccerdata is excluded from the collection pipeline. ESPN's adapter may use plain requests, but was not adopted to keep one consistent, policy-compliant access path.",
+    "adapters_considered": [
+      "FBref",
+      "Understat",
+      "Sofascore",
+      "ESPN",
+      "WhoScored"
+    ]
+  },
+  "players": [
+    {
+      "player_id": "haaland",
+      "wiki_title": "Erling Haaland",
+      "seasons": [
+        {
+          "phase": "early",
+          "season": 2018,
+          "team": "Molde FK",
+          "competition": "Eliteserien",
+          "sources": {
+            "Wikipedia": {
+              "fields": [
+                "appearances",
+                "goals"
+              ],
+              "values": {
+                "appearances": 25,
+                "goals": 12
+              }
+            },
+            "Understat": {
+              "fields": [],
+              "status": "not_covered",
+              "note": "league not among Understat's 6 leagues"
+            },
+            "StatsBomb Open Data": {
+              "covered": false,
+              "note": "competition not in open data"
+            }
+          }
+        },
+        {
+          "phase": "mid",
+          "season": 2019,
+          "team": "Red Bull Salzburg",
+          "competition": "Austrian Bundesliga",
+          "sources": {
+            "Wikipedia": {
+              "fields": [
+                "appearances",
+                "goals"
+              ],
+              "values": {
+                "appearances": 14,
+                "goals": 16
+              }
+            },
+            "Understat": {
+              "fields": [],
+              "status": "not_covered",
+              "note": "league not among Understat's 6 leagues"
+            },
+            "StatsBomb Open Data": {
+              "covered": false,
+              "note": "competition not in open data"
+            }
+          }
+        },
+        {
+          "phase": "recent",
+          "season": 2022,
+          "team": "Manchester City",
+          "competition": "Premier League",
+          "sources": {
+            "Wikipedia": {
+              "fields": [
+                "appearances",
+                "goals"
+              ],
+              "values": {
+                "appearances": 35,
+                "goals": 36
+              }
+            },
+            "Understat": {
+              "fields": [],
+              "status": "unavailable",
+              "note": "no inline data via honest request; structured access requires TLS-fingerprint impersonation (disallowed)"
+            },
+            "StatsBomb Open Data": {
+              "provider": "StatsBomb Open Data",
+              "competition": "Premier League",
+              "season": "2022/2023",
+              "covered": false,
+              "matches_available": 0,
+              "player_found": false,
+              "sample_match_id": null,
+              "sample_minutes": null,
+              "note": "competition/season not in StatsBomb open data"
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "wikipedia_access": "ok",
+      "bio_fields": [
+        "birth_date",
+        "height_cm",
+        "nationality",
+        "position"
+      ],
+      "coverage": {
+        "rows": 3,
+        "tier_a_pct": 100.0,
+        "tier_b_pct": 0.0,
+        "tier_c_pct": 0.0,
+        "provenance_pct": 100.0,
+        "tier_a_complete_rows": 3,
+        "tier_a_complete": true,
+        "player_identity_complete": true,
+        "per_season": [
+          {
+            "row": "s2018",
+            "team_id": "molde",
+            "tier_a_complete": true,
+            "unsupported_fields": [
+              "starts",
+              "minutes",
+              "assists",
+              "yellow_cards",
+              "red_cards",
+              "substitutions",
+              "xG",
+              "xA",
+              "key_passes",
+              "shots",
+              "successful_dribbles",
+              "duels_won",
+              "tackles_per_game",
+              "sprint_speed_kmh"
+            ]
+          },
+          {
+            "row": "s2019",
+            "team_id": "salzburg",
+            "tier_a_complete": true,
+            "unsupported_fields": [
+              "starts",
+              "minutes",
+              "assists",
+              "yellow_cards",
+              "red_cards",
+              "substitutions",
+              "xG",
+              "xA",
+              "key_passes",
+              "shots",
+              "successful_dribbles",
+              "duels_won",
+              "tackles_per_game",
+              "sprint_speed_kmh"
+            ]
+          },
+          {
+            "row": "s2022",
+            "team_id": "mancity",
+            "tier_a_complete": true,
+            "unsupported_fields": [
+              "starts",
+              "minutes",
+              "assists",
+              "yellow_cards",
+              "red_cards",
+              "substitutions",
+              "xG",
+              "xA",
+              "key_passes",
+              "shots",
+              "successful_dribbles",
+              "duels_won",
+              "tackles_per_game",
+              "sprint_speed_kmh"
+            ]
+          }
+        ]
+      },
+      "conflicts": [],
+      "output_file": "pilot_output\\haaland.json"
+    },
+    {
+      "player_id": "van-dijk",
+      "wiki_title": "Virgil van Dijk",
+      "seasons": [
+        {
+          "phase": "early",
+          "season": 2011,
+          "team": "FC Groningen",
+          "competition": "Eredivisie",
+          "sources": {
+            "Wikipedia": {
+              "fields": [
+                "appearances",
+                "goals"
+              ],
+              "values": {
+                "appearances": 23,
+                "goals": 3
+              }
+            },
+            "Understat": {
+              "fields": [],
+              "status": "not_covered",
+              "note": "league not among Understat's 6 leagues"
+            },
+            "StatsBomb Open Data": {
+              "covered": false,
+              "note": "competition not in open data"
+            }
+          }
+        },
+        {
+          "phase": "mid",
+          "season": 2015,
+          "team": "Southampton",
+          "competition": "Premier League",
+          "sources": {
+            "Wikipedia": {
+              "fields": [
+                "appearances",
+                "goals"
+              ],
+              "values": {
+                "appearances": 34,
+                "goals": 3
+              }
+            },
+            "Understat": {
+              "fields": [],
+              "status": "unavailable",
+              "note": "no inline data via honest request; structured access requires TLS-fingerprint impersonation (disallowed)"
+            },
+            "StatsBomb Open Data": {
+              "provider": "StatsBomb Open Data",
+              "competition": "Premier League",
+              "season": "2015/2016",
+              "covered": true,
+              "matches_available": 38,
+              "player_found": true,
+              "sample_match_id": 3754309,
+              "sample_minutes": 90,
+              "note": "validation sample only: player confirmed in one match lineup; full-season aggregation intentionally not performed"
+            }
+          }
+        },
+        {
+          "phase": "recent",
+          "season": 2019,
+          "team": "Liverpool",
+          "competition": "Premier League",
+          "sources": {
+            "Wikipedia": {
+              "fields": [
+                "appearances",
+                "goals"
+              ],
+              "values": {
+                "appearances": 38,
+                "goals": 5
+              }
+            },
+            "Understat": {
+              "fields": [],
+              "status": "unavailable",
+              "note": "no inline data via honest request; structured access requires TLS-fingerprint impersonation (disallowed)"
+            },
+            "StatsBomb Open Data": {
+              "provider": "StatsBomb Open Data",
+              "competition": "Premier League",
+              "season": "2019/2020",
+              "covered": false,
+              "matches_available": 0,
+              "player_found": false,
+              "sample_match_id": null,
+              "sample_minutes": null,
+              "note": "competition/season not in StatsBomb open data"
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "wikipedia_access": "ok",
+      "bio_fields": [
+        "birth_date",
+        "height_cm",
+        "nationality",
+        "position"
+      ],
+      "coverage": {
+        "rows": 3,
+        "tier_a_pct": 100.0,
+        "tier_b_pct": 0.0,
+        "tier_c_pct": 0.0,
+        "provenance_pct": 100.0,
+        "tier_a_complete_rows": 3,
+        "tier_a_complete": true,
+        "player_identity_complete": true,
+        "per_season": [
+          {
+            "row": "s2011",
+            "team_id": "groningen",
+            "tier_a_complete": true,
+            "unsupported_fields": [
+              "starts",
+              "minutes",
+              "assists",
+              "yellow_cards",
+              "red_cards",
+              "substitutions",
+              "xG",
+              "xA",
+              "key_passes",
+              "shots",
+              "successful_dribbles",
+              "duels_won",
+              "tackles_per_game",
+              "sprint_speed_kmh"
+            ]
+          },
+          {
+            "row": "s2015",
+            "team_id": "southampton",
+            "tier_a_complete": true,
+            "unsupported_fields": [
+              "starts",
+              "minutes",
+              "assists",
+              "yellow_cards",
+              "red_cards",
+              "substitutions",
+              "xG",
+              "xA",
+              "key_passes",
+              "shots",
+              "successful_dribbles",
+              "duels_won",
+              "tackles_per_game",
+              "sprint_speed_kmh"
+            ]
+          },
+          {
+            "row": "s2019",
+            "team_id": "liverpool",
+            "tier_a_complete": true,
+            "unsupported_fields": [
+              "starts",
+              "minutes",
+              "assists",
+              "yellow_cards",
+              "red_cards",
+              "substitutions",
+              "xG",
+              "xA",
+              "key_passes",
+              "shots",
+              "successful_dribbles",
+              "duels_won",
+              "tackles_per_game",
+              "sprint_speed_kmh"
+            ]
+          }
+        ]
+      },
+      "conflicts": [],
+      "output_file": "pilot_output\\van-dijk.json"
+    },
+    {
+      "player_id": "modric",
+      "wiki_title": "Luka Modrić",
+      "seasons": [
+        {
+          "phase": "early",
+          "season": 2005,
+          "team": "Dinamo Zagreb",
+          "competition": "Prva HNL",
+          "sources": {
+            "Wikipedia": {
+              "fields": [
+                "appearances",
+                "goals"
+              ],
+              "values": {
+                "appearances": 32,
+                "goals": 7
+              }
+            },
+            "Understat": {
+              "fields": [],
+              "status": "not_covered",
+              "note": "league not among Understat's 6 leagues"
+            },
+            "StatsBomb Open Data": {
+              "covered": false,
+              "note": "competition not in open data"
+            }
+          }
+        },
+        {
+          "phase": "mid",
+          "season": 2011,
+          "team": "Tottenham Hotspur",
+          "competition": "Premier League",
+          "sources": {
+            "Wikipedia": {
+              "fields": [
+                "appearances",
+                "goals"
+              ],
+              "values": {
+                "appearances": 36,
+                "goals": 4
+              }
+            },
+            "Understat": {
+              "fields": [],
+              "status": "unavailable",
+              "note": "no inline data via honest request; structured access requires TLS-fingerprint impersonation (disallowed)"
+            },
+            "StatsBomb Open Data": {
+              "provider": "StatsBomb Open Data",
+              "competition": "Premier League",
+              "season": "2011/2012",
+              "covered": false,
+              "matches_available": 0,
+              "player_found": false,
+              "sample_match_id": null,
+              "sample_minutes": null,
+              "note": "competition/season not in StatsBomb open data"
+            }
+          }
+        },
+        {
+          "phase": "recent",
+          "season": 2018,
+          "team": "Real Madrid",
+          "competition": "La Liga",
+          "sources": {
+            "Wikipedia": {
+              "fields": [
+                "appearances",
+                "goals"
+              ],
+              "values": {
+                "appearances": 34,
+                "goals": 3
+              }
+            },
+            "Understat": {
+              "fields": [],
+              "status": "unavailable",
+              "note": "no inline data via honest request; structured access requires TLS-fingerprint impersonation (disallowed)"
+            },
+            "StatsBomb Open Data": {
+              "provider": "StatsBomb Open Data",
+              "competition": "La Liga",
+              "season": "2018/2019",
+              "covered": true,
+              "matches_available": 1,
+              "player_found": true,
+              "sample_match_id": 16196,
+              "sample_minutes": 90,
+              "note": "validation sample only: player confirmed in one match lineup; full-season aggregation intentionally not performed"
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "wikipedia_access": "ok",
+      "bio_fields": [
+        "birth_date",
+        "height_cm",
+        "nationality",
+        "position"
+      ],
+      "coverage": {
+        "rows": 3,
+        "tier_a_pct": 100.0,
+        "tier_b_pct": 0.0,
+        "tier_c_pct": 0.0,
+        "provenance_pct": 100.0,
+        "tier_a_complete_rows": 3,
+        "tier_a_complete": true,
+        "player_identity_complete": true,
+        "per_season": [
+          {
+            "row": "s2005",
+            "team_id": "dinamo-zagreb",
+            "tier_a_complete": true,
+            "unsupported_fields": [
+              "starts",
+              "minutes",
+              "assists",
+              "yellow_cards",
+              "red_cards",
+              "substitutions",
+              "xG",
+              "xA",
+              "key_passes",
+              "shots",
+              "successful_dribbles",
+              "duels_won",
+              "tackles_per_game",
+              "sprint_speed_kmh"
+            ]
+          },
+          {
+            "row": "s2011",
+            "team_id": "tottenham",
+            "tier_a_complete": true,
+            "unsupported_fields": [
+              "starts",
+              "minutes",
+              "assists",
+              "yellow_cards",
+              "red_cards",
+              "substitutions",
+              "xG",
+              "xA",
+              "key_passes",
+              "shots",
+              "successful_dribbles",
+              "duels_won",
+              "tackles_per_game",
+              "sprint_speed_kmh"
+            ]
+          },
+          {
+            "row": "s2018",
+            "team_id": "real-madrid",
+            "tier_a_complete": true,
+            "unsupported_fields": [
+              "starts",
+              "minutes",
+              "assists",
+              "yellow_cards",
+              "red_cards",
+              "substitutions",
+              "xG",
+              "xA",
+              "key_passes",
+              "shots",
+              "successful_dribbles",
+              "duels_won",
+              "tackles_per_game",
+              "sprint_speed_kmh"
+            ]
+          }
+        ]
+      },
+      "conflicts": [],
+      "output_file": "pilot_output\\modric.json"
+    }
+  ],
+  "source_field_matrix": []
+}

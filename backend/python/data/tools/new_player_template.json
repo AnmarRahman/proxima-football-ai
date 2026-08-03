@@ -1,0 +1,67 @@
+{
+  "_comment": "Flat-schema scaffold for a new roster player. One object per senior club season. This project does NOT permit estimated data: every value must be either a sourced fact or null. null means 'unknown'; a real sourced 0 stays 0. Every populated statistic must be covered by a sources[] entry whose 'supports' lists that field. Senior records only (no youth). Delete this _comment before importing. A player is complete only when validate_player.py --strict reports zero errors AND zero warnings.",
+  "player": {
+    "id": "player-slug",
+    "name": "Full Name",
+    "birth_date": null,
+    "nationality": null,
+    "height_cm": null,
+    "weight_kg": null,
+    "dominant_foot": null,
+    "is_retired": false,
+    "retired_since": null
+  },
+  "teams": [
+    {
+      "id": "team-slug",
+      "name": "Team Name",
+      "logo_url": null,
+      "country": null
+    }
+  ],
+  "seasons": [
+    {
+      "season": 2020,
+      "team_id": "team-slug",
+      "league_id": "league-slug-2020",
+      "is_partial": false,
+      "position": null,
+      "appearances": null,
+      "starts": null,
+      "goals": null,
+      "assists": null,
+      "minutes": null,
+      "rating": null,
+      "xG": null,
+      "xA": null,
+      "key_passes": null,
+      "successful_dribbles": null,
+      "duels_won": null,
+      "shots_per_game": null,
+      "tackles_per_game": null,
+      "fouls_drawn": null,
+      "injuries": [],
+      "physical_metrics": {
+        "sprint_speed_kmh": null,
+        "acceleration": null,
+        "stamina": null,
+        "recovery_rate": null
+      },
+      "tactical_data": {
+        "average_position": null,
+        "contribution_to_build_up": null,
+        "defensive_transitions": null
+      },
+      "transfer_history": [],
+      "national_team_stats": [],
+      "sources": [
+        {
+          "provider": "provider name (e.g. FBref)",
+          "url": "https://...",
+          "retrieved_at": "YYYY-MM-DD",
+          "supports": ["appearances", "goals", "assists", "minutes"]
+        }
+      ]
+    }
+  ]
+}

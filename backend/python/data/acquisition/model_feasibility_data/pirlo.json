@@ -1,0 +1,326 @@
+{
+  "player_id": "pirlo",
+  "name": "Andrea Pirlo",
+  "position_group": "CM",
+  "coarse_group": "MID",
+  "active": false,
+  "era": "1990s-2010s (deep playmaker)",
+  "birth_year": 1979,
+  "birth_date": "1979-05-19",
+  "nationality": "Italy",
+  "career_position_label": "Midfielder",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Andrea_Pirlo",
+    "retrieved_at": "2026-08-02",
+    "supports": [
+      "appearances",
+      "goals",
+      "position",
+      "birth_date",
+      "nationality"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 24,
+    "reserve_or_youth_rows_dropped": 0,
+    "dropped_rows": [],
+    "first_season": 1994,
+    "last_season": 2017,
+    "tier": "A",
+    "tier_b_c_available": false
+  },
+  "seasons": [
+    {
+      "season": 1994,
+      "stat_scope": "domestic_league",
+      "appearances": 1,
+      "goals": 0,
+      "clubs": [
+        "Brescia"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1995,
+      "stat_scope": "domestic_league",
+      "appearances": 0,
+      "goals": 0,
+      "clubs": [
+        "Brescia"
+      ],
+      "competitions": [
+        "Serie B"
+      ]
+    },
+    {
+      "season": 1996,
+      "stat_scope": "domestic_league",
+      "appearances": 17,
+      "goals": 2,
+      "clubs": [
+        "Brescia"
+      ],
+      "competitions": [
+        "Serie B"
+      ]
+    },
+    {
+      "season": 1997,
+      "stat_scope": "domestic_league",
+      "appearances": 29,
+      "goals": 4,
+      "clubs": [
+        "Brescia"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1998,
+      "stat_scope": "domestic_league",
+      "appearances": 18,
+      "goals": 0,
+      "clubs": [
+        "Inter Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1999,
+      "stat_scope": "domestic_league",
+      "appearances": 28,
+      "goals": 6,
+      "clubs": [
+        "Reggina (loan)"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2000,
+      "stat_scope": "domestic_league",
+      "appearances": 14,
+      "goals": 0,
+      "clubs": [
+        "Inter Milan",
+        "Brescia (loan)"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2001,
+      "stat_scope": "domestic_league",
+      "appearances": 18,
+      "goals": 2,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2002,
+      "stat_scope": "domestic_league",
+      "appearances": 27,
+      "goals": 9,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2003,
+      "stat_scope": "domestic_league",
+      "appearances": 32,
+      "goals": 6,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2004,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 4,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2005,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 4,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2006,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 2,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2007,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 3,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2008,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 1,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2009,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 0,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2010,
+      "stat_scope": "domestic_league",
+      "appearances": 17,
+      "goals": 1,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2011,
+      "stat_scope": "domestic_league",
+      "appearances": 37,
+      "goals": 3,
+      "clubs": [
+        "Juventus"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2012,
+      "stat_scope": "domestic_league",
+      "appearances": 32,
+      "goals": 5,
+      "clubs": [
+        "Juventus"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2013,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 4,
+      "clubs": [
+        "Juventus"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2014,
+      "stat_scope": "domestic_league",
+      "appearances": 20,
+      "goals": 4,
+      "clubs": [
+        "Juventus"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2015,
+      "stat_scope": "domestic_league",
+      "appearances": 13,
+      "goals": 0,
+      "clubs": [
+        "New York City FC"
+      ],
+      "competitions": [
+        "Major League Soccer"
+      ]
+    },
+    {
+      "season": 2016,
+      "stat_scope": "domestic_league",
+      "appearances": 32,
+      "goals": 1,
+      "clubs": [
+        "New York City FC"
+      ],
+      "competitions": [
+        "Major League Soccer"
+      ]
+    },
+    {
+      "season": 2017,
+      "stat_scope": "domestic_league",
+      "appearances": 15,
+      "goals": 0,
+      "clubs": [
+        "New York City FC"
+      ],
+      "competitions": [
+        "Major League Soccer"
+      ]
+    }
+  ]
+}

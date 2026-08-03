@@ -1,0 +1,232 @@
+{
+  "player_id": "van-dijk",
+  "name": "Virgil van Dijk",
+  "position_group": "CB",
+  "coarse_group": "DEF",
+  "active": true,
+  "era": "2010s-2020s",
+  "birth_year": 1991,
+  "birth_date": "1991-07-08",
+  "nationality": "Kingdom of the Netherlands",
+  "career_position_label": "Centre-back",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk",
+    "retrieved_at": "2026-07-27",
+    "supports": [
+      "appearances",
+      "goals",
+      "position",
+      "birth_date",
+      "nationality"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 16,
+    "reserve_or_youth_rows_dropped": 0,
+    "dropped_rows": [],
+    "first_season": 2010,
+    "last_season": 2025,
+    "tier": "A",
+    "tier_b_c_available": false
+  },
+  "seasons": [
+    {
+      "season": 2010,
+      "stat_scope": "domestic_league",
+      "appearances": 5,
+      "goals": 2,
+      "clubs": [
+        "Groningen"
+      ],
+      "competitions": [
+        "Eredivisie"
+      ]
+    },
+    {
+      "season": 2011,
+      "stat_scope": "domestic_league",
+      "appearances": 23,
+      "goals": 3,
+      "clubs": [
+        "Groningen"
+      ],
+      "competitions": [
+        "Eredivisie"
+      ]
+    },
+    {
+      "season": 2012,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 2,
+      "clubs": [
+        "Groningen"
+      ],
+      "competitions": [
+        "Eredivisie"
+      ]
+    },
+    {
+      "season": 2013,
+      "stat_scope": "domestic_league",
+      "appearances": 36,
+      "goals": 5,
+      "clubs": [
+        "Celtic"
+      ],
+      "competitions": [
+        "Scottish Premiership"
+      ]
+    },
+    {
+      "season": 2014,
+      "stat_scope": "domestic_league",
+      "appearances": 35,
+      "goals": 4,
+      "clubs": [
+        "Celtic"
+      ],
+      "competitions": [
+        "Scottish Premiership"
+      ]
+    },
+    {
+      "season": 2015,
+      "stat_scope": "domestic_league",
+      "appearances": 39,
+      "goals": 3,
+      "clubs": [
+        "Celtic",
+        "Southampton"
+      ],
+      "competitions": [
+        "Scottish Premiership",
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2016,
+      "stat_scope": "domestic_league",
+      "appearances": 21,
+      "goals": 1,
+      "clubs": [
+        "Southampton"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2017,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 0,
+      "clubs": [
+        "Southampton",
+        "Liverpool"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2018,
+      "stat_scope": "domestic_league",
+      "appearances": 38,
+      "goals": 4,
+      "clubs": [
+        "Liverpool"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2019,
+      "stat_scope": "domestic_league",
+      "appearances": 38,
+      "goals": 5,
+      "clubs": [
+        "Liverpool"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2020,
+      "stat_scope": "domestic_league",
+      "appearances": 5,
+      "goals": 1,
+      "clubs": [
+        "Liverpool"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2021,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 3,
+      "clubs": [
+        "Liverpool"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2022,
+      "stat_scope": "domestic_league",
+      "appearances": 32,
+      "goals": 3,
+      "clubs": [
+        "Liverpool"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2023,
+      "stat_scope": "domestic_league",
+      "appearances": 36,
+      "goals": 2,
+      "clubs": [
+        "Liverpool"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2024,
+      "stat_scope": "domestic_league",
+      "appearances": 37,
+      "goals": 3,
+      "clubs": [
+        "Liverpool"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2025,
+      "stat_scope": "domestic_league",
+      "appearances": 38,
+      "goals": 6,
+      "clubs": [
+        "Liverpool"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    }
+  ]
+}

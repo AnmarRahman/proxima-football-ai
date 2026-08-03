@@ -1,0 +1,315 @@
+{
+  "player_id": "ribery",
+  "name": "Franck Ribery",
+  "position_group": "WNG",
+  "coarse_group": "WIDE",
+  "active": false,
+  "era": "2000s-2020s",
+  "birth_year": 1983,
+  "birth_date": "1983-04-07",
+  "nationality": "France",
+  "career_position_label": "Winger",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Franck_Ribéry",
+    "retrieved_at": "2026-08-02",
+    "supports": [
+      "appearances",
+      "goals",
+      "position",
+      "birth_date",
+      "nationality"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 23,
+    "reserve_or_youth_rows_dropped": 0,
+    "dropped_rows": [],
+    "first_season": 2000,
+    "last_season": 2022,
+    "tier": "A",
+    "tier_b_c_available": false
+  },
+  "seasons": [
+    {
+      "season": 2000,
+      "stat_scope": "domestic_league",
+      "appearances": 4,
+      "goals": 1,
+      "clubs": [
+        "Boulogne"
+      ],
+      "competitions": [
+        "CFA"
+      ]
+    },
+    {
+      "season": 2001,
+      "stat_scope": "domestic_league",
+      "appearances": 24,
+      "goals": 5,
+      "clubs": [
+        "Boulogne"
+      ],
+      "competitions": [
+        "Championnat National"
+      ]
+    },
+    {
+      "season": 2002,
+      "stat_scope": "domestic_league",
+      "appearances": 19,
+      "goals": 1,
+      "clubs": [
+        "Alès"
+      ],
+      "competitions": [
+        "Championnat National"
+      ]
+    },
+    {
+      "season": 2003,
+      "stat_scope": "domestic_league",
+      "appearances": 35,
+      "goals": 3,
+      "clubs": [
+        "Brest"
+      ],
+      "competitions": [
+        "Championnat National"
+      ]
+    },
+    {
+      "season": 2004,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 2,
+      "clubs": [
+        "Metz",
+        "Galatasaray"
+      ],
+      "competitions": [
+        "Ligue 1",
+        "Süper Lig"
+      ]
+    },
+    {
+      "season": 2005,
+      "stat_scope": "domestic_league",
+      "appearances": 35,
+      "goals": 6,
+      "clubs": [
+        "Marseille"
+      ],
+      "competitions": [
+        "Ligue 1"
+      ]
+    },
+    {
+      "season": 2006,
+      "stat_scope": "domestic_league",
+      "appearances": 25,
+      "goals": 5,
+      "clubs": [
+        "Marseille"
+      ],
+      "competitions": [
+        "Ligue 1"
+      ]
+    },
+    {
+      "season": 2007,
+      "stat_scope": "domestic_league",
+      "appearances": 28,
+      "goals": 11,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2008,
+      "stat_scope": "domestic_league",
+      "appearances": 25,
+      "goals": 9,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2009,
+      "stat_scope": "domestic_league",
+      "appearances": 19,
+      "goals": 4,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2010,
+      "stat_scope": "domestic_league",
+      "appearances": 25,
+      "goals": 7,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2011,
+      "stat_scope": "domestic_league",
+      "appearances": 32,
+      "goals": 12,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2012,
+      "stat_scope": "domestic_league",
+      "appearances": 27,
+      "goals": 10,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2013,
+      "stat_scope": "domestic_league",
+      "appearances": 22,
+      "goals": 10,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2014,
+      "stat_scope": "domestic_league",
+      "appearances": 15,
+      "goals": 5,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2015,
+      "stat_scope": "domestic_league",
+      "appearances": 13,
+      "goals": 2,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2016,
+      "stat_scope": "domestic_league",
+      "appearances": 22,
+      "goals": 5,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2017,
+      "stat_scope": "domestic_league",
+      "appearances": 20,
+      "goals": 5,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2018,
+      "stat_scope": "domestic_league",
+      "appearances": 25,
+      "goals": 6,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2019,
+      "stat_scope": "domestic_league",
+      "appearances": 21,
+      "goals": 3,
+      "clubs": [
+        "Fiorentina"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2020,
+      "stat_scope": "domestic_league",
+      "appearances": 29,
+      "goals": 2,
+      "clubs": [
+        "Fiorentina"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2021,
+      "stat_scope": "domestic_league",
+      "appearances": 23,
+      "goals": 0,
+      "clubs": [
+        "Salernitana"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2022,
+      "stat_scope": "domestic_league",
+      "appearances": 1,
+      "goals": 0,
+      "clubs": [
+        "Salernitana"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    }
+  ]
+}

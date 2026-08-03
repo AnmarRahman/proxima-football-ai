@@ -1,0 +1,328 @@
+{
+  "player_id": "modric",
+  "name": "Luka Modric",
+  "position_group": "CM",
+  "coarse_group": "MID",
+  "active": true,
+  "era": "2000s-2020s (long, low scorer)",
+  "birth_year": 1985,
+  "birth_date": "1985-09-09",
+  "nationality": "Croatia",
+  "career_position_label": "Central midfielder",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Luka_Modrić",
+    "retrieved_at": "2026-07-27",
+    "supports": [
+      "appearances",
+      "goals",
+      "position",
+      "birth_date",
+      "nationality"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 24,
+    "reserve_or_youth_rows_dropped": 0,
+    "dropped_rows": [],
+    "first_season": 2003,
+    "last_season": 2026,
+    "tier": "A",
+    "tier_b_c_available": false
+  },
+  "seasons": [
+    {
+      "season": 2003,
+      "stat_scope": "domestic_league",
+      "appearances": 25,
+      "goals": 8,
+      "clubs": [
+        "Dinamo Zagreb",
+        "Zrinjski Mostar (loan)"
+      ],
+      "competitions": [
+        "Prva HNL",
+        "Bosnian Premier League"
+      ]
+    },
+    {
+      "season": 2004,
+      "stat_scope": "domestic_league",
+      "appearances": 25,
+      "goals": 4,
+      "clubs": [
+        "Dinamo Zagreb",
+        "Inter Zaprešić (loan)"
+      ],
+      "competitions": [
+        "Prva HNL"
+      ]
+    },
+    {
+      "season": 2005,
+      "stat_scope": "domestic_league",
+      "appearances": 32,
+      "goals": 7,
+      "clubs": [
+        "Dinamo Zagreb"
+      ],
+      "competitions": [
+        "Prva HNL"
+      ]
+    },
+    {
+      "season": 2006,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 6,
+      "clubs": [
+        "Dinamo Zagreb"
+      ],
+      "competitions": [
+        "Prva HNL"
+      ]
+    },
+    {
+      "season": 2007,
+      "stat_scope": "domestic_league",
+      "appearances": 25,
+      "goals": 13,
+      "clubs": [
+        "Dinamo Zagreb"
+      ],
+      "competitions": [
+        "Prva HNL"
+      ]
+    },
+    {
+      "season": 2008,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 3,
+      "clubs": [
+        "Tottenham Hotspur"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2009,
+      "stat_scope": "domestic_league",
+      "appearances": 25,
+      "goals": 3,
+      "clubs": [
+        "Tottenham Hotspur"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2010,
+      "stat_scope": "domestic_league",
+      "appearances": 32,
+      "goals": 3,
+      "clubs": [
+        "Tottenham Hotspur"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2011,
+      "stat_scope": "domestic_league",
+      "appearances": 36,
+      "goals": 4,
+      "clubs": [
+        "Tottenham Hotspur"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2012,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 3,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2013,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 1,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2014,
+      "stat_scope": "domestic_league",
+      "appearances": 16,
+      "goals": 1,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2015,
+      "stat_scope": "domestic_league",
+      "appearances": 32,
+      "goals": 2,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2016,
+      "stat_scope": "domestic_league",
+      "appearances": 25,
+      "goals": 1,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2017,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 1,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2018,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 3,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2019,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 3,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2020,
+      "stat_scope": "domestic_league",
+      "appearances": 35,
+      "goals": 5,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2021,
+      "stat_scope": "domestic_league",
+      "appearances": 28,
+      "goals": 2,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2022,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 4,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2023,
+      "stat_scope": "domestic_league",
+      "appearances": 32,
+      "goals": 2,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2024,
+      "stat_scope": "domestic_league",
+      "appearances": 35,
+      "goals": 2,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2025,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 2,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2026,
+      "stat_scope": "domestic_league",
+      "appearances": 0,
+      "goals": 0,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    }
+  ]
+}

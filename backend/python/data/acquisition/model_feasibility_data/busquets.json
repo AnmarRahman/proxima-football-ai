@@ -1,0 +1,264 @@
+{
+  "player_id": "busquets",
+  "name": "Sergio Busquets",
+  "position_group": "DM",
+  "coarse_group": "MID",
+  "active": true,
+  "era": "2000s-2020s (very low scorer)",
+  "birth_year": 1988,
+  "birth_date": "1988-07-16",
+  "nationality": "Spain",
+  "career_position_label": "Defensive midfielder",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sergio_Busquets",
+    "retrieved_at": "2026-08-02",
+    "supports": [
+      "appearances",
+      "goals",
+      "position",
+      "birth_date",
+      "nationality"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 18,
+    "reserve_or_youth_rows_dropped": 2,
+    "dropped_rows": [
+      {
+        "season": 2007,
+        "club": "Barcelona B",
+        "competition": "Tercera División"
+      },
+      {
+        "season": 2008,
+        "club": "Barcelona B",
+        "competition": "Segunda División B"
+      }
+    ],
+    "first_season": 2008,
+    "last_season": 2025,
+    "tier": "A",
+    "tier_b_c_available": false
+  },
+  "seasons": [
+    {
+      "season": 2008,
+      "stat_scope": "domestic_league",
+      "appearances": 24,
+      "goals": 1,
+      "clubs": [
+        "Barcelona"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2009,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 0,
+      "clubs": [
+        "Barcelona"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2010,
+      "stat_scope": "domestic_league",
+      "appearances": 28,
+      "goals": 1,
+      "clubs": [
+        "Barcelona"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2011,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 1,
+      "clubs": [
+        "Barcelona"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2012,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 1,
+      "clubs": [
+        "Barcelona"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2013,
+      "stat_scope": "domestic_league",
+      "appearances": 32,
+      "goals": 1,
+      "clubs": [
+        "Barcelona"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2014,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 1,
+      "clubs": [
+        "Barcelona"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2015,
+      "stat_scope": "domestic_league",
+      "appearances": 35,
+      "goals": 0,
+      "clubs": [
+        "Barcelona"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2016,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 0,
+      "clubs": [
+        "Barcelona"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2017,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 1,
+      "clubs": [
+        "Barcelona"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2018,
+      "stat_scope": "domestic_league",
+      "appearances": 35,
+      "goals": 0,
+      "clubs": [
+        "Barcelona"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2019,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 2,
+      "clubs": [
+        "Barcelona"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2020,
+      "stat_scope": "domestic_league",
+      "appearances": 36,
+      "goals": 0,
+      "clubs": [
+        "Barcelona"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2021,
+      "stat_scope": "domestic_league",
+      "appearances": 36,
+      "goals": 2,
+      "clubs": [
+        "Barcelona"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2022,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 0,
+      "clubs": [
+        "Barcelona"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2023,
+      "stat_scope": "domestic_league",
+      "appearances": 11,
+      "goals": 0,
+      "clubs": [
+        "Inter Miami"
+      ],
+      "competitions": [
+        "MLS"
+      ]
+    },
+    {
+      "season": 2024,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 1,
+      "clubs": [
+        "Inter Miami"
+      ],
+      "competitions": [
+        "MLS"
+      ]
+    },
+    {
+      "season": 2025,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 0,
+      "clubs": [
+        "Inter Miami"
+      ],
+      "competitions": [
+        "MLS"
+      ]
+    }
+  ]
+}
