@@ -21,7 +21,7 @@ jobs:
     env:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
       PYTHONIOENCODING: utf-8
-      TIER_A_EXPECTED_MANIFEST_SHA256: 627453d6f220f54d9b0f76a53a3cb96365bfc7ec73fc633a1c0f3bb96fe807a8
+      TIER_A_EXPECTED_MANIFEST_SHA256: e59c220dfefa3e30217e658ad26257a95de04db5adbe91ee99fd9eafd5691986
     steps:
       - name: Checkout
         uses: actions/checkout@v4
