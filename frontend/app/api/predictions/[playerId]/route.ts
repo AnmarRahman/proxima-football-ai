@@ -26,7 +26,7 @@ export async function GET(
   }
 
   try {
-    const [predictionRows, playerRows] = await Promise.all([
+    const [predictionRows, playerRows, seasonRows] = await Promise.all([
       supabaseRestGet("next_season_predictions", {
         select:
           "player_id,run_id,model_version,prediction_scope,prediction_point,based_on_season,predicted_season,appearances_expected,appearances_lower,appearances_upper,appearances_interval_method,appearances_interval_unavailable_reason,goals_expected,goals_lower,goals_upper,goals_interval_method,limitations,coverage_metadata,predicted_at",
@@ -37,6 +37,13 @@ export async function GET(
         select: "id,name,nationality,primary_position,position_group,coarse_group,career_status",
         id: `eq.${playerId}`,
         limit: "1",
+      }),
+      supabaseRestGet("ml_player_seasons", {
+        select:
+          "canonical_season,season_start_year,season_end_year,appearances,goals,is_partial,model_eligible",
+        player_id: `eq.${playerId}`,
+        order: "season_start_year.asc,season_end_year.asc",
+        limit: "100",
       }),
     ]);
 
@@ -92,6 +99,15 @@ export async function GET(
         limitations: Array.isArray(prediction.limitations) ? prediction.limitations : [],
         coverage_metadata: prediction.coverage_metadata || {},
       },
+      historical_seasons: (seasonRows || []).map((season: any) => ({
+        season: String(season.canonical_season),
+        season_start_year: Number(season.season_start_year),
+        season_end_year: Number(season.season_end_year),
+        appearances: Number(season.appearances),
+        goals: Number(season.goals),
+        is_partial: Boolean(season.is_partial),
+        model_eligible: Boolean(season.model_eligible),
+      })),
       meta: {
         run_id: prediction.run_id,
         model_version: prediction.model_version,

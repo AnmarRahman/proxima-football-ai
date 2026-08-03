@@ -2,19 +2,9 @@
 
 import { Button } from "@/components/ui/button";
 import { AIAnalysisLoader } from "@/components/ai-analysis-loader";
-import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-} from "@/components/ui/command";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { formatPosition } from "@/lib/player-position";
-import { cn } from "@/lib/utils";
-import { Check, ChevronsUpDown } from "lucide-react";
-import { useEffect, useState } from "react";
+import { Check, ChevronDown, Search } from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 interface PlayerSearchProps {
   onPlayerSelect?: (player: any) => void;
@@ -35,8 +25,19 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
   const [message, setMessage] = useState<string | null>(null);
   const [playerOptions, setPlayerOptions] = useState<PlayerOption[]>([]);
   const [pickerOpen, setPickerOpen] = useState(false);
+  const [query, setQuery] = useState("");
+  const pickerRef = useRef<HTMLDivElement>(null);
 
   const selectedPlayer = playerOptions.find((player) => player.id === selectedPlayerId);
+  const filteredPlayers = useMemo(() => {
+    const term = query.trim().toLowerCase();
+    if (!term) return playerOptions;
+    return playerOptions.filter((player) =>
+      [player.name, player.nationality, player.position && formatPosition(player.position)]
+        .filter(Boolean)
+        .some((value) => String(value).toLowerCase().includes(term))
+    );
+  }, [playerOptions, query]);
 
   useEffect(() => {
     let mounted = true;
@@ -67,6 +68,16 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
     };
   }, []);
 
+  useEffect(() => {
+    function closePicker(event: MouseEvent) {
+      if (pickerRef.current && !pickerRef.current.contains(event.target as Node)) {
+        setPickerOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", closePicker);
+    return () => document.removeEventListener("mousedown", closePicker);
+  }, []);
+
   async function handlePlayerSelect() {
     if (!selectedPlayerId) return;
     setLoading(true);
@@ -79,7 +90,7 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
       if (!response.ok) {
         throw new Error(payload?.error || "Prediction is unavailable.");
       }
-      const remainingLoaderTime = Math.max(0, 3200 - (Date.now() - loaderStartedAt));
+      const remainingLoaderTime = Math.max(0, 9200 - (Date.now() - loaderStartedAt));
       if (remainingLoaderTime) {
         await new Promise((resolve) => window.setTimeout(resolve, remainingLoaderTime));
       }
@@ -94,74 +105,78 @@ export function PlayerSearch({ onPlayerSelect }: PlayerSearchProps) {
   return (
     <section className="mx-auto max-w-4xl rounded-2xl border border-border/60 bg-card/50 p-5 backdrop-blur-sm">
       <div className="flex flex-col gap-3 sm:flex-row">
-        <Popover open={pickerOpen} onOpenChange={setPickerOpen}>
-          <PopoverTrigger asChild>
-            <Button
-              variant="outline"
+        <div ref={pickerRef} className="relative flex-1">
+          <div className="flex min-h-11 items-center rounded-md border border-border bg-background px-3 focus-within:border-primary/70 focus-within:ring-2 focus-within:ring-primary/20">
+            <Search className="mr-2 h-4 w-4 shrink-0 text-muted-foreground" />
+            <input
+              type="text"
               role="combobox"
               aria-expanded={pickerOpen}
+              aria-controls="player-search-results"
               aria-label="Search for a player"
-              className="min-h-11 flex-1 justify-between border-border bg-background px-3 font-normal hover:bg-background"
+              value={query}
+              placeholder={playersLoading ? "Loading players..." : "Search by player, country, or position..."}
               disabled={loading || playersLoading}
+              onFocus={() => setPickerOpen(true)}
+              onClick={() => setPickerOpen(true)}
+              onChange={(event) => {
+                setQuery(event.target.value);
+                setSelectedPlayerId("");
+                setPickerOpen(true);
+                setMessage(null);
+              }}
+              className="h-10 min-w-0 flex-1 bg-transparent text-sm text-foreground outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-60"
+            />
+            <button
+              type="button"
+              aria-label="Toggle player list"
+              disabled={loading || playersLoading}
+              onClick={() => setPickerOpen((open) => !open)}
+              className="ml-2 rounded p-1 text-muted-foreground transition-colors hover:text-foreground disabled:opacity-50"
             >
-              {selectedPlayer ? (
-                <span className="flex min-w-0 items-center gap-2">
-                  <span className="truncate font-medium">{selectedPlayer.name}</span>
-                  {selectedPlayer.position ? (
-                    <span className="hidden shrink-0 text-xs text-muted-foreground sm:inline">
-                      {formatPosition(selectedPlayer.position)}
+              <ChevronDown className={`h-4 w-4 transition-transform ${pickerOpen ? "rotate-180" : ""}`} />
+            </button>
+          </div>
+
+          {pickerOpen && !playersLoading ? (
+            <div
+              id="player-search-results"
+              role="listbox"
+              className="absolute z-[100] mt-2 max-h-80 w-full overflow-y-auto rounded-lg border border-border bg-popover p-1 text-popover-foreground shadow-2xl"
+            >
+              <p className="px-3 py-2 text-xs font-medium text-muted-foreground">
+                {filteredPlayers.length} player{filteredPlayers.length === 1 ? "" : "s"}
+              </p>
+              {filteredPlayers.length ? filteredPlayers.map((player) => (
+                <button
+                  key={player.id}
+                  type="button"
+                  role="option"
+                  aria-selected={selectedPlayerId === player.id}
+                  onClick={() => {
+                    setSelectedPlayerId(player.id);
+                    setQuery(player.name);
+                    setPickerOpen(false);
+                    setMessage(null);
+                  }}
+                  className="flex w-full items-center gap-3 rounded-md px-3 py-3 text-left transition-colors hover:bg-accent focus:bg-accent focus:outline-none"
+                >
+                  <Check className={`h-4 w-4 shrink-0 text-primary ${selectedPlayerId === player.id ? "opacity-100" : "opacity-0"}`} />
+                  <span className="min-w-0 flex-1">
+                    <span className="block truncate font-medium">{player.name}</span>
+                    <span className="block truncate text-xs text-muted-foreground">
+                      {[player.position ? formatPosition(player.position) : null, player.nationality]
+                        .filter(Boolean)
+                        .join(" / ")}
                     </span>
-                  ) : null}
-                </span>
-              ) : (
-                <span className="text-muted-foreground">
-                  {playersLoading ? "Loading players..." : "Search players..."}
-                </span>
+                  </span>
+                </button>
+              )) : (
+                <p className="px-3 py-6 text-center text-sm text-muted-foreground">No matching player found.</p>
               )}
-              <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
-            </Button>
-          </PopoverTrigger>
-          <PopoverContent
-            align="start"
-            className="w-[var(--radix-popover-trigger-width)] p-0"
-          >
-            <Command>
-              <CommandInput placeholder="Search by player, country, or position..." />
-              <CommandList>
-                <CommandEmpty>No matching player found.</CommandEmpty>
-                <CommandGroup heading={`${playerOptions.length} available players`}>
-                  {playerOptions.map((player) => (
-                    <CommandItem
-                      key={player.id}
-                      value={`${player.name} ${player.nationality || ""} ${player.position || ""}`}
-                      onSelect={() => {
-                        setSelectedPlayerId(player.id);
-                        setPickerOpen(false);
-                        setMessage(null);
-                      }}
-                      className="py-3"
-                    >
-                      <Check
-                        className={cn(
-                          "h-4 w-4 text-primary",
-                          selectedPlayerId === player.id ? "opacity-100" : "opacity-0"
-                        )}
-                      />
-                      <span className="min-w-0 flex-1">
-                        <span className="block truncate font-medium">{player.name}</span>
-                        <span className="block truncate text-xs text-muted-foreground">
-                          {[player.position ? formatPosition(player.position) : null, player.nationality]
-                            .filter(Boolean)
-                            .join(" / ")}
-                        </span>
-                      </span>
-                    </CommandItem>
-                  ))}
-                </CommandGroup>
-              </CommandList>
-            </Command>
-          </PopoverContent>
-        </Popover>
+            </div>
+          ) : null}
+        </div>
         <Button
           className="min-h-11 px-6"
           onClick={handlePlayerSelect}
