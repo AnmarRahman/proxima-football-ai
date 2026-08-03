@@ -1,0 +1,469 @@
+{
+  "player_id": "carlos-tevez",
+  "wikidata_id": "Q50600",
+  "name": "Carlos Tevez",
+  "requested_name": "Carlos Tevez",
+  "birth_date": "1984-02-05",
+  "nationality": "Argentina",
+  "primary_position": "forward",
+  "position_group": "FW",
+  "coarse_group": "FWD",
+  "roster_section": "Strikers (30)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "1984-02-05",
+    "nationality": "Argentina",
+    "occupation_footballer": true,
+    "position": "forward",
+    "sitelinks": 76,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Carlos_Tevez",
+    "retrieved_at": "2026-08-02",
+    "revision": 1363219691,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 11,
+    "season_team_league_rows": 12,
+    "reserve_or_youth_years_dropped": [
+      2001,
+      2002,
+      2003,
+      2004,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [],
+    "missing_middle_seasons": [],
+    "first_season": 2005,
+    "last_season": 2017,
+    "partial_seasons": [],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 12,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 2005,
+      "season_start_year": 2005,
+      "canonical_season": "2005",
+      "season_source_label": "2005",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "corinthians",
+      "team_name": "Corinthians",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 29,
+      "goals": 20,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Carlos_Tevez",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363219691,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2005,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2006,
+      "season_start_year": 2006,
+      "canonical_season": "2006",
+      "season_source_label": "2006",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "corinthians",
+      "team_name": "Corinthians",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 9,
+      "goals": 5,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Carlos_Tevez",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363219691,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2006,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2006,
+      "season_start_year": 2006,
+      "canonical_season": "2006–07",
+      "season_source_label": "2006–07",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "west-ham-united",
+      "team_name": "West Ham United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 26,
+      "goals": 7,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Carlos_Tevez",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363219691,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2007,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2007,
+      "season_start_year": 2007,
+      "canonical_season": "2007–08",
+      "season_source_label": "2007–08",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united-loan",
+      "team_name": "Manchester United (loan)",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 34,
+      "goals": 14,
+      "is_partial": false,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Carlos_Tevez",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363219691,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2008,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2008,
+      "season_start_year": 2008,
+      "canonical_season": "2008–09",
+      "season_source_label": "2008–09",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united-loan",
+      "team_name": "Manchester United (loan)",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 29,
+      "goals": 5,
+      "is_partial": false,
+      "age": 24,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Carlos_Tevez",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363219691,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2009,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2009,
+      "season_start_year": 2009,
+      "canonical_season": "2009–10",
+      "season_source_label": "2009–10",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-city",
+      "team_name": "Manchester City",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 35,
+      "goals": 23,
+      "is_partial": false,
+      "age": 25,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Carlos_Tevez",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363219691,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2010,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2010,
+      "season_start_year": 2010,
+      "canonical_season": "2010–11",
+      "season_source_label": "2010–11",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-city",
+      "team_name": "Manchester City",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 31,
+      "goals": 20,
+      "is_partial": false,
+      "age": 26,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Carlos_Tevez",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363219691,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2011,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2011,
+      "season_start_year": 2011,
+      "canonical_season": "2011–12",
+      "season_source_label": "2011–12",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-city",
+      "team_name": "Manchester City",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 13,
+      "goals": 4,
+      "is_partial": false,
+      "age": 27,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Carlos_Tevez",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363219691,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2012,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2012,
+      "season_start_year": 2012,
+      "canonical_season": "2012–13",
+      "season_source_label": "2012–13",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-city",
+      "team_name": "Manchester City",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 34,
+      "goals": 11,
+      "is_partial": false,
+      "age": 28,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Carlos_Tevez",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363219691,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2013,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2013,
+      "season_start_year": 2013,
+      "canonical_season": "2013–14",
+      "season_source_label": "2013–14",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 34,
+      "goals": 19,
+      "is_partial": false,
+      "age": 29,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Carlos_Tevez",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363219691,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2014,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2014,
+      "season_start_year": 2014,
+      "canonical_season": "2014–15",
+      "season_source_label": "2014–15",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "juventus",
+      "team_name": "Juventus",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 32,
+      "goals": 20,
+      "is_partial": false,
+      "age": 30,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Carlos_Tevez",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363219691,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2015,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2017,
+      "season_start_year": 2017,
+      "canonical_season": "2017",
+      "season_source_label": "2017",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "shanghai-shenhua",
+      "team_name": "Shanghai Shenhua",
+      "league_id": "chinese-super-league",
+      "league_name": "Chinese Super League",
+      "appearances": 16,
+      "goals": 4,
+      "is_partial": false,
+      "age": 33,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Carlos_Tevez",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363219691,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2017,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [],
+  "career_status": "retired",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q50600 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": "2021"
+}

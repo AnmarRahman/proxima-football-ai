@@ -1,0 +1,656 @@
+{
+  "player_id": "nemanja-vidic",
+  "wikidata_id": "Q163564",
+  "name": "Nemanja Vidić",
+  "requested_name": "Nemanja Vidic",
+  "birth_date": "1981-10-21",
+  "nationality": "Serbia",
+  "primary_position": "centre-back",
+  "position_group": "CB",
+  "coarse_group": "DEF",
+  "roster_section": "Centre-backs (30)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "1981-10-21",
+    "nationality": "Serbia",
+    "occupation_footballer": true,
+    "position": "centre-back",
+    "sitelinks": 77,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+    "retrieved_at": "2026-08-02",
+    "revision": 1366114092,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 16,
+    "season_team_league_rows": 18,
+    "reserve_or_youth_years_dropped": [],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [],
+    "missing_middle_seasons": [],
+    "first_season": 2000,
+    "last_season": 2015,
+    "partial_seasons": [],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 18,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 2000,
+      "season_start_year": 2000,
+      "canonical_season": "2000–01",
+      "season_source_label": "2000–01",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "red-star-belgrade",
+      "team_name": "Red Star Belgrade",
+      "league_id": "first-league-of-fr-yugoslavia",
+      "league_name": "First League of FR Yugoslavia",
+      "appearances": 0,
+      "goals": 0,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2001,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2000,
+      "season_start_year": 2000,
+      "canonical_season": "2000–01",
+      "season_source_label": "2000–01",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "spartak-subotica-loan",
+      "team_name": "Spartak Subotica (loan)",
+      "league_id": "second-league-of-fr-yugoslavia",
+      "league_name": "Second League of FR Yugoslavia",
+      "appearances": 27,
+      "goals": 6,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2001,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2001,
+      "season_start_year": 2001,
+      "canonical_season": "2001–02",
+      "season_source_label": "2001–02",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "red-star-belgrade",
+      "team_name": "Red Star Belgrade",
+      "league_id": "first-league-of-fr-yugoslavia",
+      "league_name": "First League of FR Yugoslavia",
+      "appearances": 22,
+      "goals": 2,
+      "is_partial": false,
+      "age": 20,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2002,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2002,
+      "season_start_year": 2002,
+      "canonical_season": "2002–03",
+      "season_source_label": "2002–03",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "red-star-belgrade",
+      "team_name": "Red Star Belgrade",
+      "league_id": "first-league-of-serbia-and-montenegro",
+      "league_name": "First League of Serbia and Montenegro",
+      "appearances": 25,
+      "goals": 5,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2003,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2003,
+      "season_start_year": 2003,
+      "canonical_season": "2003–04",
+      "season_source_label": "2003–04",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "red-star-belgrade",
+      "team_name": "Red Star Belgrade",
+      "league_id": "first-league-of-serbia-and-montenegro",
+      "league_name": "First League of Serbia and Montenegro",
+      "appearances": 20,
+      "goals": 5,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2004,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2004,
+      "season_start_year": 2004,
+      "canonical_season": "2004",
+      "season_source_label": "2004",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "spartak-moscow",
+      "team_name": "Spartak Moscow",
+      "league_id": "russian-premier-league",
+      "league_name": "Russian Premier League",
+      "appearances": 12,
+      "goals": 2,
+      "is_partial": false,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2004,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2005,
+      "season_start_year": 2005,
+      "canonical_season": "2005",
+      "season_source_label": "2005",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "spartak-moscow",
+      "team_name": "Spartak Moscow",
+      "league_id": "russian-premier-league",
+      "league_name": "Russian Premier League",
+      "appearances": 27,
+      "goals": 2,
+      "is_partial": false,
+      "age": 24,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2005,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2005,
+      "season_start_year": 2005,
+      "canonical_season": "2005–06",
+      "season_source_label": "2005–06",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 11,
+      "goals": 0,
+      "is_partial": false,
+      "age": 24,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2006,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2006,
+      "season_start_year": 2006,
+      "canonical_season": "2006–07",
+      "season_source_label": "2006–07",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 25,
+      "goals": 3,
+      "is_partial": false,
+      "age": 25,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2007,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2007,
+      "season_start_year": 2007,
+      "canonical_season": "2007–08",
+      "season_source_label": "2007–08",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 32,
+      "goals": 1,
+      "is_partial": false,
+      "age": 26,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2008,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2008,
+      "season_start_year": 2008,
+      "canonical_season": "2008–09",
+      "season_source_label": "2008–09",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 34,
+      "goals": 4,
+      "is_partial": false,
+      "age": 27,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2009,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2009,
+      "season_start_year": 2009,
+      "canonical_season": "2009–10",
+      "season_source_label": "2009–10",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 24,
+      "goals": 1,
+      "is_partial": false,
+      "age": 28,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2010,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2010,
+      "season_start_year": 2010,
+      "canonical_season": "2010–11",
+      "season_source_label": "2010–11",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 35,
+      "goals": 5,
+      "is_partial": false,
+      "age": 29,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2011,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2011,
+      "season_start_year": 2011,
+      "canonical_season": "2011–12",
+      "season_source_label": "2011–12",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 6,
+      "goals": 0,
+      "is_partial": false,
+      "age": 30,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2012,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2012,
+      "season_start_year": 2012,
+      "canonical_season": "2012–13",
+      "season_source_label": "2012–13",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 22,
+      "goals": 1,
+      "is_partial": false,
+      "age": 31,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2013,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2013,
+      "season_start_year": 2013,
+      "canonical_season": "2013–14",
+      "season_source_label": "2013–14",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 25,
+      "goals": 0,
+      "is_partial": false,
+      "age": 32,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2014,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2014,
+      "season_start_year": 2014,
+      "canonical_season": "2014–15",
+      "season_source_label": "2014–15",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "inter-milan",
+      "team_name": "Inter Milan",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 23,
+      "goals": 1,
+      "is_partial": false,
+      "age": 33,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2015,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2015,
+      "season_start_year": 2015,
+      "canonical_season": "2015–16",
+      "season_source_label": "2015–16",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "inter-milan",
+      "team_name": "Inter Milan",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 0,
+      "goals": 0,
+      "is_partial": false,
+      "age": 34,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nemanja_Vidić",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366114092,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2016,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [],
+  "career_status": "retired",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q163564 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": "2016"
+}

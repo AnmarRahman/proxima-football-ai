@@ -1,0 +1,173 @@
+{
+  "batch": 6,
+  "attempted": 25,
+  "collected": 25,
+  "quarantined": 0,
+  "quarantine_fraction": 0.0,
+  "systemic_failure": false,
+  "warnings_total": 17,
+  "collected_players": [
+    {
+      "player_id": "david-beckham",
+      "name": "David Beckham",
+      "seasons": 21,
+      "warnings": 0
+    },
+    {
+      "player_id": "ryan-giggs",
+      "name": "Ryan Giggs",
+      "seasons": 24,
+      "warnings": 0
+    },
+    {
+      "player_id": "arda-turan",
+      "name": "Arda Turan",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "alexis-sanchez",
+      "name": "Alexis Sánchez",
+      "seasons": 21,
+      "warnings": 0
+    },
+    {
+      "player_id": "pedro-footballer-born-1987",
+      "name": "Pedro (footballer, born 1987)",
+      "seasons": 19,
+      "warnings": 0
+    },
+    {
+      "player_id": "raheem-sterling",
+      "name": "Raheem Sterling",
+      "seasons": 15,
+      "warnings": 0
+    },
+    {
+      "player_id": "leroy-sane",
+      "name": "Leroy Sané",
+      "seasons": 13,
+      "warnings": 0
+    },
+    {
+      "player_id": "kingsley-coman",
+      "name": "Kingsley Coman",
+      "seasons": 14,
+      "warnings": 0
+    },
+    {
+      "player_id": "ousmane-dembele",
+      "name": "Ousmane Dembélé",
+      "seasons": 11,
+      "warnings": 0
+    },
+    {
+      "player_id": "vinicius-junior",
+      "name": "Vinícius Júnior",
+      "seasons": 10,
+      "warnings": 1
+    },
+    {
+      "player_id": "bukayo-saka",
+      "name": "Bukayo Saka",
+      "seasons": 8,
+      "warnings": 0
+    },
+    {
+      "player_id": "khvicha-kvaratskhelia",
+      "name": "Khvicha Kvaratskhelia",
+      "seasons": 9,
+      "warnings": 0
+    },
+    {
+      "player_id": "rafael-leao",
+      "name": "Rafael Leão",
+      "seasons": 9,
+      "warnings": 0
+    },
+    {
+      "player_id": "rodrygo",
+      "name": "Rodrygo",
+      "seasons": 10,
+      "warnings": 1
+    },
+    {
+      "player_id": "juan-cuadrado",
+      "name": "Juan Cuadrado",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "erling-haaland",
+      "name": "Erling Haaland",
+      "seasons": 10,
+      "warnings": 2
+    },
+    {
+      "player_id": "harry-kane",
+      "name": "Harry Kane",
+      "seasons": 16,
+      "warnings": 2
+    },
+    {
+      "player_id": "karim-benzema",
+      "name": "Karim Benzema",
+      "seasons": 22,
+      "warnings": 0
+    },
+    {
+      "player_id": "luis-suarez",
+      "name": "Luis Suárez",
+      "seasons": 22,
+      "warnings": 3
+    },
+    {
+      "player_id": "sergio-aguero",
+      "name": "Sergio Agüero",
+      "seasons": 19,
+      "warnings": 1
+    },
+    {
+      "player_id": "zlatan-ibrahimovic",
+      "name": "Zlatan Ibrahimović",
+      "seasons": 24,
+      "warnings": 2
+    },
+    {
+      "player_id": "wayne-rooney",
+      "name": "Wayne Rooney",
+      "seasons": 19,
+      "warnings": 0
+    },
+    {
+      "player_id": "robert-lewandowski",
+      "name": "Robert Lewandowski",
+      "seasons": 22,
+      "warnings": 5
+    },
+    {
+      "player_id": "didier-drogba",
+      "name": "Didier Drogba",
+      "seasons": 21,
+      "warnings": 0
+    },
+    {
+      "player_id": "samuel-eto-o",
+      "name": "Samuel Eto'o",
+      "seasons": 22,
+      "warnings": 0
+    }
+  ],
+  "quarantined_players": [],
+  "requests": {
+    "wikipedia": {
+      "total": 25,
+      "cache_hit_rate": 1.0
+    },
+    "wikidata": {
+      "total": 68,
+      "cache_hit_rate": 1.0
+    }
+  },
+  "gate_ok": true
+}

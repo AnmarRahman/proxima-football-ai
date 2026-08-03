@@ -1,0 +1,458 @@
+{
+  "player_id": "khvicha-kvaratskhelia",
+  "wikidata_id": "Q61780902",
+  "name": "Khvicha Kvaratskhelia",
+  "requested_name": "Khvicha Kvaratskhelia",
+  "birth_date": "2001-02-12",
+  "nationality": "Georgia",
+  "primary_position": "forward",
+  "position_group": "WNG",
+  "coarse_group": "WIDE",
+  "roster_section": "Wingers and Inside Forwards (30)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "2001-02-12",
+    "nationality": "Georgia",
+    "occupation_footballer": true,
+    "position": "forward",
+    "sitelinks": 64,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Khvicha_Kvaratskhelia",
+    "retrieved_at": "2026-08-02",
+    "revision": 1367071524,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 9,
+    "season_team_league_rows": 12,
+    "reserve_or_youth_years_dropped": [],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [],
+    "missing_middle_seasons": [],
+    "first_season": 2017,
+    "last_season": 2025,
+    "partial_seasons": [],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 12,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 2017,
+      "season_start_year": 2017,
+      "canonical_season": "2017",
+      "season_source_label": "2017",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "dinamo-tbilisi",
+      "team_name": "Dinamo Tbilisi",
+      "league_id": "erovnuli-liga",
+      "league_name": "Erovnuli Liga",
+      "appearances": 4,
+      "goals": 1,
+      "is_partial": false,
+      "age": 16,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Khvicha_Kvaratskhelia",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367071524,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2017,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2018,
+      "season_start_year": 2018,
+      "canonical_season": "2018",
+      "season_source_label": "2018",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "rustavi",
+      "team_name": "Rustavi",
+      "league_id": "erovnuli-liga",
+      "league_name": "Erovnuli Liga",
+      "appearances": 18,
+      "goals": 3,
+      "is_partial": false,
+      "age": 17,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Khvicha_Kvaratskhelia",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367071524,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2018,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2018,
+      "season_start_year": 2018,
+      "canonical_season": "2018–19",
+      "season_source_label": "2018–19",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "lokomotiv-moscow-loan",
+      "team_name": "Lokomotiv Moscow (loan)",
+      "league_id": "russian-premier-league",
+      "league_name": "Russian Premier League",
+      "appearances": 7,
+      "goals": 1,
+      "is_partial": false,
+      "age": 17,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Khvicha_Kvaratskhelia",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367071524,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2019,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2019,
+      "season_start_year": 2019,
+      "canonical_season": "2019–20",
+      "season_source_label": "2019–20",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "rubin-kazan",
+      "team_name": "Rubin Kazan",
+      "league_id": "russian-premier-league",
+      "league_name": "Russian Premier League",
+      "appearances": 27,
+      "goals": 3,
+      "is_partial": false,
+      "age": 18,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Khvicha_Kvaratskhelia",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367071524,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2020,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2020,
+      "season_start_year": 2020,
+      "canonical_season": "2020–21",
+      "season_source_label": "2020–21",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "rubin-kazan",
+      "team_name": "Rubin Kazan",
+      "league_id": "russian-premier-league",
+      "league_name": "Russian Premier League",
+      "appearances": 23,
+      "goals": 4,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Khvicha_Kvaratskhelia",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367071524,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2021,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2021,
+      "season_start_year": 2021,
+      "canonical_season": "2021–22",
+      "season_source_label": "2021–22",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "rubin-kazan",
+      "team_name": "Rubin Kazan",
+      "league_id": "russian-premier-league",
+      "league_name": "Russian Premier League",
+      "appearances": 19,
+      "goals": 2,
+      "is_partial": false,
+      "age": 20,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Khvicha_Kvaratskhelia",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367071524,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2022,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2022,
+      "season_start_year": 2022,
+      "canonical_season": "2022",
+      "season_source_label": "2022",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "dinamo-batumi",
+      "team_name": "Dinamo Batumi",
+      "league_id": "erovnuli-liga",
+      "league_name": "Erovnuli Liga",
+      "appearances": 11,
+      "goals": 8,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Khvicha_Kvaratskhelia",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367071524,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2022,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2022,
+      "season_start_year": 2022,
+      "canonical_season": "2022–23",
+      "season_source_label": "2022–23",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "napoli",
+      "team_name": "Napoli",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 34,
+      "goals": 12,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Khvicha_Kvaratskhelia",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367071524,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2023,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2023,
+      "season_start_year": 2023,
+      "canonical_season": "2023–24",
+      "season_source_label": "2023–24",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "napoli",
+      "team_name": "Napoli",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 34,
+      "goals": 11,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Khvicha_Kvaratskhelia",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367071524,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2024,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2024,
+      "season_start_year": 2024,
+      "canonical_season": "2024–25",
+      "season_source_label": "2024–25",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "napoli",
+      "team_name": "Napoli",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 17,
+      "goals": 5,
+      "is_partial": false,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Khvicha_Kvaratskhelia",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367071524,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2025,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2024,
+      "season_start_year": 2024,
+      "canonical_season": "2024–25",
+      "season_source_label": "2024–25",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "paris-saint-germain",
+      "team_name": "Paris Saint-Germain",
+      "league_id": "ligue-1",
+      "league_name": "Ligue 1",
+      "appearances": 14,
+      "goals": 4,
+      "is_partial": false,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Khvicha_Kvaratskhelia",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367071524,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2025,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2025,
+      "season_start_year": 2025,
+      "canonical_season": "2025–26",
+      "season_source_label": "2025–26",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "paris-saint-germain",
+      "team_name": "Paris Saint-Germain",
+      "league_id": "ligue-1",
+      "league_name": "Ligue 1",
+      "appearances": 28,
+      "goals": 8,
+      "is_partial": false,
+      "age": 24,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Khvicha_Kvaratskhelia",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367071524,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2026,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [],
+  "career_status": "active",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q61780902 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": null
+}

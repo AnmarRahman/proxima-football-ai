@@ -1,0 +1,203 @@
+{
+  "player_id": "lahm",
+  "name": "Philipp Lahm",
+  "position_group": "FB",
+  "coarse_group": "DEF",
+  "active": false,
+  "era": "2000s-2010s",
+  "birth_year": 1983,
+  "birth_date": "1983-11-11",
+  "nationality": "Germany",
+  "career_position_label": "Right-back left-back midfielder",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+    "retrieved_at": "2026-08-02",
+    "supports": [
+      "appearances",
+      "goals",
+      "position",
+      "birth_date",
+      "nationality"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 15,
+    "reserve_or_youth_rows_dropped": 3,
+    "dropped_rows": [
+      {
+        "season": 2001,
+        "club": "Bayern Munich II",
+        "competition": null
+      },
+      {
+        "season": 2002,
+        "club": "Bayern Munich II",
+        "competition": null
+      },
+      {
+        "season": 2005,
+        "club": "Bayern Munich II",
+        "competition": null
+      }
+    ],
+    "first_season": 2002,
+    "last_season": 2016,
+    "tier": "A",
+    "tier_b_c_available": false
+  },
+  "seasons": [
+    {
+      "season": 2002,
+      "stat_scope": "domestic_league",
+      "appearances": 0,
+      "goals": 0,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": []
+    },
+    {
+      "season": 2003,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 1,
+      "clubs": [
+        "Stuttgart (loan)"
+      ],
+      "competitions": []
+    },
+    {
+      "season": 2004,
+      "stat_scope": "domestic_league",
+      "appearances": 22,
+      "goals": 1,
+      "clubs": [
+        "Stuttgart (loan)"
+      ],
+      "competitions": []
+    },
+    {
+      "season": 2005,
+      "stat_scope": "domestic_league",
+      "appearances": 20,
+      "goals": 0,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": []
+    },
+    {
+      "season": 2006,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 1,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": []
+    },
+    {
+      "season": 2007,
+      "stat_scope": "domestic_league",
+      "appearances": 22,
+      "goals": 0,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": []
+    },
+    {
+      "season": 2008,
+      "stat_scope": "domestic_league",
+      "appearances": 28,
+      "goals": 3,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": []
+    },
+    {
+      "season": 2009,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 0,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": []
+    },
+    {
+      "season": 2010,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 3,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": []
+    },
+    {
+      "season": 2011,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 0,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": []
+    },
+    {
+      "season": 2012,
+      "stat_scope": "domestic_league",
+      "appearances": 29,
+      "goals": 0,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": []
+    },
+    {
+      "season": 2013,
+      "stat_scope": "domestic_league",
+      "appearances": 28,
+      "goals": 1,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": []
+    },
+    {
+      "season": 2014,
+      "stat_scope": "domestic_league",
+      "appearances": 20,
+      "goals": 2,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": []
+    },
+    {
+      "season": 2015,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 1,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": []
+    },
+    {
+      "season": 2016,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 1,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": []
+    }
+  ]
+}

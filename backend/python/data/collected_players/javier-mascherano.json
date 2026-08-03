@@ -1,0 +1,788 @@
+{
+  "player_id": "javier-mascherano",
+  "wikidata_id": "Q161571",
+  "name": "Javier Mascherano",
+  "requested_name": "Javier Mascherano",
+  "birth_date": "1984-06-08",
+  "nationality": "Argentina",
+  "primary_position": "midfielder",
+  "position_group": "DM",
+  "coarse_group": "MID",
+  "roster_section": "Defensive Midfielders (25)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "1984-06-08",
+    "nationality": "Argentina",
+    "occupation_footballer": true,
+    "position": "midfielder",
+    "sitelinks": 74,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+    "retrieved_at": "2026-08-02",
+    "revision": 1367105753,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 18,
+    "season_team_league_rows": 22,
+    "reserve_or_youth_years_dropped": [],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [],
+    "missing_middle_seasons": [],
+    "first_season": 2003,
+    "last_season": 2020,
+    "partial_seasons": [],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 22,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 2003,
+      "season_start_year": 2003,
+      "canonical_season": "2003–04",
+      "season_source_label": "2003–04",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "river-plate",
+      "team_name": "River Plate",
+      "league_id": "primera-division",
+      "league_name": "Primera División",
+      "appearances": 21,
+      "goals": 0,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2004,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2004,
+      "season_start_year": 2004,
+      "canonical_season": "2004–05",
+      "season_source_label": "2004–05",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "river-plate",
+      "team_name": "River Plate",
+      "league_id": "primera-division",
+      "league_name": "Primera División",
+      "appearances": 25,
+      "goals": 0,
+      "is_partial": false,
+      "age": 20,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2005,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2005,
+      "season_start_year": 2005,
+      "canonical_season": "2005",
+      "season_source_label": "2005",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "corinthians",
+      "team_name": "Corinthians",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 7,
+      "goals": 0,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2005,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2006,
+      "season_start_year": 2006,
+      "canonical_season": "2006",
+      "season_source_label": "2006",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "corinthians",
+      "team_name": "Corinthians",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 10,
+      "goals": 0,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2006,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2006,
+      "season_start_year": 2006,
+      "canonical_season": "2006–07",
+      "season_source_label": "2006–07",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "liverpool",
+      "team_name": "Liverpool",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 7,
+      "goals": 0,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2007,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2006,
+      "season_start_year": 2006,
+      "canonical_season": "2006–07",
+      "season_source_label": "2006–07",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "west-ham-united",
+      "team_name": "West Ham United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 5,
+      "goals": 0,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2007,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2007,
+      "season_start_year": 2007,
+      "canonical_season": "2007–08",
+      "season_source_label": "2007–08",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "liverpool",
+      "team_name": "Liverpool",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 25,
+      "goals": 1,
+      "is_partial": false,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2008,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2008,
+      "season_start_year": 2008,
+      "canonical_season": "2008–09",
+      "season_source_label": "2008–09",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "liverpool",
+      "team_name": "Liverpool",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 27,
+      "goals": 0,
+      "is_partial": false,
+      "age": 24,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2009,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2009,
+      "season_start_year": 2009,
+      "canonical_season": "2009–10",
+      "season_source_label": "2009–10",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "liverpool",
+      "team_name": "Liverpool",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 34,
+      "goals": 0,
+      "is_partial": false,
+      "age": 25,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2010,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2010,
+      "season_start_year": 2010,
+      "canonical_season": "2010–11",
+      "season_source_label": "2010–11",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 27,
+      "goals": 0,
+      "is_partial": false,
+      "age": 26,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2011,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2010,
+      "season_start_year": 2010,
+      "canonical_season": "2010–11",
+      "season_source_label": "2010–11",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "liverpool",
+      "team_name": "Liverpool",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 1,
+      "goals": 0,
+      "is_partial": false,
+      "age": 26,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2011,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2011,
+      "season_start_year": 2011,
+      "canonical_season": "2011–12",
+      "season_source_label": "2011–12",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 31,
+      "goals": 0,
+      "is_partial": false,
+      "age": 27,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2012,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2012,
+      "season_start_year": 2012,
+      "canonical_season": "2012–13",
+      "season_source_label": "2012–13",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 25,
+      "goals": 0,
+      "is_partial": false,
+      "age": 28,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2013,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2013,
+      "season_start_year": 2013,
+      "canonical_season": "2013–14",
+      "season_source_label": "2013–14",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 28,
+      "goals": 0,
+      "is_partial": false,
+      "age": 29,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2014,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2014,
+      "season_start_year": 2014,
+      "canonical_season": "2014–15",
+      "season_source_label": "2014–15",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 28,
+      "goals": 0,
+      "is_partial": false,
+      "age": 30,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2015,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2015,
+      "season_start_year": 2015,
+      "canonical_season": "2015–16",
+      "season_source_label": "2015–16",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 32,
+      "goals": 0,
+      "is_partial": false,
+      "age": 31,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2016,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2016,
+      "season_start_year": 2016,
+      "canonical_season": "2016–17",
+      "season_source_label": "2016–17",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 25,
+      "goals": 1,
+      "is_partial": false,
+      "age": 32,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2017,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2017,
+      "season_start_year": 2017,
+      "canonical_season": "2017–18",
+      "season_source_label": "2017–18",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 7,
+      "goals": 0,
+      "is_partial": false,
+      "age": 33,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2018,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2018,
+      "season_start_year": 2018,
+      "canonical_season": "2018",
+      "season_source_label": "2018",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "hebei-china-fortune",
+      "team_name": "Hebei China Fortune",
+      "league_id": "chinese-super-league",
+      "league_name": "Chinese Super League",
+      "appearances": 26,
+      "goals": 0,
+      "is_partial": false,
+      "age": 34,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2018,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2019,
+      "season_start_year": 2019,
+      "canonical_season": "2019",
+      "season_source_label": "2019",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "hebei-china-fortune",
+      "team_name": "Hebei China Fortune",
+      "league_id": "chinese-super-league",
+      "league_name": "Chinese Super League",
+      "appearances": 27,
+      "goals": 0,
+      "is_partial": false,
+      "age": 35,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2019,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2019,
+      "season_start_year": 2019,
+      "canonical_season": "2019–20",
+      "season_source_label": "2019–20",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "estudiantes",
+      "team_name": "Estudiantes",
+      "league_id": "primera-division",
+      "league_name": "Primera División",
+      "appearances": 7,
+      "goals": 0,
+      "is_partial": false,
+      "age": 35,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2020,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2020,
+      "season_start_year": 2020,
+      "canonical_season": "2020–21",
+      "season_source_label": "2020–21",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "estudiantes",
+      "team_name": "Estudiantes",
+      "league_id": "primera-division",
+      "league_name": "Primera División",
+      "appearances": 3,
+      "goals": 0,
+      "is_partial": false,
+      "age": 36,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Javier_Mascherano",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367105753,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2021,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [],
+  "career_status": "retired",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q161571 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": "2020"
+}

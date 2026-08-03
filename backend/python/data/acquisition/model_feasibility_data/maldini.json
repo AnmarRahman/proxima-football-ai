@@ -1,0 +1,337 @@
+{
+  "player_id": "maldini",
+  "name": "Paolo Maldini",
+  "position_group": "CB",
+  "coarse_group": "DEF",
+  "active": false,
+  "era": "1980s-2000s (very long)",
+  "birth_year": 1968,
+  "birth_date": "1968-06-26",
+  "nationality": "Italy",
+  "career_position_label": "Left-back centre-back",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Paolo_Maldini",
+    "retrieved_at": "2026-08-02",
+    "supports": [
+      "appearances",
+      "goals",
+      "position",
+      "birth_date",
+      "nationality"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 25,
+    "reserve_or_youth_rows_dropped": 0,
+    "dropped_rows": [],
+    "first_season": 1984,
+    "last_season": 2008,
+    "tier": "A",
+    "tier_b_c_available": false
+  },
+  "seasons": [
+    {
+      "season": 1984,
+      "stat_scope": "domestic_league",
+      "appearances": 1,
+      "goals": 0,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1985,
+      "stat_scope": "domestic_league",
+      "appearances": 27,
+      "goals": 0,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1986,
+      "stat_scope": "domestic_league",
+      "appearances": 29,
+      "goals": 1,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1987,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 2,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1988,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 0,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1989,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 1,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1990,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 4,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1991,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 3,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1992,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 2,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1993,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 1,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1994,
+      "stat_scope": "domestic_league",
+      "appearances": 29,
+      "goals": 2,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1995,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 3,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1996,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 1,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1997,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 0,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1998,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 1,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1999,
+      "stat_scope": "domestic_league",
+      "appearances": 27,
+      "goals": 1,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2000,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 1,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2001,
+      "stat_scope": "domestic_league",
+      "appearances": 15,
+      "goals": 0,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2002,
+      "stat_scope": "domestic_league",
+      "appearances": 29,
+      "goals": 2,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2003,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 0,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2004,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 0,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2005,
+      "stat_scope": "domestic_league",
+      "appearances": 14,
+      "goals": 2,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2006,
+      "stat_scope": "domestic_league",
+      "appearances": 18,
+      "goals": 1,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2007,
+      "stat_scope": "domestic_league",
+      "appearances": 17,
+      "goals": 1,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2008,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 0,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    }
+  ]
+}

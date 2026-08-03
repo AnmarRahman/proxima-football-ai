@@ -1,0 +1,173 @@
+{
+  "batch": 7,
+  "attempted": 25,
+  "collected": 25,
+  "quarantined": 0,
+  "quarantine_fraction": 0.0,
+  "systemic_failure": false,
+  "warnings_total": 8,
+  "collected_players": [
+    {
+      "player_id": "thierry-henry",
+      "name": "Thierry Henry",
+      "seasons": 21,
+      "warnings": 0
+    },
+    {
+      "player_id": "ronaldo-brazilian-footballer",
+      "name": "Ronaldo (Brazilian footballer)",
+      "seasons": 17,
+      "warnings": 1
+    },
+    {
+      "player_id": "ruud-van-nistelrooy",
+      "name": "Ruud van Nistelrooy",
+      "seasons": 19,
+      "warnings": 1
+    },
+    {
+      "player_id": "fernando-torres",
+      "name": "Fernando Torres",
+      "seasons": 20,
+      "warnings": 0
+    },
+    {
+      "player_id": "david-villa",
+      "name": "David Villa",
+      "seasons": 20,
+      "warnings": 0
+    },
+    {
+      "player_id": "edinson-cavani",
+      "name": "Edinson Cavani",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "gonzalo-higuain",
+      "name": "Gonzalo Higuaín",
+      "seasons": 19,
+      "warnings": 1
+    },
+    {
+      "player_id": "radamel-falcao",
+      "name": "Radamel Falcao",
+      "seasons": 22,
+      "warnings": 1
+    },
+    {
+      "player_id": "robin-van-persie",
+      "name": "Robin van Persie",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "carlos-tevez",
+      "name": "Carlos Tevez",
+      "seasons": 11,
+      "warnings": 0
+    },
+    {
+      "player_id": "miroslav-klose",
+      "name": "Miroslav Klose",
+      "seasons": 17,
+      "warnings": 0
+    },
+    {
+      "player_id": "mario-gomez",
+      "name": "Mario Gómez",
+      "seasons": 17,
+      "warnings": 0
+    },
+    {
+      "player_id": "diego-costa",
+      "name": "Diego Costa",
+      "seasons": 19,
+      "warnings": 0
+    },
+    {
+      "player_id": "romelu-lukaku",
+      "name": "Romelu Lukaku",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "pierre-emerick-aubameyang",
+      "name": "Pierre-Emerick Aubameyang",
+      "seasons": 20,
+      "warnings": 1
+    },
+    {
+      "player_id": "jamie-vardy",
+      "name": "Jamie Vardy",
+      "seasons": 21,
+      "warnings": 0
+    },
+    {
+      "player_id": "lautaro-martinez",
+      "name": "Lautaro Martínez",
+      "seasons": 11,
+      "warnings": 0
+    },
+    {
+      "player_id": "victor-osimhen",
+      "name": "Victor Osimhen",
+      "seasons": 10,
+      "warnings": 0
+    },
+    {
+      "player_id": "alexander-isak",
+      "name": "Alexander Isak",
+      "seasons": 10,
+      "warnings": 0
+    },
+    {
+      "player_id": "julian-alvarez",
+      "name": "Julián Alvarez",
+      "seasons": 8,
+      "warnings": 0
+    },
+    {
+      "player_id": "antoine-griezmann",
+      "name": "Antoine Griezmann",
+      "seasons": 18,
+      "warnings": 1
+    },
+    {
+      "player_id": "marco-reus",
+      "name": "Marco Reus",
+      "seasons": 19,
+      "warnings": 1
+    },
+    {
+      "player_id": "thomas-muller",
+      "name": "Thomas Müller",
+      "seasons": 19,
+      "warnings": 1
+    },
+    {
+      "player_id": "kaka",
+      "name": "Kaká",
+      "seasons": 17,
+      "warnings": 0
+    },
+    {
+      "player_id": "mesut-ozil",
+      "name": "Mesut Özil",
+      "seasons": 17,
+      "warnings": 0
+    }
+  ],
+  "quarantined_players": [],
+  "requests": {
+    "wikipedia": {
+      "total": 25,
+      "cache_hit_rate": 1.0
+    },
+    "wikidata": {
+      "total": 66,
+      "cache_hit_rate": 1.0
+    }
+  },
+  "gate_ok": true
+}

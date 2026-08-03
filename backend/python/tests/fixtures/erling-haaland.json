@@ -1,0 +1,121 @@
+{
+  "player_id": "erling-haaland",
+  "primary_position": "forward",
+  "position_group": "FW",
+  "coarse_group": "FWD",
+  "career_status": "active",
+  "birth_date": "2000-07-21",
+  "stat_scope": "domestic_league",
+  "seasons": [
+    {
+      "canonical_season": "2016",
+      "season_start_year": 2016,
+      "season_end_year": 2016,
+      "season_format": "calendar_year",
+      "appearances": 16,
+      "goals": 0,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2017",
+      "season_start_year": 2017,
+      "season_end_year": 2017,
+      "season_format": "calendar_year",
+      "appearances": 14,
+      "goals": 2,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2018",
+      "season_start_year": 2018,
+      "season_end_year": 2018,
+      "season_format": "calendar_year",
+      "appearances": 25,
+      "goals": 12,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2018–19",
+      "season_start_year": 2018,
+      "season_end_year": 2019,
+      "season_format": "split_year",
+      "appearances": 2,
+      "goals": 1,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2019–20",
+      "season_start_year": 2019,
+      "season_end_year": 2020,
+      "season_format": "split_year",
+      "appearances": 29,
+      "goals": 29,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2020–21",
+      "season_start_year": 2020,
+      "season_end_year": 2021,
+      "season_format": "split_year",
+      "appearances": 28,
+      "goals": 27,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2021–22",
+      "season_start_year": 2021,
+      "season_end_year": 2022,
+      "season_format": "split_year",
+      "appearances": 24,
+      "goals": 22,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2022–23",
+      "season_start_year": 2022,
+      "season_end_year": 2023,
+      "season_format": "split_year",
+      "appearances": 35,
+      "goals": 36,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2023–24",
+      "season_start_year": 2023,
+      "season_end_year": 2024,
+      "season_format": "split_year",
+      "appearances": 31,
+      "goals": 27,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2024–25",
+      "season_start_year": 2024,
+      "season_end_year": 2025,
+      "season_format": "split_year",
+      "appearances": 31,
+      "goals": 22,
+      "is_partial": false,
+      "model_eligible": true
+    },
+    {
+      "canonical_season": "2025–26",
+      "season_start_year": 2025,
+      "season_end_year": 2026,
+      "season_format": "split_year",
+      "appearances": 35,
+      "goals": 27,
+      "is_partial": false,
+      "model_eligible": true
+    }
+  ]
+}

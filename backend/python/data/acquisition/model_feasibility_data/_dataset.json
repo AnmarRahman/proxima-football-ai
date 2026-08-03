@@ -1,0 +1,5703 @@
+[
+  {
+    "player_id": "haaland",
+    "name": "Erling Haaland",
+    "position_group": "FW",
+    "coarse_group": "FWD",
+    "active": true,
+    "era": "2010s-2020s",
+    "birth_year": 2000,
+    "birth_date": "2000-07-21",
+    "nationality": "Norway",
+    "career_position_label": "Striker",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Erling_Haaland",
+      "retrieved_at": "2026-07-27",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 10,
+      "reserve_or_youth_rows_dropped": 3,
+      "dropped_rows": [
+        {
+          "season": 2015,
+          "club": "Bryne 2",
+          "competition": "3. divisjon"
+        },
+        {
+          "season": 2016,
+          "club": "Bryne 2",
+          "competition": "3. divisjon"
+        },
+        {
+          "season": 2017,
+          "club": "Molde 2",
+          "competition": "3. divisjon"
+        }
+      ],
+      "first_season": 2016,
+      "last_season": 2025,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 2016,
+        "stat_scope": "domestic_league",
+        "appearances": 16,
+        "goals": 0,
+        "clubs": [
+          "Bryne"
+        ],
+        "competitions": [
+          "1. divisjon"
+        ]
+      },
+      {
+        "season": 2017,
+        "stat_scope": "domestic_league",
+        "appearances": 14,
+        "goals": 2,
+        "clubs": [
+          "Molde"
+        ],
+        "competitions": [
+          "Eliteserien"
+        ]
+      },
+      {
+        "season": 2018,
+        "stat_scope": "domestic_league",
+        "appearances": 27,
+        "goals": 13,
+        "clubs": [
+          "Molde",
+          "Red Bull Salzburg"
+        ],
+        "competitions": [
+          "Eliteserien",
+          "Austrian Bundesliga"
+        ]
+      },
+      {
+        "season": 2019,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 29,
+        "clubs": [
+          "Red Bull Salzburg",
+          "Borussia Dortmund"
+        ],
+        "competitions": [
+          "Austrian Bundesliga",
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2020,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 27,
+        "clubs": [
+          "Borussia Dortmund"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2021,
+        "stat_scope": "domestic_league",
+        "appearances": 24,
+        "goals": 22,
+        "clubs": [
+          "Borussia Dortmund"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2022,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 36,
+        "clubs": [
+          "Manchester City"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2023,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 27,
+        "clubs": [
+          "Manchester City"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2024,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 22,
+        "clubs": [
+          "Manchester City"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2025,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 27,
+        "clubs": [
+          "Manchester City"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "ibrahimovic",
+    "name": "Zlatan Ibrahimovic",
+    "position_group": "FW",
+    "coarse_group": "FWD",
+    "active": false,
+    "era": "2000s-2020s",
+    "birth_year": 1981,
+    "birth_date": "1981-10-03",
+    "nationality": "Sweden",
+    "career_position_label": "Striker",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zlatan_Ibrahimović",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 24,
+      "reserve_or_youth_rows_dropped": 0,
+      "dropped_rows": [],
+      "first_season": 1999,
+      "last_season": 2022,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 1999,
+        "stat_scope": "domestic_league",
+        "appearances": 6,
+        "goals": 1,
+        "clubs": [
+          "Malmö FF"
+        ],
+        "competitions": [
+          "Allsvenskan"
+        ]
+      },
+      {
+        "season": 2000,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 12,
+        "clubs": [
+          "Malmö FF"
+        ],
+        "competitions": [
+          "Superettan"
+        ]
+      },
+      {
+        "season": 2001,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 9,
+        "clubs": [
+          "Malmö FF",
+          "Ajax"
+        ],
+        "competitions": [
+          "Allsvenskan",
+          "Eredivisie"
+        ]
+      },
+      {
+        "season": 2002,
+        "stat_scope": "domestic_league",
+        "appearances": 25,
+        "goals": 13,
+        "clubs": [
+          "Ajax"
+        ],
+        "competitions": [
+          "Eredivisie"
+        ]
+      },
+      {
+        "season": 2003,
+        "stat_scope": "domestic_league",
+        "appearances": 22,
+        "goals": 13,
+        "clubs": [
+          "Ajax"
+        ],
+        "competitions": [
+          "Eredivisie"
+        ]
+      },
+      {
+        "season": 2004,
+        "stat_scope": "domestic_league",
+        "appearances": 38,
+        "goals": 19,
+        "clubs": [
+          "Ajax",
+          "Juventus"
+        ],
+        "competitions": [
+          "Eredivisie",
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2005,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 7,
+        "clubs": [
+          "Juventus"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2006,
+        "stat_scope": "domestic_league",
+        "appearances": 27,
+        "goals": 15,
+        "clubs": [
+          "Inter Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2007,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 17,
+        "clubs": [
+          "Inter Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 25,
+        "clubs": [
+          "Inter Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2009,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 16,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 14,
+        "clubs": [
+          "AC Milan (loan)"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 28,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 30,
+        "clubs": [
+          "Paris Saint-Germain"
+        ],
+        "competitions": [
+          "Ligue 1"
+        ]
+      },
+      {
+        "season": 2013,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 26,
+        "clubs": [
+          "Paris Saint-Germain"
+        ],
+        "competitions": [
+          "Ligue 1"
+        ]
+      },
+      {
+        "season": 2014,
+        "stat_scope": "domestic_league",
+        "appearances": 24,
+        "goals": 19,
+        "clubs": [
+          "Paris Saint-Germain"
+        ],
+        "competitions": [
+          "Ligue 1"
+        ]
+      },
+      {
+        "season": 2015,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 38,
+        "clubs": [
+          "Paris Saint-Germain"
+        ],
+        "competitions": [
+          "Ligue 1"
+        ]
+      },
+      {
+        "season": 2016,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 17,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2017,
+        "stat_scope": "domestic_league",
+        "appearances": 5,
+        "goals": 0,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2018,
+        "stat_scope": "domestic_league",
+        "appearances": 27,
+        "goals": 22,
+        "clubs": [
+          "LA Galaxy"
+        ],
+        "competitions": [
+          "Major League Soccer"
+        ]
+      },
+      {
+        "season": 2019,
+        "stat_scope": "domestic_league",
+        "appearances": 47,
+        "goals": 40,
+        "clubs": [
+          "LA Galaxy",
+          "AC Milan"
+        ],
+        "competitions": [
+          "Major League Soccer",
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2020,
+        "stat_scope": "domestic_league",
+        "appearances": 19,
+        "goals": 15,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2021,
+        "stat_scope": "domestic_league",
+        "appearances": 23,
+        "goals": 8,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2022,
+        "stat_scope": "domestic_league",
+        "appearances": 4,
+        "goals": 1,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "henry",
+    "name": "Thierry Henry",
+    "position_group": "FW",
+    "coarse_group": "FWD",
+    "active": false,
+    "era": "1990s-2010s",
+    "birth_year": 1977,
+    "birth_date": "1977-08-17",
+    "nationality": "France",
+    "career_position_label": "Forward",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Thierry_Henry",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 21,
+      "reserve_or_youth_rows_dropped": 1,
+      "dropped_rows": [
+        {
+          "season": 1994,
+          "club": "Monaco B",
+          "competition": "CFA"
+        }
+      ],
+      "first_season": 1994,
+      "last_season": 2014,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 1994,
+        "stat_scope": "domestic_league",
+        "appearances": 8,
+        "goals": 3,
+        "clubs": [
+          "Monaco"
+        ],
+        "competitions": [
+          "Division 1"
+        ]
+      },
+      {
+        "season": 1995,
+        "stat_scope": "domestic_league",
+        "appearances": 18,
+        "goals": 3,
+        "clubs": [
+          "Monaco"
+        ],
+        "competitions": [
+          "Division 1"
+        ]
+      },
+      {
+        "season": 1996,
+        "stat_scope": "domestic_league",
+        "appearances": 36,
+        "goals": 9,
+        "clubs": [
+          "Monaco"
+        ],
+        "competitions": [
+          "Division 1"
+        ]
+      },
+      {
+        "season": 1997,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 4,
+        "clubs": [
+          "Monaco"
+        ],
+        "competitions": [
+          "Division 1"
+        ]
+      },
+      {
+        "season": 1998,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 4,
+        "clubs": [
+          "Monaco",
+          "Juventus"
+        ],
+        "competitions": [
+          "Division 1",
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1999,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 17,
+        "clubs": [
+          "Juventus",
+          "Arsenal"
+        ],
+        "competitions": [
+          "Serie A",
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2000,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 17,
+        "clubs": [
+          "Arsenal"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2001,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 24,
+        "clubs": [
+          "Arsenal"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2002,
+        "stat_scope": "domestic_league",
+        "appearances": 37,
+        "goals": 24,
+        "clubs": [
+          "Arsenal"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2003,
+        "stat_scope": "domestic_league",
+        "appearances": 37,
+        "goals": 30,
+        "clubs": [
+          "Arsenal"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2004,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 25,
+        "clubs": [
+          "Arsenal"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2005,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 27,
+        "clubs": [
+          "Arsenal"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2006,
+        "stat_scope": "domestic_league",
+        "appearances": 17,
+        "goals": 10,
+        "clubs": [
+          "Arsenal"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2007,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 12,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 19,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2009,
+        "stat_scope": "domestic_league",
+        "appearances": 21,
+        "goals": 4,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 11,
+        "goals": 2,
+        "clubs": [
+          "New York Red Bulls"
+        ],
+        "competitions": [
+          "Major League Soccer"
+        ]
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 15,
+        "clubs": [
+          "New York Red Bulls",
+          "Arsenal (loan)"
+        ],
+        "competitions": [
+          "Major League Soccer",
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 25,
+        "goals": 15,
+        "clubs": [
+          "New York Red Bulls"
+        ],
+        "competitions": [
+          "Major League Soccer"
+        ]
+      },
+      {
+        "season": 2013,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 10,
+        "clubs": [
+          "New York Red Bulls"
+        ],
+        "competitions": [
+          "Major League Soccer"
+        ]
+      },
+      {
+        "season": 2014,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 10,
+        "clubs": [
+          "New York Red Bulls"
+        ],
+        "competitions": [
+          "Major League Soccer"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "van-basten",
+    "name": "Marco van Basten",
+    "position_group": "FW",
+    "coarse_group": "FWD",
+    "active": false,
+    "era": "1980s-1990s (early retirement)",
+    "birth_year": 1964,
+    "birth_date": "1964-10-31",
+    "nationality": "Kingdom of the Netherlands",
+    "career_position_label": "Striker",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Marco_van_Basten",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 14,
+      "reserve_or_youth_rows_dropped": 0,
+      "dropped_rows": [],
+      "first_season": 1981,
+      "last_season": 1994,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 1981,
+        "stat_scope": "domestic_league",
+        "appearances": 1,
+        "goals": 1,
+        "clubs": [
+          "Ajax"
+        ],
+        "competitions": [
+          "Eredivisie"
+        ]
+      },
+      {
+        "season": 1982,
+        "stat_scope": "domestic_league",
+        "appearances": 20,
+        "goals": 9,
+        "clubs": [
+          "Ajax"
+        ],
+        "competitions": [
+          "Eredivisie"
+        ]
+      },
+      {
+        "season": 1983,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 28,
+        "clubs": [
+          "Ajax"
+        ],
+        "competitions": [
+          "Eredivisie"
+        ]
+      },
+      {
+        "season": 1984,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 22,
+        "clubs": [
+          "Ajax"
+        ],
+        "competitions": [
+          "Eredivisie"
+        ]
+      },
+      {
+        "season": 1985,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 37,
+        "clubs": [
+          "Ajax"
+        ],
+        "competitions": [
+          "Eredivisie"
+        ]
+      },
+      {
+        "season": 1986,
+        "stat_scope": "domestic_league",
+        "appearances": 27,
+        "goals": 31,
+        "clubs": [
+          "Ajax"
+        ],
+        "competitions": [
+          "Eredivisie"
+        ]
+      },
+      {
+        "season": 1987,
+        "stat_scope": "domestic_league",
+        "appearances": 11,
+        "goals": 3,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1988,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 19,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1989,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 19,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1990,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 11,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1991,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 25,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1992,
+        "stat_scope": "domestic_league",
+        "appearances": 15,
+        "goals": 13,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1993,
+        "stat_scope": "domestic_league",
+        "appearances": 0,
+        "goals": 0,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1994,
+        "stat_scope": "domestic_league",
+        "appearances": 0,
+        "goals": 0,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "ronaldo",
+    "name": "Cristiano Ronaldo",
+    "position_group": "WNG",
+    "coarse_group": "WIDE",
+    "active": true,
+    "era": "2000s-2020s",
+    "birth_year": 1985,
+    "birth_date": "1985-02-05",
+    "nationality": "Portugal",
+    "career_position_label": "Forward",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 24,
+      "reserve_or_youth_rows_dropped": 1,
+      "dropped_rows": [
+        {
+          "season": 2002,
+          "club": "Sporting CP B",
+          "competition": "Segunda Divisão B"
+        }
+      ],
+      "first_season": 2002,
+      "last_season": 2025,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 2002,
+        "stat_scope": "domestic_league",
+        "appearances": 25,
+        "goals": 3,
+        "clubs": [
+          "Sporting CP"
+        ],
+        "competitions": [
+          "Primeira Liga"
+        ]
+      },
+      {
+        "season": 2003,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 4,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2004,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 5,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2005,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 9,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2006,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 17,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2007,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 31,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 18,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2009,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 26,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 40,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 38,
+        "goals": 46,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 34,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2013,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 31,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2014,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 48,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2015,
+        "stat_scope": "domestic_league",
+        "appearances": 36,
+        "goals": 35,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2016,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 25,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2017,
+        "stat_scope": "domestic_league",
+        "appearances": 27,
+        "goals": 26,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2018,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 21,
+        "clubs": [
+          "Juventus"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2019,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 31,
+        "clubs": [
+          "Juventus"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2020,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 29,
+        "clubs": [
+          "Juventus"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2021,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 18,
+        "clubs": [
+          "Juventus",
+          "Manchester United"
+        ],
+        "competitions": [
+          "Serie A",
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2022,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 15,
+        "clubs": [
+          "Manchester United",
+          "Al-Nassr"
+        ],
+        "competitions": [
+          "Premier League",
+          "Saudi Pro League"
+        ]
+      },
+      {
+        "season": 2023,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 35,
+        "clubs": [
+          "Al-Nassr"
+        ],
+        "competitions": [
+          "Saudi Pro League"
+        ]
+      },
+      {
+        "season": 2024,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 25,
+        "clubs": [
+          "Al-Nassr"
+        ],
+        "competitions": [
+          "Saudi Pro League"
+        ]
+      },
+      {
+        "season": 2025,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 28,
+        "clubs": [
+          "Al-Nassr"
+        ],
+        "competitions": [
+          "Saudi Pro League"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "robben",
+    "name": "Arjen Robben",
+    "position_group": "WNG",
+    "coarse_group": "WIDE",
+    "active": false,
+    "era": "2000s-2010s",
+    "birth_year": 1984,
+    "birth_date": "1984-01-23",
+    "nationality": "Kingdom of the Netherlands",
+    "career_position_label": "Right winger",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Arjen_Robben",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 20,
+      "reserve_or_youth_rows_dropped": 0,
+      "dropped_rows": [],
+      "first_season": 2000,
+      "last_season": 2020,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 2000,
+        "stat_scope": "domestic_league",
+        "appearances": 18,
+        "goals": 2,
+        "clubs": [
+          "Groningen"
+        ],
+        "competitions": [
+          "Eredivisie"
+        ]
+      },
+      {
+        "season": 2001,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 6,
+        "clubs": [
+          "Groningen"
+        ],
+        "competitions": [
+          "Eredivisie"
+        ]
+      },
+      {
+        "season": 2002,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 12,
+        "clubs": [
+          "PSV"
+        ],
+        "competitions": [
+          "Eredivisie"
+        ]
+      },
+      {
+        "season": 2003,
+        "stat_scope": "domestic_league",
+        "appearances": 23,
+        "goals": 5,
+        "clubs": [
+          "PSV"
+        ],
+        "competitions": [
+          "Eredivisie"
+        ]
+      },
+      {
+        "season": 2004,
+        "stat_scope": "domestic_league",
+        "appearances": 18,
+        "goals": 7,
+        "clubs": [
+          "Chelsea"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2005,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 6,
+        "clubs": [
+          "Chelsea"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2006,
+        "stat_scope": "domestic_league",
+        "appearances": 21,
+        "goals": 2,
+        "clubs": [
+          "Chelsea"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2007,
+        "stat_scope": "domestic_league",
+        "appearances": 21,
+        "goals": 4,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 7,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2009,
+        "stat_scope": "domestic_league",
+        "appearances": 24,
+        "goals": 16,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 14,
+        "goals": 12,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 24,
+        "goals": 12,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 16,
+        "goals": 5,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2013,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 11,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2014,
+        "stat_scope": "domestic_league",
+        "appearances": 21,
+        "goals": 17,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2015,
+        "stat_scope": "domestic_league",
+        "appearances": 15,
+        "goals": 4,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2016,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 13,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2017,
+        "stat_scope": "domestic_league",
+        "appearances": 21,
+        "goals": 5,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2018,
+        "stat_scope": "domestic_league",
+        "appearances": 12,
+        "goals": 4,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2020,
+        "stat_scope": "domestic_league",
+        "appearances": 6,
+        "goals": 0,
+        "clubs": [
+          "Groningen"
+        ],
+        "competitions": [
+          "Eredivisie"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "ribery",
+    "name": "Franck Ribery",
+    "position_group": "WNG",
+    "coarse_group": "WIDE",
+    "active": false,
+    "era": "2000s-2020s",
+    "birth_year": 1983,
+    "birth_date": "1983-04-07",
+    "nationality": "France",
+    "career_position_label": "Winger",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Franck_Ribéry",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 23,
+      "reserve_or_youth_rows_dropped": 0,
+      "dropped_rows": [],
+      "first_season": 2000,
+      "last_season": 2022,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 2000,
+        "stat_scope": "domestic_league",
+        "appearances": 4,
+        "goals": 1,
+        "clubs": [
+          "Boulogne"
+        ],
+        "competitions": [
+          "CFA"
+        ]
+      },
+      {
+        "season": 2001,
+        "stat_scope": "domestic_league",
+        "appearances": 24,
+        "goals": 5,
+        "clubs": [
+          "Boulogne"
+        ],
+        "competitions": [
+          "Championnat National"
+        ]
+      },
+      {
+        "season": 2002,
+        "stat_scope": "domestic_league",
+        "appearances": 19,
+        "goals": 1,
+        "clubs": [
+          "Alès"
+        ],
+        "competitions": [
+          "Championnat National"
+        ]
+      },
+      {
+        "season": 2003,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 3,
+        "clubs": [
+          "Brest"
+        ],
+        "competitions": [
+          "Championnat National"
+        ]
+      },
+      {
+        "season": 2004,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 2,
+        "clubs": [
+          "Metz",
+          "Galatasaray"
+        ],
+        "competitions": [
+          "Ligue 1",
+          "Süper Lig"
+        ]
+      },
+      {
+        "season": 2005,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 6,
+        "clubs": [
+          "Marseille"
+        ],
+        "competitions": [
+          "Ligue 1"
+        ]
+      },
+      {
+        "season": 2006,
+        "stat_scope": "domestic_league",
+        "appearances": 25,
+        "goals": 5,
+        "clubs": [
+          "Marseille"
+        ],
+        "competitions": [
+          "Ligue 1"
+        ]
+      },
+      {
+        "season": 2007,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 11,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 25,
+        "goals": 9,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2009,
+        "stat_scope": "domestic_league",
+        "appearances": 19,
+        "goals": 4,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 25,
+        "goals": 7,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 12,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 27,
+        "goals": 10,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2013,
+        "stat_scope": "domestic_league",
+        "appearances": 22,
+        "goals": 10,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2014,
+        "stat_scope": "domestic_league",
+        "appearances": 15,
+        "goals": 5,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2015,
+        "stat_scope": "domestic_league",
+        "appearances": 13,
+        "goals": 2,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2016,
+        "stat_scope": "domestic_league",
+        "appearances": 22,
+        "goals": 5,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2017,
+        "stat_scope": "domestic_league",
+        "appearances": 20,
+        "goals": 5,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2018,
+        "stat_scope": "domestic_league",
+        "appearances": 25,
+        "goals": 6,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": [
+          "Bundesliga"
+        ]
+      },
+      {
+        "season": 2019,
+        "stat_scope": "domestic_league",
+        "appearances": 21,
+        "goals": 3,
+        "clubs": [
+          "Fiorentina"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2020,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 2,
+        "clubs": [
+          "Fiorentina"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2021,
+        "stat_scope": "domestic_league",
+        "appearances": 23,
+        "goals": 0,
+        "clubs": [
+          "Salernitana"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2022,
+        "stat_scope": "domestic_league",
+        "appearances": 1,
+        "goals": 0,
+        "clubs": [
+          "Salernitana"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "beckham",
+    "name": "David Beckham",
+    "position_group": "WNG",
+    "coarse_group": "WIDE",
+    "active": false,
+    "era": "1990s-2010s (low scorer)",
+    "birth_year": 1975,
+    "birth_date": "1975-05-02",
+    "nationality": "United Kingdom",
+    "career_position_label": "Midfielder",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/David_Beckham",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 21,
+      "reserve_or_youth_rows_dropped": 0,
+      "dropped_rows": [],
+      "first_season": 1992,
+      "last_season": 2012,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 1992,
+        "stat_scope": "domestic_league",
+        "appearances": 0,
+        "goals": 0,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 1993,
+        "stat_scope": "domestic_league",
+        "appearances": 0,
+        "goals": 0,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 1994,
+        "stat_scope": "domestic_league",
+        "appearances": 9,
+        "goals": 2,
+        "clubs": [
+          "Manchester United",
+          "Preston North End (loan)"
+        ],
+        "competitions": [
+          "Premier League",
+          "Third Division"
+        ]
+      },
+      {
+        "season": 1995,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 7,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 1996,
+        "stat_scope": "domestic_league",
+        "appearances": 36,
+        "goals": 8,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 1997,
+        "stat_scope": "domestic_league",
+        "appearances": 37,
+        "goals": 9,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 1998,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 6,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 1999,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 6,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2000,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 9,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2001,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 11,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2002,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 6,
+        "clubs": [
+          "Manchester United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2003,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 3,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2004,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 4,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2005,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 3,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2006,
+        "stat_scope": "domestic_league",
+        "appearances": 23,
+        "goals": 3,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2007,
+        "stat_scope": "domestic_league",
+        "appearances": 5,
+        "goals": 0,
+        "clubs": [
+          "LA Galaxy"
+        ],
+        "competitions": [
+          "Major League Soccer"
+        ]
+      },
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 43,
+        "goals": 7,
+        "clubs": [
+          "LA Galaxy",
+          "AC Milan (loan)"
+        ],
+        "competitions": [
+          "Major League Soccer",
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2009,
+        "stat_scope": "domestic_league",
+        "appearances": 22,
+        "goals": 2,
+        "clubs": [
+          "LA Galaxy",
+          "AC Milan (loan)"
+        ],
+        "competitions": [
+          "Major League Soccer",
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 7,
+        "goals": 2,
+        "clubs": [
+          "LA Galaxy"
+        ],
+        "competitions": [
+          "Major League Soccer"
+        ]
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 2,
+        "clubs": [
+          "LA Galaxy"
+        ],
+        "competitions": [
+          "Major League Soccer"
+        ]
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 7,
+        "clubs": [
+          "LA Galaxy",
+          "Paris Saint-Germain"
+        ],
+        "competitions": [
+          "Major League Soccer",
+          "Ligue 1"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "kaka",
+    "name": "Kaka",
+    "position_group": "AM",
+    "coarse_group": "MID",
+    "active": false,
+    "era": "2000s-2010s",
+    "birth_year": 1982,
+    "birth_date": "1982-04-22",
+    "nationality": "Brazil",
+    "career_position_label": "Attacking midfielder",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kaká",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 17,
+      "reserve_or_youth_rows_dropped": 0,
+      "dropped_rows": [],
+      "first_season": 2001,
+      "last_season": 2017,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 2001,
+        "stat_scope": "domestic_league",
+        "appearances": 27,
+        "goals": 12,
+        "clubs": [
+          "São Paulo"
+        ],
+        "competitions": [
+          "Série A"
+        ]
+      },
+      {
+        "season": 2002,
+        "stat_scope": "domestic_league",
+        "appearances": 22,
+        "goals": 9,
+        "clubs": [
+          "São Paulo"
+        ],
+        "competitions": [
+          "Série A"
+        ]
+      },
+      {
+        "season": 2003,
+        "stat_scope": "domestic_league",
+        "appearances": 40,
+        "goals": 12,
+        "clubs": [
+          "São Paulo",
+          "AC Milan"
+        ],
+        "competitions": [
+          "Série A",
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2004,
+        "stat_scope": "domestic_league",
+        "appearances": 36,
+        "goals": 7,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2005,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 14,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2006,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 8,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2007,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 15,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 16,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2009,
+        "stat_scope": "domestic_league",
+        "appearances": 25,
+        "goals": 8,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 14,
+        "goals": 7,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 27,
+        "goals": 5,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 19,
+        "goals": 3,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2013,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 7,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2014,
+        "stat_scope": "domestic_league",
+        "appearances": 19,
+        "goals": 2,
+        "clubs": [
+          "São Paulo (loan)"
+        ],
+        "competitions": [
+          "Série A"
+        ]
+      },
+      {
+        "season": 2015,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 9,
+        "clubs": [
+          "Orlando City SC"
+        ],
+        "competitions": [
+          "MLS"
+        ]
+      },
+      {
+        "season": 2016,
+        "stat_scope": "domestic_league",
+        "appearances": 24,
+        "goals": 9,
+        "clubs": [
+          "Orlando City SC"
+        ],
+        "competitions": [
+          "MLS"
+        ]
+      },
+      {
+        "season": 2017,
+        "stat_scope": "domestic_league",
+        "appearances": 23,
+        "goals": 6,
+        "clubs": [
+          "Orlando City SC"
+        ],
+        "competitions": [
+          "MLS"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "totti",
+    "name": "Francesco Totti",
+    "position_group": "AM",
+    "coarse_group": "MID",
+    "active": false,
+    "era": "1990s-2010s (one club)",
+    "birth_year": 1976,
+    "birth_date": "1976-09-27",
+    "nationality": "Italy",
+    "career_position_label": "Attacking midfielder forward",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Francesco_Totti",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 25,
+      "reserve_or_youth_rows_dropped": 0,
+      "dropped_rows": [],
+      "first_season": 1992,
+      "last_season": 2016,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 1992,
+        "stat_scope": "domestic_league",
+        "appearances": 2,
+        "goals": 0,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1993,
+        "stat_scope": "domestic_league",
+        "appearances": 8,
+        "goals": 0,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1994,
+        "stat_scope": "domestic_league",
+        "appearances": 21,
+        "goals": 4,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1995,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 2,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1996,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 5,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1997,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 13,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1998,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 12,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1999,
+        "stat_scope": "domestic_league",
+        "appearances": 27,
+        "goals": 7,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2000,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 13,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2001,
+        "stat_scope": "domestic_league",
+        "appearances": 24,
+        "goals": 8,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2002,
+        "stat_scope": "domestic_league",
+        "appearances": 24,
+        "goals": 14,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2003,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 20,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2004,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 12,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2005,
+        "stat_scope": "domestic_league",
+        "appearances": 24,
+        "goals": 15,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2006,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 26,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2007,
+        "stat_scope": "domestic_league",
+        "appearances": 25,
+        "goals": 14,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 24,
+        "goals": 13,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2009,
+        "stat_scope": "domestic_league",
+        "appearances": 23,
+        "goals": 14,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 15,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 27,
+        "goals": 8,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 12,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2013,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 8,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2014,
+        "stat_scope": "domestic_league",
+        "appearances": 27,
+        "goals": 8,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2015,
+        "stat_scope": "domestic_league",
+        "appearances": 13,
+        "goals": 5,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2016,
+        "stat_scope": "domestic_league",
+        "appearances": 18,
+        "goals": 2,
+        "clubs": [
+          "Roma"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "lampard",
+    "name": "Frank Lampard",
+    "position_group": "CM",
+    "coarse_group": "MID",
+    "active": false,
+    "era": "1990s-2010s (high-scoring mid)",
+    "birth_year": 1978,
+    "birth_date": "1978-06-20",
+    "nationality": "United Kingdom",
+    "career_position_label": "Midfielder",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Frank_Lampard",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 22,
+      "reserve_or_youth_rows_dropped": 0,
+      "dropped_rows": [],
+      "first_season": 1995,
+      "last_season": 2016,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 1995,
+        "stat_scope": "domestic_league",
+        "appearances": 11,
+        "goals": 1,
+        "clubs": [
+          "West Ham United",
+          "Swansea City (loan)"
+        ],
+        "competitions": [
+          "Premier League",
+          "Second Division"
+        ]
+      },
+      {
+        "season": 1996,
+        "stat_scope": "domestic_league",
+        "appearances": 13,
+        "goals": 0,
+        "clubs": [
+          "West Ham United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 1997,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 5,
+        "clubs": [
+          "West Ham United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 1998,
+        "stat_scope": "domestic_league",
+        "appearances": 38,
+        "goals": 5,
+        "clubs": [
+          "West Ham United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 1999,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 7,
+        "clubs": [
+          "West Ham United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2000,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 7,
+        "clubs": [
+          "West Ham United"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2001,
+        "stat_scope": "domestic_league",
+        "appearances": 37,
+        "goals": 5,
+        "clubs": [
+          "Chelsea"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2002,
+        "stat_scope": "domestic_league",
+        "appearances": 38,
+        "goals": 6,
+        "clubs": [
+          "Chelsea"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2003,
+        "stat_scope": "domestic_league",
+        "appearances": 38,
+        "goals": 10,
+        "clubs": [
+          "Chelsea"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2004,
+        "stat_scope": "domestic_league",
+        "appearances": 38,
+        "goals": 13,
+        "clubs": [
+          "Chelsea"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2005,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 16,
+        "clubs": [
+          "Chelsea"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2006,
+        "stat_scope": "domestic_league",
+        "appearances": 37,
+        "goals": 11,
+        "clubs": [
+          "Chelsea"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2007,
+        "stat_scope": "domestic_league",
+        "appearances": 24,
+        "goals": 10,
+        "clubs": [
+          "Chelsea"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 37,
+        "goals": 12,
+        "clubs": [
+          "Chelsea"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2009,
+        "stat_scope": "domestic_league",
+        "appearances": 36,
+        "goals": 22,
+        "clubs": [
+          "Chelsea"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 24,
+        "goals": 10,
+        "clubs": [
+          "Chelsea"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 11,
+        "clubs": [
+          "Chelsea"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 15,
+        "clubs": [
+          "Chelsea"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2013,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 6,
+        "clubs": [
+          "Chelsea"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2014,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 6,
+        "clubs": [
+          "Manchester City"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2015,
+        "stat_scope": "domestic_league",
+        "appearances": 10,
+        "goals": 3,
+        "clubs": [
+          "New York City FC"
+        ],
+        "competitions": [
+          "Major League Soccer"
+        ]
+      },
+      {
+        "season": 2016,
+        "stat_scope": "domestic_league",
+        "appearances": 19,
+        "goals": 12,
+        "clubs": [
+          "New York City FC"
+        ],
+        "competitions": [
+          "Major League Soccer"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "gerrard",
+    "name": "Steven Gerrard",
+    "position_group": "CM",
+    "coarse_group": "MID",
+    "active": false,
+    "era": "1990s-2010s",
+    "birth_year": 1980,
+    "birth_date": "1980-05-30",
+    "nationality": "United Kingdom",
+    "career_position_label": "Midfielder",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Steven_Gerrard",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 19,
+      "reserve_or_youth_rows_dropped": 0,
+      "dropped_rows": [],
+      "first_season": 1998,
+      "last_season": 2016,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 1998,
+        "stat_scope": "domestic_league",
+        "appearances": 12,
+        "goals": 0,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 1999,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 1,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2000,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 7,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2001,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 3,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2002,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 5,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2003,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 4,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2004,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 7,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2005,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 10,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2006,
+        "stat_scope": "domestic_league",
+        "appearances": 36,
+        "goals": 7,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2007,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 11,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 16,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2009,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 9,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 21,
+        "goals": 4,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 18,
+        "goals": 5,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 36,
+        "goals": 9,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2013,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 13,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2014,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 9,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2015,
+        "stat_scope": "domestic_league",
+        "appearances": 13,
+        "goals": 2,
+        "clubs": [
+          "LA Galaxy"
+        ],
+        "competitions": [
+          "Major League Soccer"
+        ]
+      },
+      {
+        "season": 2016,
+        "stat_scope": "domestic_league",
+        "appearances": 21,
+        "goals": 3,
+        "clubs": [
+          "LA Galaxy"
+        ],
+        "competitions": [
+          "Major League Soccer"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "modric",
+    "name": "Luka Modric",
+    "position_group": "CM",
+    "coarse_group": "MID",
+    "active": true,
+    "era": "2000s-2020s (long, low scorer)",
+    "birth_year": 1985,
+    "birth_date": "1985-09-09",
+    "nationality": "Croatia",
+    "career_position_label": "Central midfielder",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Luka_Modrić",
+      "retrieved_at": "2026-07-27",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 24,
+      "reserve_or_youth_rows_dropped": 0,
+      "dropped_rows": [],
+      "first_season": 2003,
+      "last_season": 2026,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 2003,
+        "stat_scope": "domestic_league",
+        "appearances": 25,
+        "goals": 8,
+        "clubs": [
+          "Dinamo Zagreb",
+          "Zrinjski Mostar (loan)"
+        ],
+        "competitions": [
+          "Prva HNL",
+          "Bosnian Premier League"
+        ]
+      },
+      {
+        "season": 2004,
+        "stat_scope": "domestic_league",
+        "appearances": 25,
+        "goals": 4,
+        "clubs": [
+          "Dinamo Zagreb",
+          "Inter Zaprešić (loan)"
+        ],
+        "competitions": [
+          "Prva HNL"
+        ]
+      },
+      {
+        "season": 2005,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 7,
+        "clubs": [
+          "Dinamo Zagreb"
+        ],
+        "competitions": [
+          "Prva HNL"
+        ]
+      },
+      {
+        "season": 2006,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 6,
+        "clubs": [
+          "Dinamo Zagreb"
+        ],
+        "competitions": [
+          "Prva HNL"
+        ]
+      },
+      {
+        "season": 2007,
+        "stat_scope": "domestic_league",
+        "appearances": 25,
+        "goals": 13,
+        "clubs": [
+          "Dinamo Zagreb"
+        ],
+        "competitions": [
+          "Prva HNL"
+        ]
+      },
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 3,
+        "clubs": [
+          "Tottenham Hotspur"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2009,
+        "stat_scope": "domestic_league",
+        "appearances": 25,
+        "goals": 3,
+        "clubs": [
+          "Tottenham Hotspur"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 3,
+        "clubs": [
+          "Tottenham Hotspur"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 36,
+        "goals": 4,
+        "clubs": [
+          "Tottenham Hotspur"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 3,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2013,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 1,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2014,
+        "stat_scope": "domestic_league",
+        "appearances": 16,
+        "goals": 1,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2015,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 2,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2016,
+        "stat_scope": "domestic_league",
+        "appearances": 25,
+        "goals": 1,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2017,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 1,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2018,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 3,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2019,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 3,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2020,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 5,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2021,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 2,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2022,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 4,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2023,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 2,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2024,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 2,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2025,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 2,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2026,
+        "stat_scope": "domestic_league",
+        "appearances": 0,
+        "goals": 0,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "pirlo",
+    "name": "Andrea Pirlo",
+    "position_group": "CM",
+    "coarse_group": "MID",
+    "active": false,
+    "era": "1990s-2010s (deep playmaker)",
+    "birth_year": 1979,
+    "birth_date": "1979-05-19",
+    "nationality": "Italy",
+    "career_position_label": "Midfielder",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Andrea_Pirlo",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 24,
+      "reserve_or_youth_rows_dropped": 0,
+      "dropped_rows": [],
+      "first_season": 1994,
+      "last_season": 2017,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 1994,
+        "stat_scope": "domestic_league",
+        "appearances": 1,
+        "goals": 0,
+        "clubs": [
+          "Brescia"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1995,
+        "stat_scope": "domestic_league",
+        "appearances": 0,
+        "goals": 0,
+        "clubs": [
+          "Brescia"
+        ],
+        "competitions": [
+          "Serie B"
+        ]
+      },
+      {
+        "season": 1996,
+        "stat_scope": "domestic_league",
+        "appearances": 17,
+        "goals": 2,
+        "clubs": [
+          "Brescia"
+        ],
+        "competitions": [
+          "Serie B"
+        ]
+      },
+      {
+        "season": 1997,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 4,
+        "clubs": [
+          "Brescia"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1998,
+        "stat_scope": "domestic_league",
+        "appearances": 18,
+        "goals": 0,
+        "clubs": [
+          "Inter Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1999,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 6,
+        "clubs": [
+          "Reggina (loan)"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2000,
+        "stat_scope": "domestic_league",
+        "appearances": 14,
+        "goals": 0,
+        "clubs": [
+          "Inter Milan",
+          "Brescia (loan)"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2001,
+        "stat_scope": "domestic_league",
+        "appearances": 18,
+        "goals": 2,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2002,
+        "stat_scope": "domestic_league",
+        "appearances": 27,
+        "goals": 9,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2003,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 6,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2004,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 4,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2005,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 4,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2006,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 2,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2007,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 3,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 1,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2009,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 0,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 17,
+        "goals": 1,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 37,
+        "goals": 3,
+        "clubs": [
+          "Juventus"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 5,
+        "clubs": [
+          "Juventus"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2013,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 4,
+        "clubs": [
+          "Juventus"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2014,
+        "stat_scope": "domestic_league",
+        "appearances": 20,
+        "goals": 4,
+        "clubs": [
+          "Juventus"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2015,
+        "stat_scope": "domestic_league",
+        "appearances": 13,
+        "goals": 0,
+        "clubs": [
+          "New York City FC"
+        ],
+        "competitions": [
+          "Major League Soccer"
+        ]
+      },
+      {
+        "season": 2016,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 1,
+        "clubs": [
+          "New York City FC"
+        ],
+        "competitions": [
+          "Major League Soccer"
+        ]
+      },
+      {
+        "season": 2017,
+        "stat_scope": "domestic_league",
+        "appearances": 15,
+        "goals": 0,
+        "clubs": [
+          "New York City FC"
+        ],
+        "competitions": [
+          "Major League Soccer"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "busquets",
+    "name": "Sergio Busquets",
+    "position_group": "DM",
+    "coarse_group": "MID",
+    "active": true,
+    "era": "2000s-2020s (very low scorer)",
+    "birth_year": 1988,
+    "birth_date": "1988-07-16",
+    "nationality": "Spain",
+    "career_position_label": "Defensive midfielder",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sergio_Busquets",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 18,
+      "reserve_or_youth_rows_dropped": 2,
+      "dropped_rows": [
+        {
+          "season": 2007,
+          "club": "Barcelona B",
+          "competition": "Tercera División"
+        },
+        {
+          "season": 2008,
+          "club": "Barcelona B",
+          "competition": "Segunda División B"
+        }
+      ],
+      "first_season": 2008,
+      "last_season": 2025,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 24,
+        "goals": 1,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2009,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 0,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 1,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 1,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 1,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2013,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 1,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2014,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 1,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2015,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 0,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2016,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 0,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2017,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 1,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2018,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 0,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2019,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 2,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2020,
+        "stat_scope": "domestic_league",
+        "appearances": 36,
+        "goals": 0,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2021,
+        "stat_scope": "domestic_league",
+        "appearances": 36,
+        "goals": 2,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2022,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 0,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2023,
+        "stat_scope": "domestic_league",
+        "appearances": 11,
+        "goals": 0,
+        "clubs": [
+          "Inter Miami"
+        ],
+        "competitions": [
+          "MLS"
+        ]
+      },
+      {
+        "season": 2024,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 1,
+        "clubs": [
+          "Inter Miami"
+        ],
+        "competitions": [
+          "MLS"
+        ]
+      },
+      {
+        "season": 2025,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 0,
+        "clubs": [
+          "Inter Miami"
+        ],
+        "competitions": [
+          "MLS"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "van-dijk",
+    "name": "Virgil van Dijk",
+    "position_group": "CB",
+    "coarse_group": "DEF",
+    "active": true,
+    "era": "2010s-2020s",
+    "birth_year": 1991,
+    "birth_date": "1991-07-08",
+    "nationality": "Kingdom of the Netherlands",
+    "career_position_label": "Centre-back",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk",
+      "retrieved_at": "2026-07-27",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 16,
+      "reserve_or_youth_rows_dropped": 0,
+      "dropped_rows": [],
+      "first_season": 2010,
+      "last_season": 2025,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 5,
+        "goals": 2,
+        "clubs": [
+          "Groningen"
+        ],
+        "competitions": [
+          "Eredivisie"
+        ]
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 23,
+        "goals": 3,
+        "clubs": [
+          "Groningen"
+        ],
+        "competitions": [
+          "Eredivisie"
+        ]
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 2,
+        "clubs": [
+          "Groningen"
+        ],
+        "competitions": [
+          "Eredivisie"
+        ]
+      },
+      {
+        "season": 2013,
+        "stat_scope": "domestic_league",
+        "appearances": 36,
+        "goals": 5,
+        "clubs": [
+          "Celtic"
+        ],
+        "competitions": [
+          "Scottish Premiership"
+        ]
+      },
+      {
+        "season": 2014,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 4,
+        "clubs": [
+          "Celtic"
+        ],
+        "competitions": [
+          "Scottish Premiership"
+        ]
+      },
+      {
+        "season": 2015,
+        "stat_scope": "domestic_league",
+        "appearances": 39,
+        "goals": 3,
+        "clubs": [
+          "Celtic",
+          "Southampton"
+        ],
+        "competitions": [
+          "Scottish Premiership",
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2016,
+        "stat_scope": "domestic_league",
+        "appearances": 21,
+        "goals": 1,
+        "clubs": [
+          "Southampton"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2017,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 0,
+        "clubs": [
+          "Southampton",
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2018,
+        "stat_scope": "domestic_league",
+        "appearances": 38,
+        "goals": 4,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2019,
+        "stat_scope": "domestic_league",
+        "appearances": 38,
+        "goals": 5,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2020,
+        "stat_scope": "domestic_league",
+        "appearances": 5,
+        "goals": 1,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2021,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 3,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2022,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 3,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2023,
+        "stat_scope": "domestic_league",
+        "appearances": 36,
+        "goals": 2,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2024,
+        "stat_scope": "domestic_league",
+        "appearances": 37,
+        "goals": 3,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      },
+      {
+        "season": 2025,
+        "stat_scope": "domestic_league",
+        "appearances": 38,
+        "goals": 6,
+        "clubs": [
+          "Liverpool"
+        ],
+        "competitions": [
+          "Premier League"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "ramos",
+    "name": "Sergio Ramos",
+    "position_group": "CB",
+    "coarse_group": "DEF",
+    "active": true,
+    "era": "2000s-2020s (high-scoring CB)",
+    "birth_year": 1986,
+    "birth_date": "1986-03-30",
+    "nationality": "Spain",
+    "career_position_label": "Centre-back",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sergio_Ramos",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 23,
+      "reserve_or_youth_rows_dropped": 1,
+      "dropped_rows": [
+        {
+          "season": 2003,
+          "club": "Sevilla Atlético",
+          "competition": "Segunda División B"
+        }
+      ],
+      "first_season": 2003,
+      "last_season": 2025,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 2003,
+        "stat_scope": "domestic_league",
+        "appearances": 7,
+        "goals": 0,
+        "clubs": [
+          "Sevilla"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2004,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 2,
+        "clubs": [
+          "Sevilla"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2005,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 4,
+        "clubs": [
+          "Sevilla",
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2006,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 5,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2007,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 5,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 4,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2009,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 4,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 3,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 3,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 4,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2013,
+        "stat_scope": "domestic_league",
+        "appearances": 32,
+        "goals": 4,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2014,
+        "stat_scope": "domestic_league",
+        "appearances": 27,
+        "goals": 4,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2015,
+        "stat_scope": "domestic_league",
+        "appearances": 23,
+        "goals": 2,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2016,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 7,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2017,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 4,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2018,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 6,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2019,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 11,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2020,
+        "stat_scope": "domestic_league",
+        "appearances": 15,
+        "goals": 2,
+        "clubs": [
+          "Real Madrid"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2021,
+        "stat_scope": "domestic_league",
+        "appearances": 12,
+        "goals": 2,
+        "clubs": [
+          "Paris Saint-Germain"
+        ],
+        "competitions": [
+          "Ligue 1"
+        ]
+      },
+      {
+        "season": 2022,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 2,
+        "clubs": [
+          "Paris Saint-Germain"
+        ],
+        "competitions": [
+          "Ligue 1"
+        ]
+      },
+      {
+        "season": 2023,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 3,
+        "clubs": [
+          "Sevilla"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2024,
+        "stat_scope": "domestic_league",
+        "appearances": 8,
+        "goals": 3,
+        "clubs": [
+          "Monterrey"
+        ],
+        "competitions": [
+          "Liga MX"
+        ]
+      },
+      {
+        "season": 2025,
+        "stat_scope": "domestic_league",
+        "appearances": 19,
+        "goals": 3,
+        "clubs": [
+          "Monterrey"
+        ],
+        "competitions": [
+          "Liga MX"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "maldini",
+    "name": "Paolo Maldini",
+    "position_group": "CB",
+    "coarse_group": "DEF",
+    "active": false,
+    "era": "1980s-2000s (very long)",
+    "birth_year": 1968,
+    "birth_date": "1968-06-26",
+    "nationality": "Italy",
+    "career_position_label": "Left-back centre-back",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Paolo_Maldini",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 25,
+      "reserve_or_youth_rows_dropped": 0,
+      "dropped_rows": [],
+      "first_season": 1984,
+      "last_season": 2008,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 1984,
+        "stat_scope": "domestic_league",
+        "appearances": 1,
+        "goals": 0,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1985,
+        "stat_scope": "domestic_league",
+        "appearances": 27,
+        "goals": 0,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1986,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 1,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1987,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 2,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1988,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 0,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1989,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 1,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1990,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 4,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1991,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 3,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1992,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 2,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1993,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 1,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1994,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 2,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1995,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 3,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1996,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 1,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1997,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 0,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1998,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 1,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 1999,
+        "stat_scope": "domestic_league",
+        "appearances": 27,
+        "goals": 1,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2000,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 1,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2001,
+        "stat_scope": "domestic_league",
+        "appearances": 15,
+        "goals": 0,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2002,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 2,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2003,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 0,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2004,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 0,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2005,
+        "stat_scope": "domestic_league",
+        "appearances": 14,
+        "goals": 2,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2006,
+        "stat_scope": "domestic_league",
+        "appearances": 18,
+        "goals": 1,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2007,
+        "stat_scope": "domestic_league",
+        "appearances": 17,
+        "goals": 1,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 0,
+        "clubs": [
+          "AC Milan"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "dani-alves",
+    "name": "Dani Alves",
+    "position_group": "FB",
+    "coarse_group": "DEF",
+    "active": false,
+    "era": "2000s-2020s (very long)",
+    "birth_year": 1983,
+    "birth_date": "1983-05-06",
+    "nationality": "Brazil",
+    "career_position_label": "Right-back",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dani_Alves",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 22,
+      "reserve_or_youth_rows_dropped": 0,
+      "dropped_rows": [],
+      "first_season": 2001,
+      "last_season": 2022,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 2001,
+        "stat_scope": "domestic_league",
+        "appearances": 6,
+        "goals": 0,
+        "clubs": [
+          "Bahia"
+        ],
+        "competitions": [
+          "Série A"
+        ]
+      },
+      {
+        "season": 2002,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 2,
+        "clubs": [
+          "Bahia",
+          "Sevilla"
+        ],
+        "competitions": [
+          "Série A",
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2003,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 1,
+        "clubs": [
+          "Sevilla"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2004,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 2,
+        "clubs": [
+          "Sevilla"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2005,
+        "stat_scope": "domestic_league",
+        "appearances": 36,
+        "goals": 3,
+        "clubs": [
+          "Sevilla"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2006,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 3,
+        "clubs": [
+          "Sevilla"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2007,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 2,
+        "clubs": [
+          "Sevilla"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 5,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2009,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 3,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 35,
+        "goals": 2,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 33,
+        "goals": 2,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 0,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2013,
+        "stat_scope": "domestic_league",
+        "appearances": 27,
+        "goals": 2,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2014,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 0,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2015,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 0,
+        "clubs": [
+          "Barcelona"
+        ],
+        "competitions": [
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2016,
+        "stat_scope": "domestic_league",
+        "appearances": 19,
+        "goals": 2,
+        "clubs": [
+          "Juventus"
+        ],
+        "competitions": [
+          "Serie A"
+        ]
+      },
+      {
+        "season": 2017,
+        "stat_scope": "domestic_league",
+        "appearances": 25,
+        "goals": 1,
+        "clubs": [
+          "Paris Saint-Germain"
+        ],
+        "competitions": [
+          "Ligue 1"
+        ]
+      },
+      {
+        "season": 2018,
+        "stat_scope": "domestic_league",
+        "appearances": 23,
+        "goals": 1,
+        "clubs": [
+          "Paris Saint-Germain"
+        ],
+        "competitions": [
+          "Ligue 1"
+        ]
+      },
+      {
+        "season": 2019,
+        "stat_scope": "domestic_league",
+        "appearances": 20,
+        "goals": 2,
+        "clubs": [
+          "São Paulo"
+        ],
+        "competitions": [
+          "Série A"
+        ]
+      },
+      {
+        "season": 2020,
+        "stat_scope": "domestic_league",
+        "appearances": 30,
+        "goals": 1,
+        "clubs": [
+          "São Paulo"
+        ],
+        "competitions": [
+          "Série A"
+        ]
+      },
+      {
+        "season": 2021,
+        "stat_scope": "domestic_league",
+        "appearances": 20,
+        "goals": 1,
+        "clubs": [
+          "São Paulo",
+          "Barcelona"
+        ],
+        "competitions": [
+          "Série A",
+          "La Liga"
+        ]
+      },
+      {
+        "season": 2022,
+        "stat_scope": "domestic_league",
+        "appearances": 13,
+        "goals": 0,
+        "clubs": [
+          "UNAM"
+        ],
+        "competitions": [
+          "Liga MX"
+        ]
+      }
+    ]
+  },
+  {
+    "player_id": "lahm",
+    "name": "Philipp Lahm",
+    "position_group": "FB",
+    "coarse_group": "DEF",
+    "active": false,
+    "era": "2000s-2010s",
+    "birth_year": 1983,
+    "birth_date": "1983-11-11",
+    "nationality": "Germany",
+    "career_position_label": "Right-back left-back midfielder",
+    "stat_scope": "domestic_league",
+    "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+    "provenance": {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Philipp_Lahm",
+      "retrieved_at": "2026-08-02",
+      "supports": [
+        "appearances",
+        "goals",
+        "position",
+        "birth_date",
+        "nationality"
+      ]
+    },
+    "coverage": {
+      "senior_seasons": 15,
+      "reserve_or_youth_rows_dropped": 3,
+      "dropped_rows": [
+        {
+          "season": 2001,
+          "club": "Bayern Munich II",
+          "competition": null
+        },
+        {
+          "season": 2002,
+          "club": "Bayern Munich II",
+          "competition": null
+        },
+        {
+          "season": 2005,
+          "club": "Bayern Munich II",
+          "competition": null
+        }
+      ],
+      "first_season": 2002,
+      "last_season": 2016,
+      "tier": "A",
+      "tier_b_c_available": false
+    },
+    "seasons": [
+      {
+        "season": 2002,
+        "stat_scope": "domestic_league",
+        "appearances": 0,
+        "goals": 0,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": []
+      },
+      {
+        "season": 2003,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 1,
+        "clubs": [
+          "Stuttgart (loan)"
+        ],
+        "competitions": []
+      },
+      {
+        "season": 2004,
+        "stat_scope": "domestic_league",
+        "appearances": 22,
+        "goals": 1,
+        "clubs": [
+          "Stuttgart (loan)"
+        ],
+        "competitions": []
+      },
+      {
+        "season": 2005,
+        "stat_scope": "domestic_league",
+        "appearances": 20,
+        "goals": 0,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": []
+      },
+      {
+        "season": 2006,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 1,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": []
+      },
+      {
+        "season": 2007,
+        "stat_scope": "domestic_league",
+        "appearances": 22,
+        "goals": 0,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": []
+      },
+      {
+        "season": 2008,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 3,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": []
+      },
+      {
+        "season": 2009,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 0,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": []
+      },
+      {
+        "season": 2010,
+        "stat_scope": "domestic_league",
+        "appearances": 34,
+        "goals": 3,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": []
+      },
+      {
+        "season": 2011,
+        "stat_scope": "domestic_league",
+        "appearances": 31,
+        "goals": 0,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": []
+      },
+      {
+        "season": 2012,
+        "stat_scope": "domestic_league",
+        "appearances": 29,
+        "goals": 0,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": []
+      },
+      {
+        "season": 2013,
+        "stat_scope": "domestic_league",
+        "appearances": 28,
+        "goals": 1,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": []
+      },
+      {
+        "season": 2014,
+        "stat_scope": "domestic_league",
+        "appearances": 20,
+        "goals": 2,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": []
+      },
+      {
+        "season": 2015,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 1,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": []
+      },
+      {
+        "season": 2016,
+        "stat_scope": "domestic_league",
+        "appearances": 26,
+        "goals": 1,
+        "clubs": [
+          "Bayern Munich"
+        ],
+        "competitions": []
+      }
+    ]
+  }
+]

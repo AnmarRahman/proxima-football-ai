@@ -1,0 +1,173 @@
+{
+  "batch": 3,
+  "attempted": 25,
+  "collected": 25,
+  "quarantined": 0,
+  "quarantine_fraction": 0.0,
+  "systemic_failure": false,
+  "warnings_total": 7,
+  "collected_players": [
+    {
+      "player_id": "alejandro-balde",
+      "name": "Alejandro Balde",
+      "seasons": 5,
+      "warnings": 0
+    },
+    {
+      "player_id": "nuno-mendes-footballer-born-2002",
+      "name": "Nuno Mendes (footballer, born 2002)",
+      "seasons": 7,
+      "warnings": 0
+    },
+    {
+      "player_id": "jeremie-frimpong",
+      "name": "Jeremie Frimpong",
+      "seasons": 7,
+      "warnings": 0
+    },
+    {
+      "player_id": "federico-dimarco",
+      "name": "Federico Dimarco",
+      "seasons": 12,
+      "warnings": 0
+    },
+    {
+      "player_id": "cesar-azpilicueta",
+      "name": "César Azpilicueta",
+      "seasons": 20,
+      "warnings": 0
+    },
+    {
+      "player_id": "sergio-busquets",
+      "name": "Sergio Busquets",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "claude-makelele",
+      "name": "Claude Makélélé",
+      "seasons": 19,
+      "warnings": 0
+    },
+    {
+      "player_id": "casemiro",
+      "name": "Casemiro",
+      "seasons": 17,
+      "warnings": 1
+    },
+    {
+      "player_id": "rodri-footballer-born-1996",
+      "name": "Rodri (footballer, born 1996)",
+      "seasons": 11,
+      "warnings": 0
+    },
+    {
+      "player_id": "n-golo-kante",
+      "name": "N'Golo Kanté",
+      "seasons": 16,
+      "warnings": 1
+    },
+    {
+      "player_id": "xabi-alonso",
+      "name": "Xabi Alonso",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "javier-mascherano",
+      "name": "Javier Mascherano",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "fernandinho-footballer-born-may-1985",
+      "name": "Fernandinho (footballer, born May 1985)",
+      "seasons": 22,
+      "warnings": 0
+    },
+    {
+      "player_id": "gilberto-silva",
+      "name": "Gilberto Silva",
+      "seasons": 16,
+      "warnings": 1
+    },
+    {
+      "player_id": "michael-essien",
+      "name": "Michael Essien",
+      "seasons": 19,
+      "warnings": 1
+    },
+    {
+      "player_id": "patrick-vieira",
+      "name": "Patrick Vieira",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "roy-keane",
+      "name": "Roy Keane",
+      "seasons": 17,
+      "warnings": 0
+    },
+    {
+      "player_id": "daniele-de-rossi",
+      "name": "Daniele De Rossi",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "gennaro-gattuso",
+      "name": "Gennaro Gattuso",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "joshua-kimmich",
+      "name": "Joshua Kimmich",
+      "seasons": 13,
+      "warnings": 0
+    },
+    {
+      "player_id": "declan-rice",
+      "name": "Declan Rice",
+      "seasons": 10,
+      "warnings": 0
+    },
+    {
+      "player_id": "aurelien-tchouameni",
+      "name": "Aurélien Tchouaméni",
+      "seasons": 9,
+      "warnings": 1
+    },
+    {
+      "player_id": "moises-caicedo",
+      "name": "Moisés Caicedo",
+      "seasons": 8,
+      "warnings": 1
+    },
+    {
+      "player_id": "joao-palhinha",
+      "name": "João Palhinha",
+      "seasons": 11,
+      "warnings": 0
+    },
+    {
+      "player_id": "sandro-tonali",
+      "name": "Sandro Tonali",
+      "seasons": 10,
+      "warnings": 1
+    }
+  ],
+  "quarantined_players": [],
+  "requests": {
+    "wikipedia": {
+      "total": 25,
+      "cache_hit_rate": 1.0
+    },
+    "wikidata": {
+      "total": 64,
+      "cache_hit_rate": 1.0
+    }
+  },
+  "gate_ok": true
+}

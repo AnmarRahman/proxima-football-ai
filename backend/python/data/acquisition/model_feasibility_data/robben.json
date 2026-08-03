@@ -1,0 +1,277 @@
+{
+  "player_id": "robben",
+  "name": "Arjen Robben",
+  "position_group": "WNG",
+  "coarse_group": "WIDE",
+  "active": false,
+  "era": "2000s-2010s",
+  "birth_year": 1984,
+  "birth_date": "1984-01-23",
+  "nationality": "Kingdom of the Netherlands",
+  "career_position_label": "Right winger",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Arjen_Robben",
+    "retrieved_at": "2026-08-02",
+    "supports": [
+      "appearances",
+      "goals",
+      "position",
+      "birth_date",
+      "nationality"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 20,
+    "reserve_or_youth_rows_dropped": 0,
+    "dropped_rows": [],
+    "first_season": 2000,
+    "last_season": 2020,
+    "tier": "A",
+    "tier_b_c_available": false
+  },
+  "seasons": [
+    {
+      "season": 2000,
+      "stat_scope": "domestic_league",
+      "appearances": 18,
+      "goals": 2,
+      "clubs": [
+        "Groningen"
+      ],
+      "competitions": [
+        "Eredivisie"
+      ]
+    },
+    {
+      "season": 2001,
+      "stat_scope": "domestic_league",
+      "appearances": 28,
+      "goals": 6,
+      "clubs": [
+        "Groningen"
+      ],
+      "competitions": [
+        "Eredivisie"
+      ]
+    },
+    {
+      "season": 2002,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 12,
+      "clubs": [
+        "PSV"
+      ],
+      "competitions": [
+        "Eredivisie"
+      ]
+    },
+    {
+      "season": 2003,
+      "stat_scope": "domestic_league",
+      "appearances": 23,
+      "goals": 5,
+      "clubs": [
+        "PSV"
+      ],
+      "competitions": [
+        "Eredivisie"
+      ]
+    },
+    {
+      "season": 2004,
+      "stat_scope": "domestic_league",
+      "appearances": 18,
+      "goals": 7,
+      "clubs": [
+        "Chelsea"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2005,
+      "stat_scope": "domestic_league",
+      "appearances": 28,
+      "goals": 6,
+      "clubs": [
+        "Chelsea"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2006,
+      "stat_scope": "domestic_league",
+      "appearances": 21,
+      "goals": 2,
+      "clubs": [
+        "Chelsea"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2007,
+      "stat_scope": "domestic_league",
+      "appearances": 21,
+      "goals": 4,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2008,
+      "stat_scope": "domestic_league",
+      "appearances": 29,
+      "goals": 7,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2009,
+      "stat_scope": "domestic_league",
+      "appearances": 24,
+      "goals": 16,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2010,
+      "stat_scope": "domestic_league",
+      "appearances": 14,
+      "goals": 12,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2011,
+      "stat_scope": "domestic_league",
+      "appearances": 24,
+      "goals": 12,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2012,
+      "stat_scope": "domestic_league",
+      "appearances": 16,
+      "goals": 5,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2013,
+      "stat_scope": "domestic_league",
+      "appearances": 28,
+      "goals": 11,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2014,
+      "stat_scope": "domestic_league",
+      "appearances": 21,
+      "goals": 17,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2015,
+      "stat_scope": "domestic_league",
+      "appearances": 15,
+      "goals": 4,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2016,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 13,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2017,
+      "stat_scope": "domestic_league",
+      "appearances": 21,
+      "goals": 5,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2018,
+      "stat_scope": "domestic_league",
+      "appearances": 12,
+      "goals": 4,
+      "clubs": [
+        "Bayern Munich"
+      ],
+      "competitions": [
+        "Bundesliga"
+      ]
+    },
+    {
+      "season": 2020,
+      "stat_scope": "domestic_league",
+      "appearances": 6,
+      "goals": 0,
+      "clubs": [
+        "Groningen"
+      ],
+      "competitions": [
+        "Eredivisie"
+      ]
+    }
+  ]
+}

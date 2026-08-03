@@ -1,0 +1,396 @@
+{
+  "player_id": "moises-caicedo",
+  "wikidata_id": "Q87715532",
+  "name": "Moisés Caicedo",
+  "requested_name": "Moises Caicedo",
+  "birth_date": "2001-11-02",
+  "nationality": "Ecuador",
+  "primary_position": "midfielder",
+  "position_group": "DM",
+  "coarse_group": "MID",
+  "roster_section": "Defensive Midfielders (25)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "2001-11-02",
+    "nationality": "Ecuador",
+    "occupation_footballer": true,
+    "position": "midfielder",
+    "sitelinks": 47,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Moisés_Caicedo",
+    "retrieved_at": "2026-08-02",
+    "revision": 1367204184,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 8,
+    "season_team_league_rows": 10,
+    "reserve_or_youth_years_dropped": [],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [],
+    "missing_middle_seasons": [],
+    "first_season": 2019,
+    "last_season": 2026,
+    "partial_seasons": [
+      2026
+    ],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 10,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 2019,
+      "season_start_year": 2019,
+      "canonical_season": "2019",
+      "season_source_label": "2019",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "independiente-del-valle",
+      "team_name": "Independiente del Valle",
+      "league_id": "ecuadorian-serie-a",
+      "league_name": "Ecuadorian Serie A",
+      "appearances": 3,
+      "goals": 0,
+      "is_partial": false,
+      "age": 18,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Moisés_Caicedo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367204184,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2019,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2020,
+      "season_start_year": 2020,
+      "canonical_season": "2020",
+      "season_source_label": "2020",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "independiente-del-valle",
+      "team_name": "Independiente del Valle",
+      "league_id": "ecuadorian-serie-a",
+      "league_name": "Ecuadorian Serie A",
+      "appearances": 22,
+      "goals": 4,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Moisés_Caicedo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367204184,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2020,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2020,
+      "season_start_year": 2020,
+      "canonical_season": "2020–21",
+      "season_source_label": "2020–21",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "brighton-hove-albion",
+      "team_name": "Brighton & Hove Albion",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 0,
+      "goals": 0,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Moisés_Caicedo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367204184,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2021,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2021,
+      "season_start_year": 2021,
+      "canonical_season": "2021–22",
+      "season_source_label": "2021–22",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "beerschot-loan",
+      "team_name": "Beerschot (loan)",
+      "league_id": "belgian-pro-league",
+      "league_name": "Belgian Pro League",
+      "appearances": 12,
+      "goals": 1,
+      "is_partial": false,
+      "age": 20,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Moisés_Caicedo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367204184,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2022,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2021,
+      "season_start_year": 2021,
+      "canonical_season": "2021–22",
+      "season_source_label": "2021–22",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "brighton-hove-albion",
+      "team_name": "Brighton & Hove Albion",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 8,
+      "goals": 1,
+      "is_partial": false,
+      "age": 20,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Moisés_Caicedo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367204184,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2022,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2022,
+      "season_start_year": 2022,
+      "canonical_season": "2022–23",
+      "season_source_label": "2022–23",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "brighton-hove-albion",
+      "team_name": "Brighton & Hove Albion",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 37,
+      "goals": 1,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Moisés_Caicedo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367204184,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2023,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2023,
+      "season_start_year": 2023,
+      "canonical_season": "2023–24",
+      "season_source_label": "2023–24",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "chelsea",
+      "team_name": "Chelsea",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 35,
+      "goals": 1,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Moisés_Caicedo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367204184,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2024,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2024,
+      "season_start_year": 2024,
+      "canonical_season": "2024–25",
+      "season_source_label": "2024–25",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "chelsea",
+      "team_name": "Chelsea",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 38,
+      "goals": 1,
+      "is_partial": false,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Moisés_Caicedo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367204184,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2025,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2025,
+      "season_start_year": 2025,
+      "canonical_season": "2025–26",
+      "season_source_label": "2025–26",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "chelsea",
+      "team_name": "Chelsea",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 33,
+      "goals": 3,
+      "is_partial": false,
+      "age": 24,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Moisés_Caicedo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367204184,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2026,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2026,
+      "season_start_year": 2026,
+      "canonical_season": "2026–27",
+      "season_source_label": "2026–27",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "chelsea",
+      "team_name": "Chelsea",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 0,
+      "goals": 0,
+      "is_partial": true,
+      "age": 25,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Moisés_Caicedo",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367204184,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2027,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [
+    "ongoing/partial season(s): [2026]"
+  ],
+  "career_status": "active",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q87715532 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": null
+}

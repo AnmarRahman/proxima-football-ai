@@ -1,0 +1,134 @@
+{
+  "_status": "INCOMPLETE STRUCTURAL EXAMPLE — NOT ELIGIBLE FOR COLLECTION. This file demonstrates the schema/structure only. It intentionally FAILS `validate_player.py --strict` because assists, minutes, xG and advanced stats have no trustworthy automated source (FBref/worldfootball/ESPN block automated fetch; Wikipedia carries only appearances+goals). Unknown values are left null (never invented). Do NOT copy this file into data/players/ until --strict passes with zero errors and zero warnings. See data/SCHEMA_COMPATIBILITY_REPORT.md and data/SOURCE_ACQUISITION_REPORT.md.",
+  "player": {
+    "id": "van-dijk",
+    "name": "Virgil van Dijk",
+    "birth_date": "1991-07-08",
+    "nationality": "Netherlands",
+    "height_cm": 195,
+    "weight_kg": null,
+    "dominant_foot": "Right",
+    "is_retired": false,
+    "retired_since": null
+  },
+  "teams": [
+    { "id": "groningen", "name": "FC Groningen", "logo_url": null, "country": "Netherlands" },
+    { "id": "celtic", "name": "Celtic", "logo_url": null, "country": "Scotland" },
+    { "id": "southampton", "name": "Southampton", "logo_url": null, "country": "England" },
+    { "id": "liverpool", "name": "Liverpool", "logo_url": null, "country": "England" }
+  ],
+  "seasons": [
+    {
+      "season": 2010, "team_id": "groningen", "league_id": "eredivisie-2010", "is_partial": false,
+      "position": "Centre-Back", "appearances": 5, "goals": 2, "assists": null, "minutes": null,
+      "injuries": [], "transfer_history": [], "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": ["appearances", "goals"] } ]
+    },
+    {
+      "season": 2011, "team_id": "groningen", "league_id": "eredivisie-2011", "is_partial": false,
+      "position": "Centre-Back", "appearances": 23, "goals": 3, "assists": null, "minutes": null,
+      "injuries": [], "transfer_history": [], "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": ["appearances", "goals"] } ]
+    },
+    {
+      "season": 2012, "team_id": "groningen", "league_id": "eredivisie-2012", "is_partial": false,
+      "position": "Centre-Back", "appearances": 34, "goals": 2, "assists": null, "minutes": null,
+      "injuries": [], "transfer_history": [], "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": ["appearances", "goals"] } ]
+    },
+    {
+      "season": 2013, "team_id": "celtic", "league_id": "scottish-premiership-2013", "is_partial": false,
+      "position": "Centre-Back", "appearances": 36, "goals": 5, "assists": null, "minutes": null,
+      "injuries": [],
+      "transfer_history": [ { "from": "groningen", "to": "celtic", "transfer_fee": "Unknown", "date": "2013-06-21", "source": "https://en.wikipedia.org/wiki/Virgil_van_Dijk" } ],
+      "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": ["appearances", "goals"] } ]
+    },
+    {
+      "season": 2014, "team_id": "celtic", "league_id": "scottish-premiership-2014", "is_partial": false,
+      "position": "Centre-Back", "appearances": 35, "goals": 4, "assists": null, "minutes": null,
+      "injuries": [], "transfer_history": [], "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": ["appearances", "goals"] } ]
+    },
+    {
+      "season": 2015, "team_id": "southampton", "league_id": "premierleague-2015", "is_partial": false,
+      "position": "Centre-Back", "appearances": 34, "goals": 3, "assists": null, "minutes": null,
+      "injuries": [],
+      "transfer_history": [ { "from": "celtic", "to": "southampton", "transfer_fee": "Unknown", "date": "2015-09-01", "source": "https://en.wikipedia.org/wiki/Virgil_van_Dijk" } ],
+      "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": ["appearances", "goals"] } ]
+    },
+    {
+      "season": 2016, "team_id": "southampton", "league_id": "premierleague-2016", "is_partial": false,
+      "position": "Centre-Back", "appearances": 21, "goals": 1, "assists": null, "minutes": null,
+      "injuries": [], "transfer_history": [], "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": ["appearances", "goals"] } ]
+    },
+    {
+      "season": 2017, "team_id": "southampton", "league_id": "premierleague-2017-southampton", "is_partial": true,
+      "position": "Centre-Back", "appearances": null, "goals": null, "assists": null, "minutes": null,
+      "_note": "2017-18 was split between Southampton and Liverpool after a January 2018 transfer. Wikipedia reports only the combined total (26 apps, 0 goals); the per-club split is not sourced, so both club rows carry null appearances/goals until a source with the split is available.",
+      "injuries": [], "transfer_history": [], "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": [] } ]
+    },
+    {
+      "season": 2017, "team_id": "liverpool", "league_id": "premierleague-2017-liverpool", "is_partial": true,
+      "position": "Centre-Back", "appearances": null, "goals": null, "assists": null, "minutes": null,
+      "injuries": [],
+      "transfer_history": [ { "from": "southampton", "to": "liverpool", "transfer_fee": "£75M", "date": "2018-01-01", "source": "https://en.wikipedia.org/wiki/Virgil_van_Dijk" } ],
+      "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": [] } ]
+    },
+    {
+      "season": 2018, "team_id": "liverpool", "league_id": "premierleague-2018", "is_partial": false,
+      "position": "Centre-Back", "appearances": 38, "goals": 4, "assists": null, "minutes": null,
+      "injuries": [], "transfer_history": [], "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": ["appearances", "goals"] } ]
+    },
+    {
+      "season": 2019, "team_id": "liverpool", "league_id": "premierleague-2019", "is_partial": false,
+      "position": "Centre-Back", "appearances": 38, "goals": 5, "assists": null, "minutes": null,
+      "injuries": [], "transfer_history": [], "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": ["appearances", "goals"] } ]
+    },
+    {
+      "season": 2020, "team_id": "liverpool", "league_id": "premierleague-2020", "is_partial": false,
+      "position": "Centre-Back", "appearances": 5, "goals": 1, "assists": null, "minutes": null,
+      "injuries": [
+        { "type": "Anterior cruciate ligament (ACL) rupture", "start_date": "2020-10-17", "end_date": "2021-08-14", "days_lost": 301, "source": "https://en.wikipedia.org/wiki/Virgil_van_Dijk" }
+      ],
+      "transfer_history": [], "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": ["appearances", "goals"] } ]
+    },
+    {
+      "season": 2021, "team_id": "liverpool", "league_id": "premierleague-2021", "is_partial": false,
+      "position": "Centre-Back", "appearances": 34, "goals": 3, "assists": null, "minutes": null,
+      "injuries": [], "transfer_history": [], "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": ["appearances", "goals"] } ]
+    },
+    {
+      "season": 2022, "team_id": "liverpool", "league_id": "premierleague-2022", "is_partial": false,
+      "position": "Centre-Back", "appearances": 32, "goals": 3, "assists": null, "minutes": null,
+      "injuries": [], "transfer_history": [], "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": ["appearances", "goals"] } ]
+    },
+    {
+      "season": 2023, "team_id": "liverpool", "league_id": "premierleague-2023", "is_partial": false,
+      "position": "Centre-Back", "appearances": 36, "goals": 2, "assists": null, "minutes": null,
+      "injuries": [], "transfer_history": [], "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": ["appearances", "goals"] } ]
+    },
+    {
+      "season": 2024, "team_id": "liverpool", "league_id": "premierleague-2024", "is_partial": false,
+      "position": "Centre-Back", "appearances": 37, "goals": 3, "assists": null, "minutes": null,
+      "injuries": [], "transfer_history": [], "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": ["appearances", "goals"] } ]
+    },
+    {
+      "season": 2025, "team_id": "liverpool", "league_id": "premierleague-2025", "is_partial": false,
+      "position": "Centre-Back", "appearances": 38, "goals": 6, "assists": null, "minutes": null,
+      "injuries": [], "transfer_history": [], "national_team_stats": [],
+      "sources": [ { "provider": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Virgil_van_Dijk", "retrieved_at": "2026-07-26", "supports": ["appearances", "goals"] } ]
+    }
+  ]
+}

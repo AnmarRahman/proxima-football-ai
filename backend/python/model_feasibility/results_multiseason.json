@@ -1,0 +1,343 @@
+{
+  "seed": 42,
+  "apps_cap": 60,
+  "resid_sd": 9.75,
+  "horizons": [
+    1,
+    3,
+    5
+  ],
+  "n_trajectories": 210,
+  "by_horizon": {
+    "1": {
+      "model_cum_apps_mae": {
+        "n": 210,
+        "mae": 5.77
+      },
+      "naive_ageing_cum_apps_mae": {
+        "n": 210,
+        "mae": 5.91
+      },
+      "persistence_cum_apps_mae": {
+        "n": 210,
+        "mae": 6.44
+      },
+      "model_cum_goals_mae": {
+        "n": 210,
+        "mae": 3.4
+      }
+    },
+    "3": {
+      "model_cum_apps_mae": {
+        "n": 210,
+        "mae": 13.56
+      },
+      "naive_ageing_cum_apps_mae": {
+        "n": 210,
+        "mae": 13.72
+      },
+      "persistence_cum_apps_mae": {
+        "n": 210,
+        "mae": 17.85
+      },
+      "model_cum_goals_mae": {
+        "n": 210,
+        "mae": 8.06
+      }
+    },
+    "5": {
+      "model_cum_apps_mae": {
+        "n": 210,
+        "mae": 22.36
+      },
+      "naive_ageing_cum_apps_mae": {
+        "n": 210,
+        "mae": 23.61
+      },
+      "persistence_cum_apps_mae": {
+        "n": 210,
+        "mae": 32.64
+      },
+      "model_cum_goals_mae": {
+        "n": 210,
+        "mae": 12.34
+      }
+    }
+  },
+  "by_position": {
+    "MID": {
+      "1": {
+        "n": 78,
+        "mae": 5.72
+      },
+      "3": {
+        "n": 78,
+        "mae": 15.06
+      },
+      "5": {
+        "n": 78,
+        "mae": 24.02
+      }
+    },
+    "DEF": {
+      "1": {
+        "n": 57,
+        "mae": 5.6
+      },
+      "3": {
+        "n": 57,
+        "mae": 13.34
+      },
+      "5": {
+        "n": 57,
+        "mae": 22.28
+      }
+    },
+    "WIDE": {
+      "1": {
+        "n": 27,
+        "mae": 4.0
+      },
+      "3": {
+        "n": 27,
+        "mae": 12.66
+      },
+      "5": {
+        "n": 27,
+        "mae": 24.27
+      }
+    },
+    "FWD": {
+      "1": {
+        "n": 48,
+        "mae": 7.03
+      },
+      "3": {
+        "n": 48,
+        "mae": 11.9
+      },
+      "5": {
+        "n": 48,
+        "mae": 18.66
+      }
+    }
+  },
+  "by_cutoff_age": {
+    "20-23": {
+      "1": {
+        "n": 5,
+        "mae": 9.56
+      },
+      "3": {
+        "n": 5,
+        "mae": 15.26
+      },
+      "5": {
+        "n": 5,
+        "mae": 17.52
+      }
+    },
+    "24-27": {
+      "1": {
+        "n": 99,
+        "mae": 5.04
+      },
+      "3": {
+        "n": 99,
+        "mae": 11.72
+      },
+      "5": {
+        "n": 99,
+        "mae": 20.09
+      }
+    },
+    "28-31": {
+      "1": {
+        "n": 81,
+        "mae": 6.12
+      },
+      "3": {
+        "n": 81,
+        "mae": 15.39
+      },
+      "5": {
+        "n": 81,
+        "mae": 23.96
+      }
+    },
+    "32-35": {
+      "1": {
+        "n": 25,
+        "mae": 6.74
+      },
+      "3": {
+        "n": 25,
+        "mae": 14.58
+      },
+      "5": {
+        "n": 25,
+        "mae": 27.12
+      }
+    }
+  },
+  "remaining_len_error": {
+    "n": 210,
+    "mae": 3.55
+  },
+  "retirement_age_error": {
+    "n": 210,
+    "mae": 2.85
+  },
+  "constraint_checks": {
+    "negative_count_violations": 0,
+    "apps_cap_violations": 0,
+    "season_after_retirement_violations": 0,
+    "interval_width_monotonic_increasing": true
+  },
+  "examples": {
+    "paolo-maldini": {
+      "cutoff_age": 29,
+      "steps": [
+        {
+          "h": 1,
+          "retired": false,
+          "pred_apps": 26.7,
+          "pred_goals": 1.4,
+          "p_continue": 0.999,
+          "survival": 0.999,
+          "interval_width": 9.7
+        },
+        {
+          "h": 2,
+          "retired": false,
+          "pred_apps": 25.5,
+          "pred_goals": 1.2,
+          "p_continue": 0.996,
+          "survival": 0.995,
+          "interval_width": 13.8
+        },
+        {
+          "h": 3,
+          "retired": false,
+          "pred_apps": 25.2,
+          "pred_goals": 1.3,
+          "p_continue": 0.996,
+          "survival": 0.991,
+          "interval_width": 16.9
+        },
+        {
+          "h": 4,
+          "retired": false,
+          "pred_apps": 22.7,
+          "pred_goals": 1.4,
+          "p_continue": 0.991,
+          "survival": 0.982,
+          "interval_width": 19.5
+        },
+        {
+          "h": 5,
+          "retired": false,
+          "pred_apps": 19.7,
+          "pred_goals": 1.2,
+          "p_continue": 0.953,
+          "survival": 0.936,
+          "interval_width": 21.8
+        }
+      ],
+      "actual_future": [
+        {
+          "apps": 31,
+          "goals": 1
+        },
+        {
+          "apps": 27,
+          "goals": 1
+        },
+        {
+          "apps": 31,
+          "goals": 1
+        },
+        {
+          "apps": 15,
+          "goals": 0
+        },
+        {
+          "apps": 29,
+          "goals": 2
+        }
+      ]
+    },
+    "wayne-rooney": {
+      "cutoff_age": 27,
+      "steps": [
+        {
+          "h": 1,
+          "retired": false,
+          "pred_apps": 29.9,
+          "pred_goals": 16.4,
+          "p_continue": 0.999,
+          "survival": 0.999,
+          "interval_width": 9.7
+        },
+        {
+          "h": 2,
+          "retired": false,
+          "pred_apps": 29.3,
+          "pred_goals": 16.2,
+          "p_continue": 0.999,
+          "survival": 0.998,
+          "interval_width": 13.8
+        },
+        {
+          "h": 3,
+          "retired": false,
+          "pred_apps": 27.8,
+          "pred_goals": 12.7,
+          "p_continue": 0.997,
+          "survival": 0.995,
+          "interval_width": 16.9
+        },
+        {
+          "h": 4,
+          "retired": false,
+          "pred_apps": 27.2,
+          "pred_goals": 10.9,
+          "p_continue": 0.998,
+          "survival": 0.992,
+          "interval_width": 19.5
+        },
+        {
+          "h": 5,
+          "retired": false,
+          "pred_apps": 26.7,
+          "pred_goals": 10.0,
+          "p_continue": 0.992,
+          "survival": 0.984,
+          "interval_width": 21.8
+        }
+      ],
+      "actual_future": [
+        {
+          "apps": 29,
+          "goals": 17
+        },
+        {
+          "apps": 33,
+          "goals": 12
+        },
+        {
+          "apps": 28,
+          "goals": 8
+        },
+        {
+          "apps": 25,
+          "goals": 5
+        },
+        {
+          "apps": 31,
+          "goals": 10
+        }
+      ]
+    }
+  }
+}

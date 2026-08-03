@@ -1,0 +1,561 @@
+{
+  "player_id": "andy-robertson",
+  "wikidata_id": "Q15915040",
+  "name": "Andy Robertson",
+  "requested_name": "Andrew Robertson",
+  "birth_date": "1994-03-11",
+  "nationality": "United Kingdom",
+  "primary_position": "full-back",
+  "position_group": "FB",
+  "coarse_group": "DEF",
+  "roster_section": "Full-backs and Wing-backs (25)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "1994-03-11",
+    "nationality": "United Kingdom",
+    "occupation_footballer": true,
+    "position": "full-back",
+    "sitelinks": 54,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Andy_Robertson",
+    "retrieved_at": "2026-08-02",
+    "revision": 1366996962,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 15,
+    "season_team_league_rows": 15,
+    "reserve_or_youth_years_dropped": [],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [],
+    "missing_middle_seasons": [],
+    "first_season": 2012,
+    "last_season": 2026,
+    "partial_seasons": [
+      2026
+    ],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 15,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 2012,
+      "season_start_year": 2012,
+      "canonical_season": "2012–13",
+      "season_source_label": "2012–13",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "queen-s-park",
+      "team_name": "Queen's Park",
+      "league_id": "scottish-third-division",
+      "league_name": "Scottish Third Division",
+      "appearances": 34,
+      "goals": 2,
+      "is_partial": false,
+      "age": 18,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Robertson",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366996962,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2013,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2013,
+      "season_start_year": 2013,
+      "canonical_season": "2013–14",
+      "season_source_label": "2013–14",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "dundee-united",
+      "team_name": "Dundee United",
+      "league_id": "scottish-premiership",
+      "league_name": "Scottish Premiership",
+      "appearances": 36,
+      "goals": 3,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Robertson",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366996962,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2014,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2014,
+      "season_start_year": 2014,
+      "canonical_season": "2014–15",
+      "season_source_label": "2014–15",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "hull-city",
+      "team_name": "Hull City",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 24,
+      "goals": 0,
+      "is_partial": false,
+      "age": 20,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Robertson",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366996962,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2015,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2015,
+      "season_start_year": 2015,
+      "canonical_season": "2015–16",
+      "season_source_label": "2015–16",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "hull-city",
+      "team_name": "Hull City",
+      "league_id": "championship",
+      "league_name": "Championship",
+      "appearances": 42,
+      "goals": 2,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Robertson",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366996962,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2016,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2016,
+      "season_start_year": 2016,
+      "canonical_season": "2016–17",
+      "season_source_label": "2016–17",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "hull-city",
+      "team_name": "Hull City",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 33,
+      "goals": 1,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Robertson",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366996962,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2017,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2017,
+      "season_start_year": 2017,
+      "canonical_season": "2017–18",
+      "season_source_label": "2017–18",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "liverpool",
+      "team_name": "Liverpool",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 22,
+      "goals": 1,
+      "is_partial": false,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Robertson",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366996962,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2018,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2018,
+      "season_start_year": 2018,
+      "canonical_season": "2018–19",
+      "season_source_label": "2018–19",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "liverpool",
+      "team_name": "Liverpool",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 36,
+      "goals": 0,
+      "is_partial": false,
+      "age": 24,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Robertson",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366996962,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2019,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2019,
+      "season_start_year": 2019,
+      "canonical_season": "2019–20",
+      "season_source_label": "2019–20",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "liverpool",
+      "team_name": "Liverpool",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 36,
+      "goals": 2,
+      "is_partial": false,
+      "age": 25,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Robertson",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366996962,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2020,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2020,
+      "season_start_year": 2020,
+      "canonical_season": "2020–21",
+      "season_source_label": "2020–21",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "liverpool",
+      "team_name": "Liverpool",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 38,
+      "goals": 1,
+      "is_partial": false,
+      "age": 26,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Robertson",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366996962,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2021,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2021,
+      "season_start_year": 2021,
+      "canonical_season": "2021–22",
+      "season_source_label": "2021–22",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "liverpool",
+      "team_name": "Liverpool",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 29,
+      "goals": 3,
+      "is_partial": false,
+      "age": 27,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Robertson",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366996962,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2022,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2022,
+      "season_start_year": 2022,
+      "canonical_season": "2022–23",
+      "season_source_label": "2022–23",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "liverpool",
+      "team_name": "Liverpool",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 34,
+      "goals": 0,
+      "is_partial": false,
+      "age": 28,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Robertson",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366996962,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2023,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2023,
+      "season_start_year": 2023,
+      "canonical_season": "2023–24",
+      "season_source_label": "2023–24",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "liverpool",
+      "team_name": "Liverpool",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 23,
+      "goals": 3,
+      "is_partial": false,
+      "age": 29,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Robertson",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366996962,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2024,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2024,
+      "season_start_year": 2024,
+      "canonical_season": "2024–25",
+      "season_source_label": "2024–25",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "liverpool",
+      "team_name": "Liverpool",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 33,
+      "goals": 0,
+      "is_partial": false,
+      "age": 30,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Robertson",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366996962,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2025,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2025,
+      "season_start_year": 2025,
+      "canonical_season": "2025–26",
+      "season_source_label": "2025–26",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "liverpool",
+      "team_name": "Liverpool",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 24,
+      "goals": 1,
+      "is_partial": false,
+      "age": 31,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Robertson",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366996962,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2026,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2026,
+      "season_start_year": 2026,
+      "canonical_season": "2026–27",
+      "season_source_label": "2026–27",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "tottenham-hotspur",
+      "team_name": "Tottenham Hotspur",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 0,
+      "goals": 0,
+      "is_partial": true,
+      "age": 32,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andy_Robertson",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366996962,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2027,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [
+    "ongoing/partial season(s): [2026]"
+  ],
+  "career_status": "active",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q15915040 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": null
+}

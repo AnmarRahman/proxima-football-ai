@@ -1,0 +1,13 @@
+{
+  "players_audited": 45,
+  "season_values_checked": 797,
+  "corroborated_against_raw_source_cell": 797,
+  "mismatches": 0,
+  "corroboration_rate": 1.0,
+  "identity_overrides_audited": [
+    "bernardo-silva",
+    "gavi-footballer",
+    "jorginho-footballer-born-december-1991"
+  ],
+  "mismatch_examples": []
+}

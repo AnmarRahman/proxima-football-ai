@@ -1,0 +1,337 @@
+{
+  "player_id": "totti",
+  "name": "Francesco Totti",
+  "position_group": "AM",
+  "coarse_group": "MID",
+  "active": false,
+  "era": "1990s-2010s (one club)",
+  "birth_year": 1976,
+  "birth_date": "1976-09-27",
+  "nationality": "Italy",
+  "career_position_label": "Attacking midfielder forward",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Francesco_Totti",
+    "retrieved_at": "2026-08-02",
+    "supports": [
+      "appearances",
+      "goals",
+      "position",
+      "birth_date",
+      "nationality"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 25,
+    "reserve_or_youth_rows_dropped": 0,
+    "dropped_rows": [],
+    "first_season": 1992,
+    "last_season": 2016,
+    "tier": "A",
+    "tier_b_c_available": false
+  },
+  "seasons": [
+    {
+      "season": 1992,
+      "stat_scope": "domestic_league",
+      "appearances": 2,
+      "goals": 0,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1993,
+      "stat_scope": "domestic_league",
+      "appearances": 8,
+      "goals": 0,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1994,
+      "stat_scope": "domestic_league",
+      "appearances": 21,
+      "goals": 4,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1995,
+      "stat_scope": "domestic_league",
+      "appearances": 28,
+      "goals": 2,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1996,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 5,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1997,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 13,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1998,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 12,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 1999,
+      "stat_scope": "domestic_league",
+      "appearances": 27,
+      "goals": 7,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2000,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 13,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2001,
+      "stat_scope": "domestic_league",
+      "appearances": 24,
+      "goals": 8,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2002,
+      "stat_scope": "domestic_league",
+      "appearances": 24,
+      "goals": 14,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2003,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 20,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2004,
+      "stat_scope": "domestic_league",
+      "appearances": 29,
+      "goals": 12,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2005,
+      "stat_scope": "domestic_league",
+      "appearances": 24,
+      "goals": 15,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2006,
+      "stat_scope": "domestic_league",
+      "appearances": 35,
+      "goals": 26,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2007,
+      "stat_scope": "domestic_league",
+      "appearances": 25,
+      "goals": 14,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2008,
+      "stat_scope": "domestic_league",
+      "appearances": 24,
+      "goals": 13,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2009,
+      "stat_scope": "domestic_league",
+      "appearances": 23,
+      "goals": 14,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2010,
+      "stat_scope": "domestic_league",
+      "appearances": 32,
+      "goals": 15,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2011,
+      "stat_scope": "domestic_league",
+      "appearances": 27,
+      "goals": 8,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2012,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 12,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2013,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 8,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2014,
+      "stat_scope": "domestic_league",
+      "appearances": 27,
+      "goals": 8,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2015,
+      "stat_scope": "domestic_league",
+      "appearances": 13,
+      "goals": 5,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2016,
+      "stat_scope": "domestic_league",
+      "appearances": 18,
+      "goals": 2,
+      "clubs": [
+        "Roma"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    }
+  ]
+}

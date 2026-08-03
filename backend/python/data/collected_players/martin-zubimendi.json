@@ -1,0 +1,331 @@
+{
+  "player_id": "martin-zubimendi",
+  "wikidata_id": "Q63384759",
+  "name": "Martín Zubimendi",
+  "requested_name": "Martin Zubimendi",
+  "birth_date": "1999-02-02",
+  "nationality": "Spain",
+  "primary_position": "central midfielder",
+  "position_group": "DM",
+  "coarse_group": "MID",
+  "roster_section": "Defensive Midfielders (25)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "1999-02-02",
+    "nationality": "Spain",
+    "occupation_footballer": true,
+    "position": "central midfielder",
+    "sitelinks": 46,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Martín_Zubimendi",
+    "retrieved_at": "2026-08-02",
+    "revision": 1366484379,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 8,
+    "season_team_league_rows": 8,
+    "reserve_or_youth_years_dropped": [
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [],
+    "missing_middle_seasons": [],
+    "first_season": 2018,
+    "last_season": 2025,
+    "partial_seasons": [],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 8,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 2018,
+      "season_start_year": 2018,
+      "canonical_season": "2018–19",
+      "season_source_label": "2018–19",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-sociedad",
+      "team_name": "Real Sociedad",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 1,
+      "goals": 0,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Martín_Zubimendi",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366484379,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2019,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2019,
+      "season_start_year": 2019,
+      "canonical_season": "2019–20",
+      "season_source_label": "2019–20",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-sociedad",
+      "team_name": "Real Sociedad",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 9,
+      "goals": 0,
+      "is_partial": false,
+      "age": 20,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Martín_Zubimendi",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366484379,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2020,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2020,
+      "season_start_year": 2020,
+      "canonical_season": "2020–21",
+      "season_source_label": "2020–21",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-sociedad",
+      "team_name": "Real Sociedad",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 31,
+      "goals": 0,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Martín_Zubimendi",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366484379,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2021,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2021,
+      "season_start_year": 2021,
+      "canonical_season": "2021–22",
+      "season_source_label": "2021–22",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-sociedad",
+      "team_name": "Real Sociedad",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 36,
+      "goals": 2,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Martín_Zubimendi",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366484379,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2022,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2022,
+      "season_start_year": 2022,
+      "canonical_season": "2022–23",
+      "season_source_label": "2022–23",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-sociedad",
+      "team_name": "Real Sociedad",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 36,
+      "goals": 1,
+      "is_partial": false,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Martín_Zubimendi",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366484379,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2023,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2023,
+      "season_start_year": 2023,
+      "canonical_season": "2023–24",
+      "season_source_label": "2023–24",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-sociedad",
+      "team_name": "Real Sociedad",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 31,
+      "goals": 4,
+      "is_partial": false,
+      "age": 24,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Martín_Zubimendi",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366484379,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2024,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2024,
+      "season_start_year": 2024,
+      "canonical_season": "2024–25",
+      "season_source_label": "2024–25",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-sociedad",
+      "team_name": "Real Sociedad",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 36,
+      "goals": 2,
+      "is_partial": false,
+      "age": 25,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Martín_Zubimendi",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366484379,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2025,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2025,
+      "season_start_year": 2025,
+      "canonical_season": "2025–26",
+      "season_source_label": "2025–26",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "arsenal",
+      "team_name": "Arsenal",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 38,
+      "goals": 5,
+      "is_partial": false,
+      "age": 26,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Martín_Zubimendi",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366484379,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2026,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [],
+  "career_status": "active",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q63384759 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": null
+}

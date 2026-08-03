@@ -1,0 +1,689 @@
+{
+  "player_id": "robin-van-persie",
+  "wikidata_id": "Q2339",
+  "name": "Robin van Persie",
+  "requested_name": "Robin van Persie",
+  "birth_date": "1983-08-06",
+  "nationality": "Kingdom of the Netherlands",
+  "primary_position": "forward",
+  "position_group": "FW",
+  "coarse_group": "FWD",
+  "roster_section": "Strikers (30)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "1983-08-06",
+    "nationality": "Kingdom of the Netherlands",
+    "occupation_footballer": true,
+    "position": "forward",
+    "sitelinks": 97,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+    "retrieved_at": "2026-08-02",
+    "revision": 1363725249,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 18,
+    "season_team_league_rows": 19,
+    "reserve_or_youth_years_dropped": [],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [],
+    "missing_middle_seasons": [],
+    "first_season": 2001,
+    "last_season": 2018,
+    "partial_seasons": [],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 19,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 2001,
+      "season_start_year": 2001,
+      "canonical_season": "2001–02",
+      "season_source_label": "2001–02",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "feyenoord",
+      "team_name": "Feyenoord",
+      "league_id": "eredivisie",
+      "league_name": "Eredivisie",
+      "appearances": 10,
+      "goals": 0,
+      "is_partial": false,
+      "age": 18,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2002,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2002,
+      "season_start_year": 2002,
+      "canonical_season": "2002–03",
+      "season_source_label": "2002–03",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "feyenoord",
+      "team_name": "Feyenoord",
+      "league_id": "eredivisie",
+      "league_name": "Eredivisie",
+      "appearances": 23,
+      "goals": 8,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2003,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2003,
+      "season_start_year": 2003,
+      "canonical_season": "2003–04",
+      "season_source_label": "2003–04",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "feyenoord",
+      "team_name": "Feyenoord",
+      "league_id": "eredivisie",
+      "league_name": "Eredivisie",
+      "appearances": 28,
+      "goals": 6,
+      "is_partial": false,
+      "age": 20,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2004,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2004,
+      "season_start_year": 2004,
+      "canonical_season": "2004–05",
+      "season_source_label": "2004–05",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "arsenal",
+      "team_name": "Arsenal",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 26,
+      "goals": 5,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2005,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2005,
+      "season_start_year": 2005,
+      "canonical_season": "2005–06",
+      "season_source_label": "2005–06",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "arsenal",
+      "team_name": "Arsenal",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 24,
+      "goals": 5,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2006,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2006,
+      "season_start_year": 2006,
+      "canonical_season": "2006–07",
+      "season_source_label": "2006–07",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "arsenal",
+      "team_name": "Arsenal",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 22,
+      "goals": 11,
+      "is_partial": false,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2007,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2007,
+      "season_start_year": 2007,
+      "canonical_season": "2007–08",
+      "season_source_label": "2007–08",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "arsenal",
+      "team_name": "Arsenal",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 15,
+      "goals": 7,
+      "is_partial": false,
+      "age": 24,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2008,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2008,
+      "season_start_year": 2008,
+      "canonical_season": "2008–09",
+      "season_source_label": "2008–09",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "arsenal",
+      "team_name": "Arsenal",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 28,
+      "goals": 11,
+      "is_partial": false,
+      "age": 25,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2009,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2009,
+      "season_start_year": 2009,
+      "canonical_season": "2009–10",
+      "season_source_label": "2009–10",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "arsenal",
+      "team_name": "Arsenal",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 16,
+      "goals": 9,
+      "is_partial": false,
+      "age": 26,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2010,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2010,
+      "season_start_year": 2010,
+      "canonical_season": "2010–11",
+      "season_source_label": "2010–11",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "arsenal",
+      "team_name": "Arsenal",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 25,
+      "goals": 18,
+      "is_partial": false,
+      "age": 27,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2011,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2011,
+      "season_start_year": 2011,
+      "canonical_season": "2011–12",
+      "season_source_label": "2011–12",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "arsenal",
+      "team_name": "Arsenal",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 38,
+      "goals": 30,
+      "is_partial": false,
+      "age": 28,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2012,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2012,
+      "season_start_year": 2012,
+      "canonical_season": "2012–13",
+      "season_source_label": "2012–13",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 38,
+      "goals": 26,
+      "is_partial": false,
+      "age": 29,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2013,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2013,
+      "season_start_year": 2013,
+      "canonical_season": "2013–14",
+      "season_source_label": "2013–14",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 21,
+      "goals": 12,
+      "is_partial": false,
+      "age": 30,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2014,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2014,
+      "season_start_year": 2014,
+      "canonical_season": "2014–15",
+      "season_source_label": "2014–15",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-united",
+      "team_name": "Manchester United",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 27,
+      "goals": 10,
+      "is_partial": false,
+      "age": 31,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2015,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2015,
+      "season_start_year": 2015,
+      "canonical_season": "2015–16",
+      "season_source_label": "2015–16",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "fenerbahce",
+      "team_name": "Fenerbahçe",
+      "league_id": "super-lig",
+      "league_name": "Süper Lig",
+      "appearances": 31,
+      "goals": 16,
+      "is_partial": false,
+      "age": 32,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2016,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2016,
+      "season_start_year": 2016,
+      "canonical_season": "2016–17",
+      "season_source_label": "2016–17",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "fenerbahce",
+      "team_name": "Fenerbahçe",
+      "league_id": "super-lig",
+      "league_name": "Süper Lig",
+      "appearances": 24,
+      "goals": 9,
+      "is_partial": false,
+      "age": 33,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2017,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2017,
+      "season_start_year": 2017,
+      "canonical_season": "2017–18",
+      "season_source_label": "2017–18",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "fenerbahce",
+      "team_name": "Fenerbahçe",
+      "league_id": "super-lig",
+      "league_name": "Süper Lig",
+      "appearances": 2,
+      "goals": 0,
+      "is_partial": false,
+      "age": 34,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2018,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2017,
+      "season_start_year": 2017,
+      "canonical_season": "2017–18",
+      "season_source_label": "2017–18",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "feyenoord",
+      "team_name": "Feyenoord",
+      "league_id": "eredivisie",
+      "league_name": "Eredivisie",
+      "appearances": 12,
+      "goals": 5,
+      "is_partial": false,
+      "age": 34,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2018,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2018,
+      "season_start_year": 2018,
+      "canonical_season": "2018–19",
+      "season_source_label": "2018–19",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "feyenoord",
+      "team_name": "Feyenoord",
+      "league_id": "eredivisie",
+      "league_name": "Eredivisie",
+      "appearances": 25,
+      "goals": 16,
+      "is_partial": false,
+      "age": 35,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Robin_van_Persie",
+          "retrieved_at": "2026-08-02",
+          "revision": 1363725249,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2019,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [],
+  "career_status": "retired",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q2339 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": "2019"
+}

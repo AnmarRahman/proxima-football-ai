@@ -1,0 +1,335 @@
+{
+  "player_id": "ronaldo",
+  "name": "Cristiano Ronaldo",
+  "position_group": "WNG",
+  "coarse_group": "WIDE",
+  "active": true,
+  "era": "2000s-2020s",
+  "birth_year": 1985,
+  "birth_date": "1985-02-05",
+  "nationality": "Portugal",
+  "career_position_label": "Forward",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+    "retrieved_at": "2026-08-02",
+    "supports": [
+      "appearances",
+      "goals",
+      "position",
+      "birth_date",
+      "nationality"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 24,
+    "reserve_or_youth_rows_dropped": 1,
+    "dropped_rows": [
+      {
+        "season": 2002,
+        "club": "Sporting CP B",
+        "competition": "Segunda Divisão B"
+      }
+    ],
+    "first_season": 2002,
+    "last_season": 2025,
+    "tier": "A",
+    "tier_b_c_available": false
+  },
+  "seasons": [
+    {
+      "season": 2002,
+      "stat_scope": "domestic_league",
+      "appearances": 25,
+      "goals": 3,
+      "clubs": [
+        "Sporting CP"
+      ],
+      "competitions": [
+        "Primeira Liga"
+      ]
+    },
+    {
+      "season": 2003,
+      "stat_scope": "domestic_league",
+      "appearances": 29,
+      "goals": 4,
+      "clubs": [
+        "Manchester United"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2004,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 5,
+      "clubs": [
+        "Manchester United"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2005,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 9,
+      "clubs": [
+        "Manchester United"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2006,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 17,
+      "clubs": [
+        "Manchester United"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2007,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 31,
+      "clubs": [
+        "Manchester United"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2008,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 18,
+      "clubs": [
+        "Manchester United"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2009,
+      "stat_scope": "domestic_league",
+      "appearances": 29,
+      "goals": 26,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2010,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 40,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2011,
+      "stat_scope": "domestic_league",
+      "appearances": 38,
+      "goals": 46,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2012,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 34,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2013,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 31,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2014,
+      "stat_scope": "domestic_league",
+      "appearances": 35,
+      "goals": 48,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2015,
+      "stat_scope": "domestic_league",
+      "appearances": 36,
+      "goals": 35,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2016,
+      "stat_scope": "domestic_league",
+      "appearances": 29,
+      "goals": 25,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2017,
+      "stat_scope": "domestic_league",
+      "appearances": 27,
+      "goals": 26,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2018,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 21,
+      "clubs": [
+        "Juventus"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2019,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 31,
+      "clubs": [
+        "Juventus"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2020,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 29,
+      "clubs": [
+        "Juventus"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2021,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 18,
+      "clubs": [
+        "Juventus",
+        "Manchester United"
+      ],
+      "competitions": [
+        "Serie A",
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2022,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 15,
+      "clubs": [
+        "Manchester United",
+        "Al-Nassr"
+      ],
+      "competitions": [
+        "Premier League",
+        "Saudi Pro League"
+      ]
+    },
+    {
+      "season": 2023,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 35,
+      "clubs": [
+        "Al-Nassr"
+      ],
+      "competitions": [
+        "Saudi Pro League"
+      ]
+    },
+    {
+      "season": 2024,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 25,
+      "clubs": [
+        "Al-Nassr"
+      ],
+      "competitions": [
+        "Saudi Pro League"
+      ]
+    },
+    {
+      "season": 2025,
+      "stat_scope": "domestic_league",
+      "appearances": 30,
+      "goals": 28,
+      "clubs": [
+        "Al-Nassr"
+      ],
+      "competitions": [
+        "Saudi Pro League"
+      ]
+    }
+  ]
+}

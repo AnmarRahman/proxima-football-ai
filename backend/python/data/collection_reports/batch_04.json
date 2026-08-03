@@ -1,0 +1,173 @@
+{
+  "batch": 4,
+  "attempted": 25,
+  "collected": 25,
+  "quarantined": 0,
+  "quarantine_fraction": 0.0,
+  "systemic_failure": false,
+  "warnings_total": 5,
+  "collected_players": [
+    {
+      "player_id": "bruno-guimaraes",
+      "name": "Bruno Guimarães",
+      "seasons": 10,
+      "warnings": 0
+    },
+    {
+      "player_id": "martin-zubimendi",
+      "name": "Martín Zubimendi",
+      "seasons": 8,
+      "warnings": 0
+    },
+    {
+      "player_id": "jorginho-footballer-born-december-1991",
+      "name": "Jorginho (footballer, born December 1991)",
+      "seasons": 17,
+      "warnings": 1
+    },
+    {
+      "player_id": "nemanja-matic",
+      "name": "Nemanja Matić",
+      "seasons": 20,
+      "warnings": 0
+    },
+    {
+      "player_id": "yaya-toure",
+      "name": "Yaya Touré",
+      "seasons": 19,
+      "warnings": 0
+    },
+    {
+      "player_id": "luka-modric",
+      "name": "Luka Modrić",
+      "seasons": 24,
+      "warnings": 1
+    },
+    {
+      "player_id": "toni-kroos",
+      "name": "Toni Kroos",
+      "seasons": 17,
+      "warnings": 0
+    },
+    {
+      "player_id": "xavi-footballer-born-1980",
+      "name": "Xavi (footballer, born 1980)",
+      "seasons": 21,
+      "warnings": 0
+    },
+    {
+      "player_id": "andres-iniesta",
+      "name": "Andrés Iniesta",
+      "seasons": 22,
+      "warnings": 0
+    },
+    {
+      "player_id": "andrea-pirlo",
+      "name": "Andrea Pirlo",
+      "seasons": 24,
+      "warnings": 0
+    },
+    {
+      "player_id": "steven-gerrard",
+      "name": "Steven Gerrard",
+      "seasons": 19,
+      "warnings": 0
+    },
+    {
+      "player_id": "frank-lampard",
+      "name": "Frank Lampard",
+      "seasons": 22,
+      "warnings": 0
+    },
+    {
+      "player_id": "paul-scholes",
+      "name": "Paul Scholes",
+      "seasons": 20,
+      "warnings": 1
+    },
+    {
+      "player_id": "cesc-fabregas",
+      "name": "Cesc Fàbregas",
+      "seasons": 20,
+      "warnings": 0
+    },
+    {
+      "player_id": "kevin-de-bruyne",
+      "name": "Kevin De Bruyne",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "david-silva",
+      "name": "David Silva",
+      "seasons": 19,
+      "warnings": 0
+    },
+    {
+      "player_id": "bernardo-silva",
+      "name": "Bernardo Silva",
+      "seasons": 14,
+      "warnings": 1
+    },
+    {
+      "player_id": "thiago-alcantara",
+      "name": "Thiago Alcântara",
+      "seasons": 16,
+      "warnings": 0
+    },
+    {
+      "player_id": "ilkay-gundogan",
+      "name": "İlkay Gündoğan",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "marco-verratti",
+      "name": "Marco Verratti",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "ivan-rakitic",
+      "name": "Ivan Rakitić",
+      "seasons": 21,
+      "warnings": 0
+    },
+    {
+      "player_id": "wesley-sneijder",
+      "name": "Wesley Sneijder",
+      "seasons": 17,
+      "warnings": 0
+    },
+    {
+      "player_id": "bastian-schweinsteiger",
+      "name": "Bastian Schweinsteiger",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "clarence-seedorf",
+      "name": "Clarence Seedorf",
+      "seasons": 22,
+      "warnings": 0
+    },
+    {
+      "player_id": "federico-valverde",
+      "name": "Federico Valverde",
+      "seasons": 11,
+      "warnings": 1
+    }
+  ],
+  "quarantined_players": [],
+  "requests": {
+    "wikipedia": {
+      "total": 25,
+      "cache_hit_rate": 1.0
+    },
+    "wikidata": {
+      "total": 57,
+      "cache_hit_rate": 1.0
+    }
+  },
+  "gate_ok": true
+}

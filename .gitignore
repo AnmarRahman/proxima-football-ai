@@ -6,3 +6,17 @@
 **/__pycache__/
 *.py[cod]
 backend/python/artifacts/
+
+# Temporary artifact staging directories (never ignore completed versions like tier_a_v1)
+backend/python/model_artifacts/*.build-*/
+
+# Cached raw HTTP responses (regenerated; ~230 MB — never commit)
+backend/python/data/acquisition/cache/
+
+# Bulk development-generated inference inputs (regenerate via export_inference_inputs.py;
+# small deterministic fixtures live in backend/python/tests/fixtures/)
+backend/python/data/inference_inputs/
+
+# Temp files
+*.tmp
+*.log

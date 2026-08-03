@@ -1,0 +1,28 @@
+{
+  "completed_players": 180,
+  "atomic_rows": 3143,
+  "canonical_player_seasons": 2996,
+  "coarse_group": {
+    "DEF": 55,
+    "MID": 65,
+    "FWD": 30,
+    "WIDE": 30
+  },
+  "fine_group": {
+    "FB": 25,
+    "CB": 30,
+    "AM": 10,
+    "FW": 30,
+    "WNG": 30,
+    "CM": 30,
+    "DM": 25
+  },
+  "career_status": {
+    "active": 102,
+    "retired": 70,
+    "inactive": 8
+  },
+  "partial_seasons": 30,
+  "model_ineligible_atomic_rows": 2,
+  "model_eligible_canonical_seasons": 2994
+}

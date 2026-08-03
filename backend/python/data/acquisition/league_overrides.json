@@ -1,0 +1,13 @@
+{
+  "_comment": "Reviewed, sourced league labels for rows where Wikipedia's Division column did not parse (rendered empty). Keyed by player_id -> team_id -> league. Each is unambiguous from the club and era. Applied only when the collected league_id is 'unknown'.",
+  "overrides": {
+    "juan-roman-riquelme": {
+      "barcelona": {"league_name": "La Liga", "league_id": "la-liga", "reason": "Riquelme played for FC Barcelona in the Spanish top flight (La Liga) 2002-03."},
+      "villarreal": {"league_name": "La Liga", "league_id": "la-liga", "reason": "Villarreal CF competed in La Liga throughout Riquelme's 2003-2007 spell (incl. the loan seasons)."}
+    },
+    "philipp-lahm": {
+      "bayern-munich": {"league_name": "Bundesliga", "league_id": "bundesliga", "reason": "Bayern Munich play in the German Bundesliga."},
+      "stuttgart": {"league_name": "Bundesliga", "league_id": "bundesliga", "reason": "VfB Stuttgart played in the Bundesliga during Lahm's 2003-2005 loan."}
+    }
+  }
+}

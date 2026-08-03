@@ -1,0 +1,693 @@
+{
+  "player_id": "neymar",
+  "wikidata_id": "Q142794",
+  "name": "Neymar",
+  "requested_name": "Neymar",
+  "birth_date": "1992-02-05",
+  "nationality": "Brazil",
+  "primary_position": "wing half",
+  "position_group": "WNG",
+  "coarse_group": "WIDE",
+  "roster_section": "Wingers and Inside Forwards (30)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "1992-02-05",
+    "nationality": "Brazil",
+    "occupation_footballer": true,
+    "position": "wing half",
+    "sitelinks": 155,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Neymar",
+    "retrieved_at": "2026-08-02",
+    "revision": 1367373652,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 18,
+    "season_team_league_rows": 19,
+    "reserve_or_youth_years_dropped": [],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [],
+    "missing_middle_seasons": [],
+    "first_season": 2009,
+    "last_season": 2026,
+    "partial_seasons": [
+      2026
+    ],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 19,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 2009,
+      "season_start_year": 2009,
+      "canonical_season": "2009",
+      "season_source_label": "2009",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "santos",
+      "team_name": "Santos",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 33,
+      "goals": 10,
+      "is_partial": false,
+      "age": 17,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2009,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2010,
+      "season_start_year": 2010,
+      "canonical_season": "2010",
+      "season_source_label": "2010",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "santos",
+      "team_name": "Santos",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 31,
+      "goals": 17,
+      "is_partial": false,
+      "age": 18,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2010,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2011,
+      "season_start_year": 2011,
+      "canonical_season": "2011",
+      "season_source_label": "2011",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "santos",
+      "team_name": "Santos",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 21,
+      "goals": 13,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2011,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2012,
+      "season_start_year": 2012,
+      "canonical_season": "2012",
+      "season_source_label": "2012",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "santos",
+      "team_name": "Santos",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 17,
+      "goals": 14,
+      "is_partial": false,
+      "age": 20,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2012,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2013,
+      "season_start_year": 2013,
+      "canonical_season": "2013",
+      "season_source_label": "2013",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "santos",
+      "team_name": "Santos",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 1,
+      "goals": 0,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2013,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2013,
+      "season_start_year": 2013,
+      "canonical_season": "2013–14",
+      "season_source_label": "2013–14",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 26,
+      "goals": 9,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2014,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2014,
+      "season_start_year": 2014,
+      "canonical_season": "2014–15",
+      "season_source_label": "2014–15",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 33,
+      "goals": 22,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2015,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2015,
+      "season_start_year": 2015,
+      "canonical_season": "2015–16",
+      "season_source_label": "2015–16",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 34,
+      "goals": 24,
+      "is_partial": false,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2016,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2016,
+      "season_start_year": 2016,
+      "canonical_season": "2016–17",
+      "season_source_label": "2016–17",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 30,
+      "goals": 13,
+      "is_partial": false,
+      "age": 24,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2017,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2017,
+      "season_start_year": 2017,
+      "canonical_season": "2017–18",
+      "season_source_label": "2017–18",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "paris-saint-germain",
+      "team_name": "Paris Saint-Germain",
+      "league_id": "ligue-1",
+      "league_name": "Ligue 1",
+      "appearances": 20,
+      "goals": 19,
+      "is_partial": false,
+      "age": 25,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2018,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2018,
+      "season_start_year": 2018,
+      "canonical_season": "2018–19",
+      "season_source_label": "2018–19",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "paris-saint-germain",
+      "team_name": "Paris Saint-Germain",
+      "league_id": "ligue-1",
+      "league_name": "Ligue 1",
+      "appearances": 17,
+      "goals": 15,
+      "is_partial": false,
+      "age": 26,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2019,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2019,
+      "season_start_year": 2019,
+      "canonical_season": "2019–20",
+      "season_source_label": "2019–20",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "paris-saint-germain",
+      "team_name": "Paris Saint-Germain",
+      "league_id": "ligue-1",
+      "league_name": "Ligue 1",
+      "appearances": 15,
+      "goals": 13,
+      "is_partial": false,
+      "age": 27,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2020,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2020,
+      "season_start_year": 2020,
+      "canonical_season": "2020–21",
+      "season_source_label": "2020–21",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "paris-saint-germain",
+      "team_name": "Paris Saint-Germain",
+      "league_id": "ligue-1",
+      "league_name": "Ligue 1",
+      "appearances": 18,
+      "goals": 9,
+      "is_partial": false,
+      "age": 28,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2021,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2021,
+      "season_start_year": 2021,
+      "canonical_season": "2021–22",
+      "season_source_label": "2021–22",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "paris-saint-germain",
+      "team_name": "Paris Saint-Germain",
+      "league_id": "ligue-1",
+      "league_name": "Ligue 1",
+      "appearances": 22,
+      "goals": 13,
+      "is_partial": false,
+      "age": 29,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2022,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2022,
+      "season_start_year": 2022,
+      "canonical_season": "2022–23",
+      "season_source_label": "2022–23",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "paris-saint-germain",
+      "team_name": "Paris Saint-Germain",
+      "league_id": "ligue-1",
+      "league_name": "Ligue 1",
+      "appearances": 20,
+      "goals": 13,
+      "is_partial": false,
+      "age": 30,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2023,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2023,
+      "season_start_year": 2023,
+      "canonical_season": "2023–24",
+      "season_source_label": "2023–24",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "al-hilal",
+      "team_name": "Al-Hilal",
+      "league_id": "saudi-pro-league",
+      "league_name": "Saudi Pro League",
+      "appearances": 3,
+      "goals": 0,
+      "is_partial": false,
+      "age": 31,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2024,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2024,
+      "season_start_year": 2024,
+      "canonical_season": "2024–25",
+      "season_source_label": "2024–25",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "al-hilal",
+      "team_name": "Al-Hilal",
+      "league_id": "saudi-pro-league",
+      "league_name": "Saudi Pro League",
+      "appearances": 0,
+      "goals": 0,
+      "is_partial": false,
+      "age": 32,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2025,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2025,
+      "season_start_year": 2025,
+      "canonical_season": "2025",
+      "season_source_label": "2025",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "santos",
+      "team_name": "Santos",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 20,
+      "goals": 8,
+      "is_partial": false,
+      "age": 33,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2025,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2026,
+      "season_start_year": 2026,
+      "canonical_season": "2026",
+      "season_source_label": "2026",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "santos",
+      "team_name": "Santos",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 9,
+      "goals": 6,
+      "is_partial": true,
+      "age": 34,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neymar",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367373652,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2026,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [
+    "ongoing/partial season(s): [2026]"
+  ],
+  "career_status": "active",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q142794 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": null
+}

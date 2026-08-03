@@ -1,0 +1,230 @@
+{
+  "player_id": "alejandro-balde",
+  "wikidata_id": "Q105681392",
+  "name": "Alejandro Balde",
+  "requested_name": "Alejandro Balde",
+  "birth_date": "2003-10-18",
+  "nationality": "Spain",
+  "primary_position": "full-back",
+  "position_group": "FB",
+  "coarse_group": "DEF",
+  "roster_section": "Full-backs and Wing-backs (25)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "2003-10-18",
+    "nationality": "Spain",
+    "occupation_footballer": true,
+    "position": "full-back",
+    "sitelinks": 47,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Alejandro_Balde",
+    "retrieved_at": "2026-08-02",
+    "revision": 1367101133,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 5,
+    "season_team_league_rows": 5,
+    "reserve_or_youth_years_dropped": [
+      2020,
+      2021
+    ],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [],
+    "missing_middle_seasons": [],
+    "first_season": 2021,
+    "last_season": 2025,
+    "partial_seasons": [],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 5,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 2021,
+      "season_start_year": 2021,
+      "canonical_season": "2021–22",
+      "season_source_label": "2021–22",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 5,
+      "goals": 0,
+      "is_partial": false,
+      "age": 18,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alejandro_Balde",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101133,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2022,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2022,
+      "season_start_year": 2022,
+      "canonical_season": "2022–23",
+      "season_source_label": "2022–23",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 33,
+      "goals": 1,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alejandro_Balde",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101133,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2023,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2023,
+      "season_start_year": 2023,
+      "canonical_season": "2023–24",
+      "season_source_label": "2023–24",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 18,
+      "goals": 0,
+      "is_partial": false,
+      "age": 20,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alejandro_Balde",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101133,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2024,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2024,
+      "season_start_year": 2024,
+      "canonical_season": "2024–25",
+      "season_source_label": "2024–25",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 32,
+      "goals": 0,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alejandro_Balde",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101133,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2025,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2025,
+      "season_start_year": 2025,
+      "canonical_season": "2025–26",
+      "season_source_label": "2025–26",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "barcelona",
+      "team_name": "Barcelona",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 28,
+      "goals": 0,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Alejandro_Balde",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367101133,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2026,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [],
+  "career_status": "active",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q105681392 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": null
+}

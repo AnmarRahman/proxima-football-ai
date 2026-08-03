@@ -1,0 +1,173 @@
+{
+  "batch": 2,
+  "attempted": 25,
+  "collected": 25,
+  "quarantined": 0,
+  "quarantine_fraction": 0.0,
+  "systemic_failure": false,
+  "warnings_total": 6,
+  "collected_players": [
+    {
+      "player_id": "william-saliba",
+      "name": "William Saliba",
+      "seasons": 8,
+      "warnings": 0
+    },
+    {
+      "player_id": "gabriel-magalhaes",
+      "name": "Gabriel Magalhães",
+      "seasons": 10,
+      "warnings": 0
+    },
+    {
+      "player_id": "ronald-araujo",
+      "name": "Ronald Araújo",
+      "seasons": 10,
+      "warnings": 0
+    },
+    {
+      "player_id": "alessandro-bastoni",
+      "name": "Alessandro Bastoni",
+      "seasons": 10,
+      "warnings": 0
+    },
+    {
+      "player_id": "josko-gvardiol",
+      "name": "Joško Gvardiol",
+      "seasons": 7,
+      "warnings": 0
+    },
+    {
+      "player_id": "dani-alves",
+      "name": "Dani Alves",
+      "seasons": 22,
+      "warnings": 0
+    },
+    {
+      "player_id": "marcelo-footballer-born-1988",
+      "name": "Marcelo (footballer, born 1988)",
+      "seasons": 20,
+      "warnings": 0
+    },
+    {
+      "player_id": "ashley-cole",
+      "name": "Ashley Cole",
+      "seasons": 20,
+      "warnings": 0
+    },
+    {
+      "player_id": "philipp-lahm",
+      "name": "Philipp Lahm",
+      "seasons": 15,
+      "warnings": 0
+    },
+    {
+      "player_id": "roberto-carlos",
+      "name": "Roberto Carlos",
+      "seasons": 21,
+      "warnings": 1
+    },
+    {
+      "player_id": "cafu",
+      "name": "Cafu",
+      "seasons": 19,
+      "warnings": 0
+    },
+    {
+      "player_id": "patrice-evra",
+      "name": "Patrice Evra",
+      "seasons": 19,
+      "warnings": 0
+    },
+    {
+      "player_id": "javier-zanetti",
+      "name": "Javier Zanetti",
+      "seasons": 22,
+      "warnings": 0
+    },
+    {
+      "player_id": "maicon-footballer-born-1981",
+      "name": "Maicon (footballer, born 1981)",
+      "seasons": 20,
+      "warnings": 1
+    },
+    {
+      "player_id": "dani-carvajal",
+      "name": "Dani Carvajal",
+      "seasons": 14,
+      "warnings": 0
+    },
+    {
+      "player_id": "jordi-alba",
+      "name": "Jordi Alba",
+      "seasons": 19,
+      "warnings": 0
+    },
+    {
+      "player_id": "kyle-walker",
+      "name": "Kyle Walker",
+      "seasons": 18,
+      "warnings": 0
+    },
+    {
+      "player_id": "trent-alexander-arnold",
+      "name": "Trent Alexander-Arnold",
+      "seasons": 11,
+      "warnings": 1
+    },
+    {
+      "player_id": "andy-robertson",
+      "name": "Andy Robertson",
+      "seasons": 15,
+      "warnings": 1
+    },
+    {
+      "player_id": "achraf-hakimi",
+      "name": "Achraf Hakimi",
+      "seasons": 9,
+      "warnings": 0
+    },
+    {
+      "player_id": "theo-hernandez",
+      "name": "Théo Hernandez",
+      "seasons": 10,
+      "warnings": 0
+    },
+    {
+      "player_id": "joao-cancelo",
+      "name": "João Cancelo",
+      "seasons": 13,
+      "warnings": 0
+    },
+    {
+      "player_id": "reece-james",
+      "name": "Reece James",
+      "seasons": 9,
+      "warnings": 1
+    },
+    {
+      "player_id": "kieran-trippier",
+      "name": "Kieran Trippier",
+      "seasons": 18,
+      "warnings": 1
+    },
+    {
+      "player_id": "alphonso-davies",
+      "name": "Alphonso Davies",
+      "seasons": 10,
+      "warnings": 0
+    }
+  ],
+  "quarantined_players": [],
+  "requests": {
+    "wikipedia": {
+      "total": 25,
+      "cache_hit_rate": 1.0
+    },
+    "wikidata": {
+      "total": 62,
+      "cache_hit_rate": 1.0
+    }
+  },
+  "gate_ok": true
+}

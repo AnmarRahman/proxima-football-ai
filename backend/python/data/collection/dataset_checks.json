@@ -1,0 +1,68 @@
+{
+  "players": 180,
+  "season_rows": 3143,
+  "duplicate_atomic_rows": 0,
+  "duplicate_atomic_examples": [],
+  "duplicate_aggregate_rows": 0,
+  "overlapping_aggregate_component": [],
+  "implausible_season_totals": [],
+  "players_with_career_gaps": 7,
+  "career_gap_examples": [
+    {
+      "player": "arjen-robben",
+      "gaps": [
+        2019
+      ]
+    },
+    {
+      "player": "gilberto-silva",
+      "gaps": [
+        1999
+      ]
+    },
+    {
+      "player": "maicon-footballer-born-1981",
+      "gaps": [
+        2016,
+        2018
+      ]
+    },
+    {
+      "player": "michael-essien",
+      "gaps": [
+        2016
+      ]
+    },
+    {
+      "player": "paul-scholes",
+      "gaps": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ]
+    },
+    {
+      "player": "roberto-carlos",
+      "gaps": [
+        2012,
+        2013,
+        2014
+      ]
+    },
+    {
+      "player": "ronaldo-brazilian-footballer",
+      "gaps": [
+        2008
+      ]
+    }
+  ],
+  "unresolved_team_ids": 0,
+  "unresolved_league_ids": 20,
+  "tier_a_incomplete_players": [],
+  "provenance_incomplete_players": [],
+  "partial_seasons_as_completed_targets": [],
+  "total_rows_dropped": 0,
+  "childhood_rows_dropped": 3
+}

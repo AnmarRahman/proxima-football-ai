@@ -1,0 +1,331 @@
+{
+  "player_id": "ibrahimovic",
+  "name": "Zlatan Ibrahimovic",
+  "position_group": "FW",
+  "coarse_group": "FWD",
+  "active": false,
+  "era": "2000s-2020s",
+  "birth_year": 1981,
+  "birth_date": "1981-10-03",
+  "nationality": "Sweden",
+  "career_position_label": "Striker",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Zlatan_Ibrahimović",
+    "retrieved_at": "2026-08-02",
+    "supports": [
+      "appearances",
+      "goals",
+      "position",
+      "birth_date",
+      "nationality"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 24,
+    "reserve_or_youth_rows_dropped": 0,
+    "dropped_rows": [],
+    "first_season": 1999,
+    "last_season": 2022,
+    "tier": "A",
+    "tier_b_c_available": false
+  },
+  "seasons": [
+    {
+      "season": 1999,
+      "stat_scope": "domestic_league",
+      "appearances": 6,
+      "goals": 1,
+      "clubs": [
+        "Malmö FF"
+      ],
+      "competitions": [
+        "Allsvenskan"
+      ]
+    },
+    {
+      "season": 2000,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 12,
+      "clubs": [
+        "Malmö FF"
+      ],
+      "competitions": [
+        "Superettan"
+      ]
+    },
+    {
+      "season": 2001,
+      "stat_scope": "domestic_league",
+      "appearances": 32,
+      "goals": 9,
+      "clubs": [
+        "Malmö FF",
+        "Ajax"
+      ],
+      "competitions": [
+        "Allsvenskan",
+        "Eredivisie"
+      ]
+    },
+    {
+      "season": 2002,
+      "stat_scope": "domestic_league",
+      "appearances": 25,
+      "goals": 13,
+      "clubs": [
+        "Ajax"
+      ],
+      "competitions": [
+        "Eredivisie"
+      ]
+    },
+    {
+      "season": 2003,
+      "stat_scope": "domestic_league",
+      "appearances": 22,
+      "goals": 13,
+      "clubs": [
+        "Ajax"
+      ],
+      "competitions": [
+        "Eredivisie"
+      ]
+    },
+    {
+      "season": 2004,
+      "stat_scope": "domestic_league",
+      "appearances": 38,
+      "goals": 19,
+      "clubs": [
+        "Ajax",
+        "Juventus"
+      ],
+      "competitions": [
+        "Eredivisie",
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2005,
+      "stat_scope": "domestic_league",
+      "appearances": 35,
+      "goals": 7,
+      "clubs": [
+        "Juventus"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2006,
+      "stat_scope": "domestic_league",
+      "appearances": 27,
+      "goals": 15,
+      "clubs": [
+        "Inter Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2007,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 17,
+      "clubs": [
+        "Inter Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2008,
+      "stat_scope": "domestic_league",
+      "appearances": 35,
+      "goals": 25,
+      "clubs": [
+        "Inter Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2009,
+      "stat_scope": "domestic_league",
+      "appearances": 29,
+      "goals": 16,
+      "clubs": [
+        "Barcelona"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2010,
+      "stat_scope": "domestic_league",
+      "appearances": 29,
+      "goals": 14,
+      "clubs": [
+        "AC Milan (loan)"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2011,
+      "stat_scope": "domestic_league",
+      "appearances": 32,
+      "goals": 28,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2012,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 30,
+      "clubs": [
+        "Paris Saint-Germain"
+      ],
+      "competitions": [
+        "Ligue 1"
+      ]
+    },
+    {
+      "season": 2013,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 26,
+      "clubs": [
+        "Paris Saint-Germain"
+      ],
+      "competitions": [
+        "Ligue 1"
+      ]
+    },
+    {
+      "season": 2014,
+      "stat_scope": "domestic_league",
+      "appearances": 24,
+      "goals": 19,
+      "clubs": [
+        "Paris Saint-Germain"
+      ],
+      "competitions": [
+        "Ligue 1"
+      ]
+    },
+    {
+      "season": 2015,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 38,
+      "clubs": [
+        "Paris Saint-Germain"
+      ],
+      "competitions": [
+        "Ligue 1"
+      ]
+    },
+    {
+      "season": 2016,
+      "stat_scope": "domestic_league",
+      "appearances": 28,
+      "goals": 17,
+      "clubs": [
+        "Manchester United"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2017,
+      "stat_scope": "domestic_league",
+      "appearances": 5,
+      "goals": 0,
+      "clubs": [
+        "Manchester United"
+      ],
+      "competitions": [
+        "Premier League"
+      ]
+    },
+    {
+      "season": 2018,
+      "stat_scope": "domestic_league",
+      "appearances": 27,
+      "goals": 22,
+      "clubs": [
+        "LA Galaxy"
+      ],
+      "competitions": [
+        "Major League Soccer"
+      ]
+    },
+    {
+      "season": 2019,
+      "stat_scope": "domestic_league",
+      "appearances": 47,
+      "goals": 40,
+      "clubs": [
+        "LA Galaxy",
+        "AC Milan"
+      ],
+      "competitions": [
+        "Major League Soccer",
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2020,
+      "stat_scope": "domestic_league",
+      "appearances": 19,
+      "goals": 15,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2021,
+      "stat_scope": "domestic_league",
+      "appearances": 23,
+      "goals": 8,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    },
+    {
+      "season": 2022,
+      "stat_scope": "domestic_league",
+      "appearances": 4,
+      "goals": 1,
+      "clubs": [
+        "AC Milan"
+      ],
+      "competitions": [
+        "Serie A"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "player_id": "ramos",
+  "name": "Sergio Ramos",
+  "position_group": "CB",
+  "coarse_group": "DEF",
+  "active": true,
+  "era": "2000s-2020s (high-scoring CB)",
+  "birth_year": 1986,
+  "birth_date": "1986-03-30",
+  "nationality": "Spain",
+  "career_position_label": "Centre-back",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only; domestic-league apps/goals. NOT mixed with cup/continental/all-competition totals.",
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sergio_Ramos",
+    "retrieved_at": "2026-08-02",
+    "supports": [
+      "appearances",
+      "goals",
+      "position",
+      "birth_date",
+      "nationality"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 23,
+    "reserve_or_youth_rows_dropped": 1,
+    "dropped_rows": [
+      {
+        "season": 2003,
+        "club": "Sevilla Atlético",
+        "competition": "Segunda División B"
+      }
+    ],
+    "first_season": 2003,
+    "last_season": 2025,
+    "tier": "A",
+    "tier_b_c_available": false
+  },
+  "seasons": [
+    {
+      "season": 2003,
+      "stat_scope": "domestic_league",
+      "appearances": 7,
+      "goals": 0,
+      "clubs": [
+        "Sevilla"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2004,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 2,
+      "clubs": [
+        "Sevilla"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2005,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 4,
+      "clubs": [
+        "Sevilla",
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2006,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 5,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2007,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 5,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2008,
+      "stat_scope": "domestic_league",
+      "appearances": 32,
+      "goals": 4,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2009,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 4,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2010,
+      "stat_scope": "domestic_league",
+      "appearances": 31,
+      "goals": 3,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2011,
+      "stat_scope": "domestic_league",
+      "appearances": 34,
+      "goals": 3,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2012,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 4,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2013,
+      "stat_scope": "domestic_league",
+      "appearances": 32,
+      "goals": 4,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2014,
+      "stat_scope": "domestic_league",
+      "appearances": 27,
+      "goals": 4,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2015,
+      "stat_scope": "domestic_league",
+      "appearances": 23,
+      "goals": 2,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2016,
+      "stat_scope": "domestic_league",
+      "appearances": 28,
+      "goals": 7,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2017,
+      "stat_scope": "domestic_league",
+      "appearances": 26,
+      "goals": 4,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2018,
+      "stat_scope": "domestic_league",
+      "appearances": 28,
+      "goals": 6,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2019,
+      "stat_scope": "domestic_league",
+      "appearances": 35,
+      "goals": 11,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2020,
+      "stat_scope": "domestic_league",
+      "appearances": 15,
+      "goals": 2,
+      "clubs": [
+        "Real Madrid"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2021,
+      "stat_scope": "domestic_league",
+      "appearances": 12,
+      "goals": 2,
+      "clubs": [
+        "Paris Saint-Germain"
+      ],
+      "competitions": [
+        "Ligue 1"
+      ]
+    },
+    {
+      "season": 2022,
+      "stat_scope": "domestic_league",
+      "appearances": 33,
+      "goals": 2,
+      "clubs": [
+        "Paris Saint-Germain"
+      ],
+      "competitions": [
+        "Ligue 1"
+      ]
+    },
+    {
+      "season": 2023,
+      "stat_scope": "domestic_league",
+      "appearances": 28,
+      "goals": 3,
+      "clubs": [
+        "Sevilla"
+      ],
+      "competitions": [
+        "La Liga"
+      ]
+    },
+    {
+      "season": 2024,
+      "stat_scope": "domestic_league",
+      "appearances": 8,
+      "goals": 3,
+      "clubs": [
+        "Monterrey"
+      ],
+      "competitions": [
+        "Liga MX"
+      ]
+    },
+    {
+      "season": 2025,
+      "stat_scope": "domestic_league",
+      "appearances": 19,
+      "goals": 3,
+      "clubs": [
+        "Monterrey"
+      ],
+      "competitions": [
+        "Liga MX"
+      ]
+    }
+  ]
+}

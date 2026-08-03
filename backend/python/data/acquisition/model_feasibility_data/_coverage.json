@@ -1,0 +1,282 @@
+[
+  {
+    "player_id": "haaland",
+    "name": "Erling Haaland",
+    "position_group": "FW",
+    "coarse_group": "FWD",
+    "active": true,
+    "birth_year": 2000,
+    "seasons": 10,
+    "span": [
+      2016,
+      2025
+    ],
+    "dropped_reserve_youth": 3
+  },
+  {
+    "player_id": "ibrahimovic",
+    "name": "Zlatan Ibrahimovic",
+    "position_group": "FW",
+    "coarse_group": "FWD",
+    "active": false,
+    "birth_year": 1981,
+    "seasons": 24,
+    "span": [
+      1999,
+      2022
+    ],
+    "dropped_reserve_youth": 0
+  },
+  {
+    "player_id": "henry",
+    "name": "Thierry Henry",
+    "position_group": "FW",
+    "coarse_group": "FWD",
+    "active": false,
+    "birth_year": 1977,
+    "seasons": 21,
+    "span": [
+      1994,
+      2014
+    ],
+    "dropped_reserve_youth": 1
+  },
+  {
+    "player_id": "van-basten",
+    "name": "Marco van Basten",
+    "position_group": "FW",
+    "coarse_group": "FWD",
+    "active": false,
+    "birth_year": 1964,
+    "seasons": 14,
+    "span": [
+      1981,
+      1994
+    ],
+    "dropped_reserve_youth": 0
+  },
+  {
+    "player_id": "ronaldo",
+    "name": "Cristiano Ronaldo",
+    "position_group": "WNG",
+    "coarse_group": "WIDE",
+    "active": true,
+    "birth_year": 1985,
+    "seasons": 24,
+    "span": [
+      2002,
+      2025
+    ],
+    "dropped_reserve_youth": 1
+  },
+  {
+    "player_id": "robben",
+    "name": "Arjen Robben",
+    "position_group": "WNG",
+    "coarse_group": "WIDE",
+    "active": false,
+    "birth_year": 1984,
+    "seasons": 20,
+    "span": [
+      2000,
+      2020
+    ],
+    "dropped_reserve_youth": 0
+  },
+  {
+    "player_id": "ribery",
+    "name": "Franck Ribery",
+    "position_group": "WNG",
+    "coarse_group": "WIDE",
+    "active": false,
+    "birth_year": 1983,
+    "seasons": 23,
+    "span": [
+      2000,
+      2022
+    ],
+    "dropped_reserve_youth": 0
+  },
+  {
+    "player_id": "beckham",
+    "name": "David Beckham",
+    "position_group": "WNG",
+    "coarse_group": "WIDE",
+    "active": false,
+    "birth_year": 1975,
+    "seasons": 21,
+    "span": [
+      1992,
+      2012
+    ],
+    "dropped_reserve_youth": 0
+  },
+  {
+    "player_id": "kaka",
+    "name": "Kaka",
+    "position_group": "AM",
+    "coarse_group": "MID",
+    "active": false,
+    "birth_year": 1982,
+    "seasons": 17,
+    "span": [
+      2001,
+      2017
+    ],
+    "dropped_reserve_youth": 0
+  },
+  {
+    "player_id": "totti",
+    "name": "Francesco Totti",
+    "position_group": "AM",
+    "coarse_group": "MID",
+    "active": false,
+    "birth_year": 1976,
+    "seasons": 25,
+    "span": [
+      1992,
+      2016
+    ],
+    "dropped_reserve_youth": 0
+  },
+  {
+    "player_id": "lampard",
+    "name": "Frank Lampard",
+    "position_group": "CM",
+    "coarse_group": "MID",
+    "active": false,
+    "birth_year": 1978,
+    "seasons": 22,
+    "span": [
+      1995,
+      2016
+    ],
+    "dropped_reserve_youth": 0
+  },
+  {
+    "player_id": "gerrard",
+    "name": "Steven Gerrard",
+    "position_group": "CM",
+    "coarse_group": "MID",
+    "active": false,
+    "birth_year": 1980,
+    "seasons": 19,
+    "span": [
+      1998,
+      2016
+    ],
+    "dropped_reserve_youth": 0
+  },
+  {
+    "player_id": "modric",
+    "name": "Luka Modric",
+    "position_group": "CM",
+    "coarse_group": "MID",
+    "active": true,
+    "birth_year": 1985,
+    "seasons": 24,
+    "span": [
+      2003,
+      2026
+    ],
+    "dropped_reserve_youth": 0
+  },
+  {
+    "player_id": "pirlo",
+    "name": "Andrea Pirlo",
+    "position_group": "CM",
+    "coarse_group": "MID",
+    "active": false,
+    "birth_year": 1979,
+    "seasons": 24,
+    "span": [
+      1994,
+      2017
+    ],
+    "dropped_reserve_youth": 0
+  },
+  {
+    "player_id": "busquets",
+    "name": "Sergio Busquets",
+    "position_group": "DM",
+    "coarse_group": "MID",
+    "active": true,
+    "birth_year": 1988,
+    "seasons": 18,
+    "span": [
+      2008,
+      2025
+    ],
+    "dropped_reserve_youth": 2
+  },
+  {
+    "player_id": "van-dijk",
+    "name": "Virgil van Dijk",
+    "position_group": "CB",
+    "coarse_group": "DEF",
+    "active": true,
+    "birth_year": 1991,
+    "seasons": 16,
+    "span": [
+      2010,
+      2025
+    ],
+    "dropped_reserve_youth": 0
+  },
+  {
+    "player_id": "ramos",
+    "name": "Sergio Ramos",
+    "position_group": "CB",
+    "coarse_group": "DEF",
+    "active": true,
+    "birth_year": 1986,
+    "seasons": 23,
+    "span": [
+      2003,
+      2025
+    ],
+    "dropped_reserve_youth": 1
+  },
+  {
+    "player_id": "maldini",
+    "name": "Paolo Maldini",
+    "position_group": "CB",
+    "coarse_group": "DEF",
+    "active": false,
+    "birth_year": 1968,
+    "seasons": 25,
+    "span": [
+      1984,
+      2008
+    ],
+    "dropped_reserve_youth": 0
+  },
+  {
+    "player_id": "dani-alves",
+    "name": "Dani Alves",
+    "position_group": "FB",
+    "coarse_group": "DEF",
+    "active": false,
+    "birth_year": 1983,
+    "seasons": 22,
+    "span": [
+      2001,
+      2022
+    ],
+    "dropped_reserve_youth": 0
+  },
+  {
+    "player_id": "lahm",
+    "name": "Philipp Lahm",
+    "position_group": "FB",
+    "coarse_group": "DEF",
+    "active": false,
+    "birth_year": 1983,
+    "seasons": 15,
+    "span": [
+      2002,
+      2016
+    ],
+    "dropped_reserve_youth": 3
+  }
+]

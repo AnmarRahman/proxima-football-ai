@@ -1,0 +1,102 @@
+{
+  "model_version": "tier-a-v1",
+  "data_version": "collected-tier-a-2ca0bcb6c786",
+  "training_csv": "collected_player_seasons.csv",
+  "training_csv_sha256": "2ca0bcb6c786f1d4bdb570b920e4b2cd86840a384f5ee46f8c5217643f45aec6",
+  "input_row_count": 2996,
+  "training_row_count": {
+    "appearances": 2772,
+    "goals": 2772
+  },
+  "training_timestamp": "2026-08-03T01:15:24.874262+00:00",
+  "git_commit": "9721c4589075f3953ab1c7758a56af116bd420b8",
+  "git_dirty": false,
+  "forced_overwrite": false,
+  "source_tree_sha256": "cf0c399c9342450d0b680fa30799be9137db329e3c84c5bb03adf88aa833e240",
+  "training_script_sha256": "83d3c7da0bb72bc573b42b72f630c33615ee81887fa6a773b6cf1a7edd951876",
+  "feature_builder_sha256": "cfcb1a0b7d5cc6301cd889aa1961c39ddacc60e7a9966b0091b41aeb7eeeda6f",
+  "releasable": true,
+  "python_version": "3.11.9",
+  "sklearn_version": "1.8.0",
+  "seed": 42,
+  "feature_names": [
+    "age",
+    "age_sq",
+    "season_year",
+    "years_experience",
+    "cur_apps",
+    "cur_goals",
+    "cur_gpa",
+    "career_apps",
+    "career_goals",
+    "career_gpa",
+    "lag1_apps",
+    "lag2_apps",
+    "lag3_apps",
+    "lag4_apps",
+    "lag5_apps",
+    "lag1_goals",
+    "lag2_goals",
+    "lag3_goals",
+    "lag4_goals",
+    "lag5_goals",
+    "roll3_apps",
+    "roll3_goals",
+    "roll3_gpa",
+    "delta_apps",
+    "delta_goals",
+    "apps_trend3",
+    "lag1_apps_missing",
+    "lag2_apps_missing",
+    "lag3_apps_missing",
+    "lag4_apps_missing",
+    "lag5_apps_missing",
+    "delta_missing",
+    "cur_apps_zero",
+    "g_FWD",
+    "g_WIDE",
+    "g_MID",
+    "g_DEF"
+  ],
+  "n_features": 37,
+  "target_definitions": {
+    "appearances": "next canonical domestic-league season appearances (only when the next season is genuinely consecutive, eligible, and not partial)",
+    "goals": "next canonical domestic-league season goals (same conditions)"
+  },
+  "model_classes": {
+    "appearances": "ElasticNet (Pipeline: impute+scale+model)",
+    "goals": "HistGradientBoostingRegressor(loss='poisson')"
+  },
+  "excluded_rows": {
+    "ineligible_seasons_excluded": 2,
+    "continuation_censored_active_or_unknown": 110,
+    "target_from_partial_next_excluded": 30,
+    "continuation_censored_partial_next": 30,
+    "regression_no_consecutive_next": 12
+  },
+  "supported_player_scope": "eligible ACTIVE outfield players with >=2 eligible domestic-league seasons and a COMPLETED latest season; goalkeepers and non-active players are out of scope",
+  "supported_outputs": [
+    "next_season_appearances",
+    "next_season_goals",
+    "appearance_interval",
+    "goal_interval"
+  ],
+  "unsupported_outputs": [
+    "retirement_age",
+    "remaining_career",
+    "full_career_trajectory",
+    "assists",
+    "ratings",
+    "tactical_attributes"
+  ],
+  "stat_scope": "domestic_league",
+  "appearances_cap": 60,
+  "artifact_trust_model": "manifest artifact_sha256 detects ACCIDENTAL corruption only. For tamper resistance, verify manifest_sha256 out-of-band via --expected-manifest-sha256 or TIER_A_EXPECTED_MANIFEST_SHA256. joblib/pickle loading can execute code; load only from trusted dirs.",
+  "artifact_sha256": {
+    "appearances_model.joblib": "46f5f1ca8a4d58514ae359b6bae23aea82196114b5afcfa6e58a66b7b3a90fc7",
+    "goals_model.joblib": "3fe17a915e4c15744a478670bc5eba784fa3ed80acec92cc8a86a2cdb0e8c073",
+    "appearances_interval.joblib": "020eb62a52d37a40682e548eb9bcf1e0ef924b733c1c97e723c0ddc9b0d3913f",
+    "goals_interval.joblib": "34f45d6f0731b0818aee6719264f064262ddeb8d2d7e97ee3b98173d25925fe6",
+    "feature_schema.json": "12a0751a771f27e5226c466dceee05bf08f951f57d739dbc965263ac466caa55"
+  }
+}

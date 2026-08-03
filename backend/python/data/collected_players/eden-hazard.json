@@ -1,0 +1,593 @@
+{
+  "player_id": "eden-hazard",
+  "wikidata_id": "Q214204",
+  "name": "Eden Hazard",
+  "requested_name": "Eden Hazard",
+  "birth_date": "1991-01-07",
+  "nationality": "Belgium",
+  "primary_position": "winger",
+  "position_group": "WNG",
+  "coarse_group": "WIDE",
+  "roster_section": "Wingers and Inside Forwards (30)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "1991-01-07",
+    "nationality": "Belgium",
+    "occupation_footballer": true,
+    "position": "winger",
+    "sitelinks": 93,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+    "retrieved_at": "2026-08-02",
+    "revision": 1367169637,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 16,
+    "season_team_league_rows": 16,
+    "reserve_or_youth_years_dropped": [
+      2007,
+      2008
+    ],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [],
+    "missing_middle_seasons": [],
+    "first_season": 2007,
+    "last_season": 2022,
+    "partial_seasons": [],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 16,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 2007,
+      "season_start_year": 2007,
+      "canonical_season": "2007–08",
+      "season_source_label": "2007–08",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "lille",
+      "team_name": "Lille",
+      "league_id": "ligue-1",
+      "league_name": "Ligue 1",
+      "appearances": 4,
+      "goals": 0,
+      "is_partial": false,
+      "age": 16,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367169637,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2008,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2008,
+      "season_start_year": 2008,
+      "canonical_season": "2008–09",
+      "season_source_label": "2008–09",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "lille",
+      "team_name": "Lille",
+      "league_id": "ligue-1",
+      "league_name": "Ligue 1",
+      "appearances": 30,
+      "goals": 4,
+      "is_partial": false,
+      "age": 17,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367169637,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2009,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2009,
+      "season_start_year": 2009,
+      "canonical_season": "2009–10",
+      "season_source_label": "2009–10",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "lille",
+      "team_name": "Lille",
+      "league_id": "ligue-1",
+      "league_name": "Ligue 1",
+      "appearances": 37,
+      "goals": 5,
+      "is_partial": false,
+      "age": 18,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367169637,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2010,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2010,
+      "season_start_year": 2010,
+      "canonical_season": "2010–11",
+      "season_source_label": "2010–11",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "lille",
+      "team_name": "Lille",
+      "league_id": "ligue-1",
+      "league_name": "Ligue 1",
+      "appearances": 38,
+      "goals": 7,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367169637,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2011,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2011,
+      "season_start_year": 2011,
+      "canonical_season": "2011–12",
+      "season_source_label": "2011–12",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "lille",
+      "team_name": "Lille",
+      "league_id": "ligue-1",
+      "league_name": "Ligue 1",
+      "appearances": 38,
+      "goals": 20,
+      "is_partial": false,
+      "age": 20,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367169637,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2012,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2012,
+      "season_start_year": 2012,
+      "canonical_season": "2012–13",
+      "season_source_label": "2012–13",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "chelsea",
+      "team_name": "Chelsea",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 34,
+      "goals": 9,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367169637,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2013,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2013,
+      "season_start_year": 2013,
+      "canonical_season": "2013–14",
+      "season_source_label": "2013–14",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "chelsea",
+      "team_name": "Chelsea",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 35,
+      "goals": 14,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367169637,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2014,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2014,
+      "season_start_year": 2014,
+      "canonical_season": "2014–15",
+      "season_source_label": "2014–15",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "chelsea",
+      "team_name": "Chelsea",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 38,
+      "goals": 14,
+      "is_partial": false,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367169637,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2015,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2015,
+      "season_start_year": 2015,
+      "canonical_season": "2015–16",
+      "season_source_label": "2015–16",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "chelsea",
+      "team_name": "Chelsea",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 31,
+      "goals": 4,
+      "is_partial": false,
+      "age": 24,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367169637,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2016,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2016,
+      "season_start_year": 2016,
+      "canonical_season": "2016–17",
+      "season_source_label": "2016–17",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "chelsea",
+      "team_name": "Chelsea",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 36,
+      "goals": 16,
+      "is_partial": false,
+      "age": 25,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367169637,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2017,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2017,
+      "season_start_year": 2017,
+      "canonical_season": "2017–18",
+      "season_source_label": "2017–18",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "chelsea",
+      "team_name": "Chelsea",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 34,
+      "goals": 12,
+      "is_partial": false,
+      "age": 26,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367169637,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2018,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2018,
+      "season_start_year": 2018,
+      "canonical_season": "2018–19",
+      "season_source_label": "2018–19",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "chelsea",
+      "team_name": "Chelsea",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 37,
+      "goals": 16,
+      "is_partial": false,
+      "age": 27,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367169637,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2019,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2019,
+      "season_start_year": 2019,
+      "canonical_season": "2019–20",
+      "season_source_label": "2019–20",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 16,
+      "goals": 1,
+      "is_partial": false,
+      "age": 28,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367169637,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2020,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2020,
+      "season_start_year": 2020,
+      "canonical_season": "2020–21",
+      "season_source_label": "2020–21",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 14,
+      "goals": 3,
+      "is_partial": false,
+      "age": 29,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367169637,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2021,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2021,
+      "season_start_year": 2021,
+      "canonical_season": "2021–22",
+      "season_source_label": "2021–22",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 18,
+      "goals": 0,
+      "is_partial": false,
+      "age": 30,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367169637,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2022,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2022,
+      "season_start_year": 2022,
+      "canonical_season": "2022–23",
+      "season_source_label": "2022–23",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "real-madrid",
+      "team_name": "Real Madrid",
+      "league_id": "la-liga",
+      "league_name": "La Liga",
+      "appearances": 6,
+      "goals": 0,
+      "is_partial": false,
+      "age": 31,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eden_Hazard",
+          "retrieved_at": "2026-08-02",
+          "revision": 1367169637,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2023,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [],
+  "career_status": "retired",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q214204 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": "2023"
+}

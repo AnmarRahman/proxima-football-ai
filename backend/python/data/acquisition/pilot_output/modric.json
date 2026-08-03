@@ -1,0 +1,162 @@
+{
+  "player": {
+    "id": "modric",
+    "name": "Luka Modric",
+    "birth_date": "1985-09-09",
+    "nationality": "Croatia",
+    "dominant_foot": null,
+    "height_cm": 172,
+    "weight_kg": null,
+    "is_retired": false,
+    "retired_since": null
+  },
+  "teams": [
+    {
+      "id": "dinamo-zagreb",
+      "name": "Dinamo Zagreb",
+      "logo_url": null,
+      "country": null
+    },
+    {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "logo_url": null,
+      "country": null
+    },
+    {
+      "id": "tottenham",
+      "name": "Tottenham Hotspur",
+      "logo_url": null,
+      "country": null
+    }
+  ],
+  "seasons": [
+    {
+      "season": 2005,
+      "team_id": "dinamo-zagreb",
+      "league_id": "prva-hnl-2005",
+      "is_partial": false,
+      "position": "Central midfielder",
+      "injuries": [],
+      "transfer_history": [],
+      "national_team_stats": [],
+      "appearances": 32,
+      "starts": null,
+      "goals": 7,
+      "assists": null,
+      "minutes": null,
+      "yellow_cards": null,
+      "red_cards": null,
+      "xG": null,
+      "xA": null,
+      "key_passes": null,
+      "shots": null,
+      "successful_dribbles": null,
+      "duels_won": null,
+      "tackles_per_game": null,
+      "sprint_speed_kmh": null,
+      "_competition": "Prva HNL",
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Luka_Modrić",
+          "retrieved_at": "2026-07-27",
+          "supports": [
+            "appearances",
+            "goals",
+            "position"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2011,
+      "team_id": "tottenham",
+      "league_id": "premierleague-2011",
+      "is_partial": false,
+      "position": "Central midfielder",
+      "injuries": [],
+      "transfer_history": [],
+      "national_team_stats": [],
+      "appearances": 36,
+      "starts": null,
+      "goals": 4,
+      "assists": null,
+      "minutes": null,
+      "yellow_cards": null,
+      "red_cards": null,
+      "xG": null,
+      "xA": null,
+      "key_passes": null,
+      "shots": null,
+      "successful_dribbles": null,
+      "duels_won": null,
+      "tackles_per_game": null,
+      "sprint_speed_kmh": null,
+      "_competition": "Premier League",
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Luka_Modrić",
+          "retrieved_at": "2026-07-27",
+          "supports": [
+            "appearances",
+            "goals",
+            "position"
+          ]
+        }
+      ]
+    },
+    {
+      "season": 2018,
+      "team_id": "real-madrid",
+      "league_id": "la-liga-2018",
+      "is_partial": false,
+      "position": "Central midfielder",
+      "injuries": [],
+      "transfer_history": [],
+      "national_team_stats": [],
+      "appearances": 34,
+      "starts": null,
+      "goals": 3,
+      "assists": null,
+      "minutes": null,
+      "yellow_cards": null,
+      "red_cards": null,
+      "xG": null,
+      "xA": null,
+      "key_passes": null,
+      "shots": null,
+      "successful_dribbles": null,
+      "duels_won": null,
+      "tackles_per_game": null,
+      "sprint_speed_kmh": null,
+      "_competition": "La Liga",
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Luka_Modrić",
+          "retrieved_at": "2026-07-27",
+          "supports": [
+            "appearances",
+            "goals",
+            "position"
+          ]
+        }
+      ]
+    }
+  ],
+  "_bio_sources": [
+    {
+      "provider": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Luka_Modrić",
+      "retrieved_at": "2026-07-27",
+      "supports": [
+        "birth_date",
+        "nationality",
+        "height_cm",
+        "position"
+      ]
+    }
+  ]
+}

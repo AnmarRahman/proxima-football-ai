@@ -1,0 +1,798 @@
+{
+  "player_id": "maicon-footballer-born-1981",
+  "wikidata_id": "Q177686",
+  "name": "Maicon (footballer, born 1981)",
+  "requested_name": "Maicon",
+  "birth_date": "1981-07-26",
+  "nationality": "Brazil",
+  "primary_position": "full-back",
+  "position_group": "FB",
+  "coarse_group": "DEF",
+  "roster_section": "Full-backs and Wing-backs (25)",
+  "stat_scope": "domestic_league",
+  "scope_note": "Wikipedia 'League' columns only (domestic league). Not mixed with cup/continental/all-competition totals.",
+  "identity_verification": {
+    "wikidata_status": "ok",
+    "wikidata_override": false,
+    "birth_date": "1981-07-26",
+    "nationality": "Brazil",
+    "occupation_footballer": true,
+    "position": "full-back",
+    "sitelinks": 59,
+    "expected_clubs": null,
+    "note": ""
+  },
+  "provenance": {
+    "provider": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+    "retrieved_at": "2026-08-02",
+    "revision": 1366350102,
+    "supports": [
+      "appearances",
+      "goals"
+    ]
+  },
+  "coverage": {
+    "senior_seasons": 20,
+    "season_team_league_rows": 22,
+    "reserve_or_youth_years_dropped": [
+      2020
+    ],
+    "childhood_rows_dropped": [],
+    "unknown_apps_rows": [],
+    "total_rows_dropped": 0,
+    "duplicate_conflicts": [],
+    "career_gaps": [
+      2016,
+      2018
+    ],
+    "missing_middle_seasons": [
+      2016,
+      2018
+    ],
+    "first_season": 2000,
+    "last_season": 2021,
+    "partial_seasons": [],
+    "tier": "A",
+    "tier_b_c_available": false,
+    "tier_a_complete": true,
+    "provenance_complete": true,
+    "model_eligible_seasons": 22,
+    "ineligible_rows": []
+  },
+  "seasons": [
+    {
+      "season": 2000,
+      "season_start_year": 2000,
+      "canonical_season": "2000",
+      "season_source_label": "2000",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "cruzeiro",
+      "team_name": "Cruzeiro",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 0,
+      "goals": 0,
+      "is_partial": false,
+      "age": 19,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2000,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2001,
+      "season_start_year": 2001,
+      "canonical_season": "2001",
+      "season_source_label": "2001",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "cruzeiro",
+      "team_name": "Cruzeiro",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 18,
+      "goals": 0,
+      "is_partial": false,
+      "age": 20,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2001,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2002,
+      "season_start_year": 2002,
+      "canonical_season": "2002",
+      "season_source_label": "2002",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "cruzeiro",
+      "team_name": "Cruzeiro",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 19,
+      "goals": 1,
+      "is_partial": false,
+      "age": 21,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2002,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2003,
+      "season_start_year": 2003,
+      "canonical_season": "2003",
+      "season_source_label": "2003",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "cruzeiro",
+      "team_name": "Cruzeiro",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 12,
+      "goals": 0,
+      "is_partial": false,
+      "age": 22,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2003,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2004,
+      "season_start_year": 2004,
+      "canonical_season": "2004",
+      "season_source_label": "2004",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "cruzeiro",
+      "team_name": "Cruzeiro",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 8,
+      "goals": 0,
+      "is_partial": false,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2004,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2004,
+      "season_start_year": 2004,
+      "canonical_season": "2004–05",
+      "season_source_label": "2004–05",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "monaco",
+      "team_name": "Monaco",
+      "league_id": "ligue-1",
+      "league_name": "Ligue 1",
+      "appearances": 30,
+      "goals": 4,
+      "is_partial": false,
+      "age": 23,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2005,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2005,
+      "season_start_year": 2005,
+      "canonical_season": "2005–06",
+      "season_source_label": "2005–06",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "monaco",
+      "team_name": "Monaco",
+      "league_id": "ligue-1",
+      "league_name": "Ligue 1",
+      "appearances": 28,
+      "goals": 1,
+      "is_partial": false,
+      "age": 24,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2006,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2006,
+      "season_start_year": 2006,
+      "canonical_season": "2006–07",
+      "season_source_label": "2006–07",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "inter-milan",
+      "team_name": "Inter Milan",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 32,
+      "goals": 2,
+      "is_partial": false,
+      "age": 25,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2007,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2007,
+      "season_start_year": 2007,
+      "canonical_season": "2007–08",
+      "season_source_label": "2007–08",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "inter-milan",
+      "team_name": "Inter Milan",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 31,
+      "goals": 1,
+      "is_partial": false,
+      "age": 26,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2008,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2008,
+      "season_start_year": 2008,
+      "canonical_season": "2008–09",
+      "season_source_label": "2008–09",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "inter-milan",
+      "team_name": "Inter Milan",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 29,
+      "goals": 4,
+      "is_partial": false,
+      "age": 27,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2009,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2009,
+      "season_start_year": 2009,
+      "canonical_season": "2009–10",
+      "season_source_label": "2009–10",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "inter-milan",
+      "team_name": "Inter Milan",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 33,
+      "goals": 6,
+      "is_partial": false,
+      "age": 28,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2010,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2010,
+      "season_start_year": 2010,
+      "canonical_season": "2010–11",
+      "season_source_label": "2010–11",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "inter-milan",
+      "team_name": "Inter Milan",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 28,
+      "goals": 1,
+      "is_partial": false,
+      "age": 29,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2011,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2011,
+      "season_start_year": 2011,
+      "canonical_season": "2011–12",
+      "season_source_label": "2011–12",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "inter-milan",
+      "team_name": "Inter Milan",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 24,
+      "goals": 2,
+      "is_partial": false,
+      "age": 30,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2012,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2012,
+      "season_start_year": 2012,
+      "canonical_season": "2012–13",
+      "season_source_label": "2012–13",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "inter-milan",
+      "team_name": "Inter Milan",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 0,
+      "goals": 0,
+      "is_partial": false,
+      "age": 31,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2013,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2012,
+      "season_start_year": 2012,
+      "canonical_season": "2012–13",
+      "season_source_label": "2012–13",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "manchester-city",
+      "team_name": "Manchester City",
+      "league_id": "premier-league",
+      "league_name": "Premier League",
+      "appearances": 9,
+      "goals": 0,
+      "is_partial": false,
+      "age": 31,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2013,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2013,
+      "season_start_year": 2013,
+      "canonical_season": "2013–14",
+      "season_source_label": "2013–14",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "roma",
+      "team_name": "Roma",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 28,
+      "goals": 2,
+      "is_partial": false,
+      "age": 32,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2014,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2014,
+      "season_start_year": 2014,
+      "canonical_season": "2014–15",
+      "season_source_label": "2014–15",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "roma",
+      "team_name": "Roma",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 14,
+      "goals": 1,
+      "is_partial": false,
+      "age": 33,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2015,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2015,
+      "season_start_year": 2015,
+      "canonical_season": "2015–16",
+      "season_source_label": "2015–16",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "roma",
+      "team_name": "Roma",
+      "league_id": "serie-a",
+      "league_name": "Serie A",
+      "appearances": 15,
+      "goals": 1,
+      "is_partial": false,
+      "age": 34,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2016,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2017,
+      "season_start_year": 2017,
+      "canonical_season": "2017",
+      "season_source_label": "2017",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "avai",
+      "team_name": "Avaí",
+      "league_id": "serie-a",
+      "league_name": "Série A",
+      "appearances": 9,
+      "goals": 1,
+      "is_partial": false,
+      "age": 36,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2017,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2019,
+      "season_start_year": 2019,
+      "canonical_season": "2019",
+      "season_source_label": "2019",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "criciuma",
+      "team_name": "Criciúma",
+      "league_id": "serie-b",
+      "league_name": "Série B",
+      "appearances": 13,
+      "goals": 0,
+      "is_partial": false,
+      "age": 38,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2019,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2020,
+      "season_start_year": 2020,
+      "canonical_season": "2020",
+      "season_source_label": "2020",
+      "season_format": "calendar_year",
+      "stat_scope": "domestic_league",
+      "team_id": "villa-nova",
+      "team_name": "Villa Nova",
+      "league_id": "serie-d",
+      "league_name": "Série D",
+      "appearances": 8,
+      "goals": 0,
+      "is_partial": false,
+      "age": 39,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2020,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    },
+    {
+      "season": 2021,
+      "season_start_year": 2021,
+      "canonical_season": "2021–22",
+      "season_source_label": "2021–22",
+      "season_format": "split_year",
+      "stat_scope": "domestic_league",
+      "team_id": "tre-penne",
+      "team_name": "Tre Penne",
+      "league_id": "campionato-sammarinese-di-calcio",
+      "league_name": "Campionato Sammarinese di Calcio",
+      "appearances": 1,
+      "goals": 0,
+      "is_partial": false,
+      "age": 40,
+      "sources": [
+        {
+          "provider": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maicon_(footballer,_born_1981)",
+          "retrieved_at": "2026-08-02",
+          "revision": 1366350102,
+          "supports": [
+            "appearances",
+            "goals"
+          ]
+        }
+      ],
+      "phase_index": 0,
+      "season_end_year": 2022,
+      "competition_level": "professional_or_unknown",
+      "model_eligible": true,
+      "exclusion_reason": null
+    }
+  ],
+  "warnings": [
+    "career gap year(s) with no senior season: [2016, 2018] (did-not-play period; not zero-filled; review recommended)"
+  ],
+  "career_status": "retired",
+  "status_as_of": "2026-07-27",
+  "status_source": "Wikidata:Q177686 (P54 memberships, P570 death) + last sourced domestic-league season",
+  "retired_since": "2021"
+}
