@@ -17,8 +17,8 @@ export default function PredictionsPage() {
             AI Next-Season <span className="text-primary">Forecast</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-balance">
-            Explore validated domestic-league appearance and goal forecasts for the next season, with calibrated
-            uncertainty ranges and transparent model limitations.
+            Explore domestic-league appearance and goal forecasts for the next season, supported by each player's
+            historical career progression.
           </p>
         </div>
         <PlayerSearch onPlayerSelect={setSelectedPlayer} />

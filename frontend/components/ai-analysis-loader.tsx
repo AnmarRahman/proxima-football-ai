@@ -16,7 +16,8 @@ type AIAnalysisLoaderProps = {
   playerName: string;
 };
 
-const STEP_DURATION_MS = 500;
+const STEP_DURATION_MS = 1250;
+const STEP_HOLD_MS = 250;
 
 function ProgressBar({ value, compact = false }: { value: number; compact?: boolean }) {
   return (
@@ -43,26 +44,26 @@ export function AIAnalysisLoader({ playerName }: AIAnalysisLoaderProps) {
       },
       {
         id: "model",
-        title: "Verifying approved model",
-        description: "Checking the Tier A model version and release integrity.",
+        title: "Verifying forecast record",
+        description: "Checking the approved Tier A model version and release integrity.",
         icon: ShieldCheck,
       },
       {
         id: "history",
-        title: "Building recent form",
-        description: "Preparing age, experience, appearances, goals, trends, and season lags.",
+        title: "Reconstructing recent form",
+        description: "Assembling age, experience, appearances, goals, trends, and season lags.",
         icon: BarChart3,
       },
       {
         id: "appearances",
-        title: "Estimating appearances",
-        description: "Calculating the expected domestic-league appearance total.",
+        title: "Reviewing appearance estimate",
+        description: "Pairing the stored appearance estimate with the player's historical progression.",
         icon: Activity,
       },
       {
         id: "goals",
-        title: "Estimating goals",
-        description: "Calculating the expected domestic-league goal total.",
+        title: "Reviewing goal estimate",
+        description: "Pairing the stored goal estimate with the player's historical progression.",
         icon: Target,
       },
       {
@@ -85,16 +86,23 @@ export function AIAnalysisLoader({ playerName }: AIAnalysisLoaderProps) {
     const tickMs = 50;
     const ticks = STEP_DURATION_MS / tickMs;
     let tick = 0;
+    let holdTimer: number | undefined;
     const timer = window.setInterval(() => {
       tick += 1;
       setStepProgress(Math.min(100, (tick / ticks) * 100));
       if (tick >= ticks) {
         window.clearInterval(timer);
-        setCurrentStep((value) => value + 1);
-        setStepProgress(0);
+        setStepProgress(100);
+        holdTimer = window.setTimeout(() => {
+          setCurrentStep((value) => value + 1);
+          setStepProgress(0);
+        }, STEP_HOLD_MS);
       }
     }, tickMs);
-    return () => window.clearInterval(timer);
+    return () => {
+      window.clearInterval(timer);
+      if (holdTimer) window.clearTimeout(holdTimer);
+    };
   }, [currentStep, steps.length]);
 
   const overallProgress = Math.min(
@@ -112,8 +120,8 @@ export function AIAnalysisLoader({ playerName }: AIAnalysisLoaderProps) {
             <Brain className="absolute left-1/2 top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2 text-primary" />
           </div>
           <div className="text-left">
-            <h2 className="text-2xl font-bold text-foreground">Preparing Next-Season Forecast</h2>
-            <p className="text-muted-foreground">Analyzing {playerName}'s Tier A league record.</p>
+            <h2 className="text-2xl font-bold text-foreground">Preparing Forecast Report</h2>
+            <p className="text-muted-foreground">Assembling {playerName}'s history and approved Tier A forecast.</p>
           </div>
         </div>
         <div className="mx-auto max-w-md space-y-2">

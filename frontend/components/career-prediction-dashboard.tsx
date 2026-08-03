@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Activity, CalendarRange, Database, Target } from "lucide-react";
+import { Activity, CalendarRange, Target } from "lucide-react";
 import { formatPosition } from "@/lib/player-position";
 import type { ReactNode } from "react";
 import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
@@ -15,6 +15,15 @@ type ForecastPayload = {
     nationality?: string | null;
     primary_position?: string | null;
   };
+  historical_seasons?: Array<{
+    season: string;
+    season_start_year: number;
+    season_end_year: number;
+    appearances: number;
+    goals: number;
+    is_partial: boolean;
+    model_eligible: boolean;
+  }>;
   prediction: {
     scope: string;
     point: string;
@@ -32,20 +41,13 @@ type ForecastPayload = {
   meta: { model_version: string; predicted_at?: string | null };
 };
 
-function RangeText({ interval }: { interval: Interval }) {
-  if (!interval) return <span>No reliable interval available</span>;
-  return <span>{interval.lower}-{interval.upper} calibrated range</span>;
-}
-
 function ForecastCard({
   title,
   expected,
-  interval,
   icon,
 }: {
   title: string;
   expected: number;
-  interval: Interval;
   icon: ReactNode;
 }) {
   return (
@@ -58,26 +60,28 @@ function ForecastCard({
         <div className="rounded-full border border-primary/25 bg-primary/10 p-3 text-primary">{icon}</div>
       </CardHeader>
       <CardContent>
-        <p className="text-sm text-muted-foreground"><RangeText interval={interval} /></p>
-        {interval ? (
-          <div className="mt-4 h-2 overflow-hidden rounded-full bg-secondary">
-            <div
-              className="h-full rounded-full bg-gradient-to-r from-primary/40 via-primary to-primary/40"
-              style={{ width: `${Math.min(100, Math.max(18, ((interval.upper - interval.lower + 1) / Math.max(interval.upper, 1)) * 100))}%` }}
-            />
-          </div>
-        ) : null}
+        <p className="text-sm text-muted-foreground">Predicted total for the next domestic-league season</p>
       </CardContent>
     </Card>
   );
 }
 export function CareerPredictionDashboard(props: ForecastPayload) {
-  const { player, prediction, meta } = props;
-  const chartData = [
-    { metric: "Appearances", expected: prediction.appearances.expected, fill: "#d4af37" },
-    { metric: "Goals", expected: prediction.goals.expected, fill: "#24c7a5" },
+  const { player, prediction, historical_seasons = [] } = props;
+  const progressionData = [
+    ...historical_seasons.map((season) => ({
+      season: `${season.season}${season.is_partial ? " (to date)" : ""}`,
+      appearances: season.appearances,
+      goals: season.goals,
+      kind: season.is_partial ? "partial" : "historical",
+    })),
+    {
+      season: `${prediction.predicted_season || "Next season"} (forecast)`,
+      appearances: prediction.appearances.expected,
+      goals: prediction.goals.expected,
+      kind: "forecast",
+    },
   ];
-  const predictedDate = meta.predicted_at ? new Date(meta.predicted_at).toLocaleString() : "Unknown";
+  const chartWidth = Math.max(760, progressionData.length * 76);
 
   return (
     <section className="mt-10 space-y-6 animate-fade-in">
@@ -99,40 +103,76 @@ export function CareerPredictionDashboard(props: ForecastPayload) {
       </div>
 
       <div className="grid gap-5 md:grid-cols-2">
-        <ForecastCard title="Expected league appearances" expected={prediction.appearances.expected} interval={prediction.appearances.interval} icon={<Activity className="h-5 w-5" />} />
-        <ForecastCard title="Expected league goals" expected={prediction.goals.expected} interval={prediction.goals.interval} icon={<Target className="h-5 w-5" />} />
+        <ForecastCard title="Expected league appearances" expected={prediction.appearances.expected} icon={<Activity className="h-5 w-5" />} />
+        <ForecastCard title="Expected league goals" expected={prediction.goals.expected} icon={<Target className="h-5 w-5" />} />
       </div>
 
-      <div className="grid gap-5 lg:grid-cols-[1.4fr_1fr]">
-        <Card className="border-border/60 bg-card/80">
-          <CardHeader>
-            <CardTitle>Next-Season Output</CardTitle>
-            <CardDescription>Point forecasts only; the two metrics use different units.</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <ResponsiveContainer width="100%" height={300}>
-              <BarChart data={chartData} margin={{ top: 10, right: 12, left: 0, bottom: 8 }}>
-                <CartesianGrid vertical={false} stroke="#ffffff18" strokeDasharray="3 3" />
-                <XAxis dataKey="metric" tickLine={false} stroke="#a1a1aa" />
-                <YAxis allowDecimals={false} tickLine={false} stroke="#a1a1aa" />
-                <Tooltip cursor={{ fill: "#ffffff08" }} contentStyle={{ background: "#090909", border: "1px solid #333", borderRadius: 8 }} />
-                <Bar dataKey="expected" name="Expected" radius={[7, 7, 0, 0]} maxBarSize={72}>
-                  {chartData.map((entry) => <Cell key={entry.metric} fill={entry.fill} />)}
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
-          </CardContent>
-        </Card>
+      <Card className="border-border/60 bg-card/80">
+        <CardHeader>
+          <CardTitle>Career Progression</CardTitle>
+          <CardDescription>
+            Sourced domestic-league seasons are shown chronologically. Gold marks the next-season forecast.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-8">
+          <div className="flex flex-wrap gap-4 text-xs text-muted-foreground">
+            <span className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-sm bg-slate-500" />Recorded appearances</span>
+            <span className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-sm bg-emerald-400" />Recorded goals</span>
+            <span className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-sm bg-primary" />Forecast</span>
+          </div>
 
+          <div>
+            <p className="mb-3 text-sm font-semibold text-foreground">League appearances by season</p>
+            <div className="overflow-x-auto pb-2">
+              <div style={{ height: 270, width: chartWidth }}>
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={progressionData} margin={{ top: 8, right: 12, left: 0, bottom: 48 }}>
+                    <CartesianGrid vertical={false} stroke="#ffffff18" strokeDasharray="3 3" />
+                    <XAxis dataKey="season" angle={-35} textAnchor="end" interval={0} height={70} tickLine={false} stroke="#a1a1aa" fontSize={11} />
+                    <YAxis allowDecimals={false} tickLine={false} stroke="#a1a1aa" />
+                    <Tooltip cursor={{ fill: "#ffffff08" }} contentStyle={{ background: "#090909", border: "1px solid #333", borderRadius: 8 }} />
+                    <Bar dataKey="appearances" name="Appearances" radius={[5, 5, 0, 0]} maxBarSize={42}>
+                      {progressionData.map((entry, index) => (
+                        <Cell key={`${entry.season}-appearances-${index}`} fill={entry.kind === "forecast" ? "#d4af37" : entry.kind === "partial" ? "#94a3b8" : "#64748b"} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p className="mb-3 text-sm font-semibold text-foreground">League goals by season</p>
+            <div className="overflow-x-auto pb-2">
+              <div style={{ height: 270, width: chartWidth }}>
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={progressionData} margin={{ top: 8, right: 12, left: 0, bottom: 48 }}>
+                    <CartesianGrid vertical={false} stroke="#ffffff18" strokeDasharray="3 3" />
+                    <XAxis dataKey="season" angle={-35} textAnchor="end" interval={0} height={70} tickLine={false} stroke="#a1a1aa" fontSize={11} />
+                    <YAxis allowDecimals={false} tickLine={false} stroke="#a1a1aa" />
+                    <Tooltip cursor={{ fill: "#ffffff08" }} contentStyle={{ background: "#090909", border: "1px solid #333", borderRadius: 8 }} />
+                    <Bar dataKey="goals" name="Goals" radius={[5, 5, 0, 0]} maxBarSize={42}>
+                      {progressionData.map((entry, index) => (
+                        <Cell key={`${entry.season}-goals-${index}`} fill={entry.kind === "forecast" ? "#d4af37" : entry.kind === "partial" ? "#6ee7c8" : "#24c7a5"} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      <div className="grid gap-5">
         <Card className="border-border/60 bg-card/80">
           <CardHeader>
-            <CardTitle>Prediction Record</CardTitle>
-            <CardDescription>Traceability for this stored result.</CardDescription>
+            <CardTitle>Career Data Used</CardTitle>
+            <CardDescription>The historical record considered for this forecast.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4 text-sm">
-            <div className="flex gap-3"><CalendarRange className="mt-0.5 h-4 w-4 text-primary" /><div><p className="font-medium">Based on {prediction.based_on_season || "latest completed season"}</p><p className="text-muted-foreground">Prediction point: {prediction.point}</p></div></div>
-            <div className="flex gap-3"><Database className="mt-0.5 h-4 w-4 text-primary" /><div><p className="font-medium">Model {meta.model_version}</p><p className="text-muted-foreground">{prediction.coverage_metadata?.eligible_seasons_used || "Unknown"} eligible seasons used</p></div></div>
-            <div className="rounded-lg bg-secondary/30 p-3"><p className="text-xs text-muted-foreground">Generated</p><p className="mt-1 font-medium">{predictedDate}</p></div>
+            <div className="flex gap-3"><CalendarRange className="mt-0.5 h-4 w-4 text-primary" /><div><p className="font-medium">Based on performances through {prediction.based_on_season || "the latest completed season"}</p><p className="text-muted-foreground">{prediction.coverage_metadata?.eligible_seasons_used || historical_seasons.length} career seasons analyzed</p></div></div>
           </CardContent>
         </Card>
       </div>

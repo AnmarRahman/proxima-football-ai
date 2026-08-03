@@ -55,13 +55,6 @@ export function HeroSection() {
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="text-lg uppercase px-8 py-4 border-primary/80 bg-[#090B0D]! hover:bg-black! hover:text-white"
-          >
-            Watch Demo
-          </Button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">

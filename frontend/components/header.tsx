@@ -38,8 +38,8 @@ export function Header() {
           </div>
 
           <div className="hidden md:flex">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold uppercase">
-              Get Started
+            <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold uppercase">
+              <Link href="/predictions">Get Started</Link>
             </Button>
           </div>
 
@@ -64,7 +64,9 @@ export function Header() {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 uppercase">Get Started</Button>
+                <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90 uppercase">
+                  <Link href="/predictions" onClick={() => setIsOpen(false)}>Get Started</Link>
+                </Button>
               </div>
             </div>
           </div>
