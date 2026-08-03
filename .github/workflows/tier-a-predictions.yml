@@ -1,0 +1,111 @@
+name: Tier A Next-Season Predictions
+
+on:
+  workflow_dispatch:
+    inputs:
+      player_id:
+        description: "Optional canonical Tier A player id; leave empty for all active players"
+        required: false
+        type: string
+  schedule:
+    - cron: "0 4 * * 1"
+
+concurrency:
+  group: tier-a-next-season-predictions
+  cancel-in-progress: false
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      PYTHONIOENCODING: utf-8
+      TIER_A_EXPECTED_MANIFEST_SHA256: dee906368ebf82ef126473f9dabcdf4d2d2c28429ed68f8eeadb85a94d017a3d
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: backend/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r backend/requirements.txt
+
+      - name: Apply migrations
+        run: python backend/python/migrate_db.py
+
+      - name: Check Tier A bootstrap state
+        id: tier_a_count
+        shell: bash
+        run: |
+          count="$(python - <<'PY'
+          import os
+          import psycopg
+          with psycopg.connect(os.environ["DATABASE_URL"], prepare_threshold=None) as conn:
+              with conn.cursor() as cur:
+                  cur.execute("select count(*) from ml_player_seasons")
+                  print(int(cur.fetchone()[0]))
+          PY
+          )"
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+          echo "Tier A season rows: $count"
+
+      - name: Import committed Tier A data and approved model
+        if: ${{ steps.tier_a_count.outputs.count == '0' || vars.IMPORT_TIER_A_FROM_REPO == 'true' }}
+        run: python backend/python/import_tier_a_to_db.py
+
+      - name: Ensure approved model metadata is current
+        if: ${{ steps.tier_a_count.outputs.count != '0' && vars.IMPORT_TIER_A_FROM_REPO != 'true' }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          import psycopg
+          from psycopg.types.json import Jsonb
+
+          d = Path("backend/python/model_artifacts/tier_a_v1")
+          manifest = json.loads((d / "model_manifest.json").read_text(encoding="utf-8"))
+          metrics = json.loads((d / "training_metrics.json").read_text(encoding="utf-8"))
+          digest = (d / "manifest.sha256").read_text(encoding="utf-8").strip()
+          with psycopg.connect(os.environ["DATABASE_URL"], prepare_threshold=None) as conn:
+              with conn.cursor() as cur:
+                  cur.execute("""
+                    insert into model_versions(version,data_version,manifest_sha256,training_csv_sha256,
+                      source_git_commit,trained_at,approved,metrics,manifest,updated_at)
+                    values (%s,%s,%s,%s,%s,%s,true,%s,%s,now())
+                    on conflict (version) do update set data_version=excluded.data_version,
+                      manifest_sha256=excluded.manifest_sha256,
+                      training_csv_sha256=excluded.training_csv_sha256,
+                      source_git_commit=excluded.source_git_commit, trained_at=excluded.trained_at,
+                      approved=true, metrics=excluded.metrics, manifest=excluded.manifest, updated_at=now()
+                  """, (manifest["model_version"], manifest["data_version"], digest,
+                         manifest["training_csv_sha256"], manifest.get("git_commit"),
+                         manifest.get("training_timestamp"), Jsonb(metrics), Jsonb(manifest)))
+          PY
+
+      - name: Generate and store predictions
+        shell: bash
+        run: |
+          args=(--run-type "${{ github.event_name == 'schedule' && 'scheduled' || 'manual' }}" --triggered-by github-actions)
+          if [ -n "${{ github.event.inputs.player_id }}" ]; then
+            args+=(--player-id "${{ github.event.inputs.player_id }}")
+          fi
+          python backend/python/run_tier_a_predictions.py "${args[@]}"
+
+      - name: Print latest run
+        run: |
+          python - <<'PY'
+          import os
+          import psycopg
+          with psycopg.connect(os.environ["DATABASE_URL"], prepare_threshold=None) as conn:
+              with conn.cursor() as cur:
+                  cur.execute("""select id,status,predicted_count,rejected_count,started_at,ended_at
+                                 from tier_a_prediction_runs order by started_at desc limit 1""")
+                  print(cur.fetchone())
+          PY

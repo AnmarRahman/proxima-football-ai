@@ -12,6 +12,7 @@ type UploadResult = {
   file: string;
   playerId?: string;
   seasonsImported?: number;
+  importKind?: "tier-a" | "detailed";
   error?: string;
 };
 
@@ -76,6 +77,26 @@ type DatabaseResponse = {
     seasons: number;
   };
   error?: string;
+};
+
+type PredictionStatus = {
+  approvedModels: Array<{
+    version: string;
+    data_version: string;
+    approved: boolean;
+    trained_at: string | null;
+  }>;
+  recentRuns: Array<{
+    id: string;
+    status: string;
+    model_version: string;
+    started_at: string;
+    ended_at: string | null;
+    predicted_count: number;
+    rejected_count: number;
+    error_message: string | null;
+  }>;
+  predictionCount: number;
 };
 
 type SeasonEditorMode = "manual" | "json";
@@ -348,6 +369,7 @@ export default function AdminPage() {
   const [triggering, setTriggering] = useState(false);
   const [triggerMessage, setTriggerMessage] = useState<string | null>(null);
   const [triggerError, setTriggerError] = useState<string | null>(null);
+  const [predictionStatus, setPredictionStatus] = useState<PredictionStatus | null>(null);
 
   const selectedFileLabel = useMemo(() => {
     if (!files.length) {
@@ -407,6 +429,16 @@ export default function AdminPage() {
     }
   }
 
+  async function loadPredictionStatus() {
+    try {
+      const response = await fetch("/api/admin/prediction-status", { cache: "no-store" });
+      if (!response.ok) return;
+      setPredictionStatus((await response.json()) as PredictionStatus);
+    } catch {
+      setPredictionStatus(null);
+    }
+  }
+
   useEffect(() => {
     refreshSession();
   }, []);
@@ -419,6 +451,7 @@ export default function AdminPage() {
     }
 
     loadDatabase();
+    loadPredictionStatus();
   }, [authenticated]);
 
   useEffect(() => {
@@ -653,6 +686,12 @@ export default function AdminPage() {
 
       setUploadResult(data);
       await loadDatabase();
+      if (data.successes.some((result) => result.importKind === "tier-a")) {
+        const shouldRunPredictions = window.confirm(
+          "Tier A model data uploaded successfully. Do you want to refresh the stored predictions now?"
+        );
+        if (shouldRunPredictions) await handleTriggerWorkflow();
+      }
     } catch {
       setUploadError("Upload failed due to a network error.");
     } finally {
@@ -884,7 +923,7 @@ export default function AdminPage() {
       <section className="mt-8 rounded-xl border border-[#2A2A2A] bg-[#0B0B0B] p-6">
         <h2 className="text-xl font-semibold text-[#D4AF37]">Upload Player JSON Files</h2>
         <p className="mt-2 text-sm text-gray-300">
-          Files must match your existing schema (`player`, `teams`, `seasons`). Existing player rows are upserted.
+          Accepts detailed player JSON (`player`, `teams`, `seasons`) and canonical Tier A JSON (`player_id`, `stat_scope`, `seasons`). Tier A uploads update the model input tables.
         </p>
 
         <form onSubmit={handleUpload} className="mt-6 space-y-4">
@@ -941,10 +980,27 @@ export default function AdminPage() {
       </section>
 
       <section className="mt-8 rounded-xl border border-[#2A2A2A] bg-[#0B0B0B] p-6">
-        <h2 className="text-xl font-semibold text-[#D4AF37]">Run Predictions Now</h2>
+        <h2 className="text-xl font-semibold text-[#D4AF37]">Run Tier A Predictions Now</h2>
         <p className="mt-2 text-sm text-gray-300">
-          This dispatches your GitHub Actions workflow immediately instead of waiting for the weekly schedule.
+          This reuses the approved one-season model and stores current appearance and goal forecasts. It does not retrain.
         </p>
+
+        {predictionStatus ? (
+          <div className="mt-5 grid gap-3 text-sm sm:grid-cols-3">
+            <div className="rounded-md border border-[#2A2A2A] bg-black p-3">
+              <p className="text-gray-400">Approved model</p>
+              <p className="mt-1 font-semibold text-white">{predictionStatus.approvedModels[0]?.version || "None"}</p>
+            </div>
+            <div className="rounded-md border border-[#2A2A2A] bg-black p-3">
+              <p className="text-gray-400">Stored predictions</p>
+              <p className="mt-1 font-semibold text-white">{predictionStatus.predictionCount}</p>
+            </div>
+            <div className="rounded-md border border-[#2A2A2A] bg-black p-3">
+              <p className="text-gray-400">Latest run</p>
+              <p className="mt-1 font-semibold text-white">{predictionStatus.recentRuns[0]?.status || "Never run"}</p>
+            </div>
+          </div>
+        ) : null}
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <button
@@ -952,7 +1008,13 @@ export default function AdminPage() {
             disabled={triggering}
             className="rounded-md bg-[#D4AF37] px-4 py-2 font-semibold text-black disabled:opacity-60"
           >
-            {triggering ? "Triggering..." : "Trigger GitHub Action"}
+            {triggering ? "Triggering..." : "Run Next-Season Predictions"}
+          </button>
+          <button
+            onClick={loadPredictionStatus}
+            className="rounded-md border border-[#2A2A2A] bg-black px-4 py-2 text-sm text-gray-200 hover:border-[#D4AF37]"
+          >
+            Refresh Run Status
           </button>
         </div>
 

@@ -1,9 +1,7 @@
-name: Weekly Predictions
+name: Legacy Career Predictions (Manual Only)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 4 * * 1"
 
 concurrency:
   group: weekly-predictions

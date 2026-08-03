@@ -1,6 +1,4 @@
 import { hasSupabaseServerConfig, supabaseRestGet } from "@/lib/supabase-rest";
-import { promises as fs } from "node:fs";
-import path from "node:path";
 import { NextResponse } from "next/server";
 
 export const dynamic = "force-dynamic";
@@ -8,36 +6,7 @@ export const revalidate = 0;
 
 function sanitizePlayerId(raw: string): string | null {
   const clean = String(raw || "").trim().toLowerCase();
-  if (!/^[a-z0-9-]+$/.test(clean)) {
-    return null;
-  }
-  return clean;
-}
-
-async function readLocalFallbackPrediction(playerId: string): Promise<any[] | null> {
-  const filePath = path.join(process.cwd(), "public", "data", "predictions", `${playerId}.json`);
-  try {
-    const content = await fs.readFile(filePath, "utf-8");
-    const parsed = JSON.parse(content);
-    return Array.isArray(parsed) ? parsed : null;
-  } catch {
-    return null;
-  }
-}
-
-function parsePredictionJson(raw: unknown): any[] {
-  if (Array.isArray(raw)) {
-    return raw;
-  }
-  if (typeof raw === "string") {
-    try {
-      const parsed = JSON.parse(raw);
-      return Array.isArray(parsed) ? parsed : [];
-    } catch {
-      return [];
-    }
-  }
-  return [];
+  return /^[a-z0-9-]+$/.test(clean) ? clean : null;
 }
 
 export async function GET(
@@ -48,88 +17,86 @@ export async function GET(
   if (!playerId) {
     return NextResponse.json({ error: "Invalid player id" }, { status: 400 });
   }
-
   if (!hasSupabaseServerConfig()) {
-    const fallback = await readLocalFallbackPrediction(playerId);
-    if (!fallback) {
-      return NextResponse.json({ error: "Prediction not found" }, { status: 404 });
-    }
-
-    return NextResponse.json({
-      player: { id: playerId, name: playerId },
-      stats: fallback,
-      current_stats: null,
-      source: "fallback",
-    });
+    return NextResponse.json(
+      { error: "Prediction database is not configured." },
+      { status: 503 }
+    );
   }
 
   try {
-    const [predictionRows, playerRows, currentSeasonRows] = await Promise.all([
-      supabaseRestGet("latest_player_predictions", {
-        select: "player_id,run_id,predicted_at,horizon_seasons,prediction_json,confidence_score",
+    const [predictionRows, playerRows] = await Promise.all([
+      supabaseRestGet("next_season_predictions", {
+        select:
+          "player_id,run_id,model_version,prediction_scope,prediction_point,based_on_season,predicted_season,appearances_expected,appearances_lower,appearances_upper,appearances_interval_method,appearances_interval_unavailable_reason,goals_expected,goals_lower,goals_upper,goals_interval_method,limitations,coverage_metadata,predicted_at",
         player_id: `eq.${playerId}`,
         limit: "1",
       }),
-      supabaseRestGet("players", {
-        select: "id,name",
+      supabaseRestGet("ml_players", {
+        select: "id,name,nationality,primary_position,position_group,coarse_group,career_status",
         id: `eq.${playerId}`,
-        limit: "1",
-      }),
-      supabaseRestGet("player_seasons", {
-        select: "season,rating,sprint_speed_kmh,shots_per_game,key_passes,successful_dribbles,tackles_per_game,stamina",
-        player_id: `eq.${playerId}`,
-        order: "season.desc",
         limit: "1",
       }),
     ]);
 
     const prediction = (predictionRows || [])[0];
     const player = (playerRows || [])[0];
-    const currentStats = (currentSeasonRows || [])[0] || null;
-
-    if (!prediction) {
-      const fallback = await readLocalFallbackPrediction(playerId);
-      if (!fallback) {
-        return NextResponse.json({ error: "Prediction not found" }, { status: 404 });
-      }
-
-      return NextResponse.json({
-        player: { id: playerId, name: player?.name || playerId },
-        stats: fallback,
-        current_stats: currentStats,
-        source: "fallback",
-      });
+    if (!prediction || !player) {
+      return NextResponse.json({ error: "Next-season prediction not found" }, { status: 404 });
     }
 
     return NextResponse.json({
       player: {
-        id: playerId,
-        name: player?.name || playerId,
+        id: String(player.id),
+        name: String(player.name),
+        nationality: player.nationality || null,
+        primary_position: player.primary_position || null,
+        position_group: player.position_group || null,
+        coarse_group: player.coarse_group || null,
+        career_status: player.career_status,
       },
-      stats: parsePredictionJson(prediction.prediction_json),
-      current_stats: currentStats,
+      prediction: {
+        scope: prediction.prediction_scope,
+        point: prediction.prediction_point,
+        based_on_season: prediction.based_on_season,
+        predicted_season: prediction.predicted_season,
+        appearances: {
+          expected: Number(prediction.appearances_expected),
+          interval:
+            prediction.appearances_lower === null || prediction.appearances_upper === null
+              ? null
+              : {
+                  lower: Number(prediction.appearances_lower),
+                  upper: Number(prediction.appearances_upper),
+                  method: prediction.appearances_interval_method || null,
+                },
+          interval_unavailable_reason:
+            prediction.appearances_interval_unavailable_reason || null,
+        },
+        goals: {
+          expected: Number(prediction.goals_expected),
+          interval:
+            prediction.goals_lower === null || prediction.goals_upper === null
+              ? null
+              : {
+                  lower: Number(prediction.goals_lower),
+                  upper: Number(prediction.goals_upper),
+                  method: prediction.goals_interval_method || null,
+                },
+        },
+        limitations: Array.isArray(prediction.limitations) ? prediction.limitations : [],
+        coverage_metadata: prediction.coverage_metadata || {},
+      },
       meta: {
         run_id: prediction.run_id,
+        model_version: prediction.model_version,
         predicted_at: prediction.predicted_at,
-        horizon_seasons: prediction.horizon_seasons,
-        confidence_score: prediction.confidence_score,
       },
       source: "database",
     });
   } catch (error: any) {
-    const fallback = await readLocalFallbackPrediction(playerId);
-    if (fallback) {
-      return NextResponse.json({
-        player: { id: playerId, name: playerId },
-        stats: fallback,
-        current_stats: null,
-        source: "fallback",
-        error: error?.message || "DB query failed",
-      });
-    }
-
     return NextResponse.json(
-      { error: error?.message || "Failed to fetch prediction" },
+      { error: error?.message || "Failed to fetch next-season prediction" },
       { status: 500 }
     );
   }

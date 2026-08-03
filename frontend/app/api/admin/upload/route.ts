@@ -1,12 +1,14 @@
 import { hasAdminAuthConfig, isAdminAuthenticated } from "@/lib/admin-auth";
 import { importPlayerDocument } from "@/lib/player-json-import";
 import { hasSupabaseServerConfig } from "@/lib/supabase-rest";
+import { importTierAPlayerDocument, isTierAPlayerDocument } from "@/lib/tier-a-json-import";
 import { NextRequest, NextResponse } from "next/server";
 
 type FileResult = {
   file: string;
   playerId?: string;
   seasonsImported?: number;
+  importKind?: "tier-a" | "detailed";
   error?: string;
 };
 
@@ -61,12 +63,15 @@ export async function POST(request: NextRequest) {
     try {
       const raw = (await file.text()).replace(/^\uFEFF/, "");
       const parsed = JSON.parse(raw);
-      const result = await importPlayerDocument(parsed, { overAgeThreshold });
+      const result = isTierAPlayerDocument(parsed)
+        ? await importTierAPlayerDocument(parsed)
+        : { ...(await importPlayerDocument(parsed, { overAgeThreshold })), importKind: "detailed" as const };
 
       successes.push({
         file: file.name,
         playerId: result.playerId,
         seasonsImported: result.seasonsImported,
+        importKind: result.importKind,
       });
     } catch (error: any) {
       failures.push({
